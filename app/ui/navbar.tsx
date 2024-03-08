@@ -9,16 +9,17 @@ const Navbar: React.FC = () => {
     <>
       <nav
         id="navbar"
-        className="fixed top-0 left-0 w-full px-5 md:px-20 z-50 max-h-24 dark:bg-black"
+        className="fixed top-0 left-0 w-svw px-5 lg:px-20 z-50 h-16 lg:h-20 dark:bg-black"
       >
-        <header className="flex flex-row justify-between items-center flex-nowrap">
-          <div className="px-5 md:px-20">
+        <header className="flex flex-row justify-between items-center flex-nowrap h-full">
+          <div className="px-5 lg:px-20">
+            <Link href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white w-32"
+              className="fill-current dark:text-white w-32 cursor-pointer"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -66,15 +67,14 @@ const Navbar: React.FC = () => {
                 />
               </g>
             </svg>
+            </Link>
           </div>
-          <div className="px-5 md:px-20 md:hidden">
-            <Link href="#">
+          <div className="px-5 lg:px-20 lg:hidden">
               <Bars3Icon
                 className="h-6 w-6 dark:text-white"
                 aria-expanded={isOpen}
                 onClick={() => setIsOpen(!isOpen)}
               ></Bars3Icon>
-            </Link>
             {isOpen ? (
               <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg dark:bg-white ring-1 ring-white ring-opacity-60 uppercase">
                 <div
@@ -123,8 +123,8 @@ const Navbar: React.FC = () => {
               </div>
             ) : null}
           </div>
-          <div className="hidden flex-row gap-5 md:flex">
-            <Link href="#">Home</Link>
+          <div className="hidden flex-row gap-5 lg:flex justify-end items-center">
+            <Link href="/">Home</Link>
             <Link href="/employees">Employees</Link>
             <Link href="#">Menu Item 3</Link>
             <Link href="#">Menu Item 4</Link>

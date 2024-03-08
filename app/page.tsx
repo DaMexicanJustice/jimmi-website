@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <header></header>
       <Navbar></Navbar>
-      <main className="min-h-svh">
+      <main id="main" className="min-h-svh min-w-svh">
         <Hero></Hero>
         <Services></Services>
         <History></History>
