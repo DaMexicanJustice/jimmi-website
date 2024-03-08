@@ -16,9 +16,7 @@ export default function Hero() {
               <span className="relative text-white">potentiale</span>
             </span>
           </h1>
-          <h2 className="text-sm font-semibold">
-            Gennem personlig mentoring
-          </h2>
+          <h2 className="text-sm font-semibold">Gennem personlig mentoring</h2>
           <h2 className="text-xs font-semibold">
             Erfarne mentorer &nbsp; | &nbsp; trygge rammer
           </h2>
@@ -28,7 +26,7 @@ export default function Hero() {
         bg-black/40 "
         ></div>
         <video
-          
+          autoPlay
           loop
           muted
           id="video"
