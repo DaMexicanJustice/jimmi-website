@@ -16,10 +16,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer
-        id="footer"
-        className="bottom-0 left-0"
-      >
+      <footer id="footer" className="bottom-0 left-0 text-white">
         {/* Mobile up to lg:breakpoint */}
         <div className="flex flex-col md:hidden gap-5 py-5 items-center">
           <div className="flex flex-col">
@@ -84,24 +81,18 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col gap-5">
             <div className="px-5">
-              <h1 className="text-sm uppercase font-bold">
-                Mød Mig Her
-              </h1>
+              <h1 className="text-sm uppercase font-bold">Mød Mig Her</h1>
               <p className="text-xs">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
                 <span className="text-yellow-500">SOHO</span>
               </p>
             </div>
             <div className="px-5">
-              <h1 className="text-sm uppercase font-bold">
-                Skriv Til Mig
-              </h1>
+              <h1 className="text-sm uppercase font-bold">Skriv Til Mig</h1>
               <p className="text-xs">jl@mentorplan.dk</p>
             </div>
             <div className="px-5">
-              <h1 className="text-sm uppercase font-bold">
-                Ring På
-              </h1>
+              <h1 className="text-sm uppercase font-bold">Ring På</h1>
               <p className="text-xs">+4542955969</p>
             </div>
           </div>
@@ -114,11 +105,10 @@ const Footer: React.FC = () => {
               <FaLinkedin className="size-6"></FaLinkedin>
             </Link>
           </div>
-        
         </div>
         {/* Desktop and above lg:breakpoint */}
         <div className="hidden md:flex flex-row justify-between w-svh px-20 py-5">
-        <div className="flex flex-col p">
+          <div className="flex flex-col p">
             <div className="text-2xl text-sm uppercase font-bold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -180,25 +170,21 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col gap-5">
             <div className="">
-              <h1 className="text-sm uppercase font-bold">
-                Mød Mig Her
-              </h1>
+              <h1 className="text-sm uppercase font-bold">Mød Mig Her</h1>
               <p className="text-xs">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
                 <span className="text-yellow-500">SOHO</span>
               </p>
             </div>
             <div className="">
-              <h1 className="text-sm uppercase font-bold">
-                Skriv Til Mig
-              </h1>
+              <h1 className="text-sm uppercase font-bold">Skriv Til Mig</h1>
               <p className="text-xs">jl@mentorplan.dk</p>
             </div>
             <div className="">
-              <h1 className="text-sm uppercase font-bold">
-                Ring På
-              </h1>
-              <p className="text-xs"><a href="tel:+4542955969"></a>+4542955969</p>
+              <h1 className="text-sm uppercase font-bold">Ring På</h1>
+              <p className="text-xs">
+                <a href="tel:+4542955969"></a>+4542955969
+              </p>
             </div>
           </div>
           <div className="flex flex-col justify-center gap-5">
@@ -211,7 +197,7 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-      </footer> 
+      </footer>
     </>
   );
 };

@@ -1,14 +1,10 @@
+import Carousel from "../ui/carousel";
+import { EmblaOptionsType } from "embla-carousel";
+
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDE_COUNT = 4;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
 export default function Environment() {
-  return (
-    <>
-      <section
-        id="environment"
-        className="px-5 lg:px-20 h-[calc(100svh-4rem)] bg-slate-600"
-      >
-        <main className="flex h-full flex-col items-center justify-center">
-          <h1 className="text-2xl">Environment</h1>
-        </main>
-      </section>
-    </>
-  );
+  return <Carousel slides={SLIDES} options={OPTIONS}></Carousel>;
 }
