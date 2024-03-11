@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
         className="fixed top-0 left-0 w-svw px-5 lg:px-20 z-50 h-16 lg:h-20 dark:bg-black"
       >
         <header className="flex flex-row justify-between items-center flex-nowrap h-full">
-          <div className="px-5 lg:px-20">
+          <div>
             <Link href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

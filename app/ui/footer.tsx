@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         className="bottom-0 left-0"
       >
         {/* Mobile up to lg:breakpoint */}
-        <div className="flex flex-col lg:hidden gap-5 py-5 items-center">
+        <div className="flex flex-col md:hidden gap-5 py-5 items-center">
           <div className="flex flex-col">
             <div className="px-5 text-sm uppercase font-bold">
               <svg
@@ -117,8 +117,8 @@ const Footer: React.FC = () => {
         
         </div>
         {/* Desktop and above lg:breakpoint */}
-        <div className="hidden lg:flex flex-row">
-        <div className="flex flex-col">
+        <div className="hidden md:flex flex-row justify-between w-svh px-20 py-5">
+        <div className="flex flex-col p">
             <div className="text-2xl text-sm uppercase font-bold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -198,10 +198,10 @@ const Footer: React.FC = () => {
               <h1 className="text-sm uppercase font-bold">
                 Ring På
               </h1>
-              <p className="text-xs">+4542955969</p>
+              <p className="text-xs"><a href="tel:+4542955969"></a>+4542955969</p>
             </div>
           </div>
-          <div className="flex flex-row justify-between gap-5">
+          <div className="flex flex-col justify-center gap-5">
             <ArrowUpIcon
               className="cursor-pointer size-6"
               onClick={scrollToTop}
@@ -211,7 +211,7 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-      </footer>
+      </footer> 
     </>
   );
 };
