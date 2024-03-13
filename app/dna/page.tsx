@@ -1,10 +1,37 @@
+"use client"; // This is a client component
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import { Call, Email, Person, Business, Notes } from "@mui/icons-material";
-import InputAdornment from "@mui/material/InputAdornment";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+// Augment the palette to include an ochre color
+declare module "@mui/material/styles" {
+  interface Palette {
+    ochre: Palette["primary"];
+  }
+
+  interface PaletteOptions {
+    ochre?: PaletteOptions["primary"];
+  }
+}
+
+// Update the Button's color options to include an ochre option
+declare module "@mui/material/Button" {
+  interface ButtonPropsColorOverrides {
+    ochre: true;
+  }
+}
+
+const theme = createTheme({
+  palette: {
+    ochre: {
+      main: "#eab308",
+      light: "#facc15",
+      dark: "#ca8a04",
+      contrastText: "#242105",
+    },
+  },
+});
 
 export default function Dna() {
   const divElements = [];
@@ -20,8 +47,8 @@ export default function Dna() {
     divElements.push(
       <div key={i}>
         <div className="flex flex-row gap-1 items-center">
-          <CheckCircleIcon className="size-6 text-blue-500"></CheckCircleIcon>
-          <p className="text-black text-2xl">{paragraphs[i]}</p>
+          <CheckCircleIcon className="size-12 text-blue-700"></CheckCircleIcon>
+          <p className="text-slate-900 text-2xl">{paragraphs[i]}</p>
         </div>
       </div>
     );
@@ -36,33 +63,35 @@ export default function Dna() {
         <main className="flex h-full flex-col items-center justify-center">
           {/* Left Panel / Top Panel */}
           <div className="flex flex-col gap-10 py-10 items-center">
-            <h1 className="text-black text-5xl font-bold ">Mollit ea</h1>
+            <h1 className="text-slate-900 text-5xl font-bold ">Mollit ea</h1>
             <div className="flex flex-col gap-5">
-              <h2 className="text-blue-500 text-4xl font-bold text-center">
+              <h2 className="text-slate-800 text-4xl font-bold text-center">
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
               <div className="flex flex-col gap-2">{divElements}</div>
             </div>
             <div className="flex flex-col gap-5">
-              <p className="text-black text-xl text-justify">
+              <p className="text-slate-700 text-xl text-justify">
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
-              <Button
-                className="p-5 uppercase font-bold text-xl"
-                variant="contained"
-                color="primary"
-              >
-                Quis veniam anim nulla
-              </Button>
+              <ThemeProvider theme={theme}>
+                <Button
+                  className="p-5 uppercase font-bold text-xl bg-yellow-500"
+                  variant="contained"
+                  color="ochre"
+                >
+                  Quis veniam anim nulla
+                </Button>
+              </ThemeProvider>
             </div>
           </div>
 
           {/* Right panel / Bottom Panel */}
-          <div className="flex flex-col items-center gap-2 bg-slate-100 p-5 mb-10 border-0 border-t-4 border-solid border-t-blue-500 shadow-xl shadow-blue-500/50">
+          <div className="flex flex-col items-center gap-5 bg-slate-100 p-5 mb-10 border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50">
             <a
-              className="no-underline text-4xl text-blue-500 font-bold"
+              className="no-underline text-4xl text-yellow-500 font-bold"
               href="tel:+4542955969"
             >
               Ring: +4542955969
@@ -163,17 +192,19 @@ export default function Dna() {
                   },
                 }}
               />
-              <Button
-                className="p-5 uppercase font-bold text-xl"
-                variant="contained"
-                color="primary"
-              >
-                Send Besked
-              </Button>
+              <ThemeProvider theme={theme}>
+                <Button
+                  className="p-5 uppercase font-bold text-xl bg-yellow-500"
+                  variant="contained"
+                  color="ochre"
+                >
+                  Send Besked
+                </Button>
+              </ThemeProvider>
             </form>
-            <p className="text-slate-500 text-xl font-semibold">
+            <p className="text-slate-700 text-xl font-semibold">
               Jobansøgninger sendes til:{" "}
-              <span className="text-blue-700">kontakt@mentorplan.dk</span>
+              <span className="text-yellow-700">kontakt@mentorplan.dk</span>
             </p>
           </div>
         </main>

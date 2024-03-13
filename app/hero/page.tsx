@@ -13,7 +13,7 @@ export default function Hero() {
           <h1 className="text-5xl whitespace-pre font-bold uppercase text-white">
             Dit fulde &nbsp;
             <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
-              <span className="relative text-white">potentiale</span>
+              <span className="relative">potentiale</span>
             </span>
           </h1>
           <h2 className="text-2xl font-semibold text-white">
