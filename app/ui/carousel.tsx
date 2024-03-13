@@ -60,7 +60,7 @@ const Carousel: React.FC<PropType> = (props) => {
       </section>
       <section
         id="environment-desktop"
-        className="hidden md:flex h-[calc(100svh-4rem)] md:flex-row md:justify-center md:items-center bg-slate-900"
+        className="hidden md:flex h-[calc(100svh-6rem)] md:flex-row md:justify-center md:items-center bg-slate-900"
       >
         <h1 className="text-white">Environment</h1>
       </section>
