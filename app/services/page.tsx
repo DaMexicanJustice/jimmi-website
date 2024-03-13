@@ -8,7 +8,7 @@ export default function Services() {
         className="px-5 lg:px-20 min-h-[calc(100svh-6rem)] bg-slate-50"
       >
         <main className="flex h-full flex-col gap-8 py-8">
-          <div className="flex flex-col gap-5 items-center pb-5 bg-green-200 shadow-xl shadow-green-500/50">
+          <div className="flex flex-col gap-5 items-center pb-5 pb-5 bg-green-200 shadow-xl shadow-green-500/50">
             <Image
               src="/images/390x260.png"
               width={400}
