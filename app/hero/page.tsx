@@ -10,7 +10,7 @@ export default function Hero() {
             <h3 className="text-3xl font-bold text-white">Mentorplan</h3>
             <hr className="lg:w-28 w-24"></hr>
           </div>
-          <h1 className="text-5xl whitespace-pre font-bold uppercase text-white">
+          <h1 className="text-4xl whitespace-pre font-bold uppercase text-white">
             Dit fulde &nbsp;
             <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
               <span className="relative">potentiale</span>
