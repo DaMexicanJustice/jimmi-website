@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white w-44 h-24 cursor-pointer"
+              className="fill-current dark:text-white w-40 h-20 cursor-pointer"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
             </svg>
           </Link>
         </div>
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <IconButton
             aria-label="fingerprint"
             id="basic-button"
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
             onClick={handleClick}
             className="p-5"
           >
-            <Dehaze className="size-16 text-white" />
+            <Dehaze className="size-12 text-white" />
           </IconButton>
           <Menu
             id="basic-menu"
@@ -128,7 +128,10 @@ const Navbar: React.FC = () => {
             </MenuItem>
           </Menu>
         </div>
-        <div className="hidden flex-row gap-5 lg:flex justify-end items-center">
+        <div
+          className="hidden md:flex flex-row gap-5 justify-end items-center px-10 
+        text-white uppercase font-bold text-lg"
+        >
           <Link href="/">Home</Link>
           <Link href="/employees">Employees</Link>
           <Link href="#">Progress</Link>

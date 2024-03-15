@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], weight: "400" });
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: "400",
-});
+const conduit = localFont({ src: "../public/fonts/ConduitITC.woff2" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,8 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // Include UTF-8 encoding
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={conduit.className}>{children}</body>
     </html>
   );
 }

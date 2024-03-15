@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white-500 w-44 h-24"
+              className="fill-current dark:text-white-500 w-40 h-20"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -73,27 +73,27 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-3xl items-center uppercase font-bold ">
+            <div className="flex flex-row gap-2 text-2xl items-center uppercase font-bold ">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
           <div className="flex flex-col gap-5 text-center">
             <div className="">
-              <h1 className="m-1 text-5xl uppercase font-bold">Mød Mig Her</h1>
-              <p className="m-1 text-3xl">
+              <h1 className="m-1 text-4xl uppercase font-bold">Mød Mig Her</h1>
+              <p className="m-1 text-2xl">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
                 <span className="text-yellow-500">SOHO</span>
               </p>
             </div>
             <div className="">
-              <h1 className="m-1 text-5xl uppercase font-bold">
+              <h1 className="m-1 text-4xl uppercase font-bold">
                 Skriv Til Mig
               </h1>
-              <p className="m-1 text-3xl">jl@mentorplan.dk</p>
+              <p className="m-1 text-2xl">jl@mentorplan.dk</p>
             </div>
             <div className="">
-              <h1 className="m-1 text-5xl uppercase font-bold">Ring På</h1>
-              <a className="m-1 text-3xl" href="tel:+4542955969">
+              <h1 className="m-1 text-4xl uppercase font-bold">Ring På</h1>
+              <a className="m-1 text-2xl" href="tel:+4542955969">
                 +45 42955969
               </a>
             </div>
