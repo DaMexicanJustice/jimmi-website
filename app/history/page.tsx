@@ -7,7 +7,7 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 lg:px-20 min-h-[calc(100svh-6rem)] bg-slate-200"
+        className="px-5 md:px-20 min-h-[calc(100svh-6rem)] bg-slate-200"
       >
         <main className="flex flex-col items-center justify-evenly h-full gap-6 py-6">
           <Image

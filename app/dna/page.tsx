@@ -58,7 +58,7 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 lg:px-20 min-h-[calc(100svh-6rem)] bg-slate-300"
+        className="px-5 md:px-20 min-h-[calc(100svh-6rem)] bg-slate-300"
       >
         <main className="flex h-full flex-col items-center justify-center">
           {/* Left Panel / Top Panel */}
@@ -72,7 +72,7 @@ export default function Dna() {
               </h2>
               <div className="flex flex-col gap-2">{divElements}</div>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 items-center md:w-8/12">
               <p className="text-slate-700 text-xl text-justify">
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
@@ -181,6 +181,7 @@ export default function Dna() {
                 label="Besked"
                 variant="standard"
                 multiline
+                rows={4}
                 InputLabelProps={{
                   style: {
                     fontSize: "16px",

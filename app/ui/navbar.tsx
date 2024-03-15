@@ -21,10 +21,10 @@ const Navbar: React.FC = () => {
     <>
       <nav
         id="navbar"
-        className="fixed top-0 left-0 w-svw px-5 lg:px-20 z-50 dark:bg-black h-36 
+        className="fixed top-0 left-0 w-svw px-5 md:px-20 z-50 dark:bg-black h-36 
         flex flex-row justify-between items-center flex-nowrap"
       >
-        <div className="px-5">
+        <div className="">
           <Link href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -129,12 +129,12 @@ const Navbar: React.FC = () => {
           </Menu>
         </div>
         <div
-          className="hidden md:flex flex-row gap-5 justify-end items-center px-10 
-        text-white uppercase font-bold text-lg"
+          className="hidden md:flex flex-row gap-5 justify-end items-center px-5 
+        text-white uppercase font-bold text-2xl font-conduitbold"
         >
           <Link href="/">Home</Link>
           <Link href="/employees">Employees</Link>
-          <Link href="#">Progress</Link>
+          <Link href="#">Menu Item 3</Link>
           <Link href="#">Menu Item 4</Link>
         </div>
       </nav>
