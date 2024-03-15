@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        conduit: ["var(--font-conduitITC)"],
+        conduitbold: ["var(--font-conduitITC-bold)"],
+        yantramanav: ["var(--font-yantramanav-regular)"],
+      },
     },
   },
   plugins: [],

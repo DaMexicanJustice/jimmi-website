@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <section id="Hero" className="px-5 lg:px-20 h-[calc(100svh-6rem)] mt-24">
-        <main className="flex flex-col items-center justify-center h-full gap-5 lg:px-20 z-40 relative">
+        <main className="flex flex-col items-center justify-center h-full gap-5 lg:px-20 z-40 relative font-conduit">
           <div className="flex flex-row items-center gap-3">
             <hr className="lg:w-28 w-20"></hr>
             <h3 className="text-3xl font-bold text-white">Mentorplan</h3>

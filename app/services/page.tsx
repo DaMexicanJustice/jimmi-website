@@ -15,7 +15,9 @@ export default function Services() {
               height={240}
               alt="Ydelse 1"
             />
-            <h1 className="text-green-700 font-bold text-4xl">Ydelse 1</h1>
+            <h1 className="text-green-700 font-bold text-4xl font-conduit">
+              Ydelse 1
+            </h1>
             <p className="text-black text-center text-3xl">
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -32,7 +34,9 @@ export default function Services() {
               height={240}
               alt="Ydelse 1"
             />
-            <h1 className="text-blue-700 font-bold text-3xl">Ydelse 2</h1>
+            <h1 className="text-blue-700 font-bold text-3xl font-conduit">
+              Ydelse 2
+            </h1>
             <p className="text-black text-center">
               Sint cupidatat deserunt eiusmod duis minim eu sit adipisicing ad
               velit.
@@ -49,7 +53,9 @@ export default function Services() {
               height={240}
               alt="Ydelse 1"
             />
-            <h1 className="text-orange-700 font-bold text-3xl">Ydelse 3 </h1>
+            <h1 className="text-orange-700 font-bold text-3xl font-conduit">
+              Ydelse 3{" "}
+            </h1>
             <p className="text-black text-center">
               Do cillum in dolore est. Deserunt culpa officia eiusmod commodo
               velit.
@@ -66,7 +72,9 @@ export default function Services() {
               height={240}
               alt="Ydelse 1"
             />
-            <h1 className="text-purple-700 font-bold text-3xl">Ydelse 4</h1>
+            <h1 className="text-purple-700 font-bold text-3xl font-conduit">
+              Ydelse 4
+            </h1>
             <p className="text-black text-center">
               Aliquip sunt amet dolor magna irure pariatur sit pariatur.
             </p>
@@ -82,7 +90,9 @@ export default function Services() {
               height={240}
               alt="Ydelse 1"
             />
-            <h1 className="text-pink-700 font-bold text-3xl">Ydelse 5</h1>
+            <h1 className="text-pink-700 font-bold text-3xl font-conduit">
+              Ydelse 5
+            </h1>
             <p className="text-black text-center">
               Magna adipisicing minim nostrud enim non. Sunt qui culpa proident
               id eiusmod Lorem fugiat non exercitation esse fugiat commodo in

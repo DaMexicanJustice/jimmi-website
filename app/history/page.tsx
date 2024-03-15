@@ -16,7 +16,9 @@ export default function History() {
             height={220}
             alt="Jimmi billed"
           />
-          <h1 className="uppercase text-black text-4xl font-bold ">Historik</h1>
+          <h1 className="uppercase text-black text-4xl font-bold font-conduit">
+            Historik
+          </h1>
           <p className="text-black text-3xl text-justify leading-10">
             Sunt amet ad cupidatat in excepteur anim ex. Lorem aliqua deserunt
             minim sint quis enim laborum esse adipisicing culpa. Occaecat ut

@@ -38,7 +38,7 @@ export default function Dna() {
   const paragraphs = [
     "Ullamco commodo elit cupidatat amet esse dolor.",
     "Magna cillum nisi minim ipsum ex labore.",
-    "Non sint enim eiusmod elit dolore proident nisi anim.",
+    "Non sint enim eiusmod elit dolore proident nisi anim.f",
     "Laborum laborum minim ipsum cillum.",
     "Excepteur laborum qui sit aliquip.",
   ];
@@ -46,9 +46,9 @@ export default function Dna() {
   for (let i = 0; i < 5; i++) {
     divElements.push(
       <div key={i}>
-        <div className="flex flex-row gap-1 items-center">
-          <CheckCircleIcon className="size-12 text-blue-700"></CheckCircleIcon>
-          <p className="text-slate-900 text-2xl">{paragraphs[i]}</p>
+        <div className="flex flex-row gap-1 items-center ">
+          <CheckCircleIcon className="size-10 text-blue-700 shrink-0"></CheckCircleIcon>
+          <p className="text-slate-900 text-lg">{paragraphs[i]}</p>
         </div>
       </div>
     );
@@ -63,9 +63,11 @@ export default function Dna() {
         <main className="flex h-full flex-col items-center justify-center">
           {/* Left Panel / Top Panel */}
           <div className="flex flex-col gap-10 py-10 items-center">
-            <h1 className="text-slate-900 text-5xl font-bold ">Mollit ea</h1>
+            <h1 className="text-slate-900 text-5xl font-bold font-conduit">
+              Mollit ea
+            </h1>
             <div className="flex flex-col gap-5">
-              <h2 className="text-slate-800 text-4xl font-bold text-center">
+              <h2 className="text-slate-800 text-4xl font-bold text-center font-conduit">
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
               <div className="flex flex-col gap-2">{divElements}</div>
@@ -91,12 +93,12 @@ export default function Dna() {
           {/* Right panel / Bottom Panel */}
           <div className="flex flex-col items-center gap-5 bg-slate-100 p-5 mb-10 border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50">
             <a
-              className="no-underline text-4xl text-yellow-500 font-bold"
+              className="no-underline text-4xl text-yellow-500 font-bold font-conduit"
               href="tel:+4542955969"
             >
               Ring: +4542955969
             </a>
-            <h2 className="text-3xl text-black font-semibold">
+            <h2 className="text-3xl text-black font-semibold font-conduit">
               Anim et duis ad eu ut.
             </h2>
             <p className="text-slate-700 text-xl text-justify w-11/12">
@@ -202,7 +204,7 @@ export default function Dna() {
                 </Button>
               </ThemeProvider>
             </form>
-            <p className="text-slate-700 text-xl font-semibold">
+            <p className="text-slate-700 text-base font-semibold">
               Jobansøgninger sendes til:{" "}
               <span className="text-yellow-700">kontakt@mentorplan.dk</span>
             </p>
