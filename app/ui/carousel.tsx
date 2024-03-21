@@ -60,7 +60,7 @@ const Carousel: React.FC<PropType> = (props) => {
                       height={370}
                       alt="slide"
                       src={images[index].original}
-                      className="w-full"
+                      className="size-full"
                     ></Image>
                   }
                 </div>

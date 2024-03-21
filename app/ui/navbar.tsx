@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         id="navbar"
         className="fixed top-0 left-0 w-svw px-5 z-50 dark:bg-black h-24 
         flex flex-row justify-between items-center flex-nowrap
-        md:px-20"
+        md:px-40"
       >
         <div>
           <Link href="/">

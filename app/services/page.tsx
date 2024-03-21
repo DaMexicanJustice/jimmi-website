@@ -60,12 +60,11 @@ export default function Services() {
       <section
         id="Services"
         className="px-5 min-h-[calc(100svh-6rem)] bg-orange-50
-        md:px-20"
+        md:px-40"
       >
         <main
           className="flex flex-col h-full gap-8 md:gap-5 py-8
-        md:flex-row md:flex-wrap md:justify-center
-        xl:gap-5"
+        md:flex-row md:flex-wrap md:justify-center md:gap-14"
         >
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-amber-200 shadow-xl shadow-amber-500/50

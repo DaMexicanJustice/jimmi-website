@@ -8,44 +8,36 @@ export default function History() {
       <section
         id="History"
         className="px-5 min-h-[calc(100svh-6rem)] bg-slate-200 overflow-hidden
-        md:px-20"
+        md:px-40 md:py-40
+        xl:py-0"
       >
         <main
-          className="flex flex-col items-center justify-evenly h-full gap-6 py-6
-        md:gap-10 md:flex-row md:items-start
-        xl:gap-40"
+          className="flex flex-col items-center justify-evenly gap-6 py-6
+        xl:gap-10 xl:flex-row xl:justify-between xl:items-center
+        xl:gap-1"
         >
-          <div
-            className="hidden 
-          md:order-1
-          xl:block xl:basis-2/12"
-          ></div>
           <Image
             src="/images/jimmi.jpg"
             width={180}
             height={220}
             alt="Jimmi billed"
-            className="w-full drop-shadow-md
-            md:order-3 md:basis-5/12
+            className="drop-shadow-md
+            xl:order-3 xl:w-full
             xl:basis-3/12 "
           />
 
           <div
-            className="hidden
-          md:order-4 md:basis-7/12
-          xl:block xl:basis-2/12"
-          ></div>
-          <div
-            className="flex flex-col md:basis-7/12 gap-10 items-center
-          md:items-start md:justify-evenly md:order-2"
+            className="flex flex-col gap-10 items-center
+          xl:items-start xl:justify-evenly
+          xl:order-2 xl:basis-7/12"
           >
             <h1
               className="uppercase text-black text-3xl font-bold font-conduit
-          md:text-5xl"
+          xl:text-5xl"
             >
               Historik
             </h1>
-            <p className="text-black text-xl text-justify leading-10">
+            <p className="text-black text-base text-justify leading-10">
               Sunt amet ad cupidatat in excepteur anim ex. Lorem aliqua deserunt
               minim sint quis enim laborum esse adipisicing culpa. Occaecat ut
               duis eiusmod occaecat esse deserunt et fugiat magna irure
