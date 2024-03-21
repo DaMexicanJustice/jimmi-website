@@ -4,8 +4,6 @@ import { EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import "../../public/css/base.css";
-import "../../public/css/embla.css";
 
 type PropType = {
   slides: number[];
@@ -37,12 +35,15 @@ const Carousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <section id="environment-mobile" className="embla md:hidden ">
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
+      <section id="environment" className="m-auto">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex touch-pan-y">
             {slides.map((index) => (
-              <div className="embla__slide" key={index - 1}>
-                <div className="embla__slide__number">
+              <div
+                className="basis-full shrink-0 grow-0 min-w-0"
+                key={index - 1}
+              >
+                <div className="flex justify-center items-center">
                   {
                     <Image
                       width={430}
@@ -57,12 +58,6 @@ const Carousel: React.FC<PropType> = (props) => {
             c
           </div>
         </div>
-      </section>
-      <section
-        id="environment-desktop"
-        className="hidden md:flex h-[calc(100svh-6rem)] md:flex-row md:justify-center md:items-center bg-slate-900"
-      >
-        <h1 className="text-white">Environment</h1>
       </section>
     </>
   );

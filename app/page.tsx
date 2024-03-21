@@ -10,7 +10,6 @@ import "/app/styles/styles.css";
 export default function Home() {
   return (
     <>
-      <header></header>
       <Navbar></Navbar>
       <main id="main" className="min-h-svh min-w-svh">
         <Hero></Hero>
