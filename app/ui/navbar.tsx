@@ -21,19 +21,18 @@ const Navbar: React.FC = () => {
     <>
       <nav
         id="navbar"
-        className="fixed top-0 left-0 w-svw px-5 z-50 dark:bg-black h-36 
+        className="fixed top-0 left-0 w-svw px-5 z-50 dark:bg-black h-24 
         flex flex-row justify-between items-center flex-nowrap
-        md:px-20 md:h-44"
+        md:px-20"
       >
-        <div className="">
+        <div>
           <Link href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white w-40 cursor-pointer
-              md:w-60"
+              className="fill-current dark:text-white w-40 cursor-pointer"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -132,8 +131,9 @@ const Navbar: React.FC = () => {
         </div>
         <div
           className="hidden flex-row gap-5 justify-end items-center px-5 
-        text-white uppercase font-bold text-3xl font-conduitbold
-        md:flex"
+        text-white uppercase font-bold text-xl font-conduitbold h-full
+        md:flex
+        "
         >
           <Link href="/">Home</Link>
           <Link href="/employees">Employees</Link>

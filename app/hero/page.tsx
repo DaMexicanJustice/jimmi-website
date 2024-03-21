@@ -6,7 +6,7 @@ export default function Hero() {
       <section
         id="Hero"
         className="px-5 h-[calc(100svh-6rem)] mt-24
-      md:px-20 md:h-[calc(100svh-11rem)] md:mt-44"
+      md:px-20"
       >
         <main
           className="flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
@@ -53,8 +53,7 @@ export default function Hero() {
         </main>
         <div
           className="top-0 left-0 absolute h-[calc(100svh-6rem)] w-full mt-24 object-cover z-30
-        bg-black/40
-        md:h-[calc(100svh-11rem)] md:mt-44"
+        bg-black/40"
         ></div>
         <video
           autoPlay
@@ -63,8 +62,7 @@ export default function Hero() {
           id="video"
           src="/video/mentorplan.mp4"
           typeof="video/mp4"
-          className="top-0 left-0 absolute h-[calc(100svh-6rem)] w-full mt-24 object-cover
-          md:h-[calc(100svh-11rem)] md:mt-44"
+          className="top-0 left-0 absolute h-[calc(100svh-6rem)] w-full mt-24 object-cover"
         ></video>
       </section>
     </>

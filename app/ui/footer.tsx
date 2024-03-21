@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white-500 w-60 h-20"
+              className="fill-current dark:text-white-500 w-40 h-20"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -171,31 +171,31 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-lg items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-sm items-center uppercase font-bold font-conduit">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
           <div className="flex flex-col gap-5 text-center basis-1/3">
             <div className="">
-              <h1 className="m-1 text-4xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
                 Mød Mig Her
               </h1>
-              <p className="m-1 text-2xl">
+              <p className="m-1 text-xl">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
                 <span className="text-yellow-500">SOHO</span>
               </p>
             </div>
             <div className="">
-              <h1 className="m-1 text-4xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
                 Skriv Til Mig
               </h1>
-              <p className="m-1 text-2xl">jl@mentorplan.dk</p>
+              <p className="m-1 text-xl">jl@mentorplan.dk</p>
             </div>
             <div className="">
-              <h1 className="m-1 text-4xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
                 Ring På
               </h1>
-              <a className="m-1 text-2xl" href="tel:+4542955969">
+              <a className="m-1 text-xl" href="tel:+4542955969">
                 +45 42955969
               </a>
             </div>

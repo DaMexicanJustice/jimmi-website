@@ -31,6 +31,14 @@ const Carousel: React.FC<PropType> = (props) => {
       original: "/images/430x370-light-grey.png",
       thumbnail: "/images/430x370-light-grey.png",
     },
+    {
+      original: "/images/430x370-dark-grey.png",
+      thumbnail: "/images/430x370-dark-grey.png",
+    },
+    {
+      original: "/images/430x370-grey.png",
+      thumbnail: "/images/430x370-grey.png",
+    },
   ];
 
   return (
@@ -41,7 +49,8 @@ const Carousel: React.FC<PropType> = (props) => {
             {slides.map((index) => (
               <div
                 className="basis-full shrink-0 grow-0 min-w-0
-                md:basis-6/12"
+                md:basis-6/12
+                xl:basis-3/12"
                 key={index - 1}
               >
                 <div className="flex justify-center items-center">
@@ -57,7 +66,6 @@ const Carousel: React.FC<PropType> = (props) => {
                 </div>
               </div>
             ))}
-            c
           </div>
         </div>
       </section>

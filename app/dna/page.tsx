@@ -53,7 +53,7 @@ export default function Dna() {
           <CheckCircleIcon className="size-10 text-blue-700 shrink-0"></CheckCircleIcon>
           <p
             className="text-slate-900 text-lg
-          md:text-3xl"
+          md:text-xl"
           >
             {paragraphs[i]}
           </p>
@@ -67,20 +67,20 @@ export default function Dna() {
       <section
         id="DNA"
         className="px-5 min-h-[calc(100svh-6rem)] bg-slate-300
-        md:px-20 md:h-[calc(100svh-11rem)]"
+        md:px-20"
       >
         <main
-          className="flex flex-col h-full items-center justify-center
+          className="flex flex-col items-center justify-center
         md:flex-row md:gap-10"
         >
           {/* Left Panel / Top Panel */}
           <div
             className="flex flex-col gap-10 py-10 items-center
-          md:basis-6/12 md:gap-16"
+          md:basis-5/12 md:gap-16"
           >
             <h1
               className="text-slate-900 text-5xl font-bold font-conduit
-            md:text-6xl"
+            md:text-3xl"
             >
               Mollit ea
             </h1>
@@ -90,7 +90,7 @@ export default function Dna() {
             >
               <h2
                 className="text-slate-800 text-4xl font-bold text-center font-conduit
-              md:text-5xl"
+              md:text-2xl"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
@@ -102,7 +102,7 @@ export default function Dna() {
             >
               <p
                 className="text-slate-700 text-xl text-justify
-              md:text-3xl"
+              md:text-lg"
               >
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
@@ -111,7 +111,7 @@ export default function Dna() {
               <ThemeProvider theme={theme}>
                 <Button
                   className="p-5 uppercase font-bold text-xl bg-yellow-500
-                  md:text-3xl"
+                  md:text-xl"
                   variant="contained"
                   color="ochre"
                 >
@@ -125,24 +125,24 @@ export default function Dna() {
           <div
             className="flex flex-col items-center gap-5 bg-slate-100 p-5 mb-10 
           border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50
-          md:basis-6/12 md:gap-10"
+          md:basis-7/12 md:gap-10"
           >
             <a
               className="no-underline text-4xl text-blue-500 font-bold font-conduit
-              md:text-5xl"
+              md:text-3xl"
               href="tel:+4542955969"
             >
               Ring: +4542955969
             </a>
             <h2
               className="text-3xl text-black font-semibold font-conduit
-            md:text-4xl"
+            md:text-2xl"
             >
               Anim et duis ad eu ut.
             </h2>
             <p
               className="text-slate-700 text-xl text-justify w-11/12
-            md:text-3xl"
+            md:text-1xl"
             >
               Elit amet veniam anim esse sint do pariatur nisi. Et quis officia
               ea do irure consequat sit cillum.
@@ -154,14 +154,14 @@ export default function Dna() {
                 variant="standard"
                 InputLabelProps={{
                   style: {
-                    fontSize: "1.5rem",
+                    fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "1.75rem",
-                    lineHeight: "1",
+                    fontSize: "1.125rem",
+                    lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -172,14 +172,14 @@ export default function Dna() {
                 variant="standard"
                 InputLabelProps={{
                   style: {
-                    fontSize: "1.5rem",
+                    fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "1.75rem",
-                    lineHeight: "1",
+                    fontSize: "1.125rem",
+                    lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -191,14 +191,14 @@ export default function Dna() {
                 type="email"
                 InputLabelProps={{
                   style: {
-                    fontSize: "1.5rem",
+                    fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "1.75rem",
-                    lineHeight: "1",
+                    fontSize: "1.125rem",
+                    lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -210,14 +210,14 @@ export default function Dna() {
                 type="tel"
                 InputLabelProps={{
                   style: {
-                    fontSize: "1.5rem",
+                    fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "1.75rem",
-                    lineHeight: "1",
+                    fontSize: "1.125rem",
+                    lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -230,14 +230,14 @@ export default function Dna() {
                 rows={4}
                 InputLabelProps={{
                   style: {
-                    fontSize: "1.5rem",
+                    fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "1.75rem",
-                    lineHeight: "1",
+                    fontSize: "1.125rem",
+                    lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
