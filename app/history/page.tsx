@@ -7,8 +7,8 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 h-[calc(100svh-6rem)] bg-slate-200
-        md:px-20 h-[calc(100svh-11rem)]"
+        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-200 overflow-hidden
+        md:px-20 md:min-h-[calc(100svh-11rem)]"
       >
         <main
           className="flex flex-col items-center justify-evenly h-full gap-6 py-6
@@ -21,13 +21,13 @@ export default function History() {
             alt="Jimmi billed"
           />
           <h1
-            className="uppercase text-black text-4xl font-bold font-conduit
+            className="uppercase text-black text-3xl font-bold font-conduit
           md:text-6xl"
           >
             Historik
           </h1>
           <p
-            className="text-black text-3xl text-justify leading-10
+            className="text-black text-xl text-justify leading-10
           md:text-5xl"
           >
             Sunt amet ad cupidatat in excepteur anim ex. Lorem aliqua deserunt

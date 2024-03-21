@@ -31,37 +31,3 @@ body {
     text-wrap: balance;
   }
 }
-
-/* Fallback font css if next/font method doesn't work
-@font-face {
-  font-family: "Conduit ITC";
-  src: url("../public/fonts/ConduitITC-Bold.eot");
-  src: url("../public/fonts/ConduitITC-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/fonts/ConduitITC-Bold.woff2") format("woff2"),
-    url("../public/fonts/ConduitITC-Bold.woff") format("woff"),
-    url("../public/fonts/ConduitITC-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Conduit ITC";
-  src: url("../public/fonts/ConduitITC.eot");
-  src: url("../public/fonts/ConduitITC.eot?#iefix") format("embedded-opentype"),
-    url("../public/fonts/ConduitITC.woff2") format("woff2"),
-    url("../public/fonts/ConduitITC.woff") format("woff"),
-    url("../public/fonts/ConduitITC.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.test {
-  font-family: "Conduit ITC";
-  font-weight: normal;
-  font-size: 12px;
-  font-variant-ligatures: none;
-}
-*/

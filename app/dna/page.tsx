@@ -154,13 +154,13 @@ export default function Dna() {
                 variant="standard"
                 InputLabelProps={{
                   style: {
-                    fontSize: "2.25rem",
-                    lineHeight: "2.5rem",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "3rem",
+                    fontSize: "1.75rem",
                     lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
@@ -172,13 +172,13 @@ export default function Dna() {
                 variant="standard"
                 InputLabelProps={{
                   style: {
-                    fontSize: "2.25rem",
-                    lineHeight: "2.5rem",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "3rem",
+                    fontSize: "1.75rem",
                     lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
@@ -191,13 +191,13 @@ export default function Dna() {
                 type="email"
                 InputLabelProps={{
                   style: {
-                    fontSize: "2.25rem",
-                    lineHeight: "2.5rem",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "3rem",
+                    fontSize: "1.75rem",
                     lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
@@ -210,13 +210,13 @@ export default function Dna() {
                 type="tel"
                 InputLabelProps={{
                   style: {
-                    fontSize: "2.25rem",
-                    lineHeight: "2.5rem",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "3rem",
+                    fontSize: "1.75rem",
                     lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
@@ -230,13 +230,13 @@ export default function Dna() {
                 rows={4}
                 InputLabelProps={{
                   style: {
-                    fontSize: "2.25rem",
-                    lineHeight: "2.5rem",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "3rem",
+                    fontSize: "1.75rem",
                     lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },

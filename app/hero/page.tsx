@@ -15,22 +15,22 @@ export default function Hero() {
           <div className="flex flex-row items-center gap-3">
             <hr
               className="w-20
-            md:w-40"
+            md:w-32"
             ></hr>
             <h3
               className="text-3xl font-bold text-white
-            md:text-6xl"
+            md:text-4xl"
             >
               Mentorplan
             </h3>
             <hr
               className="w-20
-            md:w-40"
+            md:w-32"
             ></hr>
           </div>
           <h1
             className="text-3xl whitespace-pre font-bold uppercase text-white
-          md:text-9xl"
+          md:text-6xl"
           >
             Dit fulde &nbsp;
             <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
@@ -39,13 +39,13 @@ export default function Hero() {
           </h1>
           <h2
             className="text-xl font-semibold text-white
-          md:text-6xl"
+          md:text-3xl"
           >
             Gennem personlig mentoring
           </h2>
           <h2
             className="text-xl font-semibold text-white
-          md:text-6xl"
+          md:text-3xl"
           >
             Erfarne mentorer &nbsp; <span className="font-yantramanav">|</span>
             &nbsp; trygge rammer

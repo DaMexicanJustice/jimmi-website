@@ -131,8 +131,8 @@ const Navbar: React.FC = () => {
           </Menu>
         </div>
         <div
-          className="hidden flex-row gap-8 justify-end items-center px-5 
-        text-white uppercase font-bold text-4xl font-conduitbold
+          className="hidden flex-row gap-5 justify-end items-center px-5 
+        text-white uppercase font-bold text-3xl font-conduitbold
         md:flex"
         >
           <Link href="/">Home</Link>
