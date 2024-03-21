@@ -1,7 +1,7 @@
 import Carousel from "../ui/carousel";
 import { EmblaOptionsType } from "embla-carousel";
 
-const OPTIONS: EmblaOptionsType = {};
+const OPTIONS: EmblaOptionsType = { loop: true };
 const SLIDE_COUNT = 4;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 

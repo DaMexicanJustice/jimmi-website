@@ -40,7 +40,8 @@ const Carousel: React.FC<PropType> = (props) => {
           <div className="flex touch-pan-y">
             {slides.map((index) => (
               <div
-                className="basis-full shrink-0 grow-0 min-w-0"
+                className="basis-full shrink-0 grow-0 min-w-0
+                md:basis-6/12"
                 key={index - 1}
               >
                 <div className="flex justify-center items-center">
@@ -50,6 +51,7 @@ const Carousel: React.FC<PropType> = (props) => {
                       height={370}
                       alt="slide"
                       src={images[index].original}
+                      className="w-full"
                     ></Image>
                   }
                 </div>
