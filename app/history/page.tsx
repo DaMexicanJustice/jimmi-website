@@ -7,19 +7,29 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 md:px-20 min-h-[calc(100svh-6rem)] bg-slate-200"
+        className="px-5 h-[calc(100svh-6rem)] bg-slate-200
+        md:px-20 h-[calc(100svh-11rem)]"
       >
-        <main className="flex flex-col items-center justify-evenly h-full gap-6 py-6">
+        <main
+          className="flex flex-col items-center justify-evenly h-full gap-6 py-6
+        md:justify-center md:gap-10"
+        >
           <Image
             src="/images/jimmi.jpg"
             width={180}
             height={220}
             alt="Jimmi billed"
           />
-          <h1 className="uppercase text-black text-4xl font-bold font-conduit">
+          <h1
+            className="uppercase text-black text-4xl font-bold font-conduit
+          md:text-6xl"
+          >
             Historik
           </h1>
-          <p className="text-black text-3xl text-justify leading-10">
+          <p
+            className="text-black text-3xl text-justify leading-10
+          md:text-5xl"
+          >
             Sunt amet ad cupidatat in excepteur anim ex. Lorem aliqua deserunt
             minim sint quis enim laborum esse adipisicing culpa. Occaecat ut
             duis eiusmod occaecat esse deserunt et fugiat magna irure voluptate
@@ -38,7 +48,10 @@ export default function History() {
             <br></br> Adipisicing deserunt Lorem dolore nostrud.
           </p>
           <Link href="https://www.linkedin.com/in/jimmililjehult/">
-            <FaLinkedin className="size-16 text-blue-700"></FaLinkedin>
+            <FaLinkedin
+              className="size-16 text-blue-700
+            md:size-24"
+            ></FaLinkedin>
           </Link>
         </main>
       </section>

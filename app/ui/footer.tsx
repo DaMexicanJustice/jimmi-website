@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white-500 w-40 h-20"
+              className="fill-current dark:text-white-500 w-60 h-20"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -171,7 +171,7 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-2xl items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-lg items-center uppercase font-bold font-conduit">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>

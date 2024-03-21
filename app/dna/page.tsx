@@ -38,7 +38,7 @@ export default function Dna() {
   const paragraphs = [
     "Ullamco commodo elit cupidatat amet esse dolor.",
     "Magna cillum nisi minim ipsum ex labore.",
-    "Non sint enim eiusmod elit dolore proident nisi anim.f",
+    "Non sint enim eiusmod elit dolore proident nisi anim.",
     "Laborum laborum minim ipsum cillum.",
     "Excepteur laborum qui sit aliquip.",
   ];
@@ -46,9 +46,17 @@ export default function Dna() {
   for (let i = 0; i < 5; i++) {
     divElements.push(
       <div key={i}>
-        <div className="flex flex-row gap-1 items-center ">
+        <div
+          className="flex flex-row gap-1 items-center
+        md:gap-5"
+        >
           <CheckCircleIcon className="size-10 text-blue-700 shrink-0"></CheckCircleIcon>
-          <p className="text-slate-900 text-lg">{paragraphs[i]}</p>
+          <p
+            className="text-slate-900 text-lg
+          md:text-3xl"
+          >
+            {paragraphs[i]}
+          </p>
         </div>
       </div>
     );
@@ -58,29 +66,52 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 md:px-20 min-h-[calc(100svh-6rem)] bg-slate-300"
+        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-300
+        md:px-20 md:h-[calc(100svh-11rem)]"
       >
-        <main className="flex h-full flex-col items-center justify-center">
+        <main
+          className="flex flex-col h-full items-center justify-center
+        md:flex-row md:gap-10"
+        >
           {/* Left Panel / Top Panel */}
-          <div className="flex flex-col gap-10 py-10 items-center">
-            <h1 className="text-slate-900 text-5xl font-bold font-conduit">
+          <div
+            className="flex flex-col gap-10 py-10 items-center
+          md:basis-6/12 md:gap-16"
+          >
+            <h1
+              className="text-slate-900 text-5xl font-bold font-conduit
+            md:text-6xl"
+            >
               Mollit ea
             </h1>
-            <div className="flex flex-col gap-5">
-              <h2 className="text-slate-800 text-4xl font-bold text-center font-conduit">
+            <div
+              className="flex flex-col gap-5
+            md:justify-start md:gap-10"
+            >
+              <h2
+                className="text-slate-800 text-4xl font-bold text-center font-conduit
+              md:text-5xl"
+              >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
               <div className="flex flex-col gap-2">{divElements}</div>
             </div>
-            <div className="flex flex-col gap-5 items-center md:w-8/12">
-              <p className="text-slate-700 text-xl text-justify">
+            <div
+              className="flex flex-col gap-5 items-center
+            md:items-start md:gap-10"
+            >
+              <p
+                className="text-slate-700 text-xl text-justify
+              md:text-3xl"
+              >
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
               <ThemeProvider theme={theme}>
                 <Button
-                  className="p-5 uppercase font-bold text-xl bg-yellow-500"
+                  className="p-5 uppercase font-bold text-xl bg-yellow-500
+                  md:text-3xl"
                   variant="contained"
                   color="ochre"
                 >
@@ -91,17 +122,28 @@ export default function Dna() {
           </div>
 
           {/* Right panel / Bottom Panel */}
-          <div className="flex flex-col items-center gap-5 bg-slate-100 p-5 mb-10 border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50">
+          <div
+            className="flex flex-col items-center gap-5 bg-slate-100 p-5 mb-10 
+          border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50
+          md:basis-6/12 md:gap-10"
+          >
             <a
-              className="no-underline text-4xl text-yellow-500 font-bold font-conduit"
+              className="no-underline text-4xl text-blue-500 font-bold font-conduit
+              md:text-5xl"
               href="tel:+4542955969"
             >
               Ring: +4542955969
             </a>
-            <h2 className="text-3xl text-black font-semibold font-conduit">
+            <h2
+              className="text-3xl text-black font-semibold font-conduit
+            md:text-4xl"
+            >
               Anim et duis ad eu ut.
             </h2>
-            <p className="text-slate-700 text-xl text-justify w-11/12">
+            <p
+              className="text-slate-700 text-xl text-justify w-11/12
+            md:text-3xl"
+            >
               Elit amet veniam anim esse sint do pariatur nisi. Et quis officia
               ea do irure consequat sit cillum.
             </p>
@@ -112,13 +154,14 @@ export default function Dna() {
                 variant="standard"
                 InputLabelProps={{
                   style: {
-                    fontSize: "16px",
+                    fontSize: "2.25rem",
+                    lineHeight: "2.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "20px",
-                    lineHeight: "28px",
+                    fontSize: "3rem",
+                    lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -129,13 +172,14 @@ export default function Dna() {
                 variant="standard"
                 InputLabelProps={{
                   style: {
-                    fontSize: "16px",
+                    fontSize: "2.25rem",
+                    lineHeight: "2.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "20px",
-                    lineHeight: "28px",
+                    fontSize: "3rem",
+                    lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -147,13 +191,14 @@ export default function Dna() {
                 type="email"
                 InputLabelProps={{
                   style: {
-                    fontSize: "16px",
+                    fontSize: "2.25rem",
+                    lineHeight: "2.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "20px",
-                    lineHeight: "28px",
+                    fontSize: "3rem",
+                    lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -165,13 +210,14 @@ export default function Dna() {
                 type="tel"
                 InputLabelProps={{
                   style: {
-                    fontSize: "16px",
+                    fontSize: "2.25rem",
+                    lineHeight: "2.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "20px",
-                    lineHeight: "28px",
+                    fontSize: "3rem",
+                    lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -184,13 +230,14 @@ export default function Dna() {
                 rows={4}
                 InputLabelProps={{
                   style: {
-                    fontSize: "16px",
+                    fontSize: "2.25rem",
+                    lineHeight: "2.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
-                    fontSize: "20px",
-                    lineHeight: "28px",
+                    fontSize: "3rem",
+                    lineHeight: "1",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
@@ -205,7 +252,10 @@ export default function Dna() {
                 </Button>
               </ThemeProvider>
             </form>
-            <p className="text-slate-700 text-base font-semibold">
+            <p
+              className="text-slate-700 text-base font-semibold
+            md:text-2xl"
+            >
               Jobansøgninger sendes til:{" "}
               <span className="text-yellow-700">kontakt@mentorplan.dk</span>
             </p>
