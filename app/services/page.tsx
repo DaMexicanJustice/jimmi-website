@@ -90,7 +90,7 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-5 uppercase font-bold text-xl bg-amber-500
+                className="p-2 uppercase font-bold text-xl bg-amber-500
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"
@@ -124,7 +124,7 @@ export default function Services() {
               velit.
             </p>
             <Button
-              className="p-5 uppercase font-bold text-xl bg-blue-500
+              className="p-2 uppercase font-bold text-xl bg-blue-500
                   md:text-3xl
                   lg:text-sm"
               variant="contained"
@@ -157,7 +157,7 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-5 uppercase font-bold text-xl bg-yellow-500
+                className="p-2 uppercase font-bold text-xl bg-yellow-500
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"
@@ -191,7 +191,7 @@ export default function Services() {
             </p>
             <ThemeProvider theme={indigoTheme}>
               <Button
-                className="p-5 uppercase font-bold text-xl bg-indigo-500 text-white
+                className="p-2 uppercase font-bold text-xl bg-indigo-500 text-white
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"
@@ -227,7 +227,7 @@ export default function Services() {
             </p>
             <ThemeProvider theme={orangeTheme}>
               <Button
-                className="p-5 uppercase font-bold text-xl bg-orange-500
+                className="p-2 uppercase font-bold text-xl bg-orange-500
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"

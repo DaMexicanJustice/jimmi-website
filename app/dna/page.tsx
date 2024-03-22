@@ -148,14 +148,14 @@ export default function Dna() {
             </h2>
             <p
               className="text-slate-700 text-xl text-justify w-11/12
-            md:text-base md:w-8/12"
+            md:text-base md:w-9/12"
             >
               Elit amet veniam anim esse sint do pariatur nisi. Et quis officia
               ea do irure consequat sit cillum.
             </p>
             <form
               className="flex flex-col gap-3 w-11/12
-            md:gap-1 md:w-8/12"
+            md:gap-1 md:w-9/12"
             >
               <TextField
                 id="standard-basic"
@@ -203,6 +203,7 @@ export default function Dna() {
                   label="Din e-mail"
                   variant="standard"
                   type="email"
+                  className="basis-8/12"
                   InputLabelProps={{
                     style: {
                       fontSize: "1rem",
@@ -219,9 +220,10 @@ export default function Dna() {
                 />
                 <TextField
                   id="standard-basic"
-                  label="Telefonnummer"
+                  label="Telefon"
                   variant="standard"
                   type="tel"
+                  className="basis-4/12"
                   InputLabelProps={{
                     style: {
                       fontSize: "1rem",
@@ -273,7 +275,7 @@ export default function Dna() {
             md:text-base"
             >
               Jobansøgninger sendes til:{" "}
-              <span className="text-yellow-700">kontakt@mentorplan.dk</span>
+              <span className="text-blue-500">kontakt@mentorplan.dk</span>
             </p>
           </div>
         </main>
