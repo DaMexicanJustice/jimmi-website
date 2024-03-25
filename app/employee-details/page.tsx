@@ -1,4 +1,4 @@
-"use client"; // This is a client component"use client";
+/* "use client"; // This is a client component"use client";
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
@@ -247,3 +247,4 @@ export default function EmployeeDetails() {
     </>
   );
 }
+ */
