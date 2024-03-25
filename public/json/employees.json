@@ -1,0 +1,33 @@
+{
+    "employees": [
+      {
+        "name": "Jimmi Liljehult",
+        "img": "/images/jimmi.jpg",
+        "role": "Mentor",
+        "email": "email@adresse.dk",
+        "phone": "+4512345678"
+      },
+      {
+        "name": "Emilie Søgaard",
+        "img": "/images/emilie.jpg",
+        "role": "Mentor",
+        "email": "email@adresse.dk",
+        "phone": "+4512345678"
+      },
+      {
+        "name": "Casper Tanholt",
+        "img": "/images/casper.jpg",
+        "role": "Mentor",
+        "email": "email@adresse.dk",
+        "phone": "+4512345678"
+      },
+      {
+        "name": "Magatte Wade",
+        "img": "/images/magatte.jpg",
+        "role": "Mentor",
+        "email": "email@adresse.dk",
+        "phone": "+4512345678"
+      }
+    ]
+  }
+  

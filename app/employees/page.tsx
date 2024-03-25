@@ -99,9 +99,15 @@ export default function Employees() {
                   </div>
                   <div className="flex flex-row justify-end">
                     <div className="flex flex-row justify-center items-center size-24 rounded-full border-2 bg-orange-500">
-                      <p className="font-conduit text-slate-100 text-lg text-center text-wrap">
+                      <Link
+                        href={{
+                          pathname: "/employee-details",
+                          query: { id: index },
+                        }}
+                        className="font-conduit text-slate-100 text-lg text-center text-wrap"
+                      >
                         Læs <br></br> Mere
-                      </p>
+                      </Link>
                     </div>
                   </div>
                 </div>
