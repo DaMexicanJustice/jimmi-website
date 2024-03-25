@@ -5,6 +5,7 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { promises as fs } from "fs";
 
+// Defining the object structure
 interface Employee {
   name: string;
   role: string;
@@ -14,11 +15,14 @@ interface Employee {
 }
 
 export default async function Employees() {
+  // reading local json file
   const file = await fs.readFile(
     process.cwd() + "/public/json/employees.json",
     "utf8"
   );
+  // Parsing JSON string object to JS object
   const employeeData = JSON.parse(file);
+  // Generating array of JS objects based on defined interface structure
   const employees: Employee[] = employeeData.employees;
   return (
     <>

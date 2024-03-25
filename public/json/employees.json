@@ -3,30 +3,95 @@
       {
         "name": "Jimmi Liljehult",
         "img": "/images/jimmi.jpg",
-        "role": "Mentor",
-        "email": "email@adresse.dk",
-        "phone": "+4512345678"
+        "role": "Indehaver af mentorplan",
+        "email": "jl@mentorplan.dk",
+        "phone": "+4520715131",
+        "competences": {
+          "languages": {
+            "Danish":"Dansk",
+            "English":"Engelsk"
+          },
+          "education": {
+            "0":"politibejent",
+            "1":"Motiverende samtale" ,
+            "2":"Løsningsfokuseret Samtale",
+            "3":"Analyse af Forebyggende Arbejde"
+          },
+          "experience": {
+            "0":"Politiarbejde siden 2002",
+            "1":"Nærpolitibetjent – siden 2019",
+            "2":"SSP arbejde",
+            "3":"Mentor for indsatte i bandeexit – siden 2014",
+            "4":"Pædagogmedhjælper på specialinstitution – 2013-2021"
+          },
+          "article":{
+            "headline": "Med mere end 25 års erfaring i arbejdet med mennesker, etablerede jeg Mentorplan i 2016 med et klart mål om at hjælpe sårbare borgere med at skabe en meningsfuld hverdag ved at komme tættere på arbejdsmarkedet eller i uddannelse.",
+            "text": "Jeg brænder for at støtte borgere, der af forskellige årsager har det svært og kræver en individuel indsats for at komme tilbage på rette spor, uanset hvilken type borger der er tale om, fx psykisk/fysisk sygdom, misbrug eller hård kriminalitet. Jeg formår at skabe en relation, som øger engagementet og samarbejdsviljen hos borgerne, da de føler sig hørt og værdsat. Min faglige ballast har rustet mig til at forstå og hjælpe en mangfoldig gruppe af borgere med forskellige baggrunde og udfordringer. Jeg har sideløbende med mit arbejde i politiet varetaget flere forskellige roller. Siden 2014 har jeg arbejdet som mentor for Kriminalforsorgen med fokus på arbejdet med indsatte i fængsler, som er gået i bandeexit. Før da som pædagogmedhjælper på Specialinstitutionen Skodsborg, hvis målgruppe er socialt udsatte unge i alderen 13 til 21 år, der har brug for særlig støtte. Fælles for ovenstående er at jeg altid har ønsket at gøre en forskel for den enkelte. Min professionelle identitet er forankret i samspillet mellem rådgivning og vejledning, og min tilgang er centreret om 'empowerment', da jeg tror på, at alle mennesker fortjener muligheden for at tage ejerskab over deres eget liv, uanset om det handler om jobmuligheder eller andre aspekter, der kan berige det liv, de ønsker at leve. Jeg arbejder tålmodigt og støttende og hjælper borgere med at realisere deres mål. Jeg tænker kreativt og er god til at finde alternative løsninger. Desuden har jeg et bredt netværk af virksomheder, som jeg samarbejder med, når en borger skal i praktik, løntilskud eller ordinært arbejde. Jeg møder altid borgeren med respekt, og fokuserer på at skabe en tillidsfuld relation. Dette anser jeg som afgørende, for at opnå et vellykket samarbejde med borgeren. Jeg har samtidig en struktureret tilgang til arbejdet med borgere, der inkluderer klar målsætning og planlægning. Jeg prioriterer tydelig kommunikation og tilpasser min tilgang til den enkelte borgers unikke behov og udfordringer. En central del af min tilgang er min vilje til aldrig at give op. Jeg forbliver dedikeret og vedholdende i at guide og støtte borgerne på deres rejse mod beskæftigelse eller uddannelse."
+          },
+          "citizen-type": "Jeg har primært erfaring med særligt udsatte borgere, som kæmper med komplekse problemstillinger udover ledighed. Dette inkluderer en bred vifte af grupper, såsom aktivitetsparate kontanthjælpsmodtagere over og under 30 år, selvforsørgende individer, jobparate personer, borgere i ressourceforløb, revalidender og lignende. Mine kompetencer omfatter evnen til at skabe en positiv og professionel relation, empati, stærke kommunikationsfærdigheder, problemløsningsevne og evnen til at motivere og inspirere andre.",
+          "resume": "Min spidskompetence er at jeg formår at etablere en stærk og tryg relation, med alle typer af borgere, fra første møde med borgeren, hvilket er med til at skabe en positiv udvikling i forløbet Er min styrke til naturlige tilgang, hvilket effektivt fremmer engagement og motivation hos dem jeg arbejder med."
+        }
       },
       {
-        "name": "Emilie Søgaard",
-        "img": "/images/emilie.jpg",
-        "role": "Mentor",
-        "email": "email@adresse.dk",
-        "phone": "+4512345678"
+        "name": "Malte Mailund  ",
+        "img": "/images/malte.jpg",
+        "role": "mentor og kontaktperson",
+        "email": "mm@mentorplan.dk",
+        "phone": "+4527594600",
+        "competences": {
+          "languages": {
+            "Danish":"Dansk",
+            "English":"Engelsk"
+          },
+          "education": {
+            "0":"politibejent"
+          },
+          "experience": {
+            "0":"Politiarbejde siden 2017",
+            "1":"SSP-arbejde siden 2019",
+            "2":"Lærervikar – 2012-2014",
+            "3":"Forsvaret - 2010"
+          },
+          "article":{
+            "headline": "Jeg tøver ikke med at indlede udfordrende samtaler, når det er nødvendigt. Dog er jeg fast overbevist om, at en tilgang, der fokuserer på at identificere og udnytte individuelle styrker, er afgørende for at løse komplekse problemer og overvinde barrierer.",
+            "text": "Jeg brænder for at støtte borgere, der af forskellige årsager har det svært og kræver en individuel indsats for at komme tilbage på rette spor, uanset hvilken type borger der er tale om, fx psykisk/fysisk sygdom, misbrug eller hård kriminalitet. Jeg formår at skabe en relation, som øger engagementet og samarbejdsviljen hos borgerne, da de føler sig hørt og værdsat. Min faglige ballast har rustet mig til at forstå og hjælpe en mangfoldig gruppe af borgere med forskellige baggrunde og udfordringer. Jeg har sideløbende med mit arbejde i politiet varetaget flere forskellige roller. Siden 2014 har jeg arbejdet som mentor for Kriminalforsorgen med fokus på arbejdet med indsatte i fængsler, som er gået i bandeexit. Før da som pædagogmedhjælper på Specialinstitutionen Skodsborg, hvis målgruppe er socialt udsatte unge i alderen 13 til 21 år, der har brug for særlig støtte. Fælles for ovenstående er at jeg altid har ønsket at gøre en forskel for den enkelte. Min professionelle identitet er forankret i samspillet mellem rådgivning og vejledning, og min tilgang er centreret om 'empowerment', da jeg tror på, at alle mennesker fortjener muligheden for at tage ejerskab over deres eget liv, uanset om det handler om jobmuligheder eller andre aspekter, der kan berige det liv, de ønsker at leve. Jeg arbejder tålmodigt og støttende og hjælper borgere med at realisere deres mål. Jeg tænker kreativt og er god til at finde alternative løsninger. Desuden har jeg et bredt netværk af virksomheder, som jeg samarbejder med, når en borger skal i praktik, løntilskud eller ordinært arbejde. Jeg møder altid borgeren med respekt, og fokuserer på at skabe en tillidsfuld relation. Dette anser jeg som afgørende, for at opnå et vellykket samarbejde med borgeren. Jeg har samtidig en struktureret tilgang til arbejdet med borgere, der inkluderer klar målsætning og planlægning. Jeg prioriterer tydelig kommunikation og tilpasser min tilgang til den enkelte borgers unikke behov og udfordringer. En central del af min tilgang er min vilje til aldrig at give op. Jeg forbliver dedikeret og vedholdende i at guide og støtte borgerne på deres rejse mod beskæftigelse eller uddannelse."
+          },
+          "citizen-type": "Jeg er særligt god til at rykke unge, der er i risiko for kriminalitet, samt borgere, der kæmper med psykiske udfordringer som angst, ADHD og depression. Årsagen til dette er, at jeg arbejder relations skabende, for at støtte de unge i at træffe bedre valg. Jeg er i stand til at se igennem den ydre facade af ballade eller uhensigtsmæssig adfærd, og lægger fordommene på hylden når jeg møder den pågældende. Ved hjælp af fokus på det de kan og det de gør godt, skaber vi ringe i vandet, så de bliver i stand til at arbejde sig nærmere det liv, som de egentlig ønsker sig.",
+          "resume": "Min spidskompetence er troen på vigtigheden i opbygningen af positive relationer og rollemodeller. Herigennem kan vi skabe perspektivering, hvor fokus er på at følge op og sikre resultater."
+        }
       },
       {
-        "name": "Casper Tanholt",
-        "img": "/images/casper.jpg",
-        "role": "Mentor",
-        "email": "email@adresse.dk",
-        "phone": "+4512345678"
-      },
-      {
-        "name": "Magatte Wade",
-        "img": "/images/magatte.jpg",
-        "role": "Mentor",
-        "email": "email@adresse.dk",
-        "phone": "+4512345678"
+        "name": "Marck Winther",
+        "img": "/images/marck.jpg",
+        "role": "mentor og kontaktperson",
+        "email": "mw@mentorplan.dk",
+        "phone": "+4593806383",
+        "competences": {
+          "languages": {
+            "Danish":"Dansk",
+            "English":"Engelsk"
+          },
+          "education": {
+            "0":"politibejent",
+            "1":"NLP practitioner" ,
+            "2":"VVS montør"
+          },
+          "experience": {
+            "0":"Politiarbejde - siden 2018",
+            "1":"Nærpolitibetjent – 2022-2022",
+            "2":"Mentor",
+            "3":"Coach – 2014 og frem",
+            "4":"Støtte- og kontaktperson Institutionen Godhavn med socialt udsatte borgere – 2015-2016",
+            "5":"Pædagogmedhjælper socialinstitutionen Skodsborg – 2014-2017",
+            "6":"Selvstændig VVS 2021 og frem"
+          },
+          "article":{
+            "headline": "Jeg møder mennesker, hvor de er. Med min empatiske, forstående og engagerede tilgang, skaber vi sammen rammerne for den videre udvikling.",
+            "text": "Med mine uddannelser og brede erhvervserfaring, er jeg en mentor med en unik kombination af færdigheder. Min erfaring inden for NLP giver mig værktøjer til at hjælpe med personlig udvikling og kommunikation. Min erfaring som politibetjent giver mig en god forståelse for håndtering af udfordrende situationer, mens min baggrund som støtte- og kontaktperson afspejler min empati og omsorg for andre. Som kontaktperson på Godhavn bestod mine opgaver i at støtte og vejlede udsatte unge med psykiske lidelser eller udviklingsmæssige vanskeligheder, herunder med arbejdet under afrusningsture. I mit arbejde som pædagog på Skodsborg bestod mit arbejde i at støtte og vejlede udsatte unge med psykiske lidelser eller udviklingsmæssige vanskeligheder. Efterfølgende brugte jeg min faglighed som betjent i PUK, som er politiets ungdomsklub. Her var mine opgaver at aktivering af unge fra Nørrebro med sport, samt støtte og vejledning. Nærpolitiet bød på opgaver i form af relationsarbejde i socialt udsatte boligområder. Her vi havde stor kontaktflade bl.a med unge der var på kant med loven. Samarbejde med skoler, institutioner, og kommunen samt bekymringssamtaler med forældrene. Sammen skaber disse kompetencer et solidt fundament for at være en stærk og støttende mentorrolle. Jeg arbejder aktivt på at afdække den enkeltes styrker og muligheder, for der igennem at finde løsninger på udfordringer, og fremme drømme."
+          },
+          "citizen-type": "Jeg er særligt god til borgere med udfordringer som ADHD, angst samt misbrugsproblemer. Borgere der er udfordret både arbejdsmæssigt, helbredsmæssigt og socialt, gør jeg en dyd ud af at hjælpe, idet jeg forstår at skabe et tillidsfuldt og respektfuldt forhold til den enkelte. Jeg har en optimistisk tilgang til livet og tror på det bedste i mennesket. For mig handler det altid om at møde enhver borger fordomsfrit der, hvor de er i livet samtidig med, at borgeren oplever motivation til udvikling som et resultat af min ærlige og ligefremme personlighed.",
+          "resume": "Min spidskompetence er at skabe ægte relationer med folk fra alle baggrunde, kombineret med en målrettet indsats, for at sikre, at vi sammen skaber ægte forandring og fremskridt."
+        }
       }
     ]
   }
