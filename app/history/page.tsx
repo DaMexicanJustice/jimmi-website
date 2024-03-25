@@ -8,7 +8,7 @@ export default function History() {
       <section
         id="History"
         className="px-5 min-h-[calc(100svh-6rem)] bg-slate-200 overflow-hidden
-        md:px-40 md:py-40
+        md:px-20 md:py-40
         xl:py-0"
       >
         <main

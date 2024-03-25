@@ -6,11 +6,11 @@ export default function Hero() {
       <section
         id="Hero"
         className="px-5 h-[calc(100svh-6rem)] mt-24
-      md:px-40"
+      md:px-20"
       >
         <main
           className="flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
-        md:px-40 md:gap-10"
+        md:px-20 md:gap-10"
         >
           <div className="flex flex-row items-center gap-3">
             <hr

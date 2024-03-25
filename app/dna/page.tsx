@@ -71,7 +71,7 @@ export default function Dna() {
       <section
         id="DNA"
         className="px-5 bg-slate-300 min-h-[calc(100svh-6rem)] 
-        md:px-40 md:h-44"
+        md:px-20 md:h-44"
       >
         <main
           className="flex flex-col items-center justify-center h-full

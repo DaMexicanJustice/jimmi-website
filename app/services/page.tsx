@@ -60,7 +60,7 @@ export default function Services() {
       <section
         id="Services"
         className="px-5 min-h-[calc(100svh-6rem)] bg-orange-50
-        md:px-40"
+        md:px-20"
       >
         <main
           className="flex flex-col h-full gap-8 md:gap-5 py-8
