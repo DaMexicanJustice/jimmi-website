@@ -3,39 +3,23 @@ import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { promises as fs } from "fs";
 
-const employees = [
-  {
-    name: "Jimmi Liljehult",
-    img: "/images/jimmi.jpg",
-    role: "Mentor",
-    email: "email@adresse.dk",
-    phone: "+4512345678",
-  },
-  {
-    name: "Emilie Søgaard",
-    img: "/images/emilie.jpg",
-    role: "Mentor",
-    email: "email@adresse.dk",
-    phone: "+4512345678",
-  },
-  {
-    name: "Casper Tanholt",
-    img: "/images/casper.jpg",
-    role: "Mentor",
-    email: "email@adresse.dk",
-    phone: "+4512345678",
-  },
-  {
-    name: "Magatte Wade",
-    img: "/images/magatte.jpg",
-    role: "Mentor",
-    email: "email@adresse.dk",
-    phone: "+4512345678",
-  },
-];
+interface Employee {
+  name: string;
+  role: string;
+  email: string;
+  phone: string;
+  img: string;
+}
 
-export default function Employees() {
+export default async function Employees() {
+  const file = await fs.readFile(
+    process.cwd() + "/public/json/employees.json",
+    "utf8"
+  );
+  const employeeData = JSON.parse(file);
+  const employees: Employee[] = employeeData.employees;
   return (
     <>
       <Navbar></Navbar>
@@ -58,9 +42,8 @@ export default function Employees() {
               </p>
               <hr className="border border-solid border-slate-900 "></hr>
             </div>
-
             <div className="flex flex-col gap-5">
-              {employees.map((e, index) => (
+              {employees.map((e: Employee, index: number) => (
                 <div
                   key={index}
                   className="bg-slate-100 grow flex flex-col gap-1 p-5 shadow-xl"

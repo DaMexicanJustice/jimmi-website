@@ -158,7 +158,7 @@ export default function Dna() {
             md:gap-1 md:w-9/12"
             >
               <TextField
-                id="standard-basic"
+                id="form-name"
                 label="Dit fulde navn"
                 variant="standard"
                 InputLabelProps={{
@@ -176,7 +176,7 @@ export default function Dna() {
                 }}
               />
               <TextField
-                id="standard-basic"
+                id="form-company-name"
                 label="Firma navn"
                 variant="standard"
                 className="hidden"
@@ -199,7 +199,7 @@ export default function Dna() {
               xl:flex-row xl:gap-5"
               >
                 <TextField
-                  id="standard-basic"
+                  id="form-email"
                   label="Din e-mail"
                   variant="standard"
                   type="email"
@@ -219,7 +219,7 @@ export default function Dna() {
                   }}
                 />
                 <TextField
-                  id="standard-basic"
+                  id="form-phone-number"
                   label="Telefon"
                   variant="standard"
                   type="tel"
@@ -240,7 +240,7 @@ export default function Dna() {
                 />
               </div>
               <TextField
-                id="standard-basic"
+                id="form-message"
                 label="Besked"
                 variant="standard"
                 multiline
