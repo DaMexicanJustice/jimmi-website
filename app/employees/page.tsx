@@ -3,7 +3,7 @@ import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import { promises as fs } from "fs";
+import { getEmployeeData } from "../utils/dataHandler";
 
 // Defining the object structure
 interface Employee {
@@ -15,13 +15,7 @@ interface Employee {
 }
 
 export default async function Employees() {
-  // reading local json file
-  const file = await fs.readFile(
-    process.cwd() + "/public/json/employees.json",
-    "utf8"
-  );
-  // Parsing JSON string object to JS object
-  const employeeData = JSON.parse(file);
+  const employeeData = await getEmployeeData();
   // Generating array of JS objects based on defined interface structure
   const employees: Employee[] = employeeData.employees;
   return (
@@ -74,7 +68,7 @@ export default async function Employees() {
                       <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
                       <p className="font-conduit text-slate-800">{e.email}</p>
                     </div>
-                    <div className="flex flex-row gap-2">
+                    <div className="flex flex-row gap-2 items-center">
                       <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
                       <a
                         href={`tel:${e.phone}`}
