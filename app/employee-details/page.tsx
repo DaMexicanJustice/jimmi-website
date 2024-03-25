@@ -1,4 +1,4 @@
-/* "use client"; // This is a client component"use client";
+"use client"; // This is a client component"use client";
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
@@ -70,7 +70,7 @@ interface Employee {
 }
 
 export default function EmployeeDetails() {
-  const searchParams = useSearchParams();
+  /* const searchParams = useSearchParams();
   const search = searchParams.get("id");
   const id = parseInt(search || "0", 10); //
   const [data, setData] = useState<Employee | null>(null);
@@ -94,13 +94,12 @@ export default function EmployeeDetails() {
           error
         )
       );
-  }, [id]);
+  }, [id]); */
 
   return (
     <>
       <Navbar></Navbar>
-      <Suspense>
-        <section
+      {/* <section
           id="Employee-details"
           className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-300 py-5
       md:px-20"
@@ -241,10 +240,8 @@ export default function EmployeeDetails() {
               </Link>
             </ThemeProvider>
           </main>
-        </section>
-      </Suspense>
+        </section> */}
       <Footer></Footer>
     </>
   );
 }
- */
