@@ -135,8 +135,8 @@ const Navbar: React.FC = () => {
         md:flex
         "
         >
-          <Link href="/">Home</Link>
-          <Link href="/employees">Employees</Link>
+          <Link href="/">Forside</Link>
+          <Link href="/employees">Medarbejdere</Link>
           <Link href="#">Menu Item 3</Link>
           <Link href="#">Menu Item 4</Link>
         </div>
