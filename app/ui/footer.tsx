@@ -202,7 +202,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col justify-between items-end gap-5 basis-1/3">
             <ArrowUpIcon
-              className="size-12"
+              className="size-12 hover:cursor-pointer"
               onClick={scrollToTop}
             ></ArrowUpIcon>
             <Link

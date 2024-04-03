@@ -8,10 +8,22 @@ import { getEmployeeData } from "../utils/dataHandler";
 // Defining the object structure
 interface Employee {
   name: string;
+  img: string;
   role: string;
   email: string;
   phone: string;
-  img: string;
+  competences: {
+    languages: {
+      Danish: string;
+      English: string;
+    };
+    education: {
+      [key: string]: string;
+    };
+    experience: {
+      [key: string]: string;
+    };
+  };
 }
 
 export default async function Employees() {
@@ -47,7 +59,7 @@ export default async function Employees() {
               {employees.map((e: Employee, index: number) => (
                 <div
                   key={index}
-                  className="bg-slate-100 grow flex flex-col gap-1 p-5 shadow-xl
+                  className="relative bg-slate-100 grow flex flex-col gap-1 p-5 shadow-xl group
                   xl:basis-3/12 xl:grow-0 xl:p-0 xl:gap-auto"
                 >
                   <div
@@ -62,10 +74,10 @@ export default async function Employees() {
                       height={260}
                       alt="Medarbejder billed"
                       className="w-full h-full object-cover grayscale
-                      xl:object-fill"
+                      "
                     />
                   </div>
-                  <div className="xl:p-5">
+                  <div id="personal-info" className="xl:p-5">
                     <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
                       {e.name}
                     </p>
@@ -73,7 +85,10 @@ export default async function Employees() {
                       {e.role}
                     </p>
                   </div>
-                  <div className="flex flex-row justify-between">
+                  <div
+                    id="contact-info"
+                    className="flex flex-row justify-between"
+                  >
                     <div className="xl:p-5">
                       <div className="flex flex-row gap-2 items-center">
                         <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
@@ -105,6 +120,60 @@ export default async function Employees() {
                         </div>
                       </Link>
                     </div>
+                  </div>
+                  <div
+                    id="overlay"
+                    className="absolute w-full h-full bg-slate-100 opacity-0
+                    group-hover:opacity-100 transition-opacity duration-500 ease-in-out p-5"
+                  >
+                    <p className="uppercase text-slate-700 font-conduit">
+                      Kompetencedækning
+                    </p>
+                    <p className="uppercase text-orange-500 font-conduit">
+                      Sprog
+                    </p>
+                    <p className="text-slate-900 text-sm">
+                      {e.competences.languages.Danish} <br></br>
+                      {e.competences.languages.English}
+                    </p>
+                    <p className="uppercase text-orange-500 font-conduit">
+                      Uddannelse
+                    </p>
+                    <p className="text-slate-900 text-sm">
+                      {Object.keys(e.competences.education).map(
+                        (key: string, index: number) => (
+                          <p className="text-slate-900 " key={index}>
+                            {e.competences.education[key]}
+                          </p>
+                        )
+                      )}
+                    </p>
+                    <p className="uppercase text-orange-500 font-conduit">
+                      Erfaring
+                    </p>
+                    <p className="text-slate-900 text-sm">
+                      {Object.keys(e.competences.experience).map(
+                        (key: string, index: number) => (
+                          <p className="text-slate-900" key={index}>
+                            {e.competences.experience[key]}
+                          </p>
+                        )
+                      )}
+                    </p>
+                    <Link
+                      href={{
+                        pathname: "/employee-details",
+                        query: { id: index },
+                      }}
+                      className="font-conduit text-slate-100 text-lg text-center text-wrap"
+                    >
+                      <div
+                        className="flex flex-row justify-center items-center size-16 rounded-full border-2 bg-orange-500 uppercase font-bold text-sm 
+                    bottom-0 right-0 absolute text-center m-5 font-conduit hover:cursor-pointer"
+                      >
+                        Læs <br></br> Mere
+                      </div>
+                    </Link>
                   </div>
                 </div>
               ))}

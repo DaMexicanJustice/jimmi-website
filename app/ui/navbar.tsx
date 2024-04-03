@@ -135,7 +135,9 @@ const Navbar: React.FC = () => {
         md:flex
         "
         >
-          <Link href="/">Forside</Link>
+          <Link className="hover:underline hover:-translate-y-0.5" href="/">
+            Forside
+          </Link>
           <Link href="/employees">Medarbejdere</Link>
           <Link href="#">Menu Item 3</Link>
           <Link href="#">Menu Item 4</Link>
