@@ -100,7 +100,7 @@ export default async function Employees() {
                         }}
                         className="font-conduit text-slate-100 text-lg text-center text-wrap"
                       >
-                        <div className="flex flex-row justify-center items-center size-24 rounded-full border-2 bg-orange-500">
+                        <div className="flex flex-row justify-center items-center size-16 rounded-full border-2 bg-orange-500 uppercase font-bold text-sm">
                           Læs <br></br> Mere
                         </div>
                       </Link>

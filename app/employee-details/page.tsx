@@ -150,13 +150,15 @@ export default function EmployeeDetails() {
                   {data ? data.name : "no-data"}
                 </p>
                 <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
-                  role
+                  {data ? data.role : "no-data"}
                 </p>
               </div>
               <div>
                 <div className="flex flex-row gap-2 justify-center items-center">
                   <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
-                  <p className="font-conduit text-slate-800">email</p>
+                  <p className="font-conduit text-slate-800">
+                    {data ? data.email : "no-data"}
+                  </p>
                 </div>
                 <div className="flex flex-row gap-2 justify-center items-center">
                   <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
@@ -164,7 +166,7 @@ export default function EmployeeDetails() {
                     href="tel:4512345678"
                     className="font-conduit text-slate-800"
                   >
-                    phone
+                    {data ? data.phone : "no-data"}
                   </a>
                 </div>
               </div>
@@ -176,49 +178,57 @@ export default function EmployeeDetails() {
                   <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
                     Sprog
                   </p>
-                  <p className="text-slate-900">Sprog</p>
-                  <p className="text-slate-900">Sprog</p>
+                  <p className="text-slate-900">
+                    {data ? data.competences.languages.Danish : "no-data"}
+                  </p>
+                  <p className="text-slate-900">
+                    {data ? data.competences.languages.English : "no-data"}
+                  </p>
                   <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
                     Uddannelse/Kurser
                   </p>
-                  uddannelse <br></br> kursus
-                  {/* <div>
-                        {Object.keys(data.competences.education).map(
-                          (key: string, index: number) => (
-                            <p className="text-slate-900" key={index}>
-                              {data.competences.education[key]}
-                            </p>
-                          )
-                        )}
-                      </div> */}
+                  <div>
+                    {Object.keys(data.competences.education).map(
+                      (key: string, index: number) => (
+                        <p className="text-slate-900" key={index}>
+                          {data ? data.competences.education[key] : "no-data"}
+                        </p>
+                      )
+                    )}
+                  </div>
                   <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
                     Erfaring
                   </p>
-                  Erfaring 1<br></br> erfaring 2
-                  {/* <div>
-                        {Object.keys(data.competences.experience).map(
-                          (key: string, index: number) => (
-                            <p className="text-slate-900" key={index}>
-                              {data.competences.experience[key]}
-                            </p>
-                          )
-                        )}
-                      </div> */}
+                  <div>
+                    {Object.keys(data.competences.experience).map(
+                      (key: string, index: number) => (
+                        <p className="text-slate-900" key={index}>
+                          {data ? data.competences.experience[key] : "no-data"}
+                        </p>
+                      )
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-col gap-5">
               <hr className="border border-solid border-slate-900"></hr>
-              <p className="text-blue-950 text-xl text-justify">Headline</p>
+              <p className="text-blue-950 text-xl text-justify">
+                {data ? data.competences.article.headline : "no-data"}
+              </p>
               <hr className="border border-solid border-slate-900"></hr>
               <p className="text-justify text-slate-900 whitespace-pre-line">
-                Text
+                {data ? data.competences.article.text : "no-data"}
               </p>
               <p className="uppercase font-conduitbold text-xl text-blue-950">
                 Hvilke borgere er jeg god til
               </p>
-              <p className="text-justify text-slate-900">Competence text</p>
-              <p className="text-justify text-slate-950 text-lg">Resume text</p>
+              <p className="text-justify text-slate-900">
+                {data ? data.competences["citizen-type"] : "no-data"}
+              </p>
+              <p className="text-justify text-slate-950 text-lg">
+                {data ? data.competences.resume : "no-data"}
+              </p>
             </div>
           </div>
           <ThemeProvider theme={theme}>
