@@ -70,7 +70,7 @@ interface Employee {
 }
 
 export default function EmployeeDetails() {
-  const searchParams = useSearchParams();
+  const searchParams = new URLSearchParams(document.location.search);
   const search = searchParams.get("id");
   const id = parseInt(search || "0", 10);
 
