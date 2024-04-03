@@ -114,67 +114,59 @@ export default function EmployeeDetails() {
       <Navbar></Navbar>
       <section
         id="Employee-details"
-        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-300 py-5
+        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-700 py-5
       md:px-20"
       >
         <main
           className="flex flex-col h-full gap-5 z-40 font-conduit text-center
-        md:gap-10"
+        "
         >
           <div
             className="flex flex-col gap-10 bg-slate-100 p-5
-          md:gap-12 md:flex-row"
+          xl:gap-5 xl:flex-row"
           >
             <div
               className="flex flex-col
-            md:self-start md:gap-5"
+            xl:self-start"
             >
               <p className="uppercase font-bold font-conduitbold text-2xl text-slate-700"></p>
-              <div
-                id="image-container"
-                className="w-full h-96 mb-5
-            md:h-full md:size-3/12
-            lg:size-72"
-              >
+              <div id="image-container" className="w-full h-96 mb-5">
                 <Image
                   src={data ? data.img : "no-img"}
                   width={390}
                   height={260}
                   alt="Medarbejder billed"
-                  className="w-full h-full grayscale
-                  lg:size-96"
+                  className="w-full h-full grayscale object-cover"
                 />
               </div>
-              <div>
-                <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
-                  {data ? data.name : "no-data"}
-                </p>
-                <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
-                  {data ? data.role : "no-data"}
-                </p>
-              </div>
-              <div>
-                <div className="flex flex-row gap-2 justify-center items-center">
-                  <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
-                  <p className="font-conduit text-slate-800">
-                    {data ? data.email : "no-data"}
+
+              <div className="flex flex-col gap-5">
+                <div className="bg-slate-200">
+                  <p className="uppercase font-bold font-conduitbold text-xl text-slate-700 ">
+                    {data ? data.name : "no-data"}
                   </p>
-                </div>
-                <div className="flex flex-row gap-2 justify-center items-center">
-                  <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
-                  <a
-                    href="tel:4512345678"
-                    className="font-conduit text-slate-800"
-                  >
-                    {data ? data.phone : "no-data"}
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
-                    Kompetence dækning
+                  <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                    {data ? data.role : "no-data"}
                   </p>
+
+                  <div className="flex flex-row gap-2 justify-center items-center">
+                    <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
+                    <p className="font-conduit text-slate-800">
+                      {data ? data.email : "no-data"}
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-2 justify-center items-center">
+                    <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
+                    <a
+                      href="tel:4512345678"
+                      className="font-conduit text-slate-800"
+                    >
+                      {data ? data.phone : "no-data"}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="bg-slate-200">
                   <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
                     Sprog
                   </p>
@@ -184,34 +176,48 @@ export default function EmployeeDetails() {
                   <p className="text-slate-900">
                     {data ? data.competences.languages.English : "no-data"}
                   </p>
-                  <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
-                    Uddannelse/Kurser
+                </div>
+                <div className="flex flex-col bg-slate-200">
+                  <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
+                    Kompetence dækning
                   </p>
                   <div>
-                    {Object.keys(data.competences.education).map(
-                      (key: string, index: number) => (
-                        <p className="text-slate-900" key={index}>
-                          {data ? data.competences.education[key] : "no-data"}
-                        </p>
-                      )
-                    )}
+                    <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                      Uddannelse/Kurser
+                    </p>
+                    <div>
+                      {Object.keys(data.competences.education).map(
+                        (key: string, index: number) => (
+                          <p className="text-slate-900" key={index}>
+                            {data ? data.competences.education[key] : "no-data"}
+                          </p>
+                        )
+                      )}
+                    </div>
                   </div>
-                  <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
-                    Erfaring
-                  </p>
                   <div>
-                    {Object.keys(data.competences.experience).map(
-                      (key: string, index: number) => (
-                        <p className="text-slate-900" key={index}>
-                          {data ? data.competences.experience[key] : "no-data"}
-                        </p>
-                      )
-                    )}
+                    <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                      Erfaring
+                    </p>
+                    <div>
+                      {Object.keys(data.competences.experience).map(
+                        (key: string, index: number) => (
+                          <p className="text-slate-900" key={index}>
+                            {data
+                              ? data.competences.experience[key]
+                              : "no-data"}
+                          </p>
+                        )
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-5">
+            <div
+              className="flex flex-col gap-5
+            md:basis-6/12 md:grow"
+            >
               <hr className="border border-solid border-slate-900"></hr>
               <p className="text-blue-950 text-xl text-justify">
                 {data ? data.competences.article.headline : "no-data"}

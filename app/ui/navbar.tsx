@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             </svg>
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <IconButton
             aria-label="fingerprint"
             id="basic-button"
@@ -132,12 +132,10 @@ const Navbar: React.FC = () => {
         <div
           className="hidden flex-row gap-5 justify-end items-center px-5 
         text-white uppercase font-bold text-xl font-conduitbold h-full
-        md:flex
+        xl:flex
         "
         >
-          <Link className="hover:underline hover:-translate-y-0.5" href="/">
-            Forside
-          </Link>
+          <Link href="/">Forside</Link>
           <Link href="/employees">Medarbejdere</Link>
           <Link href="#">Menu Item 3</Link>
           <Link href="#">Menu Item 4</Link>
