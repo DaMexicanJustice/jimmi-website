@@ -137,7 +137,7 @@ export default function EmployeeDetails() {
             lg:size-72"
               >
                 <Image
-                  src="/images/jimmi.jpg"
+                  src={data ? data.img : "no-img"}
                   width={390}
                   height={260}
                   alt="Medarbejder billed"
