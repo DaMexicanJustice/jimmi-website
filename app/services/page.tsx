@@ -24,10 +24,10 @@ declare module "@mui/material/Button" {
 const yellowTheme = createTheme({
   palette: {
     ochre: {
-      main: "#eab308",
-      light: "#facc15",
-      dark: "#ca8a04",
-      contrastText: "#242105",
+      main: "#FFD200",
+      light: "#ffd71a",
+      dark: "#6bd00",
+      contrastText: "#000000",
     },
   },
 });
@@ -59,7 +59,7 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="px-5 min-h-[calc(100svh-6rem)] bg-orange-50
+        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-50 dark:bg-slate-950
         md:px-20"
       >
         <main
@@ -67,18 +67,21 @@ export default function Services() {
         md:flex-row md:flex-wrap md:justify-center md:gap-14"
         >
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-amber-200 shadow-xl shadow-amber-500/50
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <Image
-              src="/images/390x260.png"
-              width={390}
-              height={260}
-              alt="Ydelse 1"
-              className="w-full"
-            />
-            <h1 className="text-amber-700 font-bold text-3xl font-conduit px-5">
+            <div className="overflow-hidden h-44">
+              <Image
+                src="/images/430x370-dark-grey.png"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="w-full object-cover"
+              />
+            </div>
+
+            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
               Ydelse 1
             </h1>
             <p
@@ -90,7 +93,7 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-amber-500
+                className="p-2 uppercase font-bold text-xl bg-yellow-500
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"
@@ -102,18 +105,20 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-blue-200 shadow-xl shadow-blue-500/50
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <Image
-              src="/images/390x260.png"
-              width={390}
-              height={260}
-              alt="Ydelse 2"
-              className="w-full"
-            />
-            <h1 className="text-blue-700 font-bold text-3xl font-conduit px-5">
+            <div className="overflow-hidden h-44">
+              <Image
+                src="/images/430x370-dark-grey.png"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="w-full object-cover"
+              />
+            </div>
+            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
               Ydelse 2
             </h1>
             <p
@@ -123,29 +128,34 @@ export default function Services() {
               Sint cupidatat deserunt eiusmod duis minim eu sit adipisicing ad
               velit.
             </p>
-            <Button
-              className="p-2 uppercase font-bold text-xl bg-blue-500
+            <ThemeProvider theme={yellowTheme}>
+              <Button
+                className="p-2 uppercase font-bold text-xl bg-yellow-500
                   md:text-3xl
                   lg:text-sm"
-              variant="contained"
-            >
-              Læs Mere
-            </Button>
+                variant="contained"
+                color="ochre"
+              >
+                Læs Mere
+              </Button>
+            </ThemeProvider>
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-yellow-200 shadow-xl shadow-yellow-500/50
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <Image
-              src="/images/390x260.png"
-              width={390}
-              height={260}
-              alt="Ydelse 3"
-              className="w-full"
-            />
-            <h1 className="text-yellow-700 font-bold text-3xl font-conduit px-5">
+            <div className="overflow-hidden h-44">
+              <Image
+                src="/images/430x370-dark-grey.png"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="w-full object-cover"
+              />
+            </div>
+            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
               Ydelse 3{" "}
             </h1>
             <p
@@ -169,29 +179,32 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-indigo-200 shadow-xl shadow-indigo-500/50
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0 "
           >
-            <Image
-              src="/images/390x260.png"
-              width={390}
-              height={260}
-              alt="Ydelse 4"
-              className="w-full"
-            />
-            <h1 className="text-indigo-700 font-bold text-3xl px-5 font-conduit">
+            <div className="overflow-hidden h-44">
+              <Image
+                src="/images/430x370-dark-grey.png"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="w-full object-cover"
+              />
+            </div>
+            <h1 className="text-slate-700 font-bold text-3xl px-5 font-conduit">
               Ydelse 4
             </h1>
             <p
               className="text-black text-center px-5
             md:text-lg"
             >
-              Aliquip sunt amet dolor magna irure pariatur sit pariatur.
+              Aliquip sunt amet dolor magna irure pariatur sit pariatur. Magna
+              adipisicing minim nostrud enim non.
             </p>
-            <ThemeProvider theme={indigoTheme}>
+            <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-indigo-500 text-white
+                className="p-2 uppercase font-bold text-xl bg-yellow-500
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"
@@ -203,18 +216,20 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-orange-200 shadow-xl shadow-orange-500/50
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-6/12
           xl:basis-3/12 xl:grow-0"
           >
-            <Image
-              src="/images/390x260.png"
-              width={390}
-              height={260}
-              alt="Ydelse 5"
-              className="w-full"
-            />
-            <h1 className="text-orange-700 font-bold text-3xl font-conduit px-5">
+            <div className="overflow-hidden h-44">
+              <Image
+                src="/images/430x370-dark-grey.png"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="w-full object-cover"
+              />
+            </div>
+            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
               Ydelse 5
             </h1>
             <p
@@ -225,9 +240,9 @@ export default function Services() {
               id eiusmod Lorem fugiat non exercitation esse fugiat commodo in
               magna.
             </p>
-            <ThemeProvider theme={orangeTheme}>
+            <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-orange-500
+                className="p-2 uppercase font-bold text-xl bg-yellow-500
                   md:text-3xl
                   lg:text-sm"
                 variant="contained"

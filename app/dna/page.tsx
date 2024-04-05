@@ -22,13 +22,13 @@ declare module "@mui/material/Button" {
   }
 }
 
-const theme = createTheme({
+const yellowTheme = createTheme({
   palette: {
     ochre: {
-      main: "#eab308",
-      light: "#facc15",
-      dark: "#ca8a04",
-      contrastText: "#242105",
+      main: "#FFD200",
+      light: "#ffd71a",
+      dark: "#6bd00",
+      contrastText: "#000000",
     },
   },
 });
@@ -51,12 +51,12 @@ export default function Dna() {
         md:gap-5"
         >
           <CheckCircleIcon
-            className="size-10 text-blue-700 shrink-0
+            className="size-10 text-yellow-500 shrink-0
             md:size-8
             xl:size-6"
           ></CheckCircleIcon>
           <p
-            className="text-slate-900 text-lg
+            className="text-slate-900 dark:text-slate-50 text-lg
           md:text-base"
           >
             {paragraphs[i]}
@@ -70,12 +70,12 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 bg-slate-300 min-h-[calc(100svh-6rem)] 
+        className="px-5 bg-slate-100 dark:bg-slate-900 min-h-[calc(100svh-6rem)] 
         md:px-20 md:h-44"
       >
         <main
-          className="flex flex-col items-center justify-center h-full
-        md:flex-row md:gap-10 md:justify-between"
+          className="flex flex-col items-center justify-center h-full pb-10
+        md:flex-row md:gap-10 md:justify-between md:pb-0"
         >
           {/* Left Panel / Top Panel */}
           <div
@@ -84,7 +84,7 @@ export default function Dna() {
           xl:items-start xl:basis-5/12"
           >
             <h1
-              className="text-slate-900 text-5xl font-bold font-conduit
+              className="text-slate-950 dark:text-slate-50 text-5xl font-bold font-conduit
             md:text-xl"
             >
               Mollit ea
@@ -94,7 +94,7 @@ export default function Dna() {
             md:justify-start md:gap-1"
             >
               <h2
-                className="text-slate-800 text-4xl font-bold font-conduit
+                className="text-slate-950 dark:text-slate-50 text-4xl font-bold font-conduit
               md:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
@@ -106,21 +106,22 @@ export default function Dna() {
             md:items-start md:gap-2"
             >
               <p
-                className="text-slate-700 text-xl text-justify
+                className="text-slate-800 dark:text-slate-300 text-xl text-justify
               md:text-sm"
               >
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
-              <ThemeProvider theme={theme}>
+              <ThemeProvider theme={yellowTheme}>
                 <Button
-                  className="p-5 uppercase font-bold text-xl bg-yellow-500
-                  md:text-sm md:p-2"
+                  className="p-2 uppercase font-bold text-xl bg-yellow-500
+                  md:text-3xl
+                  lg:text-sm"
                   variant="contained"
                   color="ochre"
                 >
-                  Quis veniam anim nulla
+                  Cillum veniam in ea dolore
                 </Button>
               </ThemeProvider>
             </div>
@@ -128,26 +129,26 @@ export default function Dna() {
 
           {/* Right panel / Bottom Panel */}
           <div
-            className="flex flex-col items-center gap-5 bg-slate-100 p-5 mb-10 
-          border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50
-          md:basis-7/12 md:gap-1
+            className="flex flex-col items-center gap-5 bg-slate-50 dark:bg-stone-900 p-5
+          border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50 dark:shadow-none
+          md:basis-7/12 md:gap-1 md:mb-0
           xl:basis-5/12"
           >
             <a
-              className="no-underline text-4xl text-blue-500 font-bold font-conduit
+              className="no-underline text-4xl text-yellow-500 font-bold font-conduit
               md:text-xl"
               href="tel:+4542955969"
             >
               Ring: +4542955969
             </a>
             <h2
-              className="text-3xl text-black font-semibold font-conduit
+              className="text-3xl text-slate-950 dark:text-slate-50 font-semibold font-conduit
             md:text-lg"
             >
               Eller udfyld formularen
             </h2>
             <p
-              className="text-slate-700 text-xl text-justify w-11/12
+              className="text-slate-700 dark:text-slate-100 text-xl text-justify w-11/12
             md:text-base md:w-9/12"
             >
               Elit amet veniam anim esse sint do pariatur nisi. Et quis officia
@@ -161,33 +162,40 @@ export default function Dna() {
                 id="form-name"
                 label="Dit fulde navn"
                 variant="standard"
+                color="warning"
                 InputLabelProps={{
                   style: {
+                    color: "#FFD200",
                     fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
+                    color: "#ffffff",
                     fontSize: "1.125rem",
                     lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
               />
+
               <TextField
                 id="form-company-name"
                 label="Firma navn"
                 variant="standard"
                 className="hidden"
+                color="warning"
                 InputLabelProps={{
                   style: {
+                    color: "#FFD200",
                     fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
+                    color: "#ffffff",
                     fontSize: "1.125rem",
                     lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
@@ -203,15 +211,18 @@ export default function Dna() {
                   label="Din e-mail"
                   variant="standard"
                   type="email"
+                  color="warning"
                   className="basis-8/12"
                   InputLabelProps={{
                     style: {
+                      color: "#FFD200",
                       fontSize: "1rem",
                       lineHeight: "1.5rem",
                     },
                   }}
                   InputProps={{
                     sx: {
+                      color: "#ffffff",
                       fontSize: "1.125rem",
                       lineHeight: "1.75rem",
                       "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
@@ -223,15 +234,18 @@ export default function Dna() {
                   label="Telefon"
                   variant="standard"
                   type="tel"
+                  color="warning"
                   className="basis-4/12"
                   InputLabelProps={{
                     style: {
+                      color: "#FFD200",
                       fontSize: "1rem",
                       lineHeight: "1.5rem",
                     },
                   }}
                   InputProps={{
                     sx: {
+                      color: "#ffffff",
                       fontSize: "1.125rem",
                       lineHeight: "1.75rem",
                       "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
@@ -243,26 +257,30 @@ export default function Dna() {
                 id="form-message"
                 label="Besked"
                 variant="standard"
+                color="warning"
                 multiline
                 rows={3}
                 InputLabelProps={{
                   style: {
+                    color: "#FFD200",
                     fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
                 }}
                 InputProps={{
                   sx: {
+                    color: "#ffffff",
                     fontSize: "1.125rem",
                     lineHeight: "1.75rem",
                     "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
                   },
                 }}
               />
-              <ThemeProvider theme={theme}>
+              <ThemeProvider theme={yellowTheme}>
                 <Button
-                  className="p-4 uppercase font-bold text-lg bg-yellow-500
-                  md:p-2 md:text-sm md:w-6/12 md:m-auto md:my-5"
+                  className="p-2 uppercase font-bold text-xl bg-yellow-500
+                  md:text-3xl
+                  lg:text-sm"
                   variant="contained"
                   color="ochre"
                 >
@@ -271,11 +289,16 @@ export default function Dna() {
               </ThemeProvider>
             </form>
             <p
-              className="text-slate-700 text-base font-semibold
-            md:text-base"
+              className="text-slate-700 dark:text-slate-300 text-base font-semibold
+            md:text-sm"
             >
               Jobansøgninger sendes til:{" "}
-              <span className="text-blue-500">kontakt@mentorplan.dk</span>
+              <span
+                className="text-yellow-500
+              xl:text-sm"
+              >
+                kontakt@mentorplan.dk
+              </span>
             </p>
           </div>
         </main>

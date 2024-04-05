@@ -7,7 +7,7 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-200 overflow-hidden
+        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-200 dark:bg-slate-800 overflow-hidden
         md:px-20 md:py-40
         xl:py-0"
       >
@@ -32,12 +32,12 @@ export default function History() {
           xl:order-2 xl:basis-7/12"
           >
             <h1
-              className="uppercase text-black text-3xl font-bold font-conduit
+              className="uppercase text-slate-900 dark:text-slate-100 text-3xl font-bold font-conduit
           xl:text-5xl"
             >
               Historik
             </h1>
-            <p className="text-black text-base text-justify leading-10">
+            <p className="text-slate-900 dark:text-slate-100 text-base text-justify leading-10">
               Sunt amet ad cupidatat in excepteur anim ex. Lorem aliqua deserunt
               minim sint quis enim laborum esse adipisicing culpa. Occaecat ut
               duis eiusmod occaecat esse deserunt et fugiat magna irure
@@ -56,7 +56,7 @@ export default function History() {
               <br></br> Adipisicing deserunt Lorem dolore nostrud.
             </p>
             <Link href="https://www.linkedin.com/in/jimmililjehult/">
-              <FaLinkedin className="size-16 text-blue-700"></FaLinkedin>
+              <FaLinkedin className="size-16 fill-blue-700 dark:fill-slate-100"></FaLinkedin>
             </Link>
           </div>
         </main>

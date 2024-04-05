@@ -182,7 +182,7 @@ const Footer: React.FC = () => {
               </h1>
               <p className="m-1 text-xl">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
-                <span className="text-yellow-500">SOHO</span>
+                <span className="text-yellow-500 font-conduitbold">SOHO</span>
               </p>
             </div>
             <div className="">
@@ -202,7 +202,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col justify-between items-end gap-5 basis-1/3">
             <ArrowUpIcon
-              className="size-12 hover:cursor-pointer"
+              className="size-12 hover:cursor-pointer "
               onClick={scrollToTop}
             ></ArrowUpIcon>
             <Link
