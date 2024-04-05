@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer id="footer" className="bottom-0 left-0 text-white">
+      <footer id="footer" className="bottom-0 left-0 text-white bg-blue-950">
         {/* Mobile up to md:breakpoint */}
         <div className="flex flex-col md:hidden gap-10 py-10 items-center">
           <div className="flex flex-row justify-between items-center w-full px-5">

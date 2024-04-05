@@ -32,7 +32,7 @@ export default async function Employees() {
   const employees: Employee[] = employeeData.employees;
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employees"
         className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-300
@@ -139,27 +139,23 @@ export default async function Employees() {
                     <p className="uppercase text-orange-500 font-conduit">
                       Uddannelse
                     </p>
-                    <p className="text-slate-900 text-sm">
-                      {Object.keys(e.competences.education).map(
-                        (key: string, index: number) => (
-                          <p className="text-slate-900 " key={index}>
-                            {e.competences.education[key]}
-                          </p>
-                        )
-                      )}
-                    </p>
+                    {Object.keys(e.competences.education).map(
+                      (key: string, index: number) => (
+                        <p className="text-slate-900 text-sm" key={index}>
+                          {e.competences.education[key]}
+                        </p>
+                      )
+                    )}
                     <p className="uppercase text-orange-500 font-conduit">
                       Erfaring
                     </p>
-                    <p className="text-slate-900 text-sm">
-                      {Object.keys(e.competences.experience).map(
-                        (key: string, index: number) => (
-                          <p className="text-slate-900" key={index}>
-                            {e.competences.experience[key]}
-                          </p>
-                        )
-                      )}
-                    </p>
+                    {Object.keys(e.competences.experience).map(
+                      (key: string, index: number) => (
+                        <p className="text-slate-900 text-sm" key={index}>
+                          {e.competences.experience[key]}
+                        </p>
+                      )
+                    )}
                     <Link
                       href={{
                         pathname: "/employee-details",

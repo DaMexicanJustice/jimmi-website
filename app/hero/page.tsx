@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <section
         id="Hero"
-        className="px-5 h-[calc(100svh-6rem)] mt-24
+        className="px-5 h-svh
       md:px-20"
       >
         <main
@@ -52,17 +52,16 @@ export default function Hero() {
           </h2>
         </main>
         <div
-          className="top-0 left-0 absolute h-[calc(100svh-6rem)] w-full mt-24 object-cover z-30
+          className="top-0 left-0 absolute h-svh w-full object-cover z-30
         bg-black/40"
         ></div>
         <video
-          autoPlay
           loop
           muted
           id="video"
           src="/video/mentorplan.mp4"
           typeof="video/mp4"
-          className="top-0 left-0 absolute h-[calc(100svh-6rem)] w-full mt-24 object-cover"
+          className="top-0 left-0 absolute h-svh w-full object-cover"
         ></video>
       </section>
     </>

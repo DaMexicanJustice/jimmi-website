@@ -10,15 +10,15 @@ import "/app/styles/styles.css";
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar useScrollBehavior={true}></Navbar>
       <main id="main" className="min-h-svh min-w-svh">
         <Hero></Hero>
         <Services></Services>
         <History></History>
         <Dna></Dna>
         <Environment></Environment>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
     </>
   );
 }

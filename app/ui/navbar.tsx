@@ -1,13 +1,17 @@
 "use client"; // This is a client component
 import Link from "next/link";
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 // Material UI for burger menu
 import { IconButton } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Dehaze } from "@mui/icons-material";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  useScrollBehavior: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -16,14 +20,66 @@ const Navbar: React.FC = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  console.log(useScrollBehavior);
+  // Handle navbar transparency & color states depending on scroll
+  const navColorState = useScrollBehavior
+    ? "bg-transparent"
+    : "bg-white dark:bg-black";
+  const svgColorState = useScrollBehavior
+    ? "fill-white"
+    : "fill-black dark:fill-white";
+  const textColorState = useScrollBehavior
+    ? "text-white"
+    : "text-black dark:text-white";
+  const [navbarColor, setNavbarColor] = useState(navColorState);
+  const [svgColor, setSVGColor] = useState(svgColorState);
+  const [textColor, setTextColor] = useState(textColorState);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (useScrollBehavior) {
+        const heroSection = document.getElementById("Hero");
+        const servicesSection = document.getElementById("Services");
+
+        if (heroSection && servicesSection) {
+          const heroSectionRect = heroSection.getBoundingClientRect();
+          const servicesSectionRect = servicesSection.getBoundingClientRect();
+
+          if (window.scrollY < heroSectionRect.height) {
+            setNavbarColor("bg-transparent");
+            setSVGColor("fill-white");
+            setTextColor("text-white");
+          } else if (
+            window.scrollY >= heroSectionRect.height &&
+            window.scrollY < heroSectionRect.height + servicesSectionRect.height
+          ) {
+            // Change navbar color based on the section being scrolled to
+            setNavbarColor("bg-white dark:bg-black");
+            setSVGColor("fill-black dark:fill-white");
+            setTextColor("text-black dark:text-white");
+          } else {
+            // Handle other sections as needed
+            console.log("Else");
+          }
+        }
+      } else {
+        console.log("Disabled scroll behavior");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <nav
         id="navbar"
-        className="fixed top-0 left-0 w-svw px-5 z-50 dark:bg-black h-24 
+        className={`fixed top-0 left-0 w-svw px-5 z-50 ${navbarColor} h-24 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap
-        md:px-20"
+        md:px-20`}
       >
         <div>
           <Link href="/">
@@ -32,7 +88,8 @@ const Navbar: React.FC = () => {
               width="299.87"
               height="97.83"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white w-40 cursor-pointer"
+              className={`${svgColor}  w-28 cursor-pointer transition-colors duration-500
+              xl:w-36`}
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -92,7 +149,10 @@ const Navbar: React.FC = () => {
             onClick={handleClick}
             className="p-5"
           >
-            <Dehaze className="size-12 text-white" />
+            <Dehaze
+              className="size-8 text-white
+            md:size-12  "
+            />
           </IconButton>
           <Menu
             id="basic-menu"
@@ -130,10 +190,10 @@ const Navbar: React.FC = () => {
           </Menu>
         </div>
         <div
-          className="hidden flex-row gap-5 justify-end items-center px-5 
-        text-white uppercase font-bold text-xl font-conduitbold h-full
+          className={`hidden flex-row gap-5 justify-end items-center px-5 transition-colors duration-500
+        ${textColor} uppercase font-bold text-xl font-conduitbold h-full 
         xl:flex
-        "
+        `}
         >
           <Link href="/">Forside</Link>
           <Link href="/employees">Medarbejdere</Link>
