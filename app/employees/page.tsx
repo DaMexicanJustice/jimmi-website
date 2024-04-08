@@ -14,8 +14,7 @@ interface Employee {
   phone: string;
   competences: {
     languages: {
-      Danish: string;
-      English: string;
+      [key: string]: string;
     };
     education: {
       [key: string]: string;
@@ -30,6 +29,7 @@ export default async function Employees() {
   const employeeData = await getEmployeeData();
   // Generating array of JS objects based on defined interface structure
   const employees: Employee[] = employeeData.employees;
+  const maxEducationParagraphs = 7;
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
@@ -116,7 +116,7 @@ export default async function Employees() {
                     >
                       <div
                         className="size-40 rounded-full border-2 bg-orange-500 p-5
-                    uppercase font-conduitbold text-sm rounded-full transform -rotate-45
+                    uppercase font-conduitbold text-sm rounded-full -rotate-45
                     md:size-48
                     xl:size-32 xl:p-4 xl:text-xs"
                       >
@@ -124,9 +124,10 @@ export default async function Employees() {
                       </div>
                     </Link>
                   </div>
+
                   <div
                     id="overlay"
-                    className="absolute w-full h-full bg-slate-100 opacity-0 hidden
+                    className="absolute w-full h-full bg-slate-100 opacity-0 overflow-hidden
                     group-hover:opacity-100 transition-opacity duration-500 ease-in-out px-5 group-hover:block"
                   >
                     <p className="uppercase text-slate-700 font-conduit">
@@ -135,16 +136,22 @@ export default async function Employees() {
                     <p className="uppercase text-orange-500 font-conduit">
                       Sprog
                     </p>
-                    <p className="text-slate-900 text-sm">
-                      {e.competences.languages.Danish} <br></br>
-                      {e.competences.languages.English}
-                    </p>
+                    <div className="flex flex-row gap-1">
+                      {Object.keys(e.competences.languages).map(
+                        (key: string, index: number) => (
+                          <p className="text-slate-900 text-xs" key={index}>
+                            {e.competences.languages[key]}
+                          </p>
+                        )
+                      )}
+                    </div>
+
                     <p className="uppercase text-orange-500 font-conduit">
                       Uddannelse
                     </p>
                     {Object.keys(e.competences.education).map(
                       (key: string, index: number) => (
-                        <p className="text-slate-900 text-sm" key={index}>
+                        <p className="text-slate-900 text-xs" key={index}>
                           {e.competences.education[key]}
                         </p>
                       )
@@ -153,26 +160,31 @@ export default async function Employees() {
                       Erfaring
                     </p>
                     {Object.keys(e.competences.experience).map(
-                      (key: string, index: number) => (
-                        <p className="text-slate-900 text-sm" key={index}>
-                          {e.competences.experience[key]}
-                        </p>
-                      )
+                      (key: string, index: number) =>
+                        index <= maxEducationParagraphs && (
+                          <p
+                            className="text-slate-900 text-xs truncate"
+                            key={index}
+                          >
+                            {e.competences.experience[key]}
+                          </p>
+                        )
                     )}
+
                     <Link
                       href={{
                         pathname: "/employee-details",
                         query: { id: index },
                       }}
                       className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
-                    md:size-24
-                    xl:size-16"
+                      md:size-24
+                      xl:size-16"
                     >
                       <div
                         className="size-40 rounded-full border-2 bg-orange-500 p-5
-                    uppercase font-conduitbold text-sm rounded-full transform -rotate-45
-                    md:size-48
-                    xl:size-32 xl:p-4 xl:text-xs"
+                        uppercase font-conduitbold text-sm rounded-full -rotate-45
+                        md:size-48
+                        xl:size-32 xl:p-4 xl:text-xs"
                       >
                         Læs Mere
                       </div>

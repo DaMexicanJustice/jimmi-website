@@ -8,8 +8,8 @@
       "phone": "+4520715131",
       "competences": {
         "languages": {
-          "Danish": "Dansk",
-          "English": "Engelsk"
+          "0": "Dansk",
+          "1": "Engelsk"
         },
         "education": {
           "0": "Politibetjent",
@@ -40,8 +40,8 @@
       "phone": "+4527594600",
       "competences": {
         "languages": {
-          "Danish": "Dansk",
-          "English": "Engelsk"
+          "0": "Dansk",
+          "1": "Engelsk"
         },
         "education": {
           "0": "Politibetjent"
@@ -68,8 +68,8 @@
       "phone": "+4593806383",
       "competences": {
         "languages": {
-          "Danish": "Dansk",
-          "English": "Engelsk"
+          "0": "Dansk",
+          "1": "Engelsk"
         },
         "education": {
           "0": "Politibetjent",
