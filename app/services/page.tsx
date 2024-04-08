@@ -71,7 +71,10 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="overflow-hidden h-44">
+            <div
+              className="w-full
+            xl:overflow-hidden xl:h-44"
+            >
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
