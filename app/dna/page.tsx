@@ -295,7 +295,7 @@ export default function Dna() {
               Jobansøgninger sendes til:{" "}
               <span
                 className="text-blue-500
-              xl:text-sm"
+              xl:text-xs"
               >
                 kontakt@mentorplan.dk
               </span>
