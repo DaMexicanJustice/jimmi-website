@@ -5,13 +5,14 @@ import React, { useState, useEffect } from "react";
 import { IconButton } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Dehaze } from "@mui/icons-material";
+import { Dehaze, Close } from "@mui/icons-material";
 
 interface NavbarProps {
   useScrollBehavior: boolean;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
+  // Material UI menu implementation
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -20,7 +21,19 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  console.log(useScrollBehavior);
+
+  // Animated custom menu inspired by Mentorplan implementation
+  const [menuState, setMenuState] = useState(false);
+  const [posX, setPosX] = useState("100%");
+  const openMenu = () => {
+    setMenuState(true);
+    setPosX("translate-x-0");
+  };
+  const closeMenu = () => {
+    setMenuState(false);
+    setPosX("translate-x-full");
+  };
+
   // Handle navbar transparency & color states depending on scroll
   const navColorState = useScrollBehavior
     ? "bg-transparent"
@@ -142,6 +155,17 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         <div className="xl:hidden">
           <IconButton
             aria-label="fingerprint"
+            id="burger-menu"
+            onClick={openMenu}
+            className="p-5"
+          >
+            <Dehaze
+              className="size-8 text-white
+            md:size-12  "
+            />
+          </IconButton>
+          {/* <IconButton
+            aria-label="fingerprint"
             id="basic-button"
             aria-controls={open ? "basic-menu" : undefined}
             aria-haspopup="true"
@@ -159,6 +183,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
+            className="fixed top-0 right-0"
             MenuListProps={{
               "aria-labelledby": "basic-button",
             }}
@@ -187,8 +212,26 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             >
               <Link href="#">Menu 4</Link>
             </MenuItem>
-          </Menu>
+          </Menu> */}
         </div>
+
+        <div
+          className={`fixed h-svh w-full bg-slate-50 top-0 right-0 overflow-hidden ${posX}
+          translate-x-full transition-transform duration-300 ease-in-out
+        xl:hidden`}
+        >
+          <div className="w-full h-svh flex flex-row justify-end px-8 py-4">
+            <IconButton
+              aria-label="fingerprint"
+              id="burger-menu"
+              onClick={closeMenu}
+              className="p-5 place-self-start"
+            >
+              <Close className="size-8 fill-slate-500"></Close>
+            </IconButton>
+          </div>
+        </div>
+
         <div
           className={`hidden flex-row gap-5 justify-end items-center px-5 transition-colors duration-500
         ${textColor} uppercase font-bold text-xl font-conduitbold h-full 
