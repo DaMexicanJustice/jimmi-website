@@ -40,7 +40,7 @@ export default async function Employees() {
       >
         <main className="flex h-full flex-col">
           <div className="flex flex-col gap-10 py-5">
-            <div className="bg-slate-100 grow p-5 flex flex-col gap-5 shadow-xl">
+            <div className="bg-slate-100 grow px-5 flex flex-col gap-5 shadow-xl">
               <h1 className="uppercase font-bold text-3xl text-slate-900 font-conduit">
                 Konsulenter
               </h1>
@@ -59,29 +59,28 @@ export default async function Employees() {
               {employees.map((e: Employee, index: number) => (
                 <div
                   key={index}
-                  className="relative bg-slate-100 grow flex flex-col gap-1 p-5 shadow-xl group
-                  xl:basis-3/12 xl:grow-0 xl:p-0 xl:gap-auto"
+                  className="relative bg-slate-100 grow flex flex-col shadow-xl group overflow-hidden
+                  xl:grow-0 xl:p-0 xl:basis-1/5"
                 >
                   <div
                     id="image-container"
-                    className="w-full h-96 mb-5
-                  md:h-full
-                  xl:h-80"
+                    className="mb-5
+                  md:h-full"
                   >
                     <Image
                       src={e.img}
-                      width={390}
-                      height={260}
+                      width={512}
+                      height={512}
                       alt="Medarbejder billed"
                       className="w-full h-full object-cover grayscale
                       "
                     />
                   </div>
-                  <div id="personal-info" className="xl:p-5">
+                  <div id="personal-info" className="px-5">
                     <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
                       {e.name}
                     </p>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                    <p className="uppercase font-bold font-conduitbold text-sm text-orange-500">
                       {e.role}
                     </p>
                   </div>
@@ -89,42 +88,46 @@ export default async function Employees() {
                     id="contact-info"
                     className="flex flex-row justify-between"
                   >
-                    <div className="xl:p-5">
+                    <div className="  p-5">
                       <div className="flex flex-row gap-2 items-center">
                         <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
-                        <p className="font-conduit text-slate-800">{e.email}</p>
+                        <p className="font-conduit text-sm text-slate-800">
+                          {e.email}
+                        </p>
                       </div>
                       <div className="flex flex-row gap-2 items-center">
                         <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
                         <a
                           href={`tel:${e.phone}`}
-                          className="font-conduit text-slate-800"
+                          className="font-conduit text-slate-800 text-sm"
                         >
                           {e.phone}
                         </a>
                       </div>
                     </div>
-                    <div
-                      className="flex flex-row justify-end
-                    xl:p-5"
+                    <Link
+                      href={{
+                        pathname: "/employee-details",
+                        query: { id: index },
+                      }}
+                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
+                    md:size-24
+                    xl:size-16"
                     >
-                      <Link
-                        href={{
-                          pathname: "/employee-details",
-                          query: { id: index },
-                        }}
-                        className="font-conduit text-slate-100 text-lg text-center text-wrap"
+                      <div
+                        className="size-40 rounded-full border-2 bg-orange-500 p-5
+                    uppercase font-conduitbold text-sm rounded-full transform -rotate-45
+                    md:size-48
+                    xl:size-32 xl:p-4 xl:text-xs"
                       >
-                        <div className="flex flex-row justify-center items-center size-16 rounded-full border-2 bg-orange-500 uppercase font-bold text-sm">
-                          Læs <br></br> Mere
-                        </div>
-                      </Link>
-                    </div>
+                        Læs Mere
+                      </div>
+                    </Link>
                   </div>
                   <div
                     id="overlay"
-                    className="absolute w-full h-full bg-slate-100 opacity-0
-                    group-hover:opacity-100 transition-opacity duration-500 ease-in-out p-5"
+                    className="absolute w-full h-full bg-slate-100 opacity-0 hidden
+                    group-hover:opacity-100 transition-opacity duration-500 ease-in-out px-5 group-hover:block"
                   >
                     <p className="uppercase text-slate-700 font-conduit">
                       Kompetencedækning
@@ -161,13 +164,17 @@ export default async function Employees() {
                         pathname: "/employee-details",
                         query: { id: index },
                       }}
-                      className="font-conduit text-slate-100 text-lg text-center text-wrap"
+                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
+                    md:size-24
+                    xl:size-16"
                     >
                       <div
-                        className="flex flex-row justify-center items-center size-16 rounded-full border-2 bg-orange-500 uppercase font-bold text-sm 
-                    bottom-0 right-0 absolute text-center m-5 font-conduit hover:cursor-pointer"
+                        className="size-40 rounded-full border-2 bg-orange-500 p-5
+                    uppercase font-conduitbold text-sm rounded-full transform -rotate-45
+                    md:size-48
+                    xl:size-32 xl:p-4 xl:text-xs"
                       >
-                        Læs <br></br> Mere
+                        Læs Mere
                       </div>
                     </Link>
                   </div>

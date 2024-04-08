@@ -2,7 +2,7 @@
   "employees": [
     {
       "name": "Jimmi Liljehult",
-      "img": "/images/jimmi.jpg",
+      "img": "/images/Jimmi.jpg",
       "role": "Indehaver af mentorplan",
       "email": "jl@mentorplan.dk",
       "phone": "+4520715131",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Malte Mailund  ",
-      "img": "/images/malte.jpg",
+      "img": "/images/Malte.jpg",
       "role": "mentor og kontaktperson",
       "email": "mm@mentorplan.dk",
       "phone": "+4527594600",
@@ -62,7 +62,7 @@
     },
     {
       "name": "Marck Winther",
-      "img": "/images/marck.jpg",
+      "img": "/images/Marck.jpg",
       "role": "mentor og kontaktperson",
       "email": "mw@mentorplan.dk",
       "phone": "+4593806383",
@@ -95,7 +95,7 @@
     },
     {
       "name": "Musa Deveci",
-      "img": "/images/musa.jpg",
+      "img": "/images/Musa.jpg",
       "role": "mentor og kontaktperson",
       "email": "md@mentorplan.dk",
       "phone": "+4593937947",
@@ -125,7 +125,7 @@
     },
     {
       "name": "Esra Karabulut",
-      "img": "/images/esra.jpg",
+      "img": "/images/Esra.jpg",
       "role": "mentor og kontaktperson",
       "email": "ek@mentorplan.dk",
       "phone": "+4542757047",
