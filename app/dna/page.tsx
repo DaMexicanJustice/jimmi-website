@@ -51,7 +51,7 @@ export default function Dna() {
         md:gap-5"
         >
           <CheckCircleIcon
-            className="size-10 text-yellow-500 shrink-0
+            className="size-10 text-yellow-400 shrink-0
             md:size-8
             xl:size-6"
           ></CheckCircleIcon>
@@ -129,7 +129,7 @@ export default function Dna() {
 
           {/* Right panel / Bottom Panel */}
           <div
-            className="flex flex-col items-center gap-5 bg-slate-50 dark:bg-stone-900 p-5
+            className="flex flex-col items-center gap-5 bg-slate-50 dark:bg-slate-200 p-5
           border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-7/12 md:gap-1 md:mb-0
           xl:basis-5/12"
@@ -142,13 +142,13 @@ export default function Dna() {
               Ring: +4542955969
             </a>
             <h2
-              className="text-3xl text-slate-950 dark:text-slate-50 font-semibold font-conduit
+              className="text-3xl text-slate-950 font-semibold font-conduit
             md:text-lg"
             >
               Eller udfyld formularen
             </h2>
             <p
-              className="text-slate-700 dark:text-slate-100 text-xl text-justify w-11/12
+              className="text-slate-700 text-xl text-justify w-11/12
             md:text-base md:w-9/12"
             >
               Elit amet veniam anim esse sint do pariatur nisi. Et quis officia
@@ -165,7 +165,7 @@ export default function Dna() {
                 color="warning"
                 InputLabelProps={{
                   style: {
-                    color: "#FFD200",
+                    color: "#000000",
                     fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
@@ -188,7 +188,7 @@ export default function Dna() {
                 color="warning"
                 InputLabelProps={{
                   style: {
-                    color: "#FFD200",
+                    color: "#000000",
                     fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
@@ -215,7 +215,7 @@ export default function Dna() {
                   className="basis-8/12"
                   InputLabelProps={{
                     style: {
-                      color: "#FFD200",
+                      color: "#000000",
                       fontSize: "1rem",
                       lineHeight: "1.5rem",
                     },
@@ -238,14 +238,14 @@ export default function Dna() {
                   className="basis-4/12"
                   InputLabelProps={{
                     style: {
-                      color: "#FFD200",
+                      color: "#000000",
                       fontSize: "1rem",
                       lineHeight: "1.5rem",
                     },
                   }}
                   InputProps={{
                     sx: {
-                      color: "#ffffff",
+                      color: "#000000",
                       fontSize: "1.125rem",
                       lineHeight: "1.75rem",
                       "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
@@ -262,7 +262,7 @@ export default function Dna() {
                 rows={3}
                 InputLabelProps={{
                   style: {
-                    color: "#FFD200",
+                    color: "#000000",
                     fontSize: "1rem",
                     lineHeight: "1.5rem",
                   },
@@ -289,12 +289,12 @@ export default function Dna() {
               </ThemeProvider>
             </form>
             <p
-              className="text-slate-700 dark:text-slate-300 text-base font-semibold
+              className="text-slate-700 text-base font-semibold
             md:text-sm"
             >
               Jobansøgninger sendes til:{" "}
               <span
-                className="text-yellow-500
+                className="text-blue-500
               xl:text-sm"
               >
                 kontakt@mentorplan.dk

@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
               </h1>
               <p className="m-1 text-2xl">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
-                <span className="text-yellow-500">SOHO</span>
+                <span className="text-yellow-400">SOHO</span>
               </p>
             </div>
             <div className="">
@@ -182,7 +182,7 @@ const Footer: React.FC = () => {
               </h1>
               <p className="m-1 text-xl">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
-                <span className="text-yellow-500 font-conduitbold">SOHO</span>
+                <span className="text-yellow-400 font-conduitbold">SOHO</span>
               </p>
             </div>
             <div className="">

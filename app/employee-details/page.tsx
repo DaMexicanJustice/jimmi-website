@@ -12,6 +12,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { Button, ThemeProvider, createTheme } from "@mui/material";
 import Link from "next/link";
+import { DataArray } from "@mui/icons-material";
 
 // Augment the palette to include an ochre color
 declare module "@mui/material/styles" {
@@ -35,8 +36,8 @@ const theme = createTheme({
   palette: {
     ochre: {
       main: "#eab308",
-      light: "#facc15",
-      dark: "#ca8a04",
+      light: "#faccdd",
+      dark: "#facc15",
       contrastText: "#242105",
     },
   },
@@ -51,8 +52,7 @@ interface Employee {
   phone: string;
   competences: {
     languages: {
-      Danish: string;
-      English: string;
+      [key: string]: string;
     };
     education: {
       [key: string]: string;
@@ -114,7 +114,7 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-700 py-5
+        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-50 dark:bg-slate-900 py-5
       md:px-20"
       >
         <main
@@ -122,7 +122,7 @@ export default function EmployeeDetails() {
         "
         >
           <div
-            className="flex flex-col gap-10 bg-slate-100 p-5
+            className="flex flex-col gap-10 bg-white dark:bg-stone-100 p-5 shadow-xl
           xl:gap-5 xl:flex-row"
           >
             <div
@@ -130,22 +130,22 @@ export default function EmployeeDetails() {
             xl:self-start"
             >
               <p className="uppercase font-bold font-conduitbold text-2xl text-slate-700"></p>
-              <div id="image-container" className="w-full h-96 mb-5">
+              <div id="image-container" className="w-full mb-5">
                 <Image
                   src={data ? data.img : "no-img"}
-                  width={390}
-                  height={260}
+                  width={512}
+                  height={512}
                   alt="Medarbejder billed"
                   className="w-full h-full grayscale object-cover"
                 />
               </div>
 
               <div className="flex flex-col gap-5">
-                <div className="bg-slate-200">
+                <div className="bg-slate-200 dark:bg-stone-200 py-2">
                   <p className="uppercase font-bold font-conduitbold text-xl text-slate-700 ">
                     {data ? data.name : "no-data"}
                   </p>
-                  <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                  <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
                     {data ? data.role : "no-data"}
                   </p>
 
@@ -166,23 +166,24 @@ export default function EmployeeDetails() {
                   </div>
                 </div>
 
-                <div className="bg-slate-200">
-                  <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                <div className="bg-slate-200 dark:bg-stone-200 py-2">
+                  <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
                     Sprog
                   </p>
-                  <p className="text-slate-900">
-                    {data ? data.competences.languages.Danish : "no-data"}
-                  </p>
-                  <p className="text-slate-900">
-                    {data ? data.competences.languages.English : "no-data"}
-                  </p>
+                  {Object.keys(data.competences.languages).map(
+                    (key: string, index: number) => (
+                      <p className="text-slate-900" key={index}>
+                        {data.competences.languages[key]}
+                      </p>
+                    )
+                  )}
                 </div>
-                <div className="flex flex-col bg-slate-200">
+                <div className="flex flex-col bg-slate-200 dark:bg-stone-200 py-2">
                   <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
                     Kompetence dækning
                   </p>
                   <div>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                    <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
                       Uddannelse/Kurser
                     </p>
                     <div>
@@ -196,7 +197,7 @@ export default function EmployeeDetails() {
                     </div>
                   </div>
                   <div>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-orange-500">
+                    <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
                       Erfaring
                     </p>
                     <div>
@@ -232,24 +233,11 @@ export default function EmployeeDetails() {
               <p className="text-justify text-slate-900">
                 {data ? data.competences["citizen-type"] : "no-data"}
               </p>
-              <p className="text-justify text-slate-950 text-lg">
+              <p className="text-justify text-slate-950 bg-yellow-400 p-5  text-xl">
                 {data ? data.competences.resume : "no-data"}
               </p>
             </div>
           </div>
-          <ThemeProvider theme={theme}>
-            <Link href="/employees">
-              <Button
-                className="p-3 uppercase font-bold text-xl bg-yellow-500
-                  md:text-sm md:p-2
-                  xl:hidden"
-                variant="contained"
-                color="ochre"
-              >
-                Tilbage Til Oversigt
-              </Button>
-            </Link>
-          </ThemeProvider>
         </main>
       </section>
       <Footer></Footer>

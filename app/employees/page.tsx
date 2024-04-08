@@ -30,18 +30,19 @@ export default async function Employees() {
   // Generating array of JS objects based on defined interface structure
   const employees: Employee[] = employeeData.employees;
   const maxEducationParagraphs = 7;
+
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employees"
-        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-300
+        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-50 dark:bg-stone-900
         md:px-20"
       >
         <main className="flex h-full flex-col">
           <div className="flex flex-col gap-10 py-5">
-            <div className="bg-slate-100 grow px-5 flex flex-col gap-5 shadow-xl">
-              <h1 className="uppercase font-bold text-3xl text-slate-900 font-conduit">
+            <div className="bg-yellow-400 dark:bg-stone-200 grow p-5 flex flex-col gap-5 shadow-xl">
+              <h1 className="uppercase font-bold text-3xl text-slate-950 font-conduit">
                 Konsulenter
               </h1>
               <hr className="border border-solid border-slate-900"></hr>
@@ -59,7 +60,7 @@ export default async function Employees() {
               {employees.map((e: Employee, index: number) => (
                 <div
                   key={index}
-                  className="relative bg-slate-100 grow flex flex-col shadow-xl group overflow-hidden
+                  className="relative bg-white grow flex flex-col shadow-xl group overflow-hidden
                   xl:grow-0 xl:p-0 xl:basis-1/5"
                 >
                   <div
@@ -80,7 +81,7 @@ export default async function Employees() {
                     <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
                       {e.name}
                     </p>
-                    <p className="uppercase font-bold font-conduitbold text-sm text-orange-500">
+                    <p className="uppercase font-bold font-conduitbold text-sm text-yellow-400">
                       {e.role}
                     </p>
                   </div>
@@ -90,18 +91,20 @@ export default async function Employees() {
                   >
                     <div className="  p-5">
                       <div className="flex flex-row gap-2 items-center">
-                        <EnvelopeIcon className="text-slate-900 w-5"></EnvelopeIcon>
+                        <EnvelopeIcon className="text-slate-950 w-5"></EnvelopeIcon>
                         <p className="font-conduit text-sm text-slate-800">
                           {e.email}
                         </p>
                       </div>
                       <div className="flex flex-row gap-2 items-center">
-                        <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
+                        <PhoneIcon className="text-slate-950 w-5"></PhoneIcon>
                         <a
                           href={`tel:${e.phone}`}
                           className="font-conduit text-slate-800 text-sm"
                         >
-                          {e.phone}
+                          {e.phone
+                            .substring(3)
+                            .replace(/(\d{4})(\d{4})/, "$1 $2")}
                         </a>
                       </div>
                     </div>
@@ -115,7 +118,7 @@ export default async function Employees() {
                     xl:size-16"
                     >
                       <div
-                        className="size-40 rounded-full border-2 bg-orange-500 p-5
+                        className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                     uppercase font-conduitbold text-sm rounded-full -rotate-45
                     md:size-48
                     xl:size-32 xl:p-4 xl:text-xs"
@@ -133,37 +136,37 @@ export default async function Employees() {
                     <p className="uppercase text-slate-700 font-conduit">
                       Kompetencedækning
                     </p>
-                    <p className="uppercase text-orange-500 font-conduit">
+                    <p className="uppercase text-yellow-400 font-conduit">
                       Sprog
                     </p>
                     <div className="flex flex-row gap-1">
                       {Object.keys(e.competences.languages).map(
                         (key: string, index: number) => (
-                          <p className="text-slate-900 text-xs" key={index}>
+                          <p className="text-slate-950 text-xs" key={index}>
                             {e.competences.languages[key]}
                           </p>
                         )
                       )}
                     </div>
 
-                    <p className="uppercase text-orange-500 font-conduit">
+                    <p className="uppercase text-yellow-400 font-conduit">
                       Uddannelse
                     </p>
                     {Object.keys(e.competences.education).map(
                       (key: string, index: number) => (
-                        <p className="text-slate-900 text-xs" key={index}>
+                        <p className="text-slate-950 text-xs" key={index}>
                           {e.competences.education[key]}
                         </p>
                       )
                     )}
-                    <p className="uppercase text-orange-500 font-conduit">
+                    <p className="uppercase text-yellow-400 font-conduit">
                       Erfaring
                     </p>
                     {Object.keys(e.competences.experience).map(
                       (key: string, index: number) =>
                         index <= maxEducationParagraphs && (
                           <p
-                            className="text-slate-900 text-xs truncate"
+                            className="text-slate-950 text-xs truncate"
                             key={index}
                           >
                             {e.competences.experience[key]}
@@ -181,7 +184,7 @@ export default async function Employees() {
                       xl:size-16"
                     >
                       <div
-                        className="size-40 rounded-full border-2 bg-orange-500 p-5
+                        className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                         uppercase font-conduitbold text-sm rounded-full -rotate-45
                         md:size-48
                         xl:size-32 xl:p-4 xl:text-xs"
