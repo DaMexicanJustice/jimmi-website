@@ -56,6 +56,7 @@ export default function Hero() {
         bg-black/40"
         ></div>
         <video
+          autoPlay
           loop
           muted
           id="video"

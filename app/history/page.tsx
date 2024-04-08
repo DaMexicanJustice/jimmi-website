@@ -17,9 +17,9 @@ export default function History() {
         xl:gap-1"
         >
           <Image
-            src="/images/jimmi.jpg"
-            width={180}
-            height={220}
+            src="/images/Jimmi2.jpg"
+            width={428}
+            height={500}
             alt="Jimmi billed"
             className="drop-shadow-md
             xl:order-3 xl:w-full

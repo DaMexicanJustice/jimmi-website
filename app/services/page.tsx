@@ -96,8 +96,8 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-yellow-500
-                  md:text-3xl
+                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                  md:text-base
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
@@ -112,7 +112,10 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="overflow-hidden h-44">
+            <div
+              className="w-full
+            xl:overflow-hidden xl:h-44"
+            >
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
@@ -133,8 +136,8 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-yellow-500
-                  md:text-3xl
+                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                  md:text-base
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
@@ -149,7 +152,10 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="overflow-hidden h-44">
+            <div
+              className="w-full
+            xl:overflow-hidden xl:h-44"
+            >
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
@@ -170,8 +176,8 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-yellow-500
-                  md:text-3xl
+                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                  md:text-base
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
@@ -186,7 +192,10 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0 "
           >
-            <div className="overflow-hidden h-44">
+            <div
+              className="w-full
+            xl:overflow-hidden xl:h-44"
+            >
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
@@ -207,8 +216,8 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-yellow-500
-                  md:text-3xl
+                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                  md:text-base
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
@@ -223,7 +232,10 @@ export default function Services() {
           md:basis-6/12
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="overflow-hidden h-44">
+            <div
+              className="w-full
+            xl:overflow-hidden xl:h-44"
+            >
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
@@ -245,8 +257,8 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-xl bg-yellow-500
-                  md:text-3xl
+                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                  md:text-base
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
