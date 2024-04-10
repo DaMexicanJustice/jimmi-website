@@ -32,12 +32,12 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
   const openMenu = () => {
     setMenuState(true);
     setPosX("translate-x-0");
-    console.log("show menu");
+    document.body.style.overflow = "hidden";
   };
   const closeMenu = () => {
     setMenuState(false);
     setPosX("translate-x-full");
-    console.log("hide menu");
+    document.body.style.overflow = "auto";
   };
 
   // Handle navbar transparency & color states depending on scroll
@@ -182,7 +182,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             <div className="flex flex-row justify-end px-8 py-4">
               <IconButton
                 aria-label="fingerprint"
-                id="burger-menu"
+                id="burger-menu-collapse"
                 onClick={closeMenu}
                 className="p-5 place-self-start"
               >
@@ -190,17 +190,21 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               </IconButton>
             </div>
             <div className="flex flex-col justify-center items-center text-slate-50 font-conduit uppercase">
-              <Link href="/" onClick={closeMenu} className="flex flex-row w-40">
+              <Link
+                href="/"
+                onClick={closeMenu}
+                className="flex flex-row items-center w-40 h-9"
+              >
                 <HorizontalRule></HorizontalRule> Forside
               </Link>
               <Link
                 href="/employees"
                 onClick={closeMenu}
-                className="flex flex-row w-40"
+                className="flex flex-row items-center w-40 h-9"
               >
                 <HorizontalRule></HorizontalRule>Medarbejdere
               </Link>
-              <Link href="#" className="flex flex-row w-40 items-center">
+              <Link href="#" className="flex flex-row w-40 items-center h-9">
                 <ThemeProvider theme={theme}>
                   <HorizontalRule
                     className={expanded ? "opacity-0" : "opacity-100"}
@@ -209,8 +213,6 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                   <Accordion
                     expanded={expanded}
                     onChange={handleExpansion}
-                    slots={{ transition: Fade as AccordionSlots["transition"] }}
-                    slotProps={{ transition: { timeout: 400 } }}
                     className="bg-transparent text-slate-50 font-conduit p-0"
                     style={{ boxShadow: "none", padding: "0px" }}
                     sx={{
@@ -252,7 +254,11 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                   </Accordion>
                 </ThemeProvider>
               </Link>
-              <Link href="#" onClick={closeMenu} className="flex flex-row w-40">
+              <Link
+                href="#"
+                onClick={closeMenu}
+                className="flex flex-row items-center w-40 h-9"
+              >
                 <HorizontalRule className=""></HorizontalRule>Menu Item 4
               </Link>
             </div>

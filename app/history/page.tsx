@@ -37,23 +37,21 @@ export default function History() {
             >
               Historik
             </h1>
-            <p className="text-slate-900 dark:text-slate-100 text-base text-justify leading-10">
-              Sunt amet ad cupidatat in excepteur anim ex. Lorem aliqua deserunt
-              minim sint quis enim laborum esse adipisicing culpa. Occaecat ut
-              duis eiusmod occaecat esse deserunt et fugiat magna irure
-              voluptate non sunt. <br></br>
-              <br></br>Anim qui incididunt sint do. Eu sunt eu incididunt amet.
-              Occaecat laboris aliquip elit enim deserunt officia nulla nisi sit
-              officia consequat. Ut nulla cupidatat ex qui sunt commodo
-              reprehenderit velit esse ullamco consectetur irure adipisicing
-              fugiat. <br></br>
-              <br></br>Ex qui reprehenderit sint anim occaecat magna. Labore eu
-              cupidatat voluptate ea nisi nostrud duis duis. Sit ad enim
-              deserunt aliquip dolore eiusmod dolor laboris ea mollit id.
-              Officia dolore adipisicing minim velit reprehenderit velit ex
-              mollit qui. Aliqua pariatur fugiat aute mollit pariatur non ea
-              eiusmod sit sint laboris dolor aliqua. <br></br>
-              <br></br> Adipisicing deserunt Lorem dolore nostrud.
+            <p className="text-slate-900 dark:text-slate-100 text-base text-justify leading-6">
+              Mentorplan har eksisteret siden 2016, og igennem årene har vi
+              arbejdet dynamisk, vedholdende og med fokus på at skabe
+              resultater. Vi tilbyder en individuel tilgang, der tager
+              udgangspunkt i den enkelte borgers behov. Vi starter altid
+              samarbejdet med at opbygge en relation, der bygger på ligeværd,
+              respekt og tillid. <br></br>
+              <br></br>Mentorplan har kontor på SOHO, som er et kontorfællesskab
+              beliggende i Kødbyen på Vesterbro i København. Her vil du finde et
+              kontor, der er indrettet med inspirerende mødelokaler, egen café
+              og kantine. <br></br>
+              <br></br>Der er en særlig energi på kontoret, som smitter af på
+              borgerne og samarbejdspartnerne. Du vil føle dig velkommen i det
+              øjeblik, du træder ind ad døren. <br></br>
+              <br></br> Mere om Jimmi Liljehult på LinkedIn
             </p>
             <Link href="https://www.linkedin.com/in/jimmililjehult/">
               <FaLinkedin className="size-16 fill-blue-700 dark:fill-slate-100"></FaLinkedin>

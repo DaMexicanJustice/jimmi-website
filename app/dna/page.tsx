@@ -129,6 +129,7 @@ export default function Dna() {
 
           {/* Right panel / Bottom Panel */}
           <div
+            id="contact-form"
             className="flex flex-col items-center gap-5 bg-slate-50 dark:bg-slate-200 p-5
           border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-7/12 md:gap-1 md:mb-0
@@ -139,7 +140,7 @@ export default function Dna() {
               md:text-xl"
               href="tel:+4542955969"
             >
-              Ring: +4542955969
+              Ring: +45 42955969
             </a>
             <h2
               className="text-3xl text-slate-950 font-semibold font-conduit

@@ -1,4 +1,7 @@
+import Link from "next/link";
 import "/app/styles/styles.css";
+import { Suspense } from "react";
+import UiButton from "../ui/ui-button";
 
 export default function Hero() {
   return (
@@ -50,6 +53,7 @@ export default function Hero() {
             Erfarne mentorer &nbsp; <span className="font-yantramanav">|</span>
             &nbsp; trygge rammer
           </h2>
+          <UiButton></UiButton>
         </main>
         <div
           className="top-0 left-0 absolute h-svh w-full object-cover z-30
