@@ -1,6 +1,5 @@
-import Link from "next/link";
 import "/app/styles/styles.css";
-import { Suspense } from "react";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import UiButton from "../ui/ui-button";
 
 export default function Hero() {
@@ -12,7 +11,7 @@ export default function Hero() {
       md:px-20"
       >
         <main
-          className="flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
+          className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
         md:px-20 md:gap-10"
         >
           <div className="flex flex-row items-center gap-3">
@@ -36,7 +35,7 @@ export default function Hero() {
           md:text-6xl"
           >
             Dit fulde &nbsp;
-            <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
+            <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-400 dark:bg-yellow-500 relative inline-block">
               <span className="relative">potentiale</span>
             </span>
           </h1>
