@@ -1,37 +1,43 @@
 "use client"; // This is a client component
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme"; // Import your custom Material-UI theme
+// Material UI for accordion
+import Accordion, { AccordionSlots } from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Fade from "@mui/material/Fade";
 // Material UI for burger menu
-import { IconButton } from "@mui/material";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { Dehaze, Close } from "@mui/icons-material";
+import { IconButton, List, ListItem } from "@mui/material";
+import { Dehaze, Close, HorizontalRule } from "@mui/icons-material";
 
 interface NavbarProps {
   useScrollBehavior: boolean;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
-  // Material UI menu implementation
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
+  // Material UI Accordion
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpansion = () => {
+    setExpanded((prevExpanded) => !prevExpanded);
   };
 
   // Animated custom menu inspired by Mentorplan implementation
   const [menuState, setMenuState] = useState(false);
-  const [posX, setPosX] = useState("100%");
+  const [posX, setPosX] = useState("translate-x-full");
   const openMenu = () => {
     setMenuState(true);
     setPosX("translate-x-0");
+    console.log("show menu");
   };
   const closeMenu = () => {
     setMenuState(false);
     setPosX("translate-x-full");
+    console.log("hide menu");
   };
 
   // Handle navbar transparency & color states depending on scroll
@@ -164,74 +170,96 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             md:size-12  "
             />
           </IconButton>
-          {/* <IconButton
-            aria-label="fingerprint"
-            id="basic-button"
-            aria-controls={open ? "basic-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            onClick={handleClick}
-            className="p-5"
-          >
-            <Dehaze
-              className="size-8 text-white
-            md:size-12  "
-            />
-          </IconButton>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            className="fixed top-0 right-0"
-            MenuListProps={{
-              "aria-labelledby": "basic-button",
-            }}
-          >
-            <MenuItem
-              className="uppercase text-xl font-bold"
-              onClick={handleClose}
-            >
-              <Link href="/">Forside</Link>
-            </MenuItem>
-            <MenuItem
-              className="uppercase text-xl font-bold"
-              onClick={handleClose}
-            >
-              <Link href="/employees">Medarbejdere</Link>
-            </MenuItem>
-            <MenuItem
-              className="uppercase text-xl font-bold"
-              onClick={handleClose}
-            >
-              <Link href="#">Menu 3</Link>
-            </MenuItem>
-            <MenuItem
-              className="uppercase text-xl font-bold"
-              onClick={handleClose}
-            >
-              <Link href="#">Menu 4</Link>
-            </MenuItem>
-          </Menu> */}
         </div>
 
+        {/* Mobile menu navbar */}
         <div
-          className={`fixed h-svh w-full bg-slate-50 top-0 right-0 overflow-hidden ${posX}
-          translate-x-full transition-transform duration-300 ease-in-out
-        xl:hidden`}
+          className={`fixed h-svh w-full backdrop-blur-xl top-0 right-0 overflow-hidden ${posX}
+          transition-transform duration-700 ease-in-out
+          xl:hidden`}
         >
-          <div className="w-full h-svh flex flex-row justify-end px-8 py-4">
-            <IconButton
-              aria-label="fingerprint"
-              id="burger-menu"
-              onClick={closeMenu}
-              className="p-5 place-self-start"
-            >
-              <Close className="size-8 fill-slate-500"></Close>
-            </IconButton>
+          <div className="flex flex-col">
+            <div className="flex flex-row justify-end px-8 py-4">
+              <IconButton
+                aria-label="fingerprint"
+                id="burger-menu"
+                onClick={closeMenu}
+                className="p-5 place-self-start"
+              >
+                <Close className="size-8 fill-slate-50"></Close>
+              </IconButton>
+            </div>
+            <div className="flex flex-col justify-center items-center text-slate-50 font-conduit uppercase">
+              <Link href="/" onClick={closeMenu} className="flex flex-row w-40">
+                <HorizontalRule></HorizontalRule> Forside
+              </Link>
+              <Link
+                href="/employees"
+                onClick={closeMenu}
+                className="flex flex-row w-40"
+              >
+                <HorizontalRule></HorizontalRule>Medarbejdere
+              </Link>
+              <Link href="#" className="flex flex-row w-40 items-center">
+                <ThemeProvider theme={theme}>
+                  <HorizontalRule
+                    className={expanded ? "opacity-0" : "opacity-100"}
+                  ></HorizontalRule>
+
+                  <Accordion
+                    expanded={expanded}
+                    onChange={handleExpansion}
+                    slots={{ transition: Fade as AccordionSlots["transition"] }}
+                    slotProps={{ transition: { timeout: 400 } }}
+                    className="bg-transparent text-slate-50 font-conduit p-0"
+                    style={{ boxShadow: "none", padding: "0px" }}
+                    sx={{
+                      "& .MuiAccordion-region": {
+                        height: expanded ? "auto" : 0,
+                      },
+                      "& .MuiAccordionDetails-root": {
+                        display: expanded ? "block" : "none",
+                      },
+                    }}
+                  >
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon className="fill-white" />}
+                      aria-controls="panel1-content"
+                      id="panel1-header"
+                      className="p-0"
+                    >
+                      <Typography>Ydelser</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <List className="px-2">
+                        <ListItem>
+                          <Typography>Ydelse 1</Typography>
+                        </ListItem>
+                        <ListItem>
+                          <Typography>Ydelse 2</Typography>
+                        </ListItem>
+                        <ListItem>
+                          <Typography>Ydelse 3</Typography>
+                        </ListItem>
+                        <ListItem>
+                          <Typography>Ydelse 4</Typography>
+                        </ListItem>
+                        <ListItem>
+                          <Typography>Ydelse 5</Typography>
+                        </ListItem>
+                      </List>
+                    </AccordionDetails>
+                  </Accordion>
+                </ThemeProvider>
+              </Link>
+              <Link href="#" onClick={closeMenu} className="flex flex-row w-40">
+                <HorizontalRule className=""></HorizontalRule>Menu Item 4
+              </Link>
+            </div>
           </div>
         </div>
 
+        {/* Desktop menu navbar */}
         <div
           className={`hidden flex-row gap-5 justify-end items-center px-5 transition-colors duration-500
         ${textColor} uppercase font-bold text-xl font-conduitbold h-full 
@@ -240,7 +268,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         >
           <Link href="/">Forside</Link>
           <Link href="/employees">Medarbejdere</Link>
-          <Link href="#">Menu Item 3</Link>
+          <Link href="#">Ydelser</Link>
           <Link href="#">Menu Item 4</Link>
         </div>
       </nav>
