@@ -174,7 +174,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
 
         {/* Mobile menu navbar */}
         <div
-          className={`fixed h-svh w-full backdrop-blur-xl top-0 right-0 overflow-hidden ${posX}
+          className={`fixed min-h-[calc(100svh+6rem)] w-full backdrop-blur-xl top-0 right-0 overflow-hidden ${posX}
           transition-transform duration-700 ease-in-out
           xl:hidden`}
         >

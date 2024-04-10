@@ -3,45 +3,9 @@ import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
 import React, { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-import {
-  EnvelopeIcon,
-  PhoneIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/24/solid";
-import { Button, ThemeProvider, createTheme } from "@mui/material";
-import Link from "next/link";
-import { DataArray } from "@mui/icons-material";
-
-// Augment the palette to include an ochre color
-declare module "@mui/material/styles" {
-  interface Palette {
-    ochre: Palette["primary"];
-  }
-
-  interface PaletteOptions {
-    ochre?: PaletteOptions["primary"];
-  }
-}
-
-// Update the Button's color options to include an ochre option
-declare module "@mui/material/Button" {
-  interface ButtonPropsColorOverrides {
-    ochre: true;
-  }
-}
-
-const theme = createTheme({
-  palette: {
-    ochre: {
-      main: "#eab308",
-      light: "#faccdd",
-      dark: "#facc15",
-      contrastText: "#242105",
-    },
-  },
-});
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 // Defining the object structure
 interface Employee {
@@ -106,7 +70,12 @@ export default function EmployeeDetails() {
       );
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+    return (
+      <Box sx={{ display: "flex" }}>
+        <CircularProgress />
+      </Box>
+    );
   if (!data) return <p>No profile data</p>;
 
   return (

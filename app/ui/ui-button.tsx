@@ -1,9 +1,16 @@
 "use client"; // This is a client component
+import { gsap } from "gsap";
+
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
 const UiButton: React.FC = () => {
   const scrollTo = () => {
     const section = document.getElementById("contact-form");
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      //scroll to 400 pixels down from the top
+      gsap.to(window, { duration: 2, scrollTo: section });
     }
   };
 
