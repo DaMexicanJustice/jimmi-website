@@ -204,7 +204,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               >
                 <HorizontalRule></HorizontalRule>Medarbejdere
               </Link>
-              <Link href="#" className="flex flex-row w-40 items-center h-9">
+              <Link href="#" className="flex flex-row w-40 items-center">
                 <ThemeProvider theme={theme}>
                   <HorizontalRule
                     className={expanded ? "opacity-0" : "opacity-100"}
