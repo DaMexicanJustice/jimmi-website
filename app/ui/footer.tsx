@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-2xl items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-xs items-center uppercase font-bold font-conduit">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
