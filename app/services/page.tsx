@@ -63,26 +63,23 @@ export default function Services() {
         md:px-20"
       >
         <main
-          className="flex flex-col h-full gap-8 md:gap-5 py-8
-        md:flex-row md:flex-wrap md:justify-center md:gap-14
+          className="flex flex-col h-full gap-8 py-8
+        md:flex-row md:flex-wrap md:justify-between
         xl:flex-nowrap"
         >
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
-          md:basis-2/5 md:grow
+          md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="w-full">
-              <Image
-                src="/images/beskæftigelsesindsatser.jpg"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="w-full object-cover"
-              />
-            </div>
-
-            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
+            <Image
+              src="/images/beskæftigelsesindsatser.jpg"
+              width={430}
+              height={370}
+              alt="Ydelse 1"
+              className="w-full object-cover"
+            />
+            <h1 className="text-slate-700 font-bold text-2xl font-conduit px-5">
               Beskæftigelsesindsatser
             </h1>
             <p
@@ -107,19 +104,17 @@ export default function Services() {
 
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
-          md:basis-2/5 md:grow
+          md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="w-full">
-              <Image
-                src="/images/ungeindsatser.jpg"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="w-full object-cover"
-              />
-            </div>
-            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
+            <Image
+              src="/images/ungeindsatser.jpg"
+              width={430}
+              height={370}
+              alt="Ydelse 1"
+              className="w-full object-cover"
+            />
+            <h1 className="text-slate-700 font-bold text-2xl font-conduit px-5">
               Ungeindsatser
             </h1>
             <p
@@ -144,19 +139,17 @@ export default function Services() {
 
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
-          md:basis-2/5 md:grow
+          md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div className="w-full">
-              <Image
-                src="/images/430x370-dark-grey.png"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="w-full object-cover"
-              />
-            </div>
-            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
+            <Image
+              src="/images/430x370-dark-grey.png"
+              width={430}
+              height={370}
+              alt="Ydelse 1"
+              className="w-full object-cover"
+            />
+            <h1 className="text-slate-700 font-bold text-2xl font-conduit px-5">
               Ydelse 3{" "}
             </h1>
             <p
@@ -181,19 +174,17 @@ export default function Services() {
 
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
-          md:basis-2/5 md:grow
+          md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0 "
           >
-            <div className="w-full">
-              <Image
-                src="/images/430x370-dark-grey.png"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="w-full object-cover"
-              />
-            </div>
-            <h1 className="text-slate-700 font-bold text-3xl px-5 font-conduit">
+            <Image
+              src="/images/430x370-dark-grey.png"
+              width={430}
+              height={370}
+              alt="Ydelse 1"
+              className="w-full object-cover"
+            />
+            <h1 className="text-slate-700 font-bold text-2xl px-5 font-conduit">
               Ydelse 4
             </h1>
             <p
