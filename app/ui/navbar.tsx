@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           ) {
             // Change navbar color based on the section being scrolled to
             setNavbarColor("bg-white dark:bg-black");
-            setSVGColor("fill-black dark:fill-white");
+            setSVGColor("fill-black dark:fill-white bg-gradient-mentor");
             setTextColor("text-black dark:text-white");
           } else {
             // Handle other sections as needed
@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
-              height="97.83"
+              height="46"
               viewBox="0 0 299.87 97.83"
               className={`${svgColor}  w-28 cursor-pointer transition-colors duration-500
               xl:w-36`}

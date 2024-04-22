@@ -59,24 +59,22 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-50 dark:bg-slate-950
+        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-100 dark:bg-slate-900
         md:px-20"
       >
         <main
           className="flex flex-col h-full gap-8 md:gap-5 py-8
-        md:flex-row md:flex-wrap md:justify-center md:gap-14"
+        md:flex-row md:flex-wrap md:justify-center md:gap-14
+        xl:flex-nowrap"
         >
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div
-              className="w-full
-            xl:overflow-hidden xl:h-44"
-            >
+            <div className="w-full">
               <Image
-                src="/images/430x370-dark-grey.png"
+                src="/images/beskæftigelsesindsatser.jpg"
                 width={430}
                 height={370}
                 alt="Ydelse 1"
@@ -85,7 +83,7 @@ export default function Services() {
             </div>
 
             <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
-              Ydelse 1
+              Beskæftigelsesindsatser
             </h1>
             <p
               className="text-black text-center px-5
@@ -96,7 +94,7 @@ export default function Services() {
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                className="p-2 uppercase font-bold text-sm bg-yellow-400
                   md:text-base
                   lg:text-sm"
                 variant="contained"
@@ -112,12 +110,9 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div
-              className="w-full
-            xl:overflow-hidden xl:h-44"
-            >
+            <div className="w-full">
               <Image
-                src="/images/430x370-dark-grey.png"
+                src="/images/ungeindsatser.jpg"
                 width={430}
                 height={370}
                 alt="Ydelse 1"
@@ -125,18 +120,18 @@ export default function Services() {
               />
             </div>
             <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
-              Ydelse 2
+              Ungeindsatser
             </h1>
             <p
               className="text-black text-center px-5
             md:text-lg"
             >
-              Sint cupidatat deserunt eiusmod duis minim eu sit adipisicing ad
-              velit.
+              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
+              laborum proident laboris nisi quis nisi exercitation.
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                className="p-2 uppercase font-bold text-sm bg-yellow-400
                   md:text-base
                   lg:text-sm"
                 variant="contained"
@@ -152,10 +147,7 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0"
           >
-            <div
-              className="w-full
-            xl:overflow-hidden xl:h-44"
-            >
+            <div className="w-full">
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
@@ -171,12 +163,12 @@ export default function Services() {
               className="text-black text-center px-5
             md:text-lg"
             >
-              Do cillum in dolore est. Deserunt culpa officia eiusmod commodo
-              velit.
+              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
+              laborum proident laboris nisi quis nisi exercitation.
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                className="p-2 uppercase font-bold text-sm bg-yellow-400
                   md:text-base
                   lg:text-sm"
                 variant="contained"
@@ -192,10 +184,7 @@ export default function Services() {
           md:basis-2/5 md:grow
           xl:basis-3/12 xl:grow-0 "
           >
-            <div
-              className="w-full
-            xl:overflow-hidden xl:h-44"
-            >
+            <div className="w-full">
               <Image
                 src="/images/430x370-dark-grey.png"
                 width={430}
@@ -211,53 +200,12 @@ export default function Services() {
               className="text-black text-center px-5
             md:text-lg"
             >
-              Aliquip sunt amet dolor magna irure pariatur sit pariatur. Magna
-              adipisicing minim nostrud enim non.
+              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
+              laborum proident laboris nisi quis nisi exercitation.
             </p>
             <ThemeProvider theme={yellowTheme}>
               <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-500
-                  md:text-base
-                  lg:text-sm"
-                variant="contained"
-                color="ochre"
-              >
-                Læs Mere
-              </Button>
-            </ThemeProvider>
-          </div>
-
-          <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
-          md:basis-6/12
-          xl:basis-3/12 xl:grow-0"
-          >
-            <div
-              className="w-full
-            xl:overflow-hidden xl:h-44"
-            >
-              <Image
-                src="/images/430x370-dark-grey.png"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="w-full object-cover"
-              />
-            </div>
-            <h1 className="text-slate-700 font-bold text-3xl font-conduit px-5">
-              Ydelse 5
-            </h1>
-            <p
-              className="text-black text-center px-5
-            md:text-lg"
-            >
-              Magna adipisicing minim nostrud enim non. Sunt qui culpa proident
-              id eiusmod Lorem fugiat non exercitation esse fugiat commodo in
-              magna.
-            </p>
-            <ThemeProvider theme={yellowTheme}>
-              <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-500
+                className="p-2 uppercase font-bold text-sm bg-yellow-400
                   md:text-base
                   lg:text-sm"
                 variant="contained"

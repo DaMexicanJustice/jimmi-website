@@ -114,7 +114,7 @@ export default function EmployeeDetails() {
                   <p className="uppercase font-bold font-conduitbold text-xl text-slate-700 ">
                     {data ? data.name : "no-data"}
                   </p>
-                  <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
+                  <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
                     {data ? data.role : "no-data"}
                   </p>
 
@@ -136,7 +136,7 @@ export default function EmployeeDetails() {
                 </div>
 
                 <div className="bg-slate-200 dark:bg-stone-200 py-2">
-                  <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
+                  <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
                     Sprog
                   </p>
                   {Object.keys(data.competences.languages).map(
@@ -152,7 +152,7 @@ export default function EmployeeDetails() {
                     Kompetence dækning
                   </p>
                   <div>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
+                    <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
                       Uddannelse/Kurser
                     </p>
                     <div>
@@ -166,7 +166,7 @@ export default function EmployeeDetails() {
                     </div>
                   </div>
                   <div>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-yellow-500">
+                    <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
                       Erfaring
                     </p>
                     <div>
@@ -189,20 +189,20 @@ export default function EmployeeDetails() {
             md:basis-6/12 md:grow"
             >
               <hr className="border border-solid border-slate-900"></hr>
-              <p className="text-blue-950 text-xl text-justify">
+              <p className="text-blue-950 text-xl text-left">
                 {data ? data.competences.article.headline : "no-data"}
               </p>
               <hr className="border border-solid border-slate-900"></hr>
-              <p className="text-justify text-slate-900 whitespace-pre-line">
+              <p className="text-left text-slate-900 whitespace-pre-line">
                 {data ? data.competences.article.text : "no-data"}
               </p>
               <p className="uppercase font-conduitbold text-xl text-blue-950">
                 Hvilke borgere er jeg god til
               </p>
-              <p className="text-justify text-slate-900">
+              <p className="text-left text-slate-900">
                 {data ? data.competences["citizen-type"] : "no-data"}
               </p>
-              <p className="text-justify text-slate-950 bg-yellow-400 p-5  text-xl">
+              <p className="text-left text-slate-950 bg-yellow-400 p-5  text-xl">
                 {data ? data.competences.resume : "no-data"}
               </p>
             </div>

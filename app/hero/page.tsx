@@ -14,45 +14,27 @@ export default function Hero() {
           className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
         md:px-20 md:gap-10"
         >
-          <div className="flex flex-row items-center gap-3">
-            <hr
-              className="w-20
-            md:w-32"
-            ></hr>
-            <h3
-              className="text-3xl font-bold text-white
-            md:text-4xl"
-            >
-              Mentorplan
-            </h3>
-            <hr
-              className="w-20
-            md:w-32"
-            ></hr>
-          </div>
           <h1
-            className="text-3xl whitespace-pre font-bold uppercase text-white
-          md:text-6xl"
+            className="text-2xl whitespace-pre font-bold uppercase text-white
+          md:text-5xl"
           >
-            Dit fulde &nbsp;
+            Sammen med borger finder vi &nbsp;
             <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-400 dark:bg-yellow-500 relative inline-block">
-              <span className="relative">potentiale</span>
+              <span className="relative">vejen</span>
             </span>
           </h1>
           <h2
             className="text-xl font-semibold text-white
-          md:text-3xl"
+          md:text-2xl"
           >
-            Gennem personlig mentoring
+            Alt godt samarbejde starter med en god kop kaffe
           </h2>
           <h2
             className="text-xl font-semibold text-white
-          md:text-3xl"
+          md:text-xl"
           >
-            Erfarne mentorer &nbsp; <span className="font-yantramanav">|</span>
-            &nbsp; trygge rammer
+            Erfarne mentorer &nbsp; i &nbsp; trygge rammer
           </h2>
-          <UiButton></UiButton>
         </main>
         <div
           className="top-0 left-0 absolute h-svh w-full object-cover z-30

@@ -115,7 +115,7 @@ export default function Dna() {
               </p>
               <ThemeProvider theme={yellowTheme}>
                 <Button
-                  className="p-2 uppercase font-bold text-xl bg-yellow-500
+                  className="p-2 uppercase font-bold text-xl bg-yellow-400
                   md:text-3xl
                   lg:text-sm"
                   variant="contained"
@@ -131,29 +131,29 @@ export default function Dna() {
           <div
             id="contact-form"
             className="flex flex-col items-center gap-5 bg-slate-50 dark:bg-slate-200 p-5
-          border-0 border-t-4 border-solid border-t-yellow-500 shadow-xl shadow-slate-500/50 dark:shadow-none
+          border-0 border-t-4 border-solid border-t-yellow-400 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-7/12 md:gap-1 md:mb-0
           xl:basis-5/12"
           >
             <a
-              className="no-underline text-4xl text-yellow-500 font-bold font-conduit
+              className="no-underline text-4xl text-slate-950 font-bold font-conduit
               md:text-xl"
               href="tel:+4542955969"
             >
               Ring: +45 42955969
             </a>
             <h2
-              className="text-3xl text-slate-950 font-semibold font-conduit
+              className="text-3xl text-slate-700 font-semibold font-conduit
             md:text-lg"
             >
               Eller udfyld formularen
             </h2>
             <p
-              className="text-slate-700 text-xl text-justify w-11/12
+              className="text-slate-500 text-xl text-center w-11/12
             md:text-base md:w-9/12"
             >
-              Elit amet veniam anim esse sint do pariatur nisi. Et quis officia
-              ea do irure consequat sit cillum.
+              Har du spørgsmål – Kontakt os i dag. Vi besvarer alle hverdage
+              indenfor 24 timer
             </p>
             <form
               className="flex flex-col gap-3 w-11/12
@@ -279,7 +279,7 @@ export default function Dna() {
               />
               <ThemeProvider theme={yellowTheme}>
                 <Button
-                  className="p-2 uppercase font-bold text-xl bg-yellow-500
+                  className="p-2 uppercase font-bold text-xl bg-yellow-400
                   md:text-3xl
                   lg:text-sm"
                   variant="contained"
@@ -289,18 +289,6 @@ export default function Dna() {
                 </Button>
               </ThemeProvider>
             </form>
-            <p
-              className="text-slate-700 text-base font-semibold
-            md:text-sm"
-            >
-              Jobansøgninger sendes til:{" "}
-              <span
-                className="text-blue-500
-              xl:text-xs"
-              >
-                kontakt@mentorplan.dk
-              </span>
-            </p>
           </div>
         </main>
       </section>

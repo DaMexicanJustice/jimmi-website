@@ -32,8 +32,8 @@ export default function History() {
           xl:order-2 xl:basis-7/12"
           >
             <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-3xl font-bold font-conduit
-          xl:text-5xl"
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
+          xl:text-4xl"
             >
               Historik
             </h1>
@@ -54,7 +54,7 @@ export default function History() {
               <br></br> Mere om Jimmi Liljehult på LinkedIn
             </p>
             <Link href="https://www.linkedin.com/in/jimmililjehult/">
-              <FaLinkedin className="size-16 fill-blue-700 dark:fill-slate-100"></FaLinkedin>
+              <FaLinkedin className="size-14 fill-blue-700 dark:fill-slate-100"></FaLinkedin>
             </Link>
           </div>
         </main>

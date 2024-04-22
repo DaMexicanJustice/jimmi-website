@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer id="footer" className="bottom-0 left-0 text-white bg-blue-950">
+      <footer id="footer" className="bottom-0 left-0 text-white bg-navy-950">
         {/* Mobile up to md:breakpoint */}
         <div className="flex flex-col md:hidden gap-10 py-10 items-center">
           <div className="flex flex-row justify-between items-center w-full px-5">
@@ -182,7 +182,9 @@ const Footer: React.FC = () => {
               </h1>
               <p className="m-1 text-xl">
                 Flæsketorvet 68, 1.<br></br>1711 København V<br></br>
-                <span className="text-yellow-400 font-conduitbold">SOHO</span>
+                <span className="text-yellow-400 dark:text-yellow-500 font-conduitbold">
+                  SOHO
+                </span>
               </p>
             </div>
             <div className="">
