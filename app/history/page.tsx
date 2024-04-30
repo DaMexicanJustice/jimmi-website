@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
+import LinkedIn from "../ui/linkedin";
 
 export default function History() {
   return (

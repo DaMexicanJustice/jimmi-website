@@ -255,11 +255,11 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 </ThemeProvider>
               </Link>
               <Link
-                href="#"
+                href="/social-feed"
                 onClick={closeMenu}
                 className="flex flex-row items-center w-40 h-9"
               >
-                <HorizontalRule className=""></HorizontalRule>Menu Item 4
+                <HorizontalRule className=""></HorizontalRule>Den Gode Historie
               </Link>
             </div>
           </div>
@@ -275,7 +275,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           <Link href="/">Forside</Link>
           <Link href="/employees">Medarbejdere</Link>
           <Link href="#">Ydelser</Link>
-          <Link href="#">Menu Item 4</Link>
+          <Link href="/social-feed">Den Gode Historie</Link>
         </div>
       </nav>
     </>
