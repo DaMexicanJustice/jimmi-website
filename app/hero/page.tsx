@@ -15,7 +15,7 @@ export default function Hero() {
         md:px-32 md:gap-10"
         >
           <h1
-            className="text-2xl whitespace-pre font-bold uppercase text-white
+            className="text-xl whitespace-pre font-bold uppercase text-white
           md:text-5xl"
           >
             Sammen med borger finder vi &nbsp;
@@ -24,13 +24,13 @@ export default function Hero() {
             </span>
           </h1>
           <h2
-            className="text-xl font-semibold text-white
+            className="text-lg font-semibold text-white
           md:text-2xl"
           >
             Alt godt samarbejde starter med en god kop kaffe
           </h2>
           <h2
-            className="text-xl font-semibold text-white
+            className="text-lg font-semibold text-white
           md:text-xl"
           >
             Erfarne mentorer &nbsp; i &nbsp; trygge rammer
