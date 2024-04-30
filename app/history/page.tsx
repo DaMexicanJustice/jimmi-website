@@ -38,7 +38,7 @@ export default function History() {
             >
               Om Mentorplan
             </h1>
-            <p className="text-slate-900 dark:text-slate-100 text-lg text-justify leading-6">
+            <p className="text-slate-900 dark:text-slate-100 text-lg text-left leading-6">
               Jimmi Liljehult, grundlægger og ejer af Mentorplan, en
               konsulentvirksomhed med fokus på mentorhjælp og
               støttekontaktordninger til socialt udsatte borgere. Vi stræber
