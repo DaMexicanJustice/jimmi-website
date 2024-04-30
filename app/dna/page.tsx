@@ -51,7 +51,10 @@ export default function Dna() {
           md:basis-4/12 md:gap-1
           xl:items-start xl:basis-5/12"
           >
-            <h2 className="text-3xl font-conduit font-bold text-slate-50 uppercase">
+            <h2
+              className="text-lg font-conduit font-bold text-slate-50 uppercase
+            md:text-3xl"
+            >
               Vil du indgå et samarbejde?
             </h2>
             <h3
@@ -62,8 +65,8 @@ export default function Dna() {
             </h3>
             <a
               href="tel:+4542955969"
-              className="text-3xl font-conduit text-slate-50 font-bold 
-            md:hidden"
+              className="text-lg font-conduit text-slate-50 font-bold 
+            md:hidden md:text-3xl"
             >
               +45 4295 5969
             </a>
@@ -78,13 +81,13 @@ export default function Dna() {
           xl:basis-4/12"
           >
             <h2
-              className="text-3xl text-slate-700 font-semibold font-conduit
-            md:text-lg"
+              className="text-lg text-slate-700 font-semibold font-conduit
+            md:text-lg md:text-3xl"
             >
               Ring eller udfyld formularen
             </h2>
             <p
-              className="text-slate-500 text-xl text-center w-11/12
+              className="text-slate-500 text-base text-center w-11/12
             md:text-base md:w-9/12"
             >
               Har du spørgsmål – Kontakt os i dag. Vi besvarer alle hverdage
