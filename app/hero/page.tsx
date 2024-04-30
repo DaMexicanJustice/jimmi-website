@@ -24,13 +24,13 @@ export default function Hero() {
             </span>
           </h1>
           <h2
-            className="text-lg font-semibold text-white
+            className="text-base font-semibold text-white
           md:text-2xl"
           >
             Alt godt samarbejde starter med en god kop kaffe
           </h2>
           <h2
-            className="text-lg font-semibold text-white
+            className="text-sm font-semibold text-white
           md:text-xl"
           >
             Erfarne mentorer &nbsp; i &nbsp; trygge rammer
