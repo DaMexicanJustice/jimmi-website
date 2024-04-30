@@ -65,7 +65,7 @@ export default function Dna() {
             </h3>
             <a
               href="tel:+4542955969"
-              className="text-lg font-conduit text-slate-50 font-bold 
+              className="text-xl font-conduit text-slate-50 font-bold 
             md:hidden md:text-3xl"
             >
               +45 4295 5969
