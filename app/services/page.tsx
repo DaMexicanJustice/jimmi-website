@@ -60,7 +60,7 @@ export default function Services() {
       <section
         id="Services"
         className="px-5 min-h-[calc(100svh-6rem)] bg-slate-100 dark:bg-slate-900
-        md:px-20"
+        md:px-32"
       >
         <main
           className="flex flex-col h-full gap-8 py-8
@@ -143,7 +143,7 @@ export default function Services() {
           xl:basis-3/12 xl:grow-0"
           >
             <Image
-              src="/images/430x370-dark-grey.png"
+              src="/images/430x370.png"
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -178,7 +178,7 @@ export default function Services() {
           xl:basis-3/12 xl:grow-0 "
           >
             <Image
-              src="/images/430x370-dark-grey.png"
+              src="/images/430x370.png"
               width={430}
               height={370}
               alt="Ydelse 1"

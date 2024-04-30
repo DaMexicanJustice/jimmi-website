@@ -8,11 +8,11 @@ export default function Hero() {
       <section
         id="Hero"
         className="px-5 h-svh
-      md:px-20"
+      md:px-32"
       >
         <main
           className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
-        md:px-20 md:gap-10"
+        md:px-32 md:gap-10"
         >
           <h1
             className="text-2xl whitespace-pre font-bold uppercase text-white

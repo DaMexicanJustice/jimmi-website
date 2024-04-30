@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
     : "bg-white dark:bg-black";
   const svgColorState = useScrollBehavior
     ? "fill-white"
-    : "fill-black dark:fill-white";
+    : "fill-black dark:fill-white bg-gradient-mentor";
   const textColorState = useScrollBehavior
     ? "text-white"
     : "text-black dark:text-white";
@@ -90,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [useScrollBehavior]);
 
   return (
     <>
@@ -98,7 +98,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         id="navbar"
         className={`fixed top-0 left-0 w-svw px-5 z-50 ${navbarColor} h-24 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap overflow-hidden
-        md:px-20`}
+        md:px-32`}
       >
         <div>
           <Link href="/">
@@ -166,15 +166,15 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             className="p-5"
           >
             <Dehaze
-              className="size-8 text-white
-            md:size-12  "
+              className={`${svgColor} size-8 
+              md:size-12`}
             />
           </IconButton>
         </div>
 
         {/* Mobile menu navbar */}
         <div
-          className={`fixed min-h-[calc(100svh+6rem)] w-full backdrop-blur-xl top-0 right-0 overflow-hidden ${posX}
+          className={`fixed min-h-[calc(100svh+6rem)] w-full backdrop-blur-xl backdrop-brightness-50 top-0 right-0 overflow-hidden ${posX}
           transition-transform duration-700 ease-in-out
           xl:hidden`}
         >

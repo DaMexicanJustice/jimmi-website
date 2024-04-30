@@ -84,7 +84,7 @@ export default function EmployeeDetails() {
       <section
         id="Employee-details"
         className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-50 dark:bg-slate-900 py-5
-      md:px-20"
+      md:px-32"
       >
         <main
           className="flex flex-col h-full gap-5 z-40 font-conduit text-center

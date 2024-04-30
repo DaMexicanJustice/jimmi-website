@@ -23,9 +23,10 @@ const Footer: React.FC = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
-              height="97.83"
+              height="46"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white-500 w-40 h-20"
+              className="w-28 cursor-pointer w-28 cursor-pointer fill-white bg-gradient-mentor
+              xl:w-36"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -116,14 +117,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
         {/* Desktop from md:breakpoint */}
-        <div className="hidden md:flex flex-row justify-between gap-10 p-10">
+        <div className="hidden md:flex flex-row justify-between gap-10 p-32">
           <div className="flex flex-col justify-between px-5 basis-1/3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
-              height="97.83"
+              height="46"
               viewBox="0 0 299.87 97.83"
-              className="fill-current dark:text-white-500 w-40 h-20"
+              className="w-28 cursor-pointer fill-white bg-gradient-mentor
+              xl:w-36"
             >
               <defs>
                 <style>.cls-1{}</style>

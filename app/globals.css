@@ -44,3 +44,9 @@ body {
   background-image: linear-gradient(to right, transparent 50%, #FFD200 50%);
     background-size: 100% 100%;
 }
+
+.bg-contact {
+  background-image: url('/images/kontakt.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
