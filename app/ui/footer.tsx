@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
               Sikkermail:{" "}
               <span className="text-yellow-400">jl@mentorplan.dk</span>
             </p>
-            <p className="m1 text-2xl">CVR: 37923850</p>
+            <p className="m1 text-lg">CVR: 37923850</p>
           </div>
           <div className="flex flex-row justify-between gap-5">
             <ArrowUpIcon
