@@ -105,10 +105,10 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
-              height="76"
+              height="66"
               viewBox="0 0 299.87 97.83"
-              className={`${svgColor}  w-28 cursor-pointer transition-colors duration-500
-              xl:w-36`}
+              className={`${svgColor}  w-28 h-16 cursor-pointer transition-colors duration-500
+              xl:w-36 xl:h-20`}
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -189,7 +189,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 <Close className="size-8 fill-slate-50"></Close>
               </IconButton>
             </div>
-            <div className="flex flex-col justify-center items-center text-slate-50 font-conduit uppercase">
+            <div className="flex flex-col justify-center items-start px-20 text-slate-50 font-conduit uppercase">
               <Link
                 href="/"
                 onClick={closeMenu}
