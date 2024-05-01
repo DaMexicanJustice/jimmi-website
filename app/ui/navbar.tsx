@@ -189,7 +189,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 <Close className="size-8 fill-slate-50"></Close>
               </IconButton>
             </div>
-            <div className="flex flex-col justify-center items-start px-20 text-slate-50 font-conduit uppercase">
+            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduit uppercase">
               <Link
                 href="/"
                 onClick={closeMenu}
