@@ -17,8 +17,8 @@ const LinkedIn: React.FC = () => {
     <>
       <div
         className="h-full w-full tagembed-widget"
-        data-widget-id="148082"
-        view-url="https://widget.tagembed.com/148082"
+        data-widget-id="148300"
+        view-url="https://widget.tagembed.com/148300"
       ></div>
     </>
   );

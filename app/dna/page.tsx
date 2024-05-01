@@ -1,5 +1,4 @@
 "use client"; // This is a client component
-import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -38,7 +37,7 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="bg-slate-100 dark:bg-slate-900 bg-contact min-h-[calc(50svh+6rem)]
+        className="bg-slate-50 dark:bg-slate-950 bg-contact min-h-[calc(50svh+6rem)]
         md:h-44"
       >
         <main

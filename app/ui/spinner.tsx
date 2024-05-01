@@ -5,7 +5,7 @@ const Spinner = () => {
   return (
     <div className="spinner">
       <ClipLoader
-        color="#000"
+        color="#FFD200"
         loading={true}
         className="block mx-0 my-auto"
         size={35}

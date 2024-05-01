@@ -130,7 +130,7 @@ export default async function Employees() {
 
                   <div
                     id="overlay"
-                    className="absolute w-full h-full bg-slate-100 opacity-0 overflow-hidden
+                    className="absolute w-full h-full bg-slate-50 opacity-0 overflow-hidden
                     group-hover:opacity-100 transition-opacity duration-500 ease-in-out px-5 group-hover:block"
                   >
                     <p className="uppercase text-slate-700 font-conduit">

@@ -59,16 +59,16 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-100 dark:bg-slate-900
+        className="px-5 bg-slate-50 dark:bg-slate-950
         md:px-32"
       >
         <main
-          className="flex flex-col h-full gap-8 py-8
-        md:flex-row md:flex-wrap md:justify-between
+          className="flex flex-col gap-8 py-8
+        md:flex-row md:flex-wrap
         xl:flex-nowrap"
         >
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-center items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
@@ -79,12 +79,12 @@ export default function Services() {
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-2xl font-conduit px-5">
+            <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
               Beskæftigelsesindsatser
             </h1>
             <p
-              className="text-black text-center px-5
-            md:text-lg"
+              className="text-slate-900 text-center px-5
+            md:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -103,7 +103,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
@@ -114,12 +114,12 @@ export default function Services() {
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-2xl font-conduit px-5">
+            <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
               Ungeindsatser
             </h1>
             <p
-              className="text-black text-center px-5
-            md:text-lg"
+              className="text-slate-900 text-center px-5
+            md:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -138,23 +138,23 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
             <Image
-              src="/images/430x370.png"
+              src="/images/Medarbejdere.jpg"
               width={430}
               height={370}
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-2xl font-conduit px-5">
-              Ydelse 3{" "}
+            <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
+              Medarbejdere
             </h1>
             <p
-              className="text-black text-center px-5
-            md:text-lg"
+              className="text-slate-900 text-center px-5
+            md:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -173,23 +173,23 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-100 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0 "
           >
             <Image
-              src="/images/430x370.png"
+              src="/images/Den_gode_historie.jpg"
               width={430}
               height={370}
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-2xl px-5 font-conduit">
-              Ydelse 4
+            <h1 className="text-slate-700 font-bold text-lg px-5 font-conduit uppercase">
+              Den Gode Historie
             </h1>
             <p
-              className="text-black text-center px-5
-            md:text-lg"
+              className="text-slate-900 text-center px-5
+            md:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.

@@ -18,7 +18,7 @@ export default function Services() {
       <Navbar useScrollBehavior={false} />
       <section
         id="Social-feed"
-        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-100 dark:bg-slate-900
+        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-50 dark:bg-slate-950
         md:px-32"
       >
         <main className="flex flex-col h-full gap-8 py-8 mt-24 items-center">

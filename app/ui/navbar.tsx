@@ -9,10 +9,10 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Fade from "@mui/material/Fade";
 // Material UI for burger menu
 import { IconButton, List, ListItem } from "@mui/material";
 import { Dehaze, Close, HorizontalRule } from "@mui/icons-material";
+import NavbarButton from "./navbar-button";
 
 interface NavbarProps {
   useScrollBehavior: boolean;
@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="299.87"
-              height="46"
+              height="76"
               viewBox="0 0 299.87 97.83"
               className={`${svgColor}  w-28 cursor-pointer transition-colors duration-500
               xl:w-36`}
@@ -235,19 +235,10 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                     <AccordionDetails>
                       <List className="px-2">
                         <ListItem>
-                          <Typography>Ydelse 1</Typography>
+                          <Typography>Beskæftigelsesindsatser</Typography>
                         </ListItem>
                         <ListItem>
-                          <Typography>Ydelse 2</Typography>
-                        </ListItem>
-                        <ListItem>
-                          <Typography>Ydelse 3</Typography>
-                        </ListItem>
-                        <ListItem>
-                          <Typography>Ydelse 4</Typography>
-                        </ListItem>
-                        <ListItem>
-                          <Typography>Ydelse 5</Typography>
+                          <Typography>Ungeindsatser</Typography>
                         </ListItem>
                       </List>
                     </AccordionDetails>
@@ -274,7 +265,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         >
           <Link href="/">Forside</Link>
           <Link href="/employees">Medarbejdere</Link>
-          <Link href="#">Ydelser</Link>
+          <NavbarButton textColor={textColor}></NavbarButton>
           <Link href="/social-feed">Den Gode Historie</Link>
         </div>
       </nav>
