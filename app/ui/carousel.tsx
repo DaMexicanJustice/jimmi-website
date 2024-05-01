@@ -84,8 +84,8 @@ const Carousel: React.FC<PropType> = (props) => {
                 <div className="flex justify-center items-center">
                   {
                     <Image
-                      width={430}
-                      height={370}
+                      width={800}
+                      height={600}
                       alt="slide"
                       src={images[index].original}
                       className="size-full object-cover"
