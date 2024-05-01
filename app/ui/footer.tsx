@@ -79,14 +79,14 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col text-center">
-            <p className="m-1 text-2xl">
+            <p className="m-1 text-lg">
               Flæsketorvet 68, 1., 1711, København V <br></br>
               <span className="text-yellow-400">SOHO</span>
             </p>
-            <a className="m-1 text-2xl" href="tel:+4542955969">
+            <a className="m-1 text-lg" href="tel:+4542955969">
               Telefon: <span className="text-yellow-400">+45 42955969</span>
             </a>
-            <p className="m-1 text-2xl">
+            <p className="m-1 text-lg">
               Sikkermail:{" "}
               <span className="text-yellow-400">jl@mentorplan.dk</span>
             </p>
