@@ -67,6 +67,26 @@ const Carousel: React.FC<PropType> = (props) => {
       original: "/images/soho_13.jpg",
       thumbnail: "/images/soho_13.jpg",
     },
+    {
+      original: "/images/soho_14.jpg",
+      thumbnail: "/images/soho_14.jpg",
+    },
+    {
+      original: "/images/soho_15.jpg",
+      thumbnail: "/images/soho_15.jpg",
+    },
+    {
+      original: "/images/soho_16.jpg",
+      thumbnail: "/images/soho_16.jpg",
+    },
+    {
+      original: "/images/soho_17.jpg",
+      thumbnail: "/images/soho_17.jpg",
+    },
+    {
+      original: "/images/soho_18.jpg",
+      thumbnail: "/images/soho_18.jpg",
+    },
   ];
 
   return (
