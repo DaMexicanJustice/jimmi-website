@@ -24,8 +24,8 @@ const Carousel: React.FC<PropType> = (props) => {
       thumbnail: "/images/soho_2.jpg",
     },
     {
-      original: "/images/soho_3.jpg",
-      thumbnail: "/images/soho_3.jpg",
+      original: "/images/soho_16.jpg",
+      thumbnail: "/images/soho_16.jpg",
     },
     {
       original: "/images/soho_4.jpg",
@@ -36,24 +36,24 @@ const Carousel: React.FC<PropType> = (props) => {
       thumbnail: "/images/soho_5.jpg",
     },
     {
-      original: "/images/soho_6.jpg",
-      thumbnail: "/images/soho_6.jpg",
+      original: "/images/soho_17.jpg",
+      thumbnail: "/images/soho_17.jpg",
     },
     {
       original: "/images/soho_7.jpg",
       thumbnail: "/images/soho_7.jpg",
     },
     {
-      original: "/images/soho_8.jpg",
-      thumbnail: "/images/soho_8.jpg",
+      original: "/images/soho_15.jpg",
+      thumbnail: "/images/soho_15.jpg",
     },
     {
       original: "/images/soho_9.jpg",
       thumbnail: "/images/soho_9.jpg",
     },
     {
-      original: "/images/soho_10.jpg",
-      thumbnail: "/images/soho_10.jpg",
+      original: "/images/soho_18.jpg",
+      thumbnail: "/images/soho_18.jpg",
     },
     {
       original: "/images/soho_11.jpg",
@@ -72,20 +72,20 @@ const Carousel: React.FC<PropType> = (props) => {
       thumbnail: "/images/soho_14.jpg",
     },
     {
-      original: "/images/soho_15.jpg",
-      thumbnail: "/images/soho_15.jpg",
+      original: "/images/soho_8.jpg",
+      thumbnail: "/images/soho_8.jpg",
     },
     {
-      original: "/images/soho_16.jpg",
-      thumbnail: "/images/soho_16.jpg",
+      original: "/images/soho_3.jpg",
+      thumbnail: "/images/soho_3.jpg",
     },
     {
-      original: "/images/soho_17.jpg",
-      thumbnail: "/images/soho_17.jpg",
+      original: "/images/soho_6.jpg",
+      thumbnail: "/images/soho_6.jpg",
     },
     {
-      original: "/images/soho_18.jpg",
-      thumbnail: "/images/soho_18.jpg",
+      original: "/images/soho_10.jpg",
+      thumbnail: "/images/soho_10.jpg",
     },
   ];
 

@@ -269,11 +269,20 @@ export default function History() {
               personlig udvikling. Derfor arbejder vi hårdt på at skabe en
               atmosfære, der udstråler muligheder og positivitet. <br></br>
               <br></br>
-              Læs mere om Jimmi Liljehult på LinkedIn.
+              <span
+                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-bold font-conduit
+          xl:text-xl"
+              >
+                Tredje Punkt
+              </span>
+              <br></br>
+              Nulla dolore consequat qui laboris sint tempor. Sit deserunt
+              laborum officia consectetur tempor nisi eiusmod duis culpa. Velit
+              enim nostrud nulla velit voluptate adipisicing aliqua pariatur
+              mollit. Sit occaecat tempor Lorem reprehenderit do elit laborum
+              occaecat. Occaecat anim sit incididunt culpa dolore. Excepteur
+              commodo ut sit occaecat deserunt occaecat minim incididunt.
             </p>
-            <Link href="https://www.linkedin.com/in/jimmililjehult/">
-              <FaLinkedin className="size-14 fill-blue-700 dark:fill-slate-100"></FaLinkedin>
-            </Link>
           </div>
         </main>
       </section>

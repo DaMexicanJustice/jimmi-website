@@ -15,7 +15,7 @@ export default function Home() {
         <Hero></Hero>
         <Services></Services>
         <History></History>
-        {/* <Dna></Dna> */}
+        <Dna></Dna>
         <Environment></Environment>
       </main>
       <Footer></Footer>

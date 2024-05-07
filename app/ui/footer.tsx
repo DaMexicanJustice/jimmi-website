@@ -22,11 +22,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-row justify-between items-center w-full px-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="299.87"
-              height="76"
-              viewBox="0 0 299.87 97.83"
-              className="w-28 cursor-pointer w-28 cursor-pointer fill-white bg-gradient-mentor
-              xl:w-36"
+              width="300"
+              height="66"
+              viewBox="0 0 400 100"
+              className="w-24 h-12 cursor-pointer fill-white bg-gradient-mentor"
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -211,11 +210,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col justify-between px-5 basis-3/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="299.87"
-              height="76"
-              viewBox="0 0 299.87 97.83"
-              className="w-28 cursor-pointer fill-white bg-gradient-mentor
-              xl:w-36"
+              width="300"
+              height="66"
+              viewBox="0 0 400 100"
+              className="w-24 h-12 cursor-pointer fill-white bg-gradient-mentor"
             >
               <defs>
                 <style>.cls-1{}</style>

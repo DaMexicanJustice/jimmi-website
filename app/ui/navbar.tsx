@@ -96,7 +96,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
     <>
       <nav
         id="navbar"
-        className={`fixed top-0 left-0 w-svw px-5 z-50 ${navbarColor} h-24 transition-colors duration-500 
+        className={`fixed top-0 left-0 w-svw px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap overflow-hidden
         md:px-32`}
       >
@@ -104,11 +104,10 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           <Link href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="299.87"
+              width="300"
               height="66"
-              viewBox="0 0 299.87 97.83"
-              className={`${svgColor}  w-28 h-16 cursor-pointer transition-colors duration-500
-              xl:w-36 xl:h-20`}
+              viewBox="0 0 400 100"
+              className={`${svgColor}  w-24 h-12 cursor-pointer transition-colors duration-500`}
             >
               <defs>
                 <style>.cls-1{}</style>
