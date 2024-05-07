@@ -96,6 +96,7 @@ export default function Services() {
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
+                href="/service-employment"
               >
                 Læs Mere
               </Button>
@@ -131,6 +132,7 @@ export default function Services() {
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
+                href="/service-youth"
               >
                 Læs Mere
               </Button>
@@ -166,6 +168,7 @@ export default function Services() {
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
+                href="/employees"
               >
                 Læs Mere
               </Button>
@@ -201,6 +204,7 @@ export default function Services() {
                   lg:text-sm"
                 variant="contained"
                 color="ochre"
+                href="social-feed"
               >
                 Læs Mere
               </Button>

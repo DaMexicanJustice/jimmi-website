@@ -38,10 +38,18 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem className={`font-conduit`} onClick={handleClose}>
+        <MenuItem
+          className={`font-conduit`}
+          onClick={handleClose}
+          href="/service-employment"
+        >
           Beskæftigelsesindsatser
         </MenuItem>
-        <MenuItem className={`font-conduit`} onClick={handleClose}>
+        <MenuItem
+          className={`font-conduit`}
+          onClick={handleClose}
+          href="service-youth"
+        >
           Ungeindsatser
         </MenuItem>
       </Menu>

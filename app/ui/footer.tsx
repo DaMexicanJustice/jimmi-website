@@ -85,10 +85,10 @@ const Footer: React.FC = () => {
             <a className="m-1 text-lg" href="tel:+4542955969">
               Telefon: <span className="text-yellow-400">+45 42955969</span>
             </a>
-            <p className="m-1 text-lg">
+            <a href="mailto:jl@mentorplan.dk" className="m-1 text-lg">
               Sikkermail:{" "}
               <span className="text-yellow-400">jl@mentorplan.dk</span>
-            </p>
+            </a>
             <p className="m1 text-lg">CVR: 37923850</p>
           </div>
           <div className="flex flex-row justify-between gap-5">

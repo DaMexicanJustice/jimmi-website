@@ -36,7 +36,7 @@ export default async function Employees() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employees"
-        className="px-5 min-h-[calc(100svh-6rem)] mt-24 bg-slate-50 dark:bg-stone-900
+        className="px-5 min-h-[calc(100svh-6rem)] mt-12 bg-slate-50 dark:bg-stone-900
         md:px-32"
       >
         <main className="flex h-full flex-col">

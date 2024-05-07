@@ -13,6 +13,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { IconButton, List, ListItem } from "@mui/material";
 import { Dehaze, Close, HorizontalRule } from "@mui/icons-material";
 import NavbarButton from "./navbar-button";
+import { useRouter } from "next/router";
 
 interface NavbarProps {
   useScrollBehavior: boolean;
@@ -47,11 +48,15 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
   const svgColorState = useScrollBehavior
     ? "fill-white"
     : "fill-black dark:fill-white bg-gradient-mentor";
+  const dehazeColorState = useScrollBehavior
+    ? "fill-white"
+    : "fill-black dark:fill-white";
   const textColorState = useScrollBehavior
     ? "text-white"
     : "text-black dark:text-white";
   const [navbarColor, setNavbarColor] = useState(navColorState);
   const [svgColor, setSVGColor] = useState(svgColorState);
+  const [dehazeColor, setDehazeColor] = useState(dehazeColorState);
   const [textColor, setTextColor] = useState(textColorState);
 
   useEffect(() => {
@@ -67,6 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           if (window.scrollY < heroSectionRect.height) {
             setNavbarColor("bg-transparent");
             setSVGColor("fill-white");
+            setDehazeColor("fill-white");
             setTextColor("text-white");
           } else if (
             window.scrollY >= heroSectionRect.height &&
@@ -75,6 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             // Change navbar color based on the section being scrolled to
             setNavbarColor("bg-white dark:bg-black");
             setSVGColor("fill-black dark:fill-white bg-gradient-mentor");
+            setDehazeColor("fill-black dark:fill-white");
             setTextColor("text-black dark:text-white");
           } else {
             // Handle other sections as needed
@@ -162,10 +169,10 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             aria-label="fingerprint"
             id="burger-menu"
             onClick={openMenu}
-            className="p-5"
+            className="p-0"
           >
             <Dehaze
-              className={`${svgColor} size-8 
+              className={`${dehazeColor} size-8 
               md:size-12`}
             />
           </IconButton>
@@ -232,7 +239,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                       <Typography>Ydelser</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <List className="px-2">
+                      <List>
                         <ListItem>
                           <Typography>Beskæftigelsesindsatser</Typography>
                         </ListItem>
