@@ -59,16 +59,18 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="px-5 bg-slate-50 dark:bg-slate-950
-        md:px-32"
+        className="px-5 bg-slate-50 dark:bg-slate-950 min-h-[calc(60svh-3rem)] 
+        md:px-32
+        xl:h-[calc(100svh-3rem)]"
       >
         <main
-          className="flex flex-col gap-8 py-8
+          className="flex flex-col gap-8 py-8 h-full justify-center items-center
         md:flex-row md:flex-wrap
         xl:flex-nowrap"
         >
           <div
-            className="flex flex-col gap-5 justify-center items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-center items-center pb-5 
+            bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >

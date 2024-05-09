@@ -11,14 +11,14 @@ export default function Services() {
     // Simulate loading delay
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <>
       <Navbar useScrollBehavior={false} />
       <section
         id="Social-feed"
-        className="px-5 min-h-[calc(100svh-6rem)] bg-slate-50 dark:bg-slate-950
+        className="px-5 min-h-[calc(100svh-3rem)] bg-slate-50 dark:bg-slate-950
         md:px-32"
       >
         <main className="flex flex-col h-full gap-8 py-8 mt-12 items-center">

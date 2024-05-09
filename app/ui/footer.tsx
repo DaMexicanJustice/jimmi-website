@@ -78,10 +78,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col text-center">
-            <p className="m-1 text-lg">
+            <a
+              href="https://www.google.com/maps/place/SOHO/@55.666656,12.5567907,17z/data=!3m1!4b1!4m6!3m5!1s0x46525373da1d5b59:0x8bc8cd4d0c582aa4!8m2!3d55.666653!4d12.559371!16s%2Fg%2F1td9ccch?entry=ttu"
+              className="m-1 text-lg"
+            >
               Flæsketorvet 68, 1., 1711, København V <br></br>
               <span className="text-yellow-400">SOHO</span>
-            </p>
+            </a>
             <a className="m-1 text-lg" href="tel:+4542955969">
               Telefon: <span className="text-yellow-400">+45 42955969</span>
             </a>
@@ -269,12 +272,15 @@ const Footer: React.FC = () => {
             {/* <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
                 Mød Mig Her
               </h1> */}
-            <p className="m-1 text-xl">
+            <a
+              href="https://www.google.com/maps/place/SOHO/@55.666656,12.5567907,17z/data=!3m1!4b1!4m6!3m5!1s0x46525373da1d5b59:0x8bc8cd4d0c582aa4!8m2!3d55.666653!4d12.559371!16s%2Fg%2F1td9ccch?entry=ttu"
+              className="m-1 text-xl"
+            >
               Flæsketorvet 68, 1. sal, 1711, København V <br></br>
               <span className="text-yellow-400 dark:text-yellow-500 font-conduitbold">
                 SOHO
               </span>
-            </p>
+            </a>
             {/* <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
                 Skriv Til Mig
               </h1> */}
@@ -284,6 +290,7 @@ const Footer: React.FC = () => {
                 jl@mentorplan.dk
               </span>
             </p>
+            <p className="m1 text-lg text-slate-500">CVR: 37923850</p>
             {/* <div className="">
               <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
                 Ring På

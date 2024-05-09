@@ -70,12 +70,13 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 bg-slate-50 dark:bg-slate-900 min-h-[calc(60svh-3rem)] 
-        md:px-20 md:h-44"
+        className="px-5 bg-slate-50 dark:bg-slate-900 min-h-[calc(100svh-3rem)] 
+        md:px-20 md:h-44
+        xl:h-[calc(100svh-3rem)]"
       >
         <main
           className="flex flex-col items-center justify-center h-full pb-10
-        md:flex-row md:gap-10 md:justify-center md:pb-0"
+        md:flex-row md:gap-10 md:justify-evenly md:pb-0"
         >
           {/* Left Panel / Top Panel */}
           <div

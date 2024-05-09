@@ -36,22 +36,23 @@ export default async function Employees() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employees"
-        className="px-5 min-h-[calc(100svh-6rem)] mt-12 bg-slate-50 dark:bg-stone-900
-        md:px-32"
+        className="px-5 min-h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-stone-900
+        md:px-32
+        xl:h-[calc(100svh-3rem)]"
       >
-        <main className="flex h-full flex-col">
+        <main className="flex flex-col h-full justify-center items-center">
           <div className="flex flex-col gap-10 py-5">
             <div className="bg-yellow-400 dark:bg-yellow-500 grow p-5 flex flex-col gap-5 shadow-xl">
               <h1 className="uppercase font-bold text-3xl text-slate-900 font-conduit">
                 Konsulenter
               </h1>
-              <hr className="border border-solid border-slate-900"></hr>
+              {/* <hr className="border border-solid border-slate-900"></hr> */}
               <p className="text-slate-900 text-xl">
                 Occaecat minim irure proident cupidatat tempor et Lorem dolor.
                 Ut aliquip consectetur ullamco ullamco enim. Deserunt nostrud
                 sit laboris adipisicing ullamco proident eiusmod.
               </p>
-              <hr className="border border-solid border-slate-900 "></hr>
+              {/* <hr className="border border-solid border-slate-900 "></hr> */}
             </div>
             <div
               className="flex flex-col gap-5
