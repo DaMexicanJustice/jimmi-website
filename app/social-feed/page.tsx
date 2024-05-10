@@ -19,7 +19,8 @@ export default function Services() {
       <section
         id="Social-feed"
         className="px-5 min-h-[calc(100svh-3rem)] bg-slate-50 dark:bg-slate-950
-        md:px-32"
+        md:px-32
+        xl:py-12"
       >
         <main className="flex flex-col h-full gap-8 py-8 mt-12 items-center">
           <h1 className="uppercase font-bold font-conduit text-2xl">

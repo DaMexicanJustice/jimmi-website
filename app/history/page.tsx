@@ -40,9 +40,9 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 bg-slate-100 dark:bg-slate-900 overflow-hidden min-h-[calc(100svh-6rem)]
+        className="px-5 bg-slate-100 dark:bg-slate-900 overflow-hidden min-h-[calc(100svh-3rem)]
         md:px-32 md:py-40
-        xl:py-0 xl:h-[calc(100svh-3rem)]"
+        xl:py-12"
       >
         <main
           className="flex flex-col items-center justify-evenly gap-6 py-6 h-full

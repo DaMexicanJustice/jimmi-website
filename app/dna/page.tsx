@@ -72,7 +72,7 @@ export default function Dna() {
         id="DNA"
         className="px-5 bg-slate-50 dark:bg-slate-900 min-h-[calc(100svh-3rem)] 
         md:px-20 md:h-44
-        xl:h-[calc(100svh-3rem)]"
+        xl:py-12"
       >
         <main
           className="flex flex-col items-center justify-center h-full pb-10

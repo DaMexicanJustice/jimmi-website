@@ -38,7 +38,7 @@ export default async function Employees() {
         id="Employees"
         className="px-5 min-h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-stone-900
         md:px-32
-        xl:h-[calc(100svh-3rem)]"
+        xl:py-12"
       >
         <main className="flex flex-col h-full justify-center items-center">
           <div className="flex flex-col gap-10 py-5">
