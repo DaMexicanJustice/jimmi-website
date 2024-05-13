@@ -85,7 +85,7 @@ export default function Dna() {
           xl:items-start xl:basis-4/12"
           >
             <h1
-              className="text-slate-950 dark:text-slate-50 text-5xl font-bold font-conduit
+              className="text-slate-950 dark:text-slate-50 text-2xl font-bold font-conduit
             md:text-xl"
             >
               Mollit ea
@@ -95,7 +95,7 @@ export default function Dna() {
             md:justify-start md:gap-1"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-4xl font-bold font-conduit
+                className="text-slate-950 dark:text-slate-50 text-xl font-bold font-conduit
               md:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
@@ -116,7 +116,7 @@ export default function Dna() {
               </p>
               <ThemeProvider theme={yellowTheme}>
                 <Button
-                  className="p-2 uppercase font-bold text-xl bg-yellow-400
+                  className="p-2 uppercase font-bold text-lg bg-yellow-400
                   md:text-3xl
                   lg:text-sm"
                   variant="contained"
