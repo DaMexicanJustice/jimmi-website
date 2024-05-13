@@ -135,7 +135,7 @@ export default function Dna() {
           xl:items-start xl:basis-4/12"
           >
             <h1
-              className="text-slate-950 dark:text-slate-50 text-5xl font-bold font-conduit
+              className="text-slate-950 dark:text-slate-50 text25xl font-bold font-conduit
             md:text-xl"
             >
               Mollit ea
@@ -145,7 +145,7 @@ export default function Dna() {
             md:justify-start md:gap-1"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-4xl font-bold font-conduit
+                className="text-slate-950 dark:text-slate-50 text-xl font-bold font-conduit
               md:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
