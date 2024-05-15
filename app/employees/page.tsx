@@ -48,9 +48,11 @@ export default async function Employees() {
               </h1>
               {/* <hr className="border border-solid border-slate-900"></hr> */}
               <p className="text-slate-900 text-xl">
-                Occaecat minim irure proident cupidatat tempor et Lorem dolor.
-                Ut aliquip consectetur ullamco ullamco enim. Deserunt nostrud
-                sit laboris adipisicing ullamco proident eiusmod.
+                Vi mener, at faglighed er en afgørende forudsætning for at
+                udføre et godt stykke arbejde. Denne brede vifte af erfaringer
+                inden for vores team giver os mulighed for at tilbyde
+                skræddersyet støtte og rådgivning til vores målgrupper. Læs mere
+                under den enkelte konsulent.
               </p>
               {/* <hr className="border border-solid border-slate-900 "></hr> */}
             </div>

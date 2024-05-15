@@ -29,12 +29,6 @@ export default function Hero() {
           >
             Alt godt samarbejde starter med en god kop kaffe
           </h2>
-          <h2
-            className="text-sm font-semibold text-white
-          md:text-xl"
-          >
-            Erfarne mentorer &nbsp; i &nbsp; trygge rammer
-          </h2>
         </main>
         <div
           className="top-0 left-0 absolute h-svh w-full object-cover z-30

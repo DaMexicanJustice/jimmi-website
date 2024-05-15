@@ -147,14 +147,14 @@ export default function Services() {
           xl:basis-3/12 xl:grow-0"
           >
             <Image
-              src="/images/Medarbejdere.jpg"
+              src="/images/Konsulenter.jpg"
               width={430}
               height={370}
               alt="Ydelse 1"
               className="w-full object-cover"
             />
             <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
-              Medarbejdere
+              Konsulenter
             </h1>
             <p
               className="text-slate-900 text-center px-5
