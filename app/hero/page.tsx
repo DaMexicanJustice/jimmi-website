@@ -1,6 +1,5 @@
+import Typewriter from "../ui/typewriter";
 import "/app/styles/styles.css";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import UiButton from "../ui/ui-button";
 
 export default function Hero() {
   return (
@@ -15,7 +14,7 @@ export default function Hero() {
         md:px-32 md:gap-10"
         >
           <h1
-            className="text-xl whitespace-pre font-bold uppercase text-white
+            className="text-xl whitespace-pre font-bold uppercase text-slate-50
           md:text-5xl"
           >
             Sammen med borger finder vi &nbsp;
@@ -23,12 +22,7 @@ export default function Hero() {
               <span className="relative">vejen</span>
             </span>
           </h1>
-          <h2
-            className="text-base font-semibold text-white
-          md:text-2xl"
-          >
-            Alt godt samarbejde starter med en god kop kaffe
-          </h2>
+          <Typewriter></Typewriter>
         </main>
         <div
           className="top-0 left-0 absolute h-svh w-full object-cover z-30
