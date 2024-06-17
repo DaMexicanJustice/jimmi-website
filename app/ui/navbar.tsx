@@ -180,7 +180,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
 
         {/* Mobile menu navbar */}
         <div
-          className={`fixed min-h-[calc(100svh+6rem)]w-full backdrop-blur-xl backdrop-brightness-50 top-0 right-0 overflow-hidden ${posX}
+          className={`fixed min-h-[calc(100svh+6rem)] w-full backdrop-blur-xl backdrop-brightness-50 top-0 right-0 overflow-hidden ${posX}
           transition-transform duration-700 ease-in-out
           xl:hidden`}
         >
@@ -210,7 +210,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               >
                 <HorizontalRule></HorizontalRule>Konsulenter
               </Link>
-              <Link href="#" className="flex flex-row w-40 items-center">
+              <div className="flex flex-row w-40 items-center">
                 <ThemeProvider theme={theme}>
                   <HorizontalRule
                     className={expanded ? "opacity-0" : "opacity-100"}
@@ -241,19 +241,28 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                     <AccordionDetails>
                       <List>
                         <ListItem>
-                          <Typography>Beskæftigelsesindsatser</Typography>
+                          <Link
+                            href="/service-employment"
+                            className="font-conduit"
+                          >
+                            Beskæftigelsesindsatser
+                          </Link>
                         </ListItem>
                         <ListItem>
-                          <Typography>Ungeindsatser</Typography>
+                          <Link href="/service-youth" className="font-conduit">
+                            Ungeindsatser
+                          </Link>
                         </ListItem>
                         <ListItem>
-                          <Typography>Socialindsatser</Typography>
+                          <Link href="/service-social" className="font-conduit">
+                            Socialindsatser
+                          </Link>
                         </ListItem>
                       </List>
                     </AccordionDetails>
                   </Accordion>
                 </ThemeProvider>
-              </Link>
+              </div>
               <Link
                 href="/social-feed"
                 onClick={closeMenu}

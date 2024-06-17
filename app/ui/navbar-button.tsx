@@ -41,6 +41,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         <MenuItem
           className={`font-conduit`}
           onClick={handleClose}
+          component={"a"}
           href="/service-employment"
         >
           Beskæftigelsesindsatser
@@ -48,14 +49,16 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         <MenuItem
           className={`font-conduit`}
           onClick={handleClose}
-          href="service-youth"
+          component={"a"}
+          href="/service-youth"
         >
           Ungeindsatser
         </MenuItem>
         <MenuItem
           className={`font-conduit`}
           onClick={handleClose}
-          href="service-youth"
+          component={"a"}
+          href="/service-social"
         >
           Socialindsatser
         </MenuItem>
