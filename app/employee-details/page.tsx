@@ -83,7 +83,7 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="px-5 min-h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-slate-950 py-5
+        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-slate-950 py-5 
       md:px-32
       xl:py-12"
       >

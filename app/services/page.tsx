@@ -59,7 +59,7 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="px-5 bg-slate-50 dark:bg-slate-950 min-h-[calc(100svh-3rem)] 
+        className="px-5 bg-slate-50 dark:bg-slate-950 min-h-[calc(100svh-3rem)] max-h-max
         md:px-32
         xl:py-12"
       >
@@ -154,7 +154,7 @@ export default function Services() {
               className="w-full object-cover"
             />
             <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
-              Konsulenter
+              Socialindsatser
             </h1>
             <p
               className="text-slate-900 text-center px-5

@@ -36,7 +36,7 @@ export default async function Employees() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employees"
-        className="px-5 min-h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-stone-900
+        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-stone-900
         md:px-32
         xl:py-12"
       >
@@ -124,7 +124,7 @@ export default async function Employees() {
                         className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                     uppercase font-conduitbold text-sm rounded-full -rotate-45
                     md:size-48
-                    xl:size-32 xl:p-4 xl:text-xs"
+                    xl:size-36 xl:p-5 xl:text-xs"
                       >
                         Læs Mere
                       </div>
@@ -190,7 +190,7 @@ export default async function Employees() {
                         className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                         uppercase font-conduitbold text-sm rounded-full -rotate-45
                         md:size-48
-                        xl:size-32 xl:p-4 xl:text-xs"
+                        xl:size-36 xl:p-5 xl:text-xs"
                       >
                         Læs Mere
                       </div>

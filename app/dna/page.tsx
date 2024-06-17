@@ -70,7 +70,7 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 bg-slate-50 dark:bg-slate-900 min-h-[calc(100svh-3rem)] 
+        className="px-5 bg-slate-50 dark:bg-slate-900 min-h-[calc(100svh-3rem)] max-h-max
         md:px-20 md:h-44
         xl:py-12"
       >

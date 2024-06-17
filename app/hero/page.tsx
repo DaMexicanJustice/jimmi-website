@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <section
         id="Hero"
-        className="px-5 h-svh
+        className="px-5 h-svh max-h-max
       md:px-32"
       >
         <main

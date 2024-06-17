@@ -52,6 +52,13 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         >
           Ungeindsatser
         </MenuItem>
+        <MenuItem
+          className={`font-conduit`}
+          onClick={handleClose}
+          href="service-youth"
+        >
+          Socialindsatser
+        </MenuItem>
       </Menu>
     </div>
   );
