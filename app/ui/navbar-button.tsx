@@ -2,6 +2,8 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Link from "next/link";
+import { LinkIcon } from "@heroicons/react/24/outline";
 
 interface NavbarButtonProps {
   textColor: string;
@@ -41,7 +43,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         <MenuItem
           className={`font-conduit`}
           onClick={handleClose}
-          component={"a"}
+          component={Link}
           href="/service-employment"
         >
           Beskæftigelsesindsatser
@@ -49,7 +51,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         <MenuItem
           className={`font-conduit`}
           onClick={handleClose}
-          component={"a"}
+          component={Link}
           href="/service-youth"
         >
           Ungeindsatser
@@ -57,7 +59,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         <MenuItem
           className={`font-conduit`}
           onClick={handleClose}
-          component={"a"}
+          component={Link}
           href="/service-social"
         >
           Socialindsatser
