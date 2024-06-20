@@ -1,58 +1,5 @@
-"use client"; // This is a client component
 import Image from "next/image";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Button from "@mui/material/Button";
-
-// Augment the palette to include an ochre color
-declare module "@mui/material/styles" {
-  interface Palette {
-    ochre: Palette["primary"];
-  }
-
-  interface PaletteOptions {
-    ochre?: PaletteOptions["primary"];
-  }
-}
-
-// Update the Button's color options to include an ochre option
-declare module "@mui/material/Button" {
-  interface ButtonPropsColorOverrides {
-    ochre: true;
-  }
-}
-
-const yellowTheme = createTheme({
-  palette: {
-    ochre: {
-      main: "#FFD200",
-      light: "#ffd71a",
-      dark: "#6bd00",
-      contrastText: "#000000",
-    },
-  },
-});
-
-const orangeTheme = createTheme({
-  palette: {
-    ochre: {
-      main: "#f97316",
-      light: "#ff9933",
-      dark: "#EA580C",
-      contrastText: "#242105",
-    },
-  },
-});
-
-const indigoTheme = createTheme({
-  palette: {
-    ochre: {
-      main: "#6366F1",
-      light: "818CF8",
-      dark: "#4F46E5",
-      contrastText: "#242105",
-    },
-  },
-});
+import CtaButton from "../ui/cta-button";
 
 export default function Services() {
   return (
@@ -91,18 +38,7 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <ThemeProvider theme={yellowTheme}>
-              <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-400
-                  md:text-base
-                  lg:text-sm"
-                variant="contained"
-                color="ochre"
-                href="/service-employment"
-              >
-                Læs Mere
-              </Button>
-            </ThemeProvider>
+            <CtaButton text="Læs Mere" href="/service-employment"></CtaButton>
           </div>
 
           <div
@@ -127,18 +63,7 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <ThemeProvider theme={yellowTheme}>
-              <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-400
-                  md:text-base
-                  lg:text-sm"
-                variant="contained"
-                color="ochre"
-                href="/service-youth"
-              >
-                Læs Mere
-              </Button>
-            </ThemeProvider>
+            <CtaButton text="Læs Mere" href="/service-youth"></CtaButton>
           </div>
 
           <div
@@ -163,18 +88,7 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <ThemeProvider theme={yellowTheme}>
-              <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-400
-                  md:text-base
-                  lg:text-sm"
-                variant="contained"
-                color="ochre"
-                href="/employees"
-              >
-                Læs Mere
-              </Button>
-            </ThemeProvider>
+            <CtaButton text="Læs Mere" href="/service-social"></CtaButton>
           </div>
 
           <div
@@ -199,18 +113,7 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <ThemeProvider theme={yellowTheme}>
-              <Button
-                className="p-2 uppercase font-bold text-sm bg-yellow-400
-                  md:text-base
-                  lg:text-sm"
-                variant="contained"
-                color="ochre"
-                href="social-feed"
-              >
-                Læs Mere
-              </Button>
-            </ThemeProvider>
+            <CtaButton text="Læs Mere" href="/social-feed"></CtaButton>
           </div>
         </main>
       </section>
