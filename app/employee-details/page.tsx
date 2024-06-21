@@ -60,7 +60,6 @@ export default function EmployeeDetails() {
       .then((data) => {
         setData(data.employees[id]);
         setLoading(false);
-        //console.log(data.employees[id].name);
       })
       .catch((error) =>
         console.error(

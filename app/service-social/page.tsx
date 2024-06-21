@@ -8,7 +8,7 @@ export default function ServiceSocial() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="p-5 min-h-[calc(100svh-3rem)] mt-16 bg-slate-50 dark:bg-stone-900
+        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900
         md:px-32 md:py-14"
       >
         <main

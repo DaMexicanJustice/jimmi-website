@@ -85,11 +85,9 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             setTextColor("text-black dark:text-white");
           } else {
             // Handle other sections as needed
-            console.log("Else");
           }
         }
       } else {
-        console.log("Disabled scroll behavior");
       }
     };
 
@@ -242,6 +240,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                       <List>
                         <ListItem>
                           <Link
+                            onClick={closeMenu}
                             href="/service-employment"
                             className="font-conduit"
                           >
@@ -249,12 +248,20 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link href="/service-youth" className="font-conduit">
+                          <Link
+                            onClick={closeMenu}
+                            href="/service-youth"
+                            className="font-conduit"
+                          >
                             Ungeindsatser
                           </Link>
                         </ListItem>
                         <ListItem>
-                          <Link href="/service-social" className="font-conduit">
+                          <Link
+                            onClick={closeMenu}
+                            href="/service-social"
+                            className="font-conduit"
+                          >
                             Socialindsatser
                           </Link>
                         </ListItem>
