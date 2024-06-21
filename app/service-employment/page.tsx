@@ -8,10 +8,13 @@ export default function ServiceEmployment() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="px-5 min-h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-stone-900
+        className="p-5 mt-16 bg-slate-50 dark:bg-stone-900
         md:px-32 md:py-14"
       >
-        <main className="h-full flex flex-col w-full justify-center gap-10">
+        <main
+          className="h-full flex flex-col w-full justify-center items-center gap-10
+        md:items-start"
+        >
           <h1
             className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
             xl:text-4xl"
@@ -32,7 +35,10 @@ export default function ServiceEmployment() {
             mere ”bløde” ting. Herefter vil vi rette fokus mod beskæftigelse.
           </p>
 
-          <div className="flex flex-row gap-4 space-between items-center">
+          <div
+            className="flex flex-col gap-6 md:gap-4 justify-between items-center
+          md:flex-row"
+          >
             <Image
               src="/images/360.png"
               width={430}
@@ -40,7 +46,10 @@ export default function ServiceEmployment() {
               alt="Ydelse 1"
               className="object-cover"
             />
-            <div className="flex flex-col gap-4">
+            <div
+              className="flex flex-col gap-6 items-center
+            md:items-start md:gap-4 "
+            >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
@@ -69,15 +78,21 @@ export default function ServiceEmployment() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div
+            className="flex flex-col gap-6 md:gap-4 items-center
+          md:items-start md:gap-4"
+          >
             <h2
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
                   xl:text-4xl"
             >
               Job-first metoden
             </h2>
-            <div className="flex flex-row gap-4 justify-center">
-              <div className="flex flex-col gap-4 basis-4/12">
+            <div
+              className="flex flex-col gap-6 md:gap-4 justify-center
+            md:flex-row md:gap-4 "
+            >
+              <div className="flex flex-col gap-6 md:gap-4 basis-4/12">
                 <div className="flex flex-row gap-1 bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1 items-center">
                   <h2
                     className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
@@ -103,7 +118,10 @@ export default function ServiceEmployment() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-4 basis-4/12">
+              <div
+                className="flex flex-col gap-6 md:gap-4 basis-4/12
+              md:gap-4"
+              >
                 <div className="flex flex-row gap-1 bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1 items-center">
                   <h2
                     className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
@@ -128,7 +146,10 @@ export default function ServiceEmployment() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-4 basis-4/12">
+              <div
+                className="flex flex-col gap-6 basis-4/12
+              md:gap-4"
+              >
                 <div className="flex flex-row gap-1 bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1 items-center">
                   <h2
                     className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
@@ -153,8 +174,14 @@ export default function ServiceEmployment() {
             </div>
           </div>
 
-          <div className="flex flex-row gap-4 space-between items-center">
-            <div className="flex flex-col gap-4">
+          <div
+            className="flex flex-col gap-6 space-between items-center
+          md:flex-row md:gap-4"
+          >
+            <div
+              className="flex flex-col gap-6 items-center
+            md:items-start md:gap-4"
+            >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
@@ -184,7 +211,10 @@ export default function ServiceEmployment() {
             />
           </div>
 
-          <div className="flex flex-row gap-4 space-between items-center">
+          <div
+            className="flex flex-col gap-6space-between items-center
+          md:flex-row md:gap-4 "
+          >
             <Image
               src="/images/journal.jpg"
               width={430}
@@ -192,7 +222,10 @@ export default function ServiceEmployment() {
               alt="hurtigt i job"
               className="object-cover"
             />
-            <div className="flex flex-col gap-4">
+            <div
+              className="flex flex-col gap-6 md:gap-4 items-center
+            md:items-start"
+            >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"

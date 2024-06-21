@@ -8,12 +8,16 @@ export default function ServiceSocial() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="px-5 min-h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-stone-900
+        className="p-5 min-h-[calc(100svh-3rem)] mt-16 bg-slate-50 dark:bg-stone-900
         md:px-32 md:py-14"
       >
-        <main className="h-full flex flex-col w-full justify-center gap-10">
+        <main
+          className="h-full flex flex-col w-full justify-center gap-6
+        md:gap-4"
+        >
           <h1
-            className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
+            className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
+            md:self-start
             xl:text-4xl"
           >
             Socialindsatser
@@ -32,10 +36,13 @@ export default function ServiceSocial() {
             mere ”bløde” ting. Herefter vil vi rette fokus mod beskæftigelse.
           </p>
 
-          <div className="flex flex-row gap-4 justify-between items-center">
+          <div
+            className="flex flex-col gap-4 justify-between items-center
+          md:flex-row"
+          >
             <div className="flex flex-col gap-4">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
+                className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
               >
                 Et andet perspektiv i vores 360-graders metode
@@ -78,7 +85,10 @@ export default function ServiceSocial() {
             />
           </div>
 
-          <div className="flex flex-row gap-4 justify-between items-center">
+          <div
+            className="flex flex-col gap-4 justify-between items-center
+          md:flex-row"
+          >
             <Image
               src="/images/network.jpg"
               width={430}
@@ -86,7 +96,10 @@ export default function ServiceSocial() {
               alt="Ydelse 1"
               className="object-cover"
             />
-            <div className="flex flex-col gap-4">
+            <div
+              className="flex flex-col items-center gap-4
+            md:items-start"
+            >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
@@ -121,8 +134,14 @@ export default function ServiceSocial() {
             </div>
           </div>
 
-          <div className="flex flex-row gap-4 justify-between items-center">
-            <div className="flex flex-col gap-4 justify-between basis-4/12">
+          <div
+            className="flex flex-col gap-4 justify-between items-center
+          md:flex-row"
+          >
+            <div
+              className="flex flex-col gap-4 justify-between
+            md:basis-4/12"
+            >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
@@ -156,7 +175,10 @@ export default function ServiceSocial() {
               />
             </div>
 
-            <div className="flex flex-col gap-4 justify-between basis-4/12 p-4">
+            <div
+              className="flex flex-col gap-4 justify-between
+            md:basis-4/12 md:p-4"
+            >
               <Image
                 src="/images/commute_2.jpg"
                 width={430}
@@ -167,7 +189,7 @@ export default function ServiceSocial() {
 
               <div className="bg-slate-200 p-3">
                 <h2
-                  className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
+                  className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
                 >
                   ”Virkeligheden virker”.
@@ -188,7 +210,10 @@ export default function ServiceSocial() {
               />
             </div>
 
-            <div className="flex flex-col gap-4 justify-between basis-4/12">
+            <div
+              className="flex flex-col gap-4 justify-between items-center
+            md:basis-4/12 md:items-start"
+            >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
