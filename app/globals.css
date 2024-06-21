@@ -58,3 +58,15 @@ body {
 .slider {
   transform: translateY(300px);
 }
+
+.image-down {
+  transform: translateY(1000px);
+}
+
+.image-left {
+  transform: translateX(-1000px);
+}
+
+.image-right {
+  transform: translateX(1000px);
+}

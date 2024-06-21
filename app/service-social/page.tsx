@@ -22,10 +22,23 @@ export default function ServiceSocial() {
           trigger: image,
           start: "top bottom",
           end: "top top",
-          toggleActions: "play reset resume reset",
+          toggleActions: "play none none reverse",
         },
         filter: "grayscale(0%)",
+        x: 0,
+        duration: 1,
       });
+    });
+    gsap.to(".image-down", {
+      scrollTrigger: {
+        trigger: "#sliderTarget",
+        start: "top center",
+        end: "top bottom",
+        // Toggles Enters trigger, past trigger, resume when entering trigger, scroll up past trigger
+        toggleActions: "play none none reverse",
+      },
+      y: 0,
+      duration: 2,
     });
   });
 
@@ -35,6 +48,7 @@ export default function ServiceSocial() {
       <section
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900
+        overflow-hidden
         md:px-32 md:py-14"
       >
         <main
@@ -107,7 +121,7 @@ export default function ServiceSocial() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover grayscale"
+              className="object-cover grayscale image-right"
             />
           </div>
 
@@ -120,7 +134,7 @@ export default function ServiceSocial() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover grayscale"
+              className="object-cover grayscale image-left"
             />
             <div
               className="flex flex-col items-center gap-4
@@ -165,6 +179,7 @@ export default function ServiceSocial() {
           md:flex-row"
           >
             <div
+              id="sliderTarget"
               className="flex flex-col gap-4 justify-between
             md:basis-4/12"
             >
@@ -197,13 +212,13 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover grayscale "
+                className="object-cover grayscale image-left"
               />
             </div>
 
             <div
               className="flex flex-col gap-4 justify-between
-            md:basis-4/12 md:p-4"
+            md:basis-4/12 md:p-4 image-down"
             >
               <Image
                 src="/images/commute_2.jpg"
@@ -274,7 +289,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover grayscale"
+                className="object-cover grayscale image-right"
               />
             </div>
           </div>

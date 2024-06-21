@@ -23,9 +23,11 @@ export default function ServiceEmployment() {
           trigger: image,
           start: "top bottom",
           end: "top top",
-          toggleActions: "play reset resume reset",
+          toggleActions: "play none none reverse",
         },
         filter: "grayscale(0%)",
+        x: 0,
+        duration: 1,
       });
     });
     gsap.to(".slider", {
@@ -33,11 +35,11 @@ export default function ServiceEmployment() {
         trigger: "#sliderTarget",
         start: "top center",
         end: "top bottom",
-        // Toggles Enters, past end point, resume when scrolling back up to trigger, Scroll top
+        // Toggles Enters trigger, past trigger, resume when entering trigger, scroll up past trigger
         toggleActions: "play none none reverse",
       },
       y: 0,
-      duration: 1,
+      duration: 2,
     });
   });
   return (
@@ -74,18 +76,18 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 md:gap-4 justify-between items-center
-          md:flex-row"
+          md:flex-row md:basis-4/12"
           >
             <Image
               src="/images/360.png"
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover grayscale"
+              className="object-cover grayscale image-left"
             />
             <div
               className="flex flex-col gap-6 items-center
-            md:items-start md:gap-4 "
+            md:items-start md:gap-4 md:basis-8/12"
             >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
@@ -217,7 +219,7 @@ export default function ServiceEmployment() {
           >
             <div
               className="flex flex-col gap-6 items-center
-            md:items-start md:gap-4"
+              md:items-start md:gap-4 md:basis-8/12"
             >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
@@ -244,7 +246,7 @@ export default function ServiceEmployment() {
               width={430}
               height={370}
               alt="hurtigt i job"
-              className="object-cover grayscale"
+              className="object-cover grayscale md:basis-4/12 image-right"
             />
           </div>
 
@@ -258,11 +260,11 @@ export default function ServiceEmployment() {
               width={430}
               height={370}
               alt="hurtigt i job"
-              className="object-cover grayscale"
+              className="object-cover grayscale image-left md:basis-4/12"
             />
             <div
               className="flex flex-col gap-6 md:gap-4 items-center
-            md:items-start"
+            md:items-start md:basis-8/12"
             >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
@@ -279,7 +281,7 @@ export default function ServiceEmployment() {
                 et meget forskelligt behov. Vi skræddersyr vores dokumentation,
                 så det understøtter jeres behov bedst muligt. Men vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 dark:bg-yellow-500 py-5 px-10 font-conduit font-bold list-disc slider">
+              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc slider">
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til
