@@ -43,7 +43,7 @@ export default function ServiceSocial() {
             <div className="flex flex-col gap-4">
               <h2
                 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
-                  xl:text-4xl"
+                  xl:text-4xl xl:text-left"
               >
                 Et andet perspektiv i vores 360-graders metode
               </h2>
@@ -143,8 +143,8 @@ export default function ServiceSocial() {
             md:basis-4/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
-                  xl:text-4xl"
+                className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
+                  xl:text-4xl xl:text-left"
               >
                 AFKLARINGS OG UDVIKLINGSFORLØB
               </h2>
@@ -190,7 +190,7 @@ export default function ServiceSocial() {
               <div className="bg-slate-200 p-3">
                 <h2
                   className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
-                  xl:text-4xl"
+                  xl:text-4xl xl:text-left"
                 >
                   ”Virkeligheden virker”.
                 </h2>

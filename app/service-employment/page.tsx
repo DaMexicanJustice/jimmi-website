@@ -212,8 +212,8 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6space-between items-center
-          md:flex-row md:gap-4 "
+            className="flex flex-col gap-6 space-between items-center
+          md:flex-row md:gap-4"
           >
             <Image
               src="/images/journal.jpg"
@@ -241,7 +241,7 @@ export default function ServiceEmployment() {
                 et meget forskelligt behov. Vi skræddersyr vores dokumentation,
                 så det understøtter jeres behov bedst muligt. Men vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 py-5 px-10 font-conduit font-bold list-disc">
+              <ol className="bg-yellow-400 dark:bg-yellow-500 py-5 px-10 font-conduit font-bold list-disc">
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til
