@@ -1,14 +1,51 @@
+"use client"; // This is a client component
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
+import { useRef } from "react";
+// GSAP
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaYenSign } from "react-icons/fa";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceEmployment() {
+  const container = useRef();
+  const tl = useRef<gsap.core.Timeline>();
+
+  useGSAP(() => {
+    const images: HTMLElement[] = gsap.utils.toArray(".grayscale");
+    images.forEach((image) => {
+      gsap.to(image, {
+        scrollTrigger: {
+          trigger: image,
+          start: "top bottom",
+          end: "top top",
+          toggleActions: "play reset resume reset",
+        },
+        filter: "grayscale(0%)",
+      });
+    });
+    gsap.to(".slider", {
+      scrollTrigger: {
+        trigger: "#sliderTarget",
+        start: "top center",
+        end: "top bottom",
+        // Toggles Enters, past end point, resume when scrolling back up to trigger, Scroll top
+        toggleActions: "play none none reverse",
+      },
+      y: 0,
+      duration: 1,
+    });
+  });
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900
+        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900 overflow-y-hidden
         md:px-32 md:py-14"
       >
         <main
@@ -44,7 +81,7 @@ export default function ServiceEmployment() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover"
+              className="object-cover grayscale"
             />
             <div
               className="flex flex-col gap-6 items-center
@@ -207,11 +244,12 @@ export default function ServiceEmployment() {
               width={430}
               height={370}
               alt="hurtigt i job"
-              className="object-cover"
+              className="object-cover grayscale"
             />
           </div>
 
           <div
+            id="sliderTarget"
             className="flex flex-col gap-6 space-between items-center
           md:flex-row md:gap-4"
           >
@@ -220,7 +258,7 @@ export default function ServiceEmployment() {
               width={430}
               height={370}
               alt="hurtigt i job"
-              className="object-cover"
+              className="object-cover grayscale"
             />
             <div
               className="flex flex-col gap-6 md:gap-4 items-center
@@ -241,7 +279,7 @@ export default function ServiceEmployment() {
                 et meget forskelligt behov. Vi skræddersyr vores dokumentation,
                 så det understøtter jeres behov bedst muligt. Men vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 dark:bg-yellow-500 py-5 px-10 font-conduit font-bold list-disc">
+              <ol className="bg-yellow-400 dark:bg-yellow-500 py-5 px-10 font-conduit font-bold list-disc slider">
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til

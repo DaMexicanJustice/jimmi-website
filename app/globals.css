@@ -50,3 +50,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.grayscale {
+  transition: filter 1s ease-in-out;
+}
+
+.slider {
+  transform: translateY(300px);
+}

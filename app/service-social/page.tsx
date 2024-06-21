@@ -1,8 +1,34 @@
+"use client"; // This is a client component
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
+import { useRef } from "react";
+// GSAP
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceSocial() {
+  const container = useRef();
+  const tl = useRef<gsap.core.Timeline>();
+
+  useGSAP(() => {
+    const images: HTMLElement[] = gsap.utils.toArray(".grayscale");
+    images.forEach((image) => {
+      gsap.to(image, {
+        scrollTrigger: {
+          trigger: image,
+          start: "top bottom",
+          end: "top top",
+          toggleActions: "play reset resume reset",
+        },
+        filter: "grayscale(0%)",
+      });
+    });
+  });
+
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
@@ -81,7 +107,7 @@ export default function ServiceSocial() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover"
+              className="object-cover grayscale"
             />
           </div>
 
@@ -94,7 +120,7 @@ export default function ServiceSocial() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover"
+              className="object-cover grayscale"
             />
             <div
               className="flex flex-col items-center gap-4
@@ -171,7 +197,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover"
+                className="object-cover grayscale "
               />
             </div>
 
@@ -184,7 +210,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover"
+                className="object-cover grayscale"
               />
 
               <div className="bg-slate-200 p-3">
@@ -206,7 +232,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover"
+                className="object-cover grayscale"
               />
             </div>
 
@@ -248,7 +274,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover"
+                className="object-cover grayscale"
               />
             </div>
           </div>
