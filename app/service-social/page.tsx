@@ -32,7 +32,7 @@ export default function ServiceSocial() {
             mere ”bløde” ting. Herefter vil vi rette fokus mod beskæftigelse.
           </p>
 
-          <div className="flex flex-row gap-4 space-between items-center">
+          <div className="flex flex-row gap-4 justify-between items-center">
             <div className="flex flex-col gap-4">
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
@@ -78,7 +78,7 @@ export default function ServiceSocial() {
             />
           </div>
 
-          <div className="flex flex-row gap-4 space-between items-center">
+          <div className="flex flex-row gap-4 justify-between items-center">
             <Image
               src="/images/network.jpg"
               width={430}
@@ -121,13 +121,13 @@ export default function ServiceSocial() {
             </div>
           </div>
 
-          <div className="flex flex-row gap-4 space-between items-center">
-            <div className="flex flex-col gap-4">
+          <div className="flex flex-row gap-4 justify-between items-center">
+            <div className="flex flex-col gap-4 justify-between basis-4/12">
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
               >
-                Afklarings og udviklingsforløb:
+                AFKLARINGS OG UDVIKLINGSFORLØB
               </h2>
               <p>
                 Afklarings- og udviklingsforløb henvender sig til borgere, der
@@ -147,30 +147,53 @@ export default function ServiceSocial() {
                 tilkendelse af fleksjob, så vidt muligt kan etableres en
                 ansættelse efterfølgende.
               </p>
+              <Image
+                src="/images/support-group.jpg"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="object-cover"
+              />
             </div>
-            <Image
-              src="/images/barista.jpg"
-              width={430}
-              height={370}
-              alt="Ydelse 1"
-              className="object-cover"
-            />
-          </div>
 
-          <div className="flex flex-row gap-4 space-between items-center">
-            <Image
-              src="/images/support-group.jpg"
-              width={430}
-              height={370}
-              alt="Ydelse 1"
-              className="object-cover"
-            />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 justify-between basis-4/12 p-4">
+              <Image
+                src="/images/commute_2.jpg"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="object-cover"
+              />
+
+              <div className="bg-slate-200 p-3">
+                <h2
+                  className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
+                  xl:text-4xl"
+                >
+                  ”Virkeligheden virker”.
+                </h2>
+                <p className="font-bold">
+                  Virkeligheden virker. - virksomhedsforløb på en ordinær
+                  arbejdsplads med rigtige arbejdsopgaver, kolleger og ordinære
+                  timer øger tilknytningen til arbejdsmarkedet!
+                </p>
+              </div>
+
+              <Image
+                src="/images/workman.jpg"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="flex flex-col gap-4 justify-between basis-4/12">
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
                   xl:text-4xl"
               >
-                Håndholdt indsats
+                HÅNDHOLDT INDSATS
               </h2>
               <p>
                 Dette forløb er for særligt udsatte borgere, som har brug for en
@@ -195,6 +218,13 @@ export default function ServiceSocial() {
                 ikke opstår unødig ventetid, hvor de står stille i deres eget
                 liv.
               </p>
+              <Image
+                src="/images/barista.jpg"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="object-cover"
+              />
             </div>
           </div>
         </main>
