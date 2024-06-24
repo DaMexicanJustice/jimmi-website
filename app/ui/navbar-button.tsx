@@ -1,9 +1,8 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
+import { Button } from "@mui/base/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
-import { LinkIcon } from "@heroicons/react/24/outline";
 
 interface NavbarButtonProps {
   textColor: string;

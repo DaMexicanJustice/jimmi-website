@@ -29,17 +29,6 @@ export default function ServiceSocial() {
         duration: 1,
       });
     });
-    gsap.to(".image-down", {
-      scrollTrigger: {
-        trigger: "#sliderTarget",
-        start: "top center",
-        end: "top bottom",
-        // Toggles Enters trigger, past trigger, resume when entering trigger, scroll up past trigger
-        toggleActions: "play none none reverse",
-      },
-      y: 0,
-      duration: 2,
-    });
   });
 
   return (
@@ -80,9 +69,9 @@ export default function ServiceSocial() {
             className="flex flex-col gap-4 justify-between items-center
           md:flex-row"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 xl:basis-8/12">
               <h2
-                className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
+                className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
                   xl:text-4xl xl:text-left"
               >
                 Et andet perspektiv i vores 360-graders metode
@@ -121,7 +110,7 @@ export default function ServiceSocial() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover grayscale image-right"
+              className="object-cover grayscale image-right xl:basis-4/12"
             />
           </div>
 
@@ -134,11 +123,12 @@ export default function ServiceSocial() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="object-cover grayscale image-left"
+              className="object-cover grayscale image-left xl:basis-4/12"
             />
             <div
               className="flex flex-col items-center gap-4
-            md:items-start"
+            md:items-start
+             xl:basis-8/12"
             >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
@@ -185,7 +175,7 @@ export default function ServiceSocial() {
             >
               <h2
                 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
-                  xl:text-4xl xl:text-left"
+                  xl:text-4xl xl:text-left xl:basis-8/12"
               >
                 AFKLARINGS OG UDVIKLINGSFORLØB
               </h2>
@@ -212,13 +202,13 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover grayscale image-left"
+                className="object-cover grayscale image-left xl:basis-4/12"
               />
             </div>
 
             <div
               className="flex flex-col gap-4 justify-between
-            md:basis-4/12 md:p-4 image-down"
+            md:basis-4/12 md:p-4"
             >
               <Image
                 src="/images/commute_2.jpg"
@@ -228,14 +218,14 @@ export default function ServiceSocial() {
                 className="object-cover grayscale"
               />
 
-              <div className="bg-slate-200 p-3">
+              <div className="bg-yellow-400 dark:bg-yellow-500 p-3">
                 <h2
-                  className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit 
+                  className="uppercase text-center text-slate-900 text-2xl font-bold font-conduit 
                   xl:text-4xl xl:text-left"
                 >
                   ”Virkeligheden virker”.
                 </h2>
-                <p className="font-bold">
+                <p className="font-bold font-conduit text-slate-50 dark:text-slate-900">
                   Virkeligheden virker. - virksomhedsforløb på en ordinær
                   arbejdsplads med rigtige arbejdsopgaver, kolleger og ordinære
                   timer øger tilknytningen til arbejdsmarkedet!

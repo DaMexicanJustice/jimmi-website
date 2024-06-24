@@ -1,10 +1,9 @@
-"use client"; // This is a client component
-import { gsap } from "gsap";
+// "use client"; // This is a client component
+/* import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { TextPlugin } from "gsap/TextPlugin";
-import { useRef } from "react";
+import { TextPlugin } from "gsap/TextPlugin"; */
 
-gsap.registerPlugin(useGSAP, TextPlugin);
+// gsap.registerPlugin(useGSAP, TextPlugin);
 
 const texts: string[] = [
   "Alt godt samarbejde starter med en god kop kaffe",
@@ -14,10 +13,6 @@ const texts: string[] = [
 ];
 
 const Typewriter = () => {
-  const container = useRef();
-  const tl = useRef();
-  useGSAP(() => {}, { scope: container });
-
   return (
     <h2>
       <span
@@ -25,7 +20,7 @@ const Typewriter = () => {
         className="relative text-base font-semibold font-conduit text-slate-50
   md:text-2xl"
       >
-        Alt godt samarbejde starter med en god kop kaffe
+        {texts[0]}
       </span>
       {/* <span className="font-sans text-2xl text-slate-50 animate-ping">|</span> */}
     </h2>

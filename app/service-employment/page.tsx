@@ -32,14 +32,13 @@ export default function ServiceEmployment() {
     });
     gsap.to(".slider", {
       scrollTrigger: {
-        trigger: "#sliderTarget",
-        start: "top center",
-        end: "top bottom",
-        // Toggles Enters trigger, past trigger, resume when entering trigger, scroll up past trigger
+        trigger: ".slider",
+        start: "top bottom",
+        end: "top top",
         toggleActions: "play none none reverse",
       },
-      y: 0,
-      duration: 2,
+      x: 0,
+      duration: 1,
     });
   });
   return (
@@ -47,7 +46,7 @@ export default function ServiceEmployment() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900 overflow-y-hidden
+        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900 overflow-x-hidden
         md:px-32 md:py-14"
       >
         <main
@@ -281,7 +280,7 @@ export default function ServiceEmployment() {
                 et meget forskelligt behov. Vi skræddersyr vores dokumentation,
                 så det understøtter jeres behov bedst muligt. Men vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc slider">
+              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc image-right slider">
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til
