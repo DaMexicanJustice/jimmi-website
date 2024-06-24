@@ -2,6 +2,7 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import axios from "axios";
 
 // Augment the palette to include an ochre color
 declare module "@mui/material/styles" {
@@ -36,23 +37,18 @@ const ContactForm = () => {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
+    const formEntries = Object.fromEntries(formData.entries());
     try {
-      const response = await fetch("/api/contact", {
-        method: "post",
-        body: formData,
+      await axios.post("/api/contact", {
+        name: formEntries.name as string,
+        email: formEntries.email as string,
+        phone: formEntries.phone as string,
+        message: formEntries.message as string,
       });
-
-      if (!response.ok) {
-        console.log("falling over");
-        throw new Error(`response status: ${response.status}`);
-      }
-      const responseData = await response.json();
-      console.log(responseData["message"]);
-
-      alert("Message successfully sent");
-    } catch (err) {
-      console.error(err);
-      alert("Error, please try resubmitting the form");
+      alert("Message received. I will contact you as soon as I can.");
+    } catch (error) {
+      console.log("Error: " + error);
+      alert("Failed to send message. Please try again.");
     }
   }
 

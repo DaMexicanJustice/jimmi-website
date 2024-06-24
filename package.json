@@ -16,6 +16,7 @@
     "@heroicons/react": "^2.1.1",
     "@mui/icons-material": "^5.15.12",
     "@mui/material": "^5.15.12",
+    "axios": "^1.7.2",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
     "find-up": "github:sindresorhus/find-up",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
