@@ -1,37 +1,5 @@
-"use client"; // This is a client component
-import { CheckCircleIcon } from "@heroicons/react/24/outline";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-// Augment the palette to include an ochre color
-declare module "@mui/material/styles" {
-  interface Palette {
-    ochre: Palette["primary"];
-  }
-
-  interface PaletteOptions {
-    ochre?: PaletteOptions["primary"];
-  }
-}
-
-// Update the Button's color options to include an ochre option
-declare module "@mui/material/Button" {
-  interface ButtonPropsColorOverrides {
-    ochre: true;
-  }
-}
-
-const yellowTheme = createTheme({
-  palette: {
-    ochre: {
-      main: "#FFD200",
-      light: "#ffd71a",
-      dark: "#6bd00",
-      contrastText: "#000000",
-    },
-  },
-});
+import { CheckIcon } from "@heroicons/react/24/outline";
+import CtaButton from "../ui/cta-button";
 
 export default function Dna() {
   const divElements = [];
@@ -47,17 +15,21 @@ export default function Dna() {
     divElements.push(
       <div key={i}>
         <div
-          className="flex flex-row gap-1 items-center
+          className="flex flex-row gap-4 items-center
         md:gap-5"
         >
-          <CheckCircleIcon
-            className="size-10 text-yellow-400 shrink-0
+          <div className="bg-yellow-400 dark:bg-yellow-500 rounded-sm shadow-md">
+            <CheckIcon
+              className="size-10 text-slate-50 dark:text-slate-900 shrink-0
+            rotate-6
             md:size-8
             xl:size-6"
-          ></CheckCircleIcon>
+            ></CheckIcon>
+          </div>
+
           <p
-            className="text-slate-900 dark:text-slate-50 text-lg
-          md:text-base"
+            className="text-slate-900 dark:text-slate-50 text-xl
+          md:text-lg"
           >
             {paragraphs[i]}
           </p>
@@ -70,7 +42,7 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 bg-slate-50 dark:bg-slate-900 min-h-[calc(100svh-3rem)] max-h-max
+        className="px-5 bg-slate-100 dark:bg-slate-900 min-h-[calc(100svh-3rem)] max-h-max
         md:px-20 md:h-44
         xl:py-12"
       >
@@ -81,26 +53,26 @@ export default function Dna() {
           {/* Left Panel / Top Panel */}
           <div
             className="flex flex-col gap-10 py-10 items-center
-          md:basis-5/12 md:gap-1
+          md:basis-5/12 md:gap-2
           xl:items-start xl:basis-4/12"
           >
             <h1
-              className="text-slate-950 dark:text-slate-50 text-2xl font-bold font-conduit
+              className="text-slate-950 dark:text-slate-50 text-3xl font-bold font-conduit
             md:text-xl"
             >
               Mollit ea
             </h1>
             <div
               className="flex flex-col gap-5
-            md:justify-start md:gap-1"
+            md:justify-start md:gap-4"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-xl font-bold font-conduit
+                className="text-slate-950 dark:text-slate-50 text-2xl font-bold font-conduit
               md:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
-              <div className="flex flex-col gap-2 pb-5">{divElements}</div>
+              <div className="flex flex-col gap-4 pb-5">{divElements}</div>
             </div>
             <div
               className="flex flex-col gap-5 items-center
@@ -114,43 +86,33 @@ export default function Dna() {
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
-              <ThemeProvider theme={yellowTheme}>
-                <Button
-                  className="p-2 uppercase font-bold text-lg bg-yellow-400
-                  md:text-3xl
-                  lg:text-sm"
-                  variant="contained"
-                  color="ochre"
-                >
-                  Cillum veniam in ea dolore
-                </Button>
-              </ThemeProvider>
+              <CtaButton text="Dolor laborum cillum magna" href=""></CtaButton>
             </div>
           </div>
 
           {/* Right Panel / Bottom Panel */}
           <div
             className="flex flex-col gap-10 py-10 items-center
-          md:basis-5/12 md:gap-1
+          md:basis-5/12 md:gap-2
           xl:items-start xl:basis-4/12"
           >
             <h1
-              className="text-slate-950 dark:text-slate-50 text25xl font-bold font-conduit
+              className="text-slate-950 dark:text-slate-50 text-3xl font-bold font-conduit
             md:text-xl"
             >
               Mollit ea
             </h1>
             <div
               className="flex flex-col gap-5
-            md:justify-start md:gap-1"
+            md:justify-start md:gap-4"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-xl font-bold font-conduit
+                className="text-slate-950 dark:text-slate-50 text-2xl font-bold font-conduit
               md:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
-              <div className="flex flex-col gap-2 pb-5">{divElements}</div>
+              <div className="flex flex-col gap-4 pb-5">{divElements}</div>
             </div>
             <div
               className="flex flex-col gap-5 items-center
@@ -164,17 +126,7 @@ export default function Dna() {
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
-              <ThemeProvider theme={yellowTheme}>
-                <Button
-                  className="p-2 uppercase font-bold text-xl bg-yellow-400
-                  md:text-3xl
-                  lg:text-sm"
-                  variant="contained"
-                  color="ochre"
-                >
-                  Cillum veniam in ea dolore
-                </Button>
-              </ThemeProvider>
+              <CtaButton text="Dolor laborum cillum magna" href=""></CtaButton>
             </div>
           </div>
         </main>

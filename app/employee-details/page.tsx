@@ -82,7 +82,7 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-slate-950 py-5 
+        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-slate-950 py-5 overflow-x-hidden 
       md:px-32
       xl:py-12"
       >
@@ -91,15 +91,15 @@ export default function EmployeeDetails() {
         "
         >
           <div
-            className="flex flex-col gap-10 bg-white dark:bg-stone-100 p-5 shadow-xl
+            className="flex flex-col gap-10 p-5
           xl:gap-5 xl:flex-row"
           >
             <div
               className="flex flex-col
-            xl:self-start"
+            xl:self-start md:basis-3/12"
             >
               <p className="uppercase font-bold font-conduitbold text-2xl text-slate-700"></p>
-              <div id="image-container" className="w-full mb-5">
+              <div id="image-container" className="w-full mb-5 shadow-md">
                 <Image
                   src={data ? data.img : "no-img"}
                   width={512}
@@ -110,7 +110,7 @@ export default function EmployeeDetails() {
               </div>
 
               <div className="flex flex-col gap-5">
-                <div className="bg-slate-200 dark:bg-stone-200 py-2">
+                <div className="bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
                   <p className="uppercase font-bold font-conduitbold text-xl text-slate-700 ">
                     {data ? data.name : "no-data"}
                   </p>
@@ -135,7 +135,7 @@ export default function EmployeeDetails() {
                   </div>
                 </div>
 
-                <div className="bg-slate-200 dark:bg-stone-200 py-2">
+                <div className="bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
                   <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
                     Sprog
                   </p>
@@ -147,7 +147,7 @@ export default function EmployeeDetails() {
                     )
                   )}
                 </div>
-                <div className="flex flex-col bg-slate-200 dark:bg-stone-200 py-2">
+                <div className="flex flex-col bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
                   <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
                     Kompetence dækning
                   </p>
@@ -185,8 +185,8 @@ export default function EmployeeDetails() {
               </div>
             </div>
             <div
-              className="flex flex-col gap-5
-            md:basis-6/12 md:grow"
+              className="flex flex-col gap-5 
+              md:basis-9/12 md:grow"
             >
               <hr className="border border-solid border-slate-900"></hr>
               <p className="text-blue-950 text-xl text-left">
@@ -202,7 +202,7 @@ export default function EmployeeDetails() {
               <p className="text-left text-slate-900">
                 {data ? data.competences["citizen-type"] : "no-data"}
               </p>
-              <p className="text-left text-slate-950 bg-yellow-400 p-5  text-xl">
+              <p className="text-left text-slate-950 bg-yellow-400 p-5 text-xl shadow-xl">
                 {data ? data.competences.resume : "no-data"}
               </p>
             </div>

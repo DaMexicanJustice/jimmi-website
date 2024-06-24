@@ -17,7 +17,7 @@ export default function Services() {
         >
           <div
             className="flex flex-col gap-5 justify-center items-center pb-5 
-            bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
+            bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
@@ -42,7 +42,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
@@ -67,7 +67,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0"
           >
@@ -92,7 +92,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-xl shadow-slate-500/50 dark:shadow-none
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
           md:basis-5/12 md:grow
           xl:basis-3/12 xl:grow-0 "
           >

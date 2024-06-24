@@ -42,28 +42,31 @@ export default function ServiceSocial() {
       >
         <main
           className="h-full flex flex-col w-full justify-center gap-6
-        md:gap-4"
+        md:gap-10"
         >
-          <h1
-            className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
+          <div className="flex flex-col gap-4">
+            <h1
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
             md:self-start
             xl:text-4xl"
-          >
-            Socialindsatser
-          </h1>
-          <p>
-            I Mentorplan tilbyder vi forløb inden for beskæftigelse.
-            Udgangspunktet i disse forløb er altid tilbagevenden til
-            arbejdsmarkedet. I forløbet arbejder vi med etablering af
-            virksomhedspraktik med fokus på konvertering til lønnede timer,
-            hurtigst muligt. Det er dog ikke en forudsætning med praktik før
-            lønnede timer. Samtidig møder vi altid borgeren dér, hvor borgeren
-            reelt skal rykkes. Når vi siger at forløbet er tilrettelagt
-            individuelt, så er det helt bogstaveligt. Det vil sige er der tale
-            om en borger, som er meget langt væk fra arbejdsmarkedet, bliver
-            vores fokus at skabe relationen fra start, for at komme i mål med de
-            mere ”bløde” ting. Herefter vil vi rette fokus mod beskæftigelse.
-          </p>
+            >
+              Socialindsatser
+            </h1>
+            <p>
+              I Mentorplan tilbyder vi forløb inden for beskæftigelse.
+              Udgangspunktet i disse forløb er altid tilbagevenden til
+              arbejdsmarkedet. I forløbet arbejder vi med etablering af
+              virksomhedspraktik med fokus på konvertering til lønnede timer,
+              hurtigst muligt. Det er dog ikke en forudsætning med praktik før
+              lønnede timer. Samtidig møder vi altid borgeren dér, hvor borgeren
+              reelt skal rykkes. Når vi siger at forløbet er tilrettelagt
+              individuelt, så er det helt bogstaveligt. Det vil sige er der tale
+              om en borger, som er meget langt væk fra arbejdsmarkedet, bliver
+              vores fokus at skabe relationen fra start, for at komme i mål med
+              de mere ”bløde” ting. Herefter vil vi rette fokus mod
+              beskæftigelse.
+            </p>
+          </div>
 
           <div
             className="flex flex-col gap-4 justify-between items-center
@@ -221,11 +224,11 @@ export default function ServiceSocial() {
               <div className="bg-yellow-400 dark:bg-yellow-500 p-3">
                 <h2
                   className="uppercase text-center text-slate-900 text-2xl font-bold font-conduit 
-                  xl:text-4xl xl:text-left"
+                  xl:text-3xl xl:text-left"
                 >
                   ”Virkeligheden virker”.
                 </h2>
-                <p className="font-bold font-conduit text-slate-50 dark:text-slate-900">
+                <p className="font-bold font-conduit text-slate-900">
                   Virkeligheden virker. - virksomhedsforløb på en ordinær
                   arbejdsplads med rigtige arbejdsopgaver, kolleger og ordinære
                   timer øger tilknytningen til arbejdsmarkedet!

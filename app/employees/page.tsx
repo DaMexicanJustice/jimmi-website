@@ -43,7 +43,7 @@ export default async function Employees() {
         <main className="flex flex-col h-full justify-center items-center">
           <div className="flex flex-col gap-10 py-5">
             <div className="bg-yellow-400 dark:bg-yellow-500 grow p-5 flex flex-col gap-5 shadow-xl">
-              <h1 className="uppercase font-bold text-3xl text-slate-900 font-conduit">
+              <h1 className="uppercase font-bold text-2xl text-slate-900 font-conduit">
                 Konsulenter
               </h1>
               {/* <hr className="border border-solid border-slate-900"></hr> */}

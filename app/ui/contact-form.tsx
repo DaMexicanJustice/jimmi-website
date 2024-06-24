@@ -1,44 +1,24 @@
 "use client"; // This is a client component
-import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-// Augment the palette to include an ochre color
-declare module "@mui/material/styles" {
-  interface Palette {
-    ochre: Palette["primary"];
-  }
-
-  interface PaletteOptions {
-    ochre?: PaletteOptions["primary"];
-  }
-}
-
-// Update the Button's color options to include an ochre option
-declare module "@mui/material/Button" {
-  interface ButtonPropsColorOverrides {
-    ochre: true;
-  }
-}
-
-const yellowTheme = createTheme({
-  palette: {
-    ochre: {
-      main: "#FFD200",
-      light: "#ffd71a",
-      dark: "#6bd00",
-      contrastText: "#000000",
-    },
-  },
-});
+import CtaButton from "./cta-button";
 
 const ContactForm = () => {
+  const sendEmail = (event) => {
+    event.preventDefault();
+    fetch("/api/contact", {
+      method: "POST",
+    })
+      .then((response) => response.json)
+      .then((data) => console.log("Data: " + data))
+      .catch((error) => console.log("Error: " + error));
+  };
+
   return (
     <>
       <div
         id="contact-form"
         className="flex flex-col items-center gap-3 bg-slate-50 dark:bg-slate-200 p-5
-          border-0 border-t-4 border-solid border-t-yellow-400 shadow-xl shadow-slate-950/50 order-3
+          border-0 border-t-4 border-solid border-t-yellow-400 shadow-md shadow-slate-950/50 order-3
           md:basis-7/12 md:gap-4 md:mb-0
           xl:basis-4/12"
       >
@@ -69,6 +49,7 @@ const ContactForm = () => {
           24 timer
         </p>
         <form
+          onSubmit={sendEmail}
           className="flex flex-col gap-3 w-11/12
             md:gap-1 md:w-9/12"
         >
@@ -194,17 +175,7 @@ const ContactForm = () => {
               },
             }}
           />
-          <ThemeProvider theme={yellowTheme}>
-            <Button
-              className="p-2 uppercase font-bold text-xl bg-yellow-400
-                  md:text-3xl
-                  lg:text-sm"
-              variant="contained"
-              color="ochre"
-            >
-              Send Besked
-            </Button>
-          </ThemeProvider>
+          <CtaButton text="Send Besked" href="" type="submit"></CtaButton>
         </form>
       </div>
     </>

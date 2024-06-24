@@ -35,19 +35,21 @@ const yellowTheme = createTheme({
 interface CtaButtonProps {
   text: string;
   href: string;
+  type: string;
 }
 
-const CtaButton: React.FC<CtaButtonProps> = ({ text, href }) => {
+const CtaButton: React.FC<CtaButtonProps> = ({ text, href, type }) => {
   return (
     <>
       <ThemeProvider theme={yellowTheme}>
         <Button
-          className="p-2 uppercase font-bold text-sm bg-yellow-400
+          className="py-2 px-4 uppercase font-bold text-sm bg-yellow-400
                   md:text-base
-                  lg:text-sm"
+                  lg:text-xs"
           variant="contained"
           color="ochre"
           href={href}
+          type={type}
         >
           {text}
         </Button>

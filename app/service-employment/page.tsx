@@ -33,7 +33,7 @@ export default function ServiceEmployment() {
     gsap.to(".slider", {
       scrollTrigger: {
         trigger: ".slider",
-        start: "top bottom",
+        start: "top center",
         end: "top top",
         toggleActions: "play none none reverse",
       },
@@ -53,25 +53,28 @@ export default function ServiceEmployment() {
           className="h-full flex flex-col w-full justify-center items-center gap-10
         md:items-start"
         >
-          <h1
-            className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
+          <div className="flex flex-col gap-4">
+            <h1
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
             xl:text-4xl"
-          >
-            Beskæftigelsesindsats
-          </h1>
-          <p>
-            I Mentorplan tilbyder vi forløb inden for beskæftigelse.
-            Udgangspunktet i disse forløb er altid tilbagevenden til
-            arbejdsmarkedet. I forløbet arbejder vi med etablering af
-            virksomhedspraktik med fokus på konvertering til lønnede timer,
-            hurtigst muligt. Det er dog ikke en forudsætning med praktik før
-            lønnede timer. Samtidig møder vi altid borgeren dér, hvor borgeren
-            reelt skal rykkes. Når vi siger at forløbet er tilrettelagt
-            individuelt, så er det helt bogstaveligt. Det vil sige er der tale
-            om en borger, som er meget langt væk fra arbejdsmarkedet, bliver
-            vores fokus at skabe relationen fra start, for at komme i mål med de
-            mere ”bløde” ting. Herefter vil vi rette fokus mod beskæftigelse.
-          </p>
+            >
+              Beskæftigelsesindsats
+            </h1>
+            <p>
+              I Mentorplan tilbyder vi forløb inden for beskæftigelse.
+              Udgangspunktet i disse forløb er altid tilbagevenden til
+              arbejdsmarkedet. I forløbet arbejder vi med etablering af
+              virksomhedspraktik med fokus på konvertering til lønnede timer,
+              hurtigst muligt. Det er dog ikke en forudsætning med praktik før
+              lønnede timer. Samtidig møder vi altid borgeren dér, hvor borgeren
+              reelt skal rykkes. Når vi siger at forløbet er tilrettelagt
+              individuelt, så er det helt bogstaveligt. Det vil sige er der tale
+              om en borger, som er meget langt væk fra arbejdsmarkedet, bliver
+              vores fokus at skabe relationen fra start, for at komme i mål med
+              de mere ”bløde” ting. Herefter vil vi rette fokus mod
+              beskæftigelse.
+            </p>
+          </div>
 
           <div
             className="flex flex-col gap-6 md:gap-4 justify-between items-center

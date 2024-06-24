@@ -11,7 +11,8 @@ export default function Hero() {
       >
         <main
           className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
-        md:px-32 md:gap-10"
+          cursor-default
+          md:px-32 md:gap-10"
         >
           <h1
             className="text-xl whitespace-pre font-bold uppercase text-slate-50
