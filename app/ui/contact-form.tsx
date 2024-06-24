@@ -33,6 +33,29 @@ const yellowTheme = createTheme({
 });
 
 const ContactForm = () => {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.target as HTMLFormElement);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "post",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        console.log("falling over");
+        throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData["message"]);
+
+      alert("Message successfully sent");
+    } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
+    }
+  }
+
   return (
     <>
       <div
@@ -69,11 +92,13 @@ const ContactForm = () => {
           24 timer
         </p>
         <form
+          onSubmit={handleSubmit}
           className="flex flex-col gap-3 w-11/12
             md:gap-1 md:w-9/12"
         >
           <TextField
             id="form-name"
+            name="fullname"
             label="Dit fulde navn"
             variant="standard"
             color="warning"
@@ -122,6 +147,7 @@ const ContactForm = () => {
           >
             <TextField
               id="form-email"
+              name="email"
               label="Din e-mail"
               variant="standard"
               type="email"
@@ -145,6 +171,7 @@ const ContactForm = () => {
             />
             <TextField
               id="form-phone-number"
+              name="phone"
               label="Telefon"
               variant="standard"
               type="tel"
@@ -169,6 +196,7 @@ const ContactForm = () => {
           </div>
           <TextField
             id="form-message"
+            name="message"
             label="Besked"
             variant="standard"
             color="warning"
@@ -197,6 +225,7 @@ const ContactForm = () => {
                   lg:text-sm"
               variant="contained"
               color="ochre"
+              type="submit"
             >
               Send Besked
             </Button>
