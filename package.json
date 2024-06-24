@@ -16,13 +16,11 @@
     "@heroicons/react": "^2.1.1",
     "@mui/icons-material": "^5.15.12",
     "@mui/material": "^5.15.12",
-    "axios": "^1.7.2",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
     "find-up": "github:sindresorhus/find-up",
     "gsap": "^3.12.5",
     "next": "^14.2.3",
-    "nodemailer": "^6.9.13",
     "react-icons": "^5.0.1",
     "react-spinners": "^0.13.8"
   },
