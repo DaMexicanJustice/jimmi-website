@@ -96,7 +96,7 @@ export default function EmployeeDetails() {
           >
             <div
               className="flex flex-col
-            xl:self-start md:basis-3/12"
+            xl:self-start xl:basis-4/12"
             >
               <p className="uppercase font-bold font-conduitbold text-2xl text-slate-700"></p>
               <div id="image-container" className="w-full mb-5 shadow-md">
@@ -186,7 +186,7 @@ export default function EmployeeDetails() {
             </div>
             <div
               className="flex flex-col gap-5 
-              md:basis-9/12 md:grow"
+              xl:basis-8/12"
             >
               <hr className="border border-solid border-slate-900 dark:border-slate-50"></hr>
               <p className="text-blue-900 dark:text-slate-50 text-xl text-left">

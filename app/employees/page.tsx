@@ -123,8 +123,7 @@ export default async function Employees() {
                       <div
                         className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                     uppercase font-conduitbold text-sm rounded-full -rotate-45
-                    md:size-48
-                    xl:size-36 xl:p-5 xl:text-xs"
+                    xl:size-36 xl:p-4 xl:text-xs"
                       >
                         Læs Mere
                       </div>
@@ -190,7 +189,7 @@ export default async function Employees() {
                         className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                         uppercase font-conduitbold text-sm rounded-full -rotate-45
                         md:size-48
-                        xl:size-36 xl:p-5 xl:text-xs"
+                        xl:size-36 xl:p-4 xl:text-xs"
                       >
                         Læs Mere
                       </div>
