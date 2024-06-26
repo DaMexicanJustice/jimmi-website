@@ -82,7 +82,7 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-slate-950 py-5 overflow-x-hidden 
+        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-neutral-950 py-5 overflow-x-hidden 
       md:px-32
       xl:py-12"
       >
@@ -188,18 +188,18 @@ export default function EmployeeDetails() {
               className="flex flex-col gap-5 
               md:basis-9/12 md:grow"
             >
-              <hr className="border border-solid border-slate-900"></hr>
-              <p className="text-blue-950 text-xl text-left">
+              <hr className="border border-solid border-slate-900 dark:border-slate-50"></hr>
+              <p className="text-blue-900 dark:text-slate-50 text-xl text-left">
                 {data ? data.competences.article.headline : "no-data"}
               </p>
-              <hr className="border border-solid border-slate-900"></hr>
-              <p className="text-left text-slate-900 whitespace-pre-line">
+              <hr className="border border-solid border-slate-900 dark:border-slate-50"></hr>
+              <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line">
                 {data ? data.competences.article.text : "no-data"}
               </p>
-              <p className="uppercase font-conduitbold text-xl text-blue-950">
+              <p className="uppercase font-conduitbold text-xl text-blue-950 dark:text-slate-50">
                 Hvilke borgere er jeg god til
               </p>
-              <p className="text-left text-slate-900">
+              <p className="text-left text-slate-900 dark:text-slate-50">
                 {data ? data.competences["citizen-type"] : "no-data"}
               </p>
               <p className="text-left text-slate-950 bg-yellow-400 p-5 text-xl shadow-xl">

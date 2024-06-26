@@ -42,7 +42,7 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 bg-slate-100 dark:bg-slate-900 min-h-[calc(100svh-3rem)] max-h-max
+        className="px-5 bg-slate-100 dark:bg-neutral-900 min-h-[calc(100svh-3rem)] max-h-max
         md:px-20 md:h-44
         xl:py-12"
       >
@@ -86,7 +86,11 @@ export default function Dna() {
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
-              <CtaButton text="Dolor laborum cillum magna" href=""></CtaButton>
+              <CtaButton
+                text="Dolor laborum cillum magna"
+                href=""
+                type="button"
+              ></CtaButton>
             </div>
           </div>
 
@@ -126,7 +130,11 @@ export default function Dna() {
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
                 consequat eu eiusmod consequat laborum laboris ullamco nulla.
               </p>
-              <CtaButton text="Dolor laborum cillum magna" href=""></CtaButton>
+              <CtaButton
+                text="Dolor laborum cillum magna"
+                href=""
+                type="button"
+              ></CtaButton>
             </div>
           </div>
         </main>

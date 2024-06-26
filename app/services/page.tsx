@@ -6,7 +6,7 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="px-5 bg-slate-50 dark:bg-slate-950 min-h-[calc(100svh-3rem)] max-h-max
+        className="px-5 bg-slate-50 dark:bg-neutral-950 min-h-[calc(100svh-3rem)] max-h-max
         md:px-32
         xl:py-12"
       >
@@ -38,7 +38,11 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <CtaButton text="Læs Mere" href="/service-employment"></CtaButton>
+            <CtaButton
+              text="Læs Mere"
+              href="/service-employment"
+              type="button"
+            ></CtaButton>
           </div>
 
           <div
@@ -63,7 +67,11 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <CtaButton text="Læs Mere" href="/service-youth"></CtaButton>
+            <CtaButton
+              text="Læs Mere"
+              href="/service-youth"
+              type="button"
+            ></CtaButton>
           </div>
 
           <div
@@ -88,7 +96,11 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <CtaButton text="Læs Mere" href="/service-social"></CtaButton>
+            <CtaButton
+              text="Læs Mere"
+              href="/service-social"
+              type="button"
+            ></CtaButton>
           </div>
 
           <div
@@ -113,7 +125,11 @@ export default function Services() {
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
             </p>
-            <CtaButton text="Læs Mere" href="/social-feed"></CtaButton>
+            <CtaButton
+              text="Læs Mere"
+              href="/social-feed"
+              type="button"
+            ></CtaButton>
           </div>
         </main>
       </section>

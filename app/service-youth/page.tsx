@@ -7,7 +7,7 @@ export default function ServiceYouth() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="px-5 h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-stone-900
+        className="px-5 h-[calc(100svh-3rem)] mt-12 bg-slate-50 dark:bg-neutral-950
         md:px-32"
       >
         <main className="h-full flex flex-col justify-center items-center">

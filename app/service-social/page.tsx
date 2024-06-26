@@ -36,7 +36,7 @@ export default function ServiceSocial() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-stone-900
+        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-neutral-950
         overflow-hidden
         md:px-32 md:py-14"
       >

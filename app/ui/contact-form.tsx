@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import CtaButton from "./cta-button";
 
 const ContactForm = () => {
-  const sendEmail = (event) => {
+  const sendEmail = (event: any) => {
     event.preventDefault();
     fetch("/api/contact", {
       method: "POST",

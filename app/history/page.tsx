@@ -5,7 +5,7 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 bg-slate-100 dark:bg-slate-900 overflow-hidden min-h-[calc(100svh-3rem)] max-h-max
+        className="px-5 bg-slate-100 dark:bg-neutral-900 overflow-hidden min-h-[calc(100svh-3rem)] max-h-max
         md:px-32 md:py-40
         xl:py-12"
       >
