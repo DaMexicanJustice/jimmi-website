@@ -255,15 +255,16 @@ export default function ServiceYouth() {
                 md:self-start
                 xl:text-4xl"
               >
-                Ullamco eu irure quis
+                Cupidatat culpa pariatur aliqua
               </h2>
               <p>
-                Sunt amet mollit ipsum incididunt quis anim cupidatat
-                exercitation laborum pariatur mollit cillum consectetur. Ut in
-                qui cupidatat proident in reprehenderit consequat excepteur
-                cupidatat veniam in cillum. Esse nostrud ea elit adipisicing
-                voluptate deserunt laboris ut commodo ipsum occaecat. Veniam
-                aute sint consectetur elit in ad.
+                Cillum aliqua id est ipsum culpa dolore incididunt non amet
+                cupidatat adipisicing. Ut exercitation id cupidatat mollit culpa
+                ullamco exercitation id tempor. Sit tempor ipsum proident
+                deserunt quis voluptate commodo officia aute eiusmod irure
+                veniam eiusmod. Ipsum et ex ad voluptate non ea adipisicing
+                dolor aliqua ullamco velit. Enim ea cupidatat exercitation
+                laboris exercitation minim ut est qui consequat eiusmod.
               </p>
             </div>
 
@@ -273,15 +274,15 @@ export default function ServiceYouth() {
                 md:self-start
                 xl:text-4xl"
               >
-                Sit irure exercitation
+                Dolore culpa aliqua ex
               </h2>
               <p>
-                Sunt amet mollit ipsum incididunt quis anim cupidatat
-                exercitation laborum pariatur mollit cillum consectetur. Ut in
-                qui cupidatat proident in reprehenderit consequat excepteur
-                cupidatat veniam in cillum. Esse nostrud ea elit adipisicing
-                voluptate deserunt laboris ut commodo ipsum occaecat. Veniam
-                aute sint consectetur elit in ad.
+                Sit ipsum culpa amet proident quis enim minim excepteur. Mollit
+                laboris sit excepteur in in non enim Lorem magna. Laborum mollit
+                voluptate fugiat esse qui cupidatat voluptate duis commodo
+                dolore Lorem. Deserunt in dolor sint quis sit commodo esse
+                proident cillum aute do sit eu duis. Proident incididunt nostrud
+                dolore duis do minim nisi aute deserunt commodo ut.
               </p>
             </div>
 
@@ -291,15 +292,16 @@ export default function ServiceYouth() {
                 md:self-start
                 xl:text-4xl"
               >
-                Consectetur veniam irure
+                Nisi enim non duis eu est
               </h2>
               <p>
-                Sunt amet mollit ipsum incididunt quis anim cupidatat
-                exercitation laborum pariatur mollit cillum consectetur. Ut in
-                qui cupidatat proident in reprehenderit consequat excepteur
-                cupidatat veniam in cillum. Esse nostrud ea elit adipisicing
-                voluptate deserunt laboris ut commodo ipsum occaecat. Veniam
-                aute sint consectetur elit in ad.
+                Culpa minim minim adipisicing in eiusmod excepteur do eiusmod
+                sit cupidatat esse mollit. Laboris qui velit excepteur ipsum
+                pariatur aliquip cupidatat duis reprehenderit dolore proident
+                laborum. Laboris sint aute aute fugiat cillum ut enim nisi
+                eiusmod sunt exercitation pariatur ea magna. Dolore irure sit
+                esse sunt enim nisi eu commodo. Tempor fugiat esse amet aliquip
+                cillum nisi veniam sint culpa.
               </p>
             </div>
           </div>
