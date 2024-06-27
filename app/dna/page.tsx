@@ -20,10 +20,8 @@ export default function Dna() {
         >
           <div className="bg-yellow-400 dark:bg-yellow-500 rounded-sm shadow-md">
             <CheckIcon
-              className="size-10 text-slate-50 dark:text-slate-900 shrink-0
-            rotate-6
-            md:size-8
-            xl:size-6"
+              className="size-6 text-slate-50 dark:text-slate-900 shrink-0
+            rotate-6"
             ></CheckIcon>
           </div>
 
