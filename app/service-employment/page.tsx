@@ -21,7 +21,7 @@ export default function ServiceEmployment() {
       gsap.to(image, {
         scrollTrigger: {
           trigger: image,
-          start: "top bottom",
+          start: "top 80%",
           end: "top top",
           toggleActions: "play none none reverse",
         },
@@ -33,7 +33,7 @@ export default function ServiceEmployment() {
     gsap.to(".slider", {
       scrollTrigger: {
         trigger: ".slider",
-        start: "top center",
+        start: "top 80%",
         end: "top top",
         toggleActions: "play none none reverse",
       },

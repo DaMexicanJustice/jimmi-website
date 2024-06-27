@@ -11,7 +11,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceSocial() {
-  const container = useRef();
   const tl = useRef<gsap.core.Timeline>();
 
   useGSAP(() => {
@@ -20,7 +19,7 @@ export default function ServiceSocial() {
       gsap.to(image, {
         scrollTrigger: {
           trigger: image,
-          start: "top bottom",
+          start: "top 90%",
           end: "top top",
           toggleActions: "play none none reverse",
         },
@@ -224,7 +223,8 @@ export default function ServiceSocial() {
               <div className="bg-yellow-400 dark:bg-yellow-500 p-3">
                 <h2
                   className="uppercase text-center text-slate-900 text-2xl font-bold font-conduit 
-                  xl:text-3xl xl:text-left"
+                  xl:text-left xl:text-2xl
+                  2xl:text-3xl "
                 >
                   ”Virkeligheden virker”.
                 </h2>
