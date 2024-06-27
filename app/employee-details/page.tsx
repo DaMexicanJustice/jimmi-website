@@ -91,7 +91,7 @@ export default function EmployeeDetails() {
         "
         >
           <div
-            className="flex flex-col gap-10 p-5
+            className="flex flex-col gap-10
           xl:gap-5 xl:flex-row"
           >
             <div
