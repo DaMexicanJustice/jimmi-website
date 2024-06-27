@@ -11,7 +11,7 @@ export default function History() {
       >
         <main
           className="flex flex-col items-center justify-evenly gap-6 py-6 h-full
-          xl:gap-10 xl:flex-row xl:justify-between xl:items-center xl:gap-1"
+          xl:gap-10 xl:flex-row xl:justify-between xl:items-center"
         >
           {/* <Image
             src="/images/Jimmi2.jpg"

@@ -1,6 +1,7 @@
 "use client"; // This is a client component
 import TextField from "@mui/material/TextField";
 import CtaButton from "./cta-button";
+import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 
 const ContactForm = () => {
   const sendEmail = (event: any) => {
@@ -17,9 +18,9 @@ const ContactForm = () => {
     <>
       <div
         id="contact-form"
-        className="flex flex-col items-center gap-3 bg-slate-50 dark:bg-slate-200 p-5
+        className="flex flex-col items-center bg-slate-50 gap-1 dark:bg-slate-200 py-8 rounded
           border-0 border-t-4 border-solid border-t-yellow-400 shadow-md shadow-slate-950/50 order-3
-          md:basis-7/12 md:gap-4 md:mb-0
+          md:basis-7/12 md:mb-0
           xl:basis-4/12"
       >
         <h3
@@ -50,8 +51,8 @@ const ContactForm = () => {
         </p>
         <form
           onSubmit={sendEmail}
-          className="flex flex-col gap-3 w-11/12
-            md:gap-1 md:w-9/12"
+          className="flex flex-col gap-4 w-11/12
+            md:gap-4 md:w-9/12"
         >
           <TextField
             id="form-name"
@@ -155,10 +156,11 @@ const ContactForm = () => {
             id="form-message"
             name="message"
             label="Besked"
-            variant="standard"
+            variant="outlined"
             color="warning"
             multiline
-            rows={5}
+            minRows={3}
+            maxRows={9}
             InputLabelProps={{
               style: {
                 color: "#000000",
