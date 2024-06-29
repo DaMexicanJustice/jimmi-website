@@ -265,7 +265,7 @@ export default function ServiceEmployment() {
                     className="uppercase text-slate-900 text-xl font-conduit
                   xl:text-xl"
                   >
-                    Styrker borgerens sundhed og relationer
+                    Styrk borgerens sundhed og relationer
                   </p>
                 </div>
                 <p>
