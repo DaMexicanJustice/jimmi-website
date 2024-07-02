@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import Dna from "./dna/page";
 import Environment from "./environment/page";
 import Hero from "./hero/page";
@@ -10,6 +11,9 @@ import "/app/styles/styles.css";
 export default function Home() {
   return (
     <>
+      <div>
+        <Toaster position="bottom-center" />
+      </div>
       <Navbar useScrollBehavior={true}></Navbar>
       <main id="main" className="min-h-svh min-w-svh">
         <Hero></Hero>

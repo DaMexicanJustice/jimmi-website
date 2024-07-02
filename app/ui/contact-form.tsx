@@ -1,18 +1,34 @@
 "use client"; // This is a client component
 import TextField from "@mui/material/TextField";
 import CtaButton from "./cta-button";
+import { useEffect, useRef, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import Spinner from "./spinner";
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+
+  const formRef = useRef<HTMLFormElement>(null);
   const sendEmail = (event: any) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    setLoading(true);
     fetch("/api/contact", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.json())
-      .then((data) => console.log("Data: " + data))
-      .catch((error) => console.log("Error: " + error));
+      .then((data) => {
+        formRef.current?.reset();
+        toast.success("Din besked er afsendt!");
+        setLoading(false);
+        console.log("Data: " + data);
+      })
+      .catch((error) => {
+        console.log("Error: " + error);
+        setLoading(false);
+        toast.error("Din besked kunne ikke afsendes");
+      });
   };
 
   return (
@@ -52,6 +68,7 @@ const ContactForm = () => {
         </p>
         <form
           onSubmit={sendEmail}
+          ref={formRef}
           className="flex flex-col gap-4 w-11/12
             md:gap-4 md:w-9/12"
         >
@@ -180,6 +197,7 @@ const ContactForm = () => {
           />
           <CtaButton text="Send Besked" href="" type="submit"></CtaButton>
         </form>
+        {loading ? <Spinner /> : <p></p>}
       </div>
     </>
   );
