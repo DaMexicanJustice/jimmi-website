@@ -1,7 +1,6 @@
 "use client"; // This is a client component
 import TextField from "@mui/material/TextField";
 import CtaButton from "./cta-button";
-import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 
 const ContactForm = () => {
   const sendEmail = (event: any) => {
@@ -9,8 +8,8 @@ const ContactForm = () => {
     fetch("/api/contact", {
       method: "POST",
     })
-      .then((response) => response.json)
-      .then((data) => console.log("Data: " + data))
+      .then((response) => response.json())
+      .then((data) => console.log("Data: " + data.message))
       .catch((error) => console.log("Error: " + error));
   };
 
