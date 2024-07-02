@@ -5,11 +5,13 @@ import CtaButton from "./cta-button";
 const ContactForm = () => {
   const sendEmail = (event: any) => {
     event.preventDefault();
+    const formData = new FormData(event.target);
     fetch("/api/contact", {
       method: "POST",
+      body: formData,
     })
       .then((response) => response.json())
-      .then((data) => console.log("Data: " + data.message))
+      .then((data) => console.log("Data: " + data))
       .catch((error) => console.log("Error: " + error));
   };
 
@@ -55,7 +57,7 @@ const ContactForm = () => {
         >
           <TextField
             id="form-name"
-            name="fullname"
+            name="name"
             label="Dit fulde navn"
             variant="standard"
             color="warning"

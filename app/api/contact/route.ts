@@ -1,28 +1,31 @@
 import { sendEmail } from "@/app/utils/mail.utils";
 
-export async function POST() {
+export async function POST(request: any) {
+  const formData = await request.formData();
   const sender = {
     name: "Mentorplan",
-    address: "mentorplankontaktform@outlook.com",
+    address: "mentorplankontaktform@outlook.com", // DO NOT CHANGE
   };
   const recipients = [
     {
-      name: "John Doe",
+      name: formData.get("name"),
       address: "patrick@neobotanik.com",
     },
   ];
 
   try {
-    //return Response.json({ message: "in here" });
     const result = await sendEmail({
       sender,
       recipients,
-      subject: "Welcome to our website",
-      message: "You are welcome to our platform",
+      subject: "Ny besked fra kontaktform",
+      message: `<p> <b>Navn:</b> ${formData.get("name")} <br>
+      <b>Telefon:</b> ${formData.get("phone")} <br>  
+      <b>Email:</b> ${formData.get("email")} <br>    
+      <b>Besked:</b> ${formData.get("message")}</p>`,
     });
 
     return Response.json({
-      accepted: result, //result.accepted,
+      accepted: result.accepted,
     });
   } catch (error) {
     return Response.json(
