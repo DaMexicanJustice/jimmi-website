@@ -40,19 +40,14 @@ export default function ServiceEmployment() {
       duration: 1,
     });
 
-    const tl = gsap.timeline();
-    /* tl.to(".container", {
-      yPercent: -80,
-    }); */
-
     ScrollTrigger.create({
-      animation: tl,
       trigger: ".scroll-section",
       start: "top center",
-      end: "+=900",
+      end: "+=1000",
       scrub: true,
       pin: ".scroll-target",
-      pinSpacing: false,
+      anticipatePin: 1,
+      pinReparent: true,
     });
   });
   return (
@@ -344,26 +339,26 @@ export default function ServiceEmployment() {
             />
           </div>
 
+          <div
+            className="scroll-target hidden
+            lg:block"
+          >
+            <h2
+              className="uppercase font-conduitbold text-2xl
+              lg:text-6xl"
+            >
+              Forløb
+              <span className="font-sans text-yellow-400 dark:text-yellow-500">
+                |
+              </span>
+            </h2>
+          </div>
+
           {/* Joindeleteme layout */}
           <div
             className="flex flex-col gap-6 scroll-section 
-            lg:flex-row lg:gap-4 lg:items-start lg:justify-end"
+            lg:flex-row lg:gap-4 lg:justify-end"
           >
-            <div
-              className="scroll-target w-3/12 hidden
-            lg:block"
-            >
-              <h2
-                className="uppercase font-conduitbold text-2xl
-              lg:text-6xl"
-              >
-                Forløb
-                <span className="font-sans text-yellow-400 dark:text-yellow-500">
-                  |
-                </span>
-              </h2>
-            </div>
-
             <div
               className="flex flex-col gap-6 container items-center
               lg:gap-4 lg:basis-9/12 lg:items-start"
