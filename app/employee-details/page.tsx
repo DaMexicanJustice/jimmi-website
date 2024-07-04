@@ -83,7 +83,7 @@ export default function EmployeeDetails() {
       <section
         id="Employee-details"
         className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-neutral-950 py-5 overflow-x-hidden 
-      md:px-32
+      lg:px-32
       xl:py-12"
       >
         <main
@@ -100,7 +100,7 @@ export default function EmployeeDetails() {
             xl:basis-5/12
             2xl:basis-4/12"
             >
-              <p className="uppercase font-bold font-conduitbold text-2xl text-slate-700"></p>
+              <p className="uppercase font-conduitboldbold text-2xl text-slate-700"></p>
               <div id="image-container" className="w-full mb-5 shadow-md">
                 <Image
                   src={data ? data.img : "no-img"}
@@ -113,10 +113,10 @@ export default function EmployeeDetails() {
 
               <div className="flex flex-col gap-5">
                 <div className="bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
-                  <p className="uppercase font-bold font-conduitbold text-xl text-slate-700 ">
+                  <p className="uppercase font-conduitboldbold text-xl text-slate-700 ">
                     {data ? data.name : "no-data"}
                   </p>
-                  <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
+                  <p className="uppercase font-conduitboldbold text-lg text-slate-500">
                     {data ? data.role : "no-data"}
                   </p>
 
@@ -138,7 +138,7 @@ export default function EmployeeDetails() {
                 </div>
 
                 <div className="bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
-                  <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
+                  <p className="uppercase font-conduitboldbold text-lg text-slate-500">
                     Sprog
                   </p>
                   {Object.keys(data.competences.languages).map(
@@ -150,11 +150,11 @@ export default function EmployeeDetails() {
                   )}
                 </div>
                 <div className="flex flex-col bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
-                  <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
+                  <p className="uppercase font-conduitboldbold text-xl text-slate-700">
                     Kompetence dækning
                   </p>
                   <div>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
+                    <p className="uppercase font-conduitboldbold text-lg text-slate-500">
                       Uddannelse/Kurser
                     </p>
                     <div>
@@ -168,7 +168,7 @@ export default function EmployeeDetails() {
                     </div>
                   </div>
                   <div>
-                    <p className="uppercase font-bold font-conduitbold text-lg text-slate-500">
+                    <p className="uppercase font-conduitboldbold text-lg text-slate-500">
                       Erfaring
                     </p>
                     <div>

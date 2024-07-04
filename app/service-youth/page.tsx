@@ -37,11 +37,11 @@ export default function ServiceYouth() {
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-neutral-950
         overflow-hidden
-        md:px-32 md:py-14"
+        lg:px-32 lg:py-14"
       >
         <main
           className="h-full flex flex-col w-full justify-center gap-6
-        md:gap-10"
+        lg:gap-10"
         >
           <div
             className="flex flex-col gap-4
@@ -49,8 +49,8 @@ export default function ServiceYouth() {
           2xl:gap-16"
           >
             <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-            md:self-start
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+            lg:self-start
             xl:text-4xl"
             >
               Ungeindsatser
@@ -74,17 +74,17 @@ export default function ServiceYouth() {
 
           <div
             className="flex flex-col gap-4 justify-center
-            md:flex-row
+            lg:flex-row
             xl:gap-10
             2xl:gap-16"
           >
             <div
               className="flex flex-col gap-4 text-justify
-              md:basis-6/12"
+            lg:basis-8/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-              md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+              lg:self-start
               xl:text-4xl"
               >
                 Veniam Lorem laboris occaecat laboris
@@ -105,38 +105,33 @@ export default function ServiceYouth() {
                 exercitation commodo dolor esse eiusmod. Non eiusmod ad occaecat
                 fugiat enim dolore ad duis et dolore deserunt exercitation. Elit
                 ut sint mollit cillum ea incididunt tempor ex sunt sint duis
-                enim. Esse esse laborum magna aliquip amet consectetur voluptate
-                cillum laborum amet esse esse nulla nostrud. Sit nulla occaecat
-                cupidatat ut officia qui et duis ipsum anim consequat. Non
-                reprehenderit adipisicing reprehenderit qui sunt duis et labore.
-                Fugiat consequat in est excepteur sint consequat id velit ad.
-                Duis ad id nostrud nulla.
+                enim.
               </p>
             </div>
 
             <div
               className="flex flex-col gap-4 justify-center
-              md:basis-6/12"
+            lg:basis-4/12"
             >
               <Image
                 src="/images/barista.jpg"
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full xl:basis-4/12 shadow-md grayscale image-right"
+                className="object-cover w-full shadow-md grayscale image-right"
               />
             </div>
           </div>
 
           <div
             className="flex flex-col gap-4 justify-center
-            md:flex-row
+            lg:flex-row
             xl:gap-10
             2xl:gap-16"
           >
             <div
               className="flex flex-col gap-4 justify-center
-              md:basis-6/12"
+              lg:basis-4/12"
             >
               <Image
                 src="/images/counseling.jpg"
@@ -149,11 +144,11 @@ export default function ServiceYouth() {
 
             <div
               className="flex flex-col gap-4 text-justify
-              md:basis-6/12"
+              lg:basis-8/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-              md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+              lg:self-start
               xl:text-4xl"
               >
                 Veniam Lorem laboris occaecat laboris
@@ -191,8 +186,8 @@ export default function ServiceYouth() {
           >
             <div className="flex flex-col gap-4 basis-4/12 text-justify">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-                md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                lg:self-start
                 xl:text-4xl"
               >
                 Ullamco eu irure quis
@@ -209,8 +204,8 @@ export default function ServiceYouth() {
 
             <div className="flex flex-col gap-4 basis-4/12 text-justify">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-                md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                lg:self-start
                 xl:text-4xl"
               >
                 Sit irure exercitation
@@ -227,8 +222,8 @@ export default function ServiceYouth() {
 
             <div className="flex flex-col gap-4 basis-4/12 text-justify">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-                md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                lg:self-start
                 xl:text-4xl"
               >
                 Consectetur veniam irure
@@ -251,8 +246,8 @@ export default function ServiceYouth() {
           >
             <div className="flex flex-col gap-4 basis-4/12 text-justify">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-                md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                lg:self-start
                 xl:text-4xl"
               >
                 Cupidatat culpa pariatur aliqua
@@ -270,8 +265,8 @@ export default function ServiceYouth() {
 
             <div className="flex flex-col gap-4 basis-4/12 text-justify">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-                md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                lg:self-start
                 xl:text-4xl"
               >
                 Dolore culpa aliqua ex
@@ -288,8 +283,8 @@ export default function ServiceYouth() {
 
             <div className="flex flex-col gap-4 basis-4/12 text-justify">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit self-center
-                md:self-start
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                lg:self-start
                 xl:text-4xl"
               >
                 Nisi enim non duis eu est
@@ -307,14 +302,14 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center
-            md:flex-row
+            className="flex flex-col gap-4 justify-between
+            lg:flex-row
             xl:gap-10
             2xl:gap-16"
           >
             <div
-              className="flex flex-col gap-4 justify-center
-              md:basis-6/12"
+              className="flex flex-col gap-4
+              lg:basis-4/12"
             >
               <Image
                 src="/images/inspiration.jpg"
@@ -326,8 +321,8 @@ export default function ServiceYouth() {
             </div>
 
             <div
-              className="flex flex-col gap-4 justify-center
-              md:basis-6/12"
+              className="flex flex-col gap-4
+              lg:basis-4/12"
             >
               <Image
                 src="/images/youth.jpg"

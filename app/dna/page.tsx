@@ -16,7 +16,7 @@ export default function Dna() {
       <div key={i}>
         <div
           className="flex flex-row gap-4 items-center
-        md:gap-5"
+        lg:gap-5"
         >
           <div className="bg-yellow-400 dark:bg-yellow-500 rounded-sm shadow-md">
             <CheckIcon
@@ -27,7 +27,7 @@ export default function Dna() {
 
           <p
             className="text-slate-900 dark:text-slate-50 text-xl
-          md:text-lg"
+          lg:text-lg"
           >
             {paragraphs[i]}
           </p>
@@ -41,32 +41,32 @@ export default function Dna() {
       <section
         id="DNA"
         className="px-5 bg-slate-100 dark:bg-neutral-900 min-h-[calc(100svh-3rem)] max-h-max
-        md:px-20 md:h-44
+        lg:px-20 lg:h-44
         xl:py-12"
       >
         <main
           className="flex flex-col items-center justify-center h-full pb-10
-        md:flex-row md:gap-10 md:justify-evenly md:pb-0"
+        lg:flex-row lg:gap-10 lg:justify-evenly lg:pb-0"
         >
           {/* Left Panel / Top Panel */}
           <div
             className="flex flex-col gap-10 py-10 items-center
-          md:basis-5/12 md:gap-2
+          lg:basis-5/12 lg:gap-2
           xl:items-start xl:basis-4/12"
           >
             <h1
-              className="text-slate-950 dark:text-slate-50 text-3xl font-bold font-conduit
-            md:text-xl"
+              className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
+            lg:text-xl"
             >
               Mollit ea
             </h1>
             <div
               className="flex flex-col gap-5
-            md:justify-start md:gap-4"
+            lg:justify-start lg:gap-4"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-2xl font-bold font-conduit
-              md:text-lg"
+                className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold
+              lg:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
@@ -74,11 +74,11 @@ export default function Dna() {
             </div>
             <div
               className="flex flex-col gap-5 items-center
-            md:items-start md:gap-2"
+            lg:items-start lg:gap-2"
             >
               <p
                 className="text-slate-800 dark:text-slate-300 text-xl text-justify
-              md:text-sm"
+              lg:text-sm"
               >
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
@@ -95,22 +95,22 @@ export default function Dna() {
           {/* Right Panel / Bottom Panel */}
           <div
             className="flex flex-col gap-10 py-10 items-center
-          md:basis-5/12 md:gap-2
+          lg:basis-5/12 lg:gap-2
           xl:items-start xl:basis-4/12"
           >
             <h1
-              className="text-slate-950 dark:text-slate-50 text-3xl font-bold font-conduit
-            md:text-xl"
+              className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
+            lg:text-xl"
             >
               Mollit ea
             </h1>
             <div
               className="flex flex-col gap-5
-            md:justify-start md:gap-4"
+            lg:justify-start lg:gap-4"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-2xl font-bold font-conduit
-              md:text-lg"
+                className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold
+              lg:text-lg"
               >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
@@ -118,11 +118,11 @@ export default function Dna() {
             </div>
             <div
               className="flex flex-col gap-5 items-center
-            md:items-start md:gap-2"
+            lg:items-start lg:gap-2"
             >
               <p
                 className="text-slate-800 dark:text-slate-300 text-xl text-justify
-              md:text-sm"
+              lg:text-sm"
               >
                 Occaecat amet esse sit do officia deserunt laboris veniam
                 eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat

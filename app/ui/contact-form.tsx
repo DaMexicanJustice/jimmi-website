@@ -37,31 +37,31 @@ const ContactForm = () => {
         id="contact-form"
         className="flex flex-col items-center bg-slate-50 gap-1 dark:bg-slate-200 py-8 rounded
           border-0 border-t-4 border-solid border-t-yellow-400 shadow-md shadow-slate-950/50 order-3
-          md:basis-7/12 md:mb-0
+          lg:basis-7/12 lg:mb-0
           xl:basis-4/12"
       >
         <h3
           className="text-3xl font-conduit text-slate-950 font-bold hidden
-            md:block"
+            lg:block"
         >
           +45 4295 5969
         </h3>
         <a
           href="tel:+4542955969"
           className="text-xl font-conduit text-slate-950 font-bold 
-            md:hidden md:text-3xl"
+            lg:hidden lg:text-3xl"
         >
           +45 4295 5969
         </a>
         <h2
           className="text-lg text-slate-700 font-semibold font-conduit
-            md:text-lg md:text-3xl"
+            lg:text-lg lg:text-3xl"
         >
           Ring eller udfyld formularen
         </h2>
         <p
           className="text-slate-500 text-base text-center w-11/12
-            md:text-base md:w-9/12"
+            lg:text-base lg:w-9/12"
         >
           Har du spørgsmål? Kontakt os i dag. Vi besvarer alle hverdage indenfor
           24 timer
@@ -70,7 +70,7 @@ const ContactForm = () => {
           onSubmit={sendEmail}
           ref={formRef}
           className="flex flex-col gap-4 w-11/12
-            md:gap-4 md:w-9/12"
+            lg:gap-4 lg:w-9/12"
         >
           <TextField
             id="form-name"

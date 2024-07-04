@@ -97,7 +97,7 @@ const Carousel: React.FC<PropType> = (props) => {
             {slides.map((index) => (
               <div
                 className="basis-full shrink-0 grow-0 min-w-0
-                md:basis-6/12
+                lg:basis-6/12
                 xl:basis-3/12"
                 key={index - 1}
               >

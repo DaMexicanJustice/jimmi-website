@@ -37,7 +37,7 @@ export default async function Employees() {
       <section
         id="Employees"
         className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-neutral-900
-        md:px-32
+        lg:px-32
         xl:py-12"
       >
         <main className="flex flex-col h-full justify-center items-center">
@@ -69,7 +69,7 @@ export default async function Employees() {
                   <div
                     id="image-container"
                     className="mb-5
-                  md:h-full"
+                  lg:h-full"
                   >
                     <Image
                       src={e.img}
@@ -81,10 +81,10 @@ export default async function Employees() {
                     />
                   </div>
                   <div id="personal-info" className="px-5">
-                    <p className="uppercase font-bold font-conduitbold text-xl text-slate-700">
+                    <p className="uppercase font-conduitboldbold text-xl text-slate-700">
                       {e.name}
                     </p>
-                    <p className="uppercase font-bold font-conduitbold text-sm text-slate-500">
+                    <p className="uppercase font-conduitboldbold text-sm text-slate-500">
                       {e.role}
                     </p>
                   </div>
@@ -117,7 +117,7 @@ export default async function Employees() {
                         query: { id: index },
                       }}
                       className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
-                    md:size-24
+                    lg:size-24
                     xl:size-16"
                     >
                       <div
@@ -182,13 +182,13 @@ export default async function Employees() {
                         query: { id: index },
                       }}
                       className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
-                      md:size-24
+                      lg:size-24
                       xl:size-16"
                     >
                       <div
                         className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
                         uppercase font-conduitbold text-sm rounded-full -rotate-45
-                        md:size-48
+                        lg:size-48
                         xl:size-36 xl:p-4 xl:text-xs"
                       >
                         Læs Mere

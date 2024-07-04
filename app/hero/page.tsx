@@ -7,16 +7,16 @@ export default function Hero() {
       <section
         id="Hero"
         className="px-5 h-svh max-h-max
-      md:px-32"
+      lg:px-32"
       >
         <main
           className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
           cursor-default
-          md:px-32 md:gap-10"
+          lg:px-32 lg:gap-10"
         >
           <h1
             className="text-xl whitespace-pre font-bold uppercase text-slate-50
-          md:text-5xl"
+          lg:text-5xl"
           >
             Sammen med borger finder vi &nbsp;
             <span className="z-40 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-400 dark:bg-yellow-500 relative inline-block">

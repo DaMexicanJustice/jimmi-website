@@ -19,11 +19,11 @@ export default function Services() {
       <section
         id="Social-feed"
         className="px-5 min-h-[calc(100svh-3rem)] max-h-max bg-slate-50 dark:bg-neutral-950
-        md:px-32
+        lg:px-32
         xl:py-12"
       >
         <main className="flex flex-col h-full gap-8 py-8 mt-12 items-center">
-          <h1 className="uppercase font-bold font-conduit text-2xl">
+          <h1 className="uppercase font-conduitbold text-2xl">
             Den Gode Historie
           </h1>
           {loading ? <Spinner /> : <LinkedIn />}

@@ -6,7 +6,7 @@ export default function History() {
       <section
         id="History"
         className="px-5 bg-slate-100 dark:bg-neutral-900 overflow-hidden min-h-[calc(100svh-3rem)] max-h-max
-        md:px-32 md:py-40
+        lg:px-32 lg:py-40
         xl:py-12"
       >
         <main
@@ -32,14 +32,14 @@ export default function History() {
           xl:order-2 xl:basis-7/12"
           >
             <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-bold font-conduit
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
           xl:text-4xl"
             >
               Om Mentorplan
             </h1>
             <p className="text-slate-900 dark:text-slate-100 text-lg text-left leading-6">
               <span
-                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-bold font-conduit
+                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-conduitbold
           xl:text-xl"
               >
                 Mentorplan
@@ -53,7 +53,7 @@ export default function History() {
               respekt og tillid. <br></br>
               <br></br>
               <span
-                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-bold font-conduit
+                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-conduitbold
           xl:text-xl"
               >
                 Beliggenhed
@@ -68,7 +68,7 @@ export default function History() {
               atmosfære, der udstråler muligheder og positivitet. <br></br>
               <br></br>
               <span
-                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-bold font-conduit
+                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-conduitbold
           xl:text-xl"
               >
                 Tredje Punkt

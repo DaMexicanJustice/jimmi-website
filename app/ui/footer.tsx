@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer id="footer" className="bottom-0 left-0 text-white bg-navy-950">
-        {/* Mobile up to md:breakpoint */}
-        <div className="flex flex-col md:hidden gap-10 py-10 items-center">
+        {/* Mobile up to lg:breakpoint */}
+        <div className="flex flex-col lg:hidden gap-10 py-10 items-center">
           <div className="flex flex-row justify-between items-center w-full px-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-xs items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-xs items-center uppercase font-conduitbold">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
@@ -108,8 +108,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile up to md:breakpoint OLD Backup */}
-        {/* <div className="flex flex-col md:hidden gap-10 py-10 items-center">
+        {/* Mobile up to lg:breakpoint OLD Backup */}
+        {/* <div className="flex flex-col lg:hidden gap-10 py-10 items-center">
           <div className="flex flex-row justify-between items-center w-full px-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -165,13 +165,13 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-xs items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-xs items-center uppercase font-conduitbold">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
           <div className="flex flex-col gap-5 text-center">
             <div className="">
-              <h1 className="m-1 text-4xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-4xl uppercase font-conduitbold">
                 Mød Mig Her
               </h1>
               <p className="m-1 text-2xl">
@@ -180,13 +180,13 @@ const Footer: React.FC = () => {
               </p>
             </div>
             <div className="">
-              <h1 className="m-1 text-4xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-4xl uppercase font-conduitbold">
                 Skriv Til Mig
               </h1>
               <p className="m-1 text-2xl">jl@mentorplan.dk</p>
             </div>
             <div className="">
-              <h1 className="m-1 text-4xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-4xl uppercase font-conduitbold">
                 Ring På
               </h1>
               <a className="m-1 text-2xl" href="tel:+4542955969">
@@ -208,8 +208,8 @@ const Footer: React.FC = () => {
           </div>
         </div> */}
 
-        {/* Desktop from md:breakpoint */}
-        <div className="hidden md:flex flex-row justify-between gap-10 px-32 py-16 h-[calc(50svh)]">
+        {/* Desktop from lg:breakpoint */}
+        <div className="hidden lg:flex flex-row justify-between gap-10 px-32 py-16 h-[calc(50svh)]">
           <div className="flex flex-col justify-between px-5 basis-3/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -264,12 +264,12 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-xs items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-xs items-center uppercase font-conduitbold">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
           <div className="flex flex-col justify-center text-center basis-6/12">
-            {/* <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
+            {/* <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Mød Mig Her
               </h1> */}
             <a
@@ -281,7 +281,7 @@ const Footer: React.FC = () => {
                 SOHO
               </span>
             </a>
-            {/* <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
+            {/* <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Skriv Til Mig
               </h1> */}
             <p className="m-1 text-xl">
@@ -292,7 +292,7 @@ const Footer: React.FC = () => {
             </p>
             <p className="m1 text-lg text-slate-500">CVR: 37923850</p>
             {/* <div className="">
-              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Ring På
               </h1>
               <a className="m-1 text-xl" href="tel:+4542955969">
@@ -314,8 +314,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop from md:breakpoint OLD BACKUP */}
-        {/* <div className="hidden md:flex flex-row justify-between gap-10 p-32">
+        {/* Desktop from lg:breakpoint OLD BACKUP */}
+        {/* <div className="hidden lg:flex flex-row justify-between gap-10 p-32">
           <div className="flex flex-col justify-between px-5 basis-1/3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -371,13 +371,13 @@ const Footer: React.FC = () => {
                 />
               </g>
             </svg>
-            <div className="flex flex-row gap-2 text-xs items-center uppercase font-bold font-conduit">
+            <div className="flex flex-row gap-2 text-xs items-center uppercase font-conduitbold">
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
           <div className="flex flex-col gap-5 text-center basis-1/3">
             <div className="">
-              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Mød Mig Her
               </h1>
               <p className="m-1 text-xl">
@@ -388,13 +388,13 @@ const Footer: React.FC = () => {
               </p>
             </div>
             <div className="">
-              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Skriv Til Mig
               </h1>
               <p className="m-1 text-xl">jl@mentorplan.dk</p>
             </div>
             <div className="">
-              <h1 className="m-1 text-2xl uppercase font-bold font-conduit">
+              <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Ring På
               </h1>
               <a className="m-1 text-xl" href="tel:+4542955969">

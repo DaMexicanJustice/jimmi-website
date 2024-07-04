@@ -18,7 +18,7 @@ const Typewriter = () => {
       <span
         id="slogan"
         className="relative text-base font-semibold font-conduit text-slate-50
-  md:text-2xl"
+  lg:text-2xl"
       >
         {texts[0]}
       </span>

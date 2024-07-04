@@ -44,7 +44,7 @@ const CtaButton: React.FC<CtaButtonProps> = ({ text, href, type }) => {
       <ThemeProvider theme={yellowTheme}>
         <Button
           className="py-2 px-4 uppercase font-bold text-sm bg-yellow-400
-                  md:text-base
+                  lg:text-base
                   lg:text-xs"
           variant="contained"
           color="ochre"

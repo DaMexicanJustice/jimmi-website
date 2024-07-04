@@ -7,18 +7,18 @@ export default function Services() {
       <section
         id="Services"
         className="px-5 bg-slate-50 dark:bg-neutral-950 min-h-[calc(100svh-3rem)] max-h-max
-        md:px-32
+        lg:px-32
         xl:py-12"
       >
         <main
           className="flex flex-col gap-8 py-8 h-full justify-center items-center
-        md:flex-row md:flex-wrap
+        lg:flex-row lg:flex-wrap
         xl:flex-nowrap"
         >
           <div
             className="flex flex-col gap-5 justify-center items-center pb-5 
             bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          md:basis-5/12 md:grow
+          lg:basis-5/12 lg:grow
           xl:basis-3/12 xl:grow-0"
           >
             <Image
@@ -33,7 +33,7 @@ export default function Services() {
             </h1>
             <p
               className="text-slate-900 text-center px-5
-            md:text-base"
+            lg:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -47,7 +47,7 @@ export default function Services() {
 
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          md:basis-5/12 md:grow
+          lg:basis-5/12 lg:grow
           xl:basis-3/12 xl:grow-0"
           >
             <Image
@@ -62,7 +62,7 @@ export default function Services() {
             </h1>
             <p
               className="text-slate-900 text-center px-5
-            md:text-base"
+            lg:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -76,7 +76,7 @@ export default function Services() {
 
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          md:basis-5/12 md:grow
+          lg:basis-5/12 lg:grow
           xl:basis-3/12 xl:grow-0"
           >
             <Image
@@ -91,7 +91,7 @@ export default function Services() {
             </h1>
             <p
               className="text-slate-900 text-center px-5
-            md:text-base"
+            lg:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -105,7 +105,7 @@ export default function Services() {
 
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          md:basis-5/12 md:grow
+          lg:basis-5/12 lg:grow
           xl:basis-3/12 xl:grow-0 "
           >
             <Image
@@ -120,7 +120,7 @@ export default function Services() {
             </h1>
             <p
               className="text-slate-900 text-center px-5
-            md:text-base"
+            lg:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
