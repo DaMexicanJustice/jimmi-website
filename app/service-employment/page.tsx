@@ -496,7 +496,7 @@ export default function ServiceEmployment() {
                 dokumentation, så det understøtter jeres behov bedst muligt. Men
                 vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc image-left slider">
+              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc image-left">
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til
