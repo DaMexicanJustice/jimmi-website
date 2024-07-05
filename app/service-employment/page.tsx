@@ -30,11 +30,13 @@ export default function ServiceEmployment() {
         duration: 1,
       });
     });
+
     gsap.to(".slider", {
       scrollTrigger: {
         trigger: ".slider",
         start: "top 80%",
         end: "top top",
+        toggleActions: "play none none reverse",
       },
       x: 0,
       duration: 1,
@@ -472,7 +474,6 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            id="sliderTarget"
             className="flex flex-col gap-6 space-between items-center
           lg:flex-row lg:gap-4"
           >
@@ -493,10 +494,10 @@ export default function ServiceEmployment() {
                 for dette. Det aftales derfor individuelt, hvilken dokumentation
                 vi skal levere til de jobcentre, vi samarbejder med, da vi
                 oplever et meget forskelligt behov. Vi skræddersyr vores
-                dokumentation, så det understøtter jeres behov bedst muligt. Men
-                vi tilbyder:
+                dofkumentation, så det understøtter jeres behov bedst muligt.
+                Men vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc image-left">
+              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc image-left slider">
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til
