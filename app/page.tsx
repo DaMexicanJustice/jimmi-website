@@ -17,11 +17,15 @@ export default function Home() {
       <Navbar useScrollBehavior={true}></Navbar>
       <main id="main" className="min-h-svh min-w-svh">
         <Hero></Hero>
+        {/* <div
+          className="bg-parallax bg-gradient-to-b from-slate-100 to-slate-50
+        dark:from-neutral-800 dark:to-neutral-900"
+        ></div> */}
         <History></History>
         <Services></Services>
         <Dna></Dna>
-        <Environment></Environment>
       </main>
+      <Environment></Environment>
       <Footer></Footer>
     </>
   );

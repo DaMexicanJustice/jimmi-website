@@ -4,15 +4,10 @@ import "/app/styles/styles.css";
 export default function Hero() {
   return (
     <>
-      <section
-        id="Hero"
-        className="px-5 h-svh max-h-max
-      lg:px-32"
-      >
+      <section id="Hero" className="h-svh max-h-max">
         <main
           className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
-          cursor-default
-          lg:px-32 lg:gap-10"
+          cursor-default lg:gap-10"
         >
           <h1
             className="text-xl whitespace-pre font-bold uppercase text-slate-50

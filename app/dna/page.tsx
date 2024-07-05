@@ -40,19 +40,18 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="px-5 bg-slate-100 dark:bg-neutral-900 min-h-[calc(100svh-3rem)] max-h-max
-        lg:px-20 lg:h-44
-        xl:py-12"
+        className="p-5 max-h-max bg-slate-50 dark:bg-neutral-800
+      lg:px-32 lg:h-[calc(100svh-3rem)]"
       >
         <main
           className="flex flex-col items-center justify-center h-full pb-10
-        lg:flex-row lg:gap-10 lg:justify-evenly lg:pb-0"
+        lg:flex-row lg:gap-10 lg:justify-between lg:pb-0"
         >
           {/* Left Panel / Top Panel */}
           <div
-            className="flex flex-col gap-10 py-10 items-center
+            className="flex flex-col gap-10 items-center
           lg:basis-5/12 lg:gap-2
-          xl:items-start xl:basis-4/12"
+          xl:items-start"
           >
             <h1
               className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
@@ -93,10 +92,10 @@ export default function Dna() {
           </div>
 
           {/* Right Panel / Bottom Panel */}
-          <div
-            className="flex flex-col gap-10 py-10 items-center
+          {/* <div
+            className="flex flex-col gap-10 py-10 items-center p-5
           lg:basis-5/12 lg:gap-2
-          xl:items-start xl:basis-4/12"
+          xl:items-start"
           >
             <h1
               className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
@@ -134,7 +133,7 @@ export default function Dna() {
                 type="button"
               ></CtaButton>
             </div>
-          </div>
+          </div> */}
         </main>
       </section>
     </>

@@ -16,12 +16,7 @@ export default function Services() {
   return (
     <>
       <Navbar useScrollBehavior={false} />
-      <section
-        id="Social-feed"
-        className="px-5 min-h-[calc(100svh-3rem)] max-h-max bg-slate-50 dark:bg-neutral-950
-        lg:px-32
-        xl:py-12"
-      >
+      <section id="Social-feed" className="min-h-[calc(100svh-3rem)] max-h-max">
         <main className="flex flex-col h-full gap-8 py-8 mt-12 items-center">
           <h1 className="uppercase font-conduitbold text-2xl">
             Den Gode Historie

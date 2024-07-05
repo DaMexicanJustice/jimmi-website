@@ -82,9 +82,8 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="px-5 min-h-[calc(100svh-3rem)] max-h-max mt-12 bg-slate-50 dark:bg-neutral-950 py-5 overflow-x-hidden 
-      lg:px-32
-      xl:py-12"
+        className="min-h-[calc(100svh-3rem)] max-h-max mt-12 overflow-x-hidden p-5
+        lg:px-32 lg:py-14"
       >
         <main
           className="flex flex-col h-full gap-5 z-40 font-conduit text-center justify-center items-center

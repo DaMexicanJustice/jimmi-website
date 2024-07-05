@@ -7,12 +7,10 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaYenSign } from "react-icons/fa";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceEmployment() {
-  const container = useRef();
   const tl = useRef<gsap.core.Timeline>();
 
   useGSAP(() => {
@@ -57,7 +55,7 @@ export default function ServiceEmployment() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="min-h-[calc(100svh-3rem)] p-5 mt-16 bg-slate-50 dark:bg-neutral-950 overflow-x-hidden
+        className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5
         lg:px-32 lg:py-14"
       >
         <main

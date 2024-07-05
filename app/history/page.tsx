@@ -5,9 +5,8 @@ export default function History() {
     <>
       <section
         id="History"
-        className="px-5 bg-slate-100 dark:bg-neutral-900 overflow-hidden min-h-[calc(100svh-3rem)] max-h-max
-        lg:px-32 lg:py-40
-        xl:py-12"
+        className="overflow-hidden max-h-max p-5 bg-slate-50 dark:bg-neutral-800
+        lg:px-32 lg:h-[calc(100svh-3rem)]"
       >
         <main
           className="flex flex-col items-center justify-evenly gap-6 py-6 h-full

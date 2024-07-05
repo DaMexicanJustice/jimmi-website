@@ -62,3 +62,14 @@ body {
 .image-right {
   transform: translateX(1000px);
 }
+
+/* .bg-parallax {
+  min-height: 300svh;
+  min-width: 100svw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+} */
