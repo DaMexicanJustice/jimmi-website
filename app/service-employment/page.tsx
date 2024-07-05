@@ -43,7 +43,7 @@ export default function ServiceEmployment() {
     ScrollTrigger.create({
       trigger: ".scroll-section",
       start: "top center",
-      end: "+=1000",
+      end: "bottom center",
       scrub: true,
       pin: ".scroll-target",
       anticipatePin: 1,
