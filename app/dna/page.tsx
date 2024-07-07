@@ -41,8 +41,8 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="p-5 bg-slate-50 dark:bg-neutral-900
-      lg:px-32 lg:h-[calc(100svh-3rem)]"
+        className="p-5 bg-slate-50 dark:bg-neutral-900 hidden
+      lg:px-32 lg:h-[calc(100svh-3rem)] lg:block"
       >
         <main
           className="flex flex-col items-center justify-center h-full pb-10 h-full
