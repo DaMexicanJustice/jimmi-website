@@ -1,5 +1,6 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import CtaButton from "../ui/cta-button";
+import Slogans from "../ui/slogans";
 
 export default function Dna() {
   const divElements = [];
@@ -44,7 +45,7 @@ export default function Dna() {
       lg:px-32 lg:h-[calc(100svh-3rem)]"
       >
         <main
-          className="flex flex-col items-center justify-center h-full pb-10
+          className="flex flex-col items-center justify-center h-full pb-10 h-full
         lg:flex-row lg:gap-10 lg:justify-between lg:pb-0"
         >
           {/* Left Panel / Top Panel */}
@@ -90,6 +91,8 @@ export default function Dna() {
               ></CtaButton>
             </div>
           </div>
+
+          <Slogans></Slogans>
 
           {/* Right Panel / Bottom Panel */}
           {/* <div
