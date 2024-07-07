@@ -15,11 +15,14 @@ export default function Home() {
         <Toaster position="bottom-center" />
       </div>
       <Navbar useScrollBehavior={true}></Navbar>
-      <main id="main" className="min-h-svh min-w-svh">
+      <main
+        id="main"
+        className="min-h-svh min-w-svh bg-slate-50 dark:bg-neutral-900"
+      >
         <Hero></Hero>
         {/* <div
-          className="bg-parallax bg-gradient-to-b from-slate-100 to-slate-50
-        dark:from-neutral-800 dark:to-neutral-900"
+          className="bg-cover bg-[url('/images/abc.jpg')] h-full
+          w-full bg-fixed bg-center absolute -z-10 bg-no-repeat"
         ></div> */}
         <History></History>
         <Services></Services>

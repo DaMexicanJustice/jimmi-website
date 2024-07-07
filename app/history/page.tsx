@@ -5,8 +5,8 @@ export default function History() {
     <>
       <section
         id="History"
-        className="overflow-hidden p-5 bg-slate-50 dark:bg-neutral-800
-        lg:px-32 2xl:h-[calc(100svh+3rem)]"
+        className="p-5 bg-slate-50 dark:bg-neutral-900
+        lg:px-32 lg:h-[calc(100svh-3rem)]"
       >
         <main
           className="flex flex-col items-center justify-evenly gap-6 py-6 h-full
@@ -16,7 +16,7 @@ export default function History() {
             src="/images/Jimmi2.jpg"
             width={280}
             height={328}
-            alt="Jimmi billed"
+            alt="Jimmi billed"z
             className="drop-shadow-md
             xl:order-3 xl:w-full
             xl:basis-3/12"

@@ -6,8 +6,8 @@ export default function Services() {
     <>
       <section
         id="Services"
-        className="p-5
-        lg:px-32 2xl:h-[calc(100svh+3rem)] bg-slate-100 dark:bg-neutral-900"
+        className="p-5 bg-slate-200 dark:bg-neutral-800 rounded-[3rem]
+        lg:px-32 lg:h-[calc(100svh-3rem)]"
       >
         <main
           className="flex flex-col gap-8 py-8 h-full justify-center items-center
