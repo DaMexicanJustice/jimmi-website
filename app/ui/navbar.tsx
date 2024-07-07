@@ -13,7 +13,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { IconButton, List, ListItem } from "@mui/material";
 import { Dehaze, Close, HorizontalRule } from "@mui/icons-material";
 import NavbarButton from "./navbar-button";
-import { useRouter } from "next/router";
 
 interface NavbarProps {
   useScrollBehavior: boolean;

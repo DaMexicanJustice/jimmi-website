@@ -82,7 +82,7 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="min-h-[calc(100svh-3rem)] max-h-max mt-12 overflow-x-hidden p-5
+        className="mt-12 p-5
         lg:px-32 lg:py-14"
       >
         <main
@@ -99,8 +99,11 @@ export default function EmployeeDetails() {
             xl:basis-5/12
             2xl:basis-4/12"
             >
-              <p className="uppercase font-conduitboldbold text-2xl text-slate-700"></p>
-              <div id="image-container" className="w-full mb-5 shadow-md">
+              <div
+                id="image-container"
+                className="w-full mb-5 mt-5 shadow-md 
+              lg:mt-0"
+              >
                 <Image
                   src={data ? data.img : "no-img"}
                   width={512}

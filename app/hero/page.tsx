@@ -4,7 +4,7 @@ import "/app/styles/styles.css";
 export default function Hero() {
   return (
     <>
-      <section id="Hero" className="h-svh max-h-max">
+      <section id="Hero" className="h-svh">
         <main
           className="relative flex flex-col items-center justify-center h-full gap-5 z-40 relative font-conduit
           cursor-default lg:gap-10"

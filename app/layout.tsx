@@ -34,9 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${conduit.variable} ${yantramanav.variable} ${conduitBold.variable}`}
     >
-      <body className={`${conduit.variable} bg-slate-50 dark:bg-neutral-900`}>
-        {children}
-      </body>
+      <body className={`${conduit.variable} bg-transparent`}>{children}</body>
     </html>
   );
 }
