@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar useScrollBehavior={true}></Navbar>
       <main
         id="main"
-        className="min-h-svh min-w-svh bg-slate-50 dark:bg-neutral-900"
+        className="min-h-svh min-w-svh bg-slate-50 dark:bg-neutral-900 overflow-x-hidden"
       >
         <Hero></Hero>
         {/* <div

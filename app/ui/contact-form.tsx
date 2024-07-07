@@ -1,11 +1,30 @@
 "use client"; // This is a client component
 import TextField from "@mui/material/TextField";
 import CtaButton from "./cta-button";
-import { useEffect, useRef, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import { useRef, useState } from "react";
+import toast from "react-hot-toast";
 import Spinner from "./spinner";
+// GSAP
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const ContactForm = () => {
+  useGSAP(() => {
+    gsap.to(".slider", {
+      scrollTrigger: {
+        trigger: ".slider",
+        start: "top 80%",
+        end: "top top",
+        toggleActions: "play reverse play reverse",
+      },
+      x: 0,
+      duration: 1,
+    });
+  });
+
   const [loading, setLoading] = useState(false);
 
   const formRef = useRef<HTMLFormElement>(null);
@@ -35,7 +54,7 @@ const ContactForm = () => {
     <>
       <div
         id="contact-form"
-        className="flex flex-col items-center bg-slate-50 gap-1 dark:bg-slate-200 py-8 rounded
+        className="flex flex-col items-center bg-slate-50 gap-1 dark:bg-slate-200 py-8 rounded slider image-right
           border-0 border-t-4 border-solid border-t-yellow-400 shadow-md shadow-slate-950/50 order-3
           lg:basis-7/12 lg:mb-0
           xl:basis-4/12"

@@ -55,7 +55,8 @@ export default function ServiceEmployment() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5
+        className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
+        bg-[url('/images/abc.jpg')] bg-scroll bg-center bg-cover bg-no-repeat
         lg:px-32 lg:py-14"
       >
         <main

@@ -115,7 +115,7 @@ export default function EmployeeDetails() {
 
               <div className="flex flex-col gap-5">
                 <div className="bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
-                  <p className="uppercase font-conduitboldbold text-xl text-slate-700 ">
+                  <p className="uppercase font-conduitboldbold text-xl text-slate-700">
                     {data ? data.name : "no-data"}
                   </p>
                   <p className="uppercase font-conduitboldbold text-lg text-slate-500">
@@ -193,11 +193,9 @@ export default function EmployeeDetails() {
             xl:basis-7/12
             2xl:basis-8/12"
             >
-              <hr className="border border-solid border-slate-900 dark:border-slate-50"></hr>
-              <p className="text-blue-900 dark:text-slate-50 text-xl text-left">
+              <p className="text-slate-900 dark:text-slate-50 text-xl text-left">
                 {data ? data.competences.article.headline : "no-data"}
               </p>
-              <hr className="border border-solid border-slate-900 dark:border-slate-50"></hr>
               <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line">
                 {data ? data.competences.article.text : "no-data"}
               </p>

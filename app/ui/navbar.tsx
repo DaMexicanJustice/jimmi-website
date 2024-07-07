@@ -251,6 +251,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                             onClick={closeMenu}
                             href="/service-youth"
                             className="font-conduit"
+                            aria-disabled
                           >
                             Ungeindsatser
                           </Link>
@@ -260,6 +261,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                             onClick={closeMenu}
                             href="/service-social"
                             className="font-conduit"
+                            aria-disabled
                           >
                             Socialindsatser
                           </Link>

@@ -39,7 +39,7 @@ export default async function Employees() {
         className="p-5 mt-12
         lg:px-32 lg:py-14 lg:h-[calc(100svh+3rem)] lg:mt-0"
       >
-        <main className="flex flex-col h-full justify-center items-center">
+        <main className="flex flex-col h-full justify-center items-center cursor-default">
           <div className="flex flex-col gap-10 py-5">
             <div className="bg-yellow-400 dark:bg-yellow-500 grow p-5 flex flex-col gap-5 shadow-xl">
               <h1 className="uppercase font-bold text-2xl text-slate-900 font-conduit">
@@ -83,7 +83,7 @@ export default async function Employees() {
                     <p className="uppercase font-conduitboldbold text-xl text-slate-700">
                       {e.name}
                     </p>
-                    <p className="uppercase font-conduitboldbold text-sm text-slate-500">
+                    <p className="uppercase font-conduitbold text-sm text-slate-500">
                       {e.role}
                     </p>
                   </div>
@@ -91,14 +91,14 @@ export default async function Employees() {
                     id="contact-info"
                     className="flex flex-row justify-between"
                   >
-                    <div className="  p-5">
-                      <div className="flex flex-row gap-2 items-center">
+                    <div className="p-5">
+                      <div className="flex flex-row gap-1 items-center">
                         <EnvelopeIcon className="text-slate-950 w-5"></EnvelopeIcon>
                         <p className="font-conduit text-sm text-slate-800">
                           {e.email}
                         </p>
                       </div>
-                      <div className="flex flex-row gap-2 items-center">
+                      <div className="flex flex-row gap-1 items-center">
                         <PhoneIcon className="text-slate-950 w-5"></PhoneIcon>
                         <a
                           href={`tel:${e.phone}`}
@@ -134,10 +134,10 @@ export default async function Employees() {
                     className="absolute w-full h-full bg-slate-50 opacity-0 overflow-hidden
                     group-hover:opacity-100 transition-opacity duration-500 ease-in-out px-5 group-hover:block"
                   >
-                    <p className="uppercase text-slate-700 font-conduit">
+                    <p className="uppercase text-slate-700 font-conduitbold">
                       Kompetencedækning
                     </p>
-                    <p className="uppercase text-yellow-400 font-conduit">
+                    <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Sprog
                     </p>
                     <div className="flex flex-row gap-1">
@@ -150,7 +150,7 @@ export default async function Employees() {
                       )}
                     </div>
 
-                    <p className="uppercase text-yellow-400 font-conduit">
+                    <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Uddannelse
                     </p>
                     {Object.keys(e.competences.education).map(
@@ -160,7 +160,7 @@ export default async function Employees() {
                         </p>
                       )
                     )}
-                    <p className="uppercase text-yellow-400 font-conduit">
+                    <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Erfaring
                     </p>
                     {Object.keys(e.competences.experience).map(
