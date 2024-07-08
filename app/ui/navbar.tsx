@@ -102,7 +102,9 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         id="navbar"
         className={`fixed top-0 left-0 w-svw px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap overflow-hidden
-        lg:px-32`}
+        lg:px-16
+
+`}
       >
         <div>
           <Link href="/">
@@ -111,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               width="300"
               height="66"
               viewBox="0 0 400 100"
-              className={`${svgColor}  w-24 h-12 cursor-pointer transition-colors duration-500`}
+              className={`${svgColor} w-32 h-12 cursor-pointer transition-colors duration-500`}
             >
               <defs>
                 <style>.cls-1{}</style>
@@ -181,7 +183,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           transition-transform duration-700 ease-in-out
           xl:hidden`}
         >
-          <div className="flex flex-col">
+          <div className="flex flex-col text-xl">
             <div className="flex flex-row justify-end px-8 py-4">
               <IconButton
                 aria-label="fingerprint"
@@ -192,22 +194,22 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 <Close className="size-8 fill-slate-50"></Close>
               </IconButton>
             </div>
-            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduit uppercase">
+            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduitbold uppercase">
               <Link
                 href="/"
                 onClick={closeMenu}
-                className="flex flex-row items-center w-40 h-9"
+                className="flex flex-row items-center w-48 h-9"
               >
                 <HorizontalRule></HorizontalRule> Forside
               </Link>
               <Link
                 href="/employees"
                 onClick={closeMenu}
-                className="flex flex-row items-center w-40 h-9"
+                className="flex flex-row items-center w-48 h-9"
               >
                 <HorizontalRule></HorizontalRule>Konsulenter
               </Link>
-              <div className="flex flex-row w-40 items-center">
+              <div className="flex flex-row w-48 items-center">
                 <ThemeProvider theme={theme}>
                   <HorizontalRule
                     className={expanded ? "opacity-0" : "opacity-100"}
@@ -216,7 +218,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                   <Accordion
                     expanded={expanded}
                     onChange={handleExpansion}
-                    className="bg-transparent text-slate-50 font-conduit p-0"
+                    className="bg-transparent text-slate-50 font-conduitbold p-0"
                     style={{ boxShadow: "none", padding: "0px" }}
                     sx={{
                       "& .MuiAccordion-region": {
@@ -233,7 +235,9 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                       id="panel1-header"
                       className="p-0"
                     >
-                      <Typography>Ydelser</Typography>
+                      <Typography className="font-conduitbold text-xl">
+                        Ydelser
+                      </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <List>
@@ -241,7 +245,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-employment"
-                            className="font-conduit"
+                            className="font-conduitbold"
                           >
                             Beskæftigelsesindsatser
                           </Link>
@@ -250,7 +254,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-youth"
-                            className="font-conduit"
+                            className="font-conduitbold"
                             aria-disabled
                           >
                             Ungeindsatser
@@ -260,7 +264,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-social"
-                            className="font-conduit"
+                            className="font-conduitbold"
                             aria-disabled
                           >
                             Socialindsatser
@@ -274,7 +278,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               <Link
                 href="/social-feed"
                 onClick={closeMenu}
-                className="flex flex-row items-center w-40 h-9"
+                className="flex flex-row items-center w-48 h-9"
               >
                 <HorizontalRule className=""></HorizontalRule>Den Gode Historie
               </Link>
@@ -285,8 +289,8 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         {/* Desktop menu navbar */}
         <div
           className={`hidden flex-row gap-5 justify-end items-center px-5 transition-colors duration-500
-        ${textColor} uppercase font-bold text-xl font-conduitbold
-        xl:flex
+        ${textColor} uppercase text-lg font-conduitbold
+        xl:flex xl:px-0
         `}
         >
           <Link href="/">Forside</Link>

@@ -7,7 +7,7 @@ export default function Services() {
       <section
         id="Services"
         className="p-5 bg-slate-200 dark:bg-neutral-800 rounded-[3rem]
-        lg:px-32"
+        lg:px-16"
       >
         <main
           className="flex flex-col gap-4 py-8 h-full justify-between items-center
@@ -15,7 +15,7 @@ export default function Services() {
         2xl:flex-nowrap"
         >
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
             lg:basis-5/12
             2xl:basis-3/12"
           >
@@ -49,7 +49,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
             lg:basis-5/12
             2xl:basis-3/12"
           >
@@ -82,7 +82,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
             lg:basis-5/12
             2xl:basis-3/12"
           >
@@ -115,7 +115,7 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
             lg:basis-5/12
             2xl:basis-3/12"
           >

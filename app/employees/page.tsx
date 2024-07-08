@@ -37,7 +37,9 @@ export default async function Employees() {
       <section
         id="Employees"
         className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900
-        lg:px-32 lg:mt-16"
+        lg:px-16
+
+ lg:mt-16"
       >
         <main className="flex flex-col h-full justify-center items-center cursor-default">
           <div

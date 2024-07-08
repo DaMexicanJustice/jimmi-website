@@ -36,7 +36,9 @@ export default function ServiceSocial() {
       <section
         id="service-employment"
         className="mt-16 overflow-hidden p-5 bg-slate-100 dark:bg-neutral-900
-        lg:px-32 lg:py-14"
+        lg:px-16
+
+ lg:py-14"
       >
         <main
           className="h-full flex flex-col w-full justify-center gap-6

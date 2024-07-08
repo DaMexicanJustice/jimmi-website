@@ -1,6 +1,7 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import CtaButton from "../ui/cta-button";
 import Slogans from "../ui/slogans";
+import PinTitle from "../ui/pin-title";
 
 export default function Dna() {
   const divElements = [];
@@ -15,10 +16,7 @@ export default function Dna() {
   for (let i = 0; i < 5; i++) {
     divElements.push(
       <div key={i}>
-        <div
-          className="flex flex-row gap-4 items-center
-        lg:gap-5"
-        >
+        <div className="flex flex-row gap-4 items-center">
           <div className="bg-yellow-400 dark:bg-yellow-500 rounded-sm shadow-md">
             <CheckIcon
               className="size-6 text-slate-50 dark:text-slate-900 shrink-0
@@ -41,18 +39,17 @@ export default function Dna() {
     <>
       <section
         id="DNA"
-        className="p-5 bg-slate-50 dark:bg-neutral-900 hidden
-      lg:px-32 lg:block"
+        className="p-5 bg-slate-50 dark:bg-neutral-900
+        lg:px-16"
       >
         <main
           className="flex flex-col items-center justify-center h-full pb-10 h-full
-        lg:flex-row lg:gap-10 lg:justify-between lg:pb-0"
+          2xl:flex-row 2xl:gap-10 2xl:justify-between 2xl:pb-0"
         >
           {/* Left Panel / Top Panel */}
           <div
-            className="flex flex-col gap-10 items-center
-          lg:basis-5/12 lg:gap-2
-          xl:items-start"
+            className="flex flex-col gap-10 items-start
+          lg:basis-5/12 lg:gap-2"
           >
             <h1
               className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
@@ -61,8 +58,8 @@ export default function Dna() {
               Mollit ea
             </h1>
             <div
-              className="flex flex-col gap-5
-            lg:justify-start lg:gap-4"
+              className="flex flex-col gap-4
+            lg:justify-start lg:gap-1"
             >
               <h2
                 className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold
@@ -70,7 +67,12 @@ export default function Dna() {
               >
                 Est enim cillum cupidatat ut cupidatat dolor
               </h2>
-              <div className="flex flex-col gap-4 pb-5">{divElements}</div>
+              <div
+                className="flex flex-col gap-4 pb-5
+              lg:gap-3"
+              >
+                {divElements}
+              </div>
             </div>
             <div
               className="flex flex-col gap-5 items-center
@@ -81,8 +83,8 @@ export default function Dna() {
               lg:text-sm"
               >
                 Occaecat amet esse sit do officia deserunt laboris veniam
-                eiusmod ipsum. Anim exercitation nisi nostrud ut aute. Occaecat
-                consequat eu eiusmod consequat laborum laboris ullamco nulla.
+                eiusmod ipsum.Occaecat incididunt et occaecat laboris in fugiat
+                consectetur.
               </p>
               <CtaButton
                 text="Dolor laborum cillum magna"
@@ -92,7 +94,7 @@ export default function Dna() {
             </div>
           </div>
 
-          <Slogans></Slogans>
+          {/* <Slogans></Slogans> */}
 
           {/* Right Panel / Bottom Panel */}
           {/* <div

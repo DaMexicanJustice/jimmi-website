@@ -216,7 +216,7 @@ const Footer: React.FC = () => {
               width="300"
               height="66"
               viewBox="0 0 400 100"
-              className="w-24 h-12 cursor-pointer fill-white bg-gradient-mentor"
+              className="w-32 h-12 cursor-pointer fill-white bg-gradient-mentor"
             >
               <defs>
                 <style>.cls-1{}</style>

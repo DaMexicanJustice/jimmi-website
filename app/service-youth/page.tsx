@@ -36,7 +36,9 @@ export default function ServiceYouth() {
       <section
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-hidden p-5
-        lg:px-32 lg:py-14"
+        lg:px-16
+
+ lg:py-14"
       >
         <main
           className="h-full flex flex-col w-full justify-center gap-6

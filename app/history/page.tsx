@@ -6,7 +6,7 @@ export default function History() {
       <section
         id="History"
         className="p-5 bg-slate-50 dark:bg-neutral-900
-        lg:px-32"
+      lg:px-16"
       >
         <main
           className="flex flex-col items-center justify-evenly gap-6 py-6 h-full

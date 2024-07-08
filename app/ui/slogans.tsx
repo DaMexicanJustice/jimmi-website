@@ -3,34 +3,25 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowLongDownIcon } from "@heroicons/react/24/outline";
 
 gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 
 const Slogans = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.to(".first", {
+    tl.to(".second", {
       text: {
         delimiter: " ",
-        value: "˝Alt godt samarbejde starter med en god kop kaffe.˝",
+        value: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
       },
       ease: "none",
-    })
-      .to(".second", {
-        text: {
-          delimiter: " ",
-          value: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
-        },
-        ease: "none",
-      })
-      .to(".third", {
-        text: {
-          delimiter: " ",
-          value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
-        },
-        ease: "none",
-      });
+    }).to(".third", {
+      text: {
+        delimiter: " ",
+        value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
+      },
+      ease: "none",
+    });
     ScrollTrigger.create({
       animation: tl,
       trigger: ".trigger",
@@ -39,21 +30,14 @@ const Slogans = () => {
       scrub: true,
       pin: "#DNA",
       anticipatePin: 1,
-      onScrubComplete: function () {},
     });
   });
 
   return (
     <div
-      className="hidden justify-center items-center basis-5/12 gap-6 trigger h-full text-slate-900 dark:text-slate-50
-          xl:flex xl:flex-col"
+      className="flex flex-col justify-center items-center w-full gap-6 trigger h-full text-slate-900 dark:text-slate-50 
+      absolute w-7/12 right-0 px-32"
     >
-      <h2
-        className="uppercase font-conduitbold first
-            lg:text-2xl
-            xl:text-3xl
-            2xl:text-4xl"
-      ></h2>
       <h2
         className="uppercase font-conduitbold second
             lg:text-2xl

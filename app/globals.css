@@ -56,9 +56,9 @@
 }
 
 .image-left {
-  transform: translateX(-1000px);
+  transform: translateX(-2000px);
 }
 
 .image-right {
-  transform: translateX(1000px);
+  transform: translateX(2000px);
 }

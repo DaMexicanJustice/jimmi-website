@@ -2,10 +2,18 @@
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
+import Link from "next/link";
+// GSAP
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import PinTitle from "../ui/pin-title";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 // Defining the object structure
 interface Employee {
@@ -83,7 +91,9 @@ export default function EmployeeDetails() {
       <section
         id="Employee-details"
         className="mt-12 p-5 bg-[url('/images/abc.jpg')] dark:bg-neutral-900 bg-scroll bg-center bg-cover bg-no-repeat dark:bg-none
-        lg:px-32 lg:py-14"
+        lg:px-16
+
+ lg:py-14"
       >
         <main
           className="flex flex-col h-full gap-5 z-40 font-conduit text-center justify-center items-center
@@ -209,6 +219,7 @@ export default function EmployeeDetails() {
                 {data ? data.competences.resume : "no-data"}
               </p>
             </div>
+            <PinTitle />
           </div>
         </main>
       </section>
