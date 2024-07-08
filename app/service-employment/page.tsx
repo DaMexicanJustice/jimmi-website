@@ -56,7 +56,7 @@ export default function ServiceEmployment() {
       <section
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
-        light:bg-[url('/images/abc.jpg')] bg-scroll bg-center bg-cover bg-no-repeat dark:bg-neutral-900
+        bg-[url('/images/abc.jpg')] bg-scroll bg-center bg-cover bg-no-repeat dark:bg-neutral-900 dark:bg-none
         lg:px-32 lg:py-14"
       >
         <main

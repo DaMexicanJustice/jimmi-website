@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
               Telefon: <span className="text-yellow-400">+45 42955969</span>
             </a>
             <a href="mailto:jl@mentorplan.dk" className="m-1 text-lg">
-              Sikkermail:{" "}
+              Sikkermail:
               <span className="text-yellow-400">jl@mentorplan.dk</span>
             </a>
             <p className="m1 text-lg">CVR: 37923850</p>
@@ -210,7 +210,7 @@ const Footer: React.FC = () => {
 
         {/* Desktop from lg:breakpoint */}
         <div className="hidden lg:flex flex-row justify-between gap-10 px-32 py-16 h-[calc(50svh)]">
-          <div className="flex flex-col justify-between px-5 basis-3/12">
+          <div className="flex flex-col justify-between px-5 basis-2/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="300"
@@ -268,7 +268,7 @@ const Footer: React.FC = () => {
               <FaCopyright></FaCopyright> Copyright
             </div>
           </div>
-          <div className="flex flex-col justify-center text-center basis-6/12">
+          <div className="flex flex-col justify-center text-center basis-8/12">
             {/* <h1 className="m-1 text-2xl uppercase font-conduitbold">
                 Mød Mig Her
               </h1> */}
@@ -300,7 +300,7 @@ const Footer: React.FC = () => {
               </a>
             </div> */}
           </div>
-          <div className="flex flex-col justify-between items-end gap-5 basis-3/12">
+          <div className="flex flex-col justify-between items-end gap-5 basis-2/12">
             <ArrowUpIcon
               className="size-12 hover:cursor-pointer "
               onClick={scrollToTop}

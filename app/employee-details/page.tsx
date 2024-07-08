@@ -82,7 +82,7 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="mt-12 p-5 light:bg-[url('/images/abc.jpg')] dark:bg-neutral-900 bg-scroll bg-center bg-cover bg-no-repeat
+        className="mt-12 p-5 bg-[url('/images/abc.jpg')] dark:bg-neutral-900 bg-scroll bg-center bg-cover bg-no-repeat dark:bg-none
         lg:px-32 lg:py-14"
       >
         <main
