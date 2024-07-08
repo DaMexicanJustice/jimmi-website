@@ -29,18 +29,21 @@ export default async function Employees() {
   const employeeData = await getEmployeeData();
   // Generating array of JS objects based on defined interface structure
   const employees: Employee[] = employeeData.employees;
-  const maxEducationParagraphs = 7;
+  const maxEducationParagraphs = 6;
 
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employees"
-        className="p-5 mt-12
-        lg:px-32 lg:py-14 lg:h-[calc(100svh+3rem)] lg:mt-0"
+        className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900
+        lg:px-32 lg:mt-16"
       >
         <main className="flex flex-col h-full justify-center items-center cursor-default">
-          <div className="flex flex-col gap-10 py-5">
+          <div
+            className="flex flex-col gap-10 py-5
+          xl:gap-6"
+          >
             <div className="bg-yellow-400 dark:bg-yellow-500 grow p-5 flex flex-col gap-5 shadow-xl">
               <h1 className="uppercase font-bold text-2xl text-slate-900 font-conduit">
                 Konsulenter
@@ -80,10 +83,16 @@ export default async function Employees() {
                     />
                   </div>
                   <div id="personal-info" className="px-5">
-                    <p className="uppercase font-conduitboldbold text-xl text-slate-700">
+                    <p
+                      className="uppercase font-conduitboldbold text-xl text-slate-700
+                    xl:text-base"
+                    >
                       {e.name}
                     </p>
-                    <p className="uppercase font-conduitbold text-sm text-slate-500">
+                    <p
+                      className="uppercase font-conduitbold text-sm text-slate-500
+                    xl:text-xs"
+                    >
                       {e.role}
                     </p>
                   </div>
@@ -94,7 +103,10 @@ export default async function Employees() {
                     <div className="p-5">
                       <div className="flex flex-row gap-1 items-center">
                         <EnvelopeIcon className="text-slate-950 w-5"></EnvelopeIcon>
-                        <p className="font-conduit text-sm text-slate-800">
+                        <p
+                          className="font-conduit text-sm text-slate-800
+                        xl:text-xs"
+                        >
                           {e.email}
                         </p>
                       </div>
@@ -102,7 +114,8 @@ export default async function Employees() {
                         <PhoneIcon className="text-slate-950 w-5"></PhoneIcon>
                         <a
                           href={`tel:${e.phone}`}
-                          className="font-conduit text-slate-800 text-sm"
+                          className="font-conduit text-slate-800 text-sm
+                          xl:text-xs"
                         >
                           {e.phone
                             .substring(3)
@@ -140,7 +153,7 @@ export default async function Employees() {
                     <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Sprog
                     </p>
-                    <div className="flex flex-row gap-1">
+                    <div className="flex flex-row flex-wrap gap-1">
                       {Object.keys(e.competences.languages).map(
                         (key: string, index: number) => (
                           <p className="text-slate-950 text-xs" key={index}>
@@ -155,7 +168,10 @@ export default async function Employees() {
                     </p>
                     {Object.keys(e.competences.education).map(
                       (key: string, index: number) => (
-                        <p className="text-slate-950 text-xs" key={index}>
+                        <p
+                          className="text-slate-950 text-xs truncate"
+                          key={index}
+                        >
                           {e.competences.education[key]}
                         </p>
                       )

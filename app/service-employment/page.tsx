@@ -56,7 +56,7 @@ export default function ServiceEmployment() {
       <section
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
-        bg-[url('/images/abc.jpg')] bg-scroll bg-center bg-cover bg-no-repeat
+        light:bg-[url('/images/abc.jpg')] bg-scroll bg-center bg-cover bg-no-repeat dark:bg-neutral-900
         lg:px-32 lg:py-14"
       >
         <main
@@ -73,7 +73,7 @@ export default function ServiceEmployment() {
             >
               Beskæftigelsesindsats
             </h1>
-            <p>
+            <p className="text-slate-900 dark:text-slate-50">
               I Mentorplan tilbyder vi forløb inden for beskæftigelse.
               Udgangspunktet i disse forløb er altid tilbagevenden til
               arbejdsmarkedet. I forløbet arbejder vi med etablering af
@@ -103,7 +103,7 @@ export default function ServiceEmployment() {
               >
                 Metode – hvordan og hvorfor det giver mening
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 I Mentorplan er vores metode at gå 360 grader rundt om borgeren.
                 Med afdækning af helhedsbilledet bliver vi klogere på borgerens
                 situation med henblik på at skabe det rigtige match fra start.
@@ -143,11 +143,11 @@ export default function ServiceEmployment() {
             <h3 className="uppercase font-conduit text-xl text-center">
               I Mentorplan ved vi af erfaring, at ”Virkeligheden virker”.
             </h3>
-            <p>
+            <p className="text-slate-900 dark:text-slate-50">
               Vores værdisæt minder meget om de tanker, som ligger bag
               JobFirst-metoden, som i dag anvendes i mange af landets jobcentre.
             </p>
-            <p>
+            <p className="text-slate-900 dark:text-slate-50">
               Vi arbejder hver dag efter den tanke, at der findes en
               arbejdsplads til langt de fleste, at alle kan bidrage og blive en
               del af fællesskabet, og at borgerne ikke længere skal vente på, at
@@ -179,7 +179,7 @@ export default function ServiceEmployment() {
                     FØLELSE AF KONTROL SKABER MOTIVATION
                   </h2>
                 </div>
-                <p>
+                <p className="text-slate-900 dark:text-slate-50">
                   Når borgeren oplever igen at få en følelse af kontrol, skaber
                   det motivation hos langt de fleste, da de nu ikke længere
                   sidder bagerst i bussen. De sidder på førersædet og har
@@ -199,7 +199,7 @@ export default function ServiceEmployment() {
                 >
                   HJÆLP TIL SÅRBARE BORGERE GENNEM RELATIONER
                 </h2>
-                <p>
+                <p className="text-slate-900 dark:text-slate-50">
                   Det kan fx være de borgere, som har det så svært, at bare det
                   at komme ud af sengen om morgenen er vanskeligt – dem griber
                   vi også. Her bliver relationen særligt vigtig, da vi ved, at
@@ -227,7 +227,7 @@ export default function ServiceEmployment() {
                 >
                   DYRK ARBEJDSIDENTITET HOS DE UDSATTE BORGERE
                 </h2>
-                <p>
+                <p className="text-slate-900 dark:text-slate-50">
                   Et andet perspektiv i vores 360-graders metode er at ramme de
                   borgere, som mange andre måske ville opgive: De, som er så
                   langt fra beskæftigelse, at deres arbejdsidentitet først skal
@@ -247,7 +247,7 @@ export default function ServiceEmployment() {
                 >
                   STYRK BORGERENS SUNDHED OG RELATIONER
                 </h2>
-                <p>
+                <p className="text-slate-900 dark:text-slate-50">
                   I den relationsopbyggende fase tager vi de greb i brug, som vi
                   af erfaring ved virker. For eksempel er det ikke unormalt, at
                   mentoren tager borgeren med i SATS træningscenter. Her
@@ -269,7 +269,7 @@ export default function ServiceEmployment() {
               >
                 WALK AND TALK
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Vi benytter os i høj grad af walk and talks. På disse gåture
                 bringer vi også det beskæftigelsesrettede i spil, da vi benytter
                 muligheden for at stikke hovedet inden for på virksomhederne i
@@ -298,7 +298,7 @@ export default function ServiceEmployment() {
               >
                 Virksomhedsnetværk
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Vi er eksperter i at finde de helt rigtige virksomheder, der har
                 lyst til at være med på rejsen. Hos Mentorplan er vores
                 absolutte styrke, at vi har et godt virksomhedsnetværk, som gør
@@ -345,7 +345,7 @@ export default function ServiceEmployment() {
             lg:block"
           >
             <h2
-              className="uppercase font-conduitbold text-2xl
+              className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
               lg:text-6xl"
             >
               Forløb
@@ -370,13 +370,13 @@ export default function ServiceEmployment() {
                 lg:gap-4 lg:items-start"
               >
                 <h2
-                  className="uppercase font-conduitbold text-2xl
+                  className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
                   lg:text-4xl"
                 >
                   AFKLARINGS- OG UDVIKLINGSFORLØB
                 </h2>
                 <h3
-                  className="text-xl
+                  className="text-xl text-slate-900 dark:text-slate-50
                   lg:text-xl"
                 >
                   Afklarings- og udviklingsforløb henvender sig til borgere, der
@@ -404,13 +404,13 @@ export default function ServiceEmployment() {
                 lg:gap-4 lg:items-start"
               >
                 <h2
-                  className="uppercase font-conduitbold text-2xl
+                  className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
                   lg:text-4xl"
                 >
                   HURTIGT I JOB
                 </h2>
                 <h3
-                  className="text-xl
+                  className="text-xl text-slate-900 dark:text-slate-50
                   lg:text-xl"
                 >
                   Hurtigt i job henvender sig til borgere, der har brug for
@@ -433,13 +433,13 @@ export default function ServiceEmployment() {
                 lg:gap-4 lg:items-start"
               >
                 <h2
-                  className="uppercase font-conduit text-2xl
+                  className="uppercase font-conduit text-2xl text-slate-900 dark:text-slate-50
                   lg:text-4xl"
                 >
                   HÅNDHOLDT INDSATS
                 </h2>
                 <h3
-                  className="text-xl
+                  className="text-xl text-slate-900 dark:text-slate-50
                   lg:text-xl"
                 >
                   Dette forløb er for særligt udsatte borgere, såsom dem med
@@ -486,7 +486,7 @@ export default function ServiceEmployment() {
               >
                 Grundig dokumentation
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Vi mener, at et tæt samarbejde er altafgørende for et godt
                 forløb. Det betyder, at vi kan korrigere med det samme, når
                 noget afviger fra planen. Løbende dokumentation danner rammen

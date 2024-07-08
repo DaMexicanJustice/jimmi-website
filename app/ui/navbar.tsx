@@ -285,7 +285,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         {/* Desktop menu navbar */}
         <div
           className={`hidden flex-row gap-5 justify-end items-center px-5 transition-colors duration-500
-        ${textColor} uppercase font-bold text-xl font-conduitbold h-full 
+        ${textColor} uppercase font-bold text-xl font-conduitbold
         xl:flex
         `}
         >

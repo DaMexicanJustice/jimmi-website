@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ArrowLongDownIcon } from "@heroicons/react/24/outline";
 
 gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 
@@ -10,15 +11,24 @@ const Slogans = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
     tl.to(".first", {
-      text: "˝Alt godt samarbejde starter med en god kop kaffe.˝",
+      text: {
+        delimiter: " ",
+        value: "˝Alt godt samarbejde starter med en god kop kaffe.˝",
+      },
       ease: "none",
     })
       .to(".second", {
-        text: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
+        text: {
+          delimiter: " ",
+          value: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
+        },
         ease: "none",
       })
       .to(".third", {
-        text: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
+        text: {
+          delimiter: " ",
+          value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
+        },
         ease: "none",
       });
     ScrollTrigger.create({
@@ -35,7 +45,7 @@ const Slogans = () => {
 
   return (
     <div
-      className="hidden justify-center items-start basis-5/12 gap-6 trigger h-full
+      className="hidden justify-center items-center basis-5/12 gap-6 trigger h-full text-slate-900 dark:text-slate-50
           xl:flex xl:flex-col"
     >
       <h2
