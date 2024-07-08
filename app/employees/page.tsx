@@ -1,14 +1,19 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { getEmployeeData } from "../utils/dataHandler";
+import jimmiPic from "/public/images/Jimmi.jpg";
+import maltePic from "/public/images/Malte.jpg";
+import marckPic from "/public/images/Marck.jpg";
+import musaPic from "/public/images/Musa.jpg";
+import esraPic from "/public/images/Esra.jpg";
 
 // Defining the object structure
 interface Employee {
   name: string;
-  img: string;
+  img: "jimmiPic" | "maltePic" | "marckPic" | "musaPic" | "esraPic";
   role: string;
   email: string;
   phone: string;
@@ -24,6 +29,15 @@ interface Employee {
     };
   };
 }
+
+const imageMap = {
+  jimmiPic: jimmiPic,
+  maltePic: maltePic,
+  marckPic: marckPic,
+  musaPic: musaPic,
+  esraPic: esraPic,
+  // add more mappings as needed
+};
 
 export default async function Employees() {
   const employeeData = await getEmployeeData();
@@ -76,7 +90,7 @@ export default async function Employees() {
                   lg:h-full"
                   >
                     <Image
-                      src={e.img}
+                      src={imageMap[e.img]}
                       width={512}
                       height={512}
                       alt="Medarbejder billed"
