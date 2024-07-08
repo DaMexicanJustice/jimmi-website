@@ -380,10 +380,7 @@ export default function ServiceEmployment() {
                 >
                   AFKLARINGS- OG UDVIKLINGSFORLØB
                 </h2>
-                <h3
-                  className="text-xl text-slate-900 dark:text-slate-50
-                  lg:text-xl"
-                >
+                <h3 className="text-slate-900 dark:text-slate-50">
                   Afklarings- og udviklingsforløb henvender sig til borgere, der
                   har brug for hjælp til at få afdækket og beskrevet
                   udfordringer i forhold til at kunne genindtræde på
@@ -414,10 +411,7 @@ export default function ServiceEmployment() {
                 >
                   HURTIGT I JOB
                 </h2>
-                <h3
-                  className="text-xl text-slate-900 dark:text-slate-50
-                  lg:text-xl"
-                >
+                <h3 className="text-slate-900 dark:text-slate-50">
                   Hurtigt i job henvender sig til borgere, der har brug for
                   hjælp til at komme ind på arbejdsmarkedet og ikke har
                   problemer ud over ledighed. Disse borgere kan have svært ved
@@ -443,10 +437,7 @@ export default function ServiceEmployment() {
                 >
                   HÅNDHOLDT INDSATS
                 </h2>
-                <h3
-                  className="text-xl text-slate-900 dark:text-slate-50
-                  lg:text-xl"
-                >
+                <h3 className="text-slate-900 dark:text-slate-50">
                   Dette forløb er for særligt udsatte borgere, såsom dem med
                   misbrugsproblemer, kriminalitetsbaggrund, psykiske
                   udfordringer og andre komplekse problemstillinger, der derfor
