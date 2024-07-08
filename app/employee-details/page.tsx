@@ -7,11 +7,16 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import Link from "next/link";
+import jimmiPic from "/public/images/Jimmi.jpg";
+import maltePic from "/public/images/Malte.jpg";
+import marckPic from "/public/images/Marck.jpg";
+import musaPic from "/public/images/Musa.jpg";
+import esraPic from "/public/images/Esra.jpg";
 
 // Defining the object structure
 interface Employee {
   name: string;
-  img: string;
+  img: "jimmiPic" | "maltePic" | "marckPic" | "musaPic" | "esraPic";
   role: string;
   email: string;
   phone: string;
@@ -33,6 +38,14 @@ interface Employee {
     resume: string;
   };
 }
+
+const imageMap = {
+  jimmiPic: jimmiPic,
+  maltePic: maltePic,
+  marckPic: marckPic,
+  musaPic: musaPic,
+  esraPic: esraPic,
+};
 
 function getURLSearchParamsID() {
   // Acess search query
@@ -108,7 +121,7 @@ export default function EmployeeDetails() {
               lg:mt-0"
               >
                 <Image
-                  src={data ? data.img : "no-img"}
+                  src={data ? imageMap[data.img] : jimmiPic}
                   width={512}
                   height={512}
                   alt="Medarbejder billed"

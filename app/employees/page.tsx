@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
@@ -36,7 +36,6 @@ const imageMap = {
   marckPic: marckPic,
   musaPic: musaPic,
   esraPic: esraPic,
-  // add more mappings as needed
 };
 
 export default async function Employees() {
