@@ -60,7 +60,8 @@ export default async function Employees() {
             </div>
             <div
               className="flex flex-col gap-6
-              lg:flex-row lg:flex-wrap lg:justify-center"
+              lg:flex-row lg:flex-wrap lg:justify-center
+              2xl:flex-nowrap"
             >
               {employees.map((e: Employee, index: number) => (
                 <div

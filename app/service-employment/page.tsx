@@ -92,12 +92,12 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6 lg:gap-4
+            className="flex flex-col gap-6 
           lg:flex-row lg:basis-4/12 lg:justify-between lg:items-center"
           >
             <div
               className="flex flex-col gap-6 items-center
-              lg:items-start lg:gap-4 lg:basis-8/12"
+              lg:items-start  lg:basis-8/12"
             >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
@@ -134,7 +134,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 items-center
-          lg:gap-4 lg:w-8/12 lg:items-start"
+           lg:w-8/12 lg:items-start"
           >
             <h2
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
@@ -142,7 +142,7 @@ export default function ServiceEmployment() {
             >
               JobFirst-metoden kort
             </h2>
-            <h3 className="uppercase font-conduit text-xl text-center">
+            <h3 className="uppercase font-conduit text-xl text-center text-slate-900 dark:text-slate-50">
               I Mentorplan ved vi af erfaring, at ”Virkeligheden virker”.
             </h3>
             <p className="text-slate-900 dark:text-slate-50">
@@ -161,15 +161,15 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6
-            lg:flex-row lg:gap-4"
+            lg:flex-row "
           >
             <div
               className="flex flex-col gap-6
-              lg:gap-4 lg:basis-4/12"
+               lg:basis-4/12"
             >
               <div
                 className="flex flex-col gap-6 min-h-52
-                lg:gap-4"
+                "
               >
                 <div className="flex flex-col">
                   <h2
@@ -192,7 +192,7 @@ export default function ServiceEmployment() {
 
               <div
                 className="flex flex-col gap-6 min-h-52
-                lg:gap-4"
+                "
               >
                 <h2
                   className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
@@ -216,11 +216,11 @@ export default function ServiceEmployment() {
 
             <div
               className="flex flex-col gap-6
-              lg:gap-4 lg:basis-4/12"
+               lg:basis-4/12"
             >
               <div
                 className="flex flex-col gap-6 min-h-52
-                lg:gap-4"
+                "
               >
                 <h2
                   className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
@@ -240,7 +240,7 @@ export default function ServiceEmployment() {
 
               <div
                 className="flex flex-col gap-6 min-h-52
-                lg:gap-4"
+                "
               >
                 <h2
                   className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
@@ -262,7 +262,7 @@ export default function ServiceEmployment() {
 
             <div
               className="flex flex-col gap-6
-              lg:gap-4 lg:basis-4/12"
+               lg:basis-4/12"
             >
               <h2
                 className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
@@ -288,11 +288,11 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 space-between items-center
-            lg:flex-row lg:gap-4"
+            lg:flex-row "
           >
             <div
               className="flex flex-col gap-6 items-center
-              lg:items-start lg:gap-4 lg:basis-8/12"
+              lg:items-start  lg:basis-8/12"
             >
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
@@ -360,16 +360,16 @@ export default function ServiceEmployment() {
           {/* Joindeleteme layout */}
           <div
             className="flex flex-col gap-6 scroll-section 
-            lg:flex-row lg:gap-4 lg:justify-end"
+            lg:flex-row  lg:justify-end"
           >
             <div
               className="flex flex-col gap-6 container items-center
-              lg:gap-4 lg:basis-9/12 lg:items-start"
+               lg:basis-9/12 lg:items-start"
             >
               {/* Service */}
               <div
                 className="flex flex-col gap-6 first items-center
-                lg:gap-4 lg:items-start"
+                 lg:items-start"
               >
                 <h2
                   className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
@@ -403,7 +403,7 @@ export default function ServiceEmployment() {
               {/* Service */}
               <div
                 className="flex flex-col gap-6 second items-center
-                lg:gap-4 lg:items-start"
+                 lg:items-start"
               >
                 <h2
                   className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
@@ -432,7 +432,7 @@ export default function ServiceEmployment() {
               {/* Service */}
               <div
                 className="flex flex-col gap-6 third items-center
-                lg:gap-4 lg:items-start"
+                 lg:items-start"
               >
                 <h2
                   className="uppercase font-conduit text-2xl text-slate-900 dark:text-slate-50
@@ -476,10 +476,10 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 space-between items-center
-          lg:flex-row lg:gap-4"
+          lg:flex-row "
           >
             <div
-              className="flex flex-col gap-6 lg:gap-4 items-center
+              className="flex flex-col gap-6  items-center
             lg:items-start lg:basis-8/12"
             >
               <h2
