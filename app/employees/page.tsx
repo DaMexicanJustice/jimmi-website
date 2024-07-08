@@ -73,8 +73,8 @@ export default async function Employees() {
               {/* <hr className="border border-solid border-slate-900 "></hr> */}
             </div>
             <div
-              className="flex flex-col gap-4
-              lg:flex-row lg:flex-wrap lg:justify-center
+              className="flex flex-col gap-6
+              lg:flex-row lg:flex-wrap lg:justify-between
               2xl:flex-nowrap"
             >
               {employees.map((e: Employee, index: number) => (
@@ -82,7 +82,7 @@ export default async function Employees() {
                   key={index}
                   className="relative bg-slate-50 flex flex-col shadow-xl group overflow-hidden
                   lg:basis-3/12
-                  xl:p-0 xl:basis-1/5"
+                  xl:p-0 xl:basis-2/12"
                 >
                   <div
                     id="image-container"
