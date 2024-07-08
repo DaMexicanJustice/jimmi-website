@@ -73,7 +73,7 @@ export default async function Employees() {
               {/* <hr className="border border-solid border-slate-900 "></hr> */}
             </div>
             <div
-              className="flex flex-col gap-6
+              className="flex flex-col gap-4
               lg:flex-row lg:flex-wrap lg:justify-center
               2xl:flex-nowrap"
             >
