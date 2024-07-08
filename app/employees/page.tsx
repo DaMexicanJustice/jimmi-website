@@ -29,7 +29,7 @@ export default async function Employees() {
   const employeeData = await getEmployeeData();
   // Generating array of JS objects based on defined interface structure
   const employees: Employee[] = employeeData.employees;
-  const maxEducationParagraphs = 6;
+  const maxEducationParagraphs = 4;
 
   return (
     <>
@@ -154,43 +154,47 @@ export default async function Employees() {
                       Sprog
                     </p>
                     <div className="flex flex-row flex-wrap gap-1">
-                      {Object.keys(e.competences.languages).map(
-                        (key: string, index: number) => (
+                      {Object.keys(e.competences.languages)
+                        .reverse()
+                        .map((key: string, index: number) => (
                           <p className="text-slate-950 text-xs" key={index}>
                             {e.competences.languages[key]}
                           </p>
-                        )
-                      )}
+                        ))}
                     </div>
 
                     <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Uddannelse
                     </p>
-                    {Object.keys(e.competences.education).map(
-                      (key: string, index: number) => (
-                        <p
-                          className="text-slate-950 text-xs truncate"
-                          key={index}
-                        >
-                          {e.competences.education[key]}
-                        </p>
-                      )
-                    )}
+                    <div className="flex flex-col gap-1">
+                      {Object.keys(e.competences.education)
+                        .reverse()
+                        .slice(0, maxEducationParagraphs)
+                        .map((key: string, index: number) => (
+                          <p
+                            className="text-slate-950 text-xs truncate"
+                            key={index}
+                          >
+                            {e.competences.education[key]}
+                          </p>
+                        ))}
+                    </div>
                     <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Erfaring
                     </p>
-                    {Object.keys(e.competences.experience).map(
-                      (key: string, index: number) =>
-                        index <= maxEducationParagraphs && (
+                    <div className="flex flex-col gap-1">
+                      {Object.keys(e.competences.experience)
+                        .reverse()
+                        .slice(0, maxEducationParagraphs)
+                        .map((key: string, index: number) => (
                           <p
                             className="text-slate-950 text-xs truncate"
                             key={index}
                           >
                             {e.competences.experience[key]}
                           </p>
-                        )
-                    )}
-
+                        ))}
+                    </div>
                     <Link
                       href={{
                         pathname: "/employee-details",

@@ -274,7 +274,7 @@ const Footer: React.FC = () => {
               </h1> */}
             <a
               href="https://www.google.com/maps/place/SOHO/@55.666656,12.5567907,17z/data=!3m1!4b1!4m6!3m5!1s0x46525373da1d5b59:0x8bc8cd4d0c582aa4!8m2!3d55.666653!4d12.559371!16s%2Fg%2F1td9ccch?entry=ttu"
-              className="m-1 text-xl"
+              className="m-1 text-xl hover:underline-offset-8 hover:underline"
             >
               Flæsketorvet 68, 1. sal, 1711, København V <br></br>
               <span className="text-yellow-400 dark:text-yellow-500 font-conduitbold">

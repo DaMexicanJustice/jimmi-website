@@ -7,18 +7,17 @@ export default function Services() {
       <section
         id="Services"
         className="p-5 bg-slate-200 dark:bg-neutral-800 rounded-[3rem]
-        lg:px-32 lg:h-[calc(100svh-3rem)]"
+        lg:px-32"
       >
         <main
-          className="flex flex-col gap-8 py-8 h-full justify-center items-center
+          className="flex flex-col gap-4 py-8 h-full justify-between items-center
         lg:flex-row lg:flex-wrap
-        xl:flex-nowrap"
+        2xl:flex-nowrap"
         >
           <div
-            className="flex flex-col gap-5 justify-center items-center pb-5 
-            bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          lg:basis-5/12 lg:grow
-          xl:basis-3/12 xl:grow-0"
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            lg:basis-5/12
+            2xl:basis-3/12"
           >
             <Image
               src="/images/beskæftigelsesindsatser.jpg"
@@ -27,41 +26,17 @@ export default function Services() {
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
-              Beskæftigelsesindsatser
-            </h1>
-            <p
-              className="text-slate-900 text-center px-5
-            lg:text-base"
+            <h2
+              className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase break-words
+              2xl:text-sm"
             >
-              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
-              laborum proident laboris nisi quis nisi exercitation.
-            </p>
-            <CtaButton
-              text="Læs Mere"
-              href="/service-employment"
-              type="button"
-            ></CtaButton>
-          </div>
-
-          <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          lg:basis-5/12 lg:grow
-          xl:basis-3/12 xl:grow-0"
-          >
-            <Image
-              src="/images/ungeindsatser.jpg"
-              width={430}
-              height={370}
-              alt="Ydelse 1"
-              className="w-full object-cover"
-            />
-            <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
-              Ungeindsatser
-            </h1>
+              Beskæftigelsesindsatser
+            </h2>
             <p
               className="text-slate-900 text-center px-5
-            lg:text-base"
+              lg:text-base
+              2xl:text-sm
+              "
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -74,9 +49,42 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          lg:basis-5/12 lg:grow
-          xl:basis-3/12 xl:grow-0"
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            lg:basis-5/12
+            2xl:basis-3/12"
+          >
+            <Image
+              src="/images/ungeindsatser.jpg"
+              width={430}
+              height={370}
+              alt="Ydelse 1"
+              className="w-full object-cover"
+            />
+            <h2
+              className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase
+              2xl:text-base"
+            >
+              Ungeindsatser
+            </h2>
+            <p
+              className="text-slate-900 text-center px-5
+              lg:text-base
+              2xl:text-sm"
+            >
+              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
+              laborum proident laboris nisi quis nisi exercitation.
+            </p>
+            <CtaButton
+              text="Læs Mere"
+              href="/service-youth"
+              type="button"
+            ></CtaButton>
+          </div>
+
+          <div
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            lg:basis-5/12
+            2xl:basis-3/12"
           >
             <Image
               src="/images/Konsulenter.jpg"
@@ -85,12 +93,16 @@ export default function Services() {
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase">
+            <h2
+              className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase
+              2xl:text-sm"
+            >
               Socialindsatser
-            </h1>
+            </h2>
             <p
               className="text-slate-900 text-center px-5
-            lg:text-base"
+              2xl:text-sm
+              lg:text-base"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
@@ -103,9 +115,9 @@ export default function Services() {
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-          lg:basis-5/12 lg:grow
-          xl:basis-3/12 xl:grow-0 "
+            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none shrink-0
+            lg:basis-5/12
+            2xl:basis-3/12"
           >
             <Image
               src="/images/Den_gode_historie.jpg"
@@ -114,12 +126,16 @@ export default function Services() {
               alt="Ydelse 1"
               className="w-full object-cover"
             />
-            <h1 className="text-slate-700 font-bold text-lg px-5 font-conduit uppercase">
+            <h2
+              className="text-slate-700 font-bold text-lg px-5 font-conduit uppercase
+              2xl:text-base"
+            >
               Den Gode Historie
-            </h1>
+            </h2>
             <p
               className="text-slate-900 text-center px-5
-            lg:text-base"
+              lg:text-base
+              2xl:text-sm"
             >
               Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
               laborum proident laboris nisi quis nisi exercitation.
