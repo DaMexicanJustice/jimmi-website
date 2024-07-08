@@ -1,5 +1,9 @@
 import Image from "next/image";
 import CtaButton from "../ui/cta-button";
+import employmentPic from "/public/images/beskæftigelsesindsatser.jpg";
+import youthPic from "/public/images/ungeindsatser.jpg";
+import socialPic from "/public/images/Konsulenter.jpg";
+import Den_gode_historie from "/public/images/Den_gode_historie.jpg";
 
 export default function Services() {
   return (
@@ -21,7 +25,7 @@ export default function Services() {
             2xl:basis-3/12"
           >
             <Image
-              src="/images/beskæftigelsesindsatser.jpg"
+              src={employmentPic}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -56,7 +60,7 @@ export default function Services() {
             2xl:basis-3/12"
           >
             <Image
-              src="/images/ungeindsatser.jpg"
+              src={youthPic}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -90,7 +94,7 @@ export default function Services() {
             2xl:basis-3/12"
           >
             <Image
-              src="/images/Konsulenter.jpg"
+              src={socialPic}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -124,7 +128,7 @@ export default function Services() {
             2xl:basis-3/12"
           >
             <Image
-              src="/images/Den_gode_historie.jpg"
+              src={Den_gode_historie}
               width={430}
               height={370}
               alt="Ydelse 1"

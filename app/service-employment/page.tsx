@@ -1,6 +1,9 @@
 "use client"; // This is a client component
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
+import networkPic from "/public/images/network.jpg";
+import threesixtyPic from "/public/images/360.png";
+import journalPic from "/public/images/journal.jpg";
 import Image from "next/image";
 import { useRef } from "react";
 // GSAP
@@ -124,10 +127,10 @@ export default function ServiceEmployment() {
               </p>
             </div>
             <Image
-              src="/images/360.png"
+              src={threesixtyPic}
               width={430}
               height={370}
-              alt="Ydelse 1"
+              alt="360-billed"
               className="object-cover grayscale image-right"
             />
           </div>
@@ -334,10 +337,10 @@ export default function ServiceEmployment() {
               </p>
             </div>
             <Image
-              src="/images/network.jpg"
+              src={networkPic}
               width={430}
               height={370}
-              alt="hurtigt i job"
+              alt="Virksomhedsnetværk"
               className="object-cover grayscale lg:basis-4/12 image-right"
             />
           </div>
@@ -519,10 +522,10 @@ export default function ServiceEmployment() {
               </ol>
             </div>
             <Image
-              src="/images/journal.jpg"
+              src={journalPic}
               width={430}
               height={370}
-              alt="hurtigt i job"
+              alt="journal"
               className="object-cover grayscale image-right lg:basis-4/12"
             />
           </div>

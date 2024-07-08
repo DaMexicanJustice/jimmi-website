@@ -4,6 +4,24 @@ import { EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
+import soho_1 from "/public/images/soho_1.jpg";
+import soho_2 from "/public/images/soho_2.jpg";
+import soho_3 from "/public/images/soho_3.jpg";
+import soho_4 from "/public/images/soho_4.jpg";
+import soho_5 from "/public/images/soho_5.jpg";
+import soho_6 from "/public/images/soho_6.jpg";
+import soho_7 from "/public/images/soho_7.jpg";
+import soho_8 from "/public/images/soho_8.jpg";
+import soho_9 from "/public/images/soho_9.jpg";
+import soho_10 from "/public/images/soho_10.jpg";
+import soho_11 from "/public/images/soho_11.jpg";
+import soho_12 from "/public/images/soho_12.jpg";
+import soho_13 from "/public/images/soho_13.jpg";
+import soho_14 from "/public/images/soho_14.jpg";
+import soho_15 from "/public/images/soho_15.jpg";
+import soho_16 from "/public/images/soho_16.jpg";
+import soho_17 from "/public/images/soho_17.jpg";
+import soho_18 from "/public/images/soho_18.jpg";
 
 type PropType = {
   slides: number[];
@@ -15,78 +33,26 @@ const Carousel: React.FC<PropType> = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   const images = [
-    {
-      original: "/images/soho_1.jpg",
-      thumbnail: "/images/soho_1.jpg",
-    },
-    {
-      original: "/images/soho_2.jpg",
-      thumbnail: "/images/soho_2.jpg",
-    },
-    {
-      original: "/images/soho_16.jpg",
-      thumbnail: "/images/soho_16.jpg",
-    },
-    {
-      original: "/images/soho_4.jpg",
-      thumbnail: "/images/soho_4.jpg",
-    },
-    {
-      original: "/images/soho_5.jpg",
-      thumbnail: "/images/soho_5.jpg",
-    },
-    {
-      original: "/images/soho_17.jpg",
-      thumbnail: "/images/soho_17.jpg",
-    },
-    {
-      original: "/images/soho_7.jpg",
-      thumbnail: "/images/soho_7.jpg",
-    },
-    {
-      original: "/images/soho_15.jpg",
-      thumbnail: "/images/soho_15.jpg",
-    },
-    {
-      original: "/images/soho_9.jpg",
-      thumbnail: "/images/soho_9.jpg",
-    },
-    {
-      original: "/images/soho_18.jpg",
-      thumbnail: "/images/soho_18.jpg",
-    },
-    {
-      original: "/images/soho_11.jpg",
-      thumbnail: "/images/soho_11.jpg",
-    },
-    {
-      original: "/images/soho_12.jpg",
-      thumbnail: "/images/soho_12.jpg",
-    },
-    {
-      original: "/images/soho_13.jpg",
-      thumbnail: "/images/soho_13.jpg",
-    },
-    {
-      original: "/images/soho_14.jpg",
-      thumbnail: "/images/soho_14.jpg",
-    },
-    {
-      original: "/images/soho_8.jpg",
-      thumbnail: "/images/soho_8.jpg",
-    },
-    {
-      original: "/images/soho_3.jpg",
-      thumbnail: "/images/soho_3.jpg",
-    },
-    {
-      original: "/images/soho_6.jpg",
-      thumbnail: "/images/soho_6.jpg",
-    },
-    {
-      original: "/images/soho_10.jpg",
-      thumbnail: "/images/soho_10.jpg",
-    },
+    { original: soho_1, thumbnail: soho_1 },
+    { original: soho_7, thumbnail: soho_7 },
+    { original: soho_3, thumbnail: soho_3 },
+    { original: soho_12, thumbnail: soho_12 },
+    { original: soho_5, thumbnail: soho_5 },
+    { original: soho_9, thumbnail: soho_9 },
+    { original: soho_2, thumbnail: soho_2 },
+    { original: soho_18, thumbnail: soho_18 },
+    { original: soho_11, thumbnail: soho_11 },
+    { original: soho_8, thumbnail: soho_8 },
+    { original: soho_1, thumbnail: soho_1 },
+    { original: soho_16, thumbnail: soho_16 },
+    { original: soho_4, thumbnail: soho_4 },
+    { original: soho_10, thumbnail: soho_10 },
+    { original: soho_15, thumbnail: soho_15 },
+    { original: soho_6, thumbnail: soho_6 },
+    { original: soho_14, thumbnail: soho_14 },
+
+    { original: soho_13, thumbnail: soho_13 },
+    { original: soho_17, thumbnail: soho_17 },
   ];
 
   return (
