@@ -54,10 +54,7 @@ export default async function Employees() {
         lg:px-16 lg:mt-16"
       >
         <main className="flex flex-col h-full justify-center items-center cursor-default">
-          <div
-            className="flex flex-col gap-10 py-5
-          xl:gap-6"
-          >
+          <div className="flex flex-col gap-12 py-5">
             <div className="bg-yellow-400 dark:bg-yellow-500 grow p-5 flex flex-col gap-5 shadow-xl">
               <h1 className="uppercase font-bold text-2xl text-slate-900 font-conduit">
                 Konsulenter
