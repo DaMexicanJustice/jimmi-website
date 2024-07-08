@@ -2,18 +2,11 @@
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import Link from "next/link";
-// GSAP
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import PinTitle from "../ui/pin-title";
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 // Defining the object structure
 interface Employee {
@@ -101,13 +94,13 @@ export default function EmployeeDetails() {
         >
           <div
             className="flex flex-col gap-10
-          xl:gap-5 xl:flex-row"
+            lg:gap-5 lg:flex-row"
           >
             <div
               className="flex flex-col
-            xl:self-start
-            xl:basis-5/12
-            2xl:basis-4/12"
+              lg:basis-6/12
+              xl:self-start xl:basis-5/12
+              2xl:basis-4/12"
             >
               <div
                 id="image-container"
@@ -199,9 +192,10 @@ export default function EmployeeDetails() {
               </div>
             </div>
             <div
-              className="flex flex-col gap-5 
-            xl:basis-7/12
-            2xl:basis-8/12"
+              className="flex flex-col gap-5
+              lg:basis-6/12
+              xl:basis-7/12
+              2xl:basis-8/12"
             >
               <p className="text-slate-900 dark:text-slate-50 text-xl text-left">
                 {data ? data.competences.article.headline : "no-data"}
@@ -218,8 +212,22 @@ export default function EmployeeDetails() {
               <p className="text-left text-slate-950 bg-yellow-400 p-5 text-xl shadow-xl">
                 {data ? data.competences.resume : "no-data"}
               </p>
+              <div className="self-end">
+                <Link href="/employees">
+                  <h2
+                    className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
+                    lg:text-2xl
+                    xl:text-3xl
+                    2xl:text-4xl"
+                  >
+                    Tilbage
+                    <span className="font-sans text-yellow-400 dark:text-yellow-500">
+                      |
+                    </span>
+                  </h2>
+                </Link>
+              </div>
             </div>
-            <PinTitle />
           </div>
         </main>
       </section>

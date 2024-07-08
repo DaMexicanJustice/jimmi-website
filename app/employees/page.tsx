@@ -37,9 +37,7 @@ export default async function Employees() {
       <section
         id="Employees"
         className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900
-        lg:px-16
-
- lg:mt-16"
+        lg:px-16 lg:mt-16"
       >
         <main className="flex flex-col h-full justify-center items-center cursor-default">
           <div
@@ -61,14 +59,15 @@ export default async function Employees() {
               {/* <hr className="border border-solid border-slate-900 "></hr> */}
             </div>
             <div
-              className="flex flex-col gap-5
-            xl:flex-row gap-1"
+              className="flex flex-col gap-6
+              lg:flex-row lg:flex-wrap lg:justify-center"
             >
               {employees.map((e: Employee, index: number) => (
                 <div
                   key={index}
-                  className="relative bg-white grow flex flex-col shadow-xl group overflow-hidden
-                  xl:grow-0 xl:p-0 xl:basis-1/5"
+                  className="relative bg-slate-50 flex flex-col shadow-xl group overflow-hidden
+                  lg:basis-3/12
+                  xl:p-0 xl:basis-1/5"
                 >
                   <div
                     id="image-container"
@@ -131,13 +130,14 @@ export default async function Employees() {
                         query: { id: index },
                       }}
                       className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
-                    lg:size-24
-                    xl:size-16"
+                      lg:size-20
+                      xl:size-16"
                     >
                       <div
                         className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5
-                    uppercase font-conduitbold text-sm rounded-full -rotate-45
-                    xl:size-36 xl:p-4 xl:text-xs"
+                        uppercase font-conduitbold text-sm rounded-full -rotate-45
+                        lg:size-48
+                        xl:size-36 xl:p-4 xl:text-xs"
                       >
                         Læs Mere
                       </div>
@@ -203,7 +203,7 @@ export default async function Employees() {
                         query: { id: index },
                       }}
                       className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20
-                      lg:size-24
+                      lg:size-20
                       xl:size-16"
                     >
                       <div

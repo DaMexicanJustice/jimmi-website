@@ -100,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
     <>
       <nav
         id="navbar"
-        className={`fixed top-0 left-0 w-svw px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
+        className={`fixed top-0 left-0 w-full px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap overflow-hidden
         lg:px-16
 
@@ -288,9 +288,9 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
 
         {/* Desktop menu navbar */}
         <div
-          className={`hidden flex-row gap-5 justify-end items-center px-5 transition-colors duration-500
+          className={`hidden gap-5 justify-between items-center transition-colors duration-500
         ${textColor} uppercase text-lg font-conduitbold
-        xl:flex xl:px-0
+        xl:flex xl:flex-row
         `}
         >
           <Link href="/">Forside</Link>

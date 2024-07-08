@@ -40,10 +40,10 @@ export default function Dna() {
       <section
         id="DNA"
         className="p-5 bg-slate-50 dark:bg-neutral-900
-        lg:px-16"
+        lg:px-16 lg:py-8 "
       >
         <main
-          className="flex flex-col items-center justify-center h-full pb-10 h-full
+          className="flex flex-col items-center justify-center
           2xl:flex-row 2xl:gap-10 2xl:justify-between 2xl:pb-0"
         >
           {/* Left Panel / Top Panel */}

@@ -56,7 +56,7 @@ const ContactForm = () => {
         id="contact-form"
         className="flex flex-col items-center bg-slate-50 gap-1 dark:bg-slate-200 py-8 rounded slider image-right
           border-0 border-t-4 border-solid border-t-yellow-400 shadow-md shadow-slate-950/50 order-3
-          lg:basis-7/12 lg:mb-0
+          lg:basis-6/12 lg:mb-0
           xl:basis-4/12"
       >
         <h3

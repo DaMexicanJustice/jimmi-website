@@ -22,13 +22,11 @@ export default function History() {
             xl:basis-3/12"
           /> */}
 
-          {/* Right panel / Bottom Panel */}
-          <ContactForm></ContactForm>
-
+          {/* Left panel / Top Panel */}
           <div
             className="flex flex-col gap-10 items-center
-          xl:items-start xl:justify-evenly
-          xl:order-2 xl:basis-7/12"
+            lg:basis-6/12
+            xl:items-start xl:justify-evenly xl:basis-8/12"
           >
             <h1
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
@@ -81,6 +79,7 @@ export default function History() {
               commodo ut sit occaecat deserunt occaecat minim incididunt.
             </p>
           </div>
+          <ContactForm></ContactForm>
         </main>
       </section>
     </>

@@ -10,13 +10,14 @@ export default function Services() {
         lg:px-16"
       >
         <main
-          className="flex flex-col gap-4 py-8 h-full justify-between items-center
-        lg:flex-row lg:flex-wrap
+          className="flex flex-col gap-6 py-8 h-full justify-center items-center
+        lg:flex-row lg:flex-wrap lg:gap-6
         2xl:flex-nowrap"
         >
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
             lg:basis-5/12
+            xl:basis-4/12
             2xl:basis-3/12"
           >
             <Image
@@ -51,6 +52,7 @@ export default function Services() {
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
             lg:basis-5/12
+            xl:basis-4/12
             2xl:basis-3/12"
           >
             <Image
@@ -84,6 +86,7 @@ export default function Services() {
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
             lg:basis-5/12
+            xl:basis-4/12
             2xl:basis-3/12"
           >
             <Image
@@ -117,6 +120,7 @@ export default function Services() {
           <div
             className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
             lg:basis-5/12
+            xl:basis-4/12
             2xl:basis-3/12"
           >
             <Image
