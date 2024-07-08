@@ -8,35 +8,38 @@ gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 
 const Slogans = () => {
   useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.to(".second", {
-      text: {
-        delimiter: " ",
-        value: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
-      },
-      ease: "none",
-    }).to(".third", {
-      text: {
-        delimiter: " ",
-        value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
-      },
-      ease: "none",
-    });
-    ScrollTrigger.create({
-      animation: tl,
-      trigger: ".trigger",
-      start: "top top",
-      end: "+=1500",
-      scrub: true,
-      pin: "#DNA",
-      anticipatePin: 1,
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 1536px)", (context) => {
+      const tl = gsap.timeline();
+      tl.to(".second", {
+        text: {
+          delimiter: " ",
+          value: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
+        },
+        ease: "none",
+      }).to(".third", {
+        text: {
+          delimiter: " ",
+          value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
+        },
+        ease: "none",
+      });
+      ScrollTrigger.create({
+        animation: tl,
+        trigger: ".trigger",
+        start: "top center",
+        end: "+=1000",
+        scrub: true,
+        pin: "#DNA",
+        anticipatePin: 1,
+      });
     });
   });
 
   return (
     <div
-      className="flex flex-col justify-center items-center w-full gap-6 trigger h-full text-slate-900 dark:text-slate-50 
-      absolute w-7/12 right-0 px-32"
+      className="trigger flex flex-col gap-10 items-start text-slate-900 dark:text-slate-50
+          lg:basis-5/12 lg:gap-2"
     >
       <h2
         className="uppercase font-conduitbold second
