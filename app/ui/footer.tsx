@@ -2,10 +2,16 @@
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { FaLinkedin, FaCopyright } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Footer: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    // Update the year when the component mounts
+    setYear(new Date().getFullYear());
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -74,7 +80,7 @@ const Footer: React.FC = () => {
               </g>
             </svg>
             <div className="flex flex-row gap-2 text-xs items-center uppercase font-conduitbold">
-              <FaCopyright></FaCopyright> Copyright
+              <FaCopyright></FaCopyright> Copyright {year}
             </div>
           </div>
           <div className="flex flex-col text-center">
@@ -265,7 +271,7 @@ const Footer: React.FC = () => {
               </g>
             </svg>
             <div className="flex flex-row gap-2 text-xs items-center uppercase font-conduitbold">
-              <FaCopyright></FaCopyright> Copyright
+              <FaCopyright></FaCopyright> Copyright {year}
             </div>
           </div>
           <div className="flex flex-col justify-center text-center basis-8/12">
