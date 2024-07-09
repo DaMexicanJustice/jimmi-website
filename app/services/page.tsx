@@ -32,7 +32,7 @@ export default function Services() {
             />
             <h2
               className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase break-words
-              2xl:text-sm"
+              2xl:text-base"
             >
               Beskæftigelsesindsatser
             </h2>
@@ -127,7 +127,7 @@ export default function Services() {
             />
             <h2
               className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase
-              2xl:text-sm"
+              2xl:text-base"
             >
               Socialindsatser
             </h2>
