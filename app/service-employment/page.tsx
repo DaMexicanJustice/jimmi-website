@@ -59,10 +59,8 @@ export default function ServiceEmployment() {
       <section
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
-        bg-[url('/images/abc.jpg')] bg-scroll bg-center bg-cover bg-no-repeat dark:bg-neutral-900 dark:bg-none
-        lg:px-16
-
- lg:py-14"
+        bg-slate-50 dark:bg-neutral-900
+        lg:px-16 lg:py-14"
       >
         <main
           className="h-full flex flex-col w-full justify-center items-center gap-10 
@@ -96,7 +94,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 
-          lg:flex-row lg:basis-4/12 lg:justify-between lg:items-center"
+          lg:flex-row lg:justify-between lg:items-center"
           >
             <div
               className="flex flex-col gap-6 items-center
@@ -126,13 +124,15 @@ export default function ServiceEmployment() {
                 med eventuelle udfordringer, også på de skæve tidspunkter.
               </p>
             </div>
-            <Image
-              src={threesixtyPic}
-              width={430}
-              height={370}
-              alt="360-billed"
-              className="object-cover grayscale image-right"
-            />
+            <div className="lg:basis-4/12">
+              <Image
+                src={threesixtyPic}
+                width={430}
+                height={370}
+                alt="360-billed"
+                className="object-cover grayscale w-full drop-shadow-lg image-right"
+              />
+            </div>
           </div>
 
           <div
@@ -164,7 +164,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6
-            lg:flex-row "
+            lg:flex-row"
           >
             <div
               className="flex flex-col gap-6
@@ -176,7 +176,7 @@ export default function ServiceEmployment() {
               >
                 <div className="flex flex-col">
                   <h2
-                    className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
+                    className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
                   uppercase text-slate-900 text-xl font-conduit text-center
                   lg:h-16 2xl:h-auto
                   2xl:h-auto"
@@ -198,7 +198,7 @@ export default function ServiceEmployment() {
                 "
               >
                 <h2
-                  className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
+                  className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
                   uppercase text-slate-900 text-xl font-conduit text-center
                   lg:h-16 2xl:h-auto"
                 >
@@ -226,7 +226,7 @@ export default function ServiceEmployment() {
                 "
               >
                 <h2
-                  className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
+                  className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
                   uppercase text-slate-900 text-xl font-conduit text-center
                   lg:h-16 2xl:h-auto"
                 >
@@ -246,7 +246,7 @@ export default function ServiceEmployment() {
                 "
               >
                 <h2
-                  className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
+                  className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
                   uppercase text-slate-900 text-xl font-conduit text-center
                   lg:h-16 2xl:h-auto"
                 >
@@ -268,7 +268,7 @@ export default function ServiceEmployment() {
                lg:basis-4/12"
             >
               <h2
-                className="bg-yellow-400 dark:bg-yellow-500 shadow-xl p-1
+                className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
                 uppercase text-slate-900 text-xl font-conduit text-center
                 lg:h-16 2xl:h-auto"
               >
@@ -291,7 +291,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 space-between items-center
-            lg:flex-row "
+            lg:flex-row"
           >
             <div
               className="flex flex-col gap-6 items-center
@@ -336,13 +336,15 @@ export default function ServiceEmployment() {
                 og borgeren kan vi dermed skabe det gode match fra start.
               </p>
             </div>
-            <Image
-              src={networkPic}
-              width={430}
-              height={370}
-              alt="Virksomhedsnetværk"
-              className="object-cover grayscale lg:basis-4/12 image-right"
-            />
+            <div className="lg:basis-4/12">
+              <Image
+                src={networkPic}
+                width={430}
+                height={370}
+                alt="Virksomhedsnetværk"
+                className="object-cover grayscale w-full shadow-lg image-right"
+              />
+            </div>
           </div>
 
           <div
@@ -492,7 +494,10 @@ export default function ServiceEmployment() {
                 dofkumentation, så det understøtter jeres behov bedst muligt.
                 Men vi tilbyder:
               </p>
-              <ol className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 font-conduit font-bold list-disc image-left slider">
+              <ol
+                className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 
+              font-conduit font-bold list-disc image-left slider shadow-lg"
+              >
                 <li>Registrering af fremmøde</li>
                 <li>
                   Støtte til udarbejdelse af forberedende del til
@@ -512,13 +517,15 @@ export default function ServiceEmployment() {
                 <li>Arbejdsevnebeskrivelse</li>
               </ol>
             </div>
-            <Image
-              src={journalPic}
-              width={430}
-              height={370}
-              alt="journal"
-              className="object-cover grayscale image-right lg:basis-4/12"
-            />
+            <div className="lg:basis-4/12">
+              <Image
+                src={journalPic}
+                width={430}
+                height={370}
+                alt="journal"
+                className="object-cover grayscale w-full shadow-lg image-right lg:basis-4/12"
+              />
+            </div>
           </div>
         </main>
       </section>

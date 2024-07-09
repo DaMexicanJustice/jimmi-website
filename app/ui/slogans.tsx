@@ -9,21 +9,30 @@ gsap.registerPlugin(useGSAP, TextPlugin, ScrollTrigger);
 const Slogans = () => {
   useGSAP(() => {
     const mm = gsap.matchMedia();
-    mm.add("(min-width: 1536px)", (context) => {
+    mm.add("(min-width: 1024px)", (context) => {
       const tl = gsap.timeline();
-      tl.to(".second", {
+      tl.to(".first", {
         text: {
           delimiter: " ",
-          value: "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
+          value: "˝Alt godt samarbejde starter med en god kop kaffe˝",
         },
         ease: "none",
-      }).to(".third", {
-        text: {
-          delimiter: " ",
-          value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
-        },
-        ease: "none",
-      });
+      })
+        .to(".second", {
+          text: {
+            delimiter: " ",
+            value:
+              "˝Individuel tilgang, der tager udgangspunkt i borgers behov˝",
+          },
+          ease: "none",
+        })
+        .to(".third", {
+          text: {
+            delimiter: " ",
+            value: "˝En relation, der bygger på ligeværd, respekt og tillid.˝",
+          },
+          ease: "none",
+        });
       ScrollTrigger.create({
         animation: tl,
         trigger: ".trigger",
@@ -37,10 +46,13 @@ const Slogans = () => {
   });
 
   return (
-    <div
-      className="trigger flex flex-col gap-10 items-start text-slate-900 dark:text-slate-50
-          lg:basis-5/12 lg:gap-2"
-    >
+    <div className="trigger flex flex-col gap-10 justify-center text-slate-900 dark:text-slate-50 basis-6/12">
+      <h2
+        className="uppercase font-conduitbold first
+            lg:text-2xl
+            xl:text-3xl
+            2xl:text-4xl"
+      ></h2>
       <h2
         className="uppercase font-conduitbold second
             lg:text-2xl

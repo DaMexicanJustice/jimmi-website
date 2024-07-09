@@ -15,14 +15,13 @@ export default function Services() {
       >
         <main
           className="flex flex-col gap-6 py-8 h-full justify-center items-center
-        lg:flex-row lg:flex-wrap lg:gap-6
-        2xl:flex-nowrap"
+        md:flex-row md:flex-wrap
+        xl:flex-nowrap"
         >
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-            lg:basis-5/12
-            xl:basis-4/12
-            2xl:basis-3/12"
+            className="flex flex-col w-full w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
+            md:basis-5/12
+            xl:basis-3/12"
           >
             <Image
               src={employmentPic}
@@ -37,27 +36,40 @@ export default function Services() {
             >
               Beskæftigelsesindsatser
             </h2>
-            <p
-              className="text-slate-900 text-center px-5
-              lg:text-base
-              2xl:text-sm
-              "
-            >
-              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
-              laborum proident laboris nisi quis nisi exercitation.
-            </p>
             <CtaButton
               text="Læs Mere"
-              href="/service-youth"
+              href="/service-employment"
               type="button"
             ></CtaButton>
+            {/* Overlay */}
+            <div
+              id="overlay"
+              className="flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+                backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
+                duration-300
+                md:flex"
+            >
+              <p
+                className="text-slate-50 text-center px-5
+                  lg:text-base
+                  2xl:text-sm"
+              >
+                Ullamco Lorem fugiat aliqua duis laboris dolor ad dolore.
+                Consequat eiusmod ut Lorem laboris laboris mollit sunt ad nisi
+                incididunt. Culpa nostrud commodo Lorem irure Lorem.
+              </p>
+              <CtaButton
+                text="Læs Mere"
+                href="/service-employment"
+                type="button"
+              ></CtaButton>
+            </div>
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
-            lg:basis-5/12
-            xl:basis-4/12
-            2xl:basis-3/12"
+            className="flex flex-col w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
+            md:basis-5/12
+            xl:basis-3/12"
           >
             <Image
               src={youthPic}
@@ -72,26 +84,39 @@ export default function Services() {
             >
               Ungeindsatser
             </h2>
-            <p
-              className="text-slate-900 text-center px-5
-              lg:text-base
-              2xl:text-sm"
-            >
-              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
-              laborum proident laboris nisi quis nisi exercitation.
-            </p>
             <CtaButton
               text="Læs Mere"
               href="/service-youth"
               type="button"
             ></CtaButton>
+            {/* Overlay */}
+            <div
+              id="overlay"
+              className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+                backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
+                duration-300
+                md:flex"
+            >
+              <p
+                className="text-slate-50 text-center px-5
+                  lg:text-base
+                  2xl:text-sm"
+              >
+                Exercitation occaecat excepteur aliquip aute cillum do. Ad duis
+                ullamco consequat aliqua nostrud laborum amet ullamco Lorem.
+              </p>
+              <CtaButton
+                text="Læs Mere"
+                href="/service-youth"
+                type="button"
+              ></CtaButton>
+            </div>
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
-            lg:basis-5/12
-            xl:basis-4/12
-            2xl:basis-3/12"
+            className="flex flex-col w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
+            md:basis-5/12
+            xl:basis-3/12"
           >
             <Image
               src={socialPic}
@@ -106,26 +131,41 @@ export default function Services() {
             >
               Socialindsatser
             </h2>
-            <p
-              className="text-slate-900 text-center px-5
-              2xl:text-sm
-              lg:text-base"
-            >
-              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
-              laborum proident laboris nisi quis nisi exercitation.
-            </p>
             <CtaButton
               text="Læs Mere"
               href="/service-social"
               type="button"
             ></CtaButton>
+            {/* Overlay */}
+            <div
+              id="overlay"
+              className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+                backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
+                duration-300
+                md:flex"
+            >
+              <p
+                className="text-slate-50 text-center px-5
+                  lg:text-base
+                  2xl:text-sm"
+              >
+                Adipisicing culpa incididunt ullamco eiusmod nisi magna ad aute
+                ea exercitation do ullamco. Eiusmod labore nulla fugiat pariatur
+                sit commodo nulla. Quis enim et fugiat enim. Ea veniam elit
+                incididunt cillum.
+              </p>
+              <CtaButton
+                text="Læs Mere"
+                href="/service-social"
+                type="button"
+              ></CtaButton>
+            </div>
           </div>
 
           <div
-            className="flex flex-col gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
-            lg:basis-5/12
-            xl:basis-4/12
-            2xl:basis-3/12"
+            className="flex flex-col w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
+            md:basis-5/12
+            xl:basis-3/12"
           >
             <Image
               src={Den_gode_historie}
@@ -140,19 +180,33 @@ export default function Services() {
             >
               Den Gode Historie
             </h2>
-            <p
-              className="text-slate-900 text-center px-5
-              lg:text-base
-              2xl:text-sm"
-            >
-              Consequat incididunt occaecat labore eiusmod tempor. Velit culpa
-              laborum proident laboris nisi quis nisi exercitation.
-            </p>
             <CtaButton
               text="Læs Mere"
               href="/social-feed"
               type="button"
             ></CtaButton>
+            {/* Overlay */}
+            <div
+              id="overlay"
+              className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+                backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
+                duration-300
+                md:flex"
+            >
+              <p
+                className="text-slate-50 text-center px-5
+                  lg:text-base
+                  2xl:text-sm"
+              >
+                Elit ipsum sint tempor eu minim tempor eu et sit labore in nisi
+                est amet.
+              </p>
+              <CtaButton
+                text="Læs Mere"
+                href="/social-feed"
+                type="button"
+              ></CtaButton>
+            </div>
           </div>
         </main>
       </section>

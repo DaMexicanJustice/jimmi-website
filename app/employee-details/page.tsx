@@ -96,10 +96,8 @@ export default function EmployeeDetails() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="Employee-details"
-        className="mt-12 p-5 bg-[url('/images/abc.jpg')] dark:bg-neutral-900 bg-scroll bg-center bg-cover bg-no-repeat dark:bg-none
-        lg:px-16
-
- lg:py-14"
+        className="mt-12 p-5 bg-slate-50 dark:bg-neutral-900
+        lg:px-16 lg:py-14"
       >
         <main
           className="flex flex-col h-full gap-5 z-40 font-conduit text-center justify-center items-center
@@ -111,9 +109,7 @@ export default function EmployeeDetails() {
           >
             <div
               className="flex flex-col
-              lg:basis-6/12
-              xl:self-start xl:basis-5/12
-              2xl:basis-4/12"
+              lg:basis-4/12"
             >
               <div
                 id="image-container"
@@ -206,8 +202,7 @@ export default function EmployeeDetails() {
             </div>
             <div
               className="flex flex-col gap-5
-              lg:basis-6/12
-              xl:basis-7/12
+              lg:basis-8/12
               2xl:basis-8/12"
             >
               <p className="text-slate-900 dark:text-slate-50 text-xl text-left">

@@ -39,17 +39,17 @@ export default function Dna() {
       <section
         id="DNA"
         className="p-5 bg-slate-50 dark:bg-neutral-900
-        lg:px-16 lg:py-8
-        2xl:h-svh"
+        lg:px-16 lg:py-8 lg:h-[calc(100svh+3rem)]"
       >
         <main
-          className="flex flex-col items-center justify-center
-          2xl:flex-row 2xl:gap-10 2xl:justify-between 2xl:pb-0"
+          className="flex flex-col
+          lg:flex-row lg:justify-between lg:items-center"
         >
           {/* Left Panel / Top Panel */}
           <div
-            className="flex flex-col gap-10 items-start
-          2xl:basis-5/12 2xl:gap-2"
+            className="flex flex-col items-center gap-10
+            md:px-32
+            lg:basis-5/12 lg:px-0"
           >
             <h1
               className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
@@ -74,24 +74,19 @@ export default function Dna() {
                 {divElements}
               </div>
             </div>
-            <div
-              className="flex flex-col gap-5 items-center
-            lg:items-start lg:gap-2"
-            >
-              <p
-                className="text-slate-800 dark:text-slate-300 text-xl text-justify
+            <p
+              className="text-slate-800 dark:text-slate-300 text-xl text-justify w-4/5
               lg:text-sm"
-              >
-                Occaecat amet esse sit do officia deserunt laboris veniam
-                eiusmod ipsum.Occaecat incididunt et occaecat laboris in fugiat
-                consectetur.
-              </p>
-              <CtaButton
-                text="Dolor laborum cillum magna"
-                href=""
-                type="button"
-              ></CtaButton>
-            </div>
+            >
+              Occaecat amet esse sit do officia deserunt laboris veniam eiusmod
+              ipsum.Occaecat incididunt et occaecat laboris in fugiat
+              consectetur.
+            </p>
+            <CtaButton
+              text="Dolor laborum cillum"
+              href=""
+              type="button"
+            ></CtaButton>
           </div>
 
           <Slogans />
