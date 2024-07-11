@@ -102,9 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         id="navbar"
         className={`fixed top-0 left-0 w-full px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap overflow-hidden
-        lg:px-16
-
-`}
+        lg:px-16`}
       >
         <div>
           <Link href="/">
@@ -297,6 +295,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           <Link href="/employees">Konsulenter</Link>
           <NavbarButton textColor={textColor}></NavbarButton>
           <Link href="/social-feed">Den Gode Historie</Link>
+          <Link href="/contact">Kontakt</Link>
         </div>
       </nav>
     </>

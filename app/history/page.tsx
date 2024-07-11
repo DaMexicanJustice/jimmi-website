@@ -79,7 +79,7 @@ export default function History() {
               commodo ut sit occaecat deserunt occaecat minim incididunt.
             </p>
           </div>
-          <ContactForm></ContactForm>
+          <ContactForm useSliderAnimation={true}></ContactForm>
         </main>
       </section>
     </>
