@@ -102,6 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         id="navbar"
         className={`fixed top-0 left-0 w-full px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
         flex flex-row justify-between items-center flex-nowrap overflow-hidden
+        sm:px-32
         lg:px-16`}
       >
         <div>
@@ -161,17 +162,14 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             </svg>
           </Link>
         </div>
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <IconButton
             aria-label="fingerprint"
             id="burger-menu"
             onClick={openMenu}
             className="p-0"
           >
-            <Dehaze
-              className={`${dehazeColor} size-8 
-              lg:size-12`}
-            />
+            <Dehaze className={`${dehazeColor} size-8`} />
           </IconButton>
         </div>
 
@@ -179,7 +177,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         <div
           className={`fixed min-h-[calc(100svh+6rem)] w-full backdrop-blur-xl backdrop-brightness-50 top-0 right-0 overflow-hidden ${posX}
           transition-transform duration-700 ease-in-out
-          xl:hidden`}
+          lg:hidden`}
         >
           <div className="flex flex-col text-xl">
             <div className="flex flex-row justify-end px-8 py-4">
@@ -280,6 +278,13 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               >
                 <HorizontalRule className=""></HorizontalRule>Den Gode Historie
               </Link>
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="flex flex-row items-center w-48 h-9"
+              >
+                <HorizontalRule className=""></HorizontalRule>Kontakt
+              </Link>
             </div>
           </div>
         </div>
@@ -288,7 +293,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         <div
           className={`hidden gap-5 justify-between items-center transition-colors duration-500
         ${textColor} uppercase text-lg font-conduitbold
-        xl:flex xl:flex-row
+        lg:flex lg:flex-row
         `}
         >
           <Link href="/">Forside</Link>

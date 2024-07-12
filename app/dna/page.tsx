@@ -39,6 +39,7 @@ export default function Dna() {
       <section
         id="DNA"
         className="p-5 bg-slate-50 dark:bg-neutral-900
+        sm:px-32
         lg:px-16 lg:py-8 lg:h-[calc(100svh+3rem)]"
       >
         <main

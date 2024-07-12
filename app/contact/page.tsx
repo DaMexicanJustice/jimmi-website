@@ -1,3 +1,4 @@
+"use client"; // This is a client component
 import ContactForm from "../ui/contact-form";
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
@@ -7,18 +8,39 @@ import {
   MapPinIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+// GSAP
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Contact() {
+  const images: HTMLElement[] = gsap.utils.toArray(".slider");
+  images.forEach((image) => {
+    gsap.to(image, {
+      scrollTrigger: {
+        trigger: image,
+        start: "top 80%",
+        end: "top top",
+        toggleActions: "play none none reverse",
+      },
+      filter: "grayscale(0%)",
+      x: 0,
+      duration: 1,
+    });
+  });
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
-        className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900 
-        lg:p-16"
+        className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900 overflow-x-hidden
+        sm:px-32 
+        lg:px-16"
       >
         <main
-          className="flex flex-col gap-6 h-full justify-center items-center cursor-default bg-slate-50 shadow-lg py-5
-                      lg:flex-row"
+          className="flex flex-col gap-6 h-full justify-between items-center cursor-default py-5
+          lg:flex-row"
         >
           <div
             className="flex flex-col gap-6
@@ -59,13 +81,20 @@ export default function Contact() {
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.2844839745385!2d12.559370999999999!3d55.666653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525373da1d5b59%3A0x8bc8cd4d0c582aa4!2sSOHO!5e0!3m2!1sen!2sdk!4v1720696588850!5m2!1sen!2sdk"
-              width="600"
-              height="450"
-              className="border-0 w-full"
+              width="1"
+              height="1"
+              className="border-0 w-full h-96 image-left slider
+              sm:h-80"
               loading="lazy"
             ></iframe>
           </div>
-          <ContactForm useSliderAnimation={false} />
+          <div
+            className="w-full image-right slider shadow-lg
+            lg:basis-6/12 lg:mb-0
+            xl:basis-4/12"
+          >
+            <ContactForm useSliderAnimation={false} />
+          </div>
         </main>
       </section>
       <Footer></Footer>

@@ -97,6 +97,7 @@ export default function EmployeeDetails() {
       <section
         id="Employee-details"
         className="mt-12 p-5 bg-slate-50 dark:bg-neutral-900
+        sm:px-32
         lg:px-16 lg:py-14"
       >
         <main

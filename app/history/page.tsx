@@ -6,7 +6,8 @@ export default function History() {
       <section
         id="History"
         className="p-5 bg-slate-50 dark:bg-neutral-900
-      lg:px-16"
+        sm:px-32
+        lg:px-16"
       >
         <main
           className="flex flex-col items-center justify-evenly gap-6 py-6 h-full
@@ -79,7 +80,13 @@ export default function History() {
               commodo ut sit occaecat deserunt occaecat minim incididunt.
             </p>
           </div>
-          <ContactForm useSliderAnimation={true}></ContactForm>
+          <div
+            className="
+            lg:basis-6/12 lg:mb-0
+            xl:basis-4/12"
+          >
+            <ContactForm useSliderAnimation={true}></ContactForm>
+          </div>
         </main>
       </section>
     </>

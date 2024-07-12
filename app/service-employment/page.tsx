@@ -5,7 +5,6 @@ import networkPic from "/public/images/network.jpg";
 import threesixtyPic from "/public/images/360.png";
 import journalPic from "/public/images/journal.jpg";
 import Image from "next/image";
-import { useRef } from "react";
 // GSAP
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -14,8 +13,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceEmployment() {
-  const tl = useRef<gsap.core.Timeline>();
-
   useGSAP(() => {
     const images: HTMLElement[] = gsap.utils.toArray(".grayscale");
     images.forEach((image) => {
@@ -60,6 +57,7 @@ export default function ServiceEmployment() {
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
         bg-slate-50 dark:bg-neutral-900
+        sm:px-32
         lg:px-16 lg:py-14"
       >
         <main

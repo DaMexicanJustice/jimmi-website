@@ -11,6 +11,7 @@ export default function Services() {
       <section
         id="Services"
         className="p-5 bg-slate-200 dark:bg-neutral-800 rounded-[3rem]
+        sm:px-32
         lg:px-16"
       >
         <main
