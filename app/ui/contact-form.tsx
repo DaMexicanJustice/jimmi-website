@@ -38,22 +38,26 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     setLoading(true);
-    fetch("/api/contact", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        formRef.current?.reset();
-        toast.success("Din besked er afsendt!");
-        setLoading(false);
-        console.log("Data: " + data);
+    if (formData.get("flytrap") !== "") {
+      return;
+    } else {
+      fetch("/api/contact", {
+        method: "POST",
+        body: formData,
       })
-      .catch((error) => {
-        console.log("Error: " + error);
-        setLoading(false);
-        toast.error("Din besked kunne ikke afsendes");
-      });
+        .then((response) => response.json())
+        .then((data) => {
+          formRef.current?.reset();
+          toast.success("Din besked er afsendt!");
+          setLoading(false);
+          console.log("Data: " + data);
+        })
+        .catch((error) => {
+          console.log("Error: " + error);
+          setLoading(false);
+          toast.error("Din besked kunne ikke afsendes");
+        });
+    }
   };
 
   return (
@@ -218,6 +222,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
               },
             }}
           />
+          <input id="flytrap" name="flytrap" type="hidden" value="" />
           <CtaButton text="Send Besked" href="" type="submit"></CtaButton>
         </form>
         {loading ? <Spinner /> : <p></p>}

@@ -35,6 +35,7 @@ export default function Contact() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900 overflow-x-hidden
+        text-slate-900 dark:text-slate-50
         sm:px-32 
         lg:px-16"
       >
