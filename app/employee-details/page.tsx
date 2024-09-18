@@ -209,13 +209,13 @@ export default function EmployeeDetails() {
               <p className="text-slate-900 dark:text-slate-50 text-xl text-left">
                 {data ? data.competences.article.headline : "no-data"}
               </p>
-              <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line">
+              <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line text-lg">
                 {data ? data.competences.article.text : "no-data"}
               </p>
               <p className="uppercase font-conduitbold text-xl text-blue-950 dark:text-slate-50">
                 Hvilke borgere er jeg god til
               </p>
-              <p className="text-left text-slate-900 dark:text-slate-50">
+              <p className="text-left text-slate-900 dark:text-slate-50 text-lg">
                 {data ? data.competences["citizen-type"] : "no-data"}
               </p>
               <p className="text-left text-slate-950 bg-yellow-400 p-5 text-xl shadow-xl">

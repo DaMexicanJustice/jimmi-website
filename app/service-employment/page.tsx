@@ -9,6 +9,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CircularDiagram from "../ui/CircularDiagram";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -24,6 +25,16 @@ export default function ServiceEmployment() {
           toggleActions: "play none none reverse",
         },
         filter: "grayscale(0%)",
+        x: 0,
+        duration: 1,
+      });
+      gsap.to("#svg-container", {
+        scrollTrigger: {
+          trigger: "#svg-container",
+          start: "top 80%",
+          end: "top top",
+          toggleActions: "play none none reverse",
+        },
         x: 0,
         duration: 1,
       });
@@ -123,13 +134,9 @@ export default function ServiceEmployment() {
               </p>
             </div>
             <div className="lg:basis-4/12">
-              <Image
-                src={threesixtyPic}
-                width={430}
-                height={370}
-                alt="360-billed"
-                className="object-cover grayscale w-full drop-shadow-lg image-right"
-              />
+              <div id="svg-container" className="image-right">
+                <CircularDiagram></CircularDiagram>
+              </div>
             </div>
           </div>
 
