@@ -1,4 +1,4 @@
-/* "use client"; // This is a client component
+"use client"; // This is a client component
 import ContactForm from "../ui/contact-form";
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
@@ -32,7 +32,7 @@ export default function Contact() {
   });
   return (
     <>
-      <Navbar useScrollBehavior={false}></Navbar>
+      {/* <Navbar useScrollBehavior={false}></Navbar>
       <section
         className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900 overflow-x-hidden
         text-slate-900 dark:text-slate-50
@@ -98,8 +98,7 @@ export default function Contact() {
           </div>
         </main>
       </section>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }
- */
