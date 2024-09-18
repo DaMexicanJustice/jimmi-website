@@ -38,6 +38,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
+        disableScrollLock={true}
       >
         <MenuItem
           className={`font-conduit`}
