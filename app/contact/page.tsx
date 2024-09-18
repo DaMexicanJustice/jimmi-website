@@ -16,23 +16,26 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Contact() {
-  const images: HTMLElement[] = gsap.utils.toArray(".slider");
-  images.forEach((image) => {
-    gsap.to(image, {
-      scrollTrigger: {
-        trigger: image,
-        start: "top 80%",
-        end: "top top",
-        toggleActions: "play none none reverse",
-      },
-      filter: "grayscale(0%)",
-      x: 0,
-      duration: 1,
+  useGSAP(() => {
+    const images: HTMLElement[] = gsap.utils.toArray(".slider");
+    images.forEach((image) => {
+      gsap.to(image, {
+        scrollTrigger: {
+          trigger: image,
+          start: "top 80%",
+          end: "top top",
+          toggleActions: "play none none reverse",
+        },
+        filter: "grayscale(0%)",
+        x: 0,
+        duration: 1,
+      });
     });
   });
+
   return (
     <>
-      {/* <Navbar useScrollBehavior={false}></Navbar>
+      <Navbar useScrollBehavior={false}></Navbar>
       <section
         className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900 overflow-x-hidden
         text-slate-900 dark:text-slate-50
@@ -98,7 +101,7 @@ export default function Contact() {
           </div>
         </main>
       </section>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </>
   );
 }
