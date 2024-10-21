@@ -155,7 +155,12 @@ export default function CircularDiagram() {
                 fontWeight="bold"
               >
                 {section.label.split("\n").map((line, i) => (
-                  <tspan key={i} x={textPos.x} dy={i ? "1.2em" : "0"}>
+                  <tspan
+                    className="font-conduit"
+                    key={i}
+                    x={textPos.x}
+                    dy={i ? "1.2em" : "0"}
+                  >
                     {line}
                   </tspan>
                 ))}

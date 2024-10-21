@@ -16,6 +16,11 @@ interface ContactFormProps {
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    const parsedValue = Math.max(0, parseInt(value, 10));
+    e.target.value = parsedValue.toString().slice(0, 8);
+  };
   const useSlider = useSliderAnimation ? "image-right" : "";
 
   useGSAP(() => {
@@ -32,15 +37,38 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const formRef = useRef<HTMLFormElement>(null);
+
+  const validateForm = (formData: FormData) => {
+    const newErrors: { [key: string]: string } = {};
+    const requiredFields = ["name", "phone", "email", "message"];
+
+    requiredFields.forEach((field) => {
+      if (!formData.get(field)) {
+        newErrors[field] = `${field} is required`;
+      } else if (formData.get("flytrap"))
+        newErrors[field] = `${field} is not allowed. Begone from here bot.`;
+    });
+    return newErrors;
+  };
+
   const sendEmail = (event: any) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    const validationErrors = validateForm(formData);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      toast.error("Mail blev ikke afsendt. Udfyld alle felter");
+      return;
+    }
+
     setLoading(true);
     if (formData.get("flytrap") !== "") {
       return;
     } else {
+      console.log("Sending mail");
       fetch("/api/contact", {
         method: "POST",
         body: formData,
@@ -100,6 +128,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
             lg:gap-4 lg:w-9/12"
         >
           <TextField
+            required
             id="form-name"
             name="name"
             label="Dit fulde navn"
@@ -149,6 +178,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
               xl:flex-row xl:gap-5"
           >
             <TextField
+              required
               id="form-email"
               name="email"
               label="Din e-mail"
@@ -173,13 +203,15 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
               }}
             />
             <TextField
+              required
               id="form-phone-number"
               name="phone"
               label="Telefon"
               variant="standard"
-              type="tel"
+              type="number"
               color="warning"
               className="basis-4/12"
+              onInput={handleInput}
               InputLabelProps={{
                 style: {
                   color: "#000000",
@@ -198,6 +230,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
             />
           </div>
           <TextField
+            required
             id="form-message"
             name="message"
             label="Besked"
