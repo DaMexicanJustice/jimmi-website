@@ -130,7 +130,7 @@ export default function CircularDiagram() {
           const textPos = polarToCartesian(100, 100, 70, middleAngle);
           return (
             <g
-              className="cursor-default transition-opacity duration-200 hover:opacity-80"
+              className="cursor-pointer transition-opacity duration-200 hover:opacity-80"
               key={index}
             >
               <path
@@ -153,6 +153,7 @@ export default function CircularDiagram() {
                 fill="white"
                 fontSize="6"
                 fontWeight="bold"
+                className="pointer-events-none"
               >
                 {section.label.split("\n").map((line, i) => (
                   <tspan
@@ -185,7 +186,7 @@ export default function CircularDiagram() {
         </DialogContent>
         <DialogActions>
           <Button
-            className="text-yellow-500 font-conduitbold"
+            className="text-slate-900 font-conduitbold"
             onClick={handleClose}
             color="primary"
           >
