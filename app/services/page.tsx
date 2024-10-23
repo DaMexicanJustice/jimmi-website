@@ -204,7 +204,7 @@ export default function Services() {
               </p>
               <CtaButton
                 text="Læs Mere"
-                href="/social-feed"
+                href="/corporate-collaboration"
                 type="button"
               ></CtaButton>
             </div>
