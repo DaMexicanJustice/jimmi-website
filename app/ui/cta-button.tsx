@@ -36,16 +36,24 @@ interface CtaButtonProps {
   text: string;
   href: string;
   type: string;
+  height?: number;
+  width?: number;
 }
 
-const CtaButton: React.FC<CtaButtonProps> = ({ text, href, type }) => {
+const CtaButton: React.FC<CtaButtonProps> = ({
+  text,
+  href,
+  type,
+  height = 4,
+  width = 8,
+}) => {
   return (
     <>
       <ThemeProvider theme={yellowTheme}>
         <Button
-          className="py-2 px-4 uppercase font-bold text-sm bg-yellow-400
+          className={`py-${height} px-${width} uppercase font-bold text-sm bg-yellow-400
                   lg:text-base
-                  lg:text-xs"
+                  lg:text-xs`}
           variant="contained"
           color="ochre"
           href={href}

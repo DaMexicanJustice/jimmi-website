@@ -7,6 +7,7 @@ import Services from "./services/page";
 import Footer from "./ui/footer";
 import Navbar from "./ui/navbar";
 import "/app/styles/styles.css";
+import Divider from "./divider/page";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Services></Services>
         <Dna></Dna>
       </main>
+      <Divider />
       <Environment></Environment>
       <Footer></Footer>
     </>

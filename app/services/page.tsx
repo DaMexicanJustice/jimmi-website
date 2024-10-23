@@ -3,7 +3,7 @@ import CtaButton from "../ui/cta-button";
 import employmentPic from "/public/images/beskæftigelsesindsatser.jpg";
 import youthPic from "/public/images/ungeindsatser.jpg";
 import socialPic from "/public/images/Konsulenter.jpg";
-import Den_gode_historie from "/public/images/Den_gode_historie.jpg";
+import virksomhedssamarbejde from "/public/images/virksomhedssamarbejde.jpg";
 
 export default function Services() {
   return (
@@ -90,7 +90,7 @@ export default function Services() {
               href="/service-youth"
               type="button"
             ></CtaButton>
-            {/* Overlay */}
+
             <div
               id="overlay"
               className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
@@ -169,7 +169,7 @@ export default function Services() {
             xl:basis-3/12"
           >
             <Image
-              src={Den_gode_historie}
+              src={virksomhedssamarbejde}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -179,7 +179,7 @@ export default function Services() {
               className="text-slate-700 font-bold text-lg px-5 font-conduit uppercase
               2xl:text-base"
             >
-              Den Gode Historie
+              Virksomhedssamarbejde
             </h2>
             <CtaButton
               text="Læs Mere"

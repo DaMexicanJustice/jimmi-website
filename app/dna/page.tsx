@@ -4,8 +4,15 @@ import Slogans from "../ui/slogans";
 
 export default function Dna() {
   const divElements = [];
+  const headlines = [
+    "Faglig bredde",
+    "Relationsbaseret tilgang",
+    "Tydelige rammer og kommunikation",
+    "Tværfagligt arbejde",
+    "Inspirende miljø",
+  ];
   const paragraphs = [
-    "Ullamco commodo elit cupidatat amet esse dolor.",
+    "Med erfaring fra socialt arbejde, politi, SSP, pædagogisk arbejde og Bandexit-programmet er vi specialister i at håndtere mange typer sager.",
     "Magna cillum nisi minim ipsum ex labore.",
     "Non sint enim eiusmod elit dolore proident nisi anim.",
     "Laborum laborum minim ipsum cillum.",
@@ -23,12 +30,20 @@ export default function Dna() {
             ></CheckIcon>
           </div>
 
-          <p
-            className="text-slate-900 dark:text-slate-50 text-xl
+          <div>
+            <h2
+              className="text-slate-900 dark:text-slate-50 text-xl font-conduitbold
           lg:text-lg"
-          >
-            {paragraphs[i]}
-          </p>
+            >
+              {headlines[i]}
+            </h2>
+            <p
+              className="text-slate-900 dark:text-slate-50 text-xl
+          lg:text-lg"
+            >
+              {paragraphs[i]}
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -42,6 +57,12 @@ export default function Dna() {
         sm:px-32
         lg:px-16 lg:py-8 lg:h-[calc(100svh+3rem)]"
       >
+        <h1
+          className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold text-center font-conduitbold uppercase 
+            lg:text-4xl"
+        >
+          360° Om Borgeren
+        </h1>
         <main
           className="flex flex-col
           lg:flex-row lg:justify-between lg:items-center"
@@ -52,12 +73,6 @@ export default function Dna() {
             md:px-32
             lg:basis-5/12 lg:px-0"
           >
-            <h1
-              className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold
-            lg:text-xl"
-            >
-              Mollit ea
-            </h1>
             <div
               className="flex flex-col gap-4
             lg:justify-start lg:gap-1"
@@ -66,7 +81,7 @@ export default function Dna() {
                 className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold
               lg:text-lg"
               >
-                Est enim cillum cupidatat ut cupidatat dolor
+                Mentorplan omfatter bl.a:
               </h2>
               <div
                 className="flex flex-col gap-4 pb-5
@@ -76,17 +91,19 @@ export default function Dna() {
               </div>
             </div>
             <p
-              className="text-slate-800 dark:text-slate-300 text-xl text-justify w-4/5
-              lg:text-sm"
+              className="text-slate-800 dark:text-slate-300 text-xl w-5/5
+              lg:text-sm lg:w-4/5"
             >
-              Occaecat amet esse sit do officia deserunt laboris veniam eiusmod
-              ipsum.Occaecat incididunt et occaecat laboris in fugiat
-              consectetur.
+              Specialisterfaring, tillidsopbygning, klar kommunikation,
+              tværfagligt samarbejde og et inspirerende, innovativt miljø.
+              Skaber varig forandring gennem helhedsorienteret `360` støtte.
             </p>
             <CtaButton
-              text="Dolor laborum cillum"
-              href=""
+              text="Kontakt Os"
+              href="/contact"
               type="button"
+              height={5}
+              width={10}
             ></CtaButton>
           </div>
 

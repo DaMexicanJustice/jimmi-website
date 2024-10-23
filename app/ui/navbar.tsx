@@ -299,6 +299,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           <Link href="/">Forside</Link>
           <Link href="/employees">Konsulenter</Link>
           <NavbarButton textColor={textColor}></NavbarButton>
+          <Link href="/corporate-collaboration">Virksomhedssamarbejde</Link>
           <Link href="/social-feed">Den Gode Historie</Link>
           <Link href="/contact">Kontakt</Link>
         </div>
