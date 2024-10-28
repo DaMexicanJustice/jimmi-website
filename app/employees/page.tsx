@@ -9,11 +9,19 @@ import maltePic from "/public/images/Malte.jpg";
 import marckPic from "/public/images/Marck.jpg";
 import musaPic from "/public/images/Musa.jpg";
 import esraPic from "/public/images/Esra.jpg";
+import silhouettePic from "/public/images/silhouette.png";
+import MentorCtaCard from "../ui/mentor-cta-card";
 
 // Defining the object structure
 interface Employee {
   name: string;
-  img: "jimmiPic" | "maltePic" | "marckPic" | "musaPic" | "esraPic";
+  img:
+    | "jimmiPic"
+    | "maltePic"
+    | "marckPic"
+    | "musaPic"
+    | "esraPic"
+    | "silhouettePic";
   role: string;
   email: string;
   phone: string;
@@ -36,6 +44,7 @@ const imageMap = {
   marckPic: marckPic,
   musaPic: musaPic,
   esraPic: esraPic,
+  silhouettePic: silhouettePic,
 };
 
 export default async function Employees() {
@@ -71,8 +80,7 @@ export default async function Employees() {
             </div>
             <div
               className="flex flex-col gap-6
-              lg:flex-row lg:justify-start lg:flex-wrap
-              xl:flex-nowrap"
+              lg:flex-row lg:justify-start lg:flex-wrap"
             >
               {employees.map((e: Employee, index: number) => (
                 <div
@@ -230,6 +238,7 @@ export default async function Employees() {
                   </div>
                 </div>
               ))}
+              <MentorCtaCard />
             </div>
           </div>
         </main>
