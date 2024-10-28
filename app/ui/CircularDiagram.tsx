@@ -7,21 +7,21 @@ import React, { useState } from "react";
 
 const sections = [
   {
-    color: "#F05B4F",
+    color: "#991B1B",
     label: "Gæld til skat/\nGældstyrelsen",
     startAngle: 0,
     endAngle: 51.4,
     content: "This section is about debt to the tax authorities.",
   },
   {
-    color: "#FAA73F",
+    color: "#ea580c",
     label: "Boligløs",
     startAngle: 51.4,
     endAngle: 102.8,
     content: "This section is about homelessness.",
   },
   {
-    color: "#8DC63F",
+    color: "#166534",
     label: "Hjælp til\nmøder i det\noffentlige",
     startAngle: 102.8,
     endAngle: 154.2,
@@ -29,28 +29,28 @@ const sections = [
       "This section is about assistance with meetings with public authorities.",
   },
   {
-    color: "#4DB3E6",
+    color: "#0891b2",
     label: "Udfordringer\ni familien",
     startAngle: 154.2,
     endAngle: 205.6,
     content: "This section is about family challenges.",
   },
   {
-    color: "#00B0B9",
+    color: "#4338ca",
     label: "Psykiske og\nFysiske\nProblemer",
     startAngle: 205.6,
     endAngle: 257,
     content: "This section is about mental and physical health problems.",
   },
   {
-    color: "#2A3890",
+    color: "#222E78",
     label: "Mangler\nAt\nGennemføre\nFolkeskolen",
     startAngle: 257,
     endAngle: 308.4,
     content: "This section is about not completing primary school.",
   },
   {
-    color: "#782C7F",
+    color: "#602265",
     label: "Manglende\nBeskæftigelse",
     startAngle: 308.4,
     endAngle: 360,

@@ -45,7 +45,7 @@ export default function Services() {
             {/* Overlay */}
             <div
               id="overlay"
-              className="flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex-col gap-32 hidden pb-5 items-center justify-end absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300
                 md:flex"
@@ -55,9 +55,10 @@ export default function Services() {
                   lg:text-base
                   2xl:text-sm"
               >
-                Ullamco Lorem fugiat aliqua duis laboris dolor ad dolore.
-                Consequat eiusmod ut Lorem laboris laboris mollit sunt ad nisi
-                incididunt. Culpa nostrud commodo Lorem irure Lorem.
+                Mentorplan tilbyder individuelle beskæftigelsesforløb med fokus
+                på at hjælpe borgere tilbage på arbejdsmarkedet. Vores
+                360-graders metode sikrer en omfattende vurdering af borgerens
+                situation for at skabe det bedste match.
               </p>
               <CtaButton
                 text="Læs Mere"
@@ -103,8 +104,11 @@ export default function Services() {
                   lg:text-base
                   2xl:text-sm"
               >
-                Exercitation occaecat excepteur aliquip aute cillum do. Ad duis
-                ullamco consequat aliqua nostrud laborum amet ullamco Lorem.
+                Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år,
+                der har brug for hjælp til at skabe stabilitet og retning i
+                deres liv. Vores team består af erfarne fagfolk, der arbejder
+                med relationer, fritidsjob, beskæftigelse og
+                kriminalitetsforebyggelse.
               </p>
               <CtaButton
                 text="Læs Mere"
@@ -199,8 +203,11 @@ export default function Services() {
                   lg:text-base
                   2xl:text-sm"
               >
-                Elit ipsum sint tempor eu minim tempor eu et sit labore in nisi
-                est amet.
+                Mentorplan søger virksomheder i Københavnsområdet til at hjælpe
+                socialt udsatte borgere tilbage på arbejdsmarkedet. Vi tilbyder
+                åbent samarbejde og støtte til virksomheder, der ønsker at gøre
+                en forskel. Kontakt Mentorplan for at aftale et møde og
+                diskutere mulighederne.
               </p>
               <CtaButton
                 text="Læs Mere"

@@ -183,7 +183,7 @@ export default function CorporateCollaboration() {
                 </Link>
               </div>
             </div>
-            <div className="lg:w-3/12 mt-6 lg:mt-0 self-end">
+            <div className="lg:w-4/12 mt-6 lg:mt-0 self-end">
               <Image
                 ref={imageRef}
                 alt="virksomhedssamarbejde"

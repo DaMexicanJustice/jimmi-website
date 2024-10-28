@@ -2,7 +2,6 @@
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import networkPic from "/public/images/network.jpg";
-import threesixtyPic from "/public/images/360.png";
 import journalPic from "/public/images/journal.jpg";
 import Image from "next/image";
 // GSAP
