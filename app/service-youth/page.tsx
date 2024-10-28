@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceYouth() {
+  const sectionRefs = useRef([]);
   const tl = useRef<gsap.core.Timeline>();
 
   useGSAP(() => {
@@ -35,7 +36,7 @@ export default function ServiceYouth() {
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         id="service-employment"
-        className="min-h-[calc(100svh-3rem)] mt-16 overflow-hidden p-5
+        className="min-h-[calc(100svh-3rem)] mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900
         lg:px-16
 
  lg:py-14"
@@ -44,32 +45,33 @@ export default function ServiceYouth() {
           className="h-full flex flex-col w-full justify-center gap-6
         lg:gap-10"
         >
-          <div
-            className="flex flex-col gap-4
-          xl:gap-10
-          2xl:gap-16"
-          >
+          <div className="flex flex-col gap-4">
             <h1
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
             lg:self-start
             xl:text-4xl"
             >
-              Ungeindsatser
+              Ungeindsatser hos Mentorplan
             </h1>
-            <p>
-              In voluptate minim ut labore ea consequat quis ea enim non
-              adipisicing mollit. Incididunt enim qui deserunt incididunt elit
-              consectetur ullamco laboris qui excepteur aute fugiat. Irure
-              cillum velit id duis aliqua sunt. Ullamco ullamco labore
-              consectetur ut tempor est dolore ut sint. Commodo esse in magna
-              dolor id quis incididunt fugiat inciamet.lor fugiat ex ipsum. Id
-              magna consectetur Lorem velit ullamco id exercitation fugiat et
-              incididunt ut ad. Lorem aliquip ipsum deserunt exercitation veniam
-              occaecat anim id. Ex Lorem nisi id ipsum.Sint magna est dolor eu
-              in laboris elit proident voluptate et incididunt. Aliqua ut labore
-              deserunt ipsum irure et ea aliquip. Aliqua incididunt labore irure
-              sint dolor eu eiusmod ex amet non enim excepteur. Non eiusmod
-              dolor veniam in.
+            <p className="text-slate-900 dark:text-slate-100">
+              Hos Mentorplan arbejder vi målrettet med at støtte unge op til det
+              fyldte 23. år, der har brug for hjælp til at skabe stabilitet og
+              retning i deres liv. Vores team består af erfarne fagfolk med
+              baggrund i socialt arbejde, pædagogisk arbejde på opholdssteder
+              samt erfaring fra politiet, herunder nærpolitiet, SSP-arbejde og
+              det nationale Bandexit-program. Denne kombination af kompetencer
+              giver os et stærkt fundament til at hjælpe unge, der står overfor
+              udfordringer som kriminalitet, skolevanskeligheder, misbrug eller
+              udfordringer hjemme.
+            </p>
+            <p className="text-slate-900 dark:text-slate-100">
+              Vi tror på, at de unge ofte har flere ressourcer og potentialer,
+              end de selv er klar over. Derfor har vi klare forventninger til
+              dem og støtter dem i at realisere deres potentiale gennem tæt
+              samarbejde og tilstedeværelse i deres hverdag. Når vi laver en
+              aftale med en ung, følger vi op på, at tingene bliver overholdt og
+              kommer i mål, tilpasset hver enkelts behov. Tryghed er
+              altafgørende for at opnå forandringer.
             </p>
           </div>
 
@@ -80,7 +82,7 @@ export default function ServiceYouth() {
             2xl:gap-16"
           >
             <div
-              className="flex flex-col gap-4 text-justify
+              className="flex flex-col gap-4 text-left
             lg:basis-8/12"
             >
               <h2
@@ -88,25 +90,40 @@ export default function ServiceYouth() {
               lg:self-start
               xl:text-4xl"
               >
-                Veniam Lorem laboris occaecat laboris
+                Vores tilgang og metoder
               </h2>
-              <p>
-                Ullamco nostrud dolore eiusmod nulla consequat sit. Aute laboris
-                deserunt mollit labore incididunt exercitation culpa minim
-                mollit magna occaecat. Sunt mollit et ex aliquip exercitation
-                esse adipisicing est nisi ullamco dolor exercitation elit id. Do
-                laborum minim exercitation ea occaecat anim cillum culpa laborum
-                pariatur sint in elit. Esse officia est ipsum laboris sint Lorem
-                aliquip. Reprehenderit reprehenderit nostrud do fugiat proident
-                eiusmod irure ex Lorem in culpa consectetur mollit ut. Lorem in
-                dolore incididunt ut amet ut minim adipisicing officia ea
-                reprehenderit. Laboris ut sunt incididunt aute veniam veniam
-                proident dolor ullamco tempor. Consectetur labore consequat
-                proident cillum aute do dolor. Id non incididunt sint
-                exercitation commodo dolor esse eiusmod. Non eiusmod ad occaecat
-                fugiat enim dolore ad duis et dolore deserunt exercitation. Elit
-                ut sint mollit cillum ea incididunt tempor ex sunt sint duis
-                enim.
+              <p className="text-slate-900 dark:text-slate-100">
+                Relationen er kernen i vores arbejde – uden en stærk relation er
+                det svært at skabe den nødvendige forandring. Hos Mentorplan
+                arbejder vi relationsbaseret, hvilket betyder, at vi opbygger
+                tillid og forståelse hos de unge. Dette gør vi gennem ærlig og
+                tydelig kommunikation, kombineret med aktiviteter, der skaber en
+                naturlig forbindelse.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Vi møder de unge der, hvor det giver mest mening for dem – det
+                kan være i deres hjem, nærområde eller på vores kontor i
+                Kødbyen. Vi opfordrer dog ofte til, at de kommer ud af deres
+                vante miljø for at opleve noget nyt og få et frisk perspektiv på
+                deres liv. Her spiller vores kontorfællesskab i Kødbyen en
+                særlig rolle. Kontoret ligger i et inspirerende og energisk
+                miljø, omgivet af iværksættere og spændende virksomheder,
+                hvilket giver de unge mulighed for at møde nye typer mennesker
+                og opleve en atmosfære, der kan inspirere dem til at se nye
+                muligheder for deres egen fremtid.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Vi anvender også træning i SATS som en metode til både fysisk og
+                mental træning, hvor vi sammen med de unge opnår en stærkere
+                relation gennem fysisk aktivitet og sociale oplevelser. Træning
+                er en måde at styrke deres selvtillid og mentale overskud på.
+                Udover at opbygge relationer gennem aktiviteter som Walk & Talks
+                og træning, lægger vi vægt på at være vedholdende, ordentlige og
+                professionelle i vores tilgang. Vi er tydelige i vores
+                kommunikation, og det vi aftaler, gør vi. Den vedholdenhed og
+                konsekvente støtte, vi giver de unge, er med til at sikre, at de
+                føler sig set og støttet, hvilket styrker relationen og skaber
+                fundamentet for positiv udvikling.
               </p>
             </div>
 
@@ -131,6 +148,30 @@ export default function ServiceYouth() {
             2xl:gap-16"
           >
             <div
+              className="flex flex-col gap-4 text-left
+              lg:basis-8/12"
+            >
+              <h2
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+              lg:self-start
+              xl:text-4xl"
+              >
+                Støtte i overgangen til voksenlivet
+              </h2>
+              <p className="text-slate-900 dark:text-slate-100">
+                Når de unge fylder 18 og bliver myndige, ændres vores samarbejde
+                til at være mere frivilligt og baseret på deres engagement.
+                Støtten fortsætter, men vi forventer mere ansvar fra deres side
+                og arbejder tæt sammen med dem for at sikre, at de tager ansvar
+                for deres fremtid. For unge, der er kommet i egen bolig,
+                tilbyder vi ADL-træning (Almen Daglig Livsførelse), hvor vi
+                hjælper dem med praktiske færdigheder som oprydning,
+                budgetplanlægning, håndtering af e-Boks og andre
+                hverdagsopgaver. Vi sørger for, at de unge får struktur på deres
+                hjemmeliv og støtte til at skabe en selvstændig tilværelse.
+              </p>
+            </div>
+            <div
               className="flex flex-col gap-4 justify-center
               lg:basis-4/12"
             >
@@ -139,45 +180,9 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full xl:basis-4/12 shadow-md grayscale image-left"
+                className="object-cover w-full xl:basis-4/12 shadow-md grayscale image-right"
               />
             </div>
-
-            <div
-              className="flex flex-col gap-4 text-justify
-              lg:basis-8/12"
-            >
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-              lg:self-start
-              xl:text-4xl"
-              >
-                Veniam Lorem laboris occaecat laboris
-              </h2>
-              <p>
-                Ullamco nostrud dolore eiusmod nulla consequat sit. Aute laboris
-                deserunt mollit labore incididunt exercitation culpa minim
-                mollit magna occaecat. Sunt mollit et ex aliquip exercitation
-                esse adipisicing est nisi ullamco dolor exercitation elit id. Do
-                laborum minim exercitation ea occaecat anim cillum culpa laborum
-                pariatur sint in elit. Esse officia est ipsum laboris sint Lorem
-                aliquip. Reprehenderit reprehenderit nostrud do fugiat proident
-                eiusmod irure ex Lorem in culpa consectetur mollit ut. Lorem in
-                dolore incididunt ut amet ut minim adipisicing officia ea
-                reprehenderit. Laboris ut sunt incididunt aute veniam veniam
-                proident dolor ullamco tempor. Consectetur labore consequat
-                proident cillum aute do dolor. Id non incididunt sint
-                exercitation commodo dolor esse eiusmod. Non eiusmod ad occaecat
-                fugiat enim dolore ad duis et dolore deserunt exercitation. Elit
-                ut sint mollit cillum ea incididunt tempor ex sunt sint duis
-                enim. Esse esse laborum magna aliquip amet consectetur voluptate
-                cillum laborum amet esse esse nulla nostrud. Sit nulla occaecat
-                cupidatat ut officia qui et duis ipsum anim consequat. Non
-                reprehenderit adipisicing reprehenderit qui sunt duis et labore.
-                Fugiat consequat in est excepteur sint consequat id velit ad.
-                Duis ad id nostrud nulla.
-              </p>
-            </div>
           </div>
 
           <div
@@ -185,119 +190,121 @@ export default function ServiceYouth() {
             xl:flex-row xl:gap-10
             2xl:gap-16"
           >
-            <div className="flex flex-col gap-4 basis-4/12 text-justify">
+            <div className="flex flex-col gap-4 basis-4/12 text-left">
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
               >
-                Ullamco eu irure quis
+                Fritidsjob og beskæftigelse
               </h2>
-              <p>
-                Sunt amet mollit ipsum incididunt quis anim cupidatat
-                exercitation laborum pariatur mollit cillum consectetur. Ut in
-                qui cupidatat proident in reprehenderit consequat excepteur
-                cupidatat veniam in cillum. Esse nostrud ea elit adipisicing
-                voluptate deserunt laboris ut commodo ipsum occaecat. Veniam
-                aute sint consectetur elit in ad.
+              <p className="text-slate-900 dark:text-slate-100">
+                Hos Mentorplan har vi et særligt fokus på at hjælpe de unge med
+                at komme ud på arbejdsmarkedet, både i form af fritidsjob for
+                dem under 18 og almindelig beskæftigelse for dem over 18. Vi
+                ved, hvor vigtigt det er for de unge at få mulighed for at prøve
+                kræfter med arbejdsmarkedet, da det giver dem sociale
+                færdigheder, ansvar og succesoplevelser, som er essentielle for
+                deres personlige udvikling.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Vi hjælper de unge med hele processen – fra at finde de rette
+                jobmuligheder til at skrive CV og forberede sig til samtaler. Vi
+                har et stort virksomhedsnetværk, som vi trækker på, men hvis vi
+                ikke allerede har samarbejde med en virksomhed, der passer til
+                den unges behov, er vi opsøgende og gode til at etablere nye
+                kontakter. Det kan være gennem fysiske besøg, opkald eller
+                online research. Vi sørger for at finde det rette match, hvor
+                både arbejdskultur, kollegaer og arbejdsmiljø passer godt til
+                den unge.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Når den unge starter i et job, er vi fortsat med i processen. Vi
+                følger op, deltager i møder efter behov og sikrer, at tingene
+                fungerer godt. Hvis der opstår udfordringer, træder vi til og
+                hjælper med at finde løsninger. Vores mål er altid at sikre en
+                succesfuld jobstart for den unge, og vi ser det som en afgørende
+                del af deres vej mod en stabil og selvstændig tilværelse.
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 basis-4/12 text-justify">
+            <div className="flex flex-col gap-4 basis-4/12 text-left">
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
               >
-                Sit irure exercitation
+                Kriminalitetsforebyggelse, UKN-sager og støtte i retssager
               </h2>
-              <p>
-                Sunt amet mollit ipsum incididunt quis anim cupidatat
-                exercitation laborum pariatur mollit cillum consectetur. Ut in
-                qui cupidatat proident in reprehenderit consequat excepteur
-                cupidatat veniam in cillum. Esse nostrud ea elit adipisicing
-                voluptate deserunt laboris ut commodo ipsum occaecat. Veniam
-                aute sint consectetur elit in ad.
+              <p className="text-slate-900 dark:text-slate-100">
+                Nogle af de unge, vi arbejder med, står over for udfordringer
+                med kriminalitet. Vores erfaring fra politiet giver os et
+                indgående kendskab til de konsekvenser, de unge risikerer. Vi
+                hjælper dem med at forstå konsekvenserne af deres handlinger og
+                arbejder på at lede dem mod positive alternativer, så de kan
+                skabe en fremtid uden kriminalitet. Hvis en ung står over for en
+                retssag eller har modtaget en sanktion fra UKN, hjælper vi dem
+                med at navigere i systemet og sikre, at de overholder de krav,
+                der stilles til dem.
               </p>
-            </div>
 
-            <div className="flex flex-col gap-4 basis-4/12 text-justify">
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-                lg:self-start
-                xl:text-4xl"
-              >
-                Consectetur veniam irure
-              </h2>
-              <p>
-                Sunt amet mollit ipsum incididunt quis anim cupidatat
-                exercitation laborum pariatur mollit cillum consectetur. Ut in
-                qui cupidatat proident in reprehenderit consequat excepteur
-                cupidatat veniam in cillum. Esse nostrud ea elit adipisicing
-                voluptate deserunt laboris ut commodo ipsum occaecat. Veniam
-                aute sint consectetur elit in ad.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="flex flex-col gap-4
+              <div
+                className="flex flex-col gap-4
             xl:flex-row xl:gap-10
             2xl:gap-16"
-          >
-            <div className="flex flex-col gap-4 basis-4/12 text-justify">
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+              >
+                <div className="flex flex-col gap-4 text-left">
+                  <h2
+                    className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
-              >
-                Cupidatat culpa pariatur aliqua
-              </h2>
-              <p>
-                Cillum aliqua id est ipsum culpa dolore incididunt non amet
-                cupidatat adipisicing. Ut exercitation id cupidatat mollit culpa
-                ullamco exercitation id tempor. Sit tempor ipsum proident
-                deserunt quis voluptate commodo officia aute eiusmod irure
-                veniam eiusmod. Ipsum et ex ad voluptate non ea adipisicing
-                dolor aliqua ullamco velit. Enim ea cupidatat exercitation
-                laboris exercitation minim ut est qui consequat eiusmod.
-              </p>
+                  >
+                    Tilgængelighed 24/7 og fleksibilitet
+                  </h2>
+                  <p className="text-slate-900 dark:text-slate-100">
+                    Vi er tilgængelige 24/7 for de unge, deres familier og
+                    sagsbehandlere, hvis der opstår akutte problemer eller
+                    udfordringer, der kræver hurtig handling. Vores indsats er
+                    fleksibel og tilpasses den enkelte unge, og vi arbejder alle
+                    ugens dage, både i dagtimerne, om aftenen og i weekenderne,
+                    alt efter hvad der passer den unge bedst.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-4 basis-4/12 text-justify">
+            <div className="flex flex-col gap-4 basis-4/12 text-left">
               <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
               >
-                Dolore culpa aliqua ex
+                Tværfagligt samarbejde – Vi er med hele vejen
               </h2>
-              <p>
-                Sit ipsum culpa amet proident quis enim minim excepteur. Mollit
-                laboris sit excepteur in in non enim Lorem magna. Laborum mollit
-                voluptate fugiat esse qui cupidatat voluptate duis commodo
-                dolore Lorem. Deserunt in dolor sint quis sit commodo esse
-                proident cillum aute do sit eu duis. Proident incididunt nostrud
-                dolore duis do minim nisi aute deserunt commodo ut.
+              <p className="text-slate-900 dark:text-slate-100">
+                Vi arbejder helhedsorienteret og går aktivt ind i de forskellige
+                områder af den unges liv, hvor der er behov for støtte. Vi
+                samarbejder tæt med skoler, misbrugscentre, Kriminalforsorgen,
+                sagsbehandlere, forældre og andre relevante aktører for at
+                sikre, at den unge får den nødvendige hjælp og støtte.
               </p>
-            </div>
-
-            <div className="flex flex-col gap-4 basis-4/12 text-justify">
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-                lg:self-start
-                xl:text-4xl"
-              >
-                Nisi enim non duis eu est
-              </h2>
-              <p>
-                Culpa minim minim adipisicing in eiusmod excepteur do eiusmod
-                sit cupidatat esse mollit. Laboris qui velit excepteur ipsum
-                pariatur aliquip cupidatat duis reprehenderit dolore proident
-                laborum. Laboris sint aute aute fugiat cillum ut enim nisi
-                eiusmod sunt exercitation pariatur ea magna. Dolore irure sit
-                esse sunt enim nisi eu commodo. Tempor fugiat esse amet aliquip
-                cillum nisi veniam sint culpa.
+              <p className="text-slate-900 dark:text-slate-100">
+                Vores tilgang er at være med hele vejen, uanset om det handler
+                om møder på skoler for at løse problemer med fravær, deltagelse
+                i samtaler på arbejdspladsen eller støtte i forhold til
+                misbrugsbehandling. Vi er også til stede ved møder med
+                Kriminalforsorgen eller i retssager, hvor vi hjælper den unge
+                med at forstå processen og sikre, at de overholder deres
+                forpligtelser.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Vi ved, at mange unge mangler en stabil voksen omkring sig, og
+                derfor træder vi til som den støtte, der sikrer, at de
+                nødvendige skridt bliver taget. Vores mål er at skabe sammenhæng
+                og sikre, at alle aktører arbejder i samme retning for den unges
+                bedste. Vi er med til at finde løsninger, når der opstår
+                udfordringer, og vi sikrer, at den unge får den støtte, de har
+                brug for – hele vejen.
               </p>
             </div>
           </div>

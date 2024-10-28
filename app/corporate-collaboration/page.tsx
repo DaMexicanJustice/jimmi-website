@@ -55,7 +55,7 @@ export default function CorporateCollaboration() {
       >
         <main className="w-full">
           <div className="flex flex-col justify-center lg:flex-row gap-8">
-            <div className="lg:w-7/12 p-4 sm:p-6 bg-slate-50 shadow-xl font-conduit">
+            <div className="lg:w-8/12 p-4 sm:p-6 bg-slate-50 shadow-xl font-conduit">
               <h1 className="text-2xl sm:text-3xl font-conduitbold text-slate-900 mb-4 sm:mb-6">
                 ALLE HAR BRUG FOR NOGET AT STÅ OP TIL
               </h1>
@@ -183,7 +183,7 @@ export default function CorporateCollaboration() {
                 </Link>
               </div>
             </div>
-            <div className="lg:w-4/12 mt-6 lg:mt-0 self-end">
+            <div className="lg:w-3/12 mt-6 lg:mt-0 self-end">
               <Image
                 ref={imageRef}
                 alt="virksomhedssamarbejde"
