@@ -1,16 +1,75 @@
-"use client"; // This is a client component
-import Footer from "../ui/footer";
-import Navbar from "../ui/navbar";
-import Image from "next/image";
+"use client";
+
 import { useRef } from "react";
-// GSAP
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Navbar from "../ui/navbar";
+import Footer from "../ui/footer";
+import ScrollFadeinList from "../ui/scroll-fadein-list";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-export default function ServiceSocial() {
+const listItems = [
+  {
+    title: "ADL-træning (Almen Daglig Livsførelse):",
+    content:
+      "Vi støtter borgerne i at håndtere basale dagligdagsopgaver som oprydning, madlavning, budgettering og e-Boks, så de kan skabe en mere struktureret og selvstændig tilværelse i egen bolig.",
+  },
+  {
+    title: "Aktiviteter udenfor hjemmet:",
+    content:
+      "For de borgere, der har mulighed for det, tilbyder vi aktiviteter, der hjælper dem med at bryde isolation og skabe sociale relationer:",
+  },
+  {
+    title: "Walk & Talks:",
+    content:
+      "Vi kombinerer samtale med gåture, enten i borgerens nærområde eller i Kødbyen, hvor vores kontor ligger. Kødbyen er et hyggeligt område, der giver mulighed for at opleve et andet miljø og samtidig få en uformel snak.",
+  },
+  {
+    title: "Træning i SATS:",
+    content:
+      "Vi tilbyder træningsforløb, hvor borgerne kan træne sammen med deres støttekontaktperson og styrke både deres fysiske og mentale sundhed.",
+  },
+  {
+    title: "Sauna-gus:",
+    content:
+      "Efter træning tilbyder vi sauna-gus for at fremme afslapning og mental balance.",
+  },
+  {
+    title: "Kontorfællesskab i Kødbyen:",
+    content:
+      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kae, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
+  },
+];
+const listItemsTwo = [
+  {
+    title: "Samarbejde med eksisterende indsatser:",
+    content:
+      "Vi koordinerer vores støtte med borgerens nuværende forløb, som f.eks. misbrugsbehandling, psykiatrisk behandling eller andre indsatser, for at skabe en sammenhængende indsats. Vi deltager også i møder med kommunen og andre relevante aktører for at sikre, at der er fælles retning i borgerens forløb.",
+  },
+  {
+    title: "Henvisning til nye samarbejdspartnere:",
+    content:
+      "Når det er nødvendigt, henviser vi til relevante samarbejdspartnere som:",
+  },
+  {
+    title: "Gadejuristen:",
+    content: " Juridisk rådgivning og støtte.",
+  },
+  {
+    title: "Café Exit:",
+    content:
+      "Et fællesskab for tidligere indsatte, hvor de kan deltage i madklubber og kultureftermiddage, der hjælper dem med at bryde med deres gamle miljø. Café Exit tilbyder også psykologsamtaler for at støtte deres mentale velvære.  ",
+  },
+  {
+    title: "Retshjælpen:",
+    content: "Rådgivning om gæld og andre juridiske sager.",
+  },
+];
+
+export default function SocialIndasats() {
   const tl = useRef<gsap.core.Timeline>();
 
   useGSAP(() => {
@@ -19,7 +78,7 @@ export default function ServiceSocial() {
       gsap.to(image, {
         scrollTrigger: {
           trigger: image,
-          start: "top 90%",
+          start: "top 70%",
           end: "top top",
           toggleActions: "play none none reverse",
         },
@@ -32,221 +91,151 @@ export default function ServiceSocial() {
 
   return (
     <>
-      <Navbar useScrollBehavior={false}></Navbar>
-      <section
-        id="service-employment"
-        className="mt-16 overflow-hidden p-5 bg-slate-100 dark:bg-neutral-900
-        lg:px-16
-
- lg:py-14"
-      >
-        <main
-          className="h-full flex flex-col w-full justify-center gap-6
-        lg:gap-10"
-        >
+      <Navbar useScrollBehavior={false} />
+      <section className="mt-16 overflow-hidden p-5 bg-slate-100 dark:bg-neutral-900 lg:px-16 lg:py-14">
+        <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-10">
           <div className="flex flex-col gap-4">
-            <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-            lg:self-start
-            xl:text-4xl"
-            >
+            <h1 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl">
               Social indsats under § 85
             </h1>
             <p>
-              Anim ipsum aute qui aliquip reprehenderit proident dolore commodo
-              excepteur ipsum quis dolore. Est consectetur enim reprehenderit
-              aliquip exercitation magna do officia officia et nisi id. Culpa ut
-              labore enim aliqua nisi duis duis incididunt labore eiusmod non.
-              Mollit pariatur nulla irure sint. Lorem aute nulla sunt irure non
-              dolore sunt ut consectetur cupidatat. Minim occaecat aliquip sit
-              ad occaecat consequat ut anim incididunt duis cupidatat qui. Non
-              laboris non cillum id proident laborum consequat magna ut officia.
-              Tempor irure veniam duis adipisicing magna velit fugiat
-              exercitation labore aliqua culpa. Occaecat amet quis eiusmod
-              eiusmod eiusmod. Eiusmod aliqua excepteur do proident exercitation
-              eiusmod elit dolor exercitation nostrud. Qui minim ipsum voluptate
-              enim magna minim duis aliquip aliquip culpa esse excepteur.
+              Hos Mentorplan tilbyder vi bostøtte i henhold til Servicelovens §
+              85, hvor vi hjælper voksne borgere med psykiske, fysiske eller
+              sociale udfordringer med at skabe stabilitet og struktur i deres
+              hverdag. Vores indsats er ikke blot praktisk hjælp, men en
+              helhedsorienteret støtte, der skaber muligheder for personlig
+              udvikling og sociale relationer.
             </p>
           </div>
 
-          <div
-            className="flex flex-col gap-4 justify-between items-center
-          lg:flex-row"
-          >
+          <div className="flex flex-col gap-4 justify-between items-center lg:flex-row">
             <div className="flex flex-col gap-4 xl:basis-8/12">
-              <h2
-                className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
-                  xl:text-4xl xl:text-left"
-              >
-                Aliqua est et velit culpa minim in est.
+              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl xl:text-left">
+                Vores baggrund
               </h2>
               <p>
-                Ad ut ad excepteur incididunt nisi excepteur nostrud fugiat
-                proident laboris ullamco dolor quis. Veniam fugiat excepteur
-                duis commodo ex deserunt ad. Sunt dolor occaecat consequat
-                officia fugiat laboris esse ipsum dolore non fugiat sit sit.
-                Deserunt excepteur veniam cillum Lorem et. Nostrud consequat
-                eiusmod consequat adipisicing ipsum veniam ex enim esse commodo
-                veniam occaecat eu. Ut occaecat sunt nulla dolore. Pariatur
-                aliqua mollit cillum do aliquip quis exercitation magna nulla
-                anim pariatur eu minim. Lorem commodo et ex qui aliquip laboris
-                proident. Ullamco nulla irure mollit amet commodo ipsum pariatur
-                ea magna aliqua. Sunt cillum incididunt ipsum veniam voluptate
-                ipsum magna do Lorem ipsum irure sint. Ad occaecat consequat
-                tempor voluptate dolore consectetur voluptate dolore nisi nisi.
-                Nulla irure pariatur aliquip Lorem et magna cillum ea nulla est
-                minim in. Minim commodo ea do veniam qui cupidatat labore
-                cupidatat et. Cupidatat ex do id qui. Consectetur in consequat
-                adipisicing commodo elit enim quis esse.
+                Mentorplans team består af erfarne fagfolk inden for socialt
+                arbejde, pædagogisk arbejde og politi. Vi arbejder med en bred
+                vifte af socialt udsatte borgere, der kan have psykiske
+                udfordringer, sociale vanskeligheder eller en kriminel baggrund.
+                Uanset om borgeren har brug for støtte på grund af mentale
+                udfordringer eller sociale problemer, har vi erfaring med at
+                hjælpe dem gennem deres individuelle livssituation.
+              </p>
+              <p>
+                For de borgere, der har levet et liv med kriminalitet eller
+                været en del af et bandemiljø, trækker vi på vores særlige
+                erfaring fra politiarbejde og bande-exitprogrammer. Denne
+                erfaring gør os i stand til at hjælpe dem med at bryde med det
+                kriminelle miljø og skabe et stabilt liv uden kriminalitet.
+                Vores indsats er dog ikke begrænset til denne gruppe – vi
+                tilpasser vores støtte til den enkelte borgers behov, uanset
+                baggrund.
               </p>
             </div>
             <Image
-              src="/images/commute.jpg"
+              src="/images/commute.jpg?height=370&width=430"
               width={430}
               height={370}
-              alt="Ydelse 1"
+              alt="Mentorplan team"
+              className="object-cover grayscale image-right xl:basis-4/12"
+            />
+          </div>
+
+          <div className="flex flex-col gap-4 justify-between items-center lg:flex-row">
+            <div className="flex flex-col items-center gap-4 lg:items-start xl:basis-8/12">
+              <h2 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl">
+                Vores tilgang
+              </h2>
+              <p>
+                Hos Mentorplan møder vi borgerne med respekt, åbenhed og
+                ordentlighed. Vi tror på, at en stærk relation er nøglen til at
+                skabe varige forandringer i borgerens liv. Vi arbejder tæt
+                sammen med borgeren og sikrer, at de føler sig set og hørt –
+                både i hjemmet og når det kommer til deres livsforløb. Vores
+                tilgang er at tilbyde en helhedsorienteret indsats, der hjælper
+                borgerne med at få struktur i hverdagen, samtidig med at de får
+                mulighed for at deltage i sociale aktiviteter, der kan give dem
+                en større livskvalitet.
+              </p>
+              <ul className="list-disc px-4">
+                <li>
+                  Relation og støtte: Vi bygger en tæt relation til borgerne og
+                  støtter dem gennem både store og små udfordringer.
+                </li>
+                <li>
+                  Aktiviteter med mening: Vi opfordrer borgerne til at deltage i
+                  meningsfulde aktiviteter udenfor hjemmet, når det er muligt,
+                  for at styrke deres sociale netværk og forbedre deres
+                  livskvalitet. Det giver borgerne mulighed for at opleve nye
+                  perspektiver og bryde med isolation.
+                </li>
+              </ul>
+            </div>
+            <Image
+              src="/images/youth.jpg?height=370&width=430"
+              width={430}
+              height={370}
+              alt="Vores tilgang"
               className="object-cover grayscale image-right xl:basis-4/12"
             />
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center
-          lg:flex-row"
+            className="flex flex-col gap-4 justify-between items-center 
+          lg:flex-row lg:items-center"
           >
-            <Image
-              src="/images/youth.jpg"
-              width={430}
-              height={370}
-              alt="Ydelse 1"
-              className="object-cover grayscale image-left xl:basis-4/12"
-            />
             <div
-              className="flex flex-col items-center gap-4
-            lg:items-start
-             xl:basis-8/12"
+              className="flex flex-col gap-4 justify-between 
+              lg:basis-6/12"
             >
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
-              >
-                Eiusmod quis est laboris consequat magna deserunt sint ipsum
-                cillum.
+              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl xl:text-left xl:basis-8/12">
+                Hvad tilbyder vi
               </h2>
               <p>
-                Elit reprehenderit occaecat et in ea ea dolore irure laboris
-                nulla. Elit consequat consequat elit culpa ut adipisicing.
-                Cupidatat et commodo non fugiat aliqua enim nisi cillum do
-                officia duis labore nostrud. Nostrud sint ea duis excepteur.
-                Sunt labore eiusmod voluptate aliquip. Anim sit ut ipsum
-                cupidatat occaecat nulla Lorem laborum. Non consequat mollit
-                adipisicing incididunt amet in officia mollit. Consequat do
-                deserunt aliqua ad incididunt dolore duis irure adipisicing
-                ullamco incididunt elit officia amet. Incididunt aliquip
-                adipisicing sunt cupidatat consequat veniam consequat
-                incididunt. Qui deserunt mollit culpa reprehenderit magna eu
-                culpa. Minim incididunt sint consectetur anim quis dolor. Qui
-                mollit consectetur minim ad dolore dolore commodo aliquip
-                exercitation et. Voluptate dolore aliquip Lorem laborum pariatur
-                elit minim proident sint mollit veniam laborum consequat aute.
-                Aliqua id pariatur deserunt ad cillum proident in anim duis
-                dolore eu. Cupidatat veniam commodo nulla quis ut aliqua
-                cupidatat ex occaecat magna proident nostrud. Amet minim
-                reprehenderit proident veniam culpa adipisicing do. Aliqua et
-                aliqua labore mollit.
+                Mentorplan tilbyder en kombination af praktisk støtte og
+                aktiviteter, der gør det muligt for borgerne at udvikle sig
+                socialt og personligt. Vores indsats er skræddersyet til den
+                enkelte borgers behov, så vi sikrer, at de får præcis den
+                støtte, de har brug for.
               </p>
+              <p>
+                Vi er tilgængelige 24/7 og arbejder fleksibelt på forskellige
+                tidspunkter af ugen, så vi kan tilpasse vores indsats efter
+                borgerens behov. Uanset om der er brug for støtte i dagtimerne,
+                om aftenen eller i weekenden, er vi til stede.
+              </p>
+            </div>
+            <div className="lg:basis-6/12">
+              <ScrollFadeinList items={listItems} />
             </div>
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center
-          lg:flex-row lg:items-start"
+            className="flex flex-col gap-4 justify-between items-center 
+          lg:flex-row lg:items-center"
           >
+            <div className="lg:basis-6/12">
+              <ScrollFadeinList items={listItemsTwo} />
+            </div>
             <div
-              id="sliderTarget"
-              className="flex flex-col gap-4 justify-between
-            lg:basis-4/12"
+              className="flex flex-col gap-4 justify-between 
+              lg:basis-6/12"
             >
-              <h2
-                className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl xl:text-left xl:basis-8/12"
-              >
-                Ipsum exercitation ad ut veniam est
+              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl xl:text-left xl:basis-8/12">
+                Tværfagligt samarbejde
               </h2>
               <p>
-                Ex sunt cupidatat magna tempor elit veniam ex sunt esse. Est sit
-                et qui mollit. Aliquip sunt fugiat labore laboris ad aute
-                nostrud laborum est dolore sunt nostrud eiusmod ad. Veniam
-                consectetur eu veniam voluptate. Consectetur veniam anim quis in
-                dolor. Voluptate cupidatat eu non sint ea ea pariatur cillum do
-                mollit Lorem. Nisi officia Lorem eu aliquip eiusmod mollit duis.
-                Qui voluptate enim eu labore reprehenderit ad. Laborum dolore
-                duis ipsum dolore cillum. Reprehenderit eu excepteur amet et
-                sunt sit veniam eiusmod esse aliquip nisi amet consectetur. Duis
-                labore proident officia eu incididunt culpa commodo irure
-                officia cupidatat exercitation veniam.
-              </p>
-            </div>
-
-            <div
-              className="flex flex-col gap-4 justify-between
-            lg:basis-4/12 lg:p-4"
-            >
-              <Image
-                src="/images/commute_2.jpg"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="object-cover grayscale"
-              />
-
-              <div className="bg-yellow-400 dark:bg-yellow-500 p-3">
-                <h2
-                  className="uppercase text-center text-slate-900 text-2xl font-conduitbold 
-                  xl:text-left xl:text-2xl
-                  2xl:text-3xl "
-                >
-                  ”Virkeligheden virker”.
-                </h2>
-                <p className="font-conduitbold text-slate-900">
-                  Virkeligheden virker. - virksomhedsforløb på en ordinær
-                  arbejdsplads med rigtige arbejdsopgaver, kolleger og ordinære
-                  timer øger tilknytningen til arbejdsmarkedet!
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="flex flex-col gap-4 justify-between items-center
-            lg:basis-4/12 lg:items-start"
-            >
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
-              >
-                Ex nisi consequat adipisicing cupidatat excepteur.
-              </h2>
-              <p>
-                Dolore id veniam non ullamco sunt duis fugiat veniam eiusmod
-                eiusmod. Aliquip nisi nisi minim sunt eu consectetur mollit
-                consectetur ut. Tempor enim sint commodo minim irure occaecat
-                est eiusmod excepteur eiusmod proident cupidatat. Anim dolor et
-                commodo velit excepteur adipisicing. Consequat officia dolore
-                sit cillum nulla enim aliqua nostrud aliqua cupidatat.
-                Reprehenderit voluptate nisi laboris excepteur labore minim
-                nostrud. Ea aliqua non culpa minim adipisicing reprehenderit non
-                tempor minim laborum Lorem nostrud. Proident minim commodo ut id
-                ut. Laboris irure occaecat cupidatat sunt ad aute duis
-                consectetur aliqua nulla. Nostrud officia commodo ea aliquip
-                sint qui minim velit. Adipisicing veniam cupidatat cupidatat
-                eiusmod mollit. Sunt velit excepteur proident laborum aute
-                aliquip dolore eu proident laborum. Commodo duis excepteur nulla
-                labore deserunt reprehenderit minim.
+                Vi arbejder tæt sammen med relevante aktører for at sikre, at
+                borgerne får den bedst mulige støtte. Vores tværfaglige
+                samarbejde involverer både eksisterende og nye indsatser, der
+                kan hjælpe borgeren bedst muligt:
               </p>
             </div>
           </div>
         </main>
       </section>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
