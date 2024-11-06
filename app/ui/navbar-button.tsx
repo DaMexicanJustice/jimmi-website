@@ -62,7 +62,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
           component={Link}
           href="/service-social"
         >
-          Socialindsatser
+          Social indsats under § 85
         </MenuItem>
       </Menu>
     </div>

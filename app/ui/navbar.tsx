@@ -263,7 +263,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                             className="font-conduitbold"
                             aria-disabled
                           >
-                            Socialindsatser
+                            Social indsats under § 85
                           </Link>
                         </ListItem>
                       </List>

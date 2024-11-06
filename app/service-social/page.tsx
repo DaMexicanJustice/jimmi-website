@@ -50,7 +50,7 @@ export default function ServiceSocial() {
             lg:self-start
             xl:text-4xl"
             >
-              Socialindsatser
+              Social indsats under § 85
             </h1>
             <p>
               Anim ipsum aute qui aliquip reprehenderit proident dolore commodo

@@ -1,4 +1,5 @@
 import ContactForm from "../ui/contact-form";
+import HistoryCard from "../ui/history-card";
 
 export default function History() {
   return (
@@ -29,11 +30,12 @@ export default function History() {
             lg:basis-6/12
             xl:items-start xl:justify-evenly xl:basis-8/12"
           >
-            <h1
+            <HistoryCard />
+            {/* <h1
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
           xl:text-4xl"
             >
-              Om Mentorplan
+              Velkommen Til Mentorplan
             </h1>
             <p className="text-slate-900 dark:text-slate-100 text-lg text-left leading-6">
               <span
@@ -42,13 +44,23 @@ export default function History() {
               >
                 Mentorplan
               </span>
-              <br></br> Mentorplan blev etableret i 2016 med en kerneværdi: at
-              hjælpe borgerne med at opnå vedvarende resultater og føre et
-              meningsfuldt liv. Vi har altid været dedikeret til at tilpasse
-              vores støtte og rådgivning til den enkelte borgers unikke behov.
-              Når vi indleder et samarbejde med en borger, lægger vi særlig vægt
-              på at opbygge en professionel relation, hvor der er ligeværdighed,
-              respekt og tillid. <br></br>
+              <br></br> Hos Mentorplan, der har eksisteret siden 2016, brænder
+              vi for at gøre en forskel – med sociale og beskæftigelsesrettede
+              indsatser, der støtter unge, voksne og familier i at skabe varige,
+              positive forandringer i deres liv.<br></br>
+              <br></br>
+              <span
+                className="uppercase text-slate-900 dark:text-slate-100 text-lg font-conduitbold
+          xl:text-xl"
+              >
+                Baggrund
+              </span>
+              <br></br> Med baggrund i politi, socialrådgivning og pædagogisk
+              arbejde ved vi, hvordan vi møder mennesker, hvor de er, og hjælper
+              dem videre mod deres mål. Vores tværfaglige tilgang giver os
+              forskellige perspektiver og værktøjer, som styrker vores arbejde
+              med at skræddersy løsninger, der møder den enkeltes behov.
+              <br></br>
               <br></br>
               <span
                 className="uppercase text-slate-900 dark:text-slate-100 text-lg font-conduitbold
@@ -56,29 +68,25 @@ export default function History() {
               >
                 Beliggenhed
               </span>
-              <br></br> Mentorplans kontor er beliggende i SOHO på Vesterbro i
-              Kødbyen. SOHO er et kontorfællesskab med forskelligartede
-              virksomheder, der sammen skaber et pulserende og inspirerende
-              arbejdsfællesskab. I vores møde med borgeren er disse rammer med
-              til at skabe en positiv og energisk atmosfære, som gør at borgeren
-              kan blive inspireret til at tage skridtet mod beskæftigelse og
-              personlig udvikling. Derfor arbejder vi hårdt på at skabe en
-              atmosfære, der udstråler muligheder og positivitet. <br></br>
               <br></br>
+              Vi holder til i et levende kontorfællesskab i Kødbyen, hvor den
+              gode energi og inspirerende atmosfære giver et ekstra løft til
+              borgerne, når de kommer ind. Miljøet smitter positivt af og gør en
+              forskel for dem, vi arbejder med. <br></br> <br></br>
               <span
                 className="uppercase text-slate-900 dark:text-slate-100 text-lg font-conduitbold
           xl:text-xl"
               >
-                Tredje Punkt
+                Beliggenhed
               </span>
               <br></br>
-              Nulla dolore consequat qui laboris sint tempor. Sit deserunt
-              laborum officia consectetur tempor nisi eiusmod duis culpa. Velit
-              enim nostrud nulla velit voluptate adipisicing aliqua pariatur
-              mollit. Sit occaecat tempor Lorem reprehenderit do elit laborum
-              occaecat. Occaecat anim sit incididunt culpa dolore. Excepteur
-              commodo ut sit occaecat deserunt occaecat minim incididunt.
-            </p>
+              Er du sagsbehandler, samarbejdspartner eller bare nysgerrig? Så er
+              du mere end velkommen til at kigge forbi til en kop kaHe og en
+              snak om, hvem vi er, og hvordan vi arbejder. Du kan i øvrigt læse
+              mere om vores indsatser, metoder og dygtige konsulenter her på
+              hjemmesiden. Vi glæder os til at byde dig velkommen hos
+              Mentorplan!<br></br> <br></br>
+            </p> */}
           </div>
           <div
             className="

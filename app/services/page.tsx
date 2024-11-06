@@ -134,7 +134,7 @@ export default function Services() {
               className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase
               2xl:text-base"
             >
-              Socialindsatser
+              Social indsats under § 85
             </h2>
             <CtaButton
               text="Læs Mere"

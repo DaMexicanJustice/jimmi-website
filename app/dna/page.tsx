@@ -32,7 +32,7 @@ export default function Dna() {
 
           <div>
             <h2
-              className="text-slate-900 dark:text-slate-50 text-xl font-conduitbold
+              className="text-slate-900 dark:text-slate-50 text-xl font-conduitbold uppercase
           lg:text-lg"
             >
               {headlines[i]}
@@ -78,7 +78,7 @@ export default function Dna() {
             lg:justify-start lg:gap-1"
             >
               <h2
-                className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold
+                className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold uppercase
               lg:text-lg"
               >
                 Mentorplan omfatter bl.a:
