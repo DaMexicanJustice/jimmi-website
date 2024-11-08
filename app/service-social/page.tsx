@@ -93,7 +93,7 @@ export default function SocialIndasats() {
     <>
       <Navbar useScrollBehavior={false} />
       <section className="mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900 lg:px-16 lg:py-14">
-        <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-10">
+        <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-20">
           <div className="flex flex-col gap-4">
             <h1 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start lg:text-4xl">
               Social indsats under § 85
