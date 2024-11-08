@@ -346,7 +346,7 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="Virksomhedsnetværk"
-                className="object-cover grayscale w-full shadow-lg image-right"
+                className="object-cover grayscale w-full image-right"
               />
             </div>
           </div>
@@ -527,7 +527,7 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="object-cover grayscale w-full shadow-lg image-right lg:basis-4/12"
+                className="object-cover grayscale w-full image-right lg:basis-4/12"
               />
             </div>
           </div>

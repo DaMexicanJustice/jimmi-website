@@ -41,10 +41,7 @@ export default function ServiceYouth() {
 
  lg:py-14"
       >
-        <main
-          className="h-full flex flex-col w-full justify-center gap-6
-        lg:gap-10"
-        >
+        <main className="h-full flex flex-col w-full justify-center gap-6">
           <div className="flex flex-col gap-4">
             <h1
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
@@ -134,14 +131,14 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full shadow-md grayscale image-right"
+                className="object-cover w-full grayscale image-right"
               />
             </div>
           </div>
 
           <div
             className="flex flex-col gap-4 justify-center items-center
-            lg:flex-row lg:gap-10 lg:h-[75svh]"
+            lg:flex-row lg:gap-10 lg:h-[50svh]"
           >
             <div
               className="flex flex-col gap-4 text-left
@@ -176,7 +173,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full xl:basis-4/12 shadow-md grayscale image-right"
+                className="object-cover w-full grayscale image-right"
               />
             </div>
           </div>
@@ -320,7 +317,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full xl:basis-4/12 shadow-md grayscale image-left"
+                className="object-cover w-full grayscale image-left"
               />
             </div>
 
@@ -333,7 +330,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full xl:basis-4/12 shadow-md grayscale image-right"
+                className="object-cover w-full grayscale image-right"
               />
             </div>
           </div>

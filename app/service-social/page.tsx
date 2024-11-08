@@ -137,7 +137,7 @@ export default function SocialIndasats() {
               </p>
             </div>
             <Image
-              src="/images/soho_17.jpg"
+              src="/images/tilgang.jpg"
               width={430}
               height={370}
               alt="Mentorplan team"
