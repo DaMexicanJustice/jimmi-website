@@ -45,15 +45,14 @@ export default function Services() {
             {/* Overlay */}
             <div
               id="overlay"
-              className="flex-col gap-32 hidden pb-5 items-center justify-end absolute w-full h-full
+              className="flex-col gap-20 hidden pb-5 items-center justify-end absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
-                  lg:text-base
-                  2xl:text-sm"
+                  lg:text-sm"
               >
                 Mentorplan tilbyder individuelle beskæftigelsesforløb med fokus
                 på at hjælpe borgere tilbage på arbejdsmarkedet. Vores
@@ -94,15 +93,14 @@ export default function Services() {
 
             <div
               id="overlay"
-              className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
-                  lg:text-base
-                  2xl:text-sm"
+                  lg:text-sm"
               >
                 Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år,
                 der har brug for hjælp til at skabe stabilitet og retning i
@@ -144,20 +142,22 @@ export default function Services() {
             {/* Overlay */}
             <div
               id="overlay"
-              className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
-                  lg:text-base
-                  2xl:text-sm"
+                  lg:text-sm"
               >
-                Adipisicing culpa incididunt ullamco eiusmod nisi magna ad aute
-                ea exercitation do ullamco. Eiusmod labore nulla fugiat pariatur
-                sit commodo nulla. Quis enim et fugiat enim. Ea veniam elit
-                incididunt cillum.
+                Mentorplan tilbyder bostøtte i henhold til Servicelovens § 85,
+                der hjælper voksne med psykiske, fysiske eller sociale
+                udfordringer. Vi tilbyder 24/7 fleksibel helhedsorienteret
+                støtte, herunder ADL-træning, udendørsaktiviteter og tværfagligt
+                samarbejde for at sikre skræddersyet assistance. Vores mål er
+                vedvarende positiv forandring gennem meningsfulde relationer og
+                aktiviteter.
               </p>
               <CtaButton
                 text="Læs Mere"
@@ -193,15 +193,14 @@ export default function Services() {
             {/* Overlay */}
             <div
               id="overlay"
-              className="flex flex-col gap-32 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
-                  lg:text-base
-                  2xl:text-sm"
+                  lg:text-sm"
               >
                 Mentorplan søger virksomheder i Københavnsområdet til at hjælpe
                 socialt udsatte borgere tilbage på arbejdsmarkedet. Vi tilbyder
