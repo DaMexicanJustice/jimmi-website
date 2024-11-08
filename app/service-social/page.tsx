@@ -109,7 +109,7 @@ export default function SocialIndasats() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center h-[50svh]
+            className="flex flex-col gap-4 justify-between items-center 
           lg:flex-row"
           >
             <div className="flex flex-col gap-4 lg:basis-8/12">
@@ -147,7 +147,7 @@ export default function SocialIndasats() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center h-[50svh]
+            className="flex flex-col gap-4 justify-between items-center 
           lg:flex-row"
           >
             <div
