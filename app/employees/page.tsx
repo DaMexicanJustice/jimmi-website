@@ -106,17 +106,6 @@ export default async function Component() {
                         </a>
                       </div>
                     </div>
-                    <Link
-                      href={{
-                        pathname: "/employee-details",
-                        query: { id: index },
-                      }}
-                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20 lg:size-20 xl:size-16"
-                    >
-                      <div className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5 uppercase font-conduitbold text-sm rounded-full -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs">
-                        Læs Mere
-                      </div>
-                    </Link>
                   </div>
                   <div className="absolute inset-0 bg-slate-50 opacity-0 overflow-hidden group-hover:opacity-100 transition-opacity duration-500 ease-in-out px-5">
                     <p className="uppercase text-slate-700 font-conduitbold">
@@ -166,6 +155,18 @@ export default async function Component() {
                           </p>
                         ))}
                     </div>
+                    <Link
+                      href={{
+                        pathname: "/employee-details",
+                        query: { id: index },
+                      }}
+                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20 lg:size-20 xl:size-16"
+                      aria-label={`Læs mere om ${e.name}`}
+                    >
+                      <div className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5 uppercase font-conduitbold text-sm rounded-full -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs">
+                        Læs Mere
+                      </div>
+                    </Link>
                   </div>
                 </div>
               ))}
