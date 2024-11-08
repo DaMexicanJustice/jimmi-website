@@ -1,9 +1,7 @@
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
+"use client";
+
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const sections = [
   {
@@ -58,19 +56,8 @@ const sections = [
   },
 ];
 
-export default function CircularDiagram() {
-  const [activeSection, setActiveSection] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
-
-  const handleClick = (index: number) => {
-    setActiveSection(index);
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setActiveSection(null);
-    setOpen(false);
-  };
+export default function Component() {
+  const [selectedId, setSelectedId] = useState<number | null>(null);
 
   const polarToCartesian = (
     centerX: number,
@@ -115,8 +102,8 @@ export default function CircularDiagram() {
   };
 
   return (
-    <>
-      <svg viewBox="0 0 200 200" className="w-full max-w-md">
+    <div className="relative w-full max-w-md mx-auto">
+      <svg viewBox="0 0 200 200" className="w-full">
         <circle
           cx="100"
           cy="100"
@@ -129,9 +116,11 @@ export default function CircularDiagram() {
           const middleAngle = (section.startAngle + section.endAngle) / 2;
           const textPos = polarToCartesian(100, 100, 70, middleAngle);
           return (
-            <g
-              className="cursor-pointer transition-opacity duration-200 hover:opacity-80"
+            <motion.g
               key={index}
+              className="cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              onClick={() => setSelectedId(index)}
             >
               <path
                 d={describeArc(
@@ -144,7 +133,6 @@ export default function CircularDiagram() {
                 fill={section.color}
                 stroke="black"
                 strokeWidth="2"
-                onClick={() => handleClick(index)}
               />
               <text
                 x={textPos.x}
@@ -156,17 +144,12 @@ export default function CircularDiagram() {
                 className="pointer-events-none"
               >
                 {section.label.split("\n").map((line, i) => (
-                  <tspan
-                    className="font-conduit"
-                    key={i}
-                    x={textPos.x}
-                    dy={i ? "1.2em" : "0"}
-                  >
+                  <tspan key={i} x={textPos.x} dy={i ? "1.2em" : "0"}>
                     {line}
                   </tspan>
                 ))}
               </text>
-            </g>
+            </motion.g>
           );
         })}
         <circle cx="100" cy="100" r="40" fill="white" />
@@ -177,23 +160,35 @@ export default function CircularDiagram() {
           />
         </g>
       </svg>
-      <Dialog disableScrollLock={false} open={open} onClose={handleClose}>
-        <DialogTitle className="font-conduitbold">
-          {activeSection == null ? "" : sections[activeSection].label}
-        </DialogTitle>
-        <DialogContent className="font-yantramanav">
-          {activeSection == null ? "" : sections[activeSection].content}
-        </DialogContent>
-        <DialogActions>
-          <Button
-            className="text-slate-900 font-conduitbold"
-            onClick={handleClose}
-            color="primary"
+      <AnimatePresence>
+        {selectedId !== null && (
+          <motion.div
+            layoutId={`section-${selectedId}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="absolute inset-0 flex items-center justify-center"
           >
-            Luk
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </>
+            <motion.div
+              className="bg-slate-50 rounded-lg shadow-lg p-6 max-w-sm w-full"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+            >
+              <h2 className="text-2xl font-conduitbold uppercase mb-4">
+                {sections[selectedId].label}
+              </h2>
+              <p className="mb-4">{sections[selectedId].content}</p>
+              <button
+                onClick={() => setSelectedId(null)}
+                className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 px-4 py-2 font-conduitbold hover:bg-yellow-600 transition-colors"
+              >
+                Luk
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
