@@ -76,10 +76,8 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center
-            lg:flex-row
-            xl:gap-10
-            2xl:gap-16"
+            className="flex flex-col gap-4 justify-center items-center
+            lg:flex-row lg:gap-10 lg:h-[75svh]"
           >
             <div
               className="flex flex-col gap-4 text-left
@@ -128,7 +126,7 @@ export default function ServiceYouth() {
             </div>
 
             <div
-              className="flex flex-col gap-4 justify-center
+              className="flex flex-col gap-4 justify-center items-center
             lg:basis-4/12"
             >
               <Image
@@ -142,10 +140,8 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center
-            lg:flex-row
-            xl:gap-10
-            2xl:gap-16"
+            className="flex flex-col gap-4 justify-center items-center
+            lg:flex-row lg:gap-10 lg:h-[75svh]"
           >
             <div
               className="flex flex-col gap-4 text-left

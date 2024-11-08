@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
   // Handle navbar transparency & color states depending on scroll
   const navColorState = useScrollBehavior
     ? "bg-transparent"
-    : "bg-white dark:bg-black";
+    : "bg-slate-50 dark:bg-slate-950";
   const svgColorState = useScrollBehavior
     ? "fill-white"
     : "fill-black dark:fill-white bg-gradient-mentor";
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
             window.scrollY < heroSectionRect.height + servicesSectionRect.height
           ) {
             // Change navbar color based on the section being scrolled to
-            setNavbarColor("bg-white dark:bg-black");
+            setNavbarColor("bg-slate-50 dark:bg-slate-950");
             setSVGColor("fill-black dark:fill-white bg-gradient-mentor");
             setDehazeColor("fill-black dark:fill-white");
             setTextColor("text-black dark:text-white");

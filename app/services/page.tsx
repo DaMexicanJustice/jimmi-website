@@ -187,7 +187,7 @@ export default function Services() {
             </h2>
             <CtaButton
               text="Læs Mere"
-              href="/social-feed"
+              href="/corporate-collaboration"
               type="button"
             ></CtaButton>
             {/* Overlay */}

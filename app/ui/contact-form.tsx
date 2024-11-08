@@ -28,7 +28,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
       scrollTrigger: {
         trigger: ".slider",
         start: "top 80%",
-        end: "top top",
+        end: "bottom top",
         toggleActions: "play reverse play reverse",
       },
       x: 0,

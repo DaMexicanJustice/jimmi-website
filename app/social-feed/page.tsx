@@ -18,7 +18,7 @@ export default function Services() {
       <Navbar useScrollBehavior={false} />
       <section
         id="Social-feed"
-        className="min-h-[calc(100svh-3rem)] max-h-max bg-slate-100 dark:bg-neutral-900 p-5
+        className="min-h-[calc(100svh-3rem)] max-h-max bg-slate-50 dark:bg-neutral-900 p-5
         sm:px-32
         lg:px-16"
       >

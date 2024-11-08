@@ -161,35 +161,34 @@
       }
     },
     {
-      "name": "Navn",
+      "name": "Cecilie Hagild",
       "img": "silhouettePic",
       "role": "mentor og kontaktperson",
-      "email": "email@mentorplan.dk",
-      "phone": "+4512345678",
+      "email": "ch@mentorplan.dk",
+      "phone": "+4527855817",
       "competences": {
         "languages": {
-          "0": "Sprog 1",
-          "1": "Sprog 2",
-          "2": "Sprog 3"
+          "0": "Dansk",
+          "1": "Engelsk"
         },
         "education": {
-          "0": "Uddannelse 1",
-          "1": "Uddannelse 2",
-          "2": "Uddannelse 3"
+          "0": "Socialpædagog - 2014",
+          "1": "Medicinhåndtering (kursus)",
+          "2": "Durewall (kursus)",
+          "3": "Neuropædagogisk indsats i pædagogisk arbejde (kursus)",
+          "4": "Grundkursus Røde Kors' Fængselsindsatser"
         },
         "experience": {
-          "0": "Erfaring 1",
-          "1": "Erfaring 2",
-          "2": "Erfaring 3",
-          "3": "Erfaring 4",
-          "4": "Erfaring 5"
+          "0": "Pædagog SEL §85",
+          "1": "Botilbud for voksne; Autismespektrum forstyrrelser, nedsat funktionsevne, mental retardering, komorbiditet, senerhvervede hjerneskader",
+          "2": "Fængselsbesøgsven Røde Kors 2020-2023"
         },
         "article": {
-          "headline": "Overskrift Her",
-          "text": "Fyldtekst Her"
+          "headline": "Den gode relation, som skabes ved en anerkendende tilgang med den enkelte borgers ressourcer for øje, respektfuld og empatisk kommunikation samt stor omsorg.",
+          "text": "Det betyder blandt andet, at udover at skabe en tryg ramme, hvor en sårbar og udsat borger kan bevæge sig, vil der også være mulighed for, med tiden, at kunne opbygge tillid til at eksekvere gensidige aftaler i den fælles arena. Ingen afvisning uden en anvisning. I mit tidligere socialpædagogiske arbejde har autismespektrumforstyrrelser samt andre gennemgribende udviklingsforstyrrelser haft den afgørende rolle i dagligdagen for borgeren. Her arbejder jeg for at skabe et rum, hvor det ikke er udviklingsforstyrrelsen, som er det altoverskyggende i hverdagen, men et forsøg på at højne livskvaliteten – hvad enten det er ADL-træning, fysiske aktiviteter, fritid, det sociale liv, arbejde/uddannelse eller hvad der skal være målet for den enkelte."
         },
-        "citizen-type": "Jeg er særligt god til... ",
-        "resume": "Min spidskompetence er..."
+        "citizen-type": "Hvilke borgere er jeg god til? Udover mine stærke socialpædagogiske kompetencer inden for autismespektrum-regi har jeg i mit frivillige arbejde som fængselsbesøgsven i en arrest haft kontakt med kriminelle, der sidder i en psykisk belastende venteposition. Fælles for netop disse to ovenstående grupper er, at der er massivt behov for at skabe ro, aflede og støtte fokus på fremtidens muligheder, alt efter de enkelte ressourcer og muligheder.",
+        "resume": "Mine spidskompetencer er at være i stand til at kunne afkode og dermed møde borgeren, hvor de er, at kunne gå med på deres aktuelle arousal – men også at bryde denne for at komme på et andet niveau i bevidstheden i forbindelse med det mål, der arbejdes hen imod."
       }
     },
     {

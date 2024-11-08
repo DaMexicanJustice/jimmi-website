@@ -92,13 +92,13 @@ export default function SocialIndasats() {
   return (
     <>
       <Navbar useScrollBehavior={false} />
-      <section className="mt-16 overflow-hidden p-5 bg-slate-100 dark:bg-neutral-900 lg:px-16 lg:py-14">
+      <section className="mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900 lg:px-16 lg:py-14">
         <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-10">
           <div className="flex flex-col gap-4">
-            <h1 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl">
+            <h1 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start lg:text-4xl">
               Social indsats under § 85
             </h1>
-            <p>
+            <p className="text-slate-900 dark:text-slate-50">
               Hos Mentorplan tilbyder vi bostøtte i henhold til Servicelovens §
               85, hvor vi hjælper voksne borgere med psykiske, fysiske eller
               sociale udfordringer med at skabe stabilitet og struktur i deres
@@ -108,12 +108,15 @@ export default function SocialIndasats() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 justify-between items-center lg:flex-row">
-            <div className="flex flex-col gap-4 xl:basis-8/12">
-              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl xl:text-left">
+          <div
+            className="flex flex-col gap-4 justify-between items-center h-[50svh]
+          lg:flex-row"
+          >
+            <div className="flex flex-col gap-4 lg:basis-8/12">
+              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left">
                 Vores baggrund
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Mentorplans team består af erfarne fagfolk inden for socialt
                 arbejde, pædagogisk arbejde og politi. Vi arbejder med en bred
                 vifte af socialt udsatte borgere, der kan have psykiske
@@ -122,7 +125,7 @@ export default function SocialIndasats() {
                 udfordringer eller sociale problemer, har vi erfaring med at
                 hjælpe dem gennem deres individuelle livssituation.
               </p>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 For de borgere, der har levet et liv med kriminalitet eller
                 været en del af et bandemiljø, trækker vi på vores særlige
                 erfaring fra politiarbejde og bande-exitprogrammer. Denne
@@ -134,20 +137,30 @@ export default function SocialIndasats() {
               </p>
             </div>
             <Image
-              src="/images/commute.jpg?height=370&width=430"
+              src="/images/soho_17.jpg"
               width={430}
               height={370}
               alt="Mentorplan team"
-              className="object-cover grayscale image-right xl:basis-4/12"
+              className="grayscale image-right 
+              lg:basis-4/12"
             />
           </div>
 
-          <div className="flex flex-col gap-4 justify-between items-center lg:flex-row">
-            <div className="flex flex-col items-center gap-4 lg:items-start xl:basis-8/12">
-              <h2 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl">
+          <div
+            className="flex flex-col gap-4 justify-between items-center h-[50svh]
+          lg:flex-row"
+          >
+            <div
+              className="flex flex-col items-center gap-4 
+            lg:items-start lg:basis-8/12"
+            >
+              <h2
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
+              lg:text-4xl"
+              >
                 Vores tilgang
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Hos Mentorplan møder vi borgerne med respekt, åbenhed og
                 ordentlighed. Vi tror på, at en stærk relation er nøglen til at
                 skabe varige forandringer i borgerens liv. Vi arbejder tæt
@@ -158,7 +171,7 @@ export default function SocialIndasats() {
                 mulighed for at deltage i sociale aktiviteter, der kan give dem
                 en større livskvalitet.
               </p>
-              <ul className="list-disc px-4">
+              <ul className="list-disc px-4 text-slate-900 dark:text-slate-50">
                 <li>
                   Relation og støtte: Vi bygger en tæt relation til borgerne og
                   støtter dem gennem både store og små udfordringer.
@@ -173,11 +186,12 @@ export default function SocialIndasats() {
               </ul>
             </div>
             <Image
-              src="/images/youth.jpg?height=370&width=430"
+              src="/images/udsatte.jpg"
               width={430}
               height={370}
               alt="Vores tilgang"
-              className="object-cover grayscale image-right xl:basis-4/12"
+              className="object-cover grayscale image-right 
+              lg:basis-4/12"
             />
           </div>
 
@@ -189,17 +203,17 @@ export default function SocialIndasats() {
               className="flex flex-col gap-4 justify-between 
               lg:basis-6/12"
             >
-              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl xl:text-left xl:basis-8/12">
+              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
                 Hvad tilbyder vi
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Mentorplan tilbyder en kombination af praktisk støtte og
                 aktiviteter, der gør det muligt for borgerne at udvikle sig
                 socialt og personligt. Vores indsats er skræddersyet til den
                 enkelte borgers behov, så vi sikrer, at de får præcis den
                 støtte, de har brug for.
               </p>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Vi er tilgængelige 24/7 og arbejder fleksibelt på forskellige
                 tidspunkter af ugen, så vi kan tilpasse vores indsats efter
                 borgerens behov. Uanset om der er brug for støtte i dagtimerne,
@@ -222,10 +236,10 @@ export default function SocialIndasats() {
               className="flex flex-col gap-4 justify-between 
               lg:basis-6/12"
             >
-              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl xl:text-left xl:basis-8/12">
+              <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
                 Tværfagligt samarbejde
               </h2>
-              <p>
+              <p className="text-slate-900 dark:text-slate-50">
                 Vi arbejder tæt sammen med relevante aktører for at sikre, at
                 borgerne får den bedst mulige støtte. Vores tværfaglige
                 samarbejde involverer både eksisterende og nye indsatser, der

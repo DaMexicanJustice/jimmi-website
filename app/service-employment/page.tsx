@@ -79,7 +79,7 @@ export default function ServiceEmployment() {
           lg:items-start"
           >
             <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
             xl:text-4xl"
             >
               Beskæftigelsesindsats
@@ -101,8 +101,8 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6 
-          lg:flex-row lg:justify-between lg:items-center"
+            className="flex flex-col gap-6
+          lg:flex-row lg:h-[50svh] lg:justify-between lg:items-center"
           >
             <div
               className="flex flex-col gap-6 items-center
@@ -140,7 +140,7 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6 items-center
+            className="flex flex-col gap-6 items-center 
            lg:w-8/12 lg:items-start"
           >
             <h2
@@ -222,7 +222,7 @@ export default function ServiceEmployment() {
             </div>
 
             <div
-              className="flex flex-col gap-6
+              className="flex flex-col gap-6 
                lg:basis-4/12"
             >
               <div
@@ -294,7 +294,7 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6 space-between items-center
+            className="flex flex-col gap-6 space-between items-center lg:h-[75svh]
             lg:flex-row"
           >
             <div
@@ -476,7 +476,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 space-between items-center
-          lg:flex-row "
+          lg:flex-row lg:h-[75svh]"
           >
             <div
               className="flex flex-col gap-6  items-center

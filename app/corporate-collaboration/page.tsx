@@ -49,7 +49,7 @@ export default function CorporateCollaboration() {
       <Navbar useScrollBehavior={false} />
       <section
         id="virksomhedssamarbejde"
-        className="p-5 mt-16 bg-slate-100 dark:bg-neutral-900
+        className="p-5 mt-16 bg-slate-50 dark:bg-neutral-900
         sm:px-32
         lg:px-16"
       >
