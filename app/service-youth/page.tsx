@@ -74,7 +74,7 @@ export default function ServiceYouth() {
 
           <div
             className="flex flex-col gap-4 justify-center items-center
-            lg:flex-row lg:gap-10 lg:h-[75svh]"
+            lg:flex-row lg:gap-10 "
           >
             <div
               className="flex flex-col gap-4 text-left
@@ -138,7 +138,7 @@ export default function ServiceYouth() {
 
           <div
             className="flex flex-col gap-4 justify-center items-center
-            lg:flex-row lg:gap-10 lg:h-[50svh]"
+            lg:flex-row lg:gap-10 "
           >
             <div
               className="flex flex-col gap-4 text-left

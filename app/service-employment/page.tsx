@@ -102,7 +102,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6
-          lg:flex-row lg:h-[50svh] lg:justify-between lg:items-center"
+          lg:flex-row  lg:justify-between lg:items-center"
           >
             <div
               className="flex flex-col gap-6 items-center
@@ -294,7 +294,7 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6 space-between items-center lg:h-[75svh]
+            className="flex flex-col gap-6 space-between items-center 
             lg:flex-row"
           >
             <div
@@ -476,7 +476,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 space-between items-center
-          lg:flex-row lg:h-[75svh]"
+          lg:flex-row "
           >
             <div
               className="flex flex-col gap-6  items-center
