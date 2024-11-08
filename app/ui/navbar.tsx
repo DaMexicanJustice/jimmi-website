@@ -272,6 +272,14 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 </ThemeProvider>
               </div>
               <Link
+                href="/corporate-collaboration"
+                onClick={closeMenu}
+                className="flex flex-row items-center w-48 h-9"
+              >
+                <HorizontalRule className=""></HorizontalRule>
+                Virksomhedssamarbejde
+              </Link>
+              <Link
                 href="/social-feed"
                 onClick={closeMenu}
                 className="flex flex-row items-center w-48 h-9"
