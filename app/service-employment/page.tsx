@@ -4,6 +4,8 @@ import Navbar from "../ui/navbar";
 import networkPic from "/public/images/network.jpg";
 import journalPic from "/public/images/journal.jpg";
 import Image from "next/image";
+import { useRef } from "react";
+
 // GSAP
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -13,57 +15,51 @@ import CircularDiagram from "../ui/CircularDiagram";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceEmployment() {
-  useGSAP(() => {
-    const images: HTMLElement[] = gsap.utils.toArray(".grayscale");
-    images.forEach((image) => {
-      gsap.to(image, {
-        scrollTrigger: {
-          trigger: image,
-          start: "top 80%",
-          end: "top top",
-          toggleActions: "play none none reverse",
-        },
-        filter: "grayscale(0%)",
-        x: 0,
-        duration: 1,
-      });
-      gsap.to("#svg-container", {
-        scrollTrigger: {
-          trigger: "#svg-container",
-          start: "top 80%",
-          end: "top top",
-          toggleActions: "play none none reverse",
-        },
-        x: 0,
-        duration: 1,
-      });
-    });
+  const containerRef = useRef<HTMLDivElement>(null);
 
-    gsap.to(".slider", {
-      scrollTrigger: {
-        trigger: ".slider",
-        start: "top 80%",
-        end: "top top",
-        toggleActions: "play none none reverse",
-      },
-      x: 0,
-      duration: 1,
-    });
+  useGSAP(
+    () => {
+      const imageContainers: HTMLElement[] =
+        gsap.utils.toArray(".image-container");
 
-    ScrollTrigger.create({
-      trigger: ".scroll-section",
-      start: "top center",
-      end: "bottom center",
-      scrub: true,
-      pin: ".scroll-target",
-      anticipatePin: 1,
-      pinReparent: true,
-    });
-  });
+      console.log("Number of elements: " + imageContainers.length);
+
+      ScrollTrigger.create({
+        trigger: ".scroll-section",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        pin: ".scroll-target",
+        anticipatePin: 1,
+        pinReparent: true,
+      });
+
+      imageContainers.forEach((container) => {
+        gsap.fromTo(
+          container,
+          { x: "150%" },
+          {
+            scrollTrigger: {
+              trigger: container,
+              start: "top 80%",
+              end: "top top",
+              toggleActions: "play none none reverse",
+            },
+            x: 0,
+            duration: 1,
+            ease: "power2.out",
+          }
+        );
+      });
+    },
+    { scope: containerRef }
+  );
+
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
+        ref={containerRef}
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
         bg-slate-50 dark:bg-neutral-900
@@ -132,8 +128,8 @@ export default function ServiceEmployment() {
                 med eventuelle udfordringer, også på de skæve tidspunkter.
               </p>
             </div>
-            <div className="lg:basis-4/12">
-              <div id="svg-container" className="image-right">
+            <div className="lg:basis-4/12 image-container">
+              <div id="svg-container" className="">
                 <CircularDiagram></CircularDiagram>
               </div>
             </div>
@@ -340,13 +336,14 @@ export default function ServiceEmployment() {
                 og borgeren kan vi dermed skabe det gode match fra start.
               </p>
             </div>
-            <div className="lg:basis-4/12">
+            <div className="lg:basis-4/12 image-container">
               <Image
                 src={networkPic}
                 width={430}
                 height={370}
                 alt="Virksomhedsnetværk"
-                className="object-cover grayscale w-full image-right"
+                className="object-cover grayscale w-full"
+                priority
               />
             </div>
           </div>
@@ -500,7 +497,7 @@ export default function ServiceEmployment() {
               </p>
               <ol
                 className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 
-              font-conduitbold uppercase list-disc image-left slider shadow-lg text-lg"
+              font-conduitbold uppercase list-disc slider shadow-lg text-lg image-container"
               >
                 <li>Registrering af fremmøde</li>
                 <li>
@@ -521,13 +518,14 @@ export default function ServiceEmployment() {
                 <li>Arbejdsevnebeskrivelse</li>
               </ol>
             </div>
-            <div className="lg:basis-4/12">
+            <div className="lg:basis-4/12 image-container">
               <Image
                 src={journalPic}
                 width={430}
                 height={370}
                 alt="journal"
-                className="object-cover grayscale w-full image-right lg:basis-4/12"
+                className="object-cover grayscale w-full lg:basis-4/12"
+                priority
               />
             </div>
           </div>

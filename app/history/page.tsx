@@ -1,10 +1,48 @@
-import ContactForm from "../ui/contact-form";
+"use client";
 import HistoryCard from "../ui/history-card";
+import Image from "next/image";
+
+import { useRef } from "react";
+
+// GSAP
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CircularDiagram from "../ui/CircularDiagram";
 
 export default function History() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      const imageContainers: HTMLElement[] =
+        gsap.utils.toArray(".image-container");
+
+      console.log("Number of elements: " + imageContainers.length);
+
+      imageContainers.forEach((container) => {
+        gsap.fromTo(
+          container,
+          { x: "150%" },
+          {
+            scrollTrigger: {
+              trigger: container,
+              start: "top 80%",
+              end: "top top",
+              toggleActions: "play none none reverse",
+            },
+            x: 0,
+            duration: 1,
+            ease: "power2.out",
+          }
+        );
+      });
+    },
+    { scope: containerRef }
+  );
   return (
     <>
       <section
+        ref={containerRef}
         id="History"
         className="p-5 bg-slate-50 dark:bg-neutral-900
         sm:px-32
@@ -89,11 +127,18 @@ export default function History() {
             </p> */}
           </div>
           <div
-            className="
+            className="overflow-hidden image-container
             lg:basis-6/12 lg:mb-0
             xl:basis-4/12"
           >
-            <ContactForm useSliderAnimation={true}></ContactForm>
+            <Image
+              alt="vores team"
+              src="/images/team.jpg"
+              width={1920}
+              height={1080}
+              priority
+              className="object-cover w-full"
+            />
           </div>
         </main>
       </section>

@@ -12,29 +12,43 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function ServiceYouth() {
   const sectionRefs = useRef([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+
   const tl = useRef<gsap.core.Timeline>();
 
-  useGSAP(() => {
-    const images: HTMLElement[] = gsap.utils.toArray(".grayscale");
-    images.forEach((image) => {
-      gsap.to(image, {
-        scrollTrigger: {
-          trigger: image,
-          start: "top 80%",
-          end: "top top",
-          toggleActions: "play none none reverse",
-        },
-        filter: "grayscale(0%)",
-        x: 0,
-        duration: 1,
+  useGSAP(
+    () => {
+      const imageContainers: HTMLElement[] =
+        gsap.utils.toArray(".image-container");
+
+      console.log("Number of elements: " + imageContainers.length);
+
+      imageContainers.forEach((container) => {
+        gsap.fromTo(
+          container,
+          { x: "150%" },
+          {
+            scrollTrigger: {
+              trigger: container,
+              start: "top 80%",
+              end: "top top",
+              toggleActions: "play none none reverse",
+            },
+            x: 0,
+            duration: 1,
+            ease: "power2.out",
+          }
+        );
       });
-    });
-  });
+    },
+    { scope: containerRef }
+  );
 
   return (
     <>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
+        ref={containerRef}
         id="service-employment"
         className="min-h-[calc(100svh-3rem)] mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900
         lg:px-16
@@ -123,7 +137,7 @@ export default function ServiceYouth() {
             </div>
 
             <div
-              className="flex flex-col gap-4 justify-center items-center
+              className="flex flex-col gap-4 justify-center items-center image-container
             lg:basis-4/12"
             >
               <Image
@@ -131,7 +145,8 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale image-right"
+                className="object-cover w-full grayscale"
+                priority
               />
             </div>
           </div>
@@ -165,7 +180,7 @@ export default function ServiceYouth() {
               </p>
             </div>
             <div
-              className="flex flex-col gap-4 justify-center
+              className="flex flex-col gap-4 justify-center image-container
               lg:basis-4/12"
             >
               <Image
@@ -173,7 +188,8 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale image-right"
+                className="object-cover w-full grayscale "
+                priority
               />
             </div>
           </div>
@@ -309,7 +325,7 @@ export default function ServiceYouth() {
             2xl:gap-16"
           >
             <div
-              className="flex flex-col gap-4
+              className="flex flex-col gap-4 image-container
               lg:basis-4/12"
             >
               <Image
@@ -317,12 +333,13 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale image-left"
+                className="object-cover w-full grayscale"
+                priority
               />
             </div>
 
             <div
-              className="flex flex-col gap-4
+              className="flex flex-col gap-4 image-container
               lg:basis-4/12"
             >
               <Image
@@ -330,7 +347,8 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale image-right"
+                className="object-cover w-full grayscale"
+                priority
               />
             </div>
           </div>

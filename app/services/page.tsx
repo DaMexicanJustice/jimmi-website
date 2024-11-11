@@ -2,7 +2,7 @@ import Image from "next/image";
 import CtaButton from "../ui/cta-button";
 import employmentPic from "/public/images/beskæftigelsesindsatser.jpg";
 import youthPic from "/public/images/ungeindsatser.jpg";
-import socialPic from "/public/images/Konsulenter.jpg";
+import socialPic from "/public/images/udsatte_services.jpg";
 import virksomhedssamarbejde from "/public/images/virksomhedssamarbejde.jpg";
 
 export default function Services() {
@@ -41,6 +41,8 @@ export default function Services() {
               text="Læs Mere"
               href="/service-employment"
               type="button"
+              height={3}
+              width={6}
             ></CtaButton>
             {/* Overlay */}
             <div
@@ -63,6 +65,8 @@ export default function Services() {
                 text="Læs Mere"
                 href="/service-employment"
                 type="button"
+                height={3}
+                width={6}
               ></CtaButton>
             </div>
           </div>
@@ -89,6 +93,8 @@ export default function Services() {
               text="Læs Mere"
               href="/service-youth"
               type="button"
+              height={3}
+              width={6}
             ></CtaButton>
 
             <div
@@ -112,6 +118,8 @@ export default function Services() {
                 text="Læs Mere"
                 href="/service-youth"
                 type="button"
+                height={3}
+                width={6}
               ></CtaButton>
             </div>
           </div>
@@ -138,6 +146,8 @@ export default function Services() {
               text="Læs Mere"
               href="/service-social"
               type="button"
+              height={3}
+              width={6}
             ></CtaButton>
             {/* Overlay */}
             <div
@@ -163,6 +173,8 @@ export default function Services() {
                 text="Læs Mere"
                 href="/service-social"
                 type="button"
+                height={3}
+                width={6}
               ></CtaButton>
             </div>
           </div>
@@ -189,6 +201,8 @@ export default function Services() {
               text="Læs Mere"
               href="/corporate-collaboration"
               type="button"
+              height={3}
+              width={6}
             ></CtaButton>
             {/* Overlay */}
             <div
@@ -212,6 +226,8 @@ export default function Services() {
                 text="Læs Mere"
                 href="/corporate-collaboration"
                 type="button"
+                height={3}
+                width={6}
               ></CtaButton>
             </div>
           </div>

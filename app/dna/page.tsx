@@ -1,6 +1,7 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import CtaButton from "../ui/cta-button";
 import Slogans from "../ui/slogans";
+import ContactForm from "../ui/contact-form";
 
 export default function Dna() {
   const divElements = [];
@@ -13,10 +14,10 @@ export default function Dna() {
   ];
   const paragraphs = [
     "Med erfaring fra socialt arbejde, politi, SSP, pædagogisk arbejde og Bandexit-programmet er vi specialister i at håndtere mange typer sager.",
-    "Magna cillum nisi minim ipsum ex labore.",
-    "Non sint enim eiusmod elit dolore proident nisi anim.",
-    "Laborum laborum minim ipsum cillum.",
-    "Excepteur laborum qui sit aliquip.",
+    "Relationer er kernen i vores arbejde. Vi opbygger tillid og bruger denne til at skabe varig forandring.",
+    "Vi arbejder struktureret, sætter klare rammer og sikrer tydelig kommunikation, så alle involverede ved, hvad der forventes.",
+    "Vi samarbejder med skoler, misbrugscentre, Kriminalforsorgen og andre relevante aktører for at give helhedsorienteret støtte.",
+    "Vores kontor i Kødbyen er beliggende i et unikt kontorfællesskab, der giver både unge og voksne borgere mulighed for at møde nye typer mennesker og blive inspireret i et motiverende miljø fyldt med iværksættere og innovative virksomheder.",
   ];
 
   for (let i = 0; i < 5; i++) {
@@ -55,34 +56,22 @@ export default function Dna() {
         id="DNA"
         className="p-5 bg-slate-50 dark:bg-neutral-900
         sm:px-32
-        lg:px-16 lg:py-8 lg:h-[calc(100svh+3rem)]"
+        lg:px-16 lg:py-8"
       >
-        <h1
-          className="text-slate-950 dark:text-slate-50 text-3xl font-conduitbold text-center font-conduitbold uppercase 
-            lg:text-4xl"
-        >
-          360° Om Borgeren
-        </h1>
         <main
           className="flex flex-col
           lg:flex-row lg:justify-between lg:items-center"
         >
           {/* Left Panel / Top Panel */}
           <div
-            className="flex flex-col items-center gap-10
+            className="flex flex-col items-center gap-6
             md:px-32
-            lg:basis-5/12 lg:px-0"
+            lg:basis-7/12 lg:px-0"
           >
             <div
               className="flex flex-col gap-4
             lg:justify-start lg:gap-1"
             >
-              <h2
-                className="text-slate-950 dark:text-slate-50 text-2xl font-conduitbold uppercase
-              lg:text-lg"
-              >
-                Mentorplan omfatter bl.a:
-              </h2>
               <div
                 className="flex flex-col gap-4 pb-5
               lg:gap-3"
@@ -102,12 +91,18 @@ export default function Dna() {
               text="Kontakt Os"
               href="/contact"
               type="button"
-              height={5}
-              width={10}
+              height={4}
+              width={8}
             ></CtaButton>
           </div>
 
-          <Slogans />
+          <div
+            className="flex flex-col items-center gap-10
+          md:px-32
+          lg:basis-4/12 lg:px-0"
+          >
+            <ContactForm useSliderAnimation={true} />
+          </div>
 
           {/* Right Panel / Bottom Panel */}
           {/* <div

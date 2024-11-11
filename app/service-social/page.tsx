@@ -71,29 +71,43 @@ const listItemsTwo = [
 
 export default function SocialIndasats() {
   const tl = useRef<gsap.core.Timeline>();
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    const images: HTMLElement[] = gsap.utils.toArray(".grayscale");
-    images.forEach((image) => {
-      gsap.to(image, {
-        scrollTrigger: {
-          trigger: image,
-          start: "top 70%",
-          end: "top top",
-          toggleActions: "play none none reverse",
-        },
-        filter: "grayscale(0%)",
-        x: 0,
-        duration: 1,
+  useGSAP(
+    () => {
+      const imageContainers: HTMLElement[] = gsap.utils.toArray(".grayscale");
+
+      console.log("Number of elements: " + imageContainers.length);
+
+      imageContainers.forEach((container) => {
+        gsap.fromTo(
+          container,
+          { x: "100%" },
+          {
+            scrollTrigger: {
+              trigger: container,
+              start: "top 70%",
+              end: "top top",
+              toggleActions: "play none none reverse",
+            },
+            x: 0,
+            duration: 1,
+            ease: "power2.out",
+          }
+        );
       });
-    });
-  });
+    },
+    { scope: containerRef }
+  );
 
   return (
     <>
       <Navbar useScrollBehavior={false} />
-      <section className="mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900 lg:px-16 lg:py-14">
-        <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-20">
+      <section
+        ref={containerRef}
+        className="mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900 lg:px-16 lg:py-14"
+      >
+        <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-10">
           <div className="flex flex-col gap-4">
             <h1 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start lg:text-4xl">
               Social indsats under § 85
@@ -136,14 +150,15 @@ export default function SocialIndasats() {
                 baggrund.
               </p>
             </div>
-            <Image
-              src="/images/tilgang.jpg"
-              width={430}
-              height={370}
-              alt="Mentorplan team"
-              className="grayscale image-right 
-              lg:basis-4/12"
-            />
+            <div className="lg:basis-4/12 image-container overflow-hidden">
+              <Image
+                src="/images/specialister.jpg"
+                width={430}
+                height={370}
+                alt="journal"
+                className="object-cover grayscale w-full"
+              />
+            </div>
           </div>
 
           <div
@@ -185,23 +200,24 @@ export default function SocialIndasats() {
                 </li>
               </ul>
             </div>
-            <Image
-              src="/images/udsatte.jpg"
-              width={430}
-              height={370}
-              alt="Vores tilgang"
-              className="object-cover grayscale image-right 
-              lg:basis-4/12"
-            />
+            <div className="lg:basis-4/12 image-container overflow-hidden">
+              <Image
+                src="/images/udsatte.jpg"
+                width={430}
+                height={370}
+                alt="journal"
+                className="w-full object-cover grayscale w-full"
+              />
+            </div>
           </div>
 
           <div
             className="flex flex-col gap-4 justify-between items-center 
-          lg:flex-row lg:items-center"
+            lg:items-start"
           >
             <div
               className="flex flex-col gap-4 justify-between 
-              lg:basis-6/12"
+              lg:w-6/12"
             >
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
                 Hvad tilbyder vi
@@ -220,21 +236,25 @@ export default function SocialIndasats() {
                 om aftenen eller i weekenden, er vi til stede.
               </p>
             </div>
-            <div className="lg:basis-6/12">
-              <ScrollFadeinList items={listItems} />
+
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2">
+              {listItems.map((item, index) => (
+                <div key={index}>
+                  <div className="flex h-full">
+                    <ScrollFadeinList items={[item]} />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
           <div
             className="flex flex-col gap-4 justify-between items-center 
-          lg:flex-row lg:items-center"
+            lg:items-start"
           >
-            <div className="lg:basis-6/12">
-              <ScrollFadeinList items={listItemsTwo} />
-            </div>
             <div
               className="flex flex-col gap-4 justify-between 
-              lg:basis-6/12"
+              lg:w-6/12"
             >
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
                 Tværfagligt samarbejde
@@ -245,6 +265,15 @@ export default function SocialIndasats() {
                 samarbejde involverer både eksisterende og nye indsatser, der
                 kan hjælpe borgeren bedst muligt:
               </p>
+            </div>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2">
+              {listItemsTwo.map((item, index) => (
+                <div key={index}>
+                  <div className="flex h-full">
+                    <ScrollFadeinList items={[item]} />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </main>
