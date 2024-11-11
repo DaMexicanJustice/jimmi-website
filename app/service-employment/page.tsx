@@ -500,7 +500,7 @@ export default function ServiceEmployment() {
               </p>
               <ol
                 className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 
-              font-conduit font-bold list-disc image-left slider shadow-lg"
+              font-conduitbold uppercase list-disc image-left slider shadow-lg text-lg"
               >
                 <li>Registrering af fremmøde</li>
                 <li>
