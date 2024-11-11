@@ -145,7 +145,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale"
+                className="object-cover w-full "
                 priority
               />
             </div>
@@ -188,7 +188,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale "
+                className="object-cover w-full  "
                 priority
               />
             </div>
@@ -333,7 +333,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale"
+                className="object-cover w-full "
                 priority
               />
             </div>
@@ -347,7 +347,7 @@ export default function ServiceYouth() {
                 width={430}
                 height={370}
                 alt="Ydelse 1"
-                className="object-cover w-full grayscale"
+                className="object-cover w-full "
                 priority
               />
             </div>

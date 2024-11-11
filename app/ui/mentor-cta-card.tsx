@@ -11,7 +11,7 @@ export default function MentorCtaCard() {
           width={512}
           height={512}
           alt="Silhouette representing a potential mentor"
-          className="w-full h-full object-cover grayscale"
+          className="w-full h-full object-cover "
         />
       </div>
       <div className="px-5">

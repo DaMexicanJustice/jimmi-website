@@ -75,7 +75,7 @@ export default function SocialIndasats() {
 
   useGSAP(
     () => {
-      const imageContainers: HTMLElement[] = gsap.utils.toArray(".grayscale");
+      const imageContainers: HTMLElement[] = gsap.utils.toArray(".");
 
       console.log("Number of elements: " + imageContainers.length);
 
@@ -156,7 +156,7 @@ export default function SocialIndasats() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="object-cover grayscale w-full"
+                className="object-cover  w-full"
               />
             </div>
           </div>
@@ -206,7 +206,7 @@ export default function SocialIndasats() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="w-full object-cover grayscale w-full"
+                className="w-full object-cover  w-full"
               />
             </div>
           </div>
