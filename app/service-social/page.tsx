@@ -80,7 +80,7 @@ export default function SocialIndasats() {
       imageContainers.forEach((container) => {
         gsap.fromTo(
           container,
-          { x: "100%" },
+          { x: "150%" },
           {
             scrollTrigger: {
               trigger: container,
