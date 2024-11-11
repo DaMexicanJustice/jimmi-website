@@ -66,7 +66,7 @@ export default function CorporateCollaboration() {
               </p>
 
               <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md mb-6 sm:mb-8">
-                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4 flex items-center font-conduitbold">
+                <h2 className="text-lg sm:text-xl text-slate-900 mb-4 flex items-center font-conduitbold">
                   <MapPin className="mr-2 text-yellow-500" />
                   VI SØGER VIRKSOMHEDER I KØBENHAVNSOMRÅDET
                 </h2>
@@ -153,9 +153,10 @@ export default function CorporateCollaboration() {
                   📸 Samarbejdspartnere
                 </h3>
                 <p className="text-sm sm:text-base">
-                  På billedet ses jeg sammen med nogle af de virksomheder, vi
-                  har eller stadig samarbejder med. Hos Mentorplan mener vi, at
-                  tæt samarbejde skaber de bedste resultater.
+                  På billedet ses Jimmi Liljehult sammen med nogle af de
+                  virksomheder, vi har eller stadig samarbejder med. Hos
+                  Mentorplan mener vi, at tæt samarbejde skaber de bedste
+                  resultater.
                 </p>
               </div>
 
@@ -170,17 +171,6 @@ export default function CorporateCollaboration() {
                   ud til jer.
                 </p>
                 <CtaButton type="button" text="Kontakt Os" href="/contact" />
-              </div>
-
-              <div className="mt-6 sm:mt-8 text-center">
-                <Link
-                  href="https://www.linkedin.com/posts/jimmililjehult_dengodehistoriementorplan-activity-7231740621256876033-wDza?utm_source=share&utm_medium=member_desktop"
-                  className="inline-flex items-center text-slate-700 hover:text-slate-500 hover:underline text-sm sm:text-base"
-                >
-                  <Share2 className="mr-2" />
-                  Del gerne dette opslag i jeres netværk, så vi kan nå ud til
-                  endnu flere virksomheder
-                </Link>
               </div>
             </div>
             <div className="lg:w-4/12 mt-6 lg:mt-0 self-end">
