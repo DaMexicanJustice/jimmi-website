@@ -75,10 +75,8 @@ export default function SocialIndasats() {
 
   useGSAP(
     () => {
-      const imageContainers: HTMLElement[] = gsap.utils.toArray(".");
-
-      console.log("Number of elements: " + imageContainers.length);
-
+      const imageContainers: HTMLElement[] =
+        gsap.utils.toArray(".image-container");
       imageContainers.forEach((container) => {
         gsap.fromTo(
           container,
