@@ -20,22 +20,16 @@ export default function CorporateCollaboration() {
     const image = imageRef.current;
 
     if (image) {
-      // Set initial opacity to 0
-      gsap.set(image, { opacity: 0 });
-
       // Create the animation
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: image,
-          start: "top 90%", // Animation starts when the top of the image reaches the bottom of the viewport
-          end: "bottom 40%", // Animation ends when the bottom of the image reaches the top of the viewport
-          scrub: true, // Allows the animation to progress based on scroll position
-          markers: false, // Set to true for debugging
+          start: "top 11%", // Animation starts when the top of the image reaches the bottom of the viewport
+          end: "bottom 7%", // Animation ends when the bottom of the image reaches the top of the viewport
+          pin: true,
+          pinSpacing: false,
         },
       });
-
-      // Animate opacity from 0 to 1
-      tl.to(image, { opacity: 1, duration: 1 });
 
       // Clean up function
       return () => {
@@ -173,7 +167,7 @@ export default function CorporateCollaboration() {
                 <CtaButton type="button" text="Kontakt Os" href="/contact" />
               </div>
             </div>
-            <div className="lg:w-4/12 mt-6 lg:mt-0 self-end">
+            <div className="lg:w-4/12 mt-6 lg:mt-0 self-start">
               <Image
                 ref={imageRef}
                 alt="virksomhedssamarbejde"
