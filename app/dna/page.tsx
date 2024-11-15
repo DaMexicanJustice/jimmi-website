@@ -32,18 +32,10 @@ export default function Dna() {
           </div>
 
           <div>
-            <h2
-              className="text-slate-900 dark:text-slate-50 text-xl font-conduitbold uppercase
-          lg:text-lg"
-            >
+            <h2 className="text-slate-900 dark:text-slate-50 text-xl font-conduitbold uppercase">
               {headlines[i]}
             </h2>
-            <p
-              className="text-slate-900 dark:text-slate-50 text-xl
-          lg:text-lg"
-            >
-              {paragraphs[i]}
-            </p>
+            <p className="text-slate-900 dark:text-slate-50">{paragraphs[i]}</p>
           </div>
         </div>
       </div>
@@ -80,12 +72,13 @@ export default function Dna() {
               </div>
             </div>
             <p
-              className="text-slate-800 dark:text-slate-300 text-xl w-5/5
+              className="text-slate-500 text-xl w-5/5
               lg:text-sm lg:w-4/5"
             >
-              Specialisterfaring, tillidsopbygning, klar kommunikation,
-              tværfagligt samarbejde og et inspirerende, innovativt miljø.
-              Skaber varig forandring gennem helhedsorienteret `360` støtte.
+              Vi er tilgængelige 24/7 og arbejder fleksibelt på forskellige
+              tidspunkter af ugen, så vi kan tilpasse vores indsats efter
+              borgerens behov. Uanset om der er brug for støtte i dagtimerne, om
+              aftenen eller i weekenden, er vi til stede.
             </p>
             <CtaButton
               text="Kontakt Os"

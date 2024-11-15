@@ -9,14 +9,16 @@ const sections = [
     label: "Gæld til skat/\nGældstyrelsen",
     startAngle: 0,
     endAngle: 51.4,
-    content: "This section is about debt to the tax authorities.",
+    content:
+      "Mentorplan samarbejder med Gadejuristen, Café Exit og Retshjælpen, som alle tilbyder gratis rådgivning og støtte i gældssager. Vi tager borgeren i hånden, etablerer kontakt og sikrer, at sagen startes op korrekt og effektivt, så borgeren får den rette vejledning og støtte.",
   },
   {
     color: "#ea580c",
     label: "Boligløs",
     startAngle: 51.4,
     endAngle: 102.8,
-    content: "This section is about homelessness.",
+    content:
+      "Mentorplan støtter boligsøgende borgere med opskrivning i boligselskaber og hjælper dem med at opfylde kommunens betingelser for at komme i betragtning til akutboliglisten. Vi bistår også med at kontakte herberger for midlertidige boligløsninger. Derudover samarbejder vi med TAMU og kan hjælpe borgere i aldersgruppen 18-30 år med indskrivning på en af deres kostskoler, som kombinerer ophold med praktisk uddannelse og arbejdstræning.",
   },
   {
     color: "#166534",
@@ -24,35 +26,38 @@ const sections = [
     startAngle: 102.8,
     endAngle: 154.2,
     content:
-      "This section is about assistance with meetings with public authorities.",
+      "Mentorplan deltager i møder på kommunen, skolen, arbejdspladsen eller praktiksteder og misbrugscentre for at sikre, at borgeren føler sig støttet og tryg. Vi hjælper med at skabe klarhed omkring samtalens indhold og fungerer som en stabiliserende støtte, hvis der opstår frustrationer eller misforståelser, så mødet kan forløbe roligt og konstruktivt.",
   },
   {
     color: "#0891b2",
-    label: "Udfordringer\ni familien",
+    label: "ADL-Træning\n(Almen Daglig\nLivsførelse)",
     startAngle: 154.2,
     endAngle: 205.6,
-    content: "This section is about family challenges.",
+    content:
+      "For borgere, der har brug for hjælp til daglige færdigheder, kan ADL-træning være relevant. Dette kan inkludere praktisk hjælp til opgaver som budgetlægning, indkøb, strukturering af daglige rutiner og lignende. ADL-træning styrker borgerens evne til at klare dagligdagen selvstændigt.",
   },
   {
     color: "#4338ca",
     label: "Psykiske og\nFysiske\nProblemer",
     startAngle: 205.6,
     endAngle: 257,
-    content: "This section is about mental and physical health problems.",
+    content:
+      "Mentorplan tilbyder støtte til borgere med psykiske og fysiske udfordringer og hjælper med at etablere kontakt til relevante fagpersoner og tilbud. Vi samarbejder med Café Exit, som tilbyder psykologisk behandling til tidligere indsatte, og vi kan henvise til psykologer med erfaring i arbejdet med socialt udsatte borgere, herunder borgere med kriminel baggrund. Derudover bistår vi med ansøgninger til kommunen om enkeltydelser til psykologisk støtte.\n Vi tilbyder desuden aktiviteter som træningsforløb, walk-and-talks og sauna-gus, der fremmer både fysisk og mental trivsel. Disse aktiviteter skaber ro og en ramme for samtale og refleksion i trygge omgivelser, hvor borgeren kan føle sig støttet og styrket.",
   },
   {
     color: "#222E78",
     label: "Mangler\nAt\nGennemføre\nFolkeskolen",
     startAngle: 257,
     endAngle: 308.4,
-    content: "This section is about not completing primary school.",
+    content:
+      "Mentorplan støtter borgere uden afgangseksamen fra folkeskolen i at finde det rette uddannelsessted og etablere kontakt. Vi samarbejder med forskellige uddannelsesinstitutioner, der tilbyder undervisning målrettet voksne, som mangler deres folkeskoleafgang. Vi hjælper med at skabe overblik over mulighederne og deltager i det første møde, så de nødvendige fag kan startes op og sikre bedre fremtidige uddannelsesmuligheder.",
   },
   {
     color: "#602265",
     label: "Manglende\nBeskæftigelse",
     startAngle: 308.4,
     endAngle: 360,
-    content: "This section is about unemployment.",
+    content: "Læs mere her på siden.",
   },
 ];
 
@@ -170,7 +175,7 @@ export default function Component() {
             className="absolute inset-0 flex items-center justify-center"
           >
             <motion.div
-              className="bg-slate-50 rounded-lg shadow-lg p-6 max-w-sm w-full"
+              className="bg-slate-50 shadow-lg p-6 max-w-sm w-full"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}

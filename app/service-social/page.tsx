@@ -18,9 +18,9 @@ const listItems = [
       "Vi støtter borgerne i at håndtere basale dagligdagsopgaver som oprydning, madlavning, budgettering og e-Boks, så de kan skabe en mere struktureret og selvstændig tilværelse i egen bolig.",
   },
   {
-    title: "Aktiviteter udenfor hjemmet:",
+    title: "Kontorfællesskab i Kødbyen:",
     content:
-      "For de borgere, der har mulighed for det, tilbyder vi aktiviteter, der hjælper dem med at bryde isolation og skabe sociale relationer:",
+      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kae, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
   },
   {
     title: "Walk & Talks:",
@@ -37,10 +37,11 @@ const listItems = [
     content:
       "Efter træning tilbyder vi sauna-gus for at fremme afslapning og mental balance.",
   },
+
   {
-    title: "Kontorfællesskab i Kødbyen:",
+    title: "Aktiviteter udenfor hjemmet:",
     content:
-      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kae, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
+      "For de borgere, der har mulighed for det, tilbyder vi aktiviteter, der hjælper dem med at bryde isolation og skabe sociale relationer:",
   },
 ];
 const listItemsTwo = [
@@ -50,22 +51,22 @@ const listItemsTwo = [
       "Vi koordinerer vores støtte med borgerens nuværende forløb, som f.eks. misbrugsbehandling, psykiatrisk behandling eller andre indsatser, for at skabe en sammenhængende indsats. Vi deltager også i møder med kommunen og andre relevante aktører for at sikre, at der er fælles retning i borgerens forløb.",
   },
   {
-    title: "Henvisning til nye samarbejdspartnere:",
-    content:
-      "Når det er nødvendigt, henviser vi til relevante samarbejdspartnere som:",
-  },
-  {
-    title: "Gadejuristen:",
-    content: " Juridisk rådgivning og støtte.",
-  },
-  {
     title: "Café Exit:",
     content:
       "Et fællesskab for tidligere indsatte, hvor de kan deltage i madklubber og kultureftermiddage, der hjælper dem med at bryde med deres gamle miljø. Café Exit tilbyder også psykologsamtaler for at støtte deres mentale velvære.  ",
   },
   {
+    title: "Henvisning til nye samarbejdspartnere:",
+    content:
+      "Når det er nødvendigt, henviser vi til relevante samarbejdspartnere som:",
+  },
+  {
     title: "Retshjælpen:",
     content: "Rådgivning om gæld og andre juridiske sager.",
+  },
+  {
+    title: "Gadejuristen:",
+    content: " Juridisk rådgivning og støtte.",
   },
 ];
 
@@ -210,7 +211,7 @@ export default function SocialIndasats() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center 
+            className="flex flex-col gap-4 justify-between items-center
             lg:items-start"
           >
             <div
@@ -264,7 +265,7 @@ export default function SocialIndasats() {
                 kan hjælpe borgeren bedst muligt:
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-1">
               {listItemsTwo.map((item, index) => (
                 <div key={index}>
                   <div className="flex h-full">
