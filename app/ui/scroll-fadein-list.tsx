@@ -59,7 +59,9 @@ export default function ScrollFadeinList({ items }: ScrollFadeinListProps) {
             >
               {item.title}
             </h3>
-            <p className="text-slate-900 mb-4 p-2">{item.content}</p>
+            <p className="text-slate-900 dark:text-slate-50 mb-4 p-2">
+              {item.content}
+            </p>
           </li>
         ))}
       </ul>
