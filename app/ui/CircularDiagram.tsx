@@ -54,10 +54,10 @@ const sections = [
   },
   {
     color: "#602265",
-    label: "Manglende\nBeskæftigelse",
+    label: "Manglende\nBeskrivelse\nJimmi",
     startAngle: 308.4,
     endAngle: 360,
-    content: "Læs mere her på siden.",
+    content: "Kan du så komme igang med at udfylde denne.",
   },
 ];
 

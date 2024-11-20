@@ -11,6 +11,18 @@ import ScrollFadeinList from "../ui/scroll-fadein-list";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+const bulletItems = [
+  {
+    title: "Relation og støtte",
+    content:
+      "Vi bygger en tæt relation til borgerne og støtter dem gennem både store og små udfordringer.",
+  },
+  {
+    title: "Aktiviteter med mening",
+    content:
+      "Vi opfordrer borgerne til at deltage i meningsfulde aktiviteter udenfor hjemmet, når det er muligt, for at styrke deres sociale netværk og forbedre deres livskvalitet. Det giver borgerne mulighed for at opleve nye perspektiver og bryde med isolation.",
+  },
+];
 const listItems = [
   {
     title: "ADL-træning (Almen Daglig Livsførelse):",
@@ -70,7 +82,7 @@ const listItemsTwo = [
   },
 ];
 
-export default function SocialIndasats() {
+export default function ServiceSocial() {
   const tl = useRef<gsap.core.Timeline>();
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -185,19 +197,7 @@ export default function SocialIndasats() {
                 mulighed for at deltage i sociale aktiviteter, der kan give dem
                 en større livskvalitet.
               </p>
-              <ul className="list-disc px-4 text-slate-900 dark:text-slate-50">
-                <li>
-                  Relation og støtte: Vi bygger en tæt relation til borgerne og
-                  støtter dem gennem både store og små udfordringer.
-                </li>
-                <li>
-                  Aktiviteter med mening: Vi opfordrer borgerne til at deltage i
-                  meningsfulde aktiviteter udenfor hjemmet, når det er muligt,
-                  for at styrke deres sociale netværk og forbedre deres
-                  livskvalitet. Det giver borgerne mulighed for at opleve nye
-                  perspektiver og bryde med isolation.
-                </li>
-              </ul>
+              <ScrollFadeinList items={bulletItems} />
             </div>
             <div className="lg:basis-4/12 image-container overflow-hidden">
               <Image
@@ -215,7 +215,7 @@ export default function SocialIndasats() {
             lg:items-start"
           >
             <div
-              className="flex flex-col gap-4 justify-between 
+              className="flex flex-col gap-4 justify-between
               lg:w-6/12"
             >
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
@@ -252,7 +252,7 @@ export default function SocialIndasats() {
             lg:items-start"
           >
             <div
-              className="flex flex-col gap-4 justify-between 
+              className="flex flex-col gap-4 justify-between
               lg:w-6/12"
             >
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">

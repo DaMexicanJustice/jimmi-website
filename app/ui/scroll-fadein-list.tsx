@@ -48,15 +48,18 @@ export default function ScrollFadeinList({ items }: ScrollFadeinListProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="p-6 bg-yellow-400 dark:bg-yellow-500 shadow-lg w-full"
+      className="p-0 w-full"
     >
-      <ul className="space-y-6">
+      <ul className="space-y-0">
         {items.map((item, index) => (
           <li key={index} className="list-item">
-            <h3 className="text-xl uppercase font-conduitbold mb-2">
+            <h3
+              className="text-xl text-slate-900 uppercase font-conduitbold mb-0
+            bg-yellow-400 p-2"
+            >
               {item.title}
             </h3>
-            <p className="text-slate-900 mb-4">{item.content}</p>
+            <p className="text-slate-900 mb-4 p-2">{item.content}</p>
           </li>
         ))}
       </ul>

@@ -1,7 +1,7 @@
 "use client";
 // React
 import { motion } from "framer-motion";
-import { Coffee, Users, Briefcase, InfoIcon } from "lucide-react";
+import { Coffee, Users, Home, InfoIcon } from "lucide-react";
 
 export default function HistoryCard() {
   return (
@@ -48,7 +48,7 @@ export default function HistoryCard() {
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <Briefcase className="w-6 h-6 text-yellow-500 mt-1 flex-shrink-0" />
+              <Home className="w-6 h-6 text-yellow-500 mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-xl font-conduitbold uppercase  text-slate-900 dark:text-slate-50 ">
                   Levende kontorfællesskab

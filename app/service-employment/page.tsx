@@ -11,8 +11,37 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CircularDiagram from "../ui/CircularDiagram";
+import ScrollFadeinList from "../ui/scroll-fadein-list";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const listItems = [
+  {
+    title: "FØLELSE AF KONTROL SKABER MOTIVATION",
+    content:
+      "Når borgeren oplever igen at få en følelse af kontrol, skaber det motivation hos langt de fleste, da de nu ikke længere sidder bagerst i bussen. De sidder på førersædet og har muligheden for at have indflydelse på, hvilken retning deres liv skal tage.",
+  },
+  {
+    title: "HJÆLP TIL SÅRBARE BORGERE GENNEM RELATIONER",
+    content:
+      "Det kan fx være de borgere, som har det så svært, at bare det at komme ud af sengen om morgenen er vanskeligt – dem griber vi også. Her bliver relationen særligt vigtig, da vi ved, at det forpligter, at man kommer ud ad døren. Vi skaber rammerne for, at borgeren ved, at der venter noget rart. Det kan være en god kop kaffe, at borgeren kommer ind til København, oplever livet i Kødbyen, møder mennesker og mærker mødet med andre.",
+  },
+  {
+    title: "DYRK ARBEJDSIDENTITET HOS DE UDSATTE BORGERE",
+    content:
+      "Et andet perspektiv i vores 360-graders metode er at ramme de borgere, som mange andre måske ville opgive: De, som er så langt fra beskæftigelse, at deres arbejdsidentitet først skal dyrkes. Vanerne og dermed forudsætningerne for et arbejdsliv skal skabes.",
+  },
+  {
+    title: "STYRK BORGERENS SUNDHED OG RELATIONER",
+    content:
+      "I den relationsopbyggende fase tager vi de greb i brug, som vi af erfaring ved virker. For eksempel er det ikke unormalt, at mentoren tager borgeren med i SATS træningscenter. Her arbejder vi både med de fysiske og psykiske udfordringer samt med borgerens energiniveau. Dette er inkluderet som en del af henvisningen hos Mentorplan.",
+  },
+  {
+    title: "WALK AND TALK",
+    content:
+      "Vi benytter os i høj grad af walk and talks. På disse gåture bringer vi også det beskæftigelsesrettede i spil, da vi benytter muligheden for at stikke hovedet inden for på virksomhederne i lokalområdet. Dette gør, at vi i en uformel ramme kan introducere borgeren for virksomhederne. Ofte ender det med, at den pågældende vender tilbage og peger på en virksomhed, som fangede hans/hendes interesse under vores besøg. Dette medvirker til, at vi skaber relationen fra starten, samtidig med at vi får set borgeren i en anden kontekst, og dermed ved, hvordan de skal mødes, også hvis det hele bliver lidt svært.",
+  },
+];
 
 export default function ServiceEmployment() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -170,122 +199,21 @@ export default function ServiceEmployment() {
               className="flex flex-col gap-6
                lg:basis-4/12"
             >
-              <div
-                className="flex flex-col gap-6 min-h-52
-                "
-              >
-                <div className="flex flex-col">
-                  <h2
-                    className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
-                  uppercase text-slate-900 text-xl font-conduit text-center
-                  lg:h-16 2xl:h-auto
-                  2xl:h-auto"
-                  >
-                    FØLELSE AF KONTROL SKABER MOTIVATION
-                  </h2>
-                </div>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Når borgeren oplever igen at få en følelse af kontrol, skaber
-                  det motivation hos langt de fleste, da de nu ikke længere
-                  sidder bagerst i bussen. De sidder på førersædet og har
-                  muligheden for at have indflydelse på, hvilken retning deres
-                  liv skal tage.
-                </p>
-              </div>
-
-              <div
-                className="flex flex-col gap-6 min-h-52
-                "
-              >
-                <h2
-                  className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
-                  uppercase text-slate-900 text-xl font-conduit text-center
-                  lg:h-16 2xl:h-auto"
-                >
-                  HJÆLP TIL SÅRBARE BORGERE GENNEM RELATIONER
-                </h2>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Det kan fx være de borgere, som har det så svært, at bare det
-                  at komme ud af sengen om morgenen er vanskeligt – dem griber
-                  vi også. Her bliver relationen særligt vigtig, da vi ved, at
-                  det forpligter, at man kommer ud ad døren. Vi skaber rammerne
-                  for, at borgeren ved, at der venter noget rart. Det kan være
-                  en god kop kaffe, at borgeren kommer ind til København,
-                  oplever livet i Kødbyen, møder mennesker og mærker mødet med
-                  andre.
-                </p>
-              </div>
+              <ScrollFadeinList items={listItems.slice(0, 2)} />
             </div>
 
             <div
               className="flex flex-col gap-6 
                lg:basis-4/12"
             >
-              <div
-                className="flex flex-col gap-6 min-h-52
-                "
-              >
-                <h2
-                  className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
-                  uppercase text-slate-900 text-xl font-conduit text-center
-                  lg:h-16 2xl:h-auto"
-                >
-                  DYRK ARBEJDSIDENTITET HOS DE UDSATTE BORGERE
-                </h2>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Et andet perspektiv i vores 360-graders metode er at ramme de
-                  borgere, som mange andre måske ville opgive: De, som er så
-                  langt fra beskæftigelse, at deres arbejdsidentitet først skal
-                  dyrkes. Vanerne og dermed forudsætningerne for et arbejdsliv
-                  skal skabes.
-                </p>
-              </div>
-
-              <div
-                className="flex flex-col gap-6 min-h-52
-                "
-              >
-                <h2
-                  className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
-                  uppercase text-slate-900 text-xl font-conduit text-center
-                  lg:h-16 2xl:h-auto"
-                >
-                  STYRK BORGERENS SUNDHED OG RELATIONER
-                </h2>
-                <p className="text-slate-900 dark:text-slate-50">
-                  I den relationsopbyggende fase tager vi de greb i brug, som vi
-                  af erfaring ved virker. For eksempel er det ikke unormalt, at
-                  mentoren tager borgeren med i SATS træningscenter. Her
-                  arbejder vi både med de fysiske og psykiske udfordringer samt
-                  med borgerens energiniveau. Dette er inkluderet som en del af
-                  henvisningen hos Mentorplan.
-                </p>
-              </div>
+              <ScrollFadeinList items={listItems.slice(2, 4)} />
             </div>
 
             <div
               className="flex flex-col gap-6
                lg:basis-4/12"
             >
-              <h2
-                className="bg-yellow-400 dark:bg-yellow-500 shadow-lg p-1
-                uppercase text-slate-900 text-xl font-conduit text-center
-                lg:h-16 2xl:h-auto"
-              >
-                WALK AND TALK
-              </h2>
-              <p className="text-slate-900 dark:text-slate-50">
-                Vi benytter os i høj grad af walk and talks. På disse gåture
-                bringer vi også det beskæftigelsesrettede i spil, da vi benytter
-                muligheden for at stikke hovedet inden for på virksomhederne i
-                lokalområdet. Dette gør, at vi i en uformel ramme kan
-                introducere borgeren for virksomhederne. Ofte ender det med, at
-                den pågældende vender tilbage og peger på en virksomhed, som
-                fangede hans/hendes interesse under vores besøg. Dette medvirker
-                til, at vi skaber relationen fra starten, samtidig med at vi får
-                set borgeren i en anden kontekst, og dermed ved, hvordan de skal
-                mødes, også hvis det hele bliver lidt svært.
-              </p>
+              <ScrollFadeinList items={listItems.slice(4, 5)} />
             </div>
           </div>
 

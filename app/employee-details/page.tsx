@@ -12,6 +12,8 @@ import maltePic from "/public/images/Malte.jpg";
 import marckPic from "/public/images/Marck.jpg";
 import musaPic from "/public/images/Musa.jpg";
 import esraPic from "/public/images/Esra.jpg";
+import ceciliePic from "/public/images/Cecilie.jpg";
+import madsPic from "/public/images/Mads.jpg";
 
 // Defining the object structure
 interface Employee {
@@ -45,6 +47,8 @@ const imageMap = {
   marckPic: marckPic,
   musaPic: musaPic,
   esraPic: esraPic,
+  ceciliePic,
+  madsPic,
 };
 
 function getURLSearchParamsID() {

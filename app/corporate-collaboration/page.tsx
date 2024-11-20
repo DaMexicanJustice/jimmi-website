@@ -24,8 +24,8 @@ export default function CorporateCollaboration() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: image,
-          start: "top 11%", // Animation starts when the top of the image reaches the bottom of the viewport
-          end: "bottom 7%", // Animation ends when the bottom of the image reaches the top of the viewport
+          start: "top 10%", // Animation starts when the top of the image reaches the bottom of the viewport
+          end: "bottom 6%", // Animation ends when the bottom of the image reaches the top of the viewport
           pin: true,
           pinSpacing: false,
         },
@@ -173,7 +173,7 @@ export default function CorporateCollaboration() {
                 alt="virksomhedssamarbejde"
                 src="/images/virksomheder.jpg"
                 width={400}
-                height={400}
+                height={500}
                 className="w-full h-auto shadow-xl"
               />
             </div>

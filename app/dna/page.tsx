@@ -1,4 +1,4 @@
-import { CheckIcon } from "@heroicons/react/24/outline";
+import { Check } from "lucide-react";
 import CtaButton from "../ui/cta-button";
 import Slogans from "../ui/slogans";
 import ContactForm from "../ui/contact-form";
@@ -11,6 +11,7 @@ export default function Dna() {
     "Tydelige rammer og kommunikation",
     "Tværfagligt arbejde",
     "Inspirende miljø",
+    "Døgnet rundt",
   ];
   const paragraphs = [
     "Med erfaring fra socialt arbejde, politi, SSP, pædagogisk arbejde og Bandexit-programmet er vi specialister i at håndtere mange typer sager.",
@@ -18,17 +19,15 @@ export default function Dna() {
     "Vi arbejder struktureret, sætter klare rammer og sikrer tydelig kommunikation, så alle involverede ved, hvad der forventes.",
     "Vi samarbejder med skoler, misbrugscentre, Kriminalforsorgen og andre relevante aktører for at give helhedsorienteret støtte.",
     "Vores kontor i Kødbyen er beliggende i et unikt kontorfællesskab, der giver både unge og voksne borgere mulighed for at møde nye typer mennesker og blive inspireret i et motiverende miljø fyldt med iværksættere og innovative virksomheder.",
+    "Vi er tilgængelige 24/7 og arbejder fleksibelt på forskellige tidspunkter af ugen, så vi kan tilpasse vores indsats efter borgerens behov. Uanset om der er brug for støtte i dagtimerne, om aftenen eller i weekenden, er vi til stede.",
   ];
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < paragraphs.length; i++) {
     divElements.push(
       <div key={i}>
-        <div className="flex flex-row gap-4 items-center">
-          <div className="bg-yellow-400 dark:bg-yellow-500 rounded-sm shadow-md">
-            <CheckIcon
-              className="size-6 text-slate-50 dark:text-slate-900 shrink-0
-            rotate-6"
-            ></CheckIcon>
+        <div className="flex flex-row gap-4 items-start">
+          <div className="bg-yellow-400 dark:bg-yellow-500 rounded-sm mt-1 shadow-md">
+            <Check className="size-6 text-slate-50 dark:text-slate-900 shrink-0" />
           </div>
 
           <div>
@@ -71,22 +70,6 @@ export default function Dna() {
                 {divElements}
               </div>
             </div>
-            <p
-              className="text-slate-500 text-xl w-5/5
-              lg:text-sm lg:w-4/5"
-            >
-              Vi er tilgængelige 24/7 og arbejder fleksibelt på forskellige
-              tidspunkter af ugen, så vi kan tilpasse vores indsats efter
-              borgerens behov. Uanset om der er brug for støtte i dagtimerne, om
-              aftenen eller i weekenden, er vi til stede.
-            </p>
-            <CtaButton
-              text="Kontakt Os"
-              href="/contact"
-              type="button"
-              height={4}
-              width={8}
-            ></CtaButton>
           </div>
 
           <div
