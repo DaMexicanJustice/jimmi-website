@@ -10,7 +10,7 @@ export default function Dna() {
     "Relationsbaseret tilgang",
     "Tydelige rammer og kommunikation",
     "Tværfagligt arbejde",
-    "Inspirende miljø",
+    // "Inspirende miljø",
     "Døgnet rundt",
   ];
   const paragraphs = [
@@ -18,7 +18,7 @@ export default function Dna() {
     "Relationer er kernen i vores arbejde. Vi opbygger tillid og bruger denne til at skabe varig forandring.",
     "Vi arbejder struktureret, sætter klare rammer og sikrer tydelig kommunikation, så alle involverede ved, hvad der forventes.",
     "Vi samarbejder med skoler, misbrugscentre, Kriminalforsorgen og andre relevante aktører for at give helhedsorienteret støtte.",
-    "Vores kontor i Kødbyen er beliggende i et unikt kontorfællesskab, der giver både unge og voksne borgere mulighed for at møde nye typer mennesker og blive inspireret i et motiverende miljø fyldt med iværksættere og innovative virksomheder.",
+    // "Vores kontor i Kødbyen er beliggende i et unikt kontorfællesskab, der giver både unge og voksne borgere mulighed for at møde nye typer mennesker og blive inspireret i et motiverende miljø fyldt med iværksættere og innovative virksomheder.",
     "Vi er tilgængelige 24/7 og arbejder fleksibelt på forskellige tidspunkter af ugen, så vi kan tilpasse vores indsats efter borgerens behov. Uanset om der er brug for støtte i dagtimerne, om aftenen eller i weekenden, er vi til stede.",
   ];
 
