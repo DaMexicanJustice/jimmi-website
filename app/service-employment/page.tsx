@@ -363,7 +363,7 @@ export default function ServiceEmployment() {
                  lg:items-start"
               >
                 <h2
-                  className="uppercase font-conduit text-2xl text-slate-900 dark:text-slate-50
+                  className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
                   lg:text-4xl"
                 >
                   HÅNDHOLDT INDSATS

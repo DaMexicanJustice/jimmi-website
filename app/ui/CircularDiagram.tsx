@@ -194,6 +194,9 @@ export default function Component() {
           </motion.div>
         )}
       </AnimatePresence>
+      <div className="mt-4 text-center text-sm text-slate-900 dark:text-slate-50">
+        Tryk på en sektion for at få flere oplysninger
+      </div>
     </div>
   );
 }
