@@ -32,7 +32,7 @@ const listItems = [
   {
     title: "Kontorfællesskab i Kødbyen",
     content:
-      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kae, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
+      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kaffe, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
   },
   {
     title: "Walk & Talks",
