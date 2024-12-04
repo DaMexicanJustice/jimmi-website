@@ -25,59 +25,59 @@ const bulletItems = [
 ];
 const listItems = [
   {
-    title: "ADL-træning (Almen Daglig Livsførelse):",
+    title: "ADL-træning (Almen Daglig Livsførelse)",
     content:
       "Vi støtter borgerne i at håndtere basale dagligdagsopgaver som oprydning, madlavning, budgettering og e-Boks, så de kan skabe en mere struktureret og selvstændig tilværelse i egen bolig.",
   },
   {
-    title: "Kontorfællesskab i Kødbyen:",
+    title: "Kontorfællesskab i Kødbyen",
     content:
       "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kae, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
   },
   {
-    title: "Walk & Talks:",
+    title: "Walk & Talks",
     content:
       "Vi kombinerer samtale med gåture, enten i borgerens nærområde eller i Kødbyen, hvor vores kontor ligger. Kødbyen er et hyggeligt område, der giver mulighed for at opleve et andet miljø og samtidig få en uformel snak.",
   },
   {
-    title: "Træning i SATS:",
+    title: "Træning i SATS",
     content:
       "Vi tilbyder træningsforløb, hvor borgerne kan træne sammen med deres støttekontaktperson og styrke både deres fysiske og mentale sundhed.",
   },
   {
-    title: "Sauna-gus:",
+    title: "Sauna-gus",
     content:
       "Efter træning tilbyder vi sauna-gus for at fremme afslapning og mental balance.",
   },
 
   {
-    title: "Aktiviteter udenfor hjemmet:",
+    title: "Aktiviteter udenfor hjemmet",
     content:
       "For de borgere, der har mulighed for det, tilbyder vi aktiviteter, der hjælper dem med at bryde isolation og skabe sociale relationer:",
   },
 ];
 const listItemsTwo = [
   {
-    title: "Samarbejde med eksisterende indsatser:",
+    title: "Samarbejde med eksisterende indsatser",
     content:
       "Vi koordinerer vores støtte med borgerens nuværende forløb, som f.eks. misbrugsbehandling, psykiatrisk behandling eller andre indsatser, for at skabe en sammenhængende indsats. Vi deltager også i møder med kommunen og andre relevante aktører for at sikre, at der er fælles retning i borgerens forløb.",
   },
   {
-    title: "Café Exit:",
+    title: "Café Exit",
     content:
       "Et fællesskab for tidligere indsatte, hvor de kan deltage i madklubber og kultureftermiddage, der hjælper dem med at bryde med deres gamle miljø. Café Exit tilbyder også psykologsamtaler for at støtte deres mentale velvære.  ",
   },
   {
-    title: "Henvisning til nye samarbejdspartnere:",
+    title: "Henvisning til nye samarbejdspartnere",
     content:
       "Når det er nødvendigt, henviser vi til relevante samarbejdspartnere som:",
   },
   {
-    title: "Retshjælpen:",
+    title: "Retshjælpen",
     content: "Rådgivning om gæld og andre juridiske sager.",
   },
   {
-    title: "Gadejuristen:",
+    title: "Gadejuristen",
     content: " Juridisk rådgivning og støtte.",
   },
 ];

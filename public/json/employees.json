@@ -252,6 +252,38 @@
         "citizen-type": "Jeg er særligt god til... ",
         "resume": "Min spidskompetence er..."
       }
+    },
+    {
+      "name": "Navn",
+      "img": "silhouettePic",
+      "role": "mentor og kontaktperson",
+      "email": "email@mentorplan.dk",
+      "phone": "+4512345678",
+      "competences": {
+        "languages": {
+          "0": "Sprog 1",
+          "1": "Sprog 2",
+          "2": "Sprog 3"
+        },
+        "education": {
+          "0": "Uddannelse 1",
+          "1": "Uddannelse 2",
+          "2": "Uddannelse 3"
+        },
+        "experience": {
+          "0": "Erfaring 1",
+          "1": "Erfaring 2",
+          "2": "Erfaring 3",
+          "3": "Erfaring 4",
+          "4": "Erfaring 5"
+        },
+        "article": {
+          "headline": "Overskrift Her",
+          "text": "Fyldtekst Her"
+        },
+        "citizen-type": "Jeg er særligt god til... ",
+        "resume": "Min spidskompetence er..."
+      }
     }
   ]
 }
