@@ -13,6 +13,8 @@ import marckPic from "/public/images/Marck.jpg";
 import musaPic from "/public/images/Musa.jpg";
 import esraPic from "/public/images/Esra.jpg";
 import ceciliePic from "/public/images/Cecilie.jpg";
+import ninaPic from "/public/images/Nina.jpg";
+import daliborPic from "/public/images/Dalibor.jpg";
 import madsPic from "/public/images/Mads.jpg";
 
 // Defining the object structure
@@ -47,8 +49,10 @@ const imageMap = {
   marckPic: marckPic,
   musaPic: musaPic,
   esraPic: esraPic,
-  ceciliePic,
-  madsPic,
+  ceciliePic: ceciliePic,
+  daliborPic: daliborPic,
+  ninaPic: ninaPic,
+  madsPic: madsPic,
 };
 
 function getURLSearchParamsID() {
@@ -210,7 +214,7 @@ export default function EmployeeDetails() {
               lg:basis-8/12
               2xl:basis-8/12"
             >
-              <p className="text-slate-900 dark:text-slate-50 text-xl text-left">
+              <p className="text-slate-900 dark:text-slate-50 text-xl text-center">
                 {data ? data.competences.article.headline : "no-data"}
               </p>
               <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line text-lg">

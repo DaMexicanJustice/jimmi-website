@@ -319,6 +319,68 @@ export default function ServiceYouth() {
           </div>
 
           <div
+            className="flex flex-col gap-4 justify-center items-center
+            lg:flex-row lg:gap-10 "
+          >
+            <div
+              className="flex flex-col gap-4 text-left
+              lg:basis-8/12"
+            >
+              <h2
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+              lg:self-start
+              xl:text-4xl"
+              >
+                Familiebehandling som supplement til ungeindsatsen
+              </h2>
+              <p className="text-slate-900 dark:text-slate-100">
+                Hos Mentorplan tilbyder vi også familiebehandling som et
+                værdifuldt supplement til vores ungeindsats. Vi tror på, at en
+                stærk familie kan være nøglen til en ung persons udvikling, og
+                derfor ser vi en stor fordel i at kombinere vores
+                kontaktpersonsforløb med en familiebehandler, når det er
+                relevant. Ved at have begge dele samlet under samme tag sikrer
+                vi en tæt koordinering og et fælles fokus på at skabe de bedste
+                rammer for både den unge og familien.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Familiebehandlingen handler om at styrke relationerne og
+                kommunikationen i familien. Vi hjælper med at identificere
+                udfordringer og finde løsninger, der skaber ro og balance. Vores
+                tilgang er praktisk og målrettet – vi arbejder på at bryde
+                negative mønstre, opbygge positive vaner og skabe varige
+                forandringer. Samtidig tager vi altid udgangspunkt i familiens
+                og den unges specifikke behov, så indsatsen tilpasses deres
+                unikke situation.
+              </p>
+              <p className="text-slate-900 dark:text-slate-100">
+                Fordelen ved at kombinere ungeindsatsen med familiebehandling
+                er, at vi kan arbejde helhedsorienteret. Mens kontaktpersonen
+                fokuserer på at støtte den unge i deres personlige og sociale
+                udvikling, arbejder familiebehandleren med familiens dynamik. På
+                den måde kan vi sammen skabe en fælles retning og sikre, at alle
+                parter føler sig hørt og støttet. Vores erfaring viser, at det
+                kan gøre en stor forskel, når familie og kontaktpersoner
+                arbejder sammen med en familiebehandler om at skabe positive
+                forandringer.
+              </p>
+            </div>
+            <div
+              className="flex flex-col gap-4 justify-center image-container
+              lg:basis-4/12"
+            >
+              <Image
+                src="/images/familiebehandling.jpg"
+                width={430}
+                height={370}
+                alt="Ydelse 1"
+                className="object-cover w-full  "
+                priority
+              />
+            </div>
+          </div>
+
+          {/* <div
             className="flex flex-col gap-4 justify-between
             lg:flex-row
             xl:gap-10
@@ -351,7 +413,7 @@ export default function ServiceYouth() {
                 priority
               />
             </div>
-          </div>
+          </div> */}
         </main>
       </section>
       <Footer></Footer>

@@ -222,67 +222,67 @@
       }
     },
     {
-      "name": "Navn",
-      "img": "silhouettePic",
-      "role": "mentor og kontaktperson",
-      "email": "email@mentorplan.dk",
+      "name": "Nina",
+      "img": "ninaPic",
+      "role": "familiebehandler",
+      "email": "nm@mentorplan.dk",
       "phone": "+4512345678",
       "competences": {
         "languages": {
-          "0": "Sprog 1",
-          "1": "Sprog 2",
-          "2": "Sprog 3"
+          "0": "Dansk",
+          "1": "Engelsk",
+          "2": "Serbokroatisk"
         },
         "education": {
-          "0": "Uddannelse 1",
-          "1": "Uddannelse 2",
-          "2": "Uddannelse 3"
+          "0": "Professionelle metoder som familiebehandler",
+          "1": "Inkluderer fysisk aktivitet og kreative processer",
+          "2": "Erfaring med projektorganisering og struktur"
         },
         "experience": {
-          "0": "Erfaring 1",
-          "1": "Erfaring 2",
-          "2": "Erfaring 3",
-          "3": "Erfaring 4",
-          "4": "Erfaring 5"
+          "0": "Støtter børn, unge og familier, der har brug for en stabil voksenkontakt",
+          "1": "Fokus på potentialer fremfor problemer",
+          "2": "Involvering i praktiske projekter for familier",
+          "3": "Ser muligheder i stedet for problemer",
+          "4": "Hjælper med at bryde negative mønstre for positiv udvikling"
         },
         "article": {
-          "headline": "Overskrift Her",
-          "text": "Fyldtekst Her"
+          "headline": "Støtte og omsorg for familier i udfordringer",
+          "text": "Jeg støtter børn, unge og familier, der har brug for en stabil, omsorgsfuld og kompetent voksenkontakt. Med stor forståelse for borgernes behov og drømme giver jeg plads til at tilbyde ekstra opmærksomhed til dem, der har brug for det. Jeg ved, hvor stor betydning en stabil voksenrelation har for et barns og en families trivsel og udvikling, og jeg har dyb respekt for den tillid, der ligger i at være den person, som børn og familier kan læne sig op ad i svære tider. Det giver mig stor mening at arbejde med borgere og familier, der står overfor særlige udfordringer og har brug for vejledning og støtte.\n\n Jeg fokuserer på potentialer fremfor problemer og tror på, at alle – også dem i vanskelige situationer – har en iboende evne til at skabe forandring. Jeg ser muligheder, hvor andre måske har opgivet, og sammen med familierne arbejder jeg målrettet for at finde løsninger, der hjælper dem videre mod en bedre tilværelse. Mit mål er at gøre familier selvhjulpne og uafhængige, samtidig med at vi bryder negative mønstre og skaber positiv udvikling.\n\n Udover de professionelle metoder og værktøjer, som jeg benytter mig af som familiebehandler, inddrager jeg ofte fysisk aktivitet og kreative processer som effektive redskaber til at opbygge relationer og styrke både børns og familiers selvværd. Jeg har også erfaring med, hvordan praktiske projekter såsom organisering, struktur og oprydning kan skabe læring og fremme sunde vaner for hele familien."
         },
-        "citizen-type": "Jeg er særligt god til... ",
-        "resume": "Min spidskompetence er..."
+        "citizen-type": "Jeg er særligt god til at arbejde med børn, unge og familier, der har brug for en voksen, som kan skabe ro og overblik i kaotiske situationer. Jeg bringer mine erfaringer, kompetencer og mit engagement ind i arbejdet for at støtte børn og familier i svære livssituationer. Jeg ser mig selv som en slags ‘Kluddermor’, der – ligesom i børnelegen – hjælper med at løsne op for forviklinger, skabe struktur, rydde op i det komplicerede og gøre det svære mere håndterbart. Min rolle er at hjælpe familier med at genfinde deres indre styrke, skabe ro og bringe glæde tilbage i hverdagen.",
+        "resume": "Min styrke som familiebehandler ligger i min ro, modenhed, tålmodighed og anerkendende tilgang. Min menneskelige indsigt gør mig i stand til at være en god støtte for både borgeren og familien. Med min autenticitet og oprigtige ønske om at hjælpe bygger jeg hurtigt tillid, så borgerne ofte ser mig som en fortrolig person, de kan stole på. Jeg fungerer som en stabiliserende faktor i svære situationer og hjælper med at skabe positiv udvikling. “Livet handler ikke om at vente på, at uvejret lægger sig. Det handler om at lære at danse i regnen."
       }
     },
     {
-      "name": "Navn",
-      "img": "silhouettePic",
+      "name": "Dalibor Spajic",
+      "img": "daliborPic",
       "role": "mentor og kontaktperson",
-      "email": "email@mentorplan.dk",
-      "phone": "+4512345678",
+      "email": "ds@mentorplan.dk",
+      "phone": "+45 2889-0877",
       "competences": {
         "languages": {
-          "0": "Sprog 1",
-          "1": "Sprog 2",
-          "2": "Sprog 3"
+          "0": "Dansk",
+          "1": "Engelsk",
+          "2": "Serbokroatisk"
         },
         "education": {
-          "0": "Uddannelse 1",
-          "1": "Uddannelse 2",
-          "2": "Uddannelse 3"
+          "0": "Politibetjent",
+          "1": "Motiverende samtale.",
+          "2": "Akademiuddannelse i Socialpædagogik, Særlig fokus Neuropædagogik."
         },
         "experience": {
-          "0": "Erfaring 1",
-          "1": "Erfaring 2",
-          "2": "Erfaring 3",
-          "3": "Erfaring 4",
-          "4": "Erfaring 5"
+          "0": "Politiarbejde siden 2017",
+          "1": "Bosted Tinghøjgaard 2013 - 2016",
+          "2": "Pædagogmedhjælper på Specialinstitutionen Skodsborg 2016 - 2019",
+          "3": "Pædagogmedhjælper på Specialinstitutionen Kokkedal 2018 - 2020",
+          "4": "Med 12 års erfaring i arbejdet med mennesker, herunder roller som politibetjent og mentor, har jeg opbygget en stærk evne til at skabe tillid og relationer på tværs af samfundslag..."
         },
         "article": {
-          "headline": "Overskrift Her",
-          "text": "Fyldtekst Her"
+          "headline": "Med 12 års erfaring i arbejdet med mennesker, herunder roller som politibetjent og mentor, har jeg opbygget en stærk evne til at skabe tillid og relationer på tværs af samfundslag.",
+          "text": "Jeg har altid brændt for at arbejde med mennesker, og det afspejles i de jobs, jeg har haft, som alle har haft fokus på menneskelig kontakt og relationer. Jeg sætter stor ære i at skabe relationer på en ordentlig måde og arbejder sammen med borgeren om at finde de bedste løsninger på de udfordringer, der måtte opstå. Min erfaring som politibetjent har givet mig en robusthed, der gør, at jeg har et stort overskud og vilje til at hjælpe. Jeg har også stor forståelse for svære situationer og udviser empati i mit arbejde.\n\n Siden 2012 har jeg blandt andet arbejdet på bosteder for psykisk og fysisk udfordrede borgere, der dagligt har haft brug for hjælp med alt fra daglige gøremål, klargøring til skole/job, til fritidsaktiviteter og motorisk træning. Jeg har i en længere periode været tilknyttet bosteder i Nordsjælland, hvor der dagligt arbejdes med tvangsanbragte unge, som har behov for støtte og vejledning. Derudover har jeg arbejdet med unge helt ned til 2,5 år, hvor børnene skulle guides og hjælpes 24/7.\n\n Jeg har en empatisk tilgang til alle mennesker og ønsker at skabe en relation med borgeren, hvor vi sammen kan nå målet om en bedre tilværelse. Jeg er ærlig og direkte, hvilket skaber et trygt miljø uden usikkerhed.\n\n Som mentor og vejleder er jeg passioneret omkring at støtte borgere i at opnå en stabil og meningsfuld hverdag. Jeg tager altid udgangspunkt i deres individuelle behov og baggrund og arbejder målrettet på at finde løsninger, der passer til den enkeltes situation. Jeg er både empatisk og struktureret i mit arbejde og skaber trygge rammer for samarbejdet. Jeg tror på, at ærlig og åben kommunikation er afgørende for at skabe tillid, og jeg tøver ikke med at tage de svære samtaler, når det er nødvendigt. Jeg møder altid borgerne med respekt, og det er min overbevisning, at det er gennem gensidig respekt, vi opnår de bedste resultater."
         },
-        "citizen-type": "Jeg er særligt god til... ",
-        "resume": "Min spidskompetence er..."
+        "citizen-type": "Jeg er særligt god til at arbejde med unge borgere, som har haft eller stadig har tilknytning til det kriminelle miljø. Jeg har erfaring med at arbejde med mennesker, der har haft svært ved at finde en vej væk fra kriminalitet, og jeg bruger min baggrund som politibetjent til at forstå deres situation og støtte dem i at finde nye muligheder for sig selv. Min tilgang er præget af ordentlighed og tilpasning til den enkeltes behov, og jeg skaber et trygt og støttende miljø, hvor vi sammen kan arbejde hen imod positive forandringer. Jeg har stor erfaring med at igangsætte målrettede forløb, der matcher borgerens individuelle udfordringer og ressourcer.",
+        "resume": "Min styrke som familiebehandler ligger i min ro, modenhed, tålmodighed og anerkendende tilgang. Min menneskelige indsigt gør mig i stand til at være en god støtte for både borgeren og familien. Med min autenticitet og oprigtige ønske om at hjælpe bygger jeg hurtigt tillid, så borgerne ofte ser mig som en fortrolig person, de kan stole på. Jeg fungerer som en stabiliserende faktor i svære situationer og hjælper med at skabe positiv udvikling."
       }
     }
   ]

@@ -11,6 +11,8 @@ import musaPic from "/public/images/Musa.jpg";
 import esraPic from "/public/images/Esra.jpg";
 import ceciliePic from "/public/images/Cecilie.jpg";
 import madsPic from "/public/images/Mads.jpg";
+import ninaPic from "/public/images/Nina.jpg";
+import daliborPic from "/public/images/Dalibor.jpg";
 import silhouettePic from "/public/images/silhouette.png";
 import MentorCtaCard from "../ui/mentor-cta-card";
 
@@ -24,6 +26,8 @@ interface Employee {
     | "esraPic"
     | "ceciliePic"
     | "madsPic"
+    | "ninaPic"
+    | "daliborPic"
     | "silhouettePic";
   role: string;
   email: string;
@@ -43,6 +47,8 @@ const imageMap = {
   esraPic,
   ceciliePic,
   madsPic,
+  ninaPic,
+  daliborPic,
   silhouettePic,
 };
 
