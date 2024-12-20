@@ -32,7 +32,7 @@ const listItems = [
   {
     title: "Kontorfællesskab i Kødbyen",
     content:
-      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor dekan få en kop kaffe, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
+      "Vi inviterer borgerne til vores kontor i Kødbyen, hvor de kan få en kop kaffe, opleve et inspirerende miljø og møde nye mennesker. Dette giver dem mulighed for at komme ud af deres hjem og opleve noget andet.",
   },
   {
     title: "Walk & Talks",
@@ -65,20 +65,17 @@ const listItemsTwo = [
   {
     title: "Café Exit",
     content:
-      "Et fællesskab for tidligere indsatte, hvor de kan deltage i madklubber og kultureftermiddage, der hjælper dem med at bryde med deres gamle miljø. Café Exit tilbyder også psykologsamtaler for at støtte deres mentale velvære.  ",
-  },
-  {
-    title: "Henvisning til nye samarbejdspartnere",
-    content:
-      "Når det er nødvendigt, henviser vi til relevante samarbejdspartnere som:",
+      "Café Exit er et fællesskab for tidligere indsatte, der tilbyder madklubber, kultureftermiddage og psykologsamtaler. Indsatsen fokuserer på at hjælpe borgere med at skabe et nyt netværk, bryde med gamle miljøer og opbygge en stabil hverdag. Mentorplan etablerer kontakten til Café Exit og deltager gerne i de første møder, indtil borgeren er tryg ved selv at deltage.",
   },
   {
     title: "Retshjælpen",
-    content: "Rådgivning om gæld og andre juridiske sager.",
+    content:
+      "Retshjælpen tilbyder gratis juridisk rådgivning med fokus på spørgsmål som boligforhold, kontrakter og sociale rettigheder. De hjælper med at skabe klarhed og finde løsninger på komplekse juridiske udfordringer. Mentorplan sikrer kontakten til Retshjælpen og støtter borgeren ved at deltage i nødvendige møder.",
   },
   {
     title: "Gadejuristen",
-    content: " Juridisk rådgivning og støtte.",
+    content:
+      "Gadejuristen yder juridisk bistand til socialt udsatte med fokus på gældsrådgivning og boligproblemer. De arbejder fleksibelt og er kendt for deres opsøgende tilgang. Mentorplan opretter kontakten til Gadejuristen og deltager i møderne efter behov, indtil borgeren selv kan varetage kontakten.",
   },
 ];
 

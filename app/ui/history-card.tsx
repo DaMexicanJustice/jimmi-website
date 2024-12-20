@@ -77,8 +77,8 @@ export default function HistoryCard() {
                 </h2>
                 <p className="text-slate-900 dark:text-slate-50">
                   Er du sagsbehandler, samarbejdspartner eller bare nysgerrig?
-                  Så er du mere end velkommen til at kigge forbi til en kop kaHe
-                  og en snak om, hvem vi er, og hvordan vi arbejder.
+                  Så er du mere end velkommen til at kigge forbi til en kop
+                  kaffe og en snak om, hvem vi er, og hvordan vi arbejder.
                 </p>
               </div>
             </div>
