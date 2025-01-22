@@ -172,7 +172,7 @@ export default function EmployeeDetails() {
                     )
                   )}
                 </div>
-                <div className="flex flex-col bg-slate-200 dark:bg-stone-200 py-2 shadow-md">
+                <div className="flex flex-col bg-slate-200 dark:bg-stone-200 py-2 px-2 shadow-md">
                   <p className="uppercase font-conduitboldbold text-xl text-slate-700">
                     Kompetence dækning
                   </p>

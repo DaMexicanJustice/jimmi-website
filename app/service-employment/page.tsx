@@ -199,21 +199,21 @@ export default function ServiceEmployment() {
               className="flex flex-col gap-6
                lg:basis-4/12"
             >
-              <ScrollFadeinList items={listItems.slice(0, 2)} />
+              <ScrollFadeinList useBackground={true} items={listItems.slice(0, 2)} />
             </div>
 
             <div
               className="flex flex-col gap-6 
                lg:basis-4/12"
             >
-              <ScrollFadeinList items={listItems.slice(2, 4)} />
+              <ScrollFadeinList useBackground={true} items={listItems.slice(2, 4)} />
             </div>
 
             <div
               className="flex flex-col gap-6
                lg:basis-4/12"
             >
-              <ScrollFadeinList items={listItems.slice(4, 5)} />
+              <ScrollFadeinList useBackground={true} items={listItems.slice(4, 5)} />
             </div>
           </div>
 
