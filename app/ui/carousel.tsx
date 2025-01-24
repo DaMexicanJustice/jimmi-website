@@ -74,7 +74,7 @@ const Carousel: React.FC<PropType> = (props) => {
                       height={600}
                       alt="slide"
                       src={images[index].original}
-                      className="size-full object-cover shadow-lg"
+                      className="size-full object-cover"
                     ></Image>
                   }
                 </div>

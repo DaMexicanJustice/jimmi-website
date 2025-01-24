@@ -130,7 +130,7 @@ export default function EmployeeDetails() {
                   width={512}
                   height={512}
                   alt="Medarbejder billed"
-                  className="w-full h-full object-cover shadow-lg grayscale"
+                  className="w-full h-full object-cover grayscale"
                 />
               </div>
 

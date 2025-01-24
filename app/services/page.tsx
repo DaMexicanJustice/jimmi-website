@@ -29,7 +29,7 @@ export default function Services() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="w-full object-cover shadow-lg"
+              className="w-full object-cover"
             />
             <h2
               className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase break-words
@@ -81,7 +81,7 @@ export default function Services() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="w-full object-cover shadow-lg"
+              className="w-full object-cover"
             />
             <h2
               className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase
@@ -134,7 +134,7 @@ export default function Services() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="w-full object-cover shadow-lg"
+              className="w-full object-cover"
             />
             <h2
               className="text-slate-700 font-bold text-lg font-conduit px-5 uppercase
@@ -189,7 +189,7 @@ export default function Services() {
               width={430}
               height={370}
               alt="Ydelse 1"
-              className="w-full object-cover shadow-lg"
+              className="w-full object-cover"
             />
             <h2
               className="text-slate-700 font-bold text-lg px-5 font-conduit uppercase
