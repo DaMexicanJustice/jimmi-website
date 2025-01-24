@@ -87,7 +87,7 @@ export default async function Component() {
                       width={512}
                       height={512}
                       alt="Medarbejder billed"
-                      className="w-full h-full object-cover grayscale"
+                      className="w-full h-full object-cover shadow-lg grayscale"
                     />
                   </div>
                   <div className="px-5">

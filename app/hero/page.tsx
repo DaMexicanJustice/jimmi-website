@@ -21,7 +21,7 @@ export default function Hero() {
           <Typewriter></Typewriter>
         </main>
         <div
-          className="top-0 left-0 absolute h-svh w-full object-cover z-30
+          className="top-0 left-0 absolute h-svh w-full object-cover shadow-lg z-30
         bg-black/40"
         ></div>
         <video
@@ -31,7 +31,7 @@ export default function Hero() {
           id="video"
           src="/video/mentorplan.mp4"
           typeof="video/mp4"
-          className="top-0 left-0 absolute h-svh w-full object-cover"
+          className="top-0 left-0 absolute h-svh w-full object-cover shadow-lg"
         ></video>
       </section>
     </>

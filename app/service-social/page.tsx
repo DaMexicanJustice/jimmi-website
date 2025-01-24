@@ -164,7 +164,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="object-cover  w-full"
+                className="object-cover shadow-lg  w-full"
               />
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function ServiceSocial() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="w-full object-cover  w-full"
+                className="w-full object-cover shadow-lg  w-full"
               />
             </div>
           </div>

@@ -4,6 +4,7 @@ import Navbar from "../ui/navbar";
 import networkPic from "/public/images/network.jpg";
 import journalPic from "/public/images/journal.jpg";
 import addictionPic from "/public/images/addiction.jpg"
+import sohoPic from "/public/images/soho_face.jpg"
 import Image from "next/image";
 import { useRef } from "react";
 import { Check } from "lucide-react"
@@ -16,6 +17,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CircularDiagram from "../ui/CircularDiagram";
 import ScrollFadeinList from "../ui/scroll-fadein-list";
 import { ListItem } from "@mui/material";
+import { Accordion } from "../ui/accordion";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -73,7 +75,7 @@ export default function ServiceEmployment() {
         scrub: true,
         pin: ".scroll-target",
         anticipatePin: 1,
-        pinReparent: true,
+        pinReparent: false,
       });
 
       imageContainers.forEach((container) => {
@@ -218,32 +220,47 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="Virksomhedsnetværk"
-                className="object-cover  w-full"
+                className="object-cover shadow-lg  w-full"
                 priority
               />
             </div>
           </div>
 
           <div
-            className="flex flex-col gap-6 items-center 
-           lg:w-8/12 lg:items-start"
+            className="flex flex-col gap-6
+          lg:flex-row  lg:justify-between lg:items-center"
           >
-            <h2
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
-                  xl:text-4xl"
+            <div
+              className="flex flex-col gap-6 items-center 
+           lg:w-8/12 lg:items-start"
             >
-              VORES BASE I KØDBYEN – RAMMER DER INSPIRERER OG UDVIKLER
-            </h2>
-            <p className="text-slate-900 dark:text-slate-50">
-              Mentorplans kontor i SOHO, et moderne kontorfællesskab i hjertet af Kødbyen, er mere end blot et sted for
-              møder – det er en vigtig del af vores tilgang til at støtte borgernes udvikling. Her bliver rammerne et aktivt
-              værktøj til at bygge bro mellem borgernes nuværende situation og deres fremtidige mål.
-            </p>
-            <ScrollFadeinList useBackground={false} items={listItems} textAlign={"text-left"} />
-            <p className="text-slate-900 dark:text-slate-50">
-              Hos Mentorplan ser vi vores kontor som en vigtig del af indsatsen for at støtte borgerne – ikke bare som et
-              sted at mødes, men som en aktiv del af deres udvikling.
-            </p>
+              <h2
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
+                  xl:text-4xl"
+              >
+                VORES BASE I KØDBYEN – RAMMER DER INSPIRERER OG UDVIKLER
+              </h2>
+              <p className="text-slate-900 dark:text-slate-50">
+                Mentorplans kontor i SOHO, et moderne kontorfællesskab i hjertet af Kødbyen, er mere end blot et sted for
+                møder – det er en vigtig del af vores tilgang til at støtte borgernes udvikling. Her bliver rammerne et aktivt
+                værktøj til at bygge bro mellem borgernes nuværende situation og deres fremtidige mål.
+              </p>
+              <ScrollFadeinList useBackground={false} items={listItems} textAlign={"text-left"} />
+              <p className="text-slate-900 dark:text-slate-50">
+                Hos Mentorplan ser vi vores kontor som en vigtig del af indsatsen for at støtte borgerne – ikke bare som et
+                sted at mødes, men som en aktiv del af deres udvikling.
+              </p>
+            </div>
+            <div className="lg:basis-4/12 image-container">
+              <Image
+                src={sohoPic}
+                width={430}
+                height={370}
+                alt="Virksomhedsnetværk"
+                className="object-cover shadow-lg  w-full"
+                priority
+              />
+            </div>
           </div>
 
           <div
@@ -265,16 +282,7 @@ export default function ServiceEmployment() {
               </p>
 
             </div>
-            <div className="lg:basis-4/12 image-container">
-              <Image
-                src={networkPic}
-                width={430}
-                height={370}
-                alt="Virksomhedsnetværk"
-                className="object-cover  w-full"
-                priority
-              />
-            </div>
+
           </div>
 
           <div
@@ -306,216 +314,7 @@ export default function ServiceEmployment() {
                 className="flex flex-col gap-6 first items-center
                  lg:items-start"
               >
-                <h2
-                  className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
-                  lg:text-4xl"
-                >
-                  Hurtigt i job
-                </h2>
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Målgruppe
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Borgere med få udfordringer, der er motiverede, mødestabile og klar til hurtigt at komme i arbejde.
-                </p>
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Hvad vi gør
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>CV og jobansøgning: Professionelt CV og målrettede ansøgninger.</li>
-                  <li>Afdækning af interesser: Borgerens interesser og ønskede jobs afdækkes.</li>
-                  <li>Virksomhedsnetværk: Brug af vores netværk eller opsøgning af nye virksomheder. Pletter på straffeattesten er ikke en barriere, så længe der er åben dialog.</li>
-                </ul>
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Fokus
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Ikke på relationer eller parallelindsatser, men udelukkende på en hurtig overgang til arbejdsmarkedet. Borgeren mærker progression og handling fra start.
-                </p>
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Resultat
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Borgeren kommer til én eller flere jobsamtaler inden for maksimalt fire uger.
-                </p>
-                <h2 className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
-                  lg:text-4xl">
-                  MÅLRETTET STØTTE TIL BORGERE LÆNGERE VÆK FRA ARBEJDSMARKEDET
-                </h2>
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Målgruppe
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Kriminalitetsbaggrund: Borgere med en baggrund i kriminalitet eller banderelationer, der har siddet i
-                    fængsel i kortere eller længere perioder.</li>
-                  <li>Udreagerende adfærd: Har svært ved at omgås andre, kort lunte og vanskeligheder med at forstå
-                    sociale normer.</li>
-                  <li>Misbrugsproblemer: Borgere med et aktivt misbrug af stoffer eller alkohol, som endnu ikke er
-                    behandlet.</li>
-                  <li>Psykiske udfordringer: Psykiske vanskeligheder, der gør det svært at fungere på arbejdsmarkedet eller
-                    i sociale sammenhænge.</li>
-                  <li>Social isolation: Har været isoleret, mangler et netværk og har svært ved at komme ud blandt
-                    mennesker.</li>
-                </ul>
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Hvad vi gør
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Afklaring af udfordringer: Vi afdækker de barrierer, der står i vejen for borgerens udvikling, som
-                    misbrug, psykiske problemer eller sociale udfordringer.</li>
-                  <li>Parallelle indsatser: Vi hjælper med at etablere parallelle indsatser som misbrugsbehandling,
-                    psykologhjælp eller gældsrådgivning, eller samarbejder med nuværende parallelle indsatser.</li>
-                  <li>Socialisering og mødestabilitet: Vi træner borgerne i at møde op til aftaler, bryde isolation og opbygge
-                    sociale færdigheder gennem praktiske øvelser og struktureret støtte.</li>
-                  <li>Psykisk og fysisk træning: Vi tilbyder aktiviteter som walk-and-talks, saunagus og fysisk træning, der
-                    bidrager til borgerens mentale og fysiske velvære.</li>
-                </ul>
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Fokus
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Vi arbejder med borgernes specifikke udfordringer gennem parallelle indsatser og socialisering. Vi træner
-                  deres evne til at være mødestabile og opbygger sociale færdigheder, mens vi gradvist forbereder dem til
-                  arbejdsmarkedet eller uddannelse.
-                </p>
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Resultat
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Borgerne kommer tættere på arbejdsmarkedet i et tempo, de kan følge. Hele processen sker i tæt
-                  samarbejde med sagsbehandlerne for at sikre, at borgeren udvikler sig uden at blive presset.
-                </p>
-                <h2 className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
-                  lg:text-4xl">
-                  MÅLRETTET STØTTE TIL BORGERE LÆNGERE VÆK FRA ARBEJDSMARKEDET
-                </h2>
-
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Målgruppe
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Kriminalitetsbaggrund: Borgere med en baggrund i kriminalitet eller banderelationer, der har siddet i
-                    fængsel i kortere eller længere perioder.</li>
-                  <li>Udreagerende adfærd: Har svært ved at omgås andre, kort lunte og vanskeligheder med at forstå
-                    sociale normer.</li>
-                  <li>Misbrugsproblemer: Borgere med et aktivt misbrug af stoffer eller alkohol, som endnu ikke er
-                    behandlet.</li>
-                  <li>Psykiske udfordringer: Psykiske vanskeligheder, der gør det svært at fungere på arbejdsmarkedet eller
-                    i sociale sammenhænge.</li>
-                  <li>Social isolation: Har været isoleret, mangler et netværk og har svært ved at komme ud blandt
-                    mennesker.</li>
-                </ul>
-
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Hvad vi gør
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Afklaring af udfordringer: Vi afdækker de barrierer, der står i vejen for borgerens udvikling, som
-                    misbrug, psykiske problemer eller sociale udfordringer.</li>
-                  <li>Parallelle indsatser: Vi hjælper med at etablere parallelle indsatser som misbrugsbehandling,
-                    psykologhjælp eller gældsrådgivning, eller samarbejder med nuværende parallelle indsatser.</li>
-                  <li>Socialisering og mødestabilitet: Vi træner borgerne i at møde op til aftaler, bryde isolation og opbygge
-                    sociale færdigheder gennem praktiske øvelser og struktureret støtte.</li>
-                  <li>Psykisk og fysisk træning: Vi tilbyder aktiviteter som walk-and-talks, saunagus og fysisk træning, der
-                    bidrager til borgerens mentale og fysiske velvære.</li>
-                </ul>
-
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Fokus
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Vi arbejder med borgernes specifikke udfordringer gennem parallelle indsatser og socialisering. Vi træner
-                  deres evne til at være mødestabile og opbygger sociale færdigheder, mens vi gradvist forbereder dem til
-                  arbejdsmarkedet eller uddannelse.
-                </p>
-
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Resultat
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Borgerne kommer tættere på arbejdsmarkedet i et tempo, de kan følge. Hele processen sker i tæt
-                  samarbejde med sagsbehandlerne for at sikre, at borgeren udvikler sig uden at blive presset.
-                </p>
-
-                <h2 className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
-                  lg:text-4xl">
-                  ARBEJDSEVNEAFKLARINGSFORLØB
-                </h2>
-
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Målgruppe
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Borgere på sygedagpenge, i jobafklaringsforløb eller ressourceforløb, der har behov for en afklaring af
-                    deres arbejdsevne med henblik på fleksjob, førtidspension eller tilbagevenden til fuldtidsarbejde.</li>
-                </ul>
-
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Hvad vi gør
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Vi vurderer borgernes ressourcer, udfordringer og ønsker og afdækker, hvor de står i forhold til
-                    arbejdsmarkedet. Forløbet er en kombination af “Hurtigt i job” og “Målrettet støtte,” afhængigt af borgerens
-                    situation:</li>
-                  <ul className="list-disc px-12 text-slate-900 dark:text-slate-50">
-                    <li>Få udfordringer: Borgeren kan hurtigt komme ud på en arbejdsplads i praktik eller lønnede timer,
-                      afhængigt af hvor de er i deres proces. Praktikkens varighed afstemmes løbende med sagsbehandler.</li>
-                    <li>Flere udfordringer: Vi arbejder med de barrierer, der fylder, og støtter borgerne i at håndtere dem.
-                      Det kan indebære støtte i eksisterende parallelindsatser eller opstart af nye.</li>
-                  </ul>
-                  <li>Vi tilbyder aktiviteter som fysisk træning og saunagus, der styrker borgernes fysiske og psykiske velvære.
-                    Samtidig fungerer møder i Kødbyen som eksponeringsforløb, hvor borgerne kan træne sociale færdigheder,
-                    opbygge selvtillid og tro på egne evner. Dette er særligt relevant for borgere, der oplever angst, har svært
-                    ved at forlade hjemmet, eller har andre udfordringer, som kræver en gradvis tilgang til arbejdsmarkedet.</li>
-                </ul>
-
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Fokus
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Hvordan borgeren har det, afgør tempoet i forløbet og tidspunktet for, hvornår de kan komme ud på en
-                  arbejdsplads. Forløbet tilpasses borgerens behov og ressourcer med fokus på at støtte dem på vej mod
-                  arbejdsmarkedet.
-                </p>
-
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Resultat
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Vi udarbejder en arbejdsevnebeskrivelse, som er en afsluttende rapport, der kan bruges på
-                  rehabiliteringsmødet i forbindelse med en afklaring.
-                </p>
-                <h2 className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50 lg:text-4xl">
-                  FASTHOLDELSESFORLØB
-                </h2>
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Målgruppe
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Borgere, der er kommet i job eller uddannelse, men som mangler et netværk eller ressourcepersoner at trække på. Forløbet er til dem, der har brug for støtte i en overgangsperiode for at minimere risikoen for tilbagefald.</li>
-                </ul>
-                <h3 className="font-bold uppercase text-slate-900 dark:text-slate-50">
-                  Hvad vi gør
-                </h3>
-                <ul className="list-disc px-6 text-slate-900 dark:text-slate-50">
-                  <li>Mentoren fortsætter som støtte i en nedjusteret indsats for at sikre, at borgeren har en kendt og tillidsfuld kontaktperson ved behov. Indsatsen inkluderer:</li>
-                  <li>Telefonisk kontakt og rådgivning efter behov.</li>
-                  <li>Fysiske møder i konkrete situationer.</li>
-                  <li>Tilgængelighed for sparring ved opståede udfordringer.</li>
-                  <li>Mulighed for at opjustere indsatsen, hvis der er behov.</li>
-                </ul>
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Fokus
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  At sikre, at borgeren fastholdes i job eller uddannelse gennem en tryg overgang, hvor tilbagefald undgås.
-                </p>
-                <h3 className="font-bold text-slate-900 dark:text-slate-50">
-                  Resultat
-                </h3>
-                <p className="text-slate-900 dark:text-slate-50">
-                  Borgeren opnår en stabil og selvstændig hverdag uden behov for yderligere
-                </p>
+                <Accordion />
               </div>
             </div>
           </div>
@@ -537,7 +336,7 @@ export default function ServiceEmployment() {
             </p>
             <div>
               <h3 className="uppercase text-slate-900 dark:text-slate-100 text-xl font-conduitbold
-                  xl:text-3xl">
+                  xl:text-2xl">
                 Inkluderet i prisen
               </h3>
               <ul className="space-y-2 mt-4">
@@ -612,7 +411,7 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="object-cover w-full lg:basis-4/12"
+                className="object-cover shadow-lg w-full lg:basis-4/12"
                 priority
               />
             </div>

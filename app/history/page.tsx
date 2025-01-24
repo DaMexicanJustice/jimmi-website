@@ -137,7 +137,7 @@ export default function History() {
               width={1920}
               height={1080}
               priority
-              className="object-cover w-full"
+              className="object-cover shadow-lg w-full"
             />
           </div>
         </main>
