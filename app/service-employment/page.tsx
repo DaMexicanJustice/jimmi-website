@@ -231,7 +231,7 @@ export default function ServiceEmployment() {
           lg:flex-row  lg:justify-between lg:items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center 
+              className="flex flex-col gap-6 items-center
            lg:w-8/12 lg:items-start"
             >
               <h2

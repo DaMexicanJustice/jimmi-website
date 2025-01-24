@@ -168,14 +168,14 @@ export default function CorporateCollaboration() {
                 <CtaButton type="button" text="Kontakt Os" href="/contact" />
               </div>
             </div>
-            <div className="lg:w-4/12 mt-6 lg:mt-0 self-start shadow-lg">
+            <div className="lg:w-4/12 mt-6 lg:mt-0 self-start">
               <Image
                 ref={imageRef}
                 alt="virksomhedssamarbejde"
                 src="/images/virksomheder.jpg"
                 width={400}
                 height={500}
-                className="w-full h-auto shadow-xl"
+                className="w-full h-auto shadow-lg"
               />
             </div>
           </div>
