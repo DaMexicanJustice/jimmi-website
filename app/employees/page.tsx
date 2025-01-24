@@ -19,16 +19,16 @@ import MentorCtaCard from "../ui/mentor-cta-card";
 interface Employee {
   name: string;
   img:
-    | "jimmiPic"
-    | "maltePic"
-    | "marckPic"
-    | "musaPic"
-    | "esraPic"
-    | "ceciliePic"
-    | "madsPic"
-    | "ninaPic"
-    | "daliborPic"
-    | "silhouettePic";
+  | "jimmiPic"
+  | "maltePic"
+  | "marckPic"
+  | "musaPic"
+  | "esraPic"
+  | "ceciliePic"
+  | "madsPic"
+  | "ninaPic"
+  | "daliborPic"
+  | "silhouettePic";
   role: string;
   email: string;
   phone: string;
@@ -102,7 +102,7 @@ export default async function Component() {
                     <div>
                       <div className="flex flex-row gap-1 items-center">
                         <EnvelopeIcon className="text-slate-950 w-5" />
-                        <p className="font-conduit text-sm text-slate-800 xl:text-xs">
+                        <p className="font-conduit text-base text-slate-800 xl:text-sm">
                           {e.email}
                         </p>
                       </div>
@@ -110,11 +110,11 @@ export default async function Component() {
                         <PhoneIcon className="text-slate-950 w-5" />
                         <a
                           href={`tel:${e.phone}`}
-                          className="font-conduit text-slate-800 text-sm xl:text-xs"
+                          className="font-conduit text-slate-800 text-base xl:text-sm"
                         >
                           {e.phone
                             .substring(3)
-                            .replace(/(\d{4})(\d{4})/, "$1 $2")}
+                            .replace(/(\d{4})(\d{4})/, "$1-$2")}
                         </a>
                       </div>
                     </div>

@@ -226,7 +226,7 @@ export default function ServiceEmployment() {
 
           <div
             className="flex flex-col gap-6 items-center 
-           lg:w-12/12 lg:items-start"
+           lg:w-8/12 lg:items-start"
           >
             <h2
               className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
@@ -239,7 +239,7 @@ export default function ServiceEmployment() {
               møder – det er en vigtig del af vores tilgang til at støtte borgernes udvikling. Her bliver rammerne et aktivt
               værktøj til at bygge bro mellem borgernes nuværende situation og deres fremtidige mål.
             </p>
-            <ScrollFadeinList useBackground={true} items={listItems} />
+            <ScrollFadeinList useBackground={false} items={listItems} textAlign={"text-left"} />
             <p className="text-slate-900 dark:text-slate-50">
               Hos Mentorplan ser vi vores kontor som en vigtig del af indsatsen for at støtte borgerne – ikke bare som et
               sted at mødes, men som en aktiv del af deres udvikling.
@@ -268,42 +268,6 @@ export default function ServiceEmployment() {
             <div className="lg:basis-4/12 image-container">
               <Image
                 src={networkPic}
-                width={430}
-                height={370}
-                alt="Virksomhedsnetværk"
-                className="object-cover  w-full"
-                priority
-              />
-            </div>
-          </div>
-
-          <div
-            className="flex flex-col gap-6 space-between items-center 
-            lg:flex-row"
-          >
-            <div
-              className="flex flex-col gap-6 items-center
-              lg:items-start  lg:basis-8/12"
-            >
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
-              >
-                Misbrugsproblematikker
-              </h2>
-              <p className="text-slate-900 dark:text-slate-50">
-                Mentorplan støtter borgere med misbrugsproblematikker og motiverer dem til at passe deres behandling. Vi opfordrer borgerne til at give samtykke til, at Mentorplan må samarbejde med det relevante misbrugscenter, da et koordineret samarbejde mellem behandling og beskæftigelse giver de bedste resultater.
-                <br></br>
-                <br></br>
-                Vi deltager gerne i statusmøder med borgeren, sagsbehandleren og misbrugscentret for at sikre, at indsatsen er tilpasset borgerens behov. Hvis borgeren ikke er tilknyttet en misbrugsbehandling, hjælper vi med at etablere kontakt til det lokale misbrugscenter og støtter op om opstarten.
-                <br></br>
-                <br></br>
-                Vores erfaring viser, at stabil misbrugsbehandling er afgørende for at opnå varige resultater i beskæftigelse. Hos Mentorplan tror vi på, at samarbejde skaber de bedste forudsætninger for en positiv udvikling.
-              </p>
-            </div>
-            <div className="lg:basis-4/12 image-container">
-              <Image
-                src={addictionPic}
                 width={430}
                 height={370}
                 alt="Virksomhedsnetværk"
@@ -648,7 +612,7 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="journal"
-                className="object-cover  w-full lg:basis-4/12"
+                className="object-cover w-full lg:basis-4/12"
                 priority
               />
             </div>

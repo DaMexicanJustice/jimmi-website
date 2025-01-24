@@ -54,10 +54,10 @@ const sections = [
   },
   {
     color: "#602265",
-    label: "Manglende\nBeskrivelse\nJimmi",
+    label: "Misbrugs\nProblematikker",
     startAngle: 308.4,
     endAngle: 360,
-    content: "Kan du så komme igang med at udfylde denne.",
+    content: "Mentorplan støtter borgere med misbrugsproblemer og motiverer dem til at følge deres behandling. Vi opfordrer til samtykke til samarbejde med misbrugscentret, da koordineret behandling og beskæftigelse giver de bedste resultater. Vi deltager i statusmøder for at sikre, at indsatsen tilpasses borgerens behov. Hvis borgeren ikke er i behandling, hjælper vi med at etablere kontakt til misbrugscentret og støtter opstarten. Stabil misbrugsbehandling er afgørende for varige beskæftigelsesresultater. Hos Mentorplan tror vi på, at samarbejde fremmer positiv udvikling.",
   },
 ];
 
