@@ -15,6 +15,7 @@ import ninaPic from "/public/images/Nina.jpg";
 import daliborPic from "/public/images/Dalibor.jpg";
 import silhouettePic from "/public/images/silhouette.png";
 import MentorCtaCard from "../ui/mentor-cta-card";
+import DownloadButton from "../ui/DownloadButton";
 
 interface Employee {
   name: string;
@@ -74,6 +75,9 @@ export default async function Component() {
                 skræddersyet støtte og rådgivning til vores målgrupper. Læs mere
                 under den enkelte konsulent.
               </p>
+            </div>
+            <div className="flex items-center justify-end">
+              <DownloadButton />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 w-full">
               {employees.map((e: Employee, index: number) => (
