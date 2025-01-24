@@ -23,7 +23,7 @@ export default function PresentationCard() {
                         over MD Partners konsulenter og kompetencer.
                     </p>
                     <div className="flex flex-row gap-6 justify-center items-center">
-                        <Link href="/a4_page_1.pdf" passHref>
+                        <Link href="/pdf/a4_page_1.pdf" passHref>
                             <Image
                                 src={pageOne || "/placeholder.svg"}
                                 width={512}
@@ -32,7 +32,7 @@ export default function PresentationCard() {
                                 className="w-full h-full object-cover cursor-pointer"
                             />
                         </Link>
-                        <Link href="/a4_page_2.pdf" passHref>
+                        <Link href="/pdf/a4_page_2.pdf" passHref>
                             <Image
                                 src={pageTwo || "/placeholder.svg"}
                                 width={512}
@@ -48,3 +48,4 @@ export default function PresentationCard() {
         </>
     )
 }
+
