@@ -194,7 +194,11 @@ export default function ServiceSocial() {
                 mulighed for at deltage i sociale aktiviteter, der kan give dem
                 en større livskvalitet.
               </p>
-              <ScrollFadeinList useBackground={false} items={bulletItems} textAlign={"text-left"} />
+              <ScrollFadeinList
+                useBackground={false}
+                items={bulletItems}
+                textAlign={"text-left"}
+              />
             </div>
             <div className="lg:basis-4/12 image-container overflow-hidden">
               <Image
@@ -237,7 +241,11 @@ export default function ServiceSocial() {
               {listItems.map((item, index) => (
                 <div key={index}>
                   <div className="flex h-full">
-                    <ScrollFadeinList useBackground={false} items={[item]} textAlign={"text-left"} />
+                    <ScrollFadeinList
+                      useBackground={false}
+                      items={[item]}
+                      textAlign={"text-left"}
+                    />
                   </div>
                 </div>
               ))}
@@ -266,7 +274,11 @@ export default function ServiceSocial() {
               {listItemsTwo.map((item, index) => (
                 <div key={index}>
                   <div className="flex h-full">
-                    <ScrollFadeinList useBackground={false} items={[item]} textAlign={"text-left"} />
+                    <ScrollFadeinList
+                      useBackground={false}
+                      items={[item]}
+                      textAlign={"text-left"}
+                    />
                   </div>
                 </div>
               ))}

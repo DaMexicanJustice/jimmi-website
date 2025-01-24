@@ -9,10 +9,13 @@ export default function PresentationCard() {
   return (
     <>
       <Navbar useScrollBehavior={false} />
-      <section className="p-5 mt-12 bg-slate-50 dark:bg-neutral-900 sm:px-32 lg:px-16 lg:mt-16">
+      <section
+        className="p-5 mt-12 bg-slate-50 dark:bg-neutral-900 sm:px-32 lg:px-16 lg:mt-16
+        text-slate-900 dark:text-slate-50"
+      >
         <main className="flex flex-col gap-6 h-full justify-center items-left cursor-default">
           <div>
-            <h1 className="uppercase font-conduitbold text-2xl xl:text-4xl text-black">
+            <h1 className="uppercase font-conduitbold text-2xl xl:text-4xl">
               Konsulent presentation
             </h1>
             <div className="w-24 h-1 bg-yellow-400"></div>

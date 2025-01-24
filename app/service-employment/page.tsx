@@ -3,12 +3,11 @@ import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import networkPic from "/public/images/network.jpg";
 import journalPic from "/public/images/journal.jpg";
-import addictionPic from "/public/images/addiction.jpg"
-import sohoPic from "/public/images/soho_face.jpg"
+import addictionPic from "/public/images/addiction.jpg";
+import sohoPic from "/public/images/soho_face.jpg";
 import Image from "next/image";
 import { useRef } from "react";
-import { Check } from "lucide-react"
-
+import { Check } from "lucide-react";
 
 // GSAP
 import gsap from "gsap";
@@ -46,17 +45,20 @@ const listItems = [
 const listItemsTwo = [
   {
     title: "Samarbejdet starter med forventningsafstemning",
-    content: "Når en borger skal starte i praktik, lønnede timer eller ordinært arbejde, deltager vi altid i første møde mellem borgeren og virksomheden. Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle udfordringer. Åbenhed skaber gensidig forståelse og respekt, hvilket sikrer det bedste forløb."
+    content:
+      "Når en borger skal starte i praktik, lønnede timer eller ordinært arbejde, deltager vi altid i første møde mellem borgeren og virksomheden. Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle udfordringer. Åbenhed skaber gensidig forståelse og respekt, hvilket sikrer det bedste forløb.",
   },
   {
     title: "Løbende opfølgning sikrer succes",
-    content: "Når en borger skal starte i praktik, lønnede timer eller ordinært arbejde, deltager vi altid i første møde mellem borgeren og virksomheden. Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle udfordringer. Åbenhed skaber gensidig forståelse og respekt, hvilket sikrer det bedste forløb."
+    content:
+      "Når en borger skal starte i praktik, lønnede timer eller ordinært arbejde, deltager vi altid i første møde mellem borgeren og virksomheden. Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle udfordringer. Åbenhed skaber gensidig forståelse og respekt, hvilket sikrer det bedste forløb.",
   },
   {
     title: "Netværk og nye muligheder",
-    content: "Når en borger skal starte i praktHvis vi ikke allerede samarbejder med en virksomhed, der matcher borgerens behov, er vi dygtige til at finde nye muligheder. Vores stærke netværk gør, at vi kan finde de rette virksomheder, der tilbyder det bedste match. Vi sikrer os, at både borger og virksomhed får de bedste forudsætninger for et succesfuldt samarbejde."
+    content:
+      "Når en borger skal starte i praktHvis vi ikke allerede samarbejder med en virksomhed, der matcher borgerens behov, er vi dygtige til at finde nye muligheder. Vores stærke netværk gør, at vi kan finde de rette virksomheder, der tilbyder det bedste match. Vi sikrer os, at både borger og virksomhed får de bedste forudsætninger for et succesfuldt samarbejde.",
   },
-]
+];
 
 export default function ServiceEmployment() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -125,22 +127,29 @@ export default function ServiceEmployment() {
               BESKÆFTIGELSES- OG UDDANNELSESINDSATS
             </h1>
             <p className="text-slate-900 dark:text-slate-50">
-              Hos Mentorplan arbejder vi målrettet med at hjælpe borgere tilbage på arbejdsmarkedet eller ind i
-              uddannelse. Vi tror på, at alle fortjener en chance for at bidrage og finde mening i hverdagen – uanset hvilke
-              udfordringer de står overfor. Vi møder borgerne, hvor de er, og sammen finder vi vejen.
+              Hos Mentorplan arbejder vi målrettet med at hjælpe borgere tilbage
+              på arbejdsmarkedet eller ind i uddannelse. Vi tror på, at alle
+              fortjener en chance for at bidrage og finde mening i hverdagen –
+              uanset hvilke udfordringer de står overfor. Vi møder borgerne,
+              hvor de er, og sammen finder vi vejen.
               <br></br> <br></br>
-              Det handler om at skabe holdbare løsninger, der giver mening for den enkelte. Vores forløb tilpasses altid
-              borgerens behov og situation og tager udgangspunkt i en helhedsorienteret tilgang, hvor vi både ser på
-              ressourcer og udfordringer. Med en stærk kombination af erfaring, faglighed og en menneskelig tilgang
+              Det handler om at skabe holdbare løsninger, der giver mening for
+              den enkelte. Vores forløb tilpasses altid borgerens behov og
+              situation og tager udgangspunkt i en helhedsorienteret tilgang,
+              hvor vi både ser på ressourcer og udfordringer. Med en stærk
+              kombination af erfaring, faglighed og en menneskelig tilgang
               skaber vi løsninger, der rykker mennesker.
               <br></br> <br></br>
-              Hos Mentorplan er målet ikke bare at få folk i gang, men at sikre, at de bliver klar til at fastholde deres vej –
-              uanset om det handler om arbejde, uddannelse eller begge dele.
+              Hos Mentorplan er målet ikke bare at få folk i gang, men at sikre,
+              at de bliver klar til at fastholde deres vej – uanset om det
+              handler om arbejde, uddannelse eller begge dele.
               <br></br> <br></br>
-              Nedenfor beskriver vi, hvordan vi arbejder, og hvilke forløb vi tilbyder. Det er vigtigt at understrege, at der
-              ikke findes en færdig opskrift, der passer til alle. Alt kan justeres og tilpasses den enkelte borger og deres
-              behov. De beskrevne forløb giver et indblik i, hvordan vi arbejder, men vi er altid fleksible og dynamiske for
-              at sikre den bedste indsats.
+              Nedenfor beskriver vi, hvordan vi arbejder, og hvilke forløb vi
+              tilbyder. Det er vigtigt at understrege, at der ikke findes en
+              færdig opskrift, der passer til alle. Alt kan justeres og
+              tilpasses den enkelte borger og deres behov. De beskrevne forløb
+              giver et indblik i, hvordan vi arbejder, men vi er altid fleksible
+              og dynamiske for at sikre den bedste indsats.
             </p>
           </div>
 
@@ -159,23 +168,32 @@ export default function ServiceEmployment() {
                 METODE: VIRKELIGHEDEN VIRKER
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan arbejder vi ud fra tanken om, at virkeligheden virker – inspireret af JobFirst-metoden, som
-                har vist gode resultater for udsatte borgere på arbejdsmarkedet. Vi tager udgangspunkt i nogle af
-                principperne fra JobFirst og har tilpasset dem til vores måde at arbejde på, så vi bedst muligt møder de
-                forskellige behov, vores borgere har.
+                Hos Mentorplan arbejder vi ud fra tanken om, at virkeligheden
+                virker – inspireret af JobFirst-metoden, som har vist gode
+                resultater for udsatte borgere på arbejdsmarkedet. Vi tager
+                udgangspunkt i nogle af principperne fra JobFirst og har
+                tilpasset dem til vores måde at arbejde på, så vi bedst muligt
+                møder de forskellige behov, vores borgere har.
                 <br></br> <br></br>
-                For nogle handler det om at træde direkte ud på arbejdsmarkedet, mens andre først skal opbygge de
-                grundlæggende færdigheder, der gør dem klar til at tage næste skridt. Uanset hvor borgeren står, er målet
-                at skabe udvikling gennem konkrete handlinger og træning i praksis.
-                Når arbejdspladsen ikke er første skridt
+                For nogle handler det om at træde direkte ud på arbejdsmarkedet,
+                mens andre først skal opbygge de grundlæggende færdigheder, der
+                gør dem klar til at tage næste skridt. Uanset hvor borgeren
+                står, er målet at skabe udvikling gennem konkrete handlinger og
+                træning i praksis. Når arbejdspladsen ikke er første skridt
                 <br></br> <br></br>
-                Ikke alle borgere er klar til at træde direkte ind i en virksomhedspraktik eller et job. For dem tilbyder vi
-                træning og struktur på vores kontor i Kødbyen, kombineret med andre sociale og udviklende indsatser. Her
-                arbejder vi med at styrke borgerens mødestabilitet, sociale færdigheder og evne til at overholde aftaler.
+                Ikke alle borgere er klar til at træde direkte ind i en
+                virksomhedspraktik eller et job. For dem tilbyder vi træning og
+                struktur på vores kontor i Kødbyen, kombineret med andre sociale
+                og udviklende indsatser. Her arbejder vi med at styrke borgerens
+                mødestabilitet, sociale færdigheder og evne til at overholde
+                aftaler.
                 <br></br> <br></br>
-                Derudover kan vi iværksætte andre aktiviteter og indsatser, der understøtter borgerens vej mod
-                arbejdsmarkedet, f.eks. motiverende samtaler, fysiske aktiviteter eller specifikke forløb, der udvikler både
-                deres personlige og faglige kompetencer. Disse tilbud tilpasses altid borgerens behov og situation.
+                Derudover kan vi iværksætte andre aktiviteter og indsatser, der
+                understøtter borgerens vej mod arbejdsmarkedet, f.eks.
+                motiverende samtaler, fysiske aktiviteter eller specifikke
+                forløb, der udvikler både deres personlige og faglige
+                kompetencer. Disse tilbud tilpasses altid borgerens behov og
+                situation.
               </p>
             </div>
             <div className="lg:basis-4/12 image-container">
@@ -200,18 +218,24 @@ export default function ServiceEmployment() {
                 RELATIONENS BETYDNING
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan er relationen mellem mentor og borger fundamentet for alt, hvad vi gør. Vi ved, at
-                forandringer kun sker gennem tillid, og derfor prioriterer vi at opbygge en stærk relation fra første møde.
+                Hos Mentorplan er relationen mellem mentor og borger fundamentet
+                for alt, hvad vi gør. Vi ved, at forandringer kun sker gennem
+                tillid, og derfor prioriterer vi at opbygge en stærk relation
+                fra første møde.
                 <br></br> <br></br>
-                Relationen skabes gennem respekt, åbenhed og ordentlighed. Vi møder borgerne, hvor de er og lytter aktivt
-                til deres udfordringer og behov. Det handler om at skabe et trygt samarbejde, hvor borgeren føler sig set,
-                hørt og støttet. Vi er ærlige og tydelige i vores kommunikation og gør os umage for at skabe en atmosfære,
-                hvor borgeren tør åbne op.
+                Relationen skabes gennem respekt, åbenhed og ordentlighed. Vi
+                møder borgerne, hvor de er og lytter aktivt til deres
+                udfordringer og behov. Det handler om at skabe et trygt
+                samarbejde, hvor borgeren føler sig set, hørt og støttet. Vi er
+                ærlige og tydelige i vores kommunikation og gør os umage for at
+                skabe en atmosfære, hvor borgeren tør åbne op.
                 <br></br> <br></br>
-                En stærk relation er ikke noget, der opstår automatisk – det kræver tid, indsats og menneskelig nærvær. Vi
-                arbejder målrettet på at skabe et bånd, der gør det muligt at tackle selv de sværeste udfordringer sammen.
-                Når relationen er på plads, bliver den drivkraften bag et ærligt og tillidsfuldt samarbejde, der fører til varige
-                og meningsfulde forandringer.
+                En stærk relation er ikke noget, der opstår automatisk – det
+                kræver tid, indsats og menneskelig nærvær. Vi arbejder målrettet
+                på at skabe et bånd, der gør det muligt at tackle selv de
+                sværeste udfordringer sammen. Når relationen er på plads, bliver
+                den drivkraften bag et ærligt og tillidsfuldt samarbejde, der
+                fører til varige og meningsfulde forandringer.
               </p>
             </div>
             <div className="lg:basis-4/12 image-container">
@@ -241,14 +265,21 @@ export default function ServiceEmployment() {
                 VORES BASE I KØDBYEN – RAMMER DER INSPIRERER OG UDVIKLER
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Mentorplans kontor i SOHO, et moderne kontorfællesskab i hjertet af Kødbyen, er mere end blot et sted for
-                møder – det er en vigtig del af vores tilgang til at støtte borgernes udvikling. Her bliver rammerne et aktivt
-                værktøj til at bygge bro mellem borgernes nuværende situation og deres fremtidige mål.
+                Mentorplans kontor i SOHO, et moderne kontorfællesskab i hjertet
+                af Kødbyen, er mere end blot et sted for møder – det er en
+                vigtig del af vores tilgang til at støtte borgernes udvikling.
+                Her bliver rammerne et aktivt værktøj til at bygge bro mellem
+                borgernes nuværende situation og deres fremtidige mål.
               </p>
-              <ScrollFadeinList useBackground={false} items={listItems} textAlign={"text-left"} />
+              <ScrollFadeinList
+                useBackground={false}
+                items={listItems}
+                textAlign={"text-left"}
+              />
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan ser vi vores kontor som en vigtig del af indsatsen for at støtte borgerne – ikke bare som et
-                sted at mødes, men som en aktiv del af deres udvikling.
+                Hos Mentorplan ser vi vores kontor som en vigtig del af
+                indsatsen for at støtte borgerne – ikke bare som et sted at
+                mødes, men som en aktiv del af deres udvikling.
               </p>
             </div>
             <div className="lg:basis-4/12 image-container">
@@ -278,11 +309,15 @@ export default function ServiceEmployment() {
                 DET RIGTIGE VIRKSOMHEDSMATCH GØR FORSKELLEN
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan er det afgørende, at vores borgere bliver matchet med virksomheder, hvor de kan trives og udvikle sig. Vi samarbejder tæt med erfarne virksomheder, der har tid og overskud til at tage godt imod vores borgere. Et godt arbejdsmiljø og stærke kollegiale relationer er ofte vigtigere end selve arbejdsopgaven – det handler om, at borgeren føler sig velkommen og får en god start.
+                Hos Mentorplan er det afgørende, at vores borgere bliver matchet
+                med virksomheder, hvor de kan trives og udvikle sig. Vi
+                samarbejder tæt med erfarne virksomheder, der har tid og
+                overskud til at tage godt imod vores borgere. Et godt
+                arbejdsmiljø og stærke kollegiale relationer er ofte vigtigere
+                end selve arbejdsopgaven – det handler om, at borgeren føler sig
+                velkommen og får en god start.
               </p>
-
             </div>
-
           </div>
 
           <div
@@ -330,32 +365,40 @@ export default function ServiceEmployment() {
               PAKKER OG PRISER
             </h2>
             <p className="text-slate-900 dark:text-slate-100">
-              Vi tilbyder fleksible forløb, hvor prisen afhænger af antallet af møder med borgeren og typen af forløb.
-              Mødefrekvensen kan variere fra én gang om ugen til flere gange om ugen, alt efter behov. I intensive forløb
-              kan der være flere konsulenter tilknyttet samme borger for at sikre optimal støtte.
+              Vi tilbyder fleksible forløb, hvor prisen afhænger af antallet af
+              møder med borgeren og typen af forløb. Mødefrekvensen kan variere
+              fra én gang om ugen til flere gange om ugen, alt efter behov. I
+              intensive forløb kan der være flere konsulenter tilknyttet samme
+              borger for at sikre optimal støtte.
             </p>
             <div>
-              <h3 className="uppercase text-slate-900 dark:text-slate-100 text-xl font-conduitbold
-                  xl:text-2xl">
+              <h3
+                className="uppercase text-slate-900 dark:text-slate-100 text-xl font-conduitbold
+                  xl:text-2xl"
+              >
                 Inkluderet i prisen
               </h3>
-              <ul className="space-y-2 mt-4">
-                <ListItem>Transport og udgifter til aktiviteter som træning og saunagus.</ListItem>
+              <ul className="space-y-2 mt-4 text-slate-900 dark:text-slate-50">
+                <ListItem>
+                  Transport og udgifter til aktiviteter som træning og saunagus.
+                </ListItem>
                 <ListItem>Forplejning til møder med borger.</ListItem>
                 <ListItem>
-                  Statusmøder i Kødbyen eller i kommunen – alt efter hvad der passer bedst for sagsbehandleren.
+                  Statusmøder i Kødbyen eller i kommunen – alt efter hvad der
+                  passer bedst for sagsbehandleren.
                 </ListItem>
                 <ListItem>
-                  Tilgængelighed 24/7 for både borgere, sagsbehandlere og samarbejdspartnere – vi er altid klar til at støtte,
-                  rådgive og hjælpe, uanset tidspunktet.
+                  Tilgængelighed 24/7 for både borgere, sagsbehandlere og
+                  samarbejdspartnere – vi er altid klar til at støtte, rådgive
+                  og hjælpe, uanset tidspunktet.
                 </ListItem>
                 <ListItem>
-                  Fleksibilitet i mødetidspunkter – vi bestræber os på at holde møder i hverdagen mellem kl. 8 og 16, men kan
-                  efter behov afholde møder om aftenen og i weekenden.
+                  Fleksibilitet i mødetidspunkter – vi bestræber os på at holde
+                  møder i hverdagen mellem kl. 8 og 16, men kan efter behov
+                  afholde møder om aftenen og i weekenden.
                 </ListItem>
               </ul>
             </div>
-
           </div>
 
           <div
@@ -427,6 +470,6 @@ export default function ServiceEmployment() {
         <Check className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
         <span>{children}</span>
       </li>
-    )
+    );
   }
 }
