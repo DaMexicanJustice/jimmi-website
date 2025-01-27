@@ -16,13 +16,13 @@ export default function PresentationCard() {
         <main className="flex flex-col gap-6 h-full justify-center items-left cursor-default">
           <div>
             <h1 className="uppercase font-conduitbold text-2xl xl:text-4xl">
-              Konsulent presentation
+              Konsulentpresentation
             </h1>
             <div className="w-24 h-1 bg-yellow-400"></div>
           </div>
           <p>
             Du kan downloade teampræsentationen som PDF eller gemme linket til
-            denne side, så du altid har en oversigt over MD Partners konsulenter
+            denne side, så du altid har en oversigt over Mentorplan konsulenter
             og kompetencer.
           </p>
           <div className="flex flex-row gap-6 justify-center items-center">
