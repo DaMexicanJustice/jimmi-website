@@ -22,7 +22,7 @@ export default function PresentationCard() {
           </div>
           <p>
             Du kan downloade teampræsentationen som PDF eller gemme linket til
-            denne side, så du altid har en oversigt over Mentorplan konsulenter
+            denne side, så du altid har en oversigt over Mentorplans konsulenter
             og kompetencer.
           </p>
           <div className="flex flex-row gap-6 justify-center items-center">
