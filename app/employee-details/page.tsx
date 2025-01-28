@@ -152,10 +152,12 @@ export default function EmployeeDetails() {
                   <div className="flex flex-row gap-2 justify-center items-center">
                     <PhoneIcon className="text-slate-900 w-5"></PhoneIcon>
                     <a
-                      href="tel:4512345678"
+                      href={data ? data.phone : "12345678"}
                       className="font-conduit text-slate-800"
                     >
-                      {data ? data.phone : "no-data"}
+                      {data.phone
+                        .substring(3)
+                        .replace(/(\d{4})(\d{4})/, "$1-$2")}
                     </a>
                   </div>
                 </div>
