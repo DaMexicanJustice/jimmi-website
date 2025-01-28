@@ -1,14 +1,13 @@
-
 "use client"; // This is a client component"use client";
-import type React from "react"
-import { useRouter } from "next/navigation"
+import type React from "react";
+import { useRouter } from "next/navigation";
 
 const DownloadButton: React.FC = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleClick = () => {
-    router.push("/presentation-card")
-  }
+    router.push("/presentation-card");
+  };
 
   return (
     <button
@@ -34,10 +33,9 @@ const DownloadButton: React.FC = () => {
         shadow-md
       "
     >
-      Download presentationskort
+      Download præsentationskort
     </button>
-  )
-}
+  );
+};
 
-export default DownloadButton
-
+export default DownloadButton;
