@@ -20,16 +20,16 @@ import DownloadButton from "../ui/DownloadButton";
 interface Employee {
   name: string;
   img:
-  | "jimmiPic"
-  | "maltePic"
-  | "marckPic"
-  | "musaPic"
-  | "esraPic"
-  | "ceciliePic"
-  | "madsPic"
-  | "ninaPic"
-  | "daliborPic"
-  | "silhouettePic";
+    | "jimmiPic"
+    | "maltePic"
+    | "marckPic"
+    | "musaPic"
+    | "esraPic"
+    | "ceciliePic"
+    | "madsPic"
+    | "ninaPic"
+    | "daliborPic"
+    | "silhouettePic";
   role: string;
   email: string;
   phone: string;
@@ -79,7 +79,13 @@ export default async function Component() {
             <div className="flex items-center justify-end">
               <DownloadButton />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 w-full">
+            <div
+              className="grid grid-cols-1 gap-6 w-full
+            sm:grid-cols-2
+            lg:grid-cols-3
+            xl:grid-cols-4
+            2xl:grid-cols-5"
+            >
               {employees.map((e: Employee, index: number) => (
                 <div
                   key={index}
