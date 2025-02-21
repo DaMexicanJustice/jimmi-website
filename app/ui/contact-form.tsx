@@ -88,6 +88,41 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
     }
   };
 
+  const sendEmailWeb3Form = (event: any) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "82f48998-eb77-44d4-973e-61bb16756382");
+    const validationErrors = validateForm(formData);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      toast.error("Mail blev ikke afsendt. Udfyld alle felter");
+      return;
+    }
+
+    setLoading(true);
+    if (formData.get("antibot") !== "") {
+      return;
+    } else {
+      console.log("Sending mail");
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          formRef.current?.reset();
+          toast.success("Din besked er afsendt!");
+          setLoading(false);
+          console.log("Data: " + data);
+        })
+        .catch((error) => {
+          console.log("Error: " + error);
+          setLoading(false);
+          toast.error("Din besked kunne ikke afsendes");
+        });
+    }
+  }
+
   return (
     <>
       <div
@@ -122,7 +157,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
           24 timer
         </p>
         <form
-          onSubmit={sendEmail}
+          onSubmit={sendEmailWeb3Form}
           ref={formRef}
           className="flex flex-col gap-4 w-11/12
             lg:gap-4 lg:w-9/12"
@@ -255,7 +290,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
               },
             }}
           />
-          <input id="flytrap" name="flytrap" type="hidden" value="" />
+          <input className="p-0 m-0 size-0" id="antibot" name="antibot" type="text" placeholder="Confirm that you are human, what is 4+4" value="" />
           <CtaButton text="Send Besked" href="" type="submit"></CtaButton>
         </form>
         {loading ? <Spinner /> : <p></p>}
