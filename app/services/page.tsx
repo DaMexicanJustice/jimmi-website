@@ -40,10 +40,10 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/service-employment" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
-              id="overlay"
+
               className="flex-col gap-20 hidden pb-5 items-center justify-end absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300 border-2 border-yellow-500
+                duration-300 border-0 border-yellow-500
                 md:flex"
             >
               <p
@@ -78,10 +78,10 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/service-youth" type="button" height={3} width={6}></CtaButton>
 
             <div
-              id="overlay"
+
               className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300 border-2 border-yellow-500
+                duration-300 border-0 border-yellow-500
                 md:flex"
             >
               <p
@@ -116,10 +116,10 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/service-social" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
-              id="overlay"
+
               className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300 border-2 border-yellow-500
+                duration-300 border-0 border-yellow-500
                 md:flex"
             >
               <p
@@ -155,10 +155,10 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/corporate-collaboration" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
-              id="overlay"
+
               className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300 border-2 border-yellow-500
+                duration-300 border-0 border-yellow-500
                 md:flex"
             >
               <p

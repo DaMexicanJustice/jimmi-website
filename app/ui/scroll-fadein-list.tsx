@@ -62,14 +62,14 @@ export default function ScrollFadeinList({
             <h3
               className={`text-xl uppercase font-conduitbold mb-0 p-0
                 ${useBackground ? "bg-yellow-400" : "bg-transparent"}
-                ${useBackground ? "text-slate-50 dark:text-slate-900" : "text-slate-900 dark:text-slate-50"}
+                ${useBackground ? "text-slate-900" : "text-slate-50 dark:text-slate-900"}
                 ${textAlign}`}
             >
               {item.title}
             </h3>
             <p
               className={`mb-4 p-0
-                ${useBackground ? "text-slate-50 dark:text-slate-900" : "text-slate-900 dark:text-slate-50"}`}
+                ${useBackground ? "text-slate-900" : "text-slate-50 dark:text-slate-900"}`}
             >
               {item.content}
             </p>

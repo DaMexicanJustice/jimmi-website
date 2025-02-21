@@ -57,7 +57,8 @@ export default function Dna() {
           <div
             className="flex flex-col items-center gap-6
             md:px-32
-            lg:basis-7/12 lg:px-0"
+            lg:basis-7/12 lg:px-0
+            2xl:basis-8/12"
           >
             <div
               className="flex flex-col gap-4
@@ -75,7 +76,8 @@ export default function Dna() {
           <div
             className="flex flex-col items-center gap-10
           md:px-32
-          lg:basis-4/12 lg:px-0"
+          lg:basis-4/12 lg:px-0
+          2xl:basis-3/12"
           >
             <ContactForm useSliderAnimation={true} />
           </div>

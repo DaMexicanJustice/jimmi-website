@@ -242,7 +242,7 @@ export default function ServiceSocial() {
                 <div key={index}>
                   <div className="flex h-full">
                     <ScrollFadeinList
-                      useBackground={false}
+                      useBackground={true}
                       items={[item]}
                       textAlign={"text-left"}
                     />
@@ -275,7 +275,7 @@ export default function ServiceSocial() {
                 <div key={index}>
                   <div className="flex h-full">
                     <ScrollFadeinList
-                      useBackground={false}
+                      useBackground={true}
                       items={[item]}
                       textAlign={"text-left"}
                     />
