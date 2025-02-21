@@ -20,16 +20,16 @@ import DownloadButton from "../ui/DownloadButton";
 interface Employee {
   name: string;
   img:
-    | "jimmiPic"
-    | "maltePic"
-    | "marckPic"
-    | "musaPic"
-    | "esraPic"
-    | "ceciliePic"
-    | "madsPic"
-    | "ninaPic"
-    | "daliborPic"
-    | "silhouettePic";
+  | "jimmiPic"
+  | "maltePic"
+  | "marckPic"
+  | "musaPic"
+  | "esraPic"
+  | "ceciliePic"
+  | "madsPic"
+  | "ninaPic"
+  | "daliborPic"
+  | "silhouettePic";
   role: string;
   email: string;
   phone: string;
@@ -138,7 +138,6 @@ export default async function Component() {
                     </p>
                     <div className="flex flex-row flex-wrap gap-1">
                       {Object.values(e.competences.languages)
-                        .reverse()
                         .map((lang, i) => (
                           <p key={i} className="text-slate-950 text-xs">
                             {lang}

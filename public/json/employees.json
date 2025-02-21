@@ -232,25 +232,32 @@
           "0": "Dansk",
           "1": "Engelsk",
           "2": "Serbokroatisk",
-          "3": "Græsk"
+          "3": "Græsk",
+          "4": "Kroatisk",
+          "5": "Bosnisk",
+          "6:": "Montenegrisk"
         },
         "education": {
-          "3": "Antroposofisk Kunstterapeut, Kunstterapiuddannelsen",
-          "4": "Familiebehandleruddannelsen, Memox",
-          "5": "kriminologi, bla. Kbh, London og Lausanne",
-          "6": "Cand. mag. i områdestudier, Københavns Universitet"
+          "0": "Antroposofisk Kunstterapeut, Kunstterapiuddannelsen",
+          "1": "Familiebehandleruddannelsen, Memox",
+          "2": "Div. efteruddannelser og kurser indenfor kriminologi",
+          "3": "Cand. mag. i områdestudier, Københavns Universitet",
+          "4": "Kunstterapeut, Kunstterapiuddannelsen, Antroposofisk kunstterapi. 2022-2025",
+          "5": "Crime Analysis, analytikerudd., University College London, 2019"
         },
         "experience": {
-          "5": "Familiebehandler, Mentor og Kunstterapeut",
-          "6": "Analytiker i Københavns Politi",
-          "7": "Selvstændig konsulent og oversætter"
+          "0": "Familiebehandler, Mentor og Kunstterapeut",
+          "1": "Analytiker i Københavns Politi",
+          "2": "Selvstændig konsulent og oversætter",
+          "3": "Kunstterapeut, superviseret, 2024- i dag",
+          "4": "Gæsteunderviser i Korruption og Transnational OC, bl.a. på KU, 2014 - 2017"
         },
         "article": {
-          "headline": "Støtte og omsorg for familier i udfordringer",
-          "text": "Jeg støtter børn, unge og familier, der har brug for en stabil, omsorgsfuld og kompetent voksenkontakt. Med stor forståelse for borgernes behov og drømme giver jeg plads til at tilbyde ekstra opmærksomhed til dem, der har brug for det. Jeg ved, hvor stor betydning en stabil voksenrelation har for et barns og en families trivsel og udvikling, og jeg har dyb respekt for den tillid, der ligger i at være den person, som børn og familier kan læne sig op ad i svære tider. Det giver mig stor mening at arbejde med borgere og familier, der står overfor særlige udfordringer og har brug for vejledning og støtte.\n\n Jeg fokuserer på potentialer fremfor problemer og tror på, at alle – også dem i vanskelige situationer – har en iboende evne til at skabe forandring. Jeg ser muligheder, hvor andre måske har opgivet, og sammen med familierne arbejder jeg målrettet for at finde løsninger, der hjælper dem videre mod en bedre tilværelse. Mit mål er at gøre familier selvhjulpne og uafhængige, samtidig med at vi bryder negative mønstre og skaber positiv udvikling.\n\n Udover de professionelle metoder og værktøjer, som jeg benytter mig af som familiebehandler, inddrager jeg ofte fysisk aktivitet og kreative processer som effektive redskaber til at opbygge relationer og styrke både børns og familiers selvværd. Jeg har også erfaring med, hvordan praktiske projekter såsom organisering, struktur og oprydning kan skabe læring og fremme sunde vaner for hele familien."
+          "headline": "Støtte og omsorg for familier og borgere i udfordringer",
+          "text": "Jeg støtter børn, unge, familier og borgere, der har brug for en stabil, omsorgsfuld og kompetent voksenkontakt. Med forståelse for deres behov og drømme tilbyder jeg ekstra opmærksomhed til dem, der har brug for det. Jeg ved, hvor vigtig en stabil relation er for trivsel og udvikling, og jeg har dyb respekt for den tillid, det kræver at få en støtte i svære tider. Det giver mig stor mening at arbejde med familier og enkeltpersoner, der har særlige udfordringer – hvad enten det handler om at skabe en bedre hverdag, komme tættere på arbejdsmarkedet eller navigere i livet med en funktionsnedsættelse. Jeg har erfaring med at støtte borgere efter servicelovens §85 og arbejder for at skabe en tryg og stabil tilværelse med mest mulig selvstændighed. Jeg fokuserer på potentialer fremfor problemer og arbejder ud fra at vi alle har en iboende evne til forandring. Jeg arbejder kreativt med borgerne for at finde løsninger, der bringer dem videre. Mit mål er at gøre mennesker mere selvhjulpne, ved at bryde negative mønstre og skabe positiv udvikling. Udover professionelle metoder, benytter jeg fysisk aktivitet og kreative øvelser til at opbygge relationer og styrke selvværd og livsmestring. Også praktiske projekter såsom struktur og organisering kan skabe læring og sunde vaner – både for familier og enkeltpersoner."
         },
-        "citizen-type": "Jeg er særligt god til at arbejde med børn, unge og familier, der har brug for en voksen, som kan skabe ro og overblik i kaotiske situationer. Jeg bringer mine erfaringer, kompetencer og mit engagement ind i arbejdet for at støtte børn og familier i svære livssituationer. Jeg ser mig selv som en slags ‘Kluddermor’, der – ligesom i børnelegen – hjælper med at løsne op for forviklinger, skabe struktur, rydde op i det komplicerede og gøre det svære mere håndterbart. Min rolle er at hjælpe familier med at genfinde deres indre styrke, skabe ro og bringe glæde tilbage i hverdagen.",
-        "resume": "Min styrke som familiebehandler ligger i min ro, modenhed, tålmodighed og anerkendende tilgang. Min menneskelige indsigt gør mig i stand til at være en god støtte for både borgeren og familien. Med min autenticitet og oprigtige ønske om at hjælpe bygger jeg hurtigt tillid, så borgerne ofte ser mig som en fortrolig person, de kan stole på. Jeg fungerer som en stabiliserende faktor i svære situationer og hjælper med at skabe positiv udvikling. “Livet handler ikke om at vente på, at uvejret lægger sig. Det handler om at lære at danse i regnen."
+        "citizen-type": "Min styrke som mentor og familiebehandler ligger i Min styrke som mentor og familiebehandler ligger i min ro, modenhed, tålmodighed og anerkendende tilgang. Med min menneskelige indsigt og oprigtige ønske om at hjælpe bygger jeg hurtigt tillid og bliver ofte en fortrolig støtte. Jeg fungerer som en stabiliserende faktor i svære situationer og bidrager til positiv udvikling.",
+        "resume": "Livet handler ikke om at vente på, at uvejret lægger sig. Det handler om at lære at danse i regnen."
       }
     },
     {
