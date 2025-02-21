@@ -1,9 +1,9 @@
-import Image from "next/image";
-import CtaButton from "../ui/cta-button";
-import employmentPic from "/public/images/beskæftigelsesindsatser.jpg";
-import youthPic from "/public/images/ungeindsatser.jpg";
-import socialPic from "/public/images/udsatte_services.jpg";
-import virksomhedssamarbejde from "/public/images/virksomhedssamarbejde.jpg";
+import Image from "next/image"
+import CtaButton from "../ui/cta-button"
+import employmentPic from "/public/images/beskæftigelsesindsatser.jpg"
+import youthPic from "/public/images/ungeindsatser.jpg"
+import socialPic from "/public/images/udsatte_services.jpg"
+import virksomhedssamarbejde from "/public/images/virksomhedssamarbejde.jpg"
 
 export default function Services() {
   return (
@@ -11,21 +11,21 @@ export default function Services() {
       <section
         id="Services"
         className="p-5 bg-slate-200 dark:bg-neutral-800 rounded-[3rem]
-        sm:px-32
-        lg:px-16"
+  sm:p-8
+  lg:p-16"
       >
         <main
-          className="flex flex-col gap-6 py-8 h-full justify-center items-center
-        md:flex-row md:flex-wrap
-        xl:flex-nowrap"
+          className="grid gap-6 py-8 h-full
+  grid-cols-1
+  md:grid-cols-2
+  xl:grid-cols-4"
         >
           <div
             className="flex flex-col w-full w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none
-            md:basis-5/12
-            xl:basis-3/12"
+            "
           >
             <Image
-              src={employmentPic}
+              src={employmentPic || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -37,47 +37,33 @@ export default function Services() {
             >
               Beskæftigelsesindsatser
             </h2>
-            <CtaButton
-              text="Læs Mere"
-              href="/service-employment"
-              type="button"
-              height={3}
-              width={6}
-            ></CtaButton>
+            <CtaButton text="Læs Mere" href="/service-employment" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
               id="overlay"
               className="flex-col gap-20 hidden pb-5 items-center justify-end absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300
+                duration-300 border-2 border-yellow-500
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
                   lg:text-sm"
               >
-                Mentorplan tilbyder individuelle beskæftigelsesforløb med fokus
-                på at hjælpe borgere tilbage på arbejdsmarkedet. Vores
-                360-graders metode sikrer en omfattende vurdering af borgerens
-                situation for at skabe det bedste match.
+                Mentorplan tilbyder individuelle beskæftigelsesforløb med fokus på at hjælpe borgere tilbage på
+                arbejdsmarkedet. Vores 360-graders metode sikrer en omfattende vurdering af borgerens situation for at
+                skabe det bedste match.
               </p>
-              <CtaButton
-                text="Læs Mere"
-                href="/service-employment"
-                type="button"
-                height={3}
-                width={6}
-              ></CtaButton>
+              <CtaButton text="Læs Mere" href="/service-employment" type="button" height={3} width={6}></CtaButton>
             </div>
           </div>
 
           <div
             className="flex flex-col w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
-            md:basis-5/12
-            xl:basis-3/12"
+            "
           >
             <Image
-              src={youthPic}
+              src={youthPic || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -89,48 +75,33 @@ export default function Services() {
             >
               Ungeindsatser
             </h2>
-            <CtaButton
-              text="Læs Mere"
-              href="/service-youth"
-              type="button"
-              height={3}
-              width={6}
-            ></CtaButton>
+            <CtaButton text="Læs Mere" href="/service-youth" type="button" height={3} width={6}></CtaButton>
 
             <div
               id="overlay"
               className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300
+                duration-300 border-2 border-yellow-500
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
                   lg:text-sm"
               >
-                Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år,
-                der har brug for hjælp til at skabe stabilitet og retning i
-                deres liv. Vores team består af erfarne fagfolk, der arbejder
-                med relationer, fritidsjob, beskæftigelse og
-                kriminalitetsforebyggelse.
+                Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år, der har brug for hjælp til at skabe
+                stabilitet og retning i deres liv. Vores team består af erfarne fagfolk, der arbejder med relationer,
+                fritidsjob, beskæftigelse og kriminalitetsforebyggelse.
               </p>
-              <CtaButton
-                text="Læs Mere"
-                href="/service-youth"
-                type="button"
-                height={3}
-                width={6}
-              ></CtaButton>
+              <CtaButton text="Læs Mere" href="/service-youth" type="button" height={3} width={6}></CtaButton>
             </div>
           </div>
 
           <div
             className="flex flex-col w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
-            md:basis-5/12
-            xl:basis-3/12"
+            "
           >
             <Image
-              src={socialPic}
+              src={socialPic || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -142,50 +113,34 @@ export default function Services() {
             >
               Social indsats under § 85
             </h2>
-            <CtaButton
-              text="Læs Mere"
-              href="/service-social"
-              type="button"
-              height={3}
-              width={6}
-            ></CtaButton>
+            <CtaButton text="Læs Mere" href="/service-social" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
               id="overlay"
               className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300
+                duration-300 border-2 border-yellow-500
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
                   lg:text-sm"
               >
-                Mentorplan tilbyder bostøtte i henhold til Servicelovens § 85,
-                der hjælper voksne med psykiske, fysiske eller sociale
-                udfordringer. Vi tilbyder 24/7 fleksibel helhedsorienteret
-                støtte, herunder ADL-træning, udendørsaktiviteter og tværfagligt
-                samarbejde for at sikre skræddersyet assistance. Vores mål er
-                vedvarende positiv forandring gennem meningsfulde relationer og
-                aktiviteter.
+                Mentorplan tilbyder bostøtte i henhold til Servicelovens § 85, der hjælper voksne med psykiske, fysiske
+                eller sociale udfordringer. Vi tilbyder 24/7 fleksibel helhedsorienteret støtte, herunder ADL-træning,
+                udendørsaktiviteter og tværfagligt samarbejde for at sikre skræddersyet assistance. Vores mål er
+                vedvarende positiv forandring gennem meningsfulde relationer og aktiviteter.
               </p>
-              <CtaButton
-                text="Læs Mere"
-                href="/service-social"
-                type="button"
-                height={3}
-                width={6}
-              ></CtaButton>
+              <CtaButton text="Læs Mere" href="/service-social" type="button" height={3} width={6}></CtaButton>
             </div>
           </div>
 
           <div
             className="flex flex-col w-full relative gap-5 justify-between items-center pb-5 bg-slate-50 shadow-md shadow-slate-500/50 dark:shadow-none 
-            md:basis-5/12
-            xl:basis-3/12"
+            "
           >
             <Image
-              src={virksomhedssamarbejde}
+              src={virksomhedssamarbejde || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Ydelse 1"
@@ -197,42 +152,29 @@ export default function Services() {
             >
               Virksomhedssamarbejde
             </h2>
-            <CtaButton
-              text="Læs Mere"
-              href="/corporate-collaboration"
-              type="button"
-              height={3}
-              width={6}
-            ></CtaButton>
+            <CtaButton text="Læs Mere" href="/corporate-collaboration" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
               id="overlay"
               className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
-                duration-300
+                duration-300 border-2 border-yellow-500
                 md:flex"
             >
               <p
                 className="text-slate-50 text-center px-5
                   lg:text-sm"
               >
-                Mentorplan søger virksomheder i Københavnsområdet til at hjælpe
-                socialt udsatte borgere tilbage på arbejdsmarkedet. Vi tilbyder
-                åbent samarbejde og støtte til virksomheder, der ønsker at gøre
-                en forskel. Kontakt Mentorplan for at aftale et møde og
-                diskutere mulighederne.
+                Mentorplan søger virksomheder i Københavnsområdet til at hjælpe socialt udsatte borgere tilbage på
+                arbejdsmarkedet. Vi tilbyder åbent samarbejde og støtte til virksomheder, der ønsker at gøre en forskel.
+                Kontakt Mentorplan for at aftale et møde og diskutere mulighederne.
               </p>
-              <CtaButton
-                text="Læs Mere"
-                href="/corporate-collaboration"
-                type="button"
-                height={3}
-                width={6}
-              ></CtaButton>
+              <CtaButton text="Læs Mere" href="/corporate-collaboration" type="button" height={3} width={6}></CtaButton>
             </div>
           </div>
         </main>
       </section>
     </>
-  );
+  )
 }
+
