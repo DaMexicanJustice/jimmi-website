@@ -115,7 +115,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               className={`${svgColor} w-32 h-12 cursor-pointer transition-colors duration-500`}
             >
               <defs>
-                <style>.cls-1{}</style>
+                <style>.cls-1{ }</style>
               </defs>
               <g id="Layer_7" data-name="Layer 7">
                 <path
@@ -282,7 +282,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
               <Link
                 href="/social-feed"
                 onClick={closeMenu}
-                className="flex flex-row items-center w-48 h-9"
+                className="hidden flex flex-row items-center w-48 h-9"
               >
                 <HorizontalRule className=""></HorizontalRule>Den Gode Historie
               </Link>
@@ -308,7 +308,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
           <Link href="/employees">Konsulenter</Link>
           <NavbarButton textColor={textColor}></NavbarButton>
           <Link href="/corporate-collaboration">Virksomhedssamarbejde</Link>
-          <Link href="/social-feed">Den Gode Historie</Link>
+          <Link className="hidden" href="/social-feed">Den Gode Historie</Link>
           <Link href="/contact">Kontakt</Link>
         </div>
       </nav>
