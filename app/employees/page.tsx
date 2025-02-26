@@ -91,7 +91,7 @@ export default async function Component() {
                   key={index}
                   className="relative bg-slate-50 flex flex-col shadow-xl group overflow-hidden"
                 >
-                  <div className="mb-5 h-64">
+                  <div className="mb-5 h-64 2xl:h-96">
                     <Image
                       src={imageMap[e.img]}
                       width={512}
@@ -112,7 +112,7 @@ export default async function Component() {
                     <div>
                       <div className="flex flex-row gap-1 items-center">
                         <EnvelopeIcon className="text-slate-950 w-5" />
-                        <p className="font-conduit text-base text-slate-800 xl:text-sm">
+                        <p className="font-conduit text-base text-slate-800 xl:text-sm 2xl:text-base">
                           {e.email}
                         </p>
                       </div>
@@ -120,7 +120,7 @@ export default async function Component() {
                         <PhoneIcon className="text-slate-950 w-5" />
                         <a
                           href={`tel:${e.phone}`}
-                          className="font-conduit text-slate-800 text-base xl:text-sm"
+                          className="font-conduit text-slate-800 text-base xl:text-sm 2xl:text-base"
                         >
                           {e.phone
                             .substring(3)
@@ -139,7 +139,7 @@ export default async function Component() {
                     <div className="flex flex-row flex-wrap gap-1">
                       {Object.values(e.competences.languages)
                         .map((lang, i) => (
-                          <p key={i} className="text-slate-950 text-xs">
+                          <p key={i} className="text-slate-950 text-xs xl:text-sm 2xl:text-base">
                             {lang}
                           </p>
                         ))}
@@ -154,7 +154,7 @@ export default async function Component() {
                         .map((edu, i) => (
                           <p
                             key={i}
-                            className="text-slate-950 text-xs truncate"
+                            className="text-slate-950  text-xs xl:text-sm 2xl:text-base truncate"
                           >
                             {edu}
                           </p>
@@ -170,7 +170,7 @@ export default async function Component() {
                         .map((exp, i) => (
                           <p
                             key={i}
-                            className="text-slate-950 text-xs truncate"
+                            className="text-slate-950text-xs xl:text-sm 2xl:text-base truncate"
                           >
                             {exp}
                           </p>
@@ -181,10 +181,10 @@ export default async function Component() {
                         pathname: "/employee-details",
                         query: { id: index },
                       }}
-                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20 lg:size-20 xl:size-16"
+                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20 lg:size-20 xl:size-16 2xl:size-20"
                       aria-label={`Læs mere om ${e.name}`}
                     >
-                      <div className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5 uppercase font-conduitbold text-sm rounded-full -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs">
+                      <div className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5 uppercase font-conduitbold text-sm rounded-full -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs 2xl:text-base">
                         Læs Mere
                       </div>
                     </Link>

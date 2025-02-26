@@ -62,3 +62,25 @@
 .image-right {
   transform: translateX(2000px);
 }
+
+p {
+  @apply text-base;
+}
+
+@screen md {
+  p {
+    @apply text-lg;
+  }
+}
+
+@screen lg {
+  p {
+    @apply text-xl;
+  }
+}
+
+@screen xl {
+  p {
+    @apply text-2xl;
+  }
+}

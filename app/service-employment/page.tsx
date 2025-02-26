@@ -3,7 +3,6 @@ import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import networkPic from "/public/images/network.jpg";
 import journalPic from "/public/images/journal.jpg";
-import addictionPic from "/public/images/addiction.jpg";
 import sohoPic from "/public/images/soho_face.jpg";
 import Image from "next/image";
 import { useRef } from "react";
@@ -15,7 +14,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CircularDiagram from "../ui/CircularDiagram";
 import ScrollFadeinList from "../ui/scroll-fadein-list";
-import { ListItem } from "@mui/material";
 import { Accordion } from "../ui/accordion";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -275,6 +273,7 @@ export default function ServiceEmployment() {
                 useBackground={false}
                 items={listItems}
                 textAlign={"text-left"}
+                textColor="text-slate-900 dark:text-slate-50"
               />
               <p className="text-slate-900 dark:text-slate-50">
                 Hos Mentorplan ser vi vores kontor som en vigtig del af

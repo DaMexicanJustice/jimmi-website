@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const LinkedIn: React.FC = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "//widget.tagembed.com/embed.min.js";
+    script.src = "https://static.elfsight.com/platform/platform.js";
     script.type = "text/javascript";
     document.body.appendChild(script);
 
@@ -15,11 +15,8 @@ const LinkedIn: React.FC = () => {
 
   return (
     <>
-      <div
-        className="h-full w-full tagembed-widget"
-        data-widget-id="148300"
-        view-url="https://widget.tagembed.com/148300"
-      ></div>
+      <div className="elfsight-app-f9fbdcdd-b555-4fae-a366-ae3d40480023" data-elfsight-app-lazy>
+      </div>
     </>
   );
 };

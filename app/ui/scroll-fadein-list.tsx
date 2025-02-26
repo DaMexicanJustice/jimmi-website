@@ -18,12 +18,14 @@ interface ScrollFadeinListProps {
   items: ListItem[];
   useBackground: boolean;
   textAlign: string;
+  textColor: string;
 }
 
 export default function ScrollFadeinList({
   items,
   useBackground,
   textAlign,
+  textColor,
 }: ScrollFadeinListProps) {
   const listRef = useRef<HTMLDivElement>(null);
 
@@ -60,16 +62,16 @@ export default function ScrollFadeinList({
         {items.map((item, index) => (
           <li key={index} className="list-item">
             <h3
-              className={`text-xl uppercase font-conduitbold mb-0 p-0
+              className={`text-xl uppercase font-conduitbold mb-0 p-0 lg:text-2xl 2xl:text-3xl
                 ${useBackground ? "bg-yellow-400" : "bg-transparent"}
-                ${useBackground ? "text-slate-900" : "text-slate-50 dark:text-slate-900"}
+                ${textColor}
                 ${textAlign}`}
             >
               {item.title}
             </h3>
             <p
               className={`mb-4 p-0
-                ${useBackground ? "text-slate-900" : "text-slate-50 dark:text-slate-900"}`}
+                ${textColor}`}
             >
               {item.content}
             </p>

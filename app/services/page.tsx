@@ -40,15 +40,14 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/service-employment" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
-
-              className="flex-col gap-20 hidden pb-5 items-center justify-end absolute w-full h-full
+              className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300 border-0 border-yellow-500
-                md:flex"
+                md:flex md:gap-8 lg:gap-12"
             >
               <p
-                className="text-slate-50 text-center px-5
-                  lg:text-sm"
+                className="text-slate-50 text-center px-5 overflow-hidden text-ellipsis line-clamp-4
+                  lg:text-sm lg:line-clamp-6"
               >
                 Mentorplan tilbyder individuelle beskæftigelsesforløb med fokus på at hjælpe borgere tilbage på
                 arbejdsmarkedet. Vores 360-graders metode sikrer en omfattende vurdering af borgerens situation for at
@@ -78,15 +77,14 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/service-youth" type="button" height={3} width={6}></CtaButton>
 
             <div
-
-              className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300 border-0 border-yellow-500
-                md:flex"
+                md:flex md:gap-8 lg:gap-12"
             >
               <p
-                className="text-slate-50 text-center px-5
-                  lg:text-sm"
+                className="text-slate-50 text-center px-5 overflow-hidden text-ellipsis line-clamp-4
+                  lg:text-sm lg:line-clamp-6"
               >
                 Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år, der har brug for hjælp til at skabe
                 stabilitet og retning i deres liv. Vores team består af erfarne fagfolk, der arbejder med relationer,
@@ -116,15 +114,14 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/service-social" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
-
-              className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300 border-0 border-yellow-500
-                md:flex"
+                md:flex md:gap-8 lg:gap-12"
             >
               <p
-                className="text-slate-50 text-center px-5
-                  lg:text-sm"
+                className="text-slate-50 text-center px-5 overflow-hidden text-ellipsis line-clamp-4
+                  lg:text-sm lg:line-clamp-6"
               >
                 Mentorplan tilbyder bostøtte i henhold til Servicelovens § 85, der hjælper voksne med psykiske, fysiske
                 eller sociale udfordringer. Vi tilbyder 24/7 fleksibel helhedsorienteret støtte, herunder ADL-træning,
@@ -155,15 +152,14 @@ export default function Services() {
             <CtaButton text="Læs Mere" href="/corporate-collaboration" type="button" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
-
-              className="flex flex-col gap-20 hidden pb-5 justify-end items-center absolute w-full h-full
+              className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
                 backdrop-brightness-[0.25] opacity-0 hover:opacity-100 transition-opacity
                 duration-300 border-0 border-yellow-500
-                md:flex"
+                md:flex md:gap-8 lg:gap-12"
             >
               <p
-                className="text-slate-50 text-center px-5
-                  lg:text-sm"
+                className="text-slate-50 text-center px-5 overflow-hidden text-ellipsis line-clamp-4
+                  lg:text-sm lg:line-clamp-6"
               >
                 Mentorplan søger virksomheder i Københavnsområdet til at hjælpe socialt udsatte borgere tilbage på
                 arbejdsmarkedet. Vi tilbyder åbent samarbejde og støtte til virksomheder, der ønsker at gøre en forskel.

@@ -198,6 +198,7 @@ export default function ServiceSocial() {
                 useBackground={false}
                 items={bulletItems}
                 textAlign={"text-left"}
+                textColor="text-slate-900 dark:text-slate-50"
               />
             </div>
             <div className="lg:basis-4/12 image-container overflow-hidden">
@@ -245,6 +246,7 @@ export default function ServiceSocial() {
                       useBackground={true}
                       items={[item]}
                       textAlign={"text-left"}
+                      textColor="text-slate-900"
                     />
                   </div>
                 </div>
@@ -278,6 +280,7 @@ export default function ServiceSocial() {
                       useBackground={true}
                       items={[item]}
                       textAlign={"text-left"}
+                      textColor="text-slate-900"
                     />
                   </div>
                 </div>
