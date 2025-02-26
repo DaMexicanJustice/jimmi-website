@@ -231,33 +231,32 @@
         "languages": {
           "0": "Dansk",
           "1": "Engelsk",
-          "2": "Serbokroatisk",
-          "3": "Græsk",
-          "4": "Kroatisk",
-          "5": "Bosnisk",
-          "6:": "Montenegrisk"
+          "2": "Serbisk",
+          "3": "Kroatisk",
+          "4": "Bosnisk",
+          "5:": "Montenegrisk",
+          "6": "Græsk"
         },
         "education": {
-          "0": "Antroposofisk Kunstterapeut, Kunstterapiuddannelsen",
-          "1": "Familiebehandleruddannelsen, Memox",
-          "2": "Div. efteruddannelser og kurser indenfor kriminologi",
-          "3": "Cand. mag. i områdestudier, Københavns Universitet",
-          "4": "Kunstterapeut, Kunstterapiuddannelsen, Antroposofisk kunstterapi. 2022-2025",
-          "5": "Crime Analysis, analytikerudd., University College London, 2019"
+          "1": "Kunstterapeut, Kunstterapiuddannelsen, Antroposofisk kunstterapi. 2022-2025",
+          "2": "Familiebehandleruddannelsen, Memox 2022",
+          "3": "Crime Analysis, analytikerudd., University College London, 2019",
+          "4": "Div. kurser indenfor kriminologi 2014-2018",
+          "5": "Cand. mag. i områdestudier, Københavns Universitet 2012"
         },
         "experience": {
-          "0": "Familiebehandler, Mentor og Kunstterapeut",
-          "1": "Analytiker i Københavns Politi",
-          "2": "Selvstændig konsulent og oversætter",
-          "3": "Kunstterapeut, superviseret, 2024- i dag",
-          "4": "Gæsteunderviser i Korruption og Transnational OC, bl.a. på KU, 2014 - 2017"
+          "0": "Kunstterapeut, superviseret, 2024- i dag",
+          "1": "Analytiker, OC, Københavns Politi, 2017-2020",
+          "2": "Gæsteunderviser i Korruption og OC, bl.a. på KU, 2014 – 2017",
+          "3": "Selvstændig konsulent og oversætter, 1992 – i dag"
         },
         "article": {
           "headline": "Støtte og omsorg for familier og borgere i udfordringer",
           "text": "Jeg støtter børn, unge, familier og borgere, der har brug for en stabil, omsorgsfuld og kompetent voksenkontakt. Med forståelse for deres behov og drømme tilbyder jeg ekstra opmærksomhed til dem, der har brug for det. Jeg ved, hvor vigtig en stabil relation er for trivsel og udvikling, og jeg har dyb respekt for den tillid, det kræver at få en støtte i svære tider.\n\n Det giver mig stor mening at arbejde med familier og enkeltpersoner, der har særlige udfordringer – hvad enten det handler om at skabe en bedre hverdag, komme tættere på arbejdsmarkedet eller navigere i livet med en funktionsnedsættelse. Jeg har erfaring med at støtte borgere efter servicelovens §85 og arbejder for at skabe en tryg og stabil tilværelse med mest mulig selvstændighed.\n\nJeg fokuserer på potentialer fremfor problemer og arbejder ud fra at vi alle har en iboende evne til forandring. Jeg arbejder kreativt med borgerne for at finde løsninger, der bringer dem videre. Mit mål er at gøre mennesker mere selvhjulpne, ved at bryde negative mønstre og skabe positiv udvikling.\n\n Udover professionelle metoder, benytter jeg fysisk aktivitet og kreative øvelser til at opbygge relationer og styrke selvværd og livsmestring. Også praktiske projekter såsom struktur og organisering kan skabe læring og sunde vaner – både for familier og enkeltpersoner."
         },
-        "citizen-type": "Min styrke som mentor og familiebehandler ligger i Min styrke som mentor og familiebehandler ligger i min ro, modenhed, tålmodighed og anerkendende tilgang. Med min menneskelige indsigt og oprigtige ønske om at hjælpe bygger jeg hurtigt tillid og bliver ofte en fortrolig støtte. Jeg fungerer som en stabiliserende faktor i svære situationer og bidrager til positiv udvikling.",
-        "resume": "Livet handler ikke om at vente på, at uvejret lægger sig. Det handler om at lære at danse i regnen."
+        "quote": "Livet handler ikke om at vente på, at uvejret lægger sig.\n Det handler om at lære at danse i regnen.",
+        "citizen-type": "Jeg arbejder med unge, familier og borgere, der har brug for en voksen, som kan skabe ro og overblik i kaotiske situationer. Jeg ser mig selv som en slags ‘Kluddermor’, der hjælper med at løse forviklinger, skabe struktur og gøre det svære mere håndterbart. Min rolle er at hjælpe mennesker med at genfinde deres indre styrke, skabe ro og bringe glæde tilbage i hverdagen.",
+        "resume": "Min styrke som mentor og familiebehandler ligger i min ro, modenhed, tålmodighed og anerkendende tilgang. Med min menneskelige indsigt og oprigtige ønske om at hjælpe, bygger jeg hurtigt tillid og bliver ofte en fortrolig støtte. Jeg fremkalder borgerens iboende styrke og viser vejen til positiv udvikling."
       }
     },
     {

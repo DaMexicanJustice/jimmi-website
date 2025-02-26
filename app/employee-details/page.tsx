@@ -38,6 +38,7 @@ interface Employee {
       headline: string;
       text: string;
     };
+    quote: string;
     "citizen-type": string;
     resume: string;
   };
@@ -227,6 +228,9 @@ export default function EmployeeDetails() {
               </p>
               <p className="text-left text-slate-900 dark:text-slate-50">
                 {data ? data.competences["citizen-type"] : "no-data"}
+              </p>
+              <p className="text-center whitespace-pre-line opacity-75">
+                {data && data.competences.quote ? `"${data.competences.quote}"` : ""}
               </p>
               <p className="text-left text-slate-950 bg-yellow-400 p-5 shadow-xl">
                 {data ? data.competences.resume : "no-data"}
