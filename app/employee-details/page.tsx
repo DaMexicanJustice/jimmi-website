@@ -212,23 +212,23 @@ export default function EmployeeDetails() {
               </div>
             </div>
             <div
-              className="flex flex-col gap-5
+              className="flex flex-col gap-6
               lg:basis-8/12
               2xl:basis-8/12"
             >
-              <p className="text-slate-900 dark:text-slate-50 text-xl text-center">
+              <p className="text-slate-900 dark:text-slate-50 text-xl 2xl:text-3xl text-left">
                 {data ? data.competences.article.headline : "no-data"}
               </p>
-              <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line text-lg">
+              <p className="text-left text-slate-900 dark:text-slate-50 whitespace-pre-line">
                 {data ? data.competences.article.text : "no-data"}
               </p>
-              <p className="uppercase font-conduitbold text-xl text-blue-950 dark:text-slate-50">
+              <p className="uppercase text-left font-conduitbold text-xl 2xl:text-3xl text-blue-950 dark:text-slate-50">
                 Hvilke borgere er jeg god til
               </p>
-              <p className="text-left text-slate-900 dark:text-slate-50 text-lg">
+              <p className="text-left text-slate-900 dark:text-slate-50">
                 {data ? data.competences["citizen-type"] : "no-data"}
               </p>
-              <p className="text-left text-slate-950 bg-yellow-400 p-5 text-xl shadow-xl">
+              <p className="text-left text-slate-950 bg-yellow-400 p-5 shadow-xl">
                 {data ? data.competences.resume : "no-data"}
               </p>
               <div className="self-end">
