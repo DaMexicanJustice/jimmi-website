@@ -16,7 +16,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
   return (
     <div className="border-b border-gray-200">
       <button
-        className="flex justify-between items-center w-full py-4 px-6 text-left"
+        className="flex justify-between items-center w-full py-4 px-6 text-left bg-yellow-400"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
@@ -42,7 +42,7 @@ export function Accordion() {
   return (
     <div className="w-full">
       <AccordionItem title="Hurtigt i job">
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50">Målgruppe</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
         <p className="text-slate-900 dark:text-slate-50">
           Borgere med få udfordringer, der er motiverede, mødestabile og klar til hurtigt at komme i arbejde.
         </p>
@@ -67,7 +67,7 @@ export function Accordion() {
       </AccordionItem>
 
       <AccordionItem title="MÅLRETTET STØTTE TIL BORGERE LÆNGERE VÆK FRA ARBEJDSMARKEDET">
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50">Målgruppe</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
           <li>
             Kriminalitetsbaggrund: Borgere med en baggrund i kriminalitet eller banderelationer, der har siddet i
@@ -121,7 +121,7 @@ export function Accordion() {
       </AccordionItem>
 
       <AccordionItem title="ARBEJDSEVNEAFKLARINGSFORLØB">
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50">Målgruppe</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
           <li>
             Borgere på sygedagpenge, i jobafklaringsforløb eller ressourceforløb, der har behov for en afklaring af
@@ -167,7 +167,7 @@ export function Accordion() {
       </AccordionItem>
 
       <AccordionItem title="FASTHOLDELSESFORLØB">
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50">Målgruppe</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
           <li>
             Borgere, der er kommet i job eller uddannelse, men som mangler et netværk eller ressourcepersoner at trække

@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "../ui/navbar";
 import Footer from "../ui/footer";
 import ScrollFadeinList from "../ui/scroll-fadein-list";
+import Prices from "../ui/prices";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -287,6 +288,7 @@ export default function ServiceSocial() {
               ))}
             </div>
           </div>
+          <Prices />
         </main>
       </section>
       <Footer />

@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollFadeinList from "../ui/scroll-fadein-list";
+import Prices from "../ui/prices";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -196,7 +197,7 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4
+            className="flex flex-col gap-4 bg-yellow-400 p-5
             xl:flex-row xl:gap-10
             2xl:gap-16"
           >
@@ -238,25 +239,27 @@ export default function ServiceYouth() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 basis-4/12 text-left">
-              <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+            <div className="flex flex-col justify-start gap-12 basis-4/12 text-left">
+              <div>
+                <h2
+                  className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
-              >
-                Kriminalitetsforebyggelse, UKN-sager og støtte i retssager
-              </h2>
-              <p className="text-slate-900 dark:text-slate-100">
-                Nogle af de unge, vi arbejder med, står over for udfordringer
-                med kriminalitet. Vores erfaring fra politiet giver os et
-                indgående kendskab til de konsekvenser, de unge risikerer. Vi
-                hjælper dem med at forstå konsekvenserne af deres handlinger og
-                arbejder på at lede dem mod positive alternativer, så de kan
-                skabe en fremtid uden kriminalitet. Hvis en ung står over for en
-                retssag eller har modtaget en sanktion fra UKN, hjælper vi dem
-                med at navigere i systemet og sikre, at de overholder de krav,
-                der stilles til dem.
-              </p>
+                >
+                  Kriminalitetsforebyggelse, UKN-sager og støtte i retssager
+                </h2>
+                <p className="text-slate-900 dark:text-slate-100">
+                  Nogle af de unge, vi arbejder med, står over for udfordringer
+                  med kriminalitet. Vores erfaring fra politiet giver os et
+                  indgående kendskab til de konsekvenser, de unge risikerer. Vi
+                  hjælper dem med at forstå konsekvenserne af deres handlinger og
+                  arbejder på at lede dem mod positive alternativer, så de kan
+                  skabe en fremtid uden kriminalitet. Hvis en ung står over for en
+                  retssag eller har modtaget en sanktion fra UKN, hjælper vi dem
+                  med at navigere i systemet og sikre, at de overholder de krav,
+                  der stilles til dem.
+                </p>
+              </div>
 
               <div
                 className="flex flex-col gap-4
@@ -380,6 +383,8 @@ export default function ServiceYouth() {
               />
             </div>
           </div>
+
+          <Prices />
 
           {/* <div
             className="flex flex-col gap-4 justify-between

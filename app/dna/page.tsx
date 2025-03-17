@@ -66,7 +66,7 @@ export default function Dna() {
             >
               <div
                 className="flex flex-col gap-4 pb-5
-              lg:gap-3"
+              lg:gap-6"
               >
                 {divElements}
               </div>

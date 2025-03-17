@@ -181,7 +181,7 @@ export default async function Component() {
                         pathname: "/employee-details",
                         query: { id: index },
                       }}
-                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-lg text-center text-wrap size-20 lg:size-20 xl:size-16 2xl:size-20"
+                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-center text-wrap size-20 lg:size-20 xl:size-16 2xl:size-20"
                       aria-label={`Læs mere om ${e.name}`}
                     >
                       <div className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5 uppercase font-conduitbold text-sm rounded-full -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs 2xl:text-base">
