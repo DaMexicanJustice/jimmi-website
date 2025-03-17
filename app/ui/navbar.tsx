@@ -190,7 +190,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 <Close className="size-8 fill-slate-50"></Close>
               </IconButton>
             </div>
-            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduitbold uppercase">
+            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduit font-bold uppercase">
               <Link
                 href="/"
                 onClick={closeMenu}
@@ -214,7 +214,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                   <Accordion
                     expanded={expanded}
                     onChange={handleExpansion}
-                    className="bg-transparent text-slate-50 font-conduitbold p-0"
+                    className="bg-transparent text-slate-50 font-conduit font-bold p-0"
                     style={{ boxShadow: "none", padding: "0px" }}
                     sx={{
                       "& .MuiAccordion-region": {
@@ -231,7 +231,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                       id="panel1-header"
                       className="p-0"
                     >
-                      <Typography className="font-conduitbold text-xl">
+                      <Typography className="font-conduit font-bold text-xl">
                         Ydelser
                       </Typography>
                     </AccordionSummary>
@@ -241,7 +241,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-employment"
-                            className="font-conduitbold"
+                            className="font-conduit font-bold"
                           >
                             Beskæftigelsesindsatser
                           </Link>
@@ -250,7 +250,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-youth"
-                            className="font-conduitbold"
+                            className="font-conduit font-bold"
                             aria-disabled
                           >
                             Ungeindsatser
@@ -260,7 +260,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-social"
-                            className="font-conduitbold"
+                            className="font-conduit font-bold"
                             aria-disabled
                           >
                             Social indsats under § 85
