@@ -26,7 +26,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = ({ textColor }) => {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        className={`uppercase text-lg font-conduitbold ${textColor} transition-colors duration-500`}
+        className={`uppercase text-lg font-conduit font-bold ${textColor} transition-colors duration-500`}
       >
         Ydelser
       </Button>
