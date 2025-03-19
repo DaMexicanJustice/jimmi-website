@@ -16,6 +16,7 @@ import daliborPic from "/public/images/Dalibor.jpg";
 import silhouettePic from "/public/images/silhouette.png";
 import MentorCtaCard from "../ui/mentor-cta-card";
 import DownloadButton from "../ui/DownloadButton";
+import LinkedInElement from "../ui/linked-in-element";
 
 interface Employee {
   name: string;
@@ -33,6 +34,7 @@ interface Employee {
   role: string;
   email: string;
   phone: string;
+  linkedIn: string;
   competences: {
     languages: { [key: string]: string };
     education: { [key: string]: string };
@@ -175,6 +177,7 @@ export default async function Component() {
                           </p>
                         ))}
                     </div>
+                    <LinkedInElement url={e.linkedIn ? e.linkedIn : ""} text="Følg På LinkedIn" />
                     <Link
                       href={{
                         pathname: "/employee-details",
