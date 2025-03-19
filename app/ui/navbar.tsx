@@ -190,7 +190,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                 <Close className="size-8 fill-slate-50"></Close>
               </IconButton>
             </div>
-            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduit font-bold uppercase">
+            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduitbold uppercase">
               <Link
                 href="/"
                 onClick={closeMenu}
@@ -214,7 +214,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                   <Accordion
                     expanded={expanded}
                     onChange={handleExpansion}
-                    className="bg-transparent text-slate-50 font-conduit font-bold p-0"
+                    className="bg-transparent text-slate-50 font-conduitbold p-0"
                     style={{ boxShadow: "none", padding: "0px" }}
                     sx={{
                       "& .MuiAccordion-region": {
@@ -231,7 +231,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                       id="panel1-header"
                       className="p-0"
                     >
-                      <Typography className="font-conduit font-bold text-xl">
+                      <Typography className="font-conduitbold text-xl">
                         Ydelser
                       </Typography>
                     </AccordionSummary>
@@ -241,7 +241,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-employment"
-                            className="font-conduit font-bold"
+                            className="font-conduitbold"
                           >
                             Beskæftigelsesindsatser
                           </Link>
@@ -250,7 +250,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-youth"
-                            className="font-conduit font-bold"
+                            className="font-conduitbold"
                             aria-disabled
                           >
                             Ungeindsatser
@@ -260,7 +260,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
                           <Link
                             onClick={closeMenu}
                             href="/service-social"
-                            className="font-conduit font-bold"
+                            className="font-conduitbold"
                             aria-disabled
                           >
                             Social indsats under § 85
@@ -300,7 +300,7 @@ const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
         {/* Desktop menu navbar */}
         <div
           className={`hidden gap-5 justify-between items-center transition-colors duration-500
-        ${textColor} uppercase text-lg font-conduit font-bold
+        ${textColor} uppercase text-lg font-conduitbold
         lg:flex lg:flex-row
         `}
         >
