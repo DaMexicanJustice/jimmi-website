@@ -44,91 +44,139 @@ export function Accordion() {
       <AccordionItem title="Hurtigt i job">
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          Borgere med få udfordringer, der er motiverede, mødestabile og klar til hurtigt at komme i arbejde.
+          Forløbet henvender sig til borgere med få udfordringer, der er motiverede, mødestabile og klar til
+          hurtigt at komme i arbejde.<br></br>
+          Pletter på straffeattesten er ikke en hindring, så længe der er åben dialog.
         </p>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Hvad vi gør</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Sådan arbejder vi</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
-          <li>CV og jobansøgning: Professionelt CV og målrettede ansøgninger.</li>
-          <li>Afdækning af interesser: Borgerens interesser og ønskede jobs afdækkes.</li>
+          <li>Vi fokuserer på en hurtig overgang til arbejdsmarkedet, uden fokus på relationsopbygning eller
+            parallelindsatser.</li>
+          <li>Professionelt CV og ansøgninger: Borgeren får hjælp til at udarbejde et professionelt CV og
+            relevante ansøgninger.</li>
           <li>
-            Virksomhedsnetværk: Brug af vores netværk eller opsøgning af nye virksomheder. Pletter på straffeattesten er
-            ikke en barriere, så længe der er åben dialog.
+            Netværk og kontakt: Vi aktiverer vores netværk, men kan også opsøge nye virksomheder for at
+            finde relevante jobmuligheder.
           </li>
         </ul>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Fokus</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Vejen mod job</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          Ikke på relationer eller parallelindsatser, men udelukkende på en hurtig overgang til arbejdsmarkedet.
-          Borgeren mærker progression og handling fra start.
+          Hurtige resultater: Vi arbejder for at få borgeren til én eller flere jobsamtaler inden for maksimalt
+          fire uger. <br></br>
+
+          Fokus på handling og progression: Målet er at skabe en effektiv og målrettet indsats.
         </p>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Resultat</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Fastholdelse i job</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          Borgeren kommer til én eller flere jobsamtaler inden for maksimalt fire uger.
+          Hvis der opstår behov for støtte i ansættelsen, kan vi tilbyde et fastholdelsesforløb. Du kan finde
+          oplysninger om det i vores fastholdelsesbeskrivelse.
         </p>
       </AccordionItem>
 
-      <AccordionItem title="MÅLRETTET STØTTE TIL BORGERE LÆNGERE VÆK FRA ARBEJDSMARKEDET">
+      <AccordionItem title="HÅNDHOLDT STØTTE TIL BORGERE LÆNGERE VÆK FRA ARBEJDSMARKEDET">
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
-        <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
-          <li>
-            Kriminalitetsbaggrund: Borgere med en baggrund i kriminalitet eller banderelationer, der har siddet i
-            fængsel i kortere eller længere perioder.
-          </li>
-          <li>
-            Udreagerende adfærd: Har svært ved at omgås andre, kort lunte og vanskeligheder med at forstå sociale
-            normer.
-          </li>
-          <li>
-            Misbrugsproblemer: Borgere med et aktivt misbrug af stoffer eller alkohol, som endnu ikke er behandlet.
-          </li>
-          <li>
-            Psykiske udfordringer: Psykiske vanskeligheder, der gør det svært at fungere på arbejdsmarkedet eller i
-            sociale sammenhænge.
-          </li>
-          <li>
-            Social isolation: Har været isoleret, mangler et netværk og har svært ved at komme ud blandt mennesker.
-          </li>
-        </ul>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Hvad vi gør</h3>
-        <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
-          <li>
-            Afklaring af udfordringer: Vi afdækker de barrierer, der står i vejen for borgerens udvikling, som misbrug,
-            psykiske problemer eller sociale udfordringer.
-          </li>
-          <li>
-            Parallelle indsatser: Vi hjælper med at etablere parallelle indsatser som misbrugsbehandling, psykologhjælp
-            eller gældsrådgivning, eller samarbejder med nuværende parallelle indsatser.
-          </li>
-          <li>
-            Socialisering og mødestabilitet: Vi træner borgerne i at møde op til aftaler, bryde isolation og opbygge
-            sociale færdigheder gennem praktiske øvelser og struktureret støtte.
-          </li>
-          <li>
-            Psykisk og fysisk træning: Vi tilbyder aktiviteter som walk-and-talks, saunagus og fysisk træning, der
-            bidrager til borgerens mentale og fysiske velvære.
-          </li>
-        </ul>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Fokus</h3>
-        <p className="text-slate-900 dark:text-slate-50">
-          Vi arbejder med borgernes specifikke udfordringer gennem parallelle indsatser og socialisering. Vi træner
-          deres evne til at være mødestabile og opbygger sociale færdigheder, mens vi gradvist forbereder dem til
-          arbejdsmarkedet eller uddannelse.
+        <p className="text-slate-900 dark:text-slate-50">Forløbet er til borgere, der befinder sig længere væk fra arbejdsmarkedet og har brug for en
+          håndholdt og fleksibel indsats, der tager højde for deres individuelle situation.
         </p>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Resultat</h3>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppen kan omfatte:</h3>
+        <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
+          <li>
+            Borgere med psykiske udfordringer, der påvirker deres hverdag og mulighed for beskæftigelse.
+          </li>
+          <li>
+            Borgere med en misbrugshistorik eller som aktuelt er i misbrugsbehandling.
+          </li>
+          <li>
+            Borgere med en plettet straffeattest, tidligere kriminalitet eller som har afsonet fængselsstraf.
+          </li>
+          <li>
+            Borgere, der har været en del af en bandegruppering eller haft tætte relationer til et kriminelt miljø.
+          </li>
+          <li>
+            Borgere, der har haft eller stadig har en udreagerende adfærd.
+          </li>
+          <li>
+            Borgere, der har været isolerede i længere tid eller har et begrænset netværk.
+          </li>
+          <li>
+            Borgere med udfordringer i forhold til mødestabilitet, motivation eller daglig struktur.
+          </li>
+          <li>
+            Borgere med fysiske skånehensyn, som kræver særlig tilpasning i forløbet.
+          </li>
+        </ul>
+
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Sådan arbejder vi</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          Borgerne kommer tættere på arbejdsmarkedet i et tempo, de kan følge. Hele processen sker i tæt samarbejde med
-          sagsbehandlerne for at sikre, at borgeren udvikler sig uden at blive presset.
+          Vores indsats bygger på en 360-graders tilgang, hvor vi arbejder helhedsorienteret og støtter
+          borgerne i at få skabt stabilitet i deres liv. Vi afdækker barrierer og arbejder målrettet med de
+          udfordringer, der står i vejen for, at borgerne kan tage næste skridt mod beskæftigelse. <br></br> <br></br>
+
+          Forløbet tilpasses individuelt og kan variere i intensitet fra ét møde om ugen til flere møder
+          ugentligt, afhængigt af borgerens behov og progression.
+        </p>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Vi er tilgængelige 24/7</h3>
+        <p className="text-slate-900 dark:text-slate-50">
+          Vi sikrer løbende støtte og vejledning, også hvis der opstår akutte behov uden for møderne.
+          Borgerne kan altid få fat på os telefonisk, når der er brug for det.
+        </p>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Vores indsats omfatter blandt andet:</h3>
+        <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
+          <li>
+            Relationsarbejde – Vi skaber en tillidsfuld relation til borgeren, der danner grundlag for udvikling
+            og progression.
+          </li>
+          <li>
+            Motiverende samtaler – Vi arbejder med at styrke borgerens motivation og tro på egne evner.
+          </li>
+          <li>
+            Stabilitet og struktur – Vi hjælper med at skabe faste rammer i borgerens hverdag og styrke
+            mødestabiliteten.
+          </li>
+          <li>
+            Støtte i parallelindsatser – Vi samarbejder med misbrugscentre, psykiatrien, Kriminalforsorgen
+            m.m. for at sikre en helhedsorienteret indsats.
+          </li>
+          <li>
+            Social eksponering og mentalt overskud – Vi anvender aktiviteter som walk and talks, saunagus
+            og fysisk træning for at øge trivsel og overskud.
+          </li>
+          <li>
+            Base i Kødbyen – Møderne afholdes som udgangspunkt på vores kontor i Kødbyen, hvor borgerne
+            eksponeres for et professionelt miljø og får mulighed for at spejle sig i mennesker med tilknytning
+            til arbejdsmarkedet. Hvis det er nødvendigt og aftalt med sagsbehandleren, kan møderne i opstarten
+            afholdes i borgerens nærmiljø. Udgangspunktet er dog altid, at borgeren på sigt skal komme ind i
+            Kødbyen for at komme væk fra de vante rammer.
+          </li>
+          <li>
+            Vejen mod job – Når borgeren er klar, arbejder vi målrettet på at få dem ud i en
+            virksomhedspraktik. Praktikken starter ofte med få timer ugentligt og øges gradvist, afhængigt af
+            borgerens situation. Vi arbejder ud fra en JobFirst-tilgang, hvor beskæftigelse og parallelindsatser
+            kan kombineres, så borgeren får den nødvendige støtte undervejs.
+          </li>
+        </ul>
+
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Hvad bliver resultatet?</h3>
+        <p className="text-slate-900 dark:text-slate-50">
+          Forløbet har fokus på at skabe progression, udvikling og stabilitet, så borgeren kan tage næste skridt
+          mod beskæftigelse. Varigheden af forløbet varierer afhængigt af borgerens behov, men vi arbejder
+          hele tiden målrettet på, at borgeren kommer tættere på arbejdsmarkedet.
         </p>
       </AccordionItem>
 
-      <AccordionItem title="ARBEJDSEVNEAFKLARINGSFORLØB">
+      <AccordionItem title="VURDERING AF ARBEJDSEVNE">
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
-        <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
-          <li>
-            Borgere på sygedagpenge, i jobafklaringsforløb eller ressourceforløb, der har behov for en afklaring af
-            deres arbejdsevne med henblik på fleksjob, førtidspension eller tilbagevenden til fuldtidsarbejde.
-          </li>
-        </ul>
-        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Hvad vi gør</h3>
+        <p className="text-slate-900 dark:text-slate-5">
+          Forløbet henvender sig til borgere, der har brug for en grundig vurdering af deres arbejdsevne. Det
+          kan være borgere, der skal afklares i forhold til fleksjob, førtidspension eller ordinært arbejde på
+          nedsat tid.
+        </p>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Arbejdsmetoder</h3>
+        <p className="text-slate-900 dark:text-slate-5">
+          Mange af de arbejdsmetoder, vi anvender i vores forløb, <span className="font-bold">Håndholdt støtte til borgere længere væk fra arbejdsmarkedet</span>
+          , går også igen her.
+        </p>
+        <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Sådan arbejder vi</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
           <li>
             Vi vurderer borgernes ressourcer, udfordringer og ønsker og afdækker, hvor de står i forhold til
@@ -155,14 +203,14 @@ export function Accordion() {
         </ul>
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Fokus</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          Hvordan borgeren har det, afgør tempoet i forløbet og tidspunktet for, hvornår de kan komme ud på en
-          arbejdsplads. Forløbet tilpasses borgerens behov og ressourcer med fokus på at støtte dem på vej mod
-          arbejdsmarkedet.
+          Forløbet har som fokus at skabe en realistisk og individuel vurdering af borgerens arbejdsevne. Der
+          tages højde for eventuelle skånehensyn, behov for hjælpemidler og andre forhold, der kan påvirke
+          borgerens arbejdsmuligheder.
         </p>
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Resultat</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          Vi udarbejder en arbejdsevnebeskrivelse, som er en afsluttende rapport, der kan bruges på rehabiliteringsmødet
-          i forbindelse med en afklaring.
+          Forløbet afsluttes med en arbejdsevnebeskrivelse, som kan bruges som dokumentation på
+          rehabiliteringsmødet.
         </p>
       </AccordionItem>
 
@@ -170,25 +218,23 @@ export function Accordion() {
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-5">Målgruppe</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
           <li>
-            Borgere, der er kommet i job eller uddannelse, men som mangler et netværk eller ressourcepersoner at trække
-            på. Forløbet er til dem, der har brug for støtte i en overgangsperiode for at minimere risikoen for
-            tilbagefald.
+            Borgere, der via samarbejde med Mentorplan er kommet i job eller uddannelse, men som vurderes
+            at have behov for ekstra støtte i en overgangsperiode for at sikre fastholdelse og minimere risikoen
+            for tilbagefald.
           </li>
         </ul>
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Hvad vi gør</h3>
         <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
-          <li>
-            Mentoren fortsætter som støtte i en nedjusteret indsats for at sikre, at borgeren har en kendt og
-            tillidsfuld kontaktperson ved behov. Indsatsen inkluderer:
-          </li>
-          <li>Telefonisk kontakt og rådgivning efter behov.</li>
-          <li>Fysiske møder i konkrete situationer.</li>
-          <li>Tilgængelighed for sparring ved opståede udfordringer.</li>
-          <li>Mulighed for at opjustere indsatsen, hvis der er behov.</li>
+          <li>Fleksibel sparring og rådgivning</li>
+          <li>Telefonisk kontakt og fysiske møder på arbejdspladsen efter behov</li>
+          <li>Mulighed for at genoptage en mere intensiv indsats, hvis nødvendigt</li>
+          <li>Forløbet varer typisk mellem 4-12 uger</li>
         </ul>
+
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Fokus</h3>
         <p className="text-slate-900 dark:text-slate-50">
-          At sikre, at borgeren fastholdes i job eller uddannelse gennem en tryg overgang, hvor tilbagefald undgås.
+          At sikre, at borgeren fastholdes i job eller uddannelse gennem en tryg overgang, hvor tilbagefald
+          minimeres.
         </p>
         <h3 className="font-bold text-lg xl:text-xl uppercase text-slate-900 dark:text-slate-50 mt-4">Resultat</h3>
         <p className="text-slate-900 dark:text-slate-50">

@@ -51,10 +51,6 @@
   background-repeat: no-repeat;
 }
 
-. {
-  transition: filter 1s ease-in-out;
-}
-
 .image-left {
   transform: translateX(-2000px);
 }
@@ -81,6 +77,28 @@ p {
 
 @screen xl {
   p {
+    @apply text-2xl;
+  }
+}
+
+li {
+  @apply text-base
+}
+
+@screen md {
+  li {
+    @apply text-lg;
+  }
+}
+
+@screen lg {
+  li {
+    @apply text-xl;
+  }
+}
+
+@screen xl {
+  li {
     @apply text-2xl;
   }
 }

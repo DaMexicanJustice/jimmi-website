@@ -56,7 +56,7 @@ const imageMap = {
 export default async function Component() {
   const employeeData = await getEmployeeData();
   const employees: Employee[] = employeeData.employees;
-  const maxEducationParagraphs = 4;
+  const maxEducationParagraphs = 5;
 
   return (
     <>
@@ -136,10 +136,10 @@ export default async function Component() {
                     <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
                       Sprog
                     </p>
-                    <div className="flex flex-row flex-wrap gap-1">
+                    <div className="flex flex-row flex-wrap gap-1 w-3/5 xl:w-4/5">
                       {Object.values(e.competences.languages)
                         .map((lang, i) => (
-                          <p key={i} className="text-slate-950 text-xs xl:text-sm 2xl:text-base">
+                          <p key={i} className="text-slate-950 text-sm 2xl:text-base">
                             {lang}
                           </p>
                         ))}
@@ -149,12 +149,11 @@ export default async function Component() {
                     </p>
                     <div className="flex flex-col gap-1">
                       {Object.values(e.competences.education)
-                        .reverse()
                         .slice(0, maxEducationParagraphs)
                         .map((edu, i) => (
                           <p
                             key={i}
-                            className="text-slate-950  text-xs xl:text-sm 2xl:text-base truncate"
+                            className="text-slate-950 text-sm 2xl:text-base truncate"
                           >
                             {edu}
                           </p>
@@ -170,7 +169,7 @@ export default async function Component() {
                         .map((exp, i) => (
                           <p
                             key={i}
-                            className="text-slate-950text-xs xl:text-sm 2xl:text-base truncate"
+                            className="text-slate-950 text-sm 2xl:text-base truncate"
                           >
                             {exp}
                           </p>

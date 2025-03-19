@@ -4,9 +4,11 @@ import Navbar from "../ui/navbar";
 import networkPic from "/public/images/network.jpg";
 import journalPic from "/public/images/journal.jpg";
 import sohoPic from "/public/images/soho_face.jpg";
+import possiblePic from "/public/images/possible.jpg"
+import growthPic from "/public/images/growth.jpg"
 import Image from "next/image";
 import { useRef } from "react";
-import { Check } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 // GSAP
 import gsap from "gsap";
@@ -126,29 +128,24 @@ export default function ServiceEmployment() {
               BESKÆFTIGELSES- OG UDDANNELSESINDSATS
             </h1>
             <p className="text-slate-900 dark:text-slate-50">
-              Hos Mentorplan arbejder vi målrettet med at hjælpe borgere tilbage
-              på arbejdsmarkedet eller ind i uddannelse. Vi tror på, at alle
-              fortjener en chance for at bidrage og finde mening i hverdagen –
-              uanset hvilke udfordringer de står overfor. Vi møder borgerne,
-              hvor de er, og sammen finder vi vejen.
+              Hos Mentorplan arbejder vi ud fra tanken om, at virkeligheden virker – inspireret af JobFirst-
+              metoden, som har vist gode resultater med at få udsatte borgere tilbage på arbejdsmarkedet. Vi tager
+
+              udgangspunkt i principperne fra JobFirst og har tilpasset dem til vores måde at arbejde på, så vi
+              bedst muligt møder borgernes forskellige behov.
               <br></br> <br></br>
-              Det handler om at skabe holdbare løsninger, der giver mening for
-              den enkelte. Vores forløb tilpasses altid borgerens behov og
-              situation og tager udgangspunkt i en helhedsorienteret tilgang,
-              hvor vi både ser på ressourcer og udfordringer. Med en stærk
-              kombination af erfaring, faglighed og en menneskelig tilgang
-              skaber vi løsninger, der rykker mennesker.
+              Det handler om at skabe holdbare løsninger, der giver mening for den enkelte. Vores forløb
+              tilpasses altid borgerens behov og situation og tager udgangspunkt i en helhedsorienteret tilgang,
+              hvor vi både ser på ressourcer og udfordringer. Med en stærk kombination af erfaring, faglighed og
+              en menneskelig tilgang skaber vi løsninger, der rykker mennesker.
               <br></br> <br></br>
-              Hos Mentorplan er målet ikke bare at få folk i gang, men at sikre,
-              at de bliver klar til at fastholde deres vej – uanset om det
-              handler om arbejde, uddannelse eller begge dele.
+              Hos Mentorplan er målet ikke bare at få folk i gang, men at sikre, at de bliver klar til at fastholde
+              deres vej – uanset om det handler om arbejde, uddannelse eller begge dele.
               <br></br> <br></br>
-              Nedenfor beskriver vi, hvordan vi arbejder, og hvilke forløb vi
-              tilbyder. Det er vigtigt at understrege, at der ikke findes en
-              færdig opskrift, der passer til alle. Alt kan justeres og
-              tilpasses den enkelte borger og deres behov. De beskrevne forløb
-              giver et indblik i, hvordan vi arbejder, men vi er altid fleksible
-              og dynamiske for at sikre den bedste indsats.
+              Nedenfor beskriver vi, hvordan vi arbejder, og hvilke forløb vi tilbyder. Det er vigtigt at
+              understrege, at der ikke findes en færdig opskrift, der passer til alle. Alt kan justeres og tilpasses den
+              enkelte borger og deres behov. De beskrevne forløb giver et indblik i, hvordan vi arbejder, men vi
+              er altid fleksible og dynamiske for at sikre den bedste indsats.
             </p>
           </div>
 
@@ -167,36 +164,38 @@ export default function ServiceEmployment() {
                 METODE: VIRKELIGHEDEN VIRKER
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan arbejder vi ud fra tanken om, at virkeligheden
-                virker – inspireret af JobFirst-metoden, som har vist gode
-                resultater for udsatte borgere på arbejdsmarkedet. Vi tager
-                udgangspunkt i nogle af principperne fra JobFirst og har
-                tilpasset dem til vores måde at arbejde på, så vi bedst muligt
-                møder de forskellige behov, vores borgere har.
+                Hos Mentorplan arbejder vi ud fra tanken om, at virkeligheden virker – inspireret af JobFirst-
+                metoden, som har vist gode resultater med at få udsatte borgere tilbage på arbejdsmarkedet. Vi tager
+
+                udgangspunkt i principperne fra JobFirst og har tilpasset dem til vores måde at arbejde på, så vi
+                bedst muligt møder borgernes forskellige behov. <br></br><br></br>
+                JobFirst bygger på tre principper:
+              </p>
+              <ul className="text-slate-900 dark:text-slate-50 list-disc px-6">
+                <li>
+                  Borgeren får fodfæste på arbejdsmarkedet ved at komme i gang med ordinære arbejdsopgaver fra
+                  dag ét.
+                </li>
+                <li>
+                  Afklaring og motivation skabes bedst i jobbet, hvor borgeren bliver en del af et kollegialt
+                  fællesskab.
+                </li>
+                <li>
+                  De fleste borgere kan bidrage på arbejdsmarkedet, hvis rammerne er de rette, og der tages de
+                  nødvendige hensyn.
+                </li>
+              </ul>
+              <p className="text-slate-900 dark:text-slate-50">
+                Ikke alle borgere er dog klar til at starte direkte på arbejdsmarkedet, selv med få timer. For denne
+                målgruppe tilbyder vi håndholdte indsatser, der klæder dem på til at tage det næste skridt. Der
+                henvises til vores forløbsbeskrivelser længere nede på siden.
                 <br></br> <br></br>
-                For nogle handler det om at træde direkte ud på arbejdsmarkedet,
-                mens andre først skal opbygge de grundlæggende færdigheder, der
-                gør dem klar til at tage næste skridt. Uanset hvor borgeren
-                står, er målet at skabe udvikling gennem konkrete handlinger og
-                træning i praksis. Når arbejdspladsen ikke er første skridt
-                <br></br> <br></br>
-                Ikke alle borgere er klar til at træde direkte ind i en
-                virksomhedspraktik eller et job. For dem tilbyder vi træning og
-                struktur på vores kontor i Kødbyen, kombineret med andre sociale
-                og udviklende indsatser. Her arbejder vi med at styrke borgerens
-                mødestabilitet, sociale færdigheder og evne til at overholde
-                aftaler.
-                <br></br> <br></br>
-                Derudover kan vi iværksætte andre aktiviteter og indsatser, der
-                understøtter borgerens vej mod arbejdsmarkedet, f.eks.
-                motiverende samtaler, fysiske aktiviteter eller specifikke
-                forløb, der udvikler både deres personlige og faglige
-                kompetencer. Disse tilbud tilpasses altid borgerens behov og
-                situation.
+                Vores 360°-hjul giver indblik i nogle af de udfordringer, vores borgere kan opleve. Klik på hjulet
+                for at læse mere om, hvordan vi støtter borgerne i at håndtere disse udfordringer.
               </p>
             </div>
-            <div className="lg:basis-4/12 image-container">
-              <div id="svg-container" className="">
+            <div className="lg:basis-4/12 image-container image-right z-50">
+              <div id="svg-container">
                 <CircularDiagram></CircularDiagram>
               </div>
             </div>
@@ -243,7 +242,7 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="Virksomhedsnetværk"
-                className="object-cover  w-full"
+                className="object-cover w-full"
                 priority
               />
             </div>
@@ -309,14 +308,94 @@ export default function ServiceEmployment() {
                 DET RIGTIGE VIRKSOMHEDSMATCH GØR FORSKELLEN
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan er det afgørende, at vores borgere bliver matchet
-                med virksomheder, hvor de kan trives og udvikle sig. Vi
-                samarbejder tæt med erfarne virksomheder, der har tid og
-                overskud til at tage godt imod vores borgere. Et godt
-                arbejdsmiljø og stærke kollegiale relationer er ofte vigtigere
-                end selve arbejdsopgaven – det handler om, at borgeren føler sig
-                velkommen og får en god start.
+                Hos Mentorplan er det afgørende, at vores borgere bliver matchet med virksomheder, hvor de kan
+                trives og udvikle sig.
+                Vi samarbejder med virksomheder, der har et godt arbejdsmiljø, tager socialt ansvar og har tid og
+                lyst til at tage imod borgere, som har brug for en håndholdt indsats. <br></br><br></br>
+                Et stærkt kollegialt fællesskab og en god opstart er ofte vigtigere end selve arbejdsopgaven – det
+                handler om, at borgeren føler sig velkommen og får en god start.
               </p>
+            </div>
+            <div className="lg:basis-4/12 image-container">
+              <Image
+                src={growthPic}
+                width={430}
+                height={370}
+                alt="Virksomhedsnetværk"
+                className="object-cover w-full"
+                priority
+              />
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col gap-6 space-between items-center 
+            lg:flex-row"
+          >
+            <div
+              className="flex flex-col gap-6 items-center
+              lg:items-start  lg:basis-8/12"
+            >
+              <h2
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
+                  xl:text-4xl"
+              >
+                SAMARBEJDET STARTER MED FORVENTNINGSAFSTEMNING
+              </h2>
+              <p className="text-slate-900 dark:text-slate-50">
+                Når en borger skal starte i praktik, løntilskud eller ordinært arbejde, deltager vi altid i første møde
+                mellem borgeren og virksomheden.
+                Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle
+                udfordringer. <br></br> <br></br>
+                Vores erfaring er, at udfordringer – uanset om de handler om sociale forhold, misbrugshistorik,
+                fysiske udfordringer, en plettet straffeattest eller andre personlige forhold – ikke behøver at være en
+                hindring, når de håndteres med åbenhed.
+                Vi arbejder tæt sammen med virksomheder, der ser på borgerens potentiale frem for begrænsninger.
+                Denne tilgang skaber gensidig forståelse og sikrer et godt fundament for et succesfuldt forløb.
+              </p>
+            </div>
+            <div className="lg:basis-4/12 image-container">
+              <Image
+                src={possiblePic}
+                width={430}
+                height={370}
+                alt="Virksomhedsnetværk"
+                className="object-cover w-full"
+                priority
+              />
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col gap-6 space-between items-center 
+            lg:flex-row"
+          >
+            <div
+              className="flex flex-col gap-6 items-center
+              lg:items-start  lg:basis-6/12"
+            >
+              <h2
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
+                  xl:text-4xl"
+              >
+                FLEKSIBLE OPSTARTSMULIGHEDER
+              </h2>
+              <p className="text-slate-900 dark:text-slate-50">
+                Vi arbejder med forskellige opstartsforløb, afhængigt af borgerens behov
+              </p>
+
+            </div>
+            <div className="lg:basis-6/12">
+              <ul className="list-none text-slate-900 dark:text-slate-50">
+                <li><span className="font-bold">Snusepraktik (1-2 uger)</span><br></br> En kortvarig praktik, hvor borgeren og virksomheden kan afstemme
+                  kemi og arbejdsopgaver, før der træffes en beslutning om et længere samarbejde.</li>
+                <li><span className="font-bold">Længere praktikforløb</span><br></br> Hvis borgeren har brug for en blødere opstart eller en gradvis
+                  optrapning af arbejdstiden, kan vi etablere længerevarende praktikforløb.</li>
+                <li><span className="font-bold">Løntilskud</span> <br></br> En mulighed for borgere, der har brug for ekstra oplæring og støtte i opstarten.</li>
+                <li><span className="font-bold">Direkteansættelse</span> <br></br>Nogle borgere har allerede de nødvendige kompetencer og har ikke brug for
+                  ekstra støtte eller træning for at starte i job.</li>
+                <li><span className="font-bold">VITAS</span><br></br> Vi er vant til at arbejde med VITAS og kan håndtere processen med oprettelse af praktikker og løntilskud, så det er nemt for både virksomheder og jobcentre.</li>
+              </ul>
             </div>
           </div>
 

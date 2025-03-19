@@ -107,7 +107,7 @@ export default function Component() {
   };
 
   return (
-    <div className="relative w-full max-w-md mx-auto">
+    <div className="relative w-full max-w-lg mx-auto">
       <svg viewBox="0 0 200 200" className="w-full">
         <circle
           cx="100"
@@ -175,7 +175,7 @@ export default function Component() {
             className="absolute inset-0 flex items-center justify-center"
           >
             <motion.div
-              className="bg-slate-50 shadow-lg p-6 max-w-sm w-full"
+              className="bg-slate-50 shadow-lg p-6 max-w-md w-full"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}

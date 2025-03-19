@@ -54,7 +54,7 @@ export default function Prices() {
     function ListItem({ children }: { children: React.ReactNode }) {
         return (
             <li className="flex items-start">
-                <Check className="w-5 h-5 text-yellow-400 mr-2 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-yellow-500 mr-2 mt-1 flex-shrink-0" />
                 <span>{children}</span>
             </li>
         );
