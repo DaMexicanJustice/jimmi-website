@@ -81,6 +81,16 @@ export default function ServiceEmployment() {
         pinReparent: false,
       });
 
+      // Refresh ScrollTrigger on accordion item toggle
+      const accordionItems = document.querySelectorAll(".scroll-section");
+
+      accordionItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Give GSAP time to adjust after accordion toggle
+          setTimeout(() => ScrollTrigger.refresh(), 300);
+        });
+      });
+
       imageContainers.forEach((container) => {
         gsap.fromTo(
           container,
@@ -98,6 +108,13 @@ export default function ServiceEmployment() {
           }
         );
       });
+
+      return () => {
+        // Clean up event listeners on unmount
+        accordionItems.forEach((item) => {
+          item.removeEventListener("click", () => ScrollTrigger.refresh());
+        });
+      };
     },
     { scope: containerRef }
   );
