@@ -10,7 +10,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import ScrollFadeinList from "../ui/scroll-fadein-list";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -165,7 +164,7 @@ export default function CorporateCollaboration() {
                   på en kop kaffe ☕ på vores kontor i Kødbyen, eller vi kommer
                   ud til jer.
                 </p>
-                <CtaButton type="button" text="Kontakt Os" href="/contact" />
+                <CtaButton text="Kontakt Os" href="/contact" />
               </div>
             </div>
             <div className="lg:w-4/12 mt-6 lg:mt-0 self-start">

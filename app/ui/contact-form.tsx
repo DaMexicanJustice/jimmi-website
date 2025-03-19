@@ -291,7 +291,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
             }}
           />
           <input className="p-0 m-0 size-0" id="antibot" name="antibot" type="text" placeholder="Confirm that you are human, what is 4+4" value="" />
-          <CtaButton text="Send Besked" href="" type="submit"></CtaButton>
+          <CtaButton text="Send Besked" href=""></CtaButton>
         </form>
         {loading ? <Spinner /> : <p></p>}
       </div>

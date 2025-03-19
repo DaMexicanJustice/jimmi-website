@@ -37,7 +37,7 @@ export default function Services() {
             >
               Beskæftigelsesindsatser
             </h2>
-            <CtaButton text="Læs Mere" href="/service-employment" type="button" height={3} width={6}></CtaButton>
+            <CtaButton text="Læs Mere" href="/service-employment" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
               className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
@@ -53,7 +53,7 @@ export default function Services() {
                 arbejdsmarkedet. Vores 360-graders metode sikrer en omfattende vurdering af borgerens situation for at
                 skabe det bedste match.
               </p>
-              <CtaButton text="Læs Mere" href="/service-employment" type="button" height={3} width={6}></CtaButton>
+              <CtaButton text="Læs Mere" href="/service-employment" height={3} width={6}></CtaButton>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export default function Services() {
             >
               Ungeindsatser
             </h2>
-            <CtaButton text="Læs Mere" href="/service-youth" type="button" height={3} width={6}></CtaButton>
+            <CtaButton text="Læs Mere" href="/service-youth" height={3} width={6}></CtaButton>
 
             <div
               className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
@@ -90,7 +90,7 @@ export default function Services() {
                 stabilitet og retning i deres liv. Vores team består af erfarne fagfolk, der arbejder med relationer,
                 fritidsjob, beskæftigelse og kriminalitetsforebyggelse.
               </p>
-              <CtaButton text="Læs Mere" href="/service-youth" type="button" height={3} width={6}></CtaButton>
+              <CtaButton text="Læs Mere" href="/service-youth" height={3} width={6}></CtaButton>
             </div>
           </div>
 
@@ -111,7 +111,7 @@ export default function Services() {
             >
               Social indsats under § 85
             </h2>
-            <CtaButton text="Læs Mere" href="/service-social" type="button" height={3} width={6}></CtaButton>
+            <CtaButton text="Læs Mere" href="/service-social" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
               className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
@@ -128,7 +128,7 @@ export default function Services() {
                 udendørsaktiviteter og tværfagligt samarbejde for at sikre skræddersyet assistance. Vores mål er
                 vedvarende positiv forandring gennem meningsfulde relationer og aktiviteter.
               </p>
-              <CtaButton text="Læs Mere" href="/service-social" type="button" height={3} width={6}></CtaButton>
+              <CtaButton text="Læs Mere" href="/service-social" height={3} width={6}></CtaButton>
             </div>
           </div>
 
@@ -149,7 +149,7 @@ export default function Services() {
             >
               Virksomhedssamarbejde
             </h2>
-            <CtaButton text="Læs Mere" href="/corporate-collaboration" type="button" height={3} width={6}></CtaButton>
+            <CtaButton text="Læs Mere" href="/corporate-collaboration" height={3} width={6}></CtaButton>
             {/* Overlay */}
             <div
               className="flex flex-col gap-4 hidden pb-5 justify-end items-center absolute w-full h-full
@@ -165,7 +165,7 @@ export default function Services() {
                 arbejdsmarkedet. Vi tilbyder åbent samarbejde og støtte til virksomheder, der ønsker at gøre en forskel.
                 Kontakt Mentorplan for at aftale et møde og diskutere mulighederne.
               </p>
-              <CtaButton text="Læs Mere" href="/corporate-collaboration" type="button" height={3} width={6}></CtaButton>
+              <CtaButton text="Læs Mere" href="/corporate-collaboration" height={3} width={6}></CtaButton>
             </div>
           </div>
         </main>
