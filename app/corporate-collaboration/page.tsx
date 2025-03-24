@@ -33,8 +33,8 @@ export default function CorporateCollaboration() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: content, // Use the content as the trigger instead of the image
-          start: "top 15%", // Start when the top of the content reaches 15% from the top of viewport
-          end: "bottom 80%", // End when the bottom of the content reaches 80% from the top of viewport
+          start: () => `top ${window.innerWidth >= 1024 ? "15%" : "8%"}`, // Adjust start position based on screen size
+          end: () => `bottom ${window.innerWidth >= 1024 ? "80%" : "40%"}`, // Adjust end position based on screen size
           pin: image, // Pin the image element instead of the trigger
           pinSpacing: false, // Don't add extra space for the pinned element
           scrub: 0.5, // Smooth scrolling effect
@@ -177,9 +177,9 @@ export default function CorporateCollaboration() {
                 ref={imageRef}
                 alt="virksomhedssamarbejde"
                 src="/images/virksomheder.jpg"
-                width={400}
-                height={500}
-                className="w-full h-auto shadow-lg"
+                width={500}
+                height={600}
+                className="object-cover shadow-lg"
               />
             </div>
           </div>
