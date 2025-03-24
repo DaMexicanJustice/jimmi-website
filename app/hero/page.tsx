@@ -28,6 +28,7 @@ export default function Hero() {
           autoPlay
           loop
           muted
+          playsInline
           id="video"
           src="/video/mentorplan.mp4"
           typeof="video/mp4"
