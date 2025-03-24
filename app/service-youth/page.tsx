@@ -132,7 +132,7 @@ export default function ServiceYouth() {
                 og træning, lægger vi vægt på at være vedholdende, ordentlige og
                 professionelle i vores tilgang. Vi er tydelige i vores
                 kommunikation, og det vi aftaler, gør vi. Den vedholdenhed og
-                konsekvente støtte, vi giver de unge, er med til at sikre, at de
+                konsekvente støtte vi giver de unge, er med til at sikre, at de
                 føler sig set og støttet, hvilket styrker relationen og skaber
                 fundamentet for positiv udvikling.
               </p>

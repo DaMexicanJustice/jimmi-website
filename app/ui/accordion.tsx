@@ -184,16 +184,14 @@ export function Accordion() {
             situation:
 
           </li>
-          <ul className="list-disc pl-6 text-slate-900 dark:text-slate-50">
-            <li>
-              Få udfordringer: Borgeren kan hurtigt komme ud på en arbejdsplads i praktik eller lønnede timer, afhængigt
-              af hvor de er i deres proces. Praktikkens varighed afstemmes løbende med sagsbehandler.
-            </li>
-            <li>
-              Flere udfordringer: Vi arbejder med de barrierer, der fylder, og støtter borgerne i at håndtere dem. Det
-              kan indebære støtte i eksisterende parallelindsatser eller opstart af nye.
-            </li>
-          </ul>
+          <li>
+            Få udfordringer: Borgeren kan hurtigt komme ud på en arbejdsplads i praktik eller lønnede timer, afhængigt
+            af hvor de er i deres proces. Praktikkens varighed afstemmes løbende med sagsbehandler.
+          </li>
+          <li>
+            Flere udfordringer: Vi arbejder med de barrierer, der fylder, og støtter borgerne i at håndtere dem. Det
+            kan indebære støtte i eksisterende parallelindsatser eller opstart af nye.
+          </li>
           <li>
             Vi tilbyder aktiviteter som fysisk træning og saunagus, der styrker borgernes fysiske og psykiske velvære.
             Samtidig fungerer møder i Kødbyen som eksponeringsforløb, hvor borgerne kan træne sociale færdigheder,

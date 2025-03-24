@@ -38,7 +38,7 @@ export default function Contact() {
             </h1>
             <div className="flex flex-row gap-2">
               <UserCircleIcon className="size-4 lg:size-6 "></UserCircleIcon>
-              <p className="uppercase">Mentorplan</p>
+              <p className="text-lg uppercase">Mentorplan</p>
             </div>
             <div className="flex flex-row gap-2">
               <MapPinIcon className="size-4 lg:size-6 "></MapPinIcon>

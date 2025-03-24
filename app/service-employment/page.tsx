@@ -187,13 +187,7 @@ export default function ServiceEmployment() {
                 METODE: VIRKELIGHEDEN VIRKER
               </h2>
               <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan arbejder vi ud fra tanken om, at virkeligheden
-                virker – inspireret af JobFirst- metoden, som har vist gode
-                resultater med at få udsatte borgere tilbage på arbejdsmarkedet.
-                Vi tager udgangspunkt i principperne fra JobFirst og har
-                tilpasset dem til vores måde at arbejde på, så vi bedst muligt
-                møder borgernes forskellige behov. <br></br>
-                <br></br>
+
                 JobFirst bygger på tre principper:
               </p>
               <ul className="text-slate-900 dark:text-slate-50 list-disc px-6">
@@ -510,7 +504,7 @@ export default function ServiceEmployment() {
                 for dette. Det aftales derfor individuelt, hvilken dokumentation
                 vi skal levere til de jobcentre, vi samarbejder med, da vi
                 oplever et meget forskelligt behov. Vi skræddersyr vores
-                dofkumentation, så det understøtter jeres behov bedst muligt.
+                dokumentation, så det understøtter jeres behov bedst muligt.
                 Men vi tilbyder:
               </p>
               <ol
@@ -525,10 +519,6 @@ export default function ServiceEmployment() {
                 <li>
                   Ugentlig/månedlig status på samarbejde mellem mentor og borger
                   - efter aftale
-                </li>
-                <li>
-                  Løbende statusmails og opkald, månedlig statusrapport og
-                  afsluttende rapport - efter aftale
                 </li>
                 <li>Løbende opfølgning på praktikstedet - efter behov</li>
                 <li>Ugentlig kontakt med borger</li>

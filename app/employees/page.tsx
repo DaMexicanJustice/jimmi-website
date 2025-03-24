@@ -73,7 +73,7 @@ export default async function Component() {
               <p className="text-slate-900 text-xl">
                 Vi mener, at faglighed er en afgørende forudsætning for at
                 udføre et godt stykke arbejde. Denne brede vifte af erfaringer
-                inden for vores team giver os mulighed for at tilbyde
+                inden for vores team, giver os mulighed for at tilbyde
                 skræddersyet støtte og rådgivning til vores målgrupper. Læs mere
                 under den enkelte konsulent.
               </p>

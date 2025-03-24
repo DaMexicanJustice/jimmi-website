@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
               className="w-32 h-12 cursor-pointer fill-white bg-gradient-mentor"
             >
               <defs>
-                <style>.cls-1{}</style>
+                <style>.cls-1{ }</style>
               </defs>
               <g id="Layer_7" data-name="Layer 7">
                 <path
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
             ></ArrowUpIcon>
             <Link
               className="text-white"
-              href="https://www.linkedin.com/in/jimmililjehult/"
+              href="https://www.linkedin.com/company/mentorplan/"
             >
               <FaLinkedin className="size-12"></FaLinkedin>
             </Link>
@@ -210,7 +210,7 @@ const Footer: React.FC = () => {
             ></ArrowUpIcon>
             <Link
               className="text-white"
-              href="https://www.linkedin.com/in/jimmililjehult/"
+              href="https://www.linkedin.com/company/mentorplan/"
             >
               <FaLinkedin className="size-12"></FaLinkedin>
             </Link>
@@ -228,7 +228,7 @@ const Footer: React.FC = () => {
               className="w-32 h-12 cursor-pointer fill-white bg-gradient-mentor"
             >
               <defs>
-                <style>.cls-1{}</style>
+                <style>.cls-1{ }</style>
               </defs>
               <g id="Layer_7" data-name="Layer 7">
                 <path
@@ -294,10 +294,11 @@ const Footer: React.FC = () => {
                 Skriv Til Mig
               </h1> */}
             <p className="m-1 text-xl">
-              Telefon: <a href="tel:+4542955969">+45 42955969</a> | Sikkermail:{" "}
-              <span className="text-yellow-400 dark:text-yellow-500">
-                jl@mentorplan.dk
-              </span>
+              Telefon: <a href="tel:+4542955969">+45 42955969</a> |
+              <a href="mailto:jl@mentorplan.dk" className="m-1 text-lg">
+                Sikkermail:
+                <span className="text-yellow-400">&nbsp;jl@mentorplan.dk</span>
+              </a>
             </p>
             <p className="m1 text-lg text-slate-500">CVR: 37923850</p>
             {/* <div className="">
@@ -316,7 +317,7 @@ const Footer: React.FC = () => {
             ></ArrowUpIcon>
             <Link
               className="text-white"
-              href="https://www.linkedin.com/in/jimmililjehult/"
+              href="https://www.linkedin.com/company/mentorplan/"
             >
               <FaLinkedin className="size-12"></FaLinkedin>
             </Link>
@@ -418,7 +419,7 @@ const Footer: React.FC = () => {
             ></ArrowUpIcon>
             <Link
               className="text-white"
-              href="https://www.linkedin.com/in/jimmililjehult/"
+              href="https://www.linkedin.com/company/mentorplan/"
             >
               <FaLinkedin className="size-12"></FaLinkedin>
             </Link>
