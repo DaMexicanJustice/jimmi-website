@@ -70,8 +70,8 @@ export default function ScrollFadeinList({
               {item.title}
             </h3>
             <p
-              className={`mb-4 p-0
-                ${textColor}`}
+              key={index}
+              className={`p-0 ${textColor} ${index !== items.length - 1 ? 'mb-4' : ''}`}
             >
               {item.content}
             </p>

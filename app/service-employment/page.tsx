@@ -309,7 +309,7 @@ export default function ServiceEmployment() {
                 width={430}
                 height={370}
                 alt="Virksomhedsnetværk"
-                className="object-cover  w-full"
+                className="object-cover w-full"
                 priority
               />
             </div>
