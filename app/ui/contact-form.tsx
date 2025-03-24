@@ -1,28 +1,29 @@
-"use client"; // This is a client component
-import TextField from "@mui/material/TextField";
-import CtaButton from "./cta-button";
-import { useRef, useState } from "react";
-import toast from "react-hot-toast";
-import Spinner from "./spinner";
-// GSAP
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Button } from "@mui/material";
+"use client" // This is a client component
+import TextField from "@mui/material/TextField"
+import type React from "react"
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+import { useRef, useState } from "react"
+import toast from "react-hot-toast"
+import Spinner from "./spinner"
+// GSAP
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { ButtonBase } from "@mui/material"
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 interface ContactFormProps {
-  useSliderAnimation: boolean;
+  useSliderAnimation: boolean
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    const parsedValue = Math.max(0, parseInt(value, 10));
-    e.target.value = parsedValue.toString().slice(0, 8);
-  };
-  const useSlider = useSliderAnimation ? "image-right" : "";
+    const value = e.target.value
+    const parsedValue = Math.max(0, Number.parseInt(value, 10))
+    e.target.value = parsedValue.toString().slice(0, 8)
+  }
+  const useSlider = useSliderAnimation ? "image-right" : ""
 
   useGSAP(() => {
     gsap.to(".slider", {
@@ -34,94 +35,93 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
       },
       x: 0,
       duration: 1,
-    });
-  });
+    })
+  })
 
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [loading, setLoading] = useState(false)
+  const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
-  const formRef = useRef<HTMLFormElement>(null);
+  const formRef = useRef<HTMLFormElement>(null)
 
   const validateForm = (formData: FormData) => {
-    const newErrors: { [key: string]: string } = {};
-    const requiredFields = ["name", "phone", "email", "message"];
+    const newErrors: { [key: string]: string } = {}
+    const requiredFields = ["name", "phone", "email", "message"]
 
     requiredFields.forEach((field) => {
       if (!formData.get(field)) {
-        newErrors[field] = `${field} is required`;
-      } else if (formData.get("flytrap"))
-        newErrors[field] = `${field} is not allowed. Begone from here bot.`;
-    });
-    return newErrors;
-  };
+        newErrors[field] = `${field} is required`
+      } else if (formData.get("flytrap")) newErrors[field] = `${field} is not allowed. Begone from here bot.`
+    })
+    return newErrors
+  }
 
   const sendEmail = (event: any) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const validationErrors = validateForm(formData);
+    event.preventDefault()
+    const formData = new FormData(event.target)
+    const validationErrors = validateForm(formData)
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      toast.error("Mail blev ikke afsendt. Udfyld alle felter");
-      return;
+      setErrors(validationErrors)
+      toast.error("Mail blev ikke afsendt. Udfyld alle felter")
+      return
     }
 
-    setLoading(true);
+    setLoading(true)
     if (formData.get("flytrap") !== "") {
-      return;
+      return
     } else {
-      console.log("Sending mail");
+      console.log("Sending mail")
       fetch("/api/contact", {
         method: "POST",
         body: formData,
       })
         .then((response) => response.json())
         .then((data) => {
-          formRef.current?.reset();
-          toast.success("Din besked er afsendt!");
-          setLoading(false);
-          console.log("Data: " + data);
+          formRef.current?.reset()
+          toast.success("Din besked er afsendt!")
+          setLoading(false)
+          console.log("Data: " + data)
         })
         .catch((error) => {
-          console.log("Error: " + error);
-          setLoading(false);
-          toast.error("Din besked kunne ikke afsendes");
-        });
+          console.log("Error: " + error)
+          setLoading(false)
+          toast.error("Din besked kunne ikke afsendes")
+        })
     }
-  };
+  }
 
   const sendEmailWeb3Form = (event: any) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    formData.append("access_key", "82f48998-eb77-44d4-973e-61bb16756382");
-    const validationErrors = validateForm(formData);
+    event.preventDefault()
+    const formData = new FormData(event.target)
+    formData.append("access_key", "82f48998-eb77-44d4-973e-61bb16756382")
+    const validationErrors = validateForm(formData)
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      toast.error("Mail blev ikke afsendt. Udfyld alle felter");
-      return;
+      setErrors(validationErrors)
+      toast.error("Mail blev ikke afsendt. Udfyld alle felter")
+      return
     }
 
-    setLoading(true);
+    setLoading(true)
     if (formData.get("antibot") !== "") {
-      toast.error("Bekræft du ikke er en robot");
-      return;
+      toast.error("Bekræft du ikke er en robot")
+      return
     } else {
-      console.log("Sending mail");
+      console.log("Sending mail")
       fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       })
         .then((response) => response.json())
         .then((data) => {
-          formRef.current?.reset();
-          toast.success("Din besked er afsendt!");
-          setLoading(false);
-          console.log("Data: " + data);
+          formRef.current?.reset()
+          toast.success("Din besked er afsendt!")
+          setLoading(false)
+          console.log("Data: " + data)
         })
         .catch((error) => {
-          console.log("Error: " + error);
-          setLoading(false);
-          toast.error("Din besked kunne ikke afsendes");
-        });
+          console.log("Error: " + error)
+          setLoading(false)
+          toast.error("Din besked kunne ikke afsendes")
+        })
     }
   }
 
@@ -155,8 +155,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
           className="text-slate-500 text-base text-center w-11/12
             lg:text-base lg:w-9/12"
         >
-          Har du spørgsmål? Kontakt os i dag. Vi besvarer alle hverdage indenfor
-          24 timer
+          Har du spørgsmål? Kontakt os i dag. Vi besvarer alle hverdage indenfor 24 timer
         </p>
         <form
           onSubmit={sendEmailWeb3Form}
@@ -269,13 +268,30 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
               },
             }}
           />
-          <input className="p-0 m-0 size-0" id="antibot" name="antibot" type="text" placeholder="Confirm that you are human, what is 4+4" value="" />
-          <Button type="submit">Send Besked</Button>
+          <input
+            className="p-0 m-0 size-0"
+            id="antibot"
+            name="antibot"
+            type="text"
+            placeholder="Confirm that you are human, what is 4+4"
+            defaultValue=""
+          />
+          <ButtonBase
+            className="self-center w-fit py-4 px-8 uppercase font-conduitbold text-sm bg-yellow-400 rounded-xs
+            hover:shadow-lg hover:shadow-yellow-300/50 hover:-translate-y-1 
+            active:translate-y-0 active:shadow-md
+            transition-all duration-300 ease-in-out
+            lg:text-base"
+            type="submit"
+          >
+            Send Besked
+          </ButtonBase>
         </form>
         {loading ? <Spinner /> : ""}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
+
