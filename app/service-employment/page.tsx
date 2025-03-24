@@ -232,12 +232,12 @@ export default function ServiceEmployment() {
            lg:w-8/12 lg:items-start"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
+                className="uppercase text-slate-900 text-2xl font-conduitbold
                   xl:text-4xl"
               >
                 RELATIONENS BETYDNING
               </h2>
-              <p className="text-slate-900 dark:text-slate-50">
+              <p className="text-slate-900">
                 Hos Mentorplan er relationen mellem mentor og borger fundamentet
                 for alt, hvad vi gør. Vi ved, at forandringer kun sker gennem
                 tillid, og derfor prioriterer vi at opbygge en stærk relation

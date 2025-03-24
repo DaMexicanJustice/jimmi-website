@@ -42,7 +42,7 @@ export default function ScrollFadeinList({
           duration: 0.8,
           scrollTrigger: {
             trigger: item as HTMLElement,
-            start: "top bottom-=100",
+            start: "top bottom-=80",
             toggleActions: "play none none reverse",
           },
         }

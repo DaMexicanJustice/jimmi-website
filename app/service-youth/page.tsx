@@ -203,13 +203,13 @@ export default function ServiceYouth() {
           >
             <div className="flex flex-col gap-4 basis-4/12 text-left">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                className="uppercase text-slate-900 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
               >
                 Fritidsjob og beskæftigelse
               </h2>
-              <p className="text-slate-900 dark:text-slate-100">
+              <p className="text-slate-900">
                 Hos Mentorplan har vi et særligt fokus på at hjælpe de unge med
                 at komme ud på arbejdsmarkedet, både i form af fritidsjob for
                 dem under 18 og almindelig beskæftigelse for dem over 18. Vi
@@ -218,7 +218,7 @@ export default function ServiceYouth() {
                 færdigheder, ansvar og succesoplevelser, som er essentielle for
                 deres personlige udvikling.
               </p>
-              <p className="text-slate-900 dark:text-slate-100">
+              <p className="text-slate-900">
                 Vi hjælper de unge med hele processen – fra at finde de rette
                 jobmuligheder til at skrive CV og forberede sig til samtaler. Vi
                 har et stort virksomhedsnetværk, som vi trækker på, men hvis vi
@@ -229,7 +229,7 @@ export default function ServiceYouth() {
                 både arbejdskultur, kollegaer og arbejdsmiljø passer godt til
                 den unge.
               </p>
-              <p className="text-slate-900 dark:text-slate-100">
+              <p className="text-slate-900">
                 Når den unge starter i et job, er vi fortsat med i processen. Vi
                 følger op, deltager i møder efter behov og sikrer, at tingene
                 fungerer godt. Hvis der opstår udfordringer, træder vi til og
@@ -242,13 +242,13 @@ export default function ServiceYouth() {
             <div className="flex flex-col justify-start gap-12 basis-4/12 text-left">
               <div>
                 <h2
-                  className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                  className="uppercase text-slate-900 text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
                 >
                   Kriminalitetsforebyggelse, UKN-sager og støtte i retssager
                 </h2>
-                <p className="text-slate-900 dark:text-slate-100">
+                <p className="text-slate-900">
                   Nogle af de unge, vi arbejder med, står over for udfordringer
                   med kriminalitet. Vores erfaring fra politiet giver os et
                   indgående kendskab til de konsekvenser, de unge risikerer. Vi
@@ -268,13 +268,13 @@ export default function ServiceYouth() {
               >
                 <div className="flex flex-col gap-4 text-left">
                   <h2
-                    className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                    className="uppercase text-slate-900  text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
                   >
                     Tilgængelighed 24/7 og fleksibilitet
                   </h2>
-                  <p className="text-slate-900 dark:text-slate-100">
+                  <p className="text-slate-900 ">
                     Vi er tilgængelige 24/7 for de unge, deres familier og
                     sagsbehandlere, hvis der opstår akutte problemer eller
                     udfordringer, der kræver hurtig handling. Vores indsats er
@@ -288,20 +288,20 @@ export default function ServiceYouth() {
 
             <div className="flex flex-col gap-4 basis-4/12 text-left">
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
+                className="uppercase text-slate-900  text-2xl font-conduitbold self-center
                 lg:self-start
                 xl:text-4xl"
               >
                 Tværfagligt samarbejde – Vi er med hele vejen
               </h2>
-              <p className="text-slate-900 dark:text-slate-100">
+              <p className="text-slate-900 ">
                 Vi arbejder helhedsorienteret og går aktivt ind i de forskellige
                 områder af den unges liv, hvor der er behov for støtte. Vi
                 samarbejder tæt med skoler, misbrugscentre, Kriminalforsorgen,
                 sagsbehandlere, forældre og andre relevante aktører for at
                 sikre, at den unge får den nødvendige hjælp og støtte.
               </p>
-              <p className="text-slate-900 dark:text-slate-100">
+              <p className="text-slate-900 ">
                 Vores tilgang er at være med hele vejen, uanset om det handler
                 om møder på skoler for at løse problemer med fravær, deltagelse
                 i samtaler på arbejdspladsen eller støtte i forhold til
@@ -310,7 +310,7 @@ export default function ServiceYouth() {
                 med at forstå processen og sikre, at de overholder deres
                 forpligtelser.
               </p>
-              <p className="text-slate-900 dark:text-slate-100">
+              <p className="text-slate-900 ">
                 Vi ved, at mange unge mangler en stabil voksen omkring sig, og
                 derfor træder vi til som den støtte, der sikrer, at de
                 nødvendige skridt bliver taget. Vores mål er at skabe sammenhæng
