@@ -149,7 +149,8 @@ export default function CorporateCollaboration() {
                 </div>
               </div>
 
-              <div className="bg-yellow-400 p-4 sm:p-6 shadow-lg mb-6 sm:mb-8">
+              <div className="bg-yellow-400 p-4 sm:p-6 shadow-lg mb-6 sm:mb-8 hidden
+              lg:block">
                 <h3 className="text-lg lg:text-2xl font-conduitbold uppercase text-slate-900 mb-3 sm:mb-4">
                   📸 Samarbejdspartnere
                 </h3>
@@ -159,7 +160,7 @@ export default function CorporateCollaboration() {
                 </p>
               </div>
 
-              <div className="bg-slate-100 p-4 lg:p-6  shadow-lg">
+              <div className="bg-slate-100 p-4 lg:p-6 shadow-lg flex flex-col gap-3">
                 <h3 className="text-lg lg:text-2xl font-conduitbold uppercase text-slate-900 mb-3 lg:mb-4 flex items-center">
                   <Coffee className="mr-2 text-yellow-500" />
                   Kontakt os

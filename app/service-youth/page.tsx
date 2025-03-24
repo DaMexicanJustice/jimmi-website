@@ -154,7 +154,7 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center items-center
+            className="flex flex-col gap-4 justify-center
             lg:flex-row lg:gap-10 "
           >
             <div
@@ -198,6 +198,7 @@ export default function ServiceYouth() {
 
           <div
             className="flex flex-col gap-4 bg-yellow-400 p-5
+            lg:p-10
             xl:flex-row xl:gap-10
             2xl:gap-16"
           >

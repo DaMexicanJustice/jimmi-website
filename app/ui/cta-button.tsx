@@ -18,7 +18,7 @@ const CtaButton: React.FC<CtaButtonProps> = ({
   return (
     <>
       <Link
-        className={`py-${height} px-${width} uppercase font-conduitbold text-sm bg-yellow-400 rounded-xs
+        className={`py-${height} px-${width} uppercase font-conduitbold text-slate-900 text-sm bg-yellow-400 rounded-xs w-fit
                   lg:text-base`}
         href={href}
         id="basic-button"
