@@ -6,6 +6,7 @@ interface CtaButtonProps {
   href: string;
   height?: number;
   width?: number;
+  preventDefault?: boolean;
 }
 
 const CtaButton: React.FC<CtaButtonProps> = ({

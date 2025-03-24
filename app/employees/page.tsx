@@ -58,7 +58,7 @@ const imageMap = {
 export default async function Component() {
   const employeeData = await getEmployeeData();
   const employees: Employee[] = employeeData.employees;
-  const maxEducationParagraphs = 5;
+  const maxEducationParagraphs = 4;
 
   return (
     <>

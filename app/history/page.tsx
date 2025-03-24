@@ -7,8 +7,6 @@ import { useRef } from "react";
 // GSAP
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CircularDiagram from "../ui/CircularDiagram";
 
 export default function History() {
   const containerRef = useRef<HTMLDivElement>(null);

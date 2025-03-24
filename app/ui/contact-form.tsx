@@ -8,6 +8,7 @@ import Spinner from "./spinner";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Button } from "@mui/material";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -101,6 +102,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
 
     setLoading(true);
     if (formData.get("antibot") !== "") {
+      toast.error("Bekræft du ikke er en robot");
       return;
     } else {
       console.log("Sending mail");
@@ -185,29 +187,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
               },
             }}
           />
-          {/* 
-          <TextField
-            id="form-company-name"
-            label="Firma navn"
-            variant="standard"
-            className="hidden"
-            color="warning"
-            InputLabelProps={{
-              style: {
-                color: "#000000",
-                fontSize: "1rem",
-                lineHeight: "1.5rem",
-              },
-            }}
-            InputProps={{
-              sx: {
-                color: "#000000",
-                fontSize: "1.125rem",
-                lineHeight: "1.75rem",
-                "&.MuiOutlinedInput-notchedOutline": { fontSize: "28px" },
-              },
-            }}
-          /> */}
           <div
             className="flex flex-col
               xl:flex-row xl:gap-5"
@@ -291,9 +270,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ useSliderAnimation }) => {
             }}
           />
           <input className="p-0 m-0 size-0" id="antibot" name="antibot" type="text" placeholder="Confirm that you are human, what is 4+4" value="" />
-          <CtaButton text="Send Besked" href=""></CtaButton>
+          <Button type="submit">Send Besked</Button>
         </form>
-        {loading ? <Spinner /> : <p></p>}
+        {loading ? <Spinner /> : ""}
       </div>
     </>
   );
