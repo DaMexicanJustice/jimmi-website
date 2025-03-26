@@ -174,7 +174,7 @@ export default function ServiceYouth() {
                 Støtten fortsætter, men vi forventer mere ansvar fra deres side
                 og arbejder tæt sammen med dem for at sikre, at de tager ansvar
                 for deres fremtid. For unge, der er kommet i egen bolig,
-                tilbyder vi ADL-træning (Almen Daglig Livsførelse), hvor vi
+                tilbyder vi ADL-træning (Almindelig Daglig Levevis), hvor vi
                 hjælper dem med praktiske færdigheder som oprydning,
                 budgetplanlægning, håndtering af e-Boks og andre
                 hverdagsopgaver. Vi sørger for, at de unge får struktur på deres

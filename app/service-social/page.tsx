@@ -26,7 +26,7 @@ const bulletItems = [
 ];
 const listItems = [
   {
-    title: "ADL-træning (Almen Daglig Livsførelse)",
+    title: "ADL-træning (Almindelig Daglig Levevis)",
     content:
       "Vi støtter borgerne i at håndtere basale dagligdagsopgaver som oprydning, madlavning, budgettering og e-Boks, så de kan skabe en mere struktureret og selvstændig tilværelse i egen bolig.",
   },
