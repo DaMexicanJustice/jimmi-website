@@ -20,12 +20,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <span className="font-conduitbold text-2xl xl:text-4xl uppercase text-slate-900">{title}</span>
-        {isOpen ? (
-          <ChevronUp className="h-6 w-6 text-slate-900" />
-        ) : (
-          <ChevronDown className="h-6 w-6 text-slate-900" />
-        )}
+        <span className="font-conduitbold text-2xl xl:text-4xl uppercase text-slate-900 mr-4">{title}</span>
+        <div className="flex-shrink-0">
+          {isOpen ? (
+            <ChevronUp className="h-6 w-6 text-slate-900" />
+          ) : (
+            <ChevronDown className="h-6 w-6 text-slate-900" />
+          )}
+        </div>
       </button>
       <div
         ref={contentRef}
