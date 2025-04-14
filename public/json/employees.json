@@ -231,7 +231,7 @@
     {
       "name": "Nina Martinovic",
       "img": "ninaPic",
-      "role": "familiebehandler",
+      "role": "mentor & familiebehandler",
       "email": "nm@mentorplan.dk",
       "phone": "+4593963668",
       "linkedIn": "https://www.linkedin.com/in/nina-martinovic-73820654/",
@@ -239,11 +239,8 @@
         "languages": {
           "0": "Dansk",
           "1": "Engelsk",
-          "2": "Serbisk",
-          "3": "Kroatisk",
-          "4": "Bosnisk",
-          "5:": "Montenegrisk",
-          "6": "Græsk"
+          "2": "Serbokroatisk",
+          "3": "Græsk"
         },
         "education": {
           "1": "Kunstterapeut, Kunstterapiuddannelsen, Antroposofisk kunstterapi. 2022-2025",

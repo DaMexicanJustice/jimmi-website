@@ -413,7 +413,7 @@ export default function ServiceEmployment() {
                 Vi arbejder med forskellige opstartsforløb, afhængigt af
                 borgerens behov
               </p>
-              <ul className="list-none text-slate-900 dark:text-slate-50">
+              <ul className="list-disc text-slate-900 dark:text-slate-50">
                 <li>
                   <span className="font-bold">Snusepraktik (1-2 uger)</span>
                   <br></br> En kortvarig praktik, hvor borgeren og virksomheden
