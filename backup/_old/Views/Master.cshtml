@@ -1,0 +1,59 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    //string url = HttpContext.Current.Request.Url.AbsoluteUri.TrimEnd('/');
+    string path = HttpContext.Current.Request.Url.AbsolutePath.TrimEnd('/').ToLower();
+
+    if(path=="/forside")
+    {
+        /*HttpContext.Current.Response.Clear();
+        HttpContext.Current.Response.Status = "301 Moved Permanently";
+        HttpContext.Current.Response.AddHeader("Location", "/");
+        HttpContext.Current.Response.End();*/
+    }
+
+    Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">	
+	<link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="/css/neogrid.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=3" />	
+    @Html.CachedPartial("SEOHeader", Model, 0, true)
+    @RenderSection("Header", false) 
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN1GTH8CL2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BN1GTH8CL2');
+    </script>
+
+</head>
+
+<body>
+	
+	@Html.CachedPartial("HeaderMenu", Model, 0, true)
+
+    @RenderBody()
+
+    @Html.CachedPartial( "Footer", Model, 0, true)
+
+    @RenderSection("Footer", false)  	
+
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script src="/js/owl.carousel.js"></script>
+	<script src="/js/scripts.js"></script>
+</body>
+</html>

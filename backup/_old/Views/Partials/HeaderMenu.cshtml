@@ -1,0 +1,91 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+
+    // Root node
+    var currentLanguageNode = Model.AncestorOrSelf("main");
+    var linksForSite = currentLanguageNode.DescendantsOfType("headerMenu").First().Children;
+}
+<header>
+	<div class="inner">
+		<div class="leftFloat">
+			<img src="/img/mentorplan-logo.svg" alt="Mentorplan">
+		</div>
+		<div class="rightFloat">
+			<ul id="deskMenu">
+                @if (linksForSite.Count() > 0)
+                {
+                    int counter = 1;
+                    foreach (var singleLink in linksForSite)
+                    {
+                        string nodeType = singleLink.ContentType.Alias;
+
+                        if (nodeType == "linkTilSektion")
+                        {
+                            IPublishedContent linkNode = singleLink.Value<IPublishedContent>("link");
+                            string link = string.Empty;
+                            string exraClass = string.Empty;
+                            string linkTekst = singleLink.Value<string>("linkTekst");
+
+                            if (linkNode != null)
+                            {
+                                link = "sektion-" + linkNode.Id.ToString();
+                            }
+
+                            if(counter==linksForSite.Count())
+                            {
+                                exraClass = "last";
+                            }
+
+                            <li class="@exraClass"><a href="@link" class="scrollToMenu">@linkTekst</a></li>
+
+                            counter++;
+                        }
+                    }
+
+                    counter = 1;
+                }
+			</ul>
+			<div id="mobileMenu">
+				<div id="activator"><img src="/img/hamburger-menu.svg" alt=" Mobile menu" /></div>
+				<div id="fullMenu">
+					<div id="closeMenu"><img src="/img/cross.svg" alt="Close menu"></div>
+					<ul>
+                        @if (linksForSite.Count() > 0)
+                        {
+                            int counter = 1;
+                            foreach (var singleLink in linksForSite)
+                            {
+                                string nodeType = singleLink.ContentType.Alias;
+
+                                if (nodeType == "linkTilSektion")
+                                {
+                                    IPublishedContent linkNode = singleLink.Value<IPublishedContent>("link");
+                                    string link = string.Empty;
+                                    string exraClass = string.Empty;
+                                    string linkTekst = singleLink.Value<string>("linkTekst");
+
+                                    if (linkNode != null)
+                                    {
+                                        link = "sektion-" + linkNode.Id.ToString();
+                                    }
+
+                                    if(counter==linksForSite.Count())
+                                    {
+                                        exraClass = "last";
+                                    }
+
+                                    <li class="@exraClass"><a class="scrollToMenu" href="@link">@linkTekst</a></li>
+
+                                    counter++;
+                                }
+                            }
+                        }							
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+		<div class="clear"></div>
+	</div>
+</header>

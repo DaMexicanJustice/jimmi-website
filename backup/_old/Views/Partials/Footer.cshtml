@@ -1,0 +1,47 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    // Root node
+    var currentLanguageNode = Model.AncestorOrSelf("main");
+    string linkedInLink = currentLanguageNode.Value<string>("linkedInLink");
+    string text1 = currentLanguageNode.Value<string>("text1");
+    string text2 = currentLanguageNode.Value<string>("text2");
+    string text3 = currentLanguageNode.Value<string>("text3");
+}
+<footer>
+	<div class="inner">
+		<div class="fullWidth">
+			<img src="/img/mentorplan-logo_white.svg" alt="Mentorplan">
+		</div>
+			
+		<div class="leftFloatFoot">
+			<img src="/img/copy.svg" alt="Copyright"> <span>Copyright</span>
+		</div>
+			
+		<div class="centerDiv">
+			<div class="footTextDiv yellowLink">
+                @Html.Raw(text1)
+			</div>
+				
+			<div class="footTextDiv">
+                @Html.Raw(text2)
+			</div>
+				
+			<div class="footTextDiv">
+                @Html.Raw(text3)
+			</div>				
+		</div>
+			
+		<div class="rightFloatFoot">
+			<a href="@linkedInLink" target="_blank"><img src="/img/linkedin.svg" alt="LinkedIn"></a>
+		</div>
+			
+		<div class="clear"></div>
+			
+		<div id="goUp">
+			<div class="upCon">
+				<img src="/img/top-arrow.svg" alt="Go back up" />
+				<div class="topTxt">TOP</div>
+			</div>
+		</div>			
+	</div>
+</footer>

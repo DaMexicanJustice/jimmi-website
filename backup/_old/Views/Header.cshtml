@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "ModuleMaster.cshtml";
+
+    string link = string.Empty;
+    string videoLink = string.Empty;
+
+    string titel = Model.Value<string>("titel");
+    string tekst = Model.Value<string>("tekst");
+    string linkTekst = Model.Value<string>("linkTekst");
+
+    IPublishedContent linkTilSektion = Model.Value<IPublishedContent>("linkTilSektion");
+    if(linkTilSektion!=null)
+    {
+        link = "sektion-" + linkTilSektion.Id.ToString();
+    }
+
+    IPublishedContent video = Model.Value<IPublishedContent>("video");
+    if (video != null)
+    {
+        videoLink = video.Url();
+    }
+
+}
+
+<section class="header" id="sektion-@Model.Id">
+    <div class="rightHalf"></div>
+    <div class="inner">
+        <div class="gridView">
+            <div class="leftGrid">
+                <h1 class="typeH1">@Html.Raw(titel)</h1>
+                <p class="typeP">@Html.Raw(tekst)</p>
+                <a href="@link" class="scrollToMenu">@linkTekst</a>
+            </div>
+
+            <div class="Rightgrid">
+                @if(videoLink!="")
+                {
+                    <video src="@videoLink" autoplay="" muted="" loop="" playsinline></video>
+                }
+            </div>
+            <div class="clear"></div>
+
+            <div class="hiddenText">
+                <h1 class="typeH1">@Html.Raw(titel)</h1>
+                <p class="typeP">@Html.Raw(tekst)</p>
+                <a href="@link" class="scrollToMenu">@linkTekst</a>
+            </div>
+        </div>
+    </div>
+</section>

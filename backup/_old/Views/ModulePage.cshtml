@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "Master.cshtml";
+}
+
+@foreach (var node in Model.Children)
+{
+    <!-- Rendering module: @node.Id -->
+    @Umbraco.RenderTemplate(node.Id)
+}

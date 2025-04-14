@@ -1,0 +1,118 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "ModuleMaster.cshtml";
+
+    string titel = Model.Value<string>("titel");
+    string borgereTitel = Model.Value<string>("borgereTitel");
+    string sagsbehandlereTekst = Model.Value<string>("sagsbehandlereTekst");
+    string virksomhederTekst = Model.Value<string>("virksomhederTekst");
+
+    var borgereUdtalelser = Model.Value<IEnumerable<IPublishedElement>>("borgereUdtalelser");
+    var sagsbehandlereUdtalelser = Model.Value<IEnumerable<IPublishedElement>>("sagsbehandlereUdtalelser");
+    var viskromhederTestimonials = Model.Value<IEnumerable<IPublishedElement>>("viskromhederTestimonials");
+}
+
+<section class="testimonials" id="sektion-@Model.Id">
+    <div class="inner">
+        <div class="topTesti">
+            <h2 class="typeH1">@titel</h2>
+            @*<ul>
+                <li class="slideTrigger active" data-id="1">@borgereTitel</li>
+                <li class="streg"> | </li>
+                <li class="slideTrigger" data-id="2">@sagsbehandlereTekst</li>
+                <li class="streg"> | </li>
+                <li class="slideTrigger" data-id="3">@virksomhederTekst</li>
+            </ul>*@
+        </div>
+
+        <div class="slidere">
+            <div class="owl-carousel owl-theme" id="slide1">
+                @foreach (var item in borgereUdtalelser)
+                {
+                    var image = string.Empty;
+                    string tekst = item.Value<string>("tekst");
+                    string forfatter = item.Value<string>("forfatter");
+
+                    var billede = item.Value<IPublishedContent>("billede");
+                    if (billede != null)
+                    {
+                        image = billede.Url();
+                    }
+
+                    <div class="item">
+                        <p>@Html.Raw(tekst)</p>
+                        <div>
+                            <div class="author">@forfatter</div>
+                            @if(image!="")
+                            {
+                                <div class="authorLogo"><img src="@image" alt="@forfatter"></div>
+                            }
+                                
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+
+            <div class="owl-carousel owl-theme" id="slide2">
+                @foreach (var item in sagsbehandlereUdtalelser)
+                {
+                    var image = string.Empty;
+                    string tekst = item.Value<string>("tekst");
+                    string forfatter = item.Value<string>("forfatter");
+
+                    var billede = item.Value<IPublishedContent>("billede");
+                    if (billede != null)
+                    {
+                        image = billede.Url();
+                    }
+
+                    <div class="item">
+                        <p>@Html.Raw(tekst)</p>
+                        <div>
+                            <div class="author">@forfatter</div>
+                            @if(image!="")
+                            {
+                                <div class="authorLogo"><img src="@image" alt="@forfatter"></div>
+                            }
+                                
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="owl-carousel owl-theme" id="slide3">
+                @foreach (var item in viskromhederTestimonials)
+                {
+                    var image = string.Empty;
+                    string tekst = item.Value<string>("tekst");
+                    string forfatter = item.Value<string>("forfatter");
+
+                    var billede = item.Value<IPublishedContent>("billede");
+                    if (billede != null)
+                    {
+                        image = billede.Url();
+                    }
+
+                    <div class="item">
+                        <p>@Html.Raw(tekst)</p>
+                        <div>
+                            <div class="author">@forfatter</div>
+                            @if(image!="")
+                            {
+                                <div class="authorLogo"><img src="@image" alt="@forfatter"></div>
+                            }
+                                
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+        </div>
+    </div>
+</section>

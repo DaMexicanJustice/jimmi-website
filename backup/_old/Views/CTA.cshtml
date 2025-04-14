@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "ModuleMaster.cshtml";
+
+    string titel = Model.Value<string>("titel");
+    string tekstTilDesktopOgIPad = Model.Value<string>("tekstTilDesktopOgIPad");
+    string mobilKnapTekst = Model.Value<string>("mobilKnapTekst");
+    string mobilLinkTelefonnr = Model.Value<string>("mobilLinkTelefonnr");
+
+    var image = string.Empty;
+    var billede = Model.Value<IPublishedContent>("baggrundsbillede");
+    if (billede != null)
+    {
+        image = billede.Url();
+    }
+}
+
+<section class="cta" id="sektion-@Model.Id">
+    @if (image != "")
+    {
+        <img src="@image" alt="@titel">
+    }
+
+    <div class="inner">
+        <div class="bgDiv">
+            <div class="maxWidth">
+                <h2>@Html.Raw(titel)</h2>
+                <p>@Html.Raw(tekstTilDesktopOgIPad)</p>
+                <a href="tel:@mobilLinkTelefonnr">@mobilKnapTekst</a>
+            </div>
+        </div>
+    </div>
+</section>

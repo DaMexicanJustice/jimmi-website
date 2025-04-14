@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "ModuleMaster.cshtml";
+
+    string titel = Model.Value<string>("titel");
+    string tekst = Model.Value<string>("tekst");
+}
+
+<section class="textSection" id="sektion-@Model.Id">
+	<div class="inner">
+		<div class="content">
+			<h2 class="typeH1">@Html.Raw(titel)</h2>
+			<div class="rte typeP">
+		        @Html.Raw(tekst)				
+			</div>				
+		</div>
+	</div>
+</section>

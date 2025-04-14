@@ -1,0 +1,1142 @@
+.inner{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header .inner{
+	width: 1522px;
+}
+
+.clear{
+	clear: both;
+}
+
+.leftFloat{
+	float: left;
+	width: 130px;
+}
+
+.leftFloat img{
+	max-width: 100%;
+}
+
+.rightFloat{
+	float: right;
+	padding-top: 18px;
+}
+
+header ul li{
+	display: inline-block;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #0F1326;
+	font-family: 'Conduit ITC';
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+
+#goUp{
+	background:rgba(245,245,245, 0.8);
+	position: fixed;
+	bottom: 120px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-family: 'Yantramanav';
+	color: #0F1326;
+	text-transform: uppercase;
+	z-index: 10;
+	transform: translateY(200px);
+	right: 20px;
+	transition: transform .4s ease-out;
+	will-change: transform;	
+	cursor: pointer;
+}
+
+#goUp:hover{
+	opacity: 0.8;
+}
+
+#goUp.open {
+	transform: translateY(0%);
+}
+
+#goUp img{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 9px;
+}
+
+header{
+    padding-top: 44px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	z-index: 3;
+}
+
+header ul li{
+	padding-right: 30px;
+}
+
+header ul li.last{
+	padding-right: 0;
+}
+
+body{
+	color: #0F1326;
+}
+
+.rightHalf{
+	position: absolute;
+	right: 0;
+	width: 50%;
+	background-color: #FFD200;
+	height: 100%;
+	z-index: 1;
+}
+
+footer{
+	background-color: #0F1326;
+	color: #FFF;
+	height: 640px;
+	position: relative;
+}
+
+footer h2{
+	font-family: 'Conduit ITC';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 47px;
+	text-transform: uppercase;
+}
+
+footer p{
+	font-family: 'Yantramanav';
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.footTextDiv{
+	padding-bottom: 28px;
+	text-align: center;
+}
+
+.centerDiv{
+	width: 205px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 180px;
+}
+
+
+footer .inner{
+	width: 1522px;
+}
+
+footer .leftFloatFoot{
+	width: 100px;
+	float: left;
+}
+
+footer .rightFloatFoot{
+	float: right;
+}
+
+footer img{
+	max-width: 100%;
+}
+
+footer .fullWidth{
+	max-width: 130px;
+	padding-top: 180px;
+	padding-bottom: 320px;
+}
+
+footer .footTextDiv a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+footer .footTextDiv.yellowLink a{
+	color: #F5CA00;
+}
+
+footer .leftFloatFoot img{
+    display: inline-block;
+}
+
+footer .leftFloatFoot span{
+	font-family: 'Conduit ITC';
+	font-weight: bold;	
+	font-size: 14px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+.cta{
+	background: rgba(15, 19, 38, 0.7);
+	position: relative;
+}
+
+.cta img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.cta .inner{
+	height: 100%;
+}
+
+.cta .bgDiv{
+	background: rgba(15, 19, 38, 0.7);
+	height: 100%;
+	position: relative;
+	color: #FFF;
+}
+
+.cta h2{
+	font-family: 'Conduit ITC';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 47px;
+	text-transform: uppercase;
+	padding-top: 160px;
+}
+
+.cta p{
+	font-family: 'Conduit ITC';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 47px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 160px;
+}
+
+.cta .maxWidth{
+	width: 255px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.typeH1{
+	font-family: 'Conduit ITC';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 47px;
+	text-transform: uppercase;	
+}
+
+
+.header{
+	height: 1080px;
+	position: relative;
+}
+
+.header .inner{
+	width: 1522px;
+	position: relative;
+	z-index: 2;	
+	height: 100%;
+}
+
+.header .leftGrid{
+	width: 30%;
+	padding-right: 8%;
+	float: left;
+	padding-top: 380px;
+}
+
+.header .Rightgrid{
+	width: 62%;
+	float: right;
+	padding-top: 190px;
+}
+
+.typeP, .rte.typeP p, .rte.typeP li{
+	font-family: 'Yantramanav';
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	padding-top: 10px;
+}
+
+.rte.typeP li {
+    padding-top: 0;
+    list-style-position: inside;
+}
+
+.header .gridView{
+
+}
+
+.header a{
+	display: block;
+	background-color: #FFD200;
+	font-family: 'Conduit ITC';
+	font-weight: normal;
+	font-size: 18px;
+	color: #0F1326;
+	height: 40px;
+	width: 172px;
+	line-height: 40px;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.textImage{
+	background-color: #FBFBFB;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+
+p a{
+	color: #0F1326;
+}
+
+
+.textImage .inner{
+	width: 1320px;
+}
+
+.textImage p{
+
+}
+
+.testimonials .inner{
+	width: 1320px;
+}
+
+.testimonials{
+	background-color: #F5F5F5;
+	padding-bottom: 75px;
+}
+
+.textSection{
+	background-color: #F5CA00;
+	padding-top: 285px;
+	padding-bottom: 100px;
+	margin-top: -172px;	
+}
+
+.item{
+	background-color: #FEFEFE;
+	padding-top: 74px;
+	padding-left: 50px;
+	position: relative;
+	padding-right: 50px;
+}
+
+.item p{
+	font-family: 'Yantramanav';
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	border-bottom: 1px solid #0F1326;
+	padding-bottom: 40px;
+}
+
+.author{
+	font-family: 'Conduit ITC';
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	padding-top: 35px;
+	padding-bottom: 59px;
+	opacity: 0.7;
+	text-transform: uppercase;
+}
+
+.item img{
+	max-height: 58px;
+	width: auto !important;
+	margin-left: auto;
+}
+
+.authorLogo{
+
+}
+
+.owl-carousel .owl-item{
+	margin-right: 92px;
+}
+
+.testimonials h2{
+	padding-bottom: 13px;
+	padding-top: 85px;
+	text-align: center;
+}
+
+.topTesti ul{
+	text-align: center;
+}
+
+
+.topTesti ul li{
+	display: inline-block;
+	font-family: 'Conduit ITC';
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 36px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+
+.topTesti ul li.active{
+	opacity: 1;
+}
+
+.topTesti ul li.streg{
+	font-family: "Verdana";
+	opacity: 1;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.content{
+    text-align:center;
+}
+
+.content h2{
+
+}
+
+.textSection .inner, .videoSection .inner{
+	width: 1320px;
+}
+
+.rte p, .rte li{
+	font-family: 'Yantramanav';
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;	
+}
+
+.rte li{
+	list-style: disc;
+}
+
+.rte ul{
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.rte p{
+	margin-bottom: 15px;
+}
+
+#slide2, #slide3{
+	display: none;
+}
+
+.slidere{
+	padding-top: 120px;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 50px;
+}
+
+.author{
+	float: left;
+	width: 40%;
+}
+
+.authorLogo{
+	float: right;
+	width: 60%;
+	text-align: right;
+    display:none;
+	padding-top: 15px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: transparent;
+    color: #FFF;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+
+.videoSection h2{
+	font-family: 'Conduit ITC';
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 50px;
+	padding-left: 110px;
+	padding-right: 110px;
+	margin-left: auto;
+	margin-right: auto;	
+	position: relative;
+}
+
+.videoSection .title{
+	padding-top: 125px;
+	position: relative;
+	padding-bottom: 46px;
+
+}
+
+.videoSection{
+	position: relative;
+}
+
+
+.justLine{
+	width: 50px;
+	height: 5px;
+	background-color: #0F1326;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+}
+
+.middleAlignVert{
+	
+}
+
+.textImage .leftGrid{
+	align-self: center;
+}
+
+#mobileMenu{
+	display: none;
+}
+
+
+html, body{
+	overflow-x:hidden;
+}
+
+.cta a{
+	display: none;
+}
+
+.hiddenText{
+	display: none;
+}
+
+.textSection .rte {
+    text-align: center;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textImage img {
+    max-width: 52%;
+}
+
+ul li {
+    list-style-position: inside;
+}
+
+
+.Rightgrid video{
+    height:700px;
+    object-fit:cover;
+}
+
+
+
+@media screen and (max-width:1600.5px){
+/*	header .inner{
+		width: 1320px;
+	}
+	
+	.header .inner{
+		width: 1320px;
+	}
+	
+	footer .inner {
+		width: 1320px;
+	}	*/
+	
+	.inner{
+		width: 90% !important;
+		max-width: 1320px !important;
+	}
+	
+	.cta .inner {
+		width: 100% !important;
+		max-width: none !important;
+	}	
+}
+
+@media screen and (max-width:1400.5px){
+	/*header .inner{
+		width: 90%;
+	}
+	
+	.header .inner{
+		width: 90%;
+	}
+	
+	footer .inner {
+		width: 90%;
+	}	*/
+	
+	footer h2{
+		font-size: 35px;
+		line-height: 40px;
+	}
+	
+	footer p{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.leftFloat {
+		width: 120px;
+	}	
+	
+	footer .fullWidth{
+		padding-top: 100px;
+		padding-bottom: 300px;
+	}
+	
+	footer{
+		height:  485px;
+	}
+	
+	.centerDiv{
+		top: 90px;
+	}
+	
+	.cta{
+		
+	}
+	
+	.cta h2{
+		font-size: 35px;
+		line-height: 41px;
+		padding-top: 120px;
+	}
+	
+	.cta p{
+		font-size: 35px;
+		line-height: 41px;
+		padding-bottom: 120px;
+	}
+	
+	.header a{
+		font-size: 16px;
+		width: 135px;
+	}
+	
+	.typeH1{
+		font-size: 35px;
+		line-height: 40px;
+	}
+	
+	.typeP, .rte.typeP p, .rte.typeP li{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.header{
+		height: 710px;
+	}
+	
+	.header .Rightgrid {
+		width: 52%;
+		padding-top: 140px;
+	}	
+	
+	.header .leftGrid {
+		width: 40%;
+		padding-right: 8%;
+		padding-top: 220px;
+	}	
+	
+	header ul li a{
+		font-size: 16px;
+	}
+	
+	.textImage{
+		padding-top: 123px;
+		padding-bottom: 123px;
+	}
+	
+	.videoSection h2{
+		font-size: 40px;
+		line-height: 45px;
+	}
+	
+	.videoSection .title{
+		padding-top: 75px;
+	}	
+	
+	.textSection{
+		margin-top: -80px;
+		padding-top: 198px;
+	}
+	
+	.topTesti ul li{
+		font-size: 25px;
+	}
+	
+	.testimonials h2{
+		padding-top: 53px;
+	}
+	
+	.slidere {
+		padding-top: 56px;
+	}	
+	
+	.testimonials{
+		padding-bottom: 53px;
+	}
+
+    .Rightgrid video {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:991.5px){
+	/*header .inner{
+		width: 90%;
+	}
+	
+	.header .inner{
+		width: 90%;
+	}
+	
+	footer .inner {
+		width: 90%;
+	}	*/
+	
+	#deskMenu{
+		display: none;
+	}
+	
+	#mobileMenu{
+		display: block;
+	}	
+	
+	#activator{
+		cursor: pointer;
+	}
+	
+	header{
+		position: static;
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+	
+	.rightFloat{
+		padding-top: 0;
+	}
+	
+	#fullMenu{
+		height: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 245px;
+		background-color: #FFF;
+		z-index: 5;
+		transform: translateX(100%);
+		transition: transform .4s ease-out;
+		will-change: transform;		
+	}
+
+	#fullMenu.open {
+		transform: translateX(0%);
+	}	
+	
+	#mobileMenu ul li{
+		display: block;
+		padding-right: 0;
+		padding-bottom: 20px;
+	}
+	
+	#mobileMenu ul li a{
+		position: relative;
+		font-family: 'Conduit ITC';
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 16px;
+	}
+	
+	#mobileMenu ul li a::before{
+		display: inline-block;
+		height: 2px;
+		width: 15px;
+		background-color: #000;
+		content: "";
+		margin-right: 15px;
+		position: relative;
+		top: -4px;
+	}
+	
+	#closeMenu{
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		cursor: pointer;
+	}
+	
+	#mobileMenu ul{
+		padding-top: 140px;
+		padding-left: 50px;
+	}
+	
+	footer h2{
+		font-size: 30px;
+		line-height: 35px;
+	}	
+	
+	footer .fullWidth{
+		max-width: 100px;
+	}
+	
+	.cta h2{
+		padding-top: 90px;
+	}
+	
+	.cta p{
+		padding-bottom: 90px;
+	}
+	
+	.header {
+		height: auto;
+	}	
+	
+	.header .Rightgrid {
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		padding-top: 32px;
+		max-width: 470px;
+	}	
+	
+	.rightHalf{
+		width: 65%;
+		height: 372px;
+	}
+	
+	.header .leftGrid{
+		display: none;
+	}
+	
+	.header .Rightgrid img{
+		height: 309px;
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	.hiddenText{
+		display: block;
+		padding-top: 60px;
+		width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+	}	
+	
+	.header a{
+
+	}	
+	
+	.textImage{
+		padding-top: 87px;
+		padding-bottom: 87px;
+	}	
+	
+	.videoSection h2{
+		font-size: 35px;
+		line-height: 32px;
+		padding-left: 80px;
+		padding-right: 80px;
+	}	
+	
+	.justLine{
+		width: 35px;
+	}
+	
+	.videoSection .title{
+		padding-bottom: 30px;
+	}
+	
+	.videoSection .title{
+		padding-top: 66px;
+	}		
+	
+	.textSection{
+		margin-top: -65px;
+		padding-top: 115px;
+		padding-bottom: 70px;
+	}
+	
+	.typeH1 {
+		font-size: 30px;
+		line-height: 35px;
+	}	
+	
+	.item p{
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	.testimonials h2{
+		padding-top: 50px;
+	}
+	
+	.testimonials {
+		padding-bottom: 50px;
+	}	
+	
+	#goUp{
+		bottom: 80px;
+	}
+
+    .owl-item{
+
+    }
+
+    .owl-theme .owl-nav {
+        margin-top: 26px;
+    }
+
+    .Rightgrid video {
+        height: 315px;
+    }
+}
+
+@media screen and (max-width:767.5px){
+	#fullMenu{
+		width: 100%;
+	}
+	
+	#mobileMenu ul{
+		width: 150px;
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.leftFloat {
+		width: 70px;
+	}		
+	
+	header {
+		position: static;
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+
+    #activator {
+        padding-top: 6px;
+    }	
+	
+	footer .fullWidth{
+		max-width: 70px;
+		padding-top: 20px;
+		padding-bottom: 320px;
+	}
+	
+	.centerDiv {
+		top: 72px;
+	}	
+	
+	footer {
+		height: 404px;
+	}	
+	
+	footer .leftFloatFoot {
+		padding-left: 28px;
+	}	
+	
+	footer .rightFloatFoot {
+		padding-right: 28px;
+	}	
+	
+	.cta p{
+		display: none;
+	}
+
+	.cta a{
+		display: block;
+		width: 135px;
+		height: 40px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: #FFD200;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: 'Conduit ITC';
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 40px;
+		color: #0F1326;
+		margin-top: 22px;
+	}	
+	
+	.cta .maxWidth{
+		padding-bottom: 55px;
+		max-width: 155px;
+	}
+	
+	.cta h2{
+		font-size: 25px;
+		line-height: 29px;
+		padding-top: 60px;
+	}
+	
+	.header .Rightgrid{
+		width: 80%;
+		padding-top: 14px;
+	}
+	
+	.rightHalf{
+		height: 173px;
+	}
+	
+	.header .Rightgrid img {
+		height: 159px;
+	}
+
+    .typeH1 {
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+	
+	.hiddenText{
+		padding-top: 24px;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 37px;
+	}
+	
+	.typeP{
+		padding-top: 5px;
+	}
+	
+	
+	.textImage .rightGrid{
+		grid-row-start: 1;
+	}
+	
+	.textImage{
+		padding-top: 20px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+        .textImage img {
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 35px;
+            max-width: 158px;
+        }
+	
+	.videoSection h2{
+		font-size: 25px;
+		line-height: 28px;
+		padding-left: 35px;
+		padding-right: 35px;
+	}	
+	
+	.justLine{
+		width: 20px;
+		height: 3px;
+	}
+	
+	.videoSection .title {
+		padding-bottom: 30px;
+	}	
+
+	.textSection{
+		margin-top: -50px;
+		padding-top: 85px;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	
+	.textSection .rte.typeP{
+		padding-top: 0;
+	}
+
+    .topTesti ul li {
+        font-size: 16px;
+    }
+
+    .topTesti ul li.streg{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .item {
+        padding-top: 38px;
+        padding-right: 34px;
+        padding-left: 34px;
+    }
+
+	.item p{
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+    .author {
+        font-size: 12px;
+        padding-bottom: 40px;
+    }
+
+    .owl-nav img{
+        max-width:80%;
+    }
+
+    .owl-theme .owl-nav {
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+	
+	.testimonials h2 {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}	
+	
+	.testimonials {
+		padding-bottom: 20px;
+	}	
+	
+	.slidere {
+		padding-top: 20px;
+	}
+
+    .header a {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .Rightgrid video {
+        height: 100%;
+        max-height: 150px;
+    }
+}

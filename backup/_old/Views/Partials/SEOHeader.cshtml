@@ -1,0 +1,79 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    var fullUrlForPage = HttpContext.Current.Request.Url.AbsoluteUri.TrimEnd('/') + "/";
+    string url = "https://" + HttpContext.Current.Request.Url.Host;
+
+    var someImgString = string.Empty;
+    var someImg = Model.Value<IPublishedContent>("sOMEImage");
+    if (someImg != null)
+    {
+        someImgString = someImg.Url();
+    }
+
+    if (!string.IsNullOrEmpty(Model.Value("sEOTitle").ToString()))
+    {
+        <title>@Model.Value("sEOTitle")</title>
+    }
+    else
+    {
+        <title>@Model.Name</title>
+    }
+
+    if (!string.IsNullOrEmpty(Model.Value("sEOMetaTitle").ToString()))
+    {
+        <meta name="titel" content="@Model.Value("sEOMetaTitle")" />
+    }
+
+
+    if (!string.IsNullOrEmpty(Model.Value("sEODescription").ToString()))
+    {
+        <meta name="description" content="@Model.Value("sEODescription")" />
+    }
+
+    if (Model.Value("noIndexNoFollow").ToString() == "True")
+    {
+        <meta name="robots" content="noindex, nofollow">
+    }
+
+
+    // SOME - Open graph
+    if (someImgString != "")
+    {
+        <meta property="og:image" content="@url@someImgString" />
+    }
+
+    if (Model.HasValue("sOMETitle"))
+    {
+        if (!string.IsNullOrEmpty(Model.Value("sOMETitle").ToString()))
+        {
+            <meta property="og:title" content="@Model.Value("sOMETitle")" />
+        }
+        else if (!string.IsNullOrEmpty(Model.Value("sEOTitle").ToString()))
+        {
+            <meta property="og:title" content="@Model.Value("sEOTitle")" />
+        }
+        else if (!string.IsNullOrEmpty(Model.Value("sEOMetaTitle").ToString()))
+        {
+            <meta property="og:title" content="@Model.Value("sEOMetaTitle")" />
+        }
+        else
+        {
+            <meta property="og:title" content="@Model.Name" />
+        }
+    }
+
+    if (Model.HasValue("sOMETitle"))
+    {
+        if (!string.IsNullOrEmpty(Model.Value("sOMEDescription").ToString()))
+        {
+            <meta property="og:description" content="@Model.Value("sOMEDescription")" />
+        }
+        else if (!string.IsNullOrEmpty(Model.Value("sEODescription").ToString()))
+        {
+            <meta property="og:description" content="@Model.Value("sEODescription")" />
+        }
+    }
+
+
+    <meta property="og:url" content="@fullUrlForPage" />
+}

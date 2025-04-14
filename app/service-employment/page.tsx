@@ -297,11 +297,6 @@ export default function ServiceEmployment() {
                 textAlign={"text-left"}
                 textColor="text-slate-900 dark:text-slate-50"
               />
-              <p className="text-slate-900 dark:text-slate-50">
-                Hos Mentorplan ser vi vores kontor som en vigtig del af
-                indsatsen for at støtte borgerne – ikke bare som et sted at
-                mødes, men som en aktiv del af deres udvikling.
-              </p>
             </div>
             <div className="lg:basis-4/12 image-container">
               <Image
@@ -413,7 +408,7 @@ export default function ServiceEmployment() {
                 Vi arbejder med forskellige opstartsforløb, afhængigt af
                 borgerens behov
               </p>
-              <ul className="list-disc text-slate-900 dark:text-slate-50">
+              <ul className="list-disc px-5 text-slate-900 dark:text-slate-50">
                 <li>
                   <span className="font-bold">Snusepraktik (1-2 uger)</span>
                   <br></br> En kortvarig praktik, hvor borgeren og virksomheden

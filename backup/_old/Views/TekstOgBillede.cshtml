@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "ModuleMaster.cshtml";
+
+    string titel = Model.Value<string>("titel");
+    string tekst = Model.Value<string>("tekst");
+
+    var image = string.Empty;
+    var billede = Model.Value<IPublishedContent>("billede");
+    if (billede != null)
+    {
+        image = billede.Url();
+    }
+}
+
+<section class="textImage" id="sektion-@Model.Id">
+	<div class="inner">
+		<div class="gridcontainer grid_10_offset_3_11 grid_medium_12_offset_1_5 grid_mobile_12">
+			<div class="leftGrid">
+				<div class="middleAlignVert">
+					<h2 class="typeH1">@Html.Raw(titel)</h2>
+                    <div class="typeP">
+                        @Html.Raw(tekst)
+                    </div>						
+				</div>
+			</div>
+			<div class="rightGrid">
+                @if(image!="")
+                {
+                    <img src="@image" alt="@titel">
+                }
+			</div>
+		</div>
+	</div>
+</section>

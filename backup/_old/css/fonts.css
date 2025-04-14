@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Conduit ITC';
+    src: url('../fonts/ConduitITC-Bold.eot');
+    src: url('../fonts/ConduitITC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ConduitITC-Bold.woff2') format('woff2'),
+        url('../fonts/ConduitITC-Bold.woff') format('woff'),
+        url('../fonts/ConduitITC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Conduit ITC';
+    src: url('../fonts/ConduitITC.eot');
+    src: url('../fonts/ConduitITC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ConduitITC.woff2') format('woff2'),
+        url('../fonts/ConduitITC.woff') format('woff'),
+        url('../fonts/ConduitITC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yantramanav';
+    src: url('../fonts/Yantramanav-Regular.eot');
+    src: url('../fonts/Yantramanav-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Yantramanav-Regular.woff2') format('woff2'),
+        url('../fonts/Yantramanav-Regular.woff') format('woff'),
+        url('../fonts/Yantramanav-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

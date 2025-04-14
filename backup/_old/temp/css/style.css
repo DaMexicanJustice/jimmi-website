@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Conduit ITC';
+    src: url('../fonts/ConduitITC-Bold.eot');
+    src: url('../fonts/ConduitITC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ConduitITC-Bold.woff2') format('woff2'),
+        url('../fonts/ConduitITC-Bold.woff') format('woff'),
+        url('../fonts/ConduitITC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	font-family: 'Conduit ITC';
+	color: #262625;
+	background-color: #FFD200;
+}
+
+div{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1520px;
+	width: 90%;
+}
+
+h2{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+	padding-top: 20px;
+}
+
+a{
+	color: #333;
+}
+
+img{
+	max-width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+p{
+	font-size: 16px;
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+
+.main{
+	position: relative;
+	height: 100vh;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	width: 720px;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 150px;
+	line-height: 138px;
+	text-transform: uppercase;
+}
+
+.clear{
+	clear:both;
+}
+
+.logo{
+	float: left;
+	width: 34%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+.phone{
+	float: right;
+	width: 36%;
+	text-align: right;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.mail{
+	float: right;
+	width: 30%;
+	max-width: 350px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.header{
+	padding-top: 100px;
+}
+
+.header a{
+	text-decoration: none;
+}
+
+.header a:hover{
+	text-decoration: underline;
+}
+
+
+
+@media (max-width:1400.5px){
+	.header {
+		padding-top: 40px;
+	}	
+	
+	.phone{
+		font-size: 20px;
+	}
+	
+	.mail{
+		font-size: 20px;
+		max-width: 185px;
+	}
+	
+	.logo{
+		font-size: 35px;
+	}
+	
+	h1{
+		font-size: 100px;
+		line-height: 100px;		
+	}
+	
+	.center{
+		width: 505px;
+	}
+}
+
+
+@media (max-width:767.5px){
+	.header {
+		padding-top: 20px;
+		width: 100%;
+	}	
+	
+	.logo {
+		font-size: 16px;
+		width: 20%;
+	}	
+	
+	.mail{
+		font-size: 14px;
+		max-width: 130px;
+		padding-top: 1px;
+		width: 40%;	
+	}
+	
+	.phone {
+		font-size: 14px;
+		width: 40%;
+		padding-top: 1px;
+	}	
+	
+	.center{
+		width: auto;
+	}
+	
+	h1{
+font-size: 35px;
+line-height: 40px;
+	}
+}
+
+
+
+

@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "ModuleMaster.cshtml";
+
+    string tekst = Model.Value<string>("tekst");
+
+    var image = string.Empty;
+    var billede = Model.Value<IPublishedContent>("billede");
+    if (billede != null)
+    {
+        image = billede.Url();
+    }
+}
+
+<section class="videoSection" id="sektion-@Model.Id">
+	<div class="inner">
+		<div class="title">
+			<h2><div class="justLine"></div>@Html.Raw(tekst)</h2>
+		</div>
+
+        @if(image!="")
+        {
+            <img src="@image">
+        }
+		
+	</div>
+</section>
