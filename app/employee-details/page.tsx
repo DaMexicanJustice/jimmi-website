@@ -16,6 +16,7 @@ import ceciliePic from "/public/images/Cecilie.jpg";
 import ninaPic from "/public/images/Nina.jpg";
 import daliborPic from "/public/images/Dalibor.jpg";
 import madsPic from "/public/images/Mads.jpg";
+import rebeccaPic from "/public/images/Rebecca.jpg";
 
 // Defining the object structure
 interface Employee {
@@ -54,6 +55,7 @@ const imageMap = {
   daliborPic: daliborPic,
   ninaPic: ninaPic,
   madsPic: madsPic,
+  rebeccaPic: rebeccaPic,
 };
 
 function getURLSearchParamsID() {
