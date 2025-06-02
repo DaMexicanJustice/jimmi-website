@@ -2,8 +2,8 @@
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
-import pageOne from "/public/images/A4_page_1.jpg";
-import pageTwo from "/public/images/A4_page_2.jpg";
+import pageOne from "/public/images/side_1.jpg";
+import pageTwo from "/public/images/side_2.jpg";
 
 export default function PresentationCard() {
   return (
@@ -25,7 +25,7 @@ export default function PresentationCard() {
             printes.
           </p>
           <div className="flex flex-row gap-6 justify-center items-center">
-            <a href="/pdf/A4_page_1.pdf">
+            <a href="/pdf/side_1.pdf">
               <Image
                 src={pageOne || "/placeholder.svg"}
                 width={512}
@@ -34,7 +34,7 @@ export default function PresentationCard() {
                 className="w-full h-full object-cover cursor-pointer"
               />
             </a>
-            <a href="/pdf/A4_page_2.pdf">
+            <a href="/pdf/side_2.pdf">
               <Image
                 src={pageTwo || "/placeholder.svg"}
                 width={512}

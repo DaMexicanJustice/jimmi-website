@@ -231,7 +231,7 @@
     {
       "name": "Nina Martinovic",
       "img": "ninaPic",
-      "role": "mentor & familiebehandler",
+      "role": "mentor og familiebehandler",
       "email": "nm@mentorplan.dk",
       "phone": "+4593963668",
       "linkedIn": "https://www.linkedin.com/in/nina-martinovic-73820654/",
@@ -294,6 +294,36 @@
         },
         "citizen-type": "Jeg er særligt god til at arbejde med unge borgere, som har haft eller stadig har tilknytning til det kriminelle miljø. Jeg har erfaring med at arbejde med mennesker, der har haft svært ved at finde en vej væk fra kriminalitet, og jeg bruger min baggrund som politibetjent til at forstå deres situation og støtte dem i at finde nye muligheder for sig selv. Min tilgang er præget af ordentlighed og tilpasning til den enkeltes behov, og jeg skaber et trygt og støttende miljø, hvor vi sammen kan arbejde hen imod positive forandringer. Jeg har stor erfaring med at igangsætte målrettede forløb, der matcher borgerens individuelle udfordringer og ressourcer.",
         "resume": "Min spidskompetence er min evne til at skabe tillid og gode relationer gennem ærlighed, struktur og respekt. Jeg er god til at møde mennesker, hvor de er, og hjælpe dem med at opdage deres egne styrker og bruge dem til at skabe en bedre fremtid."
+      }
+    },
+    {
+      "name": "Rebecca Melodee Piérre",
+      "img": "rebeccaPic",
+      "role": "Mentor",
+      "email": "rp@mentorplan.dk",
+      "phone": "+4551154445",
+      "linkedIn": "https://www.linkedin.com/in/rebeccamelodeepierre/",
+      "competences": {
+        "languages": {
+          "0": "Dansk",
+          "1": "Engelsk"
+        },
+        "education": {
+          "0": "Digital Markedsføring Certificering",
+          "1": "BSc. Business Administration"
+        },
+        "experience": {
+          "0": "Unge- og trivselskonsulent",
+          "1": "Selvtillidscoach",
+          "2": "Influencer Campaign Manager",
+          "3": "Digital Redaktør, Social Media Manager, Frivillig uddannelsesvejleder for nydanskere"
+        },
+        "article": {
+          "headline": "Min tilgang som mentor er rolig, lyttende, tydelig og relationel. Jeg møder borgere i øjenhøjde – med respekt, nysgerrighed og en tro på, at de er mere end deres adfærd og historie.",
+          "text": "Min professionelle identitet er forankret i arbejdet med personlig udvikling, relationelt nærvær og målrettet støtte. Siden 2022 har jeg coachet unge, faciliteret udviklingsforløb og afholdt workshops i samarbejde med klubber og skoler – altid med fokus på at styrke selvværd, handlekraft og håb. \n\n Som mentor skaber jeg et trygt rum, hvor borgere kan finde fodfæste og genopdage deres styrker – også når de føler sig misforstået, har mistet motivationen eller kæmper med svære følelser. Mit arbejde bærer præg af både faglighed og personlig indsigt, og jeg har en særlig evne til at møde mennesker dér, hvor de er, med et glimt i øjet som forsikrer dem, at med et ærligt forsøg så er positiv forandring muligt. \n\n Jeg har erfaring med unge, der mangler akademisk fokus og derfor har højt fravær, mistrives, har lavt selvværd eller er i risiko for at havne i kriminalitet. Min tilgang er respektfuld og anerkendende, og mit fokus er altid at styrke borgernes indre kompas, så de oplever sig selv som værdifulde, handlekraftige og i stand til at tage styringen over deres eget liv. For mig handler det ikke om at løse problemer for folk – men om at hjælpe dem med at opdage, at de selv kan. Mit arbejde har altid ét fælles mål: at styrke selvværd, handlekraft og håb – uanset udgangspunkt."
+        },
+        "citizen-type": "Jeg har erfaring med unge, der mangler akademisk fJeg er særligt god til at arbejde med unge, der ofte føler sig misforstået, ensomme eller uden retning – nogle med tilknytning til kriminalitet, andre med skolefravær eller psykisk mistrivsel. Jeg møder dem uden fordømmelse og med en rolig, tydelig tilgang, der skaber tillid. I stedet for at stemple giver jeg dem redskaber til at forstå sig selv, håndtere svære følelser og tage styring over deres liv. Målet er, at de opdager, at de har værdi, medbestemmelse over deres egen skæbne, og valg.",
+        "resume": "Min styrke som mentor ligger i min evne til at skabe tryghed og tillid gennem ro, nærvær og nysgerrighed. Med min evne til at opbygge tillidsfulde relationer føler mine borgere sig set, hørt og forstået, hvilket gør det lettere for dem at åbne op, reflektere og tage imod vejledning. Jeg møder mennesker, hvor de er, og hjælper dem med at opdage og styrke deres egne ressourcer. Med blik for både struktur og relationer guider jeg med respekt, varme og målrettethed hen imod positiv forandring."
       }
     }
   ]
