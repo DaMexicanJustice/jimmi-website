@@ -2,8 +2,8 @@
 import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
-import pageOne from "/public/images/side_1.jpg";
-import pageTwo from "/public/images/side_2.jpg";
+import pageOne from "/public/images/Side_1.jpg";
+import pageTwo from "/public/images/Side_2.jpg";
 
 export default function PresentationCard() {
   return (
