@@ -3,7 +3,7 @@ import { ClipLoader } from "react-spinners";
 
 const Spinner = () => {
   return (
-    <div className="spinner">
+    <div className="spinner text-center">
       <ClipLoader
         color="#FFD200"
         loading={true}
