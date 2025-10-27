@@ -7,8 +7,7 @@ import { getEmployeeData } from "../utils/dataHandler";
 import jimmiPic from "/public/images/Jimmi.jpg";
 import maltePic from "/public/images/Malte.jpg";
 import marckPic from "/public/images/Marck.jpg";
-import musaPic from "/public/images/Musa.jpg";
-import esraPic from "/public/images/Esra.jpg";
+import emiliePic from "/public/images/Emilie.jpg";
 import ceciliePic from "/public/images/Cecilie.jpg";
 import madsPic from "/public/images/Mads.jpg";
 import ninaPic from "/public/images/Nina.jpg";
@@ -25,13 +24,12 @@ interface Employee {
   | "jimmiPic"
   | "maltePic"
   | "marckPic"
-  | "musaPic"
-  | "esraPic"
   | "ceciliePic"
   | "madsPic"
   | "ninaPic"
   | "daliborPic"
   | "rebeccaPic"
+  | "emiliePic"
   | "silhouettePic";
   role: string;
   email: string;
@@ -48,13 +46,12 @@ const imageMap = {
   jimmiPic,
   maltePic,
   marckPic,
-  musaPic,
-  esraPic,
   ceciliePic,
   madsPic,
   ninaPic,
   daliborPic,
   rebeccaPic,
+  emiliePic,
   silhouettePic,
 };
 

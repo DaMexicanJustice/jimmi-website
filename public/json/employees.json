@@ -97,75 +97,6 @@
       }
     },
     {
-      "name": "Musa Deveci",
-      "img": "musaPic",
-      "role": "mentor og kontaktperson",
-      "email": "md@mentorplan.dk",
-      "phone": "+4593937947",
-      "linkedIn": "https://www.linkedin.com/in/musa-deveci-432a22237/",
-      "competences": {
-        "languages": {
-          "0": "Dansk",
-          "1": "Engelsk",
-          "2": "Tyrkisk",
-          "3": "Kurdisk"
-        },
-        "education": {
-          "0": "Politibetjent"
-        },
-        "experience": {
-          "0": "Politiarbejde - siden 2017",
-          "1": "Mentor",
-          "2": "Støtte- og kontaktperson",
-          "3": "Pædagogmedhjælper – Husene på Frydendalsvej – 2017 og er der fortsat"
-        },
-        "article": {
-          "headline": "Min tilgang til arbejdet er lyttende og empatisk. Det får dem, jeg arbejder med, til at føle sig set, hørt og værdsat. Herfra skabes følelsen af at være i trygge hænder, hvor modet til at åbne op bliver basis for samarbejdet. Jeg formår at være et anker for borgeren, give den pågældende værdi og dermed genvinde troen på eget værd.",
-          "text": "Som betjent har jeg haft varierede opgaver, fra at arbejde tæt sammen med nærpolitiet for at opbygge relationer i lokalsamfundet til at tage ansvar i sikkerhedsafdelingen for at sikre, at alle på lokationerne udfører deres opgaver korrekt i den daglige drift. Jeg er trænet til at håndtere voldsomme episoder ved at følge de givne arbejdsgange og samtidig motivere og forklare vigtigheden af vores opgaver og den rolle, vi spiller. At være nærværende og en aktiv del af noget større er essentielt i mit arbejde. \n\n I min rolle som pædagogmedhjælper på en døgninstitution for unge med psykiske lidelser fra 16-24 år står jeg over for behovet for støtte til deres skolegang, praktik og andre aktiviteter. Mit mål er at skabe så trygge og hjemlige rammer som muligt, hvor jeg arrangerer aktiviteter som gåture, biografture og andre hjemlige aktiviteter. Jeg stræber efter at være en person, de unge føler sig trygge hos, og jeg motiverer dem til at nå deres mål uanset deres forskellige forudsætninger."
-        },
-        "citizen-type": "Jeg har en særlig evne til at hjælpe unge mennesker, der føler frustration over livet og dets udfordringer, især dem med psykiske lidelser såsom skizofreni og angst.",
-        "resume": "Min spidskompetence er forståelsen for mennesker, hvor de er i deres liv, samt evnen til at afdække deres ressourcer og skabe støtte hen imod målet."
-      }
-    },
-    {
-      "name": "Esra Karabulut",
-      "img": "esraPic",
-      "role": "mentor og kontaktperson",
-      "email": "ek@mentorplan.dk",
-      "phone": "+453137-6268",
-      "linkedIn": "https://www.linkedin.com/in/esra-karabulut-33731395/",
-      "competences": {
-        "languages": {
-          "0": "Dansk",
-          "1": "Engelsk",
-          "2": "Tyrkisk"
-        },
-        "education": {
-          "0": "Socialrådgiver",
-          "1": "Psykiatrivejleder",
-          "2": "Relationsarbejde i Psykiatrien (modul)"
-        },
-        "experience": {
-          "0": "Socialrådgiver – 2014-2020",
-          "1": "Koordinerende sagsbehandler – 2014-2020",
-          "2": "Mentor – 2017",
-          "3": "Virksomhedskonsulent – 2018-2023",
-          "4": "Mødeleder (kommunalt rehabiliteringsteam) – 2017- 2020",
-          "5": "Udslusningskoordinator – 2016-2018",
-          "6": "Radikaliseringskonsulent – 2019-2020",
-          "7": "Projektleder – 2020-2022",
-          "8": "Socialfaglig konsulent – 2020-2022",
-          "9": "Faglig koordinator/stedfortrædende leder – 2021-2023"
-        },
-        "article": {
-          "headline": "Med bred erfaring indenfor beskæftigelsesområdet samt enempatisk tilgang er mit fokus at skabe klarhed overborgerens ressourcer og muligheder for vejen tilbage tilarbejdsmarkedet.",
-          "text": "Jeg ser min professionelle identitet som en kombination af rådgivning og vejledning, hvor min tilgang er centreret om begrebet empowerment. Jeg tror på, at alle fortjener muligheden for at tage kontrol over deres eget liv, uanset om det handler om jobmuligheder eller andre aspekter, der kan berige deres livsoplevelse. I mine samtaler fokuserer jeg på borgerens potentiale og har ofte større tro på dem, end de selv har i starten af processen. Jeg skaber en nærværende og troværdig atmosfære gennem øjenkontakt, åbent kropssprog og en anerkendende tilgang. Respekt er altid fundamentalt i mine møder med borgeren, og jeg lægger vægt på at opbygge en tillidsfuld relation. Jeg ser dette som afgørende for at opnå et vellykket samarbejde. \n\n Min erfaring ligger primært inden for arbejdet med særligt udsatte borgere, som kæmper med komplekse problemstillinger udover ledighed. Dette inkluderer forskellige grupper som aktivitetsparate kontanthjælpsmodtagere over og under 30 år, selvforsørgende individer, jobparate personer, borgere i ressourceforløb, revalidender og lignende."
-        },
-        "citizen-type": "Jeg er særligt god til komplekse borgere, hvor jeg kan være med til at skabe en forandring. Jeg bruger empowerment til at understøtte komplekse borgere i at tage ejerskab over livet. Dette inkluderer psykisk, fysisk og socialt sårbare samt kriminalitetstruede. Udenfor arbejdsmarkedet, arbejdsidentiteten varierende, boligløshed, misbrug, ustabilt liv, manglende ejerskab og ensomhed.",
-        "resume": "Min spidskompetence er at være nærværende og autentisk i kontakten til borgeren. Min tro på vedkommendes ressourcer skaber bevidstgørelse og refleksion, som understøtter den bedste vej tilbage for den enkelte."
-      }
-    },
-    {
       "name": "Cecilie Hagild",
       "img": "ceciliePic",
       "role": "mentor og kontaktperson",
@@ -324,6 +255,35 @@
         },
         "citizen-type": "Jeg har erfaring med unge, der mangler akademisk fokus. Jeg er særligt god til at arbejde med unge, der ofte føler sig misforstået, ensomme eller uden retning – nogle med tilknytning til kriminalitet, andre med skolefravær eller psykisk mistrivsel. Jeg møder dem uden fordømmelse og med en rolig, tydelig tilgang, der skaber tillid. I stedet for at stemple giver jeg dem redskaber til at forstå sig selv, håndtere svære følelser og tage styring over deres liv. Målet er, at de opdager, at de har værdi, medbestemmelse over deres egen skæbne, og valg.",
         "resume": "Min styrke som mentor ligger i min evne til at skabe tryghed og tillid gennem ro, nærvær og nysgerrighed. Med min evne til at opbygge tillidsfulde relationer føler mine borgere sig set, hørt og forstået, hvilket gør det lettere for dem at åbne op, reflektere og tage imod vejledning. Jeg møder mennesker, hvor de er, og hjælper dem med at opdage og styrke deres egne ressourcer. Med blik for både struktur og relationer guider jeg med respekt, varme og målrettethed hen imod positiv forandring."
+      }
+    },
+    {
+      "name": "Emilie Hyrpel",
+      "img": "emiliePic",
+      "role": "Mentor & kontaktperson",
+      "email": "eh@mentorplan.dk",
+      "phone": "+4581983436",
+      "linkedIn": "https://www.linkedin.com/in/emilie-hyrpel-635934303/",
+      "competences": {
+        "languages": {
+          "0": "Dansk",
+          "1": "Engelsk"
+        },
+        "education": {
+          "0": "Socialrådgiverstuderende, 5. semester",
+          "1": "Voldsfagligt kursus \"Hvorfor går hun ikke bare\", Danner"
+        },
+        "experience": {
+          "0": "Ungekonsulent i Ungeliv (praktik) 2025, særligt fokus på misbrug og relationsarbejde",
+          "1": "Frivillig i Café Exit - kvindeklubben",
+          "2": "Domsmand i Københavns Byret"
+        },
+        "article": {
+          "headline": "Min tilgang til arbejdet er præget af nysgerrighed, respekt og en oprigtig interesse for de mennesker, jeg møder.",
+          "text": "Jeg lægger vægt på at skabe relationer, hvor borgerne føler sig lyttet til og taget alvorligt, og hvor vi sammen kan finde vejen fremad.\n\nI mødet med mennesker, der står i svære situationer, er jeg rolig og vedholdende. Jeg giver plads til de svære samtaler, men hjælper samtidig borgerne med at finde deres egne ressourcer og styrker. Det motiverer mig at se, når et menneske opdager nye handlemuligheder og tager skridt i retning af et liv med mere selvværd og handlekraft."
+        },
+        "citizen-type": "Jeg brænder særligt for at arbejde med unge og voksne, der har brug for støtte til at genfinde retning og troen på egne evner. Jeg har erfaring med unge, der lever med psykiske lidelser eller misbrugsproblematikker, og jeg har støttet dem i alt fra hverdagsrutiner til skoleforløb og sociale aktiviteter. Desuden har jeg arbejdet med borgere, som har været udsat for vold – her har mit fokus været at skabe et stabilt rum, hvor de igen kunne begynde at opbygge tillid og tro på sig selv.",
+        "resume": "Min styrke ligger i at kombinere empati med tydelighed – så borgerne både føler sig trygge og får mod på at skabe positive forandringer i deres liv."
       }
     }
   ]
