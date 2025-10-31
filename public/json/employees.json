@@ -129,6 +129,35 @@
       }
     },
     {
+      "name": "Emilie Hyrpel",
+      "img": "emiliePic",
+      "role": "Mentor & kontaktperson",
+      "email": "eh@mentorplan.dk",
+      "phone": "+4581983436",
+      "linkedIn": "https://www.linkedin.com/in/emilie-hyrpel-635934303/",
+      "competences": {
+        "languages": {
+          "0": "Dansk",
+          "1": "Engelsk"
+        },
+        "education": {
+          "0": "Socialrådgiverstuderende, 5. semester",
+          "1": "Voldsfagligt kursus \"Hvorfor går hun ikke bare\", Danner"
+        },
+        "experience": {
+          "0": "Ungekonsulent i Ungeliv (praktik) 2025, særligt fokus på misbrug og relationsarbejde",
+          "1": "Frivillig i Café Exit - kvindeklubben",
+          "2": "Domsmand i Københavns Byret"
+        },
+        "article": {
+          "headline": "Min tilgang til arbejdet er præget af nysgerrighed, respekt og en oprigtig interesse for de mennesker, jeg møder.",
+          "text": "Jeg lægger vægt på at skabe relationer, hvor borgerne føler sig lyttet til og taget alvorligt, og hvor vi sammen kan finde vejen fremad.\n\nI mødet med mennesker, der står i svære situationer, er jeg rolig og vedholdende. Jeg giver plads til de svære samtaler, men hjælper samtidig borgerne med at finde deres egne ressourcer og styrker. Det motiverer mig at se, når et menneske opdager nye handlemuligheder og tager skridt i retning af et liv med mere selvværd og handlekraft."
+        },
+        "citizen-type": "Jeg brænder særligt for at arbejde med unge og voksne, der har brug for støtte til at genfinde retning og troen på egne evner. Jeg har erfaring med unge, der lever med psykiske lidelser eller misbrugsproblematikker, og jeg har støttet dem i alt fra hverdagsrutiner til skoleforløb og sociale aktiviteter. Desuden har jeg arbejdet med borgere, som har været udsat for vold – her har mit fokus været at skabe et stabilt rum, hvor de igen kunne begynde at opbygge tillid og tro på sig selv.",
+        "resume": "Min styrke ligger i at kombinere empati med tydelighed – så borgerne både føler sig trygge og får mod på at skabe positive forandringer i deres liv."
+      }
+    },
+    {
       "name": "Mads Gregerslund",
       "img": "madsPic",
       "role": "Mentor og faglig koordinator",
@@ -255,35 +284,6 @@
         },
         "citizen-type": "Jeg har erfaring med unge, der mangler akademisk fokus. Jeg er særligt god til at arbejde med unge, der ofte føler sig misforstået, ensomme eller uden retning – nogle med tilknytning til kriminalitet, andre med skolefravær eller psykisk mistrivsel. Jeg møder dem uden fordømmelse og med en rolig, tydelig tilgang, der skaber tillid. I stedet for at stemple giver jeg dem redskaber til at forstå sig selv, håndtere svære følelser og tage styring over deres liv. Målet er, at de opdager, at de har værdi, medbestemmelse over deres egen skæbne, og valg.",
         "resume": "Min styrke som mentor ligger i min evne til at skabe tryghed og tillid gennem ro, nærvær og nysgerrighed. Med min evne til at opbygge tillidsfulde relationer føler mine borgere sig set, hørt og forstået, hvilket gør det lettere for dem at åbne op, reflektere og tage imod vejledning. Jeg møder mennesker, hvor de er, og hjælper dem med at opdage og styrke deres egne ressourcer. Med blik for både struktur og relationer guider jeg med respekt, varme og målrettethed hen imod positiv forandring."
-      }
-    },
-    {
-      "name": "Emilie Hyrpel",
-      "img": "emiliePic",
-      "role": "Mentor & kontaktperson",
-      "email": "eh@mentorplan.dk",
-      "phone": "+4581983436",
-      "linkedIn": "https://www.linkedin.com/in/emilie-hyrpel-635934303/",
-      "competences": {
-        "languages": {
-          "0": "Dansk",
-          "1": "Engelsk"
-        },
-        "education": {
-          "0": "Socialrådgiverstuderende, 5. semester",
-          "1": "Voldsfagligt kursus \"Hvorfor går hun ikke bare\", Danner"
-        },
-        "experience": {
-          "0": "Ungekonsulent i Ungeliv (praktik) 2025, særligt fokus på misbrug og relationsarbejde",
-          "1": "Frivillig i Café Exit - kvindeklubben",
-          "2": "Domsmand i Københavns Byret"
-        },
-        "article": {
-          "headline": "Min tilgang til arbejdet er præget af nysgerrighed, respekt og en oprigtig interesse for de mennesker, jeg møder.",
-          "text": "Jeg lægger vægt på at skabe relationer, hvor borgerne føler sig lyttet til og taget alvorligt, og hvor vi sammen kan finde vejen fremad.\n\nI mødet med mennesker, der står i svære situationer, er jeg rolig og vedholdende. Jeg giver plads til de svære samtaler, men hjælper samtidig borgerne med at finde deres egne ressourcer og styrker. Det motiverer mig at se, når et menneske opdager nye handlemuligheder og tager skridt i retning af et liv med mere selvværd og handlekraft."
-        },
-        "citizen-type": "Jeg brænder særligt for at arbejde med unge og voksne, der har brug for støtte til at genfinde retning og troen på egne evner. Jeg har erfaring med unge, der lever med psykiske lidelser eller misbrugsproblematikker, og jeg har støttet dem i alt fra hverdagsrutiner til skoleforløb og sociale aktiviteter. Desuden har jeg arbejdet med borgere, som har været udsat for vold – her har mit fokus været at skabe et stabilt rum, hvor de igen kunne begynde at opbygge tillid og tro på sig selv.",
-        "resume": "Min styrke ligger i at kombinere empati med tydelighed – så borgerne både føler sig trygge og får mod på at skabe positive forandringer i deres liv."
       }
     }
   ]
