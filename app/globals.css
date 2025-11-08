@@ -102,3 +102,7 @@ li {
     @apply text-2xl;
   }
 }
+
+::selection {
+  background-color: #fbbf24;
+}
