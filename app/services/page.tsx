@@ -1,9 +1,5 @@
 import Image from "next/image"
 import CtaButton from "../ui/cta-button"
-import employmentPic from "/public/images/beskæftigelsesindsatser.jpg"
-import youthPic from "/public/images/ungeindsatser.jpg"
-import socialPic from "/public/images/udsatte_services.jpg"
-import virksomhedssamarbejde from "/public/images/virksomhedssamarbejde.jpg"
 
 export default function Services() {
   return (
@@ -25,10 +21,10 @@ export default function Services() {
             "
           >
             <Image
-              src={employmentPic || "/placeholder.svg"}
+              src="/images/virksomheder.jpg"
               width={430}
               height={370}
-              alt="Ydelse 1"
+              alt="Beskæftigelsesindsatser - Individuelle forløb for tilbagevenden til arbejdsmarkedet"
               className="w-full object-cover"
             />
             <h2
@@ -62,10 +58,10 @@ export default function Services() {
             "
           >
             <Image
-              src={youthPic || "/placeholder.svg"}
+              src="/images/ungeindsatser.jpg"
               width={430}
               height={370}
-              alt="Ydelse 1"
+              alt="Ungeindsatser - Støtte til unge op til 23 år med fokus på stabilitet og udvikling"
               className="w-full object-cover"
             />
             <h2
@@ -99,10 +95,10 @@ export default function Services() {
             "
           >
             <Image
-              src={socialPic || "/placeholder.svg"}
+              src="/images/addiction.jpg"
               width={430}
               height={370}
-              alt="Ydelse 1"
+              alt="Social Indsats under §85 - Bostøtte og helhedsorienteret støtte til udsatte borgere"
               className="w-full object-cover"
             />
             <h2
@@ -137,10 +133,10 @@ export default function Services() {
             "
           >
             <Image
-              src={virksomhedssamarbejde || "/placeholder.svg"}
+              src="/images/virksomhedssamarbejde.jpg"
               width={430}
               height={370}
-              alt="Ydelse 1"
+              alt="Virksomhedssamarbejde - Hjælp socialt udsatte borgere tilbage på arbejdsmarkedet"
               className="w-full object-cover"
             />
             <h2

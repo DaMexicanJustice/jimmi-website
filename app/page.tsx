@@ -8,6 +8,32 @@ import Footer from "./ui/footer";
 import Navbar from "./ui/navbar";
 import "/app/styles/styles.css";
 import Divider from "./divider/page";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mentorplan - Hjælp til Sociale Indsatser i København",
+  description: "Sammen med borger finder vi vejen. Mentorplan tilbyder ungeindsatser, beskæftigelsesindsatser, social støtte og virksomhedssamarbejde for en bedre fremtid.",
+  keywords: "mentorplan, sociale indsatser, ungeindsatser, beskæftigelse, københavn, social støtte",
+  openGraph: {
+    title: "Mentorplan - Sociale Indsatser og Støtte",
+    description: "Professionel hjælp til unge, beskæftigelse og social udvikling. Find vejen sammen med os.",
+    url: "https://mentorplan.dk",
+    images: [
+      {
+        url: "/images/mentorplan-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mentorplan - Sociale Indsatser",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mentorplan - Hjælp til Sociale Indsatser",
+    description: "Sammen med borger finder vi vejen til en bedre fremtid.",
+    images: ["/images/mentorplan-home.jpg"],
+  },
+};
 
 export default function Home() {
   return (

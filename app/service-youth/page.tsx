@@ -3,6 +3,7 @@ import Footer from "../ui/footer";
 import Navbar from "../ui/navbar";
 import Image from "next/image";
 import { useRef } from "react";
+import Head from "next/head";
 // GSAP
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -48,6 +49,20 @@ export default function ServiceYouth() {
 
   return (
     <>
+      <Head>
+        <title>Ungeindsatser hos Mentorplan - Støtte til Unge i København</title>
+        <meta name="description" content="Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år. Hjælp med stabilitet, beskæftigelse, fritidsjob og kriminalitetsforebyggelse i Københavnsområdet." />
+        <meta name="keywords" content="ungeindsatser, mentorplan, unge støtte, københavn, beskæftigelse unge, kriminalitetsforebyggelse" />
+        <meta property="og:title" content="Ungeindsatser hos Mentorplan" />
+        <meta property="og:description" content="Professionel støtte til unge med fokus på relationer, beskæftigelse og positiv udvikling." />
+        <meta property="og:image" content="/images/ungeindsatser-og.jpg" />
+        <meta property="og:url" content="https://mentorplan.dk/service-youth" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ungeindsatser hos Mentorplan" />
+        <meta name="twitter:description" content="Hjælp unge at skabe stabilitet og retning i livet." />
+        <meta name="twitter:image" content="/images/ungeindsatser-twitter.jpg" />
+        <link rel="canonical" href="https://mentorplan.dk/service-youth" />
+      </Head>
       <Navbar useScrollBehavior={false}></Navbar>
       <section
         ref={containerRef}
@@ -146,7 +161,7 @@ export default function ServiceYouth() {
                 src="/images/barista.jpg"
                 width={430}
                 height={370}
-                alt="Ydelse 1"
+                alt="Unge i praktik som barista - Støtte til fritidsjob og beskæftigelse"
                 className="object-cover w-full "
                 priority
               />
@@ -189,7 +204,7 @@ export default function ServiceYouth() {
                 src="/images/counseling.jpg"
                 width={430}
                 height={370}
-                alt="Ydelse 1"
+                alt="Rådgivning og støtte til unge - Relationsbaseret hjælp og vejledning"
                 className="object-cover w-full  "
                 priority
               />
@@ -378,7 +393,7 @@ export default function ServiceYouth() {
                 src="/images/familiebehandling.jpg"
                 width={430}
                 height={370}
-                alt="Ydelse 1"
+                alt="Familiebehandling - Støtte til familier for positiv udvikling og relationer"
                 className="object-cover w-full"
                 priority
               />
