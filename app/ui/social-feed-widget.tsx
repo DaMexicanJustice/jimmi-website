@@ -15,7 +15,7 @@ const SocialFeedWidget: React.FC = () => {
 
   return (
     <>
-      <div className="elfsight-app-9ddb833c-5bef-4cfc-a903-061b9d6b0357" data-elfsight-app-lazy></div>
+      <div className="elfsight-app-ecd3e595-919d-4bfc-8863-cf070ac1d97f" data-elfsight-app-lazy></div>
     </>
   );
 };
