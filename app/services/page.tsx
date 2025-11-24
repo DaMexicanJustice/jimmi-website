@@ -1,5 +1,9 @@
 import Image from "next/image"
 import CtaButton from "../ui/cta-button"
+import employmentPic from "/public/images/beskæftigelsesindsatser.jpg"
+import youthPic from "/public/images/ungeindsatser.jpg"
+import socialPic from "/public/images/udsatte_services.jpg"
+import virksomhedssamarbejde from "/public/images/virksomhedssamarbejde.jpg"
 
 export default function Services() {
   return (
@@ -21,7 +25,7 @@ export default function Services() {
             "
           >
             <Image
-              src="/images/virksomheder.jpg"
+              src={employmentPic || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Beskæftigelsesindsatser - Individuelle forløb for tilbagevenden til arbejdsmarkedet"
@@ -58,7 +62,7 @@ export default function Services() {
             "
           >
             <Image
-              src="/images/ungeindsatser.jpg"
+              src={youthPic || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Ungeindsatser - Støtte til unge op til 23 år med fokus på stabilitet og udvikling"
@@ -95,7 +99,7 @@ export default function Services() {
             "
           >
             <Image
-              src="/images/addiction.jpg"
+              src={socialPic || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Social Indsats under §85 - Bostøtte og helhedsorienteret støtte til udsatte borgere"
@@ -133,7 +137,7 @@ export default function Services() {
             "
           >
             <Image
-              src="/images/virksomhedssamarbejde.jpg"
+              src={virksomhedssamarbejde || "/placeholder.svg"}
               width={430}
               height={370}
               alt="Virksomhedssamarbejde - Hjælp socialt udsatte borgere tilbage på arbejdsmarkedet"
