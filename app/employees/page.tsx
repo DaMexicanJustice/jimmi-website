@@ -8,7 +8,6 @@ import jimmiPic from "/public/images/Jimmi.jpg";
 import maltePic from "/public/images/Malte.jpg";
 import marckPic from "/public/images/Marck.jpg";
 import emiliePic from "/public/images/Emilie.jpg";
-import ceciliePic from "/public/images/Cecilie.jpg";
 import madsPic from "/public/images/Mads.jpg";
 import ninaPic from "/public/images/Nina.jpg";
 import daliborPic from "/public/images/Dalibor.jpg";
@@ -24,7 +23,6 @@ interface Employee {
   | "jimmiPic"
   | "maltePic"
   | "marckPic"
-  | "ceciliePic"
   | "madsPic"
   | "ninaPic"
   | "daliborPic"
@@ -46,7 +44,6 @@ const imageMap = {
   jimmiPic,
   maltePic,
   marckPic,
-  ceciliePic,
   madsPic,
   ninaPic,
   daliborPic,
