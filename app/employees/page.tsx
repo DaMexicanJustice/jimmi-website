@@ -12,6 +12,7 @@ import madsPic from "/public/images/Mads.jpg";
 import ninaPic from "/public/images/Nina.jpg";
 import daliborPic from "/public/images/Dalibor.jpg";
 import rebeccaPic from "/public/images/Rebecca.jpg";
+import safinePic from "/public/images/Safine.jpg";
 import silhouettePic from "/public/images/silhouette.png";
 import MentorCtaCard from "../ui/mentor-cta-card";
 import DownloadButton from "../ui/DownloadButton";
@@ -28,6 +29,7 @@ interface Employee {
   | "daliborPic"
   | "rebeccaPic"
   | "emiliePic"
+  | "safinePic"
   | "silhouettePic";
   role: string;
   email: string;
@@ -49,6 +51,7 @@ const imageMap = {
   daliborPic,
   rebeccaPic,
   emiliePic,
+  safinePic,
   silhouettePic,
 };
 
@@ -174,7 +177,9 @@ export default async function Component() {
                           </p>
                         ))}
                     </div>
-                    <LinkedInElement url={e.linkedIn ? e.linkedIn : ""} text="Følg På LinkedIn" />
+                    {e.linkedIn ? (
+                      <LinkedInElement url={e.linkedIn} text="Følg På LinkedIn" />
+                    ) : null}
                     <Link
                       href={{
                         pathname: "/employee-details",

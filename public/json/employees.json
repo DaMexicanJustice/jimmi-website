@@ -254,6 +254,42 @@
         "citizen-type": "Jeg har erfaring med unge, der mangler akademisk fokus. Jeg er særligt god til at arbejde med unge, der ofte føler sig misforstået, ensomme eller uden retning – nogle med tilknytning til kriminalitet, andre med skolefravær eller psykisk mistrivsel. Jeg møder dem uden fordømmelse og med en rolig, tydelig tilgang, der skaber tillid. I stedet for at stemple giver jeg dem redskaber til at forstå sig selv, håndtere svære følelser og tage styring over deres liv. Målet er, at de opdager, at de har værdi, medbestemmelse over deres egen skæbne, og valg.",
         "resume": "Min styrke som mentor ligger i min evne til at skabe tryghed og tillid gennem ro, nærvær og nysgerrighed. Med min evne til at opbygge tillidsfulde relationer føler mine borgere sig set, hørt og forstået, hvilket gør det lettere for dem at åbne op, reflektere og tage imod vejledning. Jeg møder mennesker, hvor de er, og hjælper dem med at opdage og styrke deres egne ressourcer. Med blik for både struktur og relationer guider jeg med respekt, varme og målrettethed hen imod positiv forandring."
       }
+    },
+    {
+      "name": "Safine Lykke Askholm",
+      "img": "safinePic",
+      "role": "Mentor og kontaktperson",
+      "email": "sa@mentorplan.dk",
+      "phone": "+4553505370",
+      "linkedIn": "",
+      "competences": {
+        "languages": {
+          "0": "Dansk",
+          "1": "Engelsk",
+          "2": "Portugisisk",
+          "3": "Spansk"
+        },
+        "education": {
+          "0": "Objektleder Politi",
+          "1": "MSc International Development and Business Studies",
+          "2": "PBA Design og Business",
+          "3": "Beklædningshåndværker"
+        },
+        "experience": {
+          "0": "Politiarbejde 2020-2025",
+          "1": "Netværks Konsulent",
+          "2": "Salgs Konsulent",
+          "3": "Kreativ Konsulent",
+          "4": "Våger for Røde Kors",
+          "5": "Member of Youth Fashion Summit 2016-2018"
+        },
+        "article": {
+          "headline": "Jeg brænder for arbejdet med mennesker og for at skabe positive forandringer i deres liv. Min faglige baggrund omfatter fem års erfaring fra politiet, en PBA i Design og Business og en MSc i International Development and Business Studies. Min erfaring har givet mig en stærk forståelse for mennesker, kommunikation, samarbejde og de forskellige omstændigheder, der kan påvirke menneskers muligheder og udvikling.",
+          "text": "Min tilgang er præget af ro, nærvær, nysgerrighed og en oprigtig interesse for det menneske, jeg møder. Jeg er lyttende og god til at skabe en tryg og tillidsfuld relation, hvor borgeren føler sig set, hørt og mødt uden fordomme. For mig begynder et godt samarbejde med at lære mennesket bag udfordringerne at kende og forstå den enkeltes behov, ressourcer og motivation.\n\nJeg arbejder ud fra en individuel og fleksibel tilgang, hvor samtaler ikke nødvendigvis behøver foregå på et kontor. Jeg bruger blandt andet walk and talk og fælles aktiviteter som en naturlig ramme for at skabe kontakt, opbygge relationer og åbne for samtaler, der ellers kan være svære. Jeg oplever, at en gåtur sammen kan skabe en mere afslappet ramme, hvor samtalen udvikler sig naturligt. Sammen med borgeren undersøger jeg, hvad der giver mening, og hvordan vi kan omsætte ønsker og muligheder til konkrete, realistiske skridt fremad.\n\nMin erfaring fra politiet har styrket min evne til at bevare ro og overblik, håndtere konflikter og kommunikere tydeligt med mennesker i meget forskellige livssituationer. Jeg har lært betydningen af at møde mennesker respektfuldt, også når situationen er præget af frustration, modstand eller manglende tillid. Den erfaring bruger jeg i mit relationsarbejde, hvor jeg kombinerer tålmodighed og forståelse med tydelighed, struktur og vedholdenhed.\n\nMin uddannelsesmæssige baggrund har samtidig givet mig stærke analytiske kompetencer, forretningsforståelse og erfaring med udvikling og samarbejde på tværs af fagligheder. Jeg ønsker at bringe disse kompetencer i spil i samarbejdet med virksomheder og øvrige aktører, hvor jeg sammen med borgeren kan undersøge muligheder for praktik, uddannelse og beskæftigelse. Jeg er optaget af at finde løsninger, der både tager udgangspunkt i borgerens ressourcer og i de muligheder, der findes i praksis.\n\nJeg er kreativ, løsningsorienteret og vedholdende i mit arbejde. Jeg tror på, at udvikling ofte begynder med små skridt, og at en stærk relation, tydelige rammer og oplevelsen af at lykkes kan være afgørende for, at et menneske finder motivation og tro på egne muligheder."
+        },
+        "citizen-type": "Mine styrker kommer særligt i spil i arbejdet med unge og voksne i komplekse livssituationer, herunder borgere med mistrivsel, psykisk sårbarhed, begrænset tillid til andre eller svært ved at finde motivation og retning. Min styrke ligger i at skabe ro, tryghed og tillid – også hos borgere, hvor relationen kan være vanskelig at etablere. Jeg møder den enkelte med tålmodighed, nysgerrighed og tydelighed og arbejder med at skabe struktur, motivation og retning med udgangspunkt i borgerens egne ressourcer og behov.",
+        "resume": "Mine særlige styrker er ro, nærvær, nysgerrighed og evnen til at skabe tillid og gode relationer. Jeg møder mennesker med respekt og tydelighed og arbejder helhedsorienteret med fokus på den enkeltes ressourcer og muligheder. Jeg er særligt stærk i relationer, hvor det kræver ekstra tålmodighed, forståelse og vedholdenhed at skabe et samarbejde, der kan føre til udvikling."
+      }
     }
   ]
 }

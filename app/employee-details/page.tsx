@@ -10,17 +10,17 @@ import Link from "next/link";
 import jimmiPic from "/public/images/Jimmi.jpg";
 import maltePic from "/public/images/Malte.jpg";
 import marckPic from "/public/images/Marck.jpg";
-import ceciliePic from "/public/images/Cecilie.jpg";
 import ninaPic from "/public/images/Nina.jpg";
 import daliborPic from "/public/images/Dalibor.jpg";
 import madsPic from "/public/images/Mads.jpg";
 import rebeccaPic from "/public/images/Rebecca.jpg";
-import emiliePic from "/public/images/Emilie.jpg"
+import emiliePic from "/public/images/Emilie.jpg";
+import safinePic from "/public/images/Safine.jpg";
 
 // Defining the object structure
 interface Employee {
   name: string;
-  img: "jimmiPic" | "maltePic" | "marckPic" | "ceciliePic" | "ninaPic" | "daliborPic" | "madsPic" | "rebeccaPic" | "emiliePic";
+  img: "jimmiPic" | "maltePic" | "marckPic" | "ninaPic" | "daliborPic" | "madsPic" | "rebeccaPic" | "emiliePic" | "safinePic";
   role: string;
   email: string;
   phone: string;
@@ -48,12 +48,12 @@ const imageMap = {
   jimmiPic: jimmiPic,
   maltePic: maltePic,
   marckPic: marckPic,
-  ceciliePic: ceciliePic,
   daliborPic: daliborPic,
   ninaPic: ninaPic,
   madsPic: madsPic,
   rebeccaPic: rebeccaPic,
   emiliePic: emiliePic,
+  safinePic: safinePic,
 };
 
 function getURLSearchParamsID() {
