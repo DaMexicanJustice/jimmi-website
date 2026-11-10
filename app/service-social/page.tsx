@@ -1,16 +1,16 @@
-"use client";
-
-import { useRef } from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Navbar from "../ui/navbar";
-import Footer from "../ui/footer";
+import SlideIn from "../ui/slide-in";
 import ScrollFadeinList from "../ui/scroll-fadein-list";
 import Prices from "../ui/prices";
+import { pageMetadata } from "../lib/metadata";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+export const metadata: Metadata = pageMetadata({
+  title: "Social indsats under § 85 - bostøtte",
+  description:
+    "Bostøtte efter Servicelovens § 85 til voksne med psykiske, fysiske eller sociale udfordringer. ADL-træning, aktiviteter, tværfagligt samarbejde og støtte 24/7.",
+  path: "/service-social/",
+});
 
 const bulletItems = [
   {
@@ -24,6 +24,7 @@ const bulletItems = [
       "Vi opfordrer borgerne til at deltage i meningsfulde aktiviteter udenfor hjemmet, når det er muligt, for at styrke deres sociale netværk og forbedre deres livskvalitet. Det giver borgerne mulighed for at opleve nye perspektiver og bryde med isolation.",
   },
 ];
+
 const listItems = [
   {
     title: "ADL-træning (Almindelig Daglig Levevis)",
@@ -81,43 +82,13 @@ const listItemsTwo = [
 ];
 
 export default function ServiceSocial() {
-  const tl = useRef<gsap.core.Timeline>();
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const imageContainers: HTMLElement[] =
-        gsap.utils.toArray(".image-container");
-      imageContainers.forEach((container) => {
-        gsap.fromTo(
-          container,
-          { x: "150%" },
-          {
-            scrollTrigger: {
-              trigger: container,
-              start: "top 70%",
-              end: "top top",
-              toggleActions: "play none none reverse",
-            },
-            x: 0,
-            duration: 1,
-            ease: "power2.out",
-          }
-        );
-      });
-    },
-    { scope: containerRef }
-  );
-
   return (
-    <>
-      <Navbar useScrollBehavior={false} />
-      <section
-        ref={containerRef}
-        className="mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900 lg:px-16 lg:py-14"
-      >
-        <main className="h-full flex flex-col w-full justify-center gap-6 lg:gap-10">
-          <div className="flex flex-col gap-4">
+    <section
+      id="service-social"
+      className="mt-16 overflow-x-hidden bg-slate-50 dark:bg-neutral-900"
+    >
+        <main className="container-page section-y stack">
+          <div className="text-block">
             <h1 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start lg:text-4xl">
               Social indsats under § 85
             </h1>
@@ -132,10 +103,9 @@ export default function ServiceSocial() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center 
-          lg:flex-row"
+            className="split justify-between items-center"
           >
-            <div className="flex flex-col gap-4 lg:basis-8/12">
+            <div className="text-block lg:basis-7/12 2xl:basis-6/12">
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left">
                 Vores baggrund
               </h2>
@@ -159,28 +129,25 @@ export default function ServiceSocial() {
                 baggrund.
               </p>
             </div>
-            <div className="lg:basis-4/12 image-container overflow-hidden">
+            <SlideIn className="lg:basis-5/12 2xl:basis-6/12 overflow-hidden">
               <Image
                 src="/images/specialister.jpg"
                 width={430}
                 height={370}
-                alt="journal"
-                className="object-cover  w-full"
+                alt="Mentorplans erfarne fagfolk inden for socialt arbejde, pædagogik og politi"
+                className="object-cover w-full"
               />
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center 
-          lg:flex-row"
+            className="split justify-between items-center"
           >
             <div
-              className="flex flex-col items-center gap-4 
-            lg:items-start lg:basis-8/12"
+              className="text-block items-center lg:items-start lg:basis-7/12 2xl:basis-6/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-              lg:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl"
               >
                 Vores tilgang
               </h2>
@@ -202,24 +169,22 @@ export default function ServiceSocial() {
                 textColor="text-slate-900 dark:text-slate-50"
               />
             </div>
-            <div className="lg:basis-4/12 image-container overflow-hidden">
+            <SlideIn className="lg:basis-5/12 2xl:basis-6/12 overflow-hidden">
               <Image
                 src="/images/udsatte.jpg"
                 width={430}
                 height={370}
-                alt="journal"
-                className="w-full object-cover  w-full"
+                alt="Helhedsorienteret støtte til socialt udsatte borgere"
+                className="w-full object-cover"
               />
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center
-            lg:items-start"
+            className="text-block justify-between items-center lg:items-start"
           >
             <div
-              className="flex flex-col gap-4 justify-between
-              lg:w-6/12"
+              className="text-block justify-between lg:w-6/12"
             >
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
                 Hvad tilbyder vi
@@ -239,7 +204,7 @@ export default function ServiceSocial() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2 bg-yellow-400 py-5 px-10 shadow-lg">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-2 bg-yellow-400 py-5 px-10 shadow-lg lg:p-10 2xl:p-14">
               {listItems.map((item, index) => (
                 <div key={index}>
                   <div className="flex h-full">
@@ -256,12 +221,10 @@ export default function ServiceSocial() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-between items-center 
-            lg:items-start"
+            className="text-block justify-between items-center lg:items-start"
           >
             <div
-              className="flex flex-col gap-4 justify-between
-              lg:w-6/12"
+              className="text-block justify-between lg:w-6/12"
             >
               <h2 className="uppercase text-center text-slate-900 dark:text-slate-100 text-2xl font-conduitbold lg:text-4xl lg:text-left lg:basis-8/12">
                 Tværfagligt samarbejde
@@ -273,7 +236,7 @@ export default function ServiceSocial() {
                 kan hjælpe borgeren bedst muligt:
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-1 bg-yellow-400 py-5 px-10 shadow-lg">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-1 bg-yellow-400 py-5 px-10 shadow-lg lg:p-10 2xl:p-14">
               {listItemsTwo.map((item, index) => (
                 <div key={index}>
                   <div className="flex h-full">
@@ -291,7 +254,5 @@ export default function ServiceSocial() {
           <Prices />
         </main>
       </section>
-      <Footer />
-    </>
   );
 }

@@ -1,206 +1,117 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import Footer from "../ui/footer";
-import Navbar from "../ui/navbar";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import { getEmployeeData } from "../utils/dataHandler";
-import jimmiPic from "/public/images/Jimmi.jpg";
-import maltePic from "/public/images/Malte.jpg";
-import marckPic from "/public/images/Marck.jpg";
-import emiliePic from "/public/images/Emilie.jpg";
-import madsPic from "/public/images/Mads.jpg";
-import ninaPic from "/public/images/Nina.jpg";
-import daliborPic from "/public/images/Dalibor.jpg";
-import rebeccaPic from "/public/images/Rebecca.jpg";
-import safinePic from "/public/images/Safine.jpg";
-import silhouettePic from "/public/images/silhouette.png";
+import { Mail, Phone } from "lucide-react";
 import MentorCtaCard from "../ui/mentor-cta-card";
-import DownloadButton from "../ui/DownloadButton";
 import LinkedInElement from "../ui/linked-in-element";
+import { employees } from "../lib/employees";
+import { pageMetadata } from "../lib/metadata";
+import EmployeeGridSpike from "../ui/employee-grid-spike";
 
-interface Employee {
-  name: string;
-  img:
-  | "jimmiPic"
-  | "maltePic"
-  | "marckPic"
-  | "madsPic"
-  | "ninaPic"
-  | "daliborPic"
-  | "rebeccaPic"
-  | "emiliePic"
-  | "safinePic"
-  | "silhouettePic";
-  role: string;
-  email: string;
-  phone: string;
-  linkedIn: string;
-  competences: {
-    languages: { [key: string]: string };
-    education: { [key: string]: string };
-    experience: { [key: string]: string };
-  };
-}
+// SPIKE toggle: true = expanding cards (ui/employee-grid-spike.tsx), false = original hover grid
+const USE_EXPANDING_GRID = true;
 
-const imageMap = {
-  jimmiPic,
-  maltePic,
-  marckPic,
-  madsPic,
-  ninaPic,
-  daliborPic,
-  rebeccaPic,
-  emiliePic,
-  safinePic,
-  silhouettePic,
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Konsulenter",
+  description:
+    "Mød Mentorplans konsulenter med baggrund i socialt arbejde, politi, SSP og pædagogik. Se kompetencer, erfaring og kontaktoplysninger.",
+  path: "/employees/",
+});
 
-export default async function Component() {
-  const employeeData = await getEmployeeData();
-  const employees: Employee[] = employeeData.employees;
-  const maxEducationParagraphs = 4;
+const MAX_LINES = 4;
 
+export default function Employees() {
   return (
-    <>
-      <Navbar useScrollBehavior={false} />
-      <section className="p-5 mt-12 bg-slate-50 dark:bg-neutral-900 sm:px-32 lg:px-16 lg:mt-16">
-        <main className="flex flex-col h-full justify-center items-center cursor-default">
-          <div className="flex flex-col gap-12 py-5 w-full">
-            <div className="bg-yellow-400 dark:bg-yellow-500 grow p-5 flex flex-col gap-5 shadow-xl">
-              <h1 className="uppercase font-bold text-2xl text-slate-900 font-conduit">
-                Konsulenter
-              </h1>
-              <p className="text-slate-900 text-xl">
-                Vi mener, at faglighed er en afgørende forudsætning for at
-                udføre et godt stykke arbejde. Denne brede vifte af erfaringer
-                inden for vores team, giver os mulighed for at tilbyde
-                skræddersyet støtte og rådgivning til vores målgrupper. Læs mere
-                under den enkelte konsulent.
-              </p>
-            </div>
-            <div className="flex items-center justify-end">
-              <DownloadButton />
-            </div>
-            <div
-              className="grid grid-cols-1 gap-6 w-full
-            sm:grid-cols-2
-            lg:grid-cols-3
-            xl:grid-cols-4
-            2xl:grid-cols-5"
-            >
-              {employees.map((e: Employee, index: number) => (
-                <div
-                  key={index}
-                  className="relative bg-slate-50 flex flex-col shadow-xl group overflow-hidden"
-                >
-                  <div className="mb-5 h-64 2xl:h-96">
-                    <Image
-                      src={imageMap[e.img]}
-                      width={512}
-                      height={512}
-                      alt="Medarbejder billed"
-                      className="w-full h-full object-cover grayscale"
-                    />
-                  </div>
-                  <div className="px-5">
-                    <p className="uppercase font-conduitbold text-xl text-slate-700 xl:text-base">
-                      {e.name}
-                    </p>
-                    <p className="uppercase font-conduitbold text-sm text-slate-500 xl:text-xs">
-                      {e.role}
-                    </p>
-                  </div>
-                  <div className="flex flex-row justify-between p-5">
-                    <div>
-                      <div className="flex flex-row gap-1 items-center">
-                        <EnvelopeIcon className="text-slate-950 w-5" />
-                        <p className="font-conduit text-base text-slate-800 xl:text-sm 2xl:text-base">
-                          {e.email}
-                        </p>
-                      </div>
-                      <div className="flex flex-row gap-1 items-center">
-                        <PhoneIcon className="text-slate-950 w-5" />
-                        <a
-                          href={`tel:${e.phone}`}
-                          className="font-conduit text-slate-800 text-base xl:text-sm 2xl:text-base"
-                        >
-                          {e.phone
-                            .substring(3)
-                            .replace(/(\d{4})(\d{4})/, "$1-$2")}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-slate-50 opacity-0 overflow-hidden group-hover:opacity-100 transition-opacity duration-500 ease-in-out px-5">
-                    <p className="uppercase text-slate-700 font-conduitbold">
-                      Kompetencedækning
-                    </p>
-                    <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
-                      Sprog
-                    </p>
-                    <div className="flex flex-row flex-wrap gap-1 w-3/5 xl:w-4/5">
-                      {Object.values(e.competences.languages)
-                        .map((lang, i) => (
-                          <p key={i} className="text-slate-950 text-sm 2xl:text-base">
-                            {lang}
-                          </p>
-                        ))}
-                    </div>
-                    <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
-                      Uddannelse
-                    </p>
-                    <div className="flex flex-col gap-1">
-                      {Object.values(e.competences.education)
-                        .slice(0, maxEducationParagraphs)
-                        .map((edu, i) => (
-                          <p
-                            key={i}
-                            className="text-slate-950 text-sm 2xl:text-base truncate"
-                          >
-                            {edu}
-                          </p>
-                        ))}
-                    </div>
-                    <p className="uppercase text-slate-700 font-conduit bg-slate-200 dark:bg-stone-200">
-                      Erfaring
-                    </p>
-                    <div className="flex flex-col gap-1">
-                      {Object.values(e.competences.experience)
-                        .reverse()
-                        .slice(0, maxEducationParagraphs)
-                        .map((exp, i) => (
-                          <p
-                            key={i}
-                            className="text-slate-950 text-sm 2xl:text-base truncate"
-                          >
-                            {exp}
-                          </p>
-                        ))}
-                    </div>
-                    {e.linkedIn ? (
-                      <LinkedInElement url={e.linkedIn} text="Følg På LinkedIn" />
-                    ) : null}
-                    <Link
-                      href={{
-                        pathname: "/employee-details",
-                        query: { id: index },
-                      }}
-                      className="absolute bottom-0 right-0 font-conduit text-slate-100 text-center text-wrap size-20 lg:size-20 xl:size-16 2xl:size-20"
-                      aria-label={`Læs mere om ${e.name}`}
-                    >
-                      <div className="size-40 rounded-full border-2 bg-yellow-400 dark:bg-yellow-500 text-slate-950 p-5 uppercase font-conduitbold text-sm rounded-full -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs 2xl:text-base">
-                        Læs Mere
-                      </div>
-                    </Link>
-                  </div>
+    <main className="mt-16 bg-slate-50 dark:bg-neutral-900">
+      <div className="container-page section-y flex flex-col gap-10 lg:gap-14 cursor-default">
+        <div className="bg-yellow-400 grow p-5 lg:p-10 2xl:p-14 flex flex-col gap-5 shadow-xl">
+          <h1 className="uppercase font-bold text-2xl text-slate-900 font-conduit">Konsulenter</h1>
+          <p className="text-slate-900 text-xl">
+            Vi mener, at faglighed er en afgørende forudsætning for at udføre et godt stykke arbejde. Denne brede vifte
+            af erfaringer inden for vores team giver os mulighed for at tilbyde skræddersyet støtte og rådgivning til
+            vores målgrupper. Læs mere under den enkelte konsulent.
+          </p>
+        </div>
+        <div className="flex items-center justify-end">
+          <Link
+            href="/presentation-card/"
+            className="bg-stone-500 text-white font-bold py-3 px-6 text-sm uppercase tracking-wider shadow-md
+            transition-colors duration-300 ease-in-out hover:bg-white hover:text-black
+            focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50"
+          >
+            Download præsentationskort
+          </Link>
+        </div>
+        {USE_EXPANDING_GRID ? (
+          <EmployeeGridSpike employees={employees}>
+            <MentorCtaCard />
+          </EmployeeGridSpike>
+        ) : (
+        <ul className="grid grid-cols-1 gap-6 lg:gap-8 2xl:gap-10 w-full sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+          {employees.map((e) => (
+            <li key={e.slug} className="relative bg-slate-50 flex flex-col shadow-xl group overflow-hidden">
+              <div className="mb-5 h-64 2xl:h-96">
+                <Image
+                  src={e.image}
+                  alt={`${e.name}, ${e.role}`}
+                  className="w-full h-full object-cover grayscale"
+                />
+              </div>
+              <div className="px-5">
+                <h2 className="uppercase font-conduitbold text-xl text-slate-700 xl:text-base">{e.name}</h2>
+                <p className="uppercase font-conduitbold text-sm text-slate-500 xl:text-xs">{e.role}</p>
+              </div>
+              <div className="p-5">
+                <a href={`mailto:${e.email}`} className="flex flex-row gap-1 items-center font-conduit text-base text-slate-800 xl:text-sm 2xl:text-base">
+                  <Mail className="text-slate-950 w-5 shrink-0" aria-hidden="true" />
+                  {e.email}
+                </a>
+                <a href={`tel:${e.phone}`} className="flex flex-row gap-1 items-center font-conduit text-base text-slate-800 xl:text-sm 2xl:text-base">
+                  <Phone className="text-slate-950 w-5 shrink-0" aria-hidden="true" />
+                  {e.phoneDisplay}
+                </a>
+              </div>
+
+              {/* Hover overlay with competences */}
+              <div className="absolute inset-0 bg-slate-50 opacity-0 overflow-hidden group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500 ease-in-out px-5">
+                <p className="uppercase text-slate-700 font-conduitbold">Kompetencedækning</p>
+                <p className="uppercase text-slate-700 font-conduit bg-slate-200">Sprog</p>
+                <div className="flex flex-row flex-wrap gap-1 w-3/5 xl:w-4/5">
+                  {e.languages.map((lang, i) => (
+                    <span key={i} className="text-slate-950 text-sm 2xl:text-base">{lang}</span>
+                  ))}
                 </div>
-              ))}
-              <MentorCtaCard />
-            </div>
-          </div>
-        </main>
-      </section>
-      <Footer />
-    </>
+                <p className="uppercase text-slate-700 font-conduit bg-slate-200">Uddannelse</p>
+                <div className="flex flex-col gap-1">
+                  {e.education.slice(0, MAX_LINES).map((edu, i) => (
+                    <span key={i} className="text-slate-950 text-sm 2xl:text-base truncate">{edu}</span>
+                  ))}
+                </div>
+                <p className="uppercase text-slate-700 font-conduit bg-slate-200">Erfaring</p>
+                <div className="flex flex-col gap-1">
+                  {[...e.experience].reverse().slice(0, MAX_LINES).map((exp, i) => (
+                    <span key={i} className="text-slate-950 text-sm 2xl:text-base truncate">{exp}</span>
+                  ))}
+                </div>
+                {e.linkedIn && <LinkedInElement url={e.linkedIn} text="Følg på LinkedIn" />}
+                <Link
+                  href={`/employees/${e.slug}/`}
+                  className="absolute bottom-0 right-0 font-conduit text-slate-100 text-center text-wrap size-20 xl:size-16 2xl:size-20"
+                  aria-label={`Læs mere om ${e.name}`}
+                >
+                  <div className="size-40 rounded-full border-2 bg-yellow-400 text-slate-950 p-5 uppercase font-conduitbold text-sm -rotate-45 lg:size-48 xl:size-36 xl:p-4 xl:text-xs 2xl:text-base">
+                    Læs mere
+                  </div>
+                </Link>
+              </div>
+            </li>
+          ))}
+          <li className="contents">
+            <MentorCtaCard />
+          </li>
+        </ul>
+        )}
+      </div>
+    </main>
   );
 }

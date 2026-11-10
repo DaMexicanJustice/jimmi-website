@@ -1,83 +1,26 @@
-"use client"; // This is a client component
-import Footer from "../ui/footer";
-import Navbar from "../ui/navbar";
+import type { Metadata } from "next";
 import Image from "next/image";
-import { useRef } from "react";
-import Head from "next/head";
-// GSAP
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ScrollFadeinList from "../ui/scroll-fadein-list";
+import SlideIn from "../ui/slide-in";
 import Prices from "../ui/prices";
+import { pageMetadata } from "../lib/metadata";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+export const metadata: Metadata = pageMetadata({
+  title: "Ungeindsatser - støtte til unge op til 23 år",
+  description:
+    "Mentorplan tilbyder ungeindsatser for unge op til 23 år: relationsbaseret støtte, fritidsjob og beskæftigelse, kriminalitetsforebyggelse, familiebehandling og hjælp i overgangen til voksenlivet.",
+  path: "/service-youth/",
+});
 
 export default function ServiceYouth() {
-  const sectionRefs = useRef([]);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const tl = useRef<gsap.core.Timeline>();
-
-  useGSAP(
-    () => {
-      const imageContainers: HTMLElement[] =
-        gsap.utils.toArray(".image-container");
-
-      console.log("Number of elements: " + imageContainers.length);
-
-      imageContainers.forEach((container) => {
-        gsap.fromTo(
-          container,
-          { x: "150%" },
-          {
-            scrollTrigger: {
-              trigger: container,
-              start: "top 80%",
-              end: "top top",
-              toggleActions: "play none none reverse",
-            },
-            x: 0,
-            duration: 1,
-            ease: "power2.out",
-          }
-        );
-      });
-    },
-    { scope: containerRef }
-  );
-
   return (
-    <>
-      <Head>
-        <title>Ungeindsatser hos Mentorplan - Støtte til Unge i København</title>
-        <meta name="description" content="Mentorplan tilbyder ungeindsatser rettet mod unge op til 23 år. Hjælp med stabilitet, beskæftigelse, fritidsjob og kriminalitetsforebyggelse i Københavnsområdet." />
-        <meta name="keywords" content="ungeindsatser, mentorplan, unge støtte, københavn, beskæftigelse unge, kriminalitetsforebyggelse" />
-        <meta property="og:title" content="Ungeindsatser hos Mentorplan" />
-        <meta property="og:description" content="Professionel støtte til unge med fokus på relationer, beskæftigelse og positiv udvikling." />
-        <meta property="og:image" content="/images/ungeindsatser-og.jpg" />
-        <meta property="og:url" content="https://mentorplan.dk/service-youth" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ungeindsatser hos Mentorplan" />
-        <meta name="twitter:description" content="Hjælp unge at skabe stabilitet og retning i livet." />
-        <meta name="twitter:image" content="/images/ungeindsatser-twitter.jpg" />
-        <link rel="canonical" href="https://mentorplan.dk/service-youth" />
-      </Head>
-      <Navbar useScrollBehavior={false}></Navbar>
-      <section
-        ref={containerRef}
-        id="service-employment"
-        className="min-h-[calc(100svh-3rem)] mt-16 overflow-hidden p-5 bg-slate-50 dark:bg-neutral-900
-        lg:px-16
-
- lg:py-14"
-      >
-        <main className="h-full flex flex-col w-full justify-center gap-6">
-          <div className="flex flex-col gap-4">
+    <section
+      id="service-youth"
+      className="mt-16 overflow-x-hidden bg-slate-50 dark:bg-neutral-900"
+    >
+        <main className="container-page section-y stack">
+          <div className="text-block">
             <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-            lg:self-start
-            xl:text-4xl"
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
             >
               Ungeindsatser hos Mentorplan
             </h1>
@@ -104,17 +47,13 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center items-center
-            lg:flex-row lg:gap-10 "
+            className="split justify-center items-center"
           >
             <div
-              className="flex flex-col gap-4 text-left
-            lg:basis-8/12"
+              className="text-block text-left lg:basis-7/12 2xl:basis-6/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-              lg:self-start
-              xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
               >
                 Vores tilgang og metoder
               </h2>
@@ -153,33 +92,26 @@ export default function ServiceYouth() {
               </p>
             </div>
 
-            <div
-              className="flex flex-col gap-4 justify-center items-center image-container
-            lg:basis-4/12"
+            <SlideIn className="text-block justify-center items-center lg:basis-5/12 2xl:basis-6/12"
             >
               <Image
                 src="/images/barista.jpg"
                 width={430}
                 height={370}
                 alt="Unge i praktik som barista - Støtte til fritidsjob og beskæftigelse"
-                className="object-cover w-full "
-                priority
+                className="object-cover w-full"
               />
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center
-            lg:flex-row lg:gap-10 "
+            className="split justify-center"
           >
             <div
-              className="flex flex-col gap-4 text-left
-              lg:basis-8/12"
+              className="text-block text-left lg:basis-7/12 2xl:basis-6/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-              lg:self-start
-              xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
               >
                 Støtte i overgangen til voksenlivet
               </h2>
@@ -196,32 +128,24 @@ export default function ServiceYouth() {
                 hjemmeliv og støtte til at skabe en selvstændig tilværelse.
               </p>
             </div>
-            <div
-              className="flex flex-col gap-4 justify-center image-container
-              lg:basis-4/12"
+            <SlideIn className="text-block justify-center lg:basis-5/12 2xl:basis-6/12"
             >
               <Image
                 src="/images/counseling.jpg"
                 width={430}
                 height={370}
                 alt="Rådgivning og støtte til unge - Relationsbaseret hjælp og vejledning"
-                className="object-cover w-full  "
-                priority
+                className="object-cover w-full"
               />
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-4 bg-yellow-400 p-5
-            lg:p-10
-            xl:flex-row xl:gap-10
-            2xl:gap-16"
+            className="flex flex-col gap-4 bg-yellow-400 p-5 lg:p-10 xl:flex-row xl:gap-12 2xl:gap-20 2xl:p-14"
           >
-            <div className="flex flex-col gap-4 basis-4/12 text-left">
+            <div className="text-block basis-4/12 text-left">
               <h2
-                className="uppercase text-slate-900 text-2xl font-conduitbold self-center
-                lg:self-start
-                xl:text-4xl"
+                className="uppercase text-slate-900 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
               >
                 Fritidsjob og beskæftigelse
               </h2>
@@ -258,9 +182,7 @@ export default function ServiceYouth() {
             <div className="flex flex-col justify-start gap-12 basis-4/12 text-left">
               <div>
                 <h2
-                  className="uppercase text-slate-900 text-2xl font-conduitbold self-center
-                lg:self-start
-                xl:text-4xl"
+                  className="uppercase text-slate-900 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
                 >
                   Kriminalitetsforebyggelse, UKN-sager og støtte i retssager
                 </h2>
@@ -278,19 +200,15 @@ export default function ServiceYouth() {
               </div>
 
               <div
-                className="flex flex-col gap-4
-            xl:flex-row xl:gap-10
-            2xl:gap-16"
+                className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-16"
               >
-                <div className="flex flex-col gap-4 text-left">
+                <div className="text-block text-left">
                   <h2
-                    className="uppercase text-slate-900  text-2xl font-conduitbold self-center
-                lg:self-start
-                xl:text-4xl"
+                    className="uppercase text-slate-900 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
                   >
                     Tilgængelighed 24/7 og fleksibilitet
                   </h2>
-                  <p className="text-slate-900 ">
+                  <p className="text-slate-900">
                     Vi er tilgængelige 24/7 for de unge, deres familier og
                     sagsbehandlere, hvis der opstår akutte problemer eller
                     udfordringer, der kræver hurtig handling. Vores indsats er
@@ -302,22 +220,20 @@ export default function ServiceYouth() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 basis-4/12 text-left">
+            <div className="text-block basis-4/12 text-left">
               <h2
-                className="uppercase text-slate-900  text-2xl font-conduitbold self-center
-                lg:self-start
-                xl:text-4xl"
+                className="uppercase text-slate-900 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
               >
                 Tværfagligt samarbejde – Vi er med hele vejen
               </h2>
-              <p className="text-slate-900 ">
+              <p className="text-slate-900">
                 Vi arbejder helhedsorienteret og går aktivt ind i de forskellige
                 områder af den unges liv, hvor der er behov for støtte. Vi
                 samarbejder tæt med skoler, misbrugscentre, Kriminalforsorgen,
                 sagsbehandlere, forældre og andre relevante aktører for at
                 sikre, at den unge får den nødvendige hjælp og støtte.
               </p>
-              <p className="text-slate-900 ">
+              <p className="text-slate-900">
                 Vores tilgang er at være med hele vejen, uanset om det handler
                 om møder på skoler for at løse problemer med fravær, deltagelse
                 i samtaler på arbejdspladsen eller støtte i forhold til
@@ -326,7 +242,7 @@ export default function ServiceYouth() {
                 med at forstå processen og sikre, at de overholder deres
                 forpligtelser.
               </p>
-              <p className="text-slate-900 ">
+              <p className="text-slate-900">
                 Vi ved, at mange unge mangler en stabil voksen omkring sig, og
                 derfor træder vi til som den støtte, der sikrer, at de
                 nødvendige skridt bliver taget. Vores mål er at skabe sammenhæng
@@ -339,17 +255,13 @@ export default function ServiceYouth() {
           </div>
 
           <div
-            className="flex flex-col gap-4 justify-center items-center
-            lg:flex-row lg:gap-10 "
+            className="split justify-center items-center"
           >
             <div
-              className="flex flex-col gap-4 text-left
-              lg:basis-8/12"
+              className="text-block text-left lg:basis-7/12 2xl:basis-6/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center
-              lg:self-start
-              xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold self-center lg:self-start xl:text-4xl"
               >
                 Familiebehandling som supplement til ungeindsatsen
               </h2>
@@ -385,9 +297,7 @@ export default function ServiceYouth() {
                 forandringer.
               </p>
             </div>
-            <div
-              className="flex flex-col gap-4 justify-center image-container
-              lg:basis-4/12"
+            <SlideIn className="text-block justify-center lg:basis-5/12 2xl:basis-6/12"
             >
               <Image
                 src="/images/familiebehandling.jpg"
@@ -395,50 +305,12 @@ export default function ServiceYouth() {
                 height={370}
                 alt="Familiebehandling - Støtte til familier for positiv udvikling og relationer"
                 className="object-cover w-full"
-                priority
               />
-            </div>
+            </SlideIn>
           </div>
 
           <Prices />
-
-          {/* <div
-            className="flex flex-col gap-4 justify-between
-            lg:flex-row
-            xl:gap-10
-            2xl:gap-16"
-          >
-            <div
-              className="flex flex-col gap-4 image-container
-              lg:basis-4/12"
-            >
-              <Image
-                src="/images/inspiration.jpg"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="object-cover w-full "
-                priority
-              />
-            </div>
-
-            <div
-              className="flex flex-col gap-4 image-container
-              lg:basis-4/12"
-            >
-              <Image
-                src="/images/youth.jpg"
-                width={430}
-                height={370}
-                alt="Ydelse 1"
-                className="object-cover w-full "
-                priority
-              />
-            </div>
-          </div> */}
         </main>
       </section>
-      <Footer></Footer>
-    </>
   );
 }

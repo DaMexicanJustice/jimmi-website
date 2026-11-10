@@ -1,25 +1,21 @@
-"use client"; // This is a client component
-import Footer from "../ui/footer";
-import Navbar from "../ui/navbar";
-import networkPic from "/public/images/network.jpg";
-import journalPic from "/public/images/journal.jpg";
-import sohoPic from "/public/images/soho_face.jpg";
-import possiblePic from "/public/images/possible.jpg";
-import growthPic from "/public/images/growth.jpg";
+import type { Metadata } from "next";
 import Image from "next/image";
-import { useRef } from "react";
-import { ArrowRight, Check } from "lucide-react";
-
-// GSAP
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CircularDiagram from "../ui/CircularDiagram";
+import SlideIn from "../ui/slide-in";
 import ScrollFadeinList from "../ui/scroll-fadein-list";
-import { Accordion } from "../ui/accordion";
 import Prices from "../ui/prices";
+import CircularDiagram from "../ui/CircularDiagram";
+import ForloebSection from "../ui/forloeb-section";
+import networkPic from "@/public/images/network.jpg";
+import journalPic from "@/public/images/journal.jpg";
+import sohoPic from "@/public/images/soho_face.jpg";
+import { pageMetadata } from "../lib/metadata";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+export const metadata: Metadata = pageMetadata({
+  title: "Beskæftigelses- og uddannelsesindsats",
+  description:
+    "Individuelle beskæftigelsesforløb inspireret af JobFirst: virksomhedsmatch, praktik, løntilskud, 360°-afklaring, tæt opfølgning og grundig dokumentation til jobcentret.",
+  path: "/service-employment/",
+});
 
 const listItems = [
   {
@@ -43,104 +39,20 @@ const listItems = [
       "Det livlige miljø i SOHO giver borgerne mulighed for at opleve, hvordan det er at være en del af et større fællesskab. Det er ikke bare en fysisk ramme, men en platform, hvor borgerne kan blive inspireret, spejle sig i andre og finde motivation til at tage de næste skridt mod arbejdsmarkedet eller uddannelse.",
   },
 ];
-const listItemsTwo = [
-  {
-    title: "Samarbejdet starter med forventningsafstemning",
-    content:
-      "Når en borger skal starte i praktik, lønnede timer eller ordinært arbejde, deltager vi altid i første møde mellem borgeren og virksomheden. Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle udfordringer. Åbenhed skaber gensidig forståelse og respekt, hvilket sikrer det bedste forløb.",
-  },
-  {
-    title: "Løbende opfølgning sikrer succes",
-    content:
-      "Når en borger skal starte i praktik, lønnede timer eller ordinært arbejde, deltager vi altid i første møde mellem borgeren og virksomheden. Vi sørger for en åben og ærlig dialog, hvor vi afstemmer forventninger og taler om eventuelle udfordringer. Åbenhed skaber gensidig forståelse og respekt, hvilket sikrer det bedste forløb.",
-  },
-  {
-    title: "Netværk og nye muligheder",
-    content:
-      "Når en borger skal starte i praktHvis vi ikke allerede samarbejder med en virksomhed, der matcher borgerens behov, er vi dygtige til at finde nye muligheder. Vores stærke netværk gør, at vi kan finde de rette virksomheder, der tilbyder det bedste match. Vi sikrer os, at både borger og virksomhed får de bedste forudsætninger for et succesfuldt samarbejde.",
-  },
-];
 
 export default function ServiceEmployment() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const imageContainers: HTMLElement[] =
-        gsap.utils.toArray(".image-container");
-
-      console.log("Number of elements: " + imageContainers.length);
-
-      ScrollTrigger.create({
-        trigger: ".scroll-section",
-        start: "top center",
-        end: "bottom center",
-        scrub: true,
-        pin: ".scroll-target",
-        anticipatePin: 1,
-        pinReparent: false,
-      });
-
-      // Refresh ScrollTrigger on accordion item toggle
-      const accordionItems = document.querySelectorAll(".scroll-section");
-
-      accordionItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          // Give GSAP time to adjust after accordion toggle
-          setTimeout(() => ScrollTrigger.refresh(), 300);
-        });
-      });
-
-      imageContainers.forEach((container) => {
-        gsap.fromTo(
-          container,
-          { x: "150%" },
-          {
-            scrollTrigger: {
-              trigger: container,
-              start: "top 80%",
-              end: "top top",
-              toggleActions: "play none none reverse",
-            },
-            x: 0,
-            duration: 1,
-            ease: "power2.out",
-          }
-        );
-      });
-
-      return () => {
-        // Clean up event listeners on unmount
-        accordionItems.forEach((item) => {
-          item.removeEventListener("click", () => ScrollTrigger.refresh());
-        });
-      };
-    },
-    { scope: containerRef }
-  );
-
   return (
-    <>
-      <Navbar useScrollBehavior={false}></Navbar>
-      <section
-        ref={containerRef}
-        id="service-employment"
-        className="min-h-[calc(100svh-3rem)] mt-16 overflow-x-hidden p-5 
-        bg-slate-50 dark:bg-neutral-900
-        sm:px-32
-        lg:px-16 lg:py-14"
-      >
-        <main
-          className="h-full flex flex-col w-full justify-center items-center gap-10 
-        lg:items-start"
+    <section
+      id="service-employment"
+      className="mt-16 overflow-x-hidden bg-slate-50 dark:bg-neutral-900"
+    >
+        <main className="container-page section-y stack items-center lg:items-start"
         >
           <div
-            className="flex flex-col gap-4 items-center
-          lg:items-start"
+            className="text-block items-center lg:items-start"
           >
             <h1
-              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-            xl:text-4xl"
+              className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
             >
               BESKÆFTIGELSES- OG UDDANNELSESINDSATS
             </h1>
@@ -173,16 +85,13 @@ export default function ServiceEmployment() {
           </div>
 
           <div
-            className="flex flex-col gap-6
-          lg:flex-row  lg:justify-between lg:items-center"
+            className="split lg:justify-between lg:items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center
-              lg:items-start  lg:basis-8/12"
+              className="text-block items-center lg:items-start lg:basis-7/12 2xl:basis-6/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
               >
                 METODE: VIRKELIGHEDEN VIRKER
               </h2>
@@ -216,24 +125,21 @@ export default function ServiceEmployment() {
                 vi støtter borgerne i at håndtere disse udfordringer.
               </p>
             </div>
-            <div className="lg:basis-4/12 image-container image-right z-50">
-              <div id="svg-container">
+            <SlideIn className="lg:basis-5/12 2xl:basis-6/12 z-40">
+              <div>
                 <CircularDiagram></CircularDiagram>
               </div>
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-6
-          lg:flex-row  lg:justify-between lg:items-center"
+            className="split lg:justify-between lg:items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center bg-yellow-400 p-5
-           lg:w-8/12 lg:items-start"
+              className="text-block items-center bg-yellow-400 p-5 lg:p-10 2xl:p-14 lg:w-7/12 2xl:w-6/12 lg:items-start"
             >
               <h2
-                className="uppercase text-slate-900 text-2xl font-conduitbold
-                  xl:text-4xl"
+                className="uppercase text-slate-900 text-2xl font-conduitbold xl:text-4xl"
               >
                 RELATIONENS BETYDNING
               </h2>
@@ -258,29 +164,23 @@ export default function ServiceEmployment() {
                 fører til varige og meningsfulde forandringer.
               </p>
             </div>
-            <div className="lg:basis-4/12 image-container">
+            <SlideIn className="lg:basis-5/12 2xl:basis-6/12">
               <Image
                 src={networkPic}
-                width={430}
-                height={370}
-                alt="Virksomhedsnetværk"
+                alt="Mentor og borger i samtale - relationen er fundamentet"
                 className="object-cover w-full"
-                priority
               />
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-6
-          lg:flex-row  lg:justify-between lg:items-center"
+            className="split lg:justify-between lg:items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center
-           lg:w-8/12 lg:items-start"
+              className="text-block items-center lg:w-7/12 2xl:w-6/12 lg:items-start"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold
-                  xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
               >
                 VORES BASE I KØDBYEN – RAMMER DER INSPIRERER OG UDVIKLER
               </h2>
@@ -298,29 +198,23 @@ export default function ServiceEmployment() {
                 textColor="text-slate-900 dark:text-slate-50"
               />
             </div>
-            <div className="lg:basis-4/12 image-container">
+            <SlideIn className="lg:basis-5/12 2xl:basis-6/12">
               <Image
                 src={sohoPic}
-                width={430}
-                height={370}
-                alt="Virksomhedsnetværk"
+                alt="Mentorplans kontor i kontorfællesskabet SOHO i Kødbyen"
                 className="object-cover w-full"
-                priority
               />
-            </div>
+            </SlideIn>
           </div>
 
           <div
-            className="flex flex-col gap-6 space-between items-center 
-            lg:flex-row"
+            className="split items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center
-              lg:items-start  lg:basis-8/12"
+              className="text-block items-center lg:items-start lg:basis-8/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
               >
                 DET RIGTIGE VIRKSOMHEDSMATCH GØR FORSKELLEN
               </h2>
@@ -336,29 +230,17 @@ export default function ServiceEmployment() {
                 føler sig velkommen og får en god start.
               </p>
             </div>
-            <div className="lg:basis-4/12 image-container">
-              {/* <Image
-                src={growthPic}
-                width={430}
-                height={370}
-                alt="Virksomhedsnetværk"
-                className="object-cover w-full"
-                priority
-              /> */}
-            </div>
+            <div className="lg:basis-4/12" />
           </div>
 
           <div
-            className="flex flex-col gap-6 space-between items-center 
-            lg:flex-row"
+            className="split items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center
-              lg:items-start  lg:basis-8/12"
+              className="text-block items-center lg:items-start lg:basis-8/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
               >
                 SAMARBEJDET STARTER MED FORVENTNINGSAFSTEMNING
               </h2>
@@ -378,29 +260,17 @@ export default function ServiceEmployment() {
                 forløb.
               </p>
             </div>
-            <div className="lg:basis-4/12 image-container">
-              {/* <Image
-                src={possiblePic}
-                width={430}
-                height={370}
-                alt="Virksomhedsnetværk"
-                className="object-cover w-full"
-                priority
-              /> */}
-            </div>
+            <div className="lg:basis-4/12" />
           </div>
 
           <div
-            className="flex flex-col gap-6 space-between items-center 
-            lg:flex-row"
+            className="split items-center"
           >
             <div
-              className="flex flex-col gap-6 items-center
-              lg:items-start  lg:basis-8/12"
+              className="text-block items-center lg:items-start lg:basis-8/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
               >
                 FLEKSIBLE OPSTARTSMULIGHEDER
               </h2>
@@ -442,53 +312,18 @@ export default function ServiceEmployment() {
             </div>
           </div>
 
-          <div
-            className="scroll-target hidden
-            lg:block"
-          >
-            <h2
-              className="uppercase font-conduitbold text-2xl text-slate-900 dark:text-slate-50
-              lg:text-6xl"
-            >
-              Forløb
-              <span className="font-sans text-yellow-400 dark:text-yellow-500">
-                |
-              </span>
-            </h2>
-          </div>
-
-          {/* layout */}
-          <div
-            className="flex flex-col gap-6 scroll-section 
-            lg:flex-row  lg:justify-end"
-          >
-            <div
-              className="flex flex-col gap-6 container items-center
-               lg:basis-9/12 lg:items-start"
-            >
-              {/* Service */}
-              <div
-                className="flex flex-col gap-6 first items-center
-                 lg:items-start"
-              >
-                <Accordion />
-              </div>
-            </div>
-          </div>
+          <ForloebSection />
 
           <Prices />
 
           <div
-            className="flex flex-col gap-6 space-between items-center
-          lg:flex-row "
+            className="split items-center"
           >
             <div
-              className="flex flex-col gap-6  items-center
-            lg:items-start lg:basis-8/12"
+              className="text-block items-center lg:items-start lg:basis-7/12 2xl:basis-6/12"
             >
               <h2
-                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold 
-                  xl:text-4xl"
+                className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold xl:text-4xl"
               >
                 Grundig dokumentation
               </h2>
@@ -502,9 +337,9 @@ export default function ServiceEmployment() {
                 dokumentation, så det understøtter jeres behov bedst muligt.
                 Men vi tilbyder:
               </p>
+              <SlideIn>
               <ol
-                className="bg-yellow-400 dark:bg-yellow-500 text-slate-900 py-5 px-10 
-              font-conduitbold uppercase list-disc slider shadow-lg text-lg image-container"
+                className="bg-yellow-400 text-slate-900 py-5 px-10 font-conduitbold uppercase list-disc shadow-lg text-lg lg:p-10 2xl:p-14"
               >
                 <li>Registrering af fremmøde</li>
                 <li>
@@ -520,21 +355,17 @@ export default function ServiceEmployment() {
                 <li>Afsluttende rapport efter endt forløb</li>
                 <li>Arbejdsevnebeskrivelse</li>
               </ol>
+              </SlideIn>
             </div>
-            <div className="lg:basis-4/12 image-container">
+            <SlideIn className="lg:basis-5/12 2xl:basis-6/12">
               <Image
                 src={journalPic}
-                width={430}
-                height={370}
-                alt="journal"
-                className="object-cover w-full lg:basis-4/12"
-                priority
+                alt="Løbende dokumentation af borgerens forløb"
+                className="object-cover w-full"
               />
-            </div>
+            </SlideIn>
           </div>
         </main>
       </section>
-      <Footer></Footer>
-    </>
   );
 }

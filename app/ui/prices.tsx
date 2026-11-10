@@ -1,11 +1,10 @@
-import ListItem from "@mui/material/ListItem";
 import { Check } from "lucide-react";
 
 export default function Prices() {
     return (
         <div
             className="flex flex-col gap-6 items-center 
-           lg:w-12/12 lg:items-start"
+           lg:items-start"
         >
             <h2
                 className="uppercase text-slate-900 dark:text-slate-100 text-2xl font-conduitbold

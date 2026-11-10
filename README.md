@@ -1,43 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mentorplan – mentorplan.dk
 
-## Getting Started
-
-First, run the development server:
+Static Next.js 14 site (App Router, `output: "export"`), deployed to Simply.com by
+`.github/workflows/deploy.yml` on every push to `main`.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # static site in ./out
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where things live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| What | Where |
+| --- | --- |
+| Company details (phone, address, e-mail, CVR, services, menu) | `app/lib/site.ts` |
+| Page metadata helper (title, description, canonical, OG/Twitter) | `app/lib/metadata.ts` |
+| Consultants (edit this to add/remove people) | `app/data/employees.json` + photo in `public/images/` mapped in `app/lib/employees.ts` |
+| GSAP setup (plugins registered once) | `app/lib/gsap.ts` |
+| Front-page sections | `app/ui/sections/` |
+| Shared UI (navbar, footer, logo, contact form, …) | `app/ui/` |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Navbar and footer are rendered once in `app/layout.tsx`.
 
-## Learn More
+### Adding a consultant
 
-To learn more about Next.js, take a look at the following resources:
+1. Add the photo to `public/images/` (square, ~512×512 JPG).
+2. Import it in `app/lib/employees.ts` and add it to `IMAGES`.
+3. Add the person to `app/data/employees.json` with `"img"` set to that key.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A profile page is generated automatically at `/employees/<name-slug>/` and added to the sitemap.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Images and video
 
-## Deploy on Vercel
+Images are served as-is (static export, no image optimisation), so keep files small:
+max ~1600 px wide, JPG quality ~80. The hero video is 1080p H.264 without audio.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# jimmi-website
-# jimmi-website
-# jimmi-website
-# jimmi-website
-# jimmi-website
-# jimmi-website
-# jimmi-website
+Submits to Web3Forms (`app/ui/contact-form.tsx`); messages arrive in the inbox configured in the Web3Forms account.

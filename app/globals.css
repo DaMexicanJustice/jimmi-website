@@ -2,29 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/*
+ * Layout tokens - one place to tune spacing for every page.
+ * Content is capped at 1920px and centered, so lines don't stretch
+ * across 2K/4K screens; padding and gaps grow with the viewport.
+ */
+@layer components {
+  /* Horizontal frame: max width + side padding */
+  .container-page {
+    @apply mx-auto w-full max-w-[1920px] px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-24;
+  }
+  /* Vertical padding for a page or section */
+  .section-y {
+    @apply py-10 md:py-14 lg:py-20 2xl:py-24;
+  }
+  /* Space between major blocks on a page */
+  .stack {
+    @apply flex flex-col gap-12 md:gap-16 lg:gap-20 2xl:gap-28;
+  }
+  /* Text + image rows */
+  .split {
+    @apply flex flex-col gap-8 md:gap-10 lg:flex-row lg:gap-12 xl:gap-16 2xl:gap-24;
+  }
+  /* Heading + paragraphs inside a block */
+  .text-block {
+    @apply flex flex-col gap-4 lg:gap-6;
   }
 }
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
 
 @layer utilities {
   .text-balance {
@@ -32,72 +36,38 @@
   }
 }
 
-.clip-circle {
-  clip-path: circle(80px at top left);
-}
-
 .bg-navy-950 {
   background-color: #0f1326;
 }
 
+/* Yellow block behind the right part of the logo */
 .bg-gradient-mentor {
   background-image: linear-gradient(to right, transparent 37%, #ffd200 37%);
   background-size: 100% 100%;
 }
 
-.bg-contact {
-  background-image: url("/images/kontakt.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.image-left {
-  transform: translateX(-2000px);
-}
-
-.image-right {
-  transform: translateX(2000px);
-}
-
-p {
+/* Responsive base sizes for body text */
+p,
+li {
   @apply text-base;
 }
 
 @screen md {
-  p {
-    @apply text-lg;
-  }
-}
-
-@screen lg {
-  p {
-    @apply text-xl;
-  }
-}
-
-@screen xl {
-  p {
-    @apply text-2xl;
-  }
-}
-
-li {
-  @apply text-base
-}
-
-@screen md {
+  p,
   li {
     @apply text-lg;
   }
 }
 
 @screen lg {
+  p,
   li {
     @apply text-xl;
   }
 }
 
 @screen xl {
+  p,
   li {
     @apply text-2xl;
   }
@@ -106,3 +76,4 @@ li {
 ::selection {
   background-color: #fbbf24;
 }
+

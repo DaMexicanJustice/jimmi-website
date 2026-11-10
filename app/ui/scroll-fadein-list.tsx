@@ -1,17 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useRef } from "react";
+import { gsap, useGSAP } from "../lib/gsap";
 
 interface ListItem {
   title: string;
   content: string;
-  subtitle?: string;
-  subcontent?: string;
 }
 
 interface ScrollFadeinListProps {
@@ -29,35 +23,33 @@ export default function ScrollFadeinList({
 }: ScrollFadeinListProps) {
   const listRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const listItems = gsap.utils.toArray(".list-item");
+  // Scoped to this list, so several lists on a page don't animate each other's items
+  useGSAP(
+    () => {
+      const listItems = Array.from(listRef.current?.querySelectorAll<HTMLElement>(".list-item") ?? []);
 
-    listItems.forEach((item) => {
-      gsap.fromTo(
-        item as HTMLElement,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          scrollTrigger: {
-            trigger: item as HTMLElement,
-            start: "top bottom-=80",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, [items]);
+      listItems.forEach((item) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            scrollTrigger: {
+              trigger: item,
+              start: "top bottom-=80",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      });
+    },
+    { scope: listRef, dependencies: [items] }
+  );
 
   return (
-    <motion.div
-      ref={listRef}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="p-0 w-full"
-    >
+    <div ref={listRef} className="p-0 w-full">
       <ul className="space-y-0">
         {items.map((item, index) => (
           <li key={index} className="list-item">
@@ -70,7 +62,6 @@ export default function ScrollFadeinList({
               {item.title}
             </h3>
             <p
-              key={index}
               className={`p-0 ${textColor} ${index !== items.length - 1 ? 'mb-4' : ''}`}
             >
               {item.content}
@@ -78,6 +69,6 @@ export default function ScrollFadeinList({
           </li>
         ))}
       </ul>
-    </motion.div>
+    </div>
   );
 }

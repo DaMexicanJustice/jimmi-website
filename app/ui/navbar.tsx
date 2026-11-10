@@ -1,319 +1,180 @@
-"use client"; // This is a client component
+"use client";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme"; // Import your custom Material-UI theme
-// Material UI for accordion
-import Accordion, { AccordionSlots } from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// Material UI for burger menu
-import { IconButton, List, ListItem } from "@mui/material";
-import { Dehaze, Close, HorizontalRule } from "@mui/icons-material";
-import NavbarButton from "./navbar-button";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
+import { ChevronDown, Menu, Minus, X } from "lucide-react";
+import Logo from "./logo";
+import { NAV_LINKS } from "../lib/site";
 
-interface NavbarProps {
-  useScrollBehavior: boolean;
-}
+/**
+ * Site navigation. On the front page the bar is transparent over the hero
+ * video and turns solid once the hero has scrolled out of view.
+ */
+export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
-const Navbar: React.FC<NavbarProps> = ({ useScrollBehavior }) => {
-  // Material UI Accordion
-  const [expanded, setExpanded] = React.useState(false);
+  const [pastHero, setPastHero] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [desktopServicesOpen, setDesktopServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
 
-  const handleExpansion = () => {
-    setExpanded((prevExpanded) => !prevExpanded);
-  };
-
-  // Animated custom menu inspired by Mentorplan implementation
-  const [menuState, setMenuState] = useState(false);
-  const [posX, setPosX] = useState("translate-x-full");
-  const openMenu = () => {
-    setMenuState(true);
-    setPosX("translate-x-0");
-    document.body.style.overflow = "hidden";
-  };
-  const closeMenu = () => {
-    setMenuState(false);
-    setPosX("translate-x-full");
-    document.body.style.overflow = "auto";
-  };
-
-  // Handle navbar transparency & color states depending on scroll
-  const navColorState = useScrollBehavior
-    ? "bg-transparent"
-    : "bg-slate-50 dark:bg-slate-950";
-  const svgColorState = useScrollBehavior
-    ? "fill-white"
-    : "fill-black dark:fill-white bg-gradient-mentor";
-  const dehazeColorState = useScrollBehavior
-    ? "fill-white"
-    : "fill-black dark:fill-white";
-  const textColorState = useScrollBehavior
-    ? "text-white"
-    : "text-black dark:text-white";
-  const [navbarColor, setNavbarColor] = useState(navColorState);
-  const [svgColor, setSVGColor] = useState(svgColorState);
-  const [dehazeColor, setDehazeColor] = useState(dehazeColorState);
-  const [textColor, setTextColor] = useState(textColorState);
-
+  // Transparent/solid state on the front page (passive, state only changes at the threshold)
   useEffect(() => {
-    const handleScroll = () => {
-      if (useScrollBehavior) {
-        const heroSection = document.getElementById("Hero");
-        const servicesSection = document.getElementById("Services");
-
-        if (heroSection && servicesSection) {
-          const heroSectionRect = heroSection.getBoundingClientRect();
-          const servicesSectionRect = servicesSection.getBoundingClientRect();
-
-          if (window.scrollY < heroSectionRect.height) {
-            setNavbarColor("bg-transparent");
-            setSVGColor("fill-white");
-            setDehazeColor("fill-white");
-            setTextColor("text-white");
-          } else if (
-            window.scrollY >= heroSectionRect.height &&
-            window.scrollY < heroSectionRect.height + servicesSectionRect.height
-          ) {
-            // Change navbar color based on the section being scrolled to
-            setNavbarColor("bg-slate-50 dark:bg-slate-950");
-            setSVGColor("fill-black dark:fill-white bg-gradient-mentor");
-            setDehazeColor("fill-black dark:fill-white");
-            setTextColor("text-black dark:text-white");
-          } else {
-            // Handle other sections as needed
-          }
-        }
-      } else {
-      }
+    if (!isHome) return;
+    const onScroll = () => {
+      const hero = document.getElementById("Hero");
+      const threshold = (hero?.offsetHeight ?? window.innerHeight) - 64;
+      setPastHero(window.scrollY >= threshold);
     };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHome]);
 
-    window.addEventListener("scroll", handleScroll);
+  // Close menus on navigation
+  useEffect(() => {
+    setMenuOpen(false);
+    setDesktopServicesOpen(false);
+  }, [pathname]);
+
+  // Lock body scroll while the mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      document.body.style.overflow = "";
     };
-  }, [useScrollBehavior]);
+  }, [menuOpen]);
+
+  // Close desktop dropdown on outside click / Escape
+  useEffect(() => {
+    if (!desktopServicesOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (!dropdownRef.current?.contains(e.target as Node)) setDesktopServicesOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setDesktopServicesOpen(false);
+    document.addEventListener("mousedown", onClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [desktopServicesOpen]);
+
+  const transparent = isHome && !pastHero;
+  const barColor = transparent ? "bg-transparent" : "bg-slate-50 dark:bg-slate-950";
+  const logoColor = transparent ? "fill-white" : "fill-black dark:fill-white bg-gradient-mentor";
+  const textColor = transparent ? "text-white" : "text-black dark:text-white";
 
   return (
-    <>
-      <nav
-        id="navbar"
-        className={`fixed top-0 left-0 w-full px-5 z-50 ${navbarColor} h-16 transition-colors duration-500 
-        flex flex-row justify-between items-center flex-nowrap overflow-hidden
-        sm:px-32
-        lg:px-16`}
+    <nav
+      id="navbar"
+      aria-label="Hovedmenu"
+      className={`fixed top-0 left-0 w-full h-16 z-50 ${barColor} transition-colors duration-500`}
+    >
+      <div className="container-page h-full flex flex-row justify-between items-center flex-nowrap">
+      <Link href="/" aria-label="Mentorplan - forside">
+        <Logo className={`${logoColor} transition-colors duration-500`} />
+      </Link>
+
+      {/* Mobile: burger */}
+      <button
+        type="button"
+        className="lg:hidden"
+        aria-label="Åbn menu"
+        aria-expanded={menuOpen}
+        aria-controls="mobile-menu"
+        onClick={() => setMenuOpen(true)}
       >
-        <div>
-          <Link href="/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="300"
-              height="66"
-              viewBox="0 0 400 100"
-              className={`${svgColor} w-32 h-12 cursor-pointer transition-colors duration-500`}
-            >
-              <defs>
-                <style>.cls-1{ }</style>
-              </defs>
-              <g id="Layer_7" data-name="Layer 7">
-                <path
-                  className="cls-1"
-                  d="M75.12,2h8.31V43.18H74.61V16L64.8,29.77h-7L47.85,16.42V43.18H39V2H47.4l14,19Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M93.73,2h25.7v8H102.55v7.43H117.4v8H102.55v9.69h16.88v8H93.73Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M157.93,2h8.83V43.18h-8.42L138.61,16.31V43.18h-8.82V2H138l19.91,27Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M175.6,2h29.83v8h-10.5V43.18H186.1V10H175.6Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M233.71,1.45a19,19,0,0,1,7.9,1.68,20.49,20.49,0,0,1,6.47,4.59,22.14,22.14,0,0,1,4.35,6.73,21.11,21.11,0,0,1,1.6,8.18,21.46,21.46,0,0,1-1.6,8.19,22.06,22.06,0,0,1-4.35,6.79,21,21,0,0,1-6.47,4.61,19.08,19.08,0,0,1-15.79,0,20.56,20.56,0,0,1-6.44-4.61,22.2,22.2,0,0,1-4.33-6.79,21.45,21.45,0,0,1-1.59-8.19,21.11,21.11,0,0,1,1.59-8.18,22.27,22.27,0,0,1,4.33-6.73,20,20,0,0,1,6.44-4.59A19,19,0,0,1,233.71,1.45Zm0,33.72a10.28,10.28,0,0,0,4.46-1,11.79,11.79,0,0,0,3.65-2.7,12.88,12.88,0,0,0,2.46-4,13.1,13.1,0,0,0,.89-4.88,13.28,13.28,0,0,0-.89-4.9,12.85,12.85,0,0,0-2.46-4A11.79,11.79,0,0,0,238.2,11a10.64,10.64,0,0,0-8.92,0,11.64,11.64,0,0,0-3.64,2.7,12.49,12.49,0,0,0-2.46,4,13.29,13.29,0,0,0-.9,4.9,13.11,13.11,0,0,0,.9,4.88,12.52,12.52,0,0,0,2.46,4,11.64,11.64,0,0,0,3.64,2.7A10.28,10.28,0,0,0,233.74,35.17Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M293.1,14.27a12.46,12.46,0,0,1-.55,3.75A12.3,12.3,0,0,1,291,21.27a11.56,11.56,0,0,1-2.38,2.61,12.89,12.89,0,0,1-3,1.83l13.64,17.47H289l-12.71-16.6h-3.94v16.6h-8.82V2h17.76a11.3,11.3,0,0,1,4.61,1,11.63,11.63,0,0,1,3.77,2.61,12.45,12.45,0,0,1,2.53,3.89A12.3,12.3,0,0,1,293.1,14.27Zm-12.94,4.3a3.94,3.94,0,0,0,2.91-1.25,4.2,4.2,0,0,0,1.21-3.05,4.15,4.15,0,0,0-1.21-3A3.93,3.93,0,0,0,280.16,10h-7.83v8.53Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M19,55.23a11.11,11.11,0,0,1,4.59,1,11.93,11.93,0,0,1,3.75,2.61,12.44,12.44,0,0,1,3.46,8.68,12.53,12.53,0,0,1-.92,4.79,12.78,12.78,0,0,1-2.53,3.91,11.5,11.5,0,0,1-3.74,2.64,11.11,11.11,0,0,1-4.59,1h-9v16.6H1.24V55.23ZM17.85,71.77a4,4,0,0,0,2.92-1.25,4.13,4.13,0,0,0,1.24-3,4.08,4.08,0,0,0-1.24-3,4,4,0,0,0-2.92-1.25h-7.8v8.53Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M47.85,88.37H64.74v8H39V55.23h8.81Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M103,55.23l17.18,41.15h-9.52L107,87.56H89.51l-3.66,8.82H76.27L93.46,55.23Zm.64,24.32-5.4-12.94L92.88,79.55Z"
-                />
-                <path
-                  className="cls-1"
-                  d="M157.2,55.23H166V96.38h-8.41L137.87,69.51V96.38h-8.81V55.23h8.23L157.2,82.28Z"
-                />
-              </g>
-            </svg>
-          </Link>
-        </div>
-        <div className="lg:hidden">
-          <IconButton
-            aria-label="fingerprint"
-            id="burger-menu"
-            onClick={openMenu}
-            className="p-0"
-          >
-            <Dehaze className={`${dehazeColor} size-8`} />
-          </IconButton>
-        </div>
+        <Menu className={`size-8 ${textColor}`} />
+      </button>
 
-        {/* Mobile menu navbar */}
-        <div
-          className={`fixed min-h-[calc(100svh+6rem)] w-full backdrop-blur-xl backdrop-brightness-50 top-0 right-0 overflow-hidden ${posX}
-          transition-transform duration-700 ease-in-out
-          lg:hidden`}
-        >
-          <div className="flex flex-col text-xl">
-            <div className="flex flex-row justify-end px-8 py-4">
-              <IconButton
-                aria-label="fingerprint"
-                id="burger-menu-collapse"
-                onClick={closeMenu}
-                className="p-5 place-self-start"
-              >
-                <Close className="size-8 fill-slate-50"></Close>
-              </IconButton>
-            </div>
-            <div className="flex flex-col justify-center items-start px-5 text-slate-50 font-conduitbold uppercase">
-              <Link
-                href="/"
-                onClick={closeMenu}
-                className="flex flex-row items-center w-48 h-9"
-              >
-                <HorizontalRule></HorizontalRule> Forside
-              </Link>
-              <Link
-                href="/employees"
-                onClick={closeMenu}
-                className="flex flex-row items-center w-48 h-9"
-              >
-                <HorizontalRule></HorizontalRule>Konsulenter
-              </Link>
-              <div className="flex flex-row w-48 items-center">
-                <ThemeProvider theme={theme}>
-                  <HorizontalRule
-                    className={expanded ? "opacity-0" : "opacity-100"}
-                  ></HorizontalRule>
-
-                  <Accordion
-                    expanded={expanded}
-                    onChange={handleExpansion}
-                    className="bg-transparent text-slate-50 font-conduitbold p-0"
-                    style={{ boxShadow: "none", padding: "0px" }}
-                    sx={{
-                      "& .MuiAccordion-region": {
-                        height: expanded ? "auto" : 0,
-                      },
-                      "& .MuiAccordionDetails-root": {
-                        display: expanded ? "block" : "none",
-                      },
-                    }}
-                  >
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon className="fill-white" />}
-                      aria-controls="panel1-content"
-                      id="panel1-header"
-                      className="p-0"
-                    >
-                      <Typography className="font-conduitbold text-xl">
-                        Ydelser
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <List>
-                        <ListItem>
-                          <Link
-                            onClick={closeMenu}
-                            href="/service-employment"
-                            className="font-conduitbold"
-                          >
-                            Beskæftigelsesindsatser
-                          </Link>
-                        </ListItem>
-                        <ListItem>
-                          <Link
-                            onClick={closeMenu}
-                            href="/service-youth"
-                            className="font-conduitbold"
-                            aria-disabled
-                          >
-                            Ungeindsatser
-                          </Link>
-                        </ListItem>
-                        <ListItem>
-                          <Link
-                            onClick={closeMenu}
-                            href="/service-social"
-                            className="font-conduitbold"
-                            aria-disabled
-                          >
-                            Social indsats under § 85
-                          </Link>
-                        </ListItem>
-                      </List>
-                    </AccordionDetails>
-                  </Accordion>
-                </ThemeProvider>
-              </div>
-              <Link
-                href="/corporate-collaboration"
-                onClick={closeMenu}
-                className="flex flex-row items-center w-48 h-9"
-              >
-                <HorizontalRule className=""></HorizontalRule>
-                Virksomhedssamarbejde
-              </Link>
-              <Link
-                href="/social-feed"
-                onClick={closeMenu}
-                className=" flex flex-row items-center w-48 h-9"
-              >
-                <HorizontalRule className=""></HorizontalRule>Den Gode Historie
-              </Link>
-              <Link
-                href="/contact"
-                onClick={closeMenu}
-                className="flex flex-row items-center w-48 h-9"
-              >
-                <HorizontalRule className=""></HorizontalRule>Kontakt
-              </Link>
-            </div>
-          </div>
+      {/* Mobile: slide-in panel */}
+      <div
+        id="mobile-menu"
+        className={`fixed inset-0 min-h-svh w-full backdrop-blur-xl backdrop-brightness-50
+        transition-[transform,visibility] duration-700 ease-in-out lg:hidden
+        ${menuOpen ? "translate-x-0 visible" : "translate-x-full invisible"}`}
+      >
+        <div className="flex flex-row justify-end px-8 py-4">
+          <button type="button" aria-label="Luk menu" onClick={() => setMenuOpen(false)} className="p-5">
+            <X className="size-8 text-slate-50" />
+          </button>
         </div>
+        <ul className="flex flex-col items-start px-5 text-xl text-slate-50 font-conduitbold uppercase">
+          {NAV_LINKS.map((link) =>
+            "children" in link ? (
+              <li key={link.label} className="w-64 text-xl">
+                <button
+                  type="button"
+                  className="flex flex-row items-center h-9 uppercase"
+                  aria-expanded={mobileServicesOpen}
+                  onClick={() => setMobileServicesOpen((o) => !o)}
+                >
+                  <Minus className={mobileServicesOpen ? "opacity-0" : ""} />
+                  {link.label}
+                  <ChevronDown
+                    className={`ml-1 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                <ul className={`${mobileServicesOpen ? "block" : "hidden"} pl-8 py-2 space-y-3 normal-case`}>
+                  {link.children.map((child) => (
+                    <li key={child.href} className="text-xl">
+                      <Link href={child.href}>{child.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={link.href} className="text-xl">
+                <Link href={link.href} className="flex flex-row items-center w-64 h-9">
+                  <Minus />
+                  {link.label}
+                </Link>
+              </li>
+            )
+          )}
+        </ul>
+      </div>
 
-        {/* Desktop menu navbar */}
-        <div
-          className={`hidden gap-5 justify-between items-center transition-colors duration-500
-        ${textColor} uppercase text-lg font-conduitbold
-        lg:flex lg:flex-row
-        `}
-        >
-          <Link href="/">Forside</Link>
-          <Link href="/employees">Konsulenter</Link>
-          <NavbarButton textColor={textColor}></NavbarButton>
-          <Link href="/corporate-collaboration">Virksomhedssamarbejde</Link>
-          <Link className="" href="/social-feed">Den Gode Historie</Link>
-          <Link href="/contact">Kontakt</Link>
-        </div>
-      </nav>
-    </>
+      {/* Desktop */}
+      <ul
+        className={`hidden lg:flex flex-row gap-5 items-center uppercase text-lg font-conduitbold
+        ${textColor} transition-colors duration-500`}
+      >
+        {NAV_LINKS.map((link) =>
+          "children" in link ? (
+            <li key={link.label} ref={dropdownRef} className="relative text-lg">
+              <button
+                type="button"
+                className="uppercase"
+                aria-haspopup="true"
+                aria-expanded={desktopServicesOpen}
+                onClick={() => setDesktopServicesOpen((o) => !o)}
+              >
+                {link.label}
+              </button>
+              {desktopServicesOpen && (
+                <ul className="absolute left-0 top-full mt-2 min-w-max py-2 bg-white text-slate-900 rounded shadow-lg normal-case font-conduit text-base">
+                  {link.children.map((child) => (
+                    <li key={child.href} className="text-base">
+                      <Link href={child.href} className="block px-4 py-2 hover:bg-slate-100">
+                        {child.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ) : (
+            <li key={link.href} className="text-lg">
+              <Link href={link.href}>{link.label}</Link>
+            </li>
+          )
+        )}
+      </ul>
+      </div>
+    </nav>
   );
-};
-
-export default Navbar;
+}

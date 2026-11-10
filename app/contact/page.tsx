@@ -1,89 +1,69 @@
-"use client"; // This is a client component
+import type { Metadata } from "next";
+import { Mail, MapPin, Phone, UserCircle } from "lucide-react";
 import ContactForm from "../ui/contact-form";
-import Footer from "../ui/footer";
-import Navbar from "../ui/navbar";
-import {
-  PhoneIcon,
-  EnvelopeIcon,
-  MapPinIcon,
-  UserCircleIcon,
-} from "@heroicons/react/24/outline";
-// GSAP
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { pageMetadata } from "../lib/metadata";
+import { SITE } from "../lib/site";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+export const metadata: Metadata = pageMetadata({
+  title: "Kontakt",
+  description:
+    "Kontakt Mentorplan på telefon, sikkermail eller via kontaktformularen. Besøg os i SOHO, Flæsketorvet 68 i Kødbyen, København V.",
+  path: "/contact/",
+});
+
+const iconClass = "size-4 lg:size-6 shrink-0 mt-1";
 
 export default function Contact() {
+  const { address, phone, email } = SITE;
+
   return (
-    <>
-      <Navbar useScrollBehavior={false}></Navbar>
-      <section
-        className="p-5 mt-12 bg-slate-100 dark:bg-neutral-900 overflow-x-hidden
-        text-slate-900 dark:text-slate-50
-        sm:px-32 
-        lg:px-16"
-      >
-        <main
-          className="flex flex-col gap-6 h-full justify-between items-center cursor-default py-5
-          lg:flex-row"
-        >
-          <div
-            className="flex flex-col gap-6
-                lg:gap-4 lg:basis-6/12"
-          >
-            <h1 className="uppercase font-conduitbold text-4xl">
-              Kontakt information
-            </h1>
-            <div className="flex flex-row gap-2">
-              <UserCircleIcon className="size-4 lg:size-6 "></UserCircleIcon>
-              <p className="text-lg uppercase">Mentorplan</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <MapPinIcon className="size-4 lg:size-6 "></MapPinIcon>
-              <p className="text-lg">Flæsketorvet 68, 1, 1711 København</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <PhoneIcon className="size-4 lg:size-6 "></PhoneIcon>
-              <p className="text-lg">
-                Telefon: <a href="tel:+4542955969">+45 42955969</a>
-              </p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <EnvelopeIcon className="size-4 lg:size-6"></EnvelopeIcon>
-              <p className="text-lg">
-                Sikkermail:{" "}
-                <a href="mailto:jl@mentorplan.dk" className="m-1 text-lg">
-                  jl@mentorplan.dk
-                </a>
-              </p>
-            </div>
-            <p className="text-lg">
-              For at besøge vores kontor i Kødbyen på Soho kan du tage toget til
-              enten Dybbølsbro Station eller Hovedbanegården. Fra begge
-              stationer er der en kort gåtur til Kødbyen. Der er gratis
-              parkering foran kontoret mellem kl. 8 og 17, med en times
-              parkering på P-skiven.
-            </p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.2844839745385!2d12.559370999999999!3d55.666653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525373da1d5b59%3A0x8bc8cd4d0c582aa4!2sSOHO!5e0!3m2!1sen!2sdk!4v1720696588850!5m2!1sen!2sdk"
-              width="512"
-              height="512"
-              className="border-0 w-full"
-              loading="lazy"
-            ></iframe>
-          </div>
-          <div
-            className="w-full image-right slider shadow-lg
-            lg:basis-6/12 lg:mb-0
-            xl:basis-4/12"
-          >
-            <ContactForm useSliderAnimation={false} />
-          </div>
-        </main>
-      </section>
-      <Footer></Footer>
-    </>
+    <main className="mt-16 bg-slate-100 dark:bg-neutral-900 overflow-x-hidden text-slate-900 dark:text-slate-50">
+      <div className="container-page section-y split justify-between items-center cursor-default">
+        <div className="text-block lg:basis-6/12">
+          <h1 className="uppercase font-conduitbold text-4xl">Kontaktinformation</h1>
+          <address className="not-italic flex flex-col gap-4 text-lg">
+            <span className="flex flex-row gap-2">
+              <UserCircle className={iconClass} aria-hidden="true" />
+              <span className="uppercase">{SITE.name}</span>
+            </span>
+            <span className="flex flex-row gap-2">
+              <MapPin className={iconClass} aria-hidden="true" />
+              <a href={address.mapsUrl} target="_blank" rel="noopener noreferrer">
+                {address.street}, {address.postalCode} {address.city} ({address.building})
+              </a>
+            </span>
+            <span className="flex flex-row gap-2">
+              <Phone className={iconClass} aria-hidden="true" />
+              <span>
+                Telefon: <a href={phone.href}>{phone.display}</a>
+              </span>
+            </span>
+            <span className="flex flex-row gap-2">
+              <Mail className={iconClass} aria-hidden="true" />
+              <span>
+                Sikkermail: <a href={`mailto:${email}`}>{email}</a>
+              </span>
+            </span>
+          </address>
+          <p className="text-lg">
+            For at besøge vores kontor i Kødbyen på SOHO kan du tage toget til enten Dybbølsbro Station eller
+            Hovedbanegården. Fra begge stationer er der en kort gåtur til Kødbyen. Der er gratis parkering foran
+            kontoret mellem kl. 8 og 17, med en times parkering på P-skiven.
+          </p>
+          <iframe
+            src={address.mapsEmbedUrl}
+            title="Kort over Mentorplans kontor i SOHO, Kødbyen"
+            width="512"
+            height="512"
+            className="border-0 w-full"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+        <div className="w-full shadow-lg lg:basis-6/12 xl:basis-4/12">
+          <ContactForm />
+        </div>
+      </div>
+    </main>
   );
 }

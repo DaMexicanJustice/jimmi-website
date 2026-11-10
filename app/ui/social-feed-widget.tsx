@@ -1,23 +1,11 @@
-"use client"; // This is a client component
-import { useEffect } from "react";
+import Script from "next/script";
 
-const SocialFeedWidget: React.FC = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    script.type = "text/javascript";
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
+/** Elfsight LinkedIn feed. The platform script is loaded once, after the page is idle. */
+export default function SocialFeedWidget() {
   return (
     <>
-      <div className="elfsight-app-fad5eb4b-f6db-4ab6-8eab-34c9dea3e05e" data-elfsight-app-lazy></div>
+      <div className="elfsight-app-fad5eb4b-f6db-4ab6-8eab-34c9dea3e05e" data-elfsight-app-lazy />
+      <Script src="https://static.elfsight.com/platform/platform.js" strategy="lazyOnload" />
     </>
   );
-};
-
-export default SocialFeedWidget;
+}
